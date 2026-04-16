@@ -1,2 +1,2 @@
-# Pioners
+# Pionerlar
 for partfoly
