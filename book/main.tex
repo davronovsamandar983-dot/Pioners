@@ -1,0 +1,75 @@
+% ============================================================================
+%  SAT MATH MASTERY -- 20 topics, 880 practice problems
+%  Build with:  tools/build.sh      (never edit book/topics or book/solutions)
+% ============================================================================
+\documentclass[11pt,openany]{book}
+
+\usepackage[a4paper,top=22mm,bottom=22mm,inner=20mm,outer=18mm,
+            headsep=8mm,footskip=12mm]{geometry}
+\usepackage{satmath}
+
+\hypersetup{
+  pdftitle={SAT Math Mastery},
+  pdfsubject={Digital SAT mathematics -- 20 topics, 880 practice problems},
+  pdfkeywords={SAT, mathematics, practice, Bluebook, College Board}}
+
+\begin{document}
+\frontmatter
+\pagestyle{empty}
+
+% ----------------------------------------------------------- title page ----
+\begin{titlepage}
+\begin{tikzpicture}[remember picture,overlay]
+  \fill[satnavy] (current page.north west) rectangle
+        ($(current page.north east)+(0,-13cm)$);
+  \fill[satteal] ($(current page.north west)+(0,-13cm)$) rectangle
+        ($(current page.north east)+(0,-13.35cm)$);
+
+  \node[anchor=north west,text=satsky,font=\Large\bfseries]
+       at ($(current page.north west)+(2.2cm,-3.2cm)$)
+       {THE COMPLETE};
+  \node[anchor=north west,text=white,font=\fontsize{46}{50}\selectfont\bfseries,
+        text width=15cm]
+       at ($(current page.north west)+(2.2cm,-4.1cm)$)
+       {SAT MATH\\MASTERY};
+  \node[anchor=north west,text=satsky,font=\large,text width=15cm]
+       at ($(current page.north west)+(2.2cm,-9.6cm)$)
+       {20 topics \textbullet\ 880 practice problems\\
+        Module 1 and Module 2 for every topic};
+
+  \node[anchor=north west,text=satnavy,font=\normalsize,text width=14cm]
+       at ($(current page.north west)+(2.2cm,-15.5cm)$)
+       {Built to the College Board's published Digital SAT specification:
+        every question is written against an official skill in one of the four
+        tested domains, and every answer is machine-verified.};
+
+  \node[anchor=south west,text=satgrey,font=\footnotesize]
+       at ($(current page.south west)+(2.2cm,2.4cm)$)
+       {Pionerlar};
+\end{tikzpicture}
+\end{titlepage}
+
+\input{frontmatter/howtouse}
+
+\cleardoublepage
+\pagestyle{fancy}
+\tableofcontents
+
+% -------------------------------------------------------------- topics ----
+\mainmatter
+\IfFileExists{generated/topics.tex}{\input{generated/topics}}{%
+  \chapter*{No topics generated yet}
+  Run \texttt{tools/build.sh} after adding banks to \texttt{content/bank/}.}
+
+% ----------------------------------------------------------- solutions ----
+\appendix
+\cleardoublepage
+\chapter*{Worked Solutions}
+\addcontentsline{toc}{chapter}{Worked Solutions}
+\markboth{Worked Solutions}{Worked Solutions}
+\IfFileExists{generated/solutions.tex}{\input{generated/solutions}}{}
+
+\cleardoublepage
+\IfFileExists{generated/answerkey.tex}{\input{generated/answerkey}}{}
+
+\end{document}

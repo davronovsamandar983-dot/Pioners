@@ -1,0 +1,18 @@
+# LaTeX build products
+book/*.aux
+book/*.log
+book/*.out
+book/*.toc
+book/*.fls
+book/*.fdb_latexmk
+book/*.synctex.gz
+book/*.pdf
+book/generated/
+book/topics/*.tex
+book/solutions/*.tex
+dist/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
