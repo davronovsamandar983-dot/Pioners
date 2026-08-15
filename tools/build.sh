@@ -34,15 +34,22 @@ echo "==> typesetting"
 BUILD="book/.build"
 rm -rf "$BUILD"
 mkdir -p "$BUILD"
-cd book
-latexmk -pdf -interaction=nonstopmode -halt-on-error -quiet \
-        -outdir=.build main.tex >/dev/null 2>&1 || {
-  echo "pdflatex failed -- last 40 lines of the log:" >&2
-  tail -40 .build/main.log >&2
-  exit 1
-}
-cd ..
-
 mkdir -p dist
-cp "$BUILD/main.pdf" "dist/SAT-Math-Mastery.pdf"
-echo "==> dist/SAT-Math-Mastery.pdf ($(cd book/.build && pdfinfo main.pdf 2>/dev/null | awk '/^Pages/{print $2" pages"}'))"
+
+# main.tex     -- the full edition: lessons, problems, worked solutions, key
+# problems.tex -- the problem edition: the same 880 questions and the key,
+#                 with no teaching and no solutions
+typeset() {
+  local src="$1" out="$2"
+  ( cd book && latexmk -pdf -interaction=nonstopmode -halt-on-error -quiet \
+        -outdir=.build "$src.tex" >/dev/null 2>&1 ) || {
+    echo "pdflatex failed on $src.tex -- last 40 lines of the log:" >&2
+    tail -40 "$BUILD/$src.log" >&2
+    exit 1
+  }
+  cp "$BUILD/$src.pdf" "dist/$out"
+  echo "==> dist/$out ($(pdfinfo "dist/$out" 2>/dev/null | awk '/^Pages/{print $2" pages"}'))"
+}
+
+typeset main     "SAT-Math-Mastery.pdf"
+typeset problems "SAT-Math-Mastery-Problems.pdf"

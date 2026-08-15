@@ -5,6 +5,7 @@ Reads   content/topics.json          -- the ordered list of the 20 topics
         content/bank/topic-NN.json   -- lesson + 44 problems for each topic
 
 Writes  book/topics/topic-NN.tex     -- lesson, Module 1 (22), Module 2 (22)
+        book/topics/prob-NN.tex      -- the same questions with no lesson
         book/solutions/sol-NN.tex    -- worked solution for all 44
         book/generated/answerkey.tex -- the book-wide answer key
         book/generated/topics.tex    -- \\input lines consumed by main.tex
@@ -78,13 +79,16 @@ def render_problem(p: dict) -> str:
     return "\n".join(out)
 
 
-def render_topic(bank: dict) -> str:
+def render_topic(bank: dict, *, lesson: bool = True) -> str:
+    """The full edition carries the lesson; the problem edition is the same
+    questions with the teaching removed."""
     n = bank["number"]
     out = [BANNER,
            f"\\sattopic{{{n}}}{{{esc(bank['topic'])}}}{{{esc(bank['domain'])}}}",
-           "",
-           render_lesson(bank),
            ""]
+    if lesson:
+        out.append(render_lesson(bank))
+        out.append("")
 
     problems = sorted(bank["problems"], key=lambda p: p["n"])
     m1 = [p for p in problems if p["module"] == 1]
@@ -174,6 +178,7 @@ def main() -> int:
 
     banks: list[dict] = []
     includes_topics: list[str] = []
+    includes_probs: list[str] = []
     includes_sols: list[str] = []
     missing: list[int] = []
     part_no = 0
@@ -194,14 +199,21 @@ def main() -> int:
             part_no += 1
             includes_topics.append(
                 f"\\satpart{{{part_no}}}{{{esc(current_domain)}}}")
+            includes_probs.append(
+                f"\\satpart{{{part_no}}}{{{esc(current_domain)}}}")
 
-        (OUT_TOPIC / f"topic-{n:02d}.tex").write_text(render_topic(bank))
+        (OUT_TOPIC / f"topic-{n:02d}.tex").write_text(
+            render_topic(bank, lesson=True))
+        (OUT_TOPIC / f"prob-{n:02d}.tex").write_text(
+            render_topic(bank, lesson=False))
         (OUT_SOL / f"sol-{n:02d}.tex").write_text(render_solutions(bank))
         includes_topics.append(f"\\input{{topics/topic-{n:02d}}}")
+        includes_probs.append(f"\\input{{topics/prob-{n:02d}}}")
         includes_sols.append(f"\\input{{solutions/sol-{n:02d}}}")
 
     (OUT_GEN / "answerkey.tex").write_text(render_answer_key(banks))
     (OUT_GEN / "topics.tex").write_text(BANNER + "\n".join(includes_topics) + "\n")
+    (OUT_GEN / "problems.tex").write_text(BANNER + "\n".join(includes_probs) + "\n")
     (OUT_GEN / "solutions.tex").write_text(BANNER + "\n".join(includes_sols) + "\n")
 
     print(f"generated {len(banks)} topic(s), "

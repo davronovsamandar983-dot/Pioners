@@ -1,0 +1,51 @@
+% The cover, shared by both editions. \satcoversub and \satcoverstats
+% are defined by whichever main file pulls it in.
+\begin{titlepage}
+\begin{tikzpicture}[remember picture,overlay]
+  % navy field, closed by the gold band at 429pt above the foot
+  \fill[satnavy] (current page.north west) rectangle
+        ($(current page.south east)+(0,429pt)$);
+  \fill[satgold] ($(current page.south west)+(0,417pt)$) rectangle
+        ($(current page.south east)+(0,429pt)$);
+  % the emblem sits across the band
+  \node at ($(current page.south)+(0,354pt)$)
+    {\includegraphics[width=333pt]{\satlogowm}};
+
+  \node[anchor=west,text=satgold,font=\bfseries\large]
+       at ($(current page.north west)+(78pt,-155pt)$)
+       {MATH EXCELLENCE SERIES};
+  \node[anchor=west,text=white,font=\fontsize{38}{42}\selectfont]
+       at ($(current page.north west)+(75pt,-192pt)$)
+       {SAT MATH};
+  \draw[satgold,line width=1.6pt]
+       ($(current page.north west)+(78pt,-216pt)$) --
+       ($(current page.north west)+(208pt,-216pt)$);
+  \node[anchor=west,text=white,
+        font=\fontsize{18}{21}\selectfont\bfseries\itshape]
+       at ($(current page.north west)+(75pt,-243pt)$)
+       {\satcoversub};
+
+  \node[anchor=west,text=white,font=\normalsize]
+       at ($(current page.north west)+(78pt,-289pt)$)
+       {Algebra \ \textbullet\ \ Advanced Math \ \textbullet\ \ Data Analysis
+        \ \textbullet\ \ Geometry};
+
+  \node[anchor=north west,text=white,font=\small,inner sep=0pt]
+       at ($(current page.north west)+(78pt,-314pt)$)
+       {\begin{minipage}{380pt}\satcoverstats\end{minipage}};
+
+  % author panel, sitting on the foot strip
+  \fill[satpale] ($(current page.south west)+(60pt,17pt)$) rectangle
+        ($(current page.south west)+(536pt,88pt)$);
+  \node[anchor=west,text=satnavy,font=\Large\bfseries]
+       at ($(current page.south west)+(78pt,60pt)$) {\satauthorname};
+  \node[anchor=west,text=satgrey,font=\small]
+       at ($(current page.south west)+(78pt,38pt)$)
+       {Math Instructor \& Problem Setter};
+  \node[anchor=east] at ($(current page.south west)+(518pt,52pt)$)
+       {\includegraphics[height=44pt]{\satlogo}};
+
+  \fill[satnavy] (current page.south west) rectangle
+        ($(current page.south east)+(0,16pt)$);
+\end{tikzpicture}
+\end{titlepage}

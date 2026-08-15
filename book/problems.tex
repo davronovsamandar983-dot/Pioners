@@ -1,34 +1,33 @@
 % ============================================================================
-%  SAT MATH MASTERY -- 20 lessons, 880 practice problems
-%  Build with:  tools/build.sh      (never edit book/topics or book/solutions)
+%  SAT MATH MASTERY -- PROBLEM EDITION
+%  The 880 problems on their own: no lessons, no worked solutions, no
+%  commentary. Only the questions, and the answer key at the back.
+%  Built alongside the full edition by tools/build.sh.
 % ============================================================================
 \documentclass[11pt,openany]{book}
 
-% The header carries the instructor line and the branded bar, so the top
-% margin has to clear headheight + headsep before the body starts.
 \usepackage[a4paper,top=100pt,bottom=54pt,left=34pt,right=34pt,
             headheight=46pt,headsep=14pt,footskip=26pt]{geometry}
 \usepackage{satmath}
 
 \hypersetup{
-  pdftitle={SAT Math Mastery},
+  pdftitle={SAT Math Mastery -- Problems},
   pdfauthor={Davlat Kamoliddinov},
-  pdfsubject={Digital SAT mathematics -- 20 lessons, 880 practice problems},
+  pdfsubject={Digital SAT mathematics -- 880 practice problems},
   pdfkeywords={SAT, mathematics, practice, Bluebook, College Board}}
 
-\newcommand{\satcoversub}{\&\ Complete Mastery}
+\newcommand{\satcoversub}{\&\ Practice Problems}
 \newcommand{\satcoverstats}{%
   \textbf{880} amaliy savol \ \ \textbullet\ \ \ \textbf{660} test
   \ $+$ \ \textbf{220} grid-in\\[3pt]
-  \textbf{20} dars \ \ \textbullet\ \ \ \textbf{40} modul
+  \textbf{20} mavzu \ \ \textbullet\ \ \ \textbf{40} modul
   \ \ \textbullet\ \ \ \textbf{4} bo'lim\\[3pt]
-  To'liq javob kalitlari va yechimlari bilan}
+  Faqat savollar \ \textbullet\ \ javob kaliti bilan}
 
 \begin{document}
 \frontmatter
 \pagestyle{empty}
 
-% ----------------------------------------------------------- title page ----
 \input{frontmatter/cover}
 
 % -------------------------------------------------------------- contents ---
@@ -47,19 +46,15 @@
  \makeatletter\@starttoc{toc}\makeatother
  \end{multicols}}
 
-% -------------------------------------------------------------- lessons ----
+% ------------------------------------------------------------- problems ----
 \mainmatter
 \satwatermark
 \pagestyle{fancy}
-\IfFileExists{generated/topics.tex}{\input{generated/topics}}{%
-  \section*{No lessons generated yet}
+\IfFileExists{generated/problems.tex}{\input{generated/problems}}{%
+  \section*{No problems generated yet}
   Run \texttt{tools/build.sh} after adding banks to \texttt{content/bank/}.}
 
-% ----------------------------------------------------------- solutions ----
-\clearpage
-\satpart{5}{Worked Solutions}
-\IfFileExists{generated/solutions.tex}{\input{generated/solutions}}{}
-
+% ----------------------------------------------------------- answer key ----
 \clearpage
 \IfFileExists{generated/answerkey.tex}{\input{generated/answerkey}}{}
 
