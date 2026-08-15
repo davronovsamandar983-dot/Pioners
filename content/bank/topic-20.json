@@ -1,0 +1,507 @@
+{
+  "number": 20,
+  "topic": "Circles",
+  "domain": "Geometry and Trigonometry",
+  "skills": [
+    "Circumference, area, arcs and sectors",
+    "Radians and arc length",
+    "Central and inscribed angles",
+    "The equation of a circle"
+  ],
+
+  "lesson": {
+    "intro": "A circle is the set of all points a fixed distance $r$ from a fixed point, the centre. Almost everything the Digital SAT asks about circles follows from that one sentence: the two size formulas ($C=2\\pi r$ and $A=\\pi r^2$), the fact that an arc or a sector is just a fraction of the whole circle, the two angle rules (central and inscribed), and the equation $(x-h)^2+(y-k)^2=r^2$, which is nothing more than the distance formula written without a square root. Answers on this topic are almost always exact --- left in terms of $\\pi$ or as a clean integer --- so resist the urge to reach for $3.14$.",
+    "blocks": [
+      {
+        "kind": "section",
+        "title": "Radius, diameter, circumference and area",
+        "body": "The diameter is twice the radius, $d=2r$. Every other formula is written in terms of $r$, so the very first thing to do in any circle question is to decide what $r$ is.\n\nThe two size formulas run in both directions. If a question hands you the area and asks for the circumference, do not hunt for a formula connecting them: go through the radius. From $A=49\\pi$ you get $r^2=49$, so $r=7$, and then $C=2\\pi(7)=14\\pi$. The radius is the hinge of the whole topic."
+      },
+      {
+        "kind": "formula",
+        "title": "Formulas you must know",
+        "body": "For a circle of radius $r$:\n\\[ C=2\\pi r=\\pi d \\qquad A=\\pi r^{2} \\]\nFor a central angle of $\\theta$ degrees:\n\\[ \\text{arc length}=\\frac{\\theta}{360}\\cdot 2\\pi r \\qquad \\text{sector area}=\\frac{\\theta}{360}\\cdot \\pi r^{2} \\]\nFor a central angle of $\\theta$ radians:\n\\[ s=r\\theta \\qquad \\text{sector area}=\\tfrac{1}{2}r^{2}\\theta \\]\nConversions: multiply by $\\dfrac{\\pi}{180}$ to go from degrees to radians, and by $\\dfrac{180}{\\pi}$ to go the other way.\n\nEquation of a circle with centre $(h,k)$ and radius $r$:\n\\[ (x-h)^{2}+(y-k)^{2}=r^{2} \\]"
+      },
+      {
+        "kind": "concept",
+        "title": "An arc or a sector is a fraction of a circle",
+        "body": "You never need a separate arc formula. A central angle of $\\theta^\\circ$ cuts off the fraction $\\dfrac{\\theta}{360}$ of the circle, so it cuts off that same fraction of the circumference (an arc) and that same fraction of the area (a sector). A $90^\\circ$ sector is a quarter of the circle; a $60^\\circ$ sector is a sixth of it.\n\nIn radians the fraction is $\\dfrac{\\theta}{2\\pi}$, and the algebra collapses to $s=r\\theta$. That is the whole reason radians exist: they make arc length a single multiplication."
+      },
+      {
+        "kind": "concept",
+        "title": "Central angles and inscribed angles",
+        "body": "A central angle has its vertex at the centre; its measure equals the measure of the arc it cuts off. An inscribed angle has its vertex on the circle; its measure is $\\textbf{half}$ the arc it cuts off.\n\nSo if a central angle and an inscribed angle intercept the same arc, the inscribed angle is half the central angle. Two consequences the test loves:\n\\begin{itemize}\\setlength{\\itemsep}{2pt}\n\\item An angle inscribed in a semicircle is a right angle. If $\\overline{AB}$ is a diameter and $C$ is on the circle, then $\\angle ACB=90^\\circ$.\n\\item A tangent line meets the radius drawn to the point of tangency at $90^\\circ$, which turns tangent questions into right-triangle questions.\n\\end{itemize}"
+      },
+      {
+        "kind": "trap",
+        "title": "Common trap",
+        "body": "Four mistakes account for most wrong answers on this topic.\n\\begin{itemize}\\setlength{\\itemsep}{2pt}\n\\item Using the $\\textbf{diameter}$ where the formula wants the radius. A circle of diameter $10$ has area $25\\pi$, not $100\\pi$.\n\\item Reading $r^{2}$ off the equation and reporting it as $r$. In $(x-3)^{2}+(y+5)^{2}=49$ the radius is $7$, not $49$.\n\\item Getting the $\\textbf{sign}$ of the centre backwards. The form is $(x-h)^2+(y-k)^2=r^2$, so $(x+4)^2$ means $h=-4$: flip the sign you see.\n\\item Halving the wrong angle. The inscribed angle is the small one. If the central angle is $80^\\circ$, the inscribed angle on the same arc is $40^\\circ$ --- not $160^\\circ$."
+      },
+      {
+        "kind": "strategy",
+        "title": "Calculator / strategy",
+        "body": "Keep $\\pi$ as a symbol. If a grid-in answer would contain $\\pi$, the question will always be phrased so that it does not --- it will ask for the radius, the degree measure, or the value of $k$ where the area is $k\\pi$. That phrasing is a hint about what to solve for.\n\nWhen an equation of a circle is given expanded, do not try to test the answer choices by plugging in points; complete the square once and read everything off. And when a question gives you a tangent line, draw the radius to the point of tangency immediately --- the right angle it creates is the only reason the tangent was mentioned."
+      },
+      {
+        "kind": "worked",
+        "title": "Worked example 1 --- arc, sector and an inscribed angle",
+        "body": "$\\textbf{In a circle of radius }12\\textbf{, an inscribed angle of }30^\\circ\\textbf{ intercepts arc }AB\\textbf{. Find the length of arc }AB\\textbf{ and the area of the corresponding sector.}$\n\nThe inscribed angle is half the arc, so arc $AB$ measures $2(30^\\circ)=60^\\circ$; equivalently the central angle for that arc is $60^\\circ$. That is $\\dfrac{60}{360}=\\dfrac{1}{6}$ of the circle.\n\nThe full circumference is $2\\pi(12)=24\\pi$, so\n\\[ \\text{arc }AB=\\tfrac{1}{6}(24\\pi)=4\\pi. \\]\nThe full area is $\\pi(12)^2=144\\pi$, so\n\\[ \\text{sector area}=\\tfrac{1}{6}(144\\pi)=24\\pi. \\]\nNotice that the $30^\\circ$ was never used directly in a formula --- it had to be doubled first. Skipping that step gives $2\\pi$ and $12\\pi$, which is exactly why those numbers appear as answer choices."
+      },
+      {
+        "kind": "section",
+        "title": "The equation of a circle",
+        "body": "A point $(x,y)$ lies on the circle with centre $(h,k)$ and radius $r$ exactly when its distance from the centre is $r$. Squaring the distance formula gives\n\\[ (x-h)^{2}+(y-k)^{2}=r^{2}. \\]\nReading a circle off this form is mechanical: flip the signs inside the parentheses to get the centre, and take a square root on the right to get the radius. So $(x+4)^2+(y-1)^2=36$ has centre $(-4,1)$ and radius $6$.\n\nGoing the other way is just as mechanical. Centre $(0,3)$ and radius $5$ give $x^2+(y-3)^2=25$. And if a question gives the two endpoints of a diameter, the centre is their midpoint and the radius is half the distance between them."
+      },
+      {
+        "kind": "worked",
+        "title": "Worked example 2 --- completing the square",
+        "body": "$\\textbf{The equation }x^{2}+y^{2}-6x+8y-11=0\\textbf{ represents a circle. Find its centre and radius.}$\n\nGroup the $x$ terms and the $y$ terms and move the constant across:\n\\[ (x^{2}-6x)+(y^{2}+8y)=11. \\]\nComplete each square by halving the linear coefficient and squaring it. Half of $-6$ is $-3$, and $(-3)^2=9$. Half of $8$ is $4$, and $4^2=16$. Add $9$ and $16$ to $\\textbf{both}$ sides:\n\\[ (x^{2}-6x+9)+(y^{2}+8y+16)=11+9+16, \\]\n\\[ (x-3)^{2}+(y+4)^{2}=36. \\]\nThe centre is $(3,-4)$ and the radius is $\\sqrt{36}=6$.\n\nTwo checks worth making every time. First, the numbers you add on the left must also be added on the right --- forgetting that is the single most common error here, and it produces $\\sqrt{11}$. Second, the answer to \"what is the radius\" is $6$, not $36$; $36$ is $r^2$."
+      },
+      {
+        "kind": "strategy",
+        "title": "A shortcut for the centre",
+        "body": "If a circle is written as $x^{2}+y^{2}+Dx+Ey+F=0$, the centre is $\\left(-\\dfrac{D}{2},-\\dfrac{E}{2}\\right)$ and $r^{2}=\\dfrac{D^{2}}{4}+\\dfrac{E^{2}}{4}-F$. For $x^{2}+y^{2}-12x+2y+12=0$ that gives centre $(6,-1)$ and $r^2=36+1-12=25$, so $r=5$ --- in one line.\n\nOne caution: this only works when the coefficients of $x^{2}$ and $y^{2}$ are both $1$. If you see $2x^{2}+2y^{2}+\\dots=0$, divide the whole equation by $2$ first."
+      }
+    ]
+  },
+
+  "problems": [
+    {
+      "id": "T20-M1-01", "module": 1, "n": 1, "difficulty": "E", "type": "MC",
+      "skill": "Circumference and area",
+      "stem": "A circle has a radius of $7$ inches. What is the circumference of this circle, in inches?",
+      "choices": ["$7\\pi$", "$14\\pi$", "$28\\pi$", "$49\\pi$"],
+      "answer": "B",
+      "steps": ["Use $C=2\\pi r$.", "Substitute $r=7$: $C=2\\pi(7)=14\\pi$."],
+      "solution": "Circumference is $2\\pi r$, not $\\pi r$ and not $\\pi r^2$. With $r=7$ the circumference is $14\\pi$; the choice $49\\pi$ is the area, and $28\\pi$ comes from treating $7$ as the diameter and then doubling again.",
+      "verify": "r = 7\nC = 2*pi*r\nresult = \"$14\\\\pi$\" if simplify(C - 14*pi) == 0 else str(C)"
+    },
+    {
+      "id": "T20-M1-02", "module": 1, "n": 2, "difficulty": "E", "type": "MC",
+      "skill": "Circumference and area",
+      "stem": "A circle has a diameter of $10$ centimeters. What is the area of this circle, in square centimeters?",
+      "choices": ["$5\\pi$", "$10\\pi$", "$25\\pi$", "$100\\pi$"],
+      "answer": "C",
+      "steps": ["The radius is half the diameter: $r=\\frac{10}{2}=5$.", "Use $A=\\pi r^2=\\pi(5)^2=25\\pi$."],
+      "solution": "The area formula wants the radius, so halve the diameter first. Substituting $10$ directly into $\\pi r^2$ gives $100\\pi$, which is the classic diameter-for-radius error and is offered as choice D.",
+      "verify": "d = 10\nA = pi*Rational(d,2)**2\nresult = \"$25\\\\pi$\" if simplify(A - 25*pi) == 0 else str(A)"
+    },
+    {
+      "id": "T20-M1-03", "module": 1, "n": 3, "difficulty": "E", "type": "SPR",
+      "skill": "The equation of a circle",
+      "stem": "In the $xy$-plane, the equation of a circle is $(x-3)^2+(y+5)^2=49$. What is the radius of this circle?",
+      "answer": "7",
+      "steps": ["Compare with $(x-h)^2+(y-k)^2=r^2$.", "Here $r^2=49$, so $r=\\sqrt{49}=7$."],
+      "solution": "The number on the right side of the standard form is $r^2$, not $r$. Taking the square root gives a radius of $7$; reporting $49$ would be reporting the square of the radius.",
+      "verify": "result = sqrt(49)"
+    },
+    {
+      "id": "T20-M1-04", "module": 1, "n": 4, "difficulty": "E", "type": "MC",
+      "skill": "Radians",
+      "stem": "An angle has a measure of $60^\\circ$. What is the measure of this angle, in radians?",
+      "choices": ["$\\frac{\\pi}{6}$", "$\\frac{\\pi}{4}$", "$\\frac{\\pi}{3}$", "$\\frac{\\pi}{2}$"],
+      "answer": "C",
+      "steps": ["Multiply by $\\frac{\\pi}{180}$ to convert degrees to radians.", "$60\\cdot\\frac{\\pi}{180}=\\frac{\\pi}{3}$."],
+      "solution": "A half turn is $180^\\circ=\\pi$ radians, so one degree is $\\frac{\\pi}{180}$ radians. Since $60$ is a third of $180$, the answer is a third of $\\pi$.",
+      "verify": "result = pi*Rational(60,180)"
+    },
+    {
+      "id": "T20-M1-05", "module": 1, "n": 5, "difficulty": "E", "type": "MC",
+      "skill": "The equation of a circle",
+      "stem": "In the $xy$-plane, a circle has the equation $(x+4)^2+(y-1)^2=36$. What are the coordinates of the center of this circle?",
+      "choices": ["$(-4, 1)$", "$(-4, -1)$", "$(4, -1)$", "$(4, 1)$"],
+      "answer": "A",
+      "steps": ["The standard form is $(x-h)^2+(y-k)^2=r^2$.", "Write $(x+4)^2$ as $(x-(-4))^2$, so $h=-4$.", "$(y-1)^2$ gives $k=1$, so the center is $(-4,1)$."],
+      "solution": "The standard form subtracts the coordinates of the center, so the sign you read inside the parentheses is the opposite of the coordinate. A plus sign means a negative coordinate: $(x+4)^2$ puts the center at $x=-4$.",
+      "verify": "x, y = symbols('x y')\ne = expand((x+4)**2 + (y-1)**2 - 36)\nh = -Rational(e.coeff(x,1), 2)\nk = -Rational(e.coeff(y,1), 2)\nresult = (h, k)"
+    },
+    {
+      "id": "T20-M1-06", "module": 1, "n": 6, "difficulty": "E", "type": "MC",
+      "skill": "Circumference and area",
+      "stem": "The area of a circle is $36\\pi$ square meters. What is the radius of this circle, in meters?",
+      "choices": ["$6$", "$18$", "$36$", "$72$"],
+      "answer": "A",
+      "steps": ["Set $\\pi r^2=36\\pi$.", "Divide by $\\pi$: $r^2=36$.", "Take the positive square root: $r=6$."],
+      "solution": "Dividing by $\\pi$ first keeps the arithmetic exact. What remains is $r^2=36$, so the radius is $6$; the value $36$ is $r^2$ and $18$ would be half of that number, neither of which is a length here.",
+      "verify": "r = symbols('r', positive=True)\nresult = solve(pi*r**2 - 36*pi, r)[0]"
+    },
+    {
+      "id": "T20-M1-07", "module": 1, "n": 7, "difficulty": "E", "type": "MC",
+      "skill": "Central and inscribed angles",
+      "stem": "In the circle shown, $O$ is the center and the central angle $AOB$ measures $80^\\circ$. Point $C$ lies on the major arc $AB$. What is the measure of the inscribed angle $ACB$?",
+      "figure": "\\begin{center}\\begin{tikzpicture}[scale=1.0]\n\\draw[thick] (0,0) circle (1.6);\n\\coordinate (O) at (0,0);\n\\coordinate (A) at (230:1.6);\n\\coordinate (B) at (310:1.6);\n\\coordinate (C) at (90:1.6);\n\\draw (A)--(O)--(B);\n\\draw (A)--(C)--(B);\n\\fill (O) circle (1.4pt) (A) circle (1.4pt) (B) circle (1.4pt) (C) circle (1.4pt);\n\\node[below left] at (A) {$A$};\n\\node[below right] at (B) {$B$};\n\\node[above] at (C) {$C$};\n\\node[right] at (O) {$O$};\n\\end{tikzpicture}\\end{center}\\satnote{Figure not drawn to scale.}",
+      "choices": ["$20^\\circ$", "$40^\\circ$", "$80^\\circ$", "$160^\\circ$"],
+      "answer": "B",
+      "steps": ["The central angle $AOB$ and the inscribed angle $ACB$ intercept the same arc $AB$.", "An inscribed angle is half of the central angle on the same arc.", "$\\frac{1}{2}(80^\\circ)=40^\\circ$."],
+      "solution": "Both angles open onto the same arc, so the inscribed angle is half the central angle. The value $160^\\circ$ comes from doubling instead of halving, and $80^\\circ$ from assuming the two angles are equal.",
+      "verify": "central = 80\nresult = Rational(central, 2)"
+    },
+    {
+      "id": "T20-M1-08", "module": 1, "n": 8, "difficulty": "M", "type": "MC",
+      "skill": "Arc length",
+      "stem": "In a circle with radius $9$, a central angle measures $40^\\circ$. What is the length of the arc intercepted by this central angle?",
+      "choices": ["$2\\pi$", "$4\\pi$", "$9\\pi$", "$18\\pi$"],
+      "answer": "A",
+      "steps": ["The angle is $\\frac{40}{360}=\\frac{1}{9}$ of the full circle.", "The full circumference is $2\\pi(9)=18\\pi$.", "The arc is $\\frac{1}{9}(18\\pi)=2\\pi$."],
+      "solution": "An arc is the same fraction of the circumference that its central angle is of $360^\\circ$. Choice D is the entire circumference, choice B comes from using $9$ as the diameter's half again, and choice C is the sector's area, not a length.",
+      "verify": "r = 9\ns = Rational(40,360)*2*pi*r\nresult = \"$2\\\\pi$\" if simplify(s - 2*pi) == 0 else str(s)"
+    },
+    {
+      "id": "T20-M1-09", "module": 1, "n": 9, "difficulty": "M", "type": "MC",
+      "skill": "Sector area",
+      "stem": "In a circle with radius $6$, a sector has a central angle of $60^\\circ$. What is the area of this sector?",
+      "choices": ["$2\\pi$", "$6\\pi$", "$12\\pi$", "$36\\pi$"],
+      "answer": "B",
+      "steps": ["The sector is $\\frac{60}{360}=\\frac{1}{6}$ of the circle.", "The full area is $\\pi(6)^2=36\\pi$.", "The sector area is $\\frac{1}{6}(36\\pi)=6\\pi$."],
+      "solution": "Take the same fraction of the area that the angle is of the whole turn. Choice A, $2\\pi$, is the arc length of that sector, and choice D is the area of the entire circle.",
+      "verify": "r = 6\nA = Rational(60,360)*pi*r**2\nresult = \"$6\\\\pi$\" if simplify(A - 6*pi) == 0 else str(A)"
+    },
+    {
+      "id": "T20-M1-10", "module": 1, "n": 10, "difficulty": "M", "type": "SPR",
+      "skill": "Radians",
+      "stem": "An angle has a measure of $\\frac{5\\pi}{6}$ radians. What is the measure of this angle, in degrees?",
+      "answer": "150",
+      "steps": ["Multiply by $\\frac{180}{\\pi}$ to convert radians to degrees.", "$\\frac{5\\pi}{6}\\cdot\\frac{180}{\\pi}=5\\cdot 30=150$."],
+      "solution": "Because $\\pi$ radians is $180^\\circ$, the factor $\\frac{180}{\\pi}$ cancels the $\\pi$ and leaves a plain number. Five sixths of $180$ is $150$.",
+      "verify": "result = Rational(5,6)*180"
+    },
+    {
+      "id": "T20-M1-11", "module": 1, "n": 11, "difficulty": "M", "type": "MC",
+      "skill": "The equation of a circle",
+      "stem": "In the $xy$-plane, a circle has center $(0,3)$ and radius $5$. Which of the following is an equation of this circle?",
+      "choices": ["$x^2+(y+3)^2=25$", "$x^2+(y-3)^2=5$", "$(x-3)^2+y^2=25$", "$x^2+(y-3)^2=25$"],
+      "answer": "D",
+      "steps": ["Use $(x-h)^2+(y-k)^2=r^2$ with $h=0$, $k=3$, $r=5$.", "$(x-0)^2+(y-3)^2=5^2$.", "Simplify: $x^2+(y-3)^2=25$."],
+      "solution": "The center is subtracted, so a center of $y=3$ produces $(y-3)^2$, and the right side is $r^2=25$, not $r=5$. Choice A flips the sign of $k$ and choice B leaves the radius unsquared.",
+      "verify": "x, y = symbols('x y')\nh, k, r = 0, 3, 5\neqn = expand((x-h)**2 + (y-k)**2 - r**2)\nresult = \"$x^2+(y-3)^2=25$\" if simplify(eqn - expand(x**2+(y-3)**2-25)) == 0 else \"mismatch\""
+    },
+    {
+      "id": "T20-M1-12", "module": 1, "n": 12, "difficulty": "M", "type": "SPR",
+      "skill": "The equation of a circle",
+      "stem": "In the $xy$-plane, the graph of $(x+2)^2+(y-6)^2=100$ is a circle with center $(h,k)$ and radius $r$. What is the value of $h+k+r$?",
+      "answer": "14",
+      "steps": ["From $(x+2)^2$, $h=-2$; from $(y-6)^2$, $k=6$.", "From $r^2=100$, $r=10$.", "$h+k+r=-2+6+10=14$."],
+      "solution": "Each piece is read off separately, and the only two places to slip are the sign of $h$ and taking the square root for $r$. With $h=-2$, $k=6$ and $r=10$, the sum is $14$.",
+      "verify": "h, k, r = -2, 6, 10\nresult = h + k + r"
+    },
+    {
+      "id": "T20-M1-13", "module": 1, "n": 13, "difficulty": "M", "type": "MC",
+      "skill": "Angle in a semicircle",
+      "stem": "In the figure, $\\overline{AB}$ is a diameter of the circle and point $C$ lies on the circle. If the measure of angle $CAB$ is $35^\\circ$, what is the measure of angle $ABC$?",
+      "figure": "\\begin{center}\\begin{tikzpicture}[scale=1.0]\n\\draw[thick] (0,0) circle (1.6);\n\\coordinate (A) at (180:1.6);\n\\coordinate (B) at (0:1.6);\n\\coordinate (C) at (65:1.6);\n\\draw (A)--(B)--(C)--cycle;\n\\fill (A) circle (1.4pt) (B) circle (1.4pt) (C) circle (1.4pt);\n\\node[left] at (A) {$A$};\n\\node[right] at (B) {$B$};\n\\node[above right] at (C) {$C$};\n\\end{tikzpicture}\\end{center}\\satnote{Figure not drawn to scale.}",
+      "choices": ["$35^\\circ$", "$45^\\circ$", "$55^\\circ$", "$90^\\circ$"],
+      "answer": "C",
+      "steps": ["$\\overline{AB}$ is a diameter, so angle $ACB$ is inscribed in a semicircle and measures $90^\\circ$.", "The angles of triangle $ABC$ sum to $180^\\circ$.", "$\\angle ABC=180^\\circ-90^\\circ-35^\\circ=55^\\circ$."],
+      "solution": "An inscribed angle that intercepts a semicircle is half of $180^\\circ$, so it is a right angle. That makes triangle $ABC$ right-angled at $C$, and the two acute angles must be complementary, giving $55^\\circ$.",
+      "verify": "result = 180 - 90 - 35"
+    },
+    {
+      "id": "T20-M1-14", "module": 1, "n": 14, "difficulty": "M", "type": "MC",
+      "skill": "Tangent lines",
+      "stem": "A line is tangent to a circle with center $O$ at point $P$. The radius of the circle is $5$, and $Q$ is a point on the tangent line such that $OQ=13$. What is the length of $\\overline{PQ}$?",
+      "choices": ["$5$", "$8$", "$12$", "$18$"],
+      "answer": "C",
+      "steps": ["A tangent is perpendicular to the radius at the point of tangency, so angle $OPQ=90^\\circ$.", "Triangle $OPQ$ is a right triangle with legs $OP=5$ and $PQ$, and hypotenuse $OQ=13$.", "$PQ=\\sqrt{13^2-5^2}=\\sqrt{144}=12$."],
+      "solution": "The tangent-radius right angle is what turns this into a Pythagorean triple: $5$-$12$-$13$. Choices B and D come from subtracting or adding the two given lengths instead of using the Pythagorean theorem.",
+      "verify": "result = sqrt(13**2 - 5**2)"
+    },
+    {
+      "id": "T20-M1-15", "module": 1, "n": 15, "difficulty": "M", "type": "MC",
+      "skill": "Arc length in radians",
+      "stem": "A circle has a radius of $10$. A central angle of $\\frac{3\\pi}{4}$ radians intercepts an arc of this circle. What is the length of that arc?",
+      "choices": ["$\\frac{15\\pi}{8}$", "$\\frac{15\\pi}{4}$", "$\\frac{15\\pi}{2}$", "$30\\pi$"],
+      "answer": "C",
+      "steps": ["With the angle in radians, use $s=r\\theta$.", "$s=10\\cdot\\frac{3\\pi}{4}=\\frac{30\\pi}{4}$.", "Simplify: $s=\\frac{15\\pi}{2}$."],
+      "solution": "In radians the arc length is a single product, $r\\theta$, with no fraction of $360$ involved. Choice B is what you get using $r=5$, half the radius, and choice D uses $\\theta=3\\pi$ instead of $\\frac{3\\pi}{4}$.",
+      "verify": "r = 10\ntheta = Rational(3,4)*pi\ns = r*theta\nresult = \"$\\\\frac{15\\\\pi}{2}$\" if simplify(s - Rational(15,2)*pi) == 0 else str(s)"
+    },
+    {
+      "id": "T20-M1-16", "module": 1, "n": 16, "difficulty": "H", "type": "MC",
+      "skill": "Completing the square",
+      "stem": "In the $xy$-plane, the equation $x^2+y^2-6x+8y-11=0$ represents a circle. What is the radius of this circle?",
+      "choices": ["$\\sqrt{11}$", "$\\sqrt{14}$", "$6$", "$36$"],
+      "answer": "C",
+      "steps": ["Group and move the constant: $(x^2-6x)+(y^2+8y)=11$.", "Complete the squares by adding $9$ and $16$ to both sides.", "$(x-3)^2+(y+4)^2=11+9+16=36$.", "So $r=\\sqrt{36}=6$."],
+      "solution": "Whatever you add on the left to complete a square must also be added on the right, which is why $11$ grows to $36$. Choice A comes from forgetting to add $9$ and $16$ on the right, choice B from subtracting the constant instead of adding it, and choice D reports $r^2$ rather than $r$.",
+      "verify": "rsq = (6/S(2))**2 + (8/S(2))**2 + 11\nresult = sqrt(rsq)"
+    },
+    {
+      "id": "T20-M1-17", "module": 1, "n": 17, "difficulty": "H", "type": "SPR",
+      "skill": "Completing the square",
+      "stem": "In the $xy$-plane, the graph of $x^2+y^2+10x-4y+13=0$ is a circle. What is the radius of this circle?",
+      "answer": "4",
+      "steps": ["Rearrange: $(x^2+10x)+(y^2-4y)=-13$.", "Add $25$ and $4$ to both sides.", "$(x+5)^2+(y-2)^2=-13+25+4=16$.", "$r=\\sqrt{16}=4$."],
+      "solution": "Moving the $+13$ across the equal sign makes it $-13$; the completing-the-square constants $25$ and $4$ then push the right side up to $16$. The radius is the square root of that, namely $4$.",
+      "verify": "result = sqrt(25 + 4 - 13)"
+    },
+    {
+      "id": "T20-M1-18", "module": 1, "n": 18, "difficulty": "H", "type": "MC",
+      "skill": "Completing the square",
+      "stem": "In the $xy$-plane, the equation $x^2+y^2-12x+2y+12=0$ represents a circle. What are the coordinates of the center of this circle?",
+      "choices": ["$(-6, 1)$", "$(-6, -1)$", "$(6, 1)$", "$(6, -1)$"],
+      "answer": "D",
+      "steps": ["Group: $(x^2-12x)+(y^2+2y)=-12$.", "Complete the squares: add $36$ and $1$ to both sides.", "$(x-6)^2+(y+1)^2=25$.", "The center is $(6,-1)$."],
+      "solution": "Half of $-12$ is $-6$, which lands in the equation as $(x-6)^2$ and therefore as $h=6$; half of $2$ is $1$, giving $(y+1)^2$ and $k=-1$. The signs of the centre are opposite to the signs inside the parentheses, and the three distractors are exactly the three ways to get one or both signs wrong.",
+      "verify": "x, y = symbols('x y')\ne = expand(x**2 + y**2 - 12*x + 2*y + 12)\nh = -Rational(e.coeff(x,1), 2)\nk = -Rational(e.coeff(y,1), 2)\nresult = (h, k)"
+    },
+    {
+      "id": "T20-M1-19", "module": 1, "n": 19, "difficulty": "H", "type": "MC",
+      "skill": "Sector area",
+      "stem": "A sector of a circle has a central angle of $120^\\circ$ and an area of $27\\pi$. What is the radius of the circle?",
+      "choices": ["$3$", "$9$", "$27$", "$81$"],
+      "answer": "B",
+      "steps": ["The sector is $\\frac{120}{360}=\\frac{1}{3}$ of the circle, so $\\frac{1}{3}\\pi r^2=27\\pi$.", "Multiply by $3$: $\\pi r^2=81\\pi$.", "Divide by $\\pi$ and take the square root: $r^2=81$, so $r=9$."],
+      "solution": "Reverse the sector formula: if a third of the area is $27\\pi$, the whole area is $81\\pi$. Choice D reports $r^2$ instead of $r$, and choice A comes from dividing $27$ by the angle fraction in the wrong direction.",
+      "verify": "r = symbols('r', positive=True)\nresult = solve(Rational(120,360)*pi*r**2 - 27*pi, r)[0]"
+    },
+    {
+      "id": "T20-M1-20", "module": 1, "n": 20, "difficulty": "H", "type": "MC",
+      "skill": "Inscribed angles and arcs",
+      "stem": "In a circle with radius $12$, an inscribed angle of $30^\\circ$ intercepts arc $AB$. What is the length of arc $AB$?",
+      "choices": ["$\\pi$", "$2\\pi$", "$3\\pi$", "$4\\pi$"],
+      "answer": "D",
+      "steps": ["An inscribed angle is half its intercepted arc, so arc $AB$ measures $2(30^\\circ)=60^\\circ$.", "The circumference is $2\\pi(12)=24\\pi$.", "The arc is $\\frac{60}{360}(24\\pi)=4\\pi$."],
+      "solution": "The inscribed angle must be doubled before it can be used as a fraction of $360^\\circ$. Using $30^\\circ$ directly gives $2\\pi$, which is choice B and the mistake this question is built around.",
+      "verify": "r = 12\ncentral = 2*30\ns = Rational(central,360)*2*pi*r\nresult = \"$4\\\\pi$\" if simplify(s - 4*pi) == 0 else str(s)"
+    },
+    {
+      "id": "T20-M1-21", "module": 1, "n": 21, "difficulty": "H", "type": "SPR",
+      "skill": "The equation of a circle",
+      "stem": "In the $xy$-plane, a circle has center $(4,-3)$ and passes through the point $(9,9)$. What is the radius of this circle?",
+      "answer": "13",
+      "steps": ["The radius is the distance from the center to any point on the circle.", "$r=\\sqrt{(9-4)^2+(9-(-3))^2}=\\sqrt{25+144}$.", "$r=\\sqrt{169}=13$."],
+      "solution": "Every point on a circle is exactly one radius from the center, so the distance formula gives the radius directly. The legs $5$ and $12$ form a Pythagorean triple with hypotenuse $13$.",
+      "verify": "result = sqrt((9-4)**2 + (9-(-3))**2)"
+    },
+    {
+      "id": "T20-M1-22", "module": 1, "n": 22, "difficulty": "H", "type": "MC",
+      "skill": "Completing the square",
+      "wide": true,
+      "stem": "Which of the following equations is equivalent to $x^2+y^2+4x-10y+20=0$?",
+      "choices": ["$(x+2)^2+(y-5)^2=9$", "$(x+2)^2+(y-5)^2=29$", "$(x-2)^2+(y+5)^2=9$", "$(x+2)^2+(y-5)^2=3$"],
+      "answer": "A",
+      "steps": ["Group: $(x^2+4x)+(y^2-10y)=-20$.", "Add $4$ and $25$ to both sides.", "$(x+2)^2+(y-5)^2=-20+4+25=9$."],
+      "solution": "Completing both squares turns the expanded equation into standard form, showing a circle of centre $(-2,5)$ and radius $3$. Choice C flips both signs inside the parentheses, choice B adds $20$ instead of subtracting it, and choice D writes $r$ where $r^2$ belongs.",
+      "verify": "x, y = symbols('x y')\nlhs = x**2 + y**2 + 4*x - 10*y + 20\nstd = expand((x+2)**2 + (y-5)**2 - 9)\nresult = \"$(x+2)^2+(y-5)^2=9$\" if simplify(lhs - std) == 0 else \"mismatch\""
+    },
+
+    {
+      "id": "T20-M2-01", "module": 2, "n": 23, "difficulty": "E", "type": "MC",
+      "skill": "Circumference and area",
+      "stem": "The circumference of a circle is $36\\pi$ centimeters. What is the diameter of this circle, in centimeters?",
+      "choices": ["$6$", "$18$", "$36$", "$72$"],
+      "answer": "C",
+      "steps": ["Use $C=\\pi d$.", "$\\pi d=36\\pi$, so $d=36$."],
+      "solution": "Written as $C=\\pi d$, the circumference formula gives the diameter in one step. Choice B is the radius, and choice D doubles the diameter a second time.",
+      "verify": "C = 36*pi\nresult = C/pi"
+    },
+    {
+      "id": "T20-M2-02", "module": 2, "n": 24, "difficulty": "E", "type": "MC",
+      "skill": "Circumference and area",
+      "stem": "The area of a circle is $49\\pi$ square inches. What is the circumference of this circle, in inches?",
+      "choices": ["$7\\pi$", "$14\\pi$", "$28\\pi$", "$98\\pi$"],
+      "answer": "B",
+      "steps": ["From $\\pi r^2=49\\pi$, $r^2=49$ and $r=7$.", "Then $C=2\\pi r=2\\pi(7)=14\\pi$."],
+      "solution": "There is no shortcut from area to circumference; you must pass through the radius. Once $r=7$, the circumference is $14\\pi$. Choice D comes from doubling the area instead.",
+      "verify": "r = symbols('r', positive=True)\nrr = solve(pi*r**2 - 49*pi, r)[0]\nC = 2*pi*rr\nresult = \"$14\\\\pi$\" if simplify(C - 14*pi) == 0 else str(C)"
+    },
+    {
+      "id": "T20-M2-03", "module": 2, "n": 25, "difficulty": "E", "type": "SPR",
+      "skill": "Radians",
+      "stem": "An angle has a measure of $\\frac{3\\pi}{4}$ radians. What is the measure of this angle, in degrees?",
+      "answer": "135",
+      "steps": ["Multiply by $\\frac{180}{\\pi}$.", "$\\frac{3\\pi}{4}\\cdot\\frac{180}{\\pi}=3\\cdot 45=135$."],
+      "solution": "Since $\\pi$ radians is a straight angle of $180^\\circ$, three quarters of $\\pi$ is three quarters of $180$, which is $135$.",
+      "verify": "result = Rational(3,4)*180"
+    },
+    {
+      "id": "T20-M2-04", "module": 2, "n": 26, "difficulty": "E", "type": "MC",
+      "skill": "The equation of a circle",
+      "stem": "In the $xy$-plane, the equation of a circle is $(x-7)^2+(y+2)^2=45$. What is the radius of this circle?",
+      "choices": ["$3\\sqrt{5}$", "$5\\sqrt{3}$", "$9\\sqrt{5}$", "$45$"],
+      "answer": "A",
+      "steps": ["The right side is $r^2$, so $r=\\sqrt{45}$.", "Simplify: $\\sqrt{45}=\\sqrt{9\\cdot 5}=3\\sqrt{5}$."],
+      "solution": "The radius is the square root of the right-hand side, and $45$ has the perfect-square factor $9$, so the radical simplifies to $3\\sqrt{5}$. Choice D reports $r^2$ as if it were $r$, and choice B mixes up which factor comes out of the radical.",
+      "verify": "result = \"$3\\\\sqrt{5}$\" if simplify(sqrt(45) - 3*sqrt(5)) == 0 else str(sqrt(45))"
+    },
+    {
+      "id": "T20-M2-05", "module": 2, "n": 27, "difficulty": "E", "type": "MC",
+      "skill": "Sector area",
+      "stem": "A sector of a circle with radius $8$ has a central angle of $45^\\circ$. What is the area of this sector?",
+      "choices": ["$2\\pi$", "$4\\pi$", "$8\\pi$", "$16\\pi$"],
+      "answer": "C",
+      "steps": ["The sector is $\\frac{45}{360}=\\frac{1}{8}$ of the circle.", "The full area is $\\pi(8)^2=64\\pi$.", "The sector area is $\\frac{1}{8}(64\\pi)=8\\pi$."],
+      "solution": "One eighth of the circle's area is $8\\pi$. Choice A is the arc length of the same sector, a length rather than an area, and choice D would be the area of a $90^\\circ$ sector.",
+      "verify": "r = 8\nA = Rational(45,360)*pi*r**2\nresult = \"$8\\\\pi$\" if simplify(A - 8*pi) == 0 else str(A)"
+    },
+    {
+      "id": "T20-M2-06", "module": 2, "n": 28, "difficulty": "E", "type": "MC",
+      "skill": "Angle in a semicircle",
+      "stem": "In the figure, $\\overline{BC}$ is a diameter of the circle and point $A$ lies on the circle. If the measure of angle $ABC$ is $28^\\circ$, what is the measure of angle $BCA$?",
+      "figure": "\\begin{center}\\begin{tikzpicture}[scale=1.0]\n\\draw[thick] (0,0) circle (1.6);\n\\coordinate (B) at (180:1.6);\n\\coordinate (C) at (0:1.6);\n\\coordinate (A) at (110:1.6);\n\\draw (B)--(C)--(A)--cycle;\n\\fill (A) circle (1.4pt) (B) circle (1.4pt) (C) circle (1.4pt);\n\\node[left] at (B) {$B$};\n\\node[right] at (C) {$C$};\n\\node[above left] at (A) {$A$};\n\\end{tikzpicture}\\end{center}\\satnote{Figure not drawn to scale.}",
+      "choices": ["$28^\\circ$", "$62^\\circ$", "$90^\\circ$", "$152^\\circ$"],
+      "answer": "B",
+      "steps": ["Angle $BAC$ is inscribed in a semicircle, so it measures $90^\\circ$.", "The angles of triangle $ABC$ sum to $180^\\circ$.", "$\\angle BCA=180^\\circ-90^\\circ-28^\\circ=62^\\circ$."],
+      "solution": "Because $\\overline{BC}$ is a diameter, the inscribed angle at $A$ intercepts a semicircle and is right. The remaining two angles are then complementary, so $28^\\circ$ and $62^\\circ$ pair up. Choice D is $180^\\circ-28^\\circ$, which forgets the right angle.",
+      "verify": "result = 180 - 90 - 28"
+    },
+    {
+      "id": "T20-M2-07", "module": 2, "n": 29, "difficulty": "E", "type": "MC",
+      "skill": "Radians",
+      "stem": "An angle has a measure of $210^\\circ$. What is the measure of this angle, in radians?",
+      "choices": ["$\\frac{7\\pi}{12}$", "$\\frac{5\\pi}{6}$", "$\\frac{6\\pi}{7}$", "$\\frac{7\\pi}{6}$"],
+      "answer": "D",
+      "steps": ["Multiply by $\\frac{\\pi}{180}$: $210\\cdot\\frac{\\pi}{180}=\\frac{210\\pi}{180}$.", "Reduce by $30$: $\\frac{7\\pi}{6}$."],
+      "solution": "Since $210^\\circ$ is more than a straight angle, the answer must be more than $\\pi$, which already eliminates the first three choices. Reducing $\\frac{210}{180}$ gives $\\frac{7}{6}$, and choice C is that fraction accidentally inverted.",
+      "verify": "v = pi*Rational(210,180)\nresult = \"$\\\\frac{7\\\\pi}{6}$\" if simplify(v - Rational(7,6)*pi) == 0 else str(v)"
+    },
+    {
+      "id": "T20-M2-08", "module": 2, "n": 30, "difficulty": "M", "type": "SPR",
+      "skill": "The equation of a circle",
+      "stem": "In the $xy$-plane, a circle has center $(2,-2)$ and passes through the point $(6,1)$. What is the radius of this circle?",
+      "answer": "5",
+      "steps": ["Use the distance formula from the center to the given point.", "$r=\\sqrt{(6-2)^2+(1-(-2))^2}=\\sqrt{16+9}$.", "$r=\\sqrt{25}=5$."],
+      "solution": "The radius is the distance from the centre to any point of the circle, and here the horizontal and vertical gaps are $4$ and $3$, the legs of a $3$-$4$-$5$ right triangle. Subtracting the $y$-coordinates carefully matters: $1-(-2)=3$, not $-1$.",
+      "verify": "result = sqrt((6-2)**2 + (1-(-2))**2)"
+    },
+    {
+      "id": "T20-M2-09", "module": 2, "n": 31, "difficulty": "M", "type": "MC",
+      "skill": "Sector area",
+      "stem": "A sector of a circle with radius $12$ has an area of $24\\pi$. What is the measure, in degrees, of the central angle of this sector?",
+      "choices": ["$30$", "$45$", "$60$", "$120$"],
+      "answer": "C",
+      "steps": ["The whole circle has area $\\pi(12)^2=144\\pi$.", "The sector is $\\frac{24\\pi}{144\\pi}=\\frac{1}{6}$ of the circle.", "So the angle is $\\frac{1}{6}(360^\\circ)=60^\\circ$."],
+      "solution": "Compare the sector's area with the whole circle's area to find what fraction of the circle it is, then take that fraction of $360^\\circ$. Choice D doubles the correct fraction, which is what happens if you compare with the area of a semicircle instead.",
+      "verify": "t = symbols('t', positive=True)\nresult = solve(Rational(1,360)*t*pi*12**2 - 24*pi, t)[0]"
+    },
+    {
+      "id": "T20-M2-10", "module": 2, "n": 32, "difficulty": "M", "type": "SPR",
+      "skill": "Arc length",
+      "stem": "In a circle with radius $15$, an arc has length $10\\pi$. What is the measure, in degrees, of the central angle that intercepts this arc?",
+      "answer": "120",
+      "steps": ["The circumference is $2\\pi(15)=30\\pi$.", "The arc is $\\frac{10\\pi}{30\\pi}=\\frac{1}{3}$ of the circle.", "The angle is $\\frac{1}{3}(360^\\circ)=120^\\circ$."],
+      "solution": "The ratio of the arc to the circumference is the same as the ratio of the central angle to $360^\\circ$, and the factors of $\\pi$ cancel in that ratio. One third of a full turn is $120^\\circ$.",
+      "verify": "t = symbols('t', positive=True)\nresult = solve(Rational(1,360)*t*2*pi*15 - 10*pi, t)[0]"
+    },
+    {
+      "id": "T20-M2-11", "module": 2, "n": 33, "difficulty": "M", "type": "MC",
+      "skill": "The equation of a circle",
+      "wide": true,
+      "stem": "In the $xy$-plane, the points $(1,2)$ and $(7,10)$ are the endpoints of a diameter of a circle. Which of the following is an equation of this circle?",
+      "choices": ["$(x-4)^2+(y-6)^2=25$", "$(x-4)^2+(y-6)^2=100$", "$(x+4)^2+(y+6)^2=25$", "$(x-1)^2+(y-2)^2=100$"],
+      "answer": "A",
+      "steps": ["The center is the midpoint: $\\left(\\frac{1+7}{2},\\frac{2+10}{2}\\right)=(4,6)$.", "The diameter has length $\\sqrt{6^2+8^2}=10$, so $r=5$.", "The equation is $(x-4)^2+(y-6)^2=25$."],
+      "solution": "The centre of a circle is the midpoint of any diameter, and the radius is half the diameter's length. Choice B uses the full diameter $10$ as the radius, and choice D centres the circle at an endpoint instead of the midpoint.",
+      "verify": "h = Rational(1+7,2)\nk = Rational(2+10,2)\nr2 = Rational((7-1)**2 + (10-2)**2, 4)\nresult = \"$(x-4)^2+(y-6)^2=25$\" if (h == 4 and k == 6 and r2 == 25) else \"mismatch\""
+    },
+    {
+      "id": "T20-M2-12", "module": 2, "n": 34, "difficulty": "M", "type": "MC",
+      "skill": "Arc length in radians",
+      "stem": "A central angle of $\\frac{2\\pi}{3}$ radians intercepts an arc of length $12\\pi$. What is the radius of the circle?",
+      "choices": ["$6$", "$9$", "$12$", "$18$"],
+      "answer": "D",
+      "steps": ["Use $s=r\\theta$ with $s=12\\pi$ and $\\theta=\\frac{2\\pi}{3}$.", "$r=\\frac{12\\pi}{2\\pi/3}=12\\pi\\cdot\\frac{3}{2\\pi}$.", "$r=18$."],
+      "solution": "Dividing by a fraction multiplies by its reciprocal, and the $\\pi$'s cancel, leaving $r=18$. Choice A comes from dividing by $2\\pi$ and forgetting the $\\frac{1}{3}$, and choice B is half the correct radius.",
+      "verify": "r = symbols('r', positive=True)\nresult = solve(r*Rational(2,3)*pi - 12*pi, r)[0]"
+    },
+    {
+      "id": "T20-M2-13", "module": 2, "n": 35, "difficulty": "M", "type": "SPR",
+      "skill": "Completing the square",
+      "stem": "In the $xy$-plane, the graph of $x^2+y^2-8x+6y-11=0$ is a circle. What is the radius of this circle?",
+      "answer": "6",
+      "steps": ["Group: $(x^2-8x)+(y^2+6y)=11$.", "Add $16$ and $9$ to both sides.", "$(x-4)^2+(y+3)^2=11+16+9=36$.", "$r=\\sqrt{36}=6$."],
+      "solution": "Half of $-8$ squared is $16$, and half of $6$ squared is $9$; both must be added on the right as well, taking $11$ up to $36$. The radius is the square root, $6$, not $36$.",
+      "verify": "result = sqrt(16 + 9 + 11)"
+    },
+    {
+      "id": "T20-M2-14", "module": 2, "n": 36, "difficulty": "M", "type": "MC",
+      "skill": "Central and inscribed angles",
+      "stem": "In a circle, a central angle and an inscribed angle intercept the same arc. The inscribed angle measures $(3x)^\\circ$ and the central angle measures $(x+40)^\\circ$. What is the value of $x$?",
+      "choices": ["$8$", "$20$", "$40$", "$80$"],
+      "answer": "A",
+      "steps": ["The central angle is twice the inscribed angle on the same arc.", "$x+40=2(3x)$.", "$x+40=6x$, so $40=5x$ and $x=8$."],
+      "solution": "Set the central angle equal to twice the inscribed angle, not equal to it. Solving gives $x=8$, so the inscribed angle is $24^\\circ$ and the central angle is $48^\\circ$. Choice B is what you get from setting the two angles equal, and choice D from doubling the central angle instead of the inscribed one.",
+      "verify": "x = symbols('x')\nresult = solve(Eq(x + 40, 2*(3*x)), x)[0]"
+    },
+    {
+      "id": "T20-M2-15", "module": 2, "n": 37, "difficulty": "M", "type": "MC",
+      "skill": "Sector area",
+      "stem": "The circumference of a circle is $24\\pi$. What is the area of a sector of this circle with a central angle of $30^\\circ$?",
+      "choices": ["$2\\pi$", "$6\\pi$", "$12\\pi$", "$144\\pi$"],
+      "answer": "C",
+      "steps": ["From $2\\pi r=24\\pi$, the radius is $r=12$.", "The full area is $\\pi(12)^2=144\\pi$.", "The sector is $\\frac{30}{360}=\\frac{1}{12}$ of that: $\\frac{1}{12}(144\\pi)=12\\pi$."],
+      "solution": "The circumference is only there to hand you the radius. Choice A is the arc length of the sector, and choice D is the area of the entire circle rather than of one twelfth of it.",
+      "verify": "r = symbols('r', positive=True)\nrr = solve(2*pi*r - 24*pi, r)[0]\nA = Rational(30,360)*pi*rr**2\nresult = \"$12\\\\pi$\" if simplify(A - 12*pi) == 0 else str(A)"
+    },
+    {
+      "id": "T20-M2-16", "module": 2, "n": 38, "difficulty": "H", "type": "MC",
+      "skill": "Arcs and sectors",
+      "stem": "A sector of a circle with radius $12$ has an arc length of $8\\pi$. What is the area of this sector?",
+      "choices": ["$4\\pi$", "$24\\pi$", "$48\\pi$", "$96\\pi$"],
+      "answer": "C",
+      "steps": ["The circumference is $2\\pi(12)=24\\pi$, so the sector is $\\frac{8\\pi}{24\\pi}=\\frac{1}{3}$ of the circle.", "The full area is $\\pi(12)^2=144\\pi$.", "The sector area is $\\frac{1}{3}(144\\pi)=48\\pi$."],
+      "solution": "The same fraction that produced the arc produces the sector, so find the fraction once and reuse it. Equivalently, the sector's area is $\\frac{1}{2}rs=\\frac{1}{2}(12)(8\\pi)=48\\pi$. Choice D is that product without the factor of one half.",
+      "verify": "r = 12\ns = 8*pi\nA = r*s/2\nresult = \"$48\\\\pi$\" if simplify(A - 48*pi) == 0 else str(A)"
+    },
+    {
+      "id": "T20-M2-17", "module": 2, "n": 39, "difficulty": "H", "type": "MC",
+      "skill": "Completing the square",
+      "wide": true,
+      "stem": "Which of the following equations is equivalent to $x^2+y^2+6x-14y+22=0$?",
+      "choices": ["$(x+3)^2+(y-7)^2=36$", "$(x-3)^2+(y+7)^2=36$", "$(x+3)^2+(y-7)^2=6$", "$(x+3)^2+(y-7)^2=58$"],
+      "answer": "A",
+      "steps": ["Group: $(x^2+6x)+(y^2-14y)=-22$.", "Add $9$ and $49$ to both sides.", "$(x+3)^2+(y-7)^2=-22+9+49=36$."],
+      "solution": "Half of $6$ is $3$ and half of $-14$ is $-7$, so the completed squares are $(x+3)^2$ and $(y-7)^2$, and the constants $9$ and $49$ must be added to the right of $-22$. Choice D keeps $+22$ on the right, and choice C writes the radius where $r^2$ belongs.",
+      "verify": "x, y = symbols('x y')\nlhs = x**2 + y**2 + 6*x - 14*y + 22\nstd = expand((x+3)**2 + (y-7)**2 - 36)\nresult = \"$(x+3)^2+(y-7)^2=36$\" if simplify(lhs - std) == 0 else \"mismatch\""
+    },
+    {
+      "id": "T20-M2-18", "module": 2, "n": 40, "difficulty": "H", "type": "MC",
+      "skill": "Completing the square",
+      "stem": "In the $xy$-plane, the equation $2x^2+2y^2-12x+4y-6=0$ represents a circle. What is the radius of this circle?",
+      "choices": ["$\\sqrt{7}$", "$\\sqrt{13}$", "$\\sqrt{26}$", "$13$"],
+      "answer": "B",
+      "steps": ["Divide the entire equation by $2$: $x^2+y^2-6x+2y-3=0$.", "Group and move the constant: $(x^2-6x)+(y^2+2y)=3$.", "Add $9$ and $1$ to both sides: $(x-3)^2+(y+1)^2=13$.", "$r=\\sqrt{13}$."],
+      "solution": "Completing the square only works when the coefficients of $x^2$ and $y^2$ are $1$, so divide by $2$ before doing anything else. Skipping that division doubles the right side and gives $\\sqrt{26}$; choice D reports $r^2$ as the radius.",
+      "verify": "x, y = symbols('x y')\nlhs = expand((2*x**2 + 2*y**2 - 12*x + 4*y - 6)/2)\nstd = expand((x-3)**2 + (y+1)**2 - 13)\nresult = sqrt(13) if simplify(lhs - std) == 0 else 0"
+    },
+    {
+      "id": "T20-M2-19", "module": 2, "n": 41, "difficulty": "H", "type": "SPR",
+      "skill": "Completing the square",
+      "stem": "In the $xy$-plane, the graph of $x^2+y^2-10x+4y+20=0$ is a circle with center $(h,k)$ and radius $r$. What is the value of $h+k+r$?",
+      "answer": "6",
+      "steps": ["Group: $(x^2-10x)+(y^2+4y)=-20$.", "Add $25$ and $4$ to both sides: $(x-5)^2+(y+2)^2=9$.", "So $h=5$, $k=-2$, $r=3$.", "$h+k+r=5-2+3=6$."],
+      "solution": "Completing both squares gives centre $(5,-2)$ and $r^2=9$, so the radius is $3$. Every one of the three values is a place to slip a sign or forget a square root, and the sum $6$ only comes out right if all three are read correctly.",
+      "verify": "h, k = 5, -2\nr = sqrt(25 + 4 - 20)\nresult = h + k + r"
+    },
+    {
+      "id": "T20-M2-20", "module": 2, "n": 42, "difficulty": "H", "type": "MC",
+      "skill": "The equation of a circle",
+      "wide": true,
+      "stem": "In the $xy$-plane, a circle has center $(3,4)$ and is tangent to the $x$-axis. Which of the following is an equation of this circle?",
+      "choices": ["$(x-3)^2+(y-4)^2=9$", "$(x+3)^2+(y+4)^2=16$", "$(x-3)^2+(y-4)^2=25$", "$(x-3)^2+(y-4)^2=16$"],
+      "answer": "D",
+      "steps": ["A circle tangent to the $x$-axis touches it at exactly one point, so the radius equals the distance from the center to the $x$-axis.", "That distance is $|4|=4$, so $r=4$.", "The equation is $(x-3)^2+(y-4)^2=16$."],
+      "solution": "Tangency to a horizontal line means the vertical distance from the centre to that line is exactly the radius, so $r=4$ and $r^2=16$. Choice A uses the $x$-coordinate as the radius, and choice C uses the distance from the origin to the centre.",
+      "verify": "h, k = 3, 4\nr = Abs(k)\nresult = \"$(x-3)^2+(y-4)^2=16$\" if simplify(r**2 - 16) == 0 else \"mismatch\""
+    },
+    {
+      "id": "T20-M2-21", "module": 2, "n": 43, "difficulty": "H", "type": "SPR",
+      "skill": "Completing the square",
+      "stem": "In the $xy$-plane, the graph of $x^2+y^2-4x-2y-20=0$ is a circle. The area of this circle is $k\\pi$. What is the value of $k$?",
+      "answer": "25",
+      "steps": ["Group: $(x^2-4x)+(y^2-2y)=20$.", "Add $4$ and $1$ to both sides: $(x-2)^2+(y-1)^2=25$.", "So $r^2=25$ and the area is $\\pi r^2=25\\pi$.", "Therefore $k=25$."],
+      "solution": "Because the area formula uses $r^2$ and completing the square delivers $r^2$ directly, there is no need to take a square root at all here. The right side, $25$, is already the value of $k$.",
+      "verify": "rsq = 4 + 1 + 20\nA = pi*rsq\nresult = A/pi"
+    },
+    {
+      "id": "T20-M2-22", "module": 2, "n": 44, "difficulty": "H", "type": "MC",
+      "skill": "Completing the square",
+      "stem": "In the $xy$-plane, the equation $x^2+y^2-2x+8y=8$ represents a circle. What is the circumference of this circle?",
+      "choices": ["$5\\pi$", "$10\\pi$", "$25\\pi$", "$50\\pi$"],
+      "answer": "B",
+      "steps": ["Group: $(x^2-2x)+(y^2+8y)=8$.", "Add $1$ and $16$ to both sides: $(x-1)^2+(y+4)^2=25$.", "So $r=5$.", "$C=2\\pi r=10\\pi$."],
+      "solution": "Completing the square gives $r^2=25$, so the radius is $5$ and the circumference is $10\\pi$. Choice A uses $\\pi r$ instead of $2\\pi r$, and choice C is the area of the circle rather than its circumference.",
+      "verify": "r = sqrt(1 + 16 + 8)\nC = 2*pi*r\nresult = \"$10\\\\pi$\" if simplify(C - 10*pi) == 0 else str(C)"
+    }
+  ]
+}

@@ -108,9 +108,13 @@ def to_expr(text: str):
     t = t.replace("\\pi", "pi")
     t = t.replace("\\cdot", "*").replace("\\times", "*").replace("\\div", "/")
     t = t.replace("\\%", "").replace("%", "")
+    t = t.replace("\\$", "").replace("\\textdollar", "")
+    t = t.replace("\\degree", "").replace("^\\circ", "").replace("\\circ", "")
     t = re.sub(r"\\text\{[^{}]*\}", "", t)
     t = re.sub(r"[{}]", "", t)
-    t = t.replace(",", "")          # thousands separators
+    # strip thousands separators only ("15,360"), never the comma of an
+    # ordered pair -- "(4,7)" must stay a pair, not become 47
+    t = re.sub(r"(?<=\d),(?=\d{3}(?!\d))", "", t)
     t = t.strip()
 
     return parse_expr(t, transformations=_TRANSFORMS, evaluate=True)
