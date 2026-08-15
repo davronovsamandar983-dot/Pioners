@@ -1,16 +1,19 @@
 % ============================================================================
-%  SAT MATH MASTERY -- 20 topics, 880 practice problems
+%  SAT MATH MASTERY -- 20 lessons, 880 practice problems
 %  Build with:  tools/build.sh      (never edit book/topics or book/solutions)
 % ============================================================================
 \documentclass[11pt,openany]{book}
 
-\usepackage[a4paper,top=22mm,bottom=22mm,inner=20mm,outer=18mm,
-            headsep=8mm,footskip=12mm]{geometry}
+% The header carries the instructor line and the branded bar, so the top
+% margin has to clear headheight + headsep before the body starts.
+\usepackage[a4paper,top=100pt,bottom=54pt,left=34pt,right=34pt,
+            headheight=46pt,headsep=14pt,footskip=26pt]{geometry}
 \usepackage{satmath}
 
 \hypersetup{
   pdftitle={SAT Math Mastery},
-  pdfsubject={Digital SAT mathematics -- 20 topics, 880 practice problems},
+  pdfauthor={Davlat Kamoliddinov},
+  pdfsubject={Digital SAT mathematics -- 20 lessons, 880 practice problems},
   pdfkeywords={SAT, mathematics, practice, Bluebook, College Board}}
 
 \begin{document}
@@ -20,56 +23,90 @@
 % ----------------------------------------------------------- title page ----
 \begin{titlepage}
 \begin{tikzpicture}[remember picture,overlay]
+  % navy field, closed by the gold band at 429pt above the foot
   \fill[satnavy] (current page.north west) rectangle
-        ($(current page.north east)+(0,-13cm)$);
-  \fill[satteal] ($(current page.north west)+(0,-13cm)$) rectangle
-        ($(current page.north east)+(0,-13.35cm)$);
+        ($(current page.south east)+(0,429pt)$);
+  \fill[satgold] ($(current page.south west)+(0,417pt)$) rectangle
+        ($(current page.south east)+(0,429pt)$);
+  % the emblem sits across the band
+  \node at ($(current page.south)+(0,354pt)$)
+    {\includegraphics[width=333pt]{\satlogowm}};
 
-  \node[anchor=north west,text=satsky,font=\Large\bfseries]
-       at ($(current page.north west)+(2.2cm,-3.2cm)$)
-       {THE COMPLETE};
-  \node[anchor=north west,text=white,font=\fontsize{46}{50}\selectfont\bfseries,
-        text width=15cm]
-       at ($(current page.north west)+(2.2cm,-4.1cm)$)
-       {SAT MATH\\MASTERY};
-  \node[anchor=north west,text=satsky,font=\large,text width=15cm]
-       at ($(current page.north west)+(2.2cm,-9.6cm)$)
-       {20 topics \textbullet\ 880 practice problems\\
-        Module 1 and Module 2 for every topic};
+  \node[anchor=west,text=satgold,font=\bfseries\large]
+       at ($(current page.north west)+(78pt,-155pt)$)
+       {MATH EXCELLENCE SERIES};
+  \node[anchor=west,text=white,font=\fontsize{38}{42}\selectfont]
+       at ($(current page.north west)+(75pt,-192pt)$)
+       {SAT MATH};
+  \draw[satgold,line width=1.6pt]
+       ($(current page.north west)+(78pt,-216pt)$) --
+       ($(current page.north west)+(208pt,-216pt)$);
+  \node[anchor=west,text=white,
+        font=\fontsize{18}{21}\selectfont\bfseries\itshape]
+       at ($(current page.north west)+(75pt,-243pt)$)
+       {\&\ Complete Mastery};
 
-  \node[anchor=north west,text=satnavy,font=\normalsize,text width=14cm]
-       at ($(current page.north west)+(2.2cm,-15.5cm)$)
-       {Built to the College Board's published Digital SAT specification:
-        every question is written against an official skill in one of the four
-        tested domains, and every answer is machine-verified.};
+  \node[anchor=west,text=white,font=\normalsize]
+       at ($(current page.north west)+(78pt,-289pt)$)
+       {Algebra \ \textbullet\ \ Advanced Math \ \textbullet\ \ Data Analysis
+        \ \textbullet\ \ Geometry};
 
-  \node[anchor=south west,text=satgrey,font=\footnotesize]
-       at ($(current page.south west)+(2.2cm,2.4cm)$)
-       {Pionerlar};
+  \node[anchor=north west,text=white,font=\small,inner sep=0pt]
+       at ($(current page.north west)+(78pt,-314pt)$)
+       {\begin{minipage}{380pt}
+          \textbf{880} amaliy savol \ \ \textbullet\ \ \ \textbf{660} test
+          \ $+$ \ \textbf{220} grid-in\\[3pt]
+          \textbf{20} dars \ \ \textbullet\ \ \ \textbf{40} modul
+          \ \ \textbullet\ \ \ \textbf{4} bo'lim\\[3pt]
+          To'liq javob kalitlari va yechimlari bilan
+        \end{minipage}};
+
+  % author panel, sitting on the foot strip
+  \fill[satpale] ($(current page.south west)+(60pt,17pt)$) rectangle
+        ($(current page.south west)+(536pt,88pt)$);
+  \node[anchor=west,text=satnavy,font=\Large\bfseries]
+       at ($(current page.south west)+(78pt,60pt)$) {\satauthorname};
+  \node[anchor=west,text=satgrey,font=\small]
+       at ($(current page.south west)+(78pt,38pt)$)
+       {Math Instructor \& Problem Setter};
+  \node[anchor=east] at ($(current page.south west)+(518pt,52pt)$)
+       {\includegraphics[height=44pt]{\satlogo}};
+
+  \fill[satnavy] (current page.south west) rectangle
+        ($(current page.south east)+(0,16pt)$);
 \end{tikzpicture}
 \end{titlepage}
 
-\input{frontmatter/howtouse}
+% -------------------------------------------------------------- contents ---
+\clearpage
+\begin{tikzpicture}
+  \node[fill=satnavy,inner xsep=14pt,inner ysep=10pt,anchor=north west,
+        minimum width=\textwidth,align=left] {%
+    \begin{minipage}{\dimexpr\textwidth-28pt\relax}
+      {\bfseries\footnotesize\color{satgold}MUNDARIJA}\\[2pt]
+      {\fontsize{20}{23}\selectfont\color{white}Contents}
+    \end{minipage}};
+\end{tikzpicture}
+\par\vspace{10pt}
+{\setlength{\columnsep}{22pt}
+ \begin{multicols}{2}\raggedcolumns
+ \makeatletter\@starttoc{toc}\makeatother
+ \end{multicols}}
 
-\cleardoublepage
-\pagestyle{fancy}
-\tableofcontents
-
-% -------------------------------------------------------------- topics ----
+% -------------------------------------------------------------- lessons ----
 \mainmatter
+\satwatermark
+\pagestyle{fancy}
 \IfFileExists{generated/topics.tex}{\input{generated/topics}}{%
-  \chapter*{No topics generated yet}
+  \section*{No lessons generated yet}
   Run \texttt{tools/build.sh} after adding banks to \texttt{content/bank/}.}
 
 % ----------------------------------------------------------- solutions ----
-\appendix
-\cleardoublepage
-\chapter*{Worked Solutions}
-\addcontentsline{toc}{chapter}{Worked Solutions}
-\markboth{Worked Solutions}{Worked Solutions}
+\clearpage
+\satpart{5}{Worked Solutions}
 \IfFileExists{generated/solutions.tex}{\input{generated/solutions}}{}
 
-\cleardoublepage
+\clearpage
 \IfFileExists{generated/answerkey.tex}{\input{generated/answerkey}}{}
 
 \end{document}

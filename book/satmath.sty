@@ -1,5 +1,9 @@
 % ============================================================================
-%  satmath.sty -- design system for the SAT Math Mastery textbook
+%  satmath.sty -- design system for SAT Math Mastery
+%
+%  Matched to the SAT DAVLAT house style: navy/gold palette, the branded
+%  header bar, the circular emblem watermark, two-column problem pages with
+%  square question markers, and Module 2 restarting its numbering at 1.
 % ============================================================================
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{satmath}[2026/08/15 SAT Math Mastery design system]
@@ -11,6 +15,8 @@
 \RequirePackage{amsmath,amssymb,amsfonts}
 \RequirePackage{xcolor}
 \RequirePackage{graphicx}
+\RequirePackage{adjustbox}
+\RequirePackage{varwidth}
 \RequirePackage{tikz}
 \RequirePackage{pgfplots}
 \RequirePackage[most]{tcolorbox}
@@ -23,266 +29,274 @@
 \RequirePackage{longtable}
 \RequirePackage{needspace}
 \RequirePackage{etoolbox}
-\RequirePackage{xparse}
+\RequirePackage{eso-pic}
 \RequirePackage[hidelinks]{hyperref}
 
 \usetikzlibrary{calc,positioning,patterns,arrows.meta,angles,quotes}
 \pgfplotsset{compat=1.18}
 
 % -------------------------------------------------------------- palette ----
-\definecolor{satnavy}   {HTML}{0F2942}
-\definecolor{satblue}   {HTML}{1B5FA8}
-\definecolor{satsky}    {HTML}{E8F1FA}
-\definecolor{satteal}   {HTML}{0E7C7B}
-\definecolor{satmint}   {HTML}{E6F4F1}
-\definecolor{satamber}  {HTML}{B8860B}
-\definecolor{satsand}   {HTML}{FBF4E4}
-\definecolor{satcrimson}{HTML}{A6262E}
-\definecolor{satrose}   {HTML}{FBEBEC}
+% sampled from the reference edition
+\definecolor{satnavy}   {HTML}{0A2463}   % primary
+\definecolor{satnavyd}  {HTML}{082260}   % shading on the cover
+\definecolor{satblue}   {HTML}{1A4E9D}   % question markers, brand word
+\definecolor{satgold}   {HTML}{C8A434}   % series line, rules
+\definecolor{satpale}   {HTML}{D6E4FA}   % author panel, tint blocks
+\definecolor{satmist}   {HTML}{CDD3DE}   % watermark grey
 \definecolor{satgrey}   {HTML}{5A6672}
-\definecolor{satline}   {HTML}{D4DCE4}
-\definecolor{satpaper}  {HTML}{FFFFFF}
+\definecolor{satline}   {HTML}{B9C4D6}
+
+% legacy aliases so existing content keeps compiling
+\colorlet{satsky}{satpale}
+\colorlet{satteal}{satblue}
+\colorlet{satmint}{satpale}
+\colorlet{satamber}{satgold}
+\colorlet{satsand}{satpale}
+\colorlet{satcrimson}{satnavy}
+\colorlet{satrose}{satpale}
+
+% ------------------------------------------------------------- identity ----
+\newcommand{\satauthorname}{DAVLAT KAMOLIDDINOV}
+\newcommand{\satbrandword}{DAVLAT}
+\newcommand{\satlogo}{assets/logo.png}
+\newcommand{\satlogowm}{assets/logo-watermark.png}
 
 % ------------------------------------------------------------- counters ----
-\newcounter{satproblem}[chapter]
+\newcounter{satproblem}
 \newcounter{sattopicno}
-\newcommand{\satmodule}{1}
 \newcommand{\sattopictitle}{}
 \newcommand{\sattopicdomain}{}
+
+% ------------------------------------------------------- the brand bar -----
+% The small emblem inside the header box.
+\newcommand{\satemblem}[1][9mm]{%
+  \raisebox{-0.32\height}{\includegraphics[height=#1]{\satlogo}}}
+
+\newcommand{\satbrandbar}{%
+  \noindent
+  \begin{tikzpicture}
+    \node[draw=satnavy,line width=0.8pt,inner sep=0pt,
+          minimum width=\textwidth,minimum height=24pt,anchor=north west]
+         (box) at (0,0) {};
+    % left: emblem-in-a-disc + wordmark
+    \node[anchor=west,inner sep=0pt] (disc) at ($(box.west)+(7pt,0)$)
+      {\tikz\node[circle,fill=satnavy,inner sep=0pt,minimum size=15pt]
+        {\color{white}\fontsize{6.6}{7}\selectfont\bfseries SAT};};
+    \node[anchor=west,inner sep=0pt] at ($(disc.east)+(6pt,0)$)
+      {\fontsize{15}{17}\selectfont\bfseries\color{satblue}\satbrandword};
+    % right: a ruled cell holding the emblem
+    \draw[satnavy,line width=0.8pt]
+      ($(box.north east)+(-26pt,0)$) -- ($(box.south east)+(-26pt,0)$);
+    \node[anchor=east,inner sep=0pt] at ($(box.east)+(-6pt,0)$)
+      {\includegraphics[height=15pt]{\satlogo}};
+  \end{tikzpicture}\par}
 
 % ------------------------------------------------------- page furniture ----
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-\fancyhead[LE]{\footnotesize\color{satgrey}\textsc{sat math mastery}}
-\fancyhead[RO]{\footnotesize\color{satgrey}\textsc{\nouppercase{\leftmark}}}
-\fancyfoot[C]{%
-  \begin{tikzpicture}[baseline]
-    \node[fill=satnavy,text=white,rounded corners=2pt,
-          inner xsep=7pt,inner ysep=3pt,font=\footnotesize\bfseries]
-         {\thepage};
-  \end{tikzpicture}}
-\fancypagestyle{plain}{\fancyhf{}%
-  \fancyfoot[C]{\begin{tikzpicture}[baseline]
-    \node[fill=satnavy,text=white,rounded corners=2pt,
-          inner xsep=7pt,inner ysep=3pt,font=\footnotesize\bfseries]
-         {\thepage};\end{tikzpicture}}}
+\fancyhead[C]{%
+  \hbox to \textwidth{\hfil
+    \fontsize{7.6}{9}\selectfont\bfseries\color{satnavy}%
+    MATH INSTRUCTOR: \satauthorname}%
+  \vspace{2pt}\par
+  \satbrandbar}
+\fancyfoot[C]{\normalfont\small\thepage}
 
-% --------------------------------------------------------- chapter head ----
-\titleformat{\chapter}[display]
-  {\normalfont}
-  {}
-  {0pt}
-  {\satchapterhead}
-\titlespacing*{\chapter}{0pt}{-40pt}{24pt}
+\fancypagestyle{satplain}{\fancyhf{}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \fancyfoot[C]{\normalfont\small\thepage}}
 
-% starred chapters (front matter, solutions, answer key) get no TOPIC label
-\titleformat{name=\chapter,numberless}[display]
-  {\normalfont}{}{0pt}{\satplainchapterhead}
-\titlespacing*{name=\chapter,numberless}{0pt}{-40pt}{24pt}
+% the emblem watermark, centred on every body page
+\newcommand{\satwatermark}{%
+  \AddToShipoutPictureBG{%
+    \begin{tikzpicture}[remember picture,overlay]
+      \node at (current page.center)
+        {\includegraphics[width=0.56\paperwidth]{\satlogowm}};
+    \end{tikzpicture}}}
 
-\newcommand{\satplainchapterhead}[1]{%
-  \begin{tikzpicture}
-    \node[anchor=north west,inner sep=0pt] (bar) at (0,0)
-      {\color{satnavy}\rule{\textwidth}{3pt}};
-    \node[anchor=north west,inner sep=0pt,yshift=-16pt,text width=\textwidth]
-         at (bar.south west)
-      {\fontsize{26}{30}\selectfont\bfseries\color{satnavy}#1};
-  \end{tikzpicture}%
-  \vspace{6pt}}
+% ---------------------------------------------------------- part pages -----
+\newcommand{\satpart}[2]{%
+  % #1 part number, #2 part title
+  \clearpage
+  \thispagestyle{empty}
+  \begin{tikzpicture}[remember picture,overlay]
+    \node at (current page.center)
+      {\includegraphics[width=0.56\paperwidth]{\satlogowm}};
+    \node[anchor=center] at ($(current page.center)+(0,99pt)$)
+      {\fontsize{10}{12}\selectfont\color{black}PART #1};
+    \node[anchor=center] at ($(current page.center)+(0,61pt)$)
+      {\fontsize{19}{22}\selectfont\bfseries\color{black}#2};
+    \draw[satblue,line width=1pt]
+      ($(current page.center)+(-82pt,36pt)$) --
+      ($(current page.center)+( 82pt,36pt)$);
+  \end{tikzpicture}
+  \addcontentsline{toc}{part}{Part #1: #2}%
+  \clearpage}
 
-\newcommand{\satchapterhead}[1]{%
-  \begin{tikzpicture}
-    \node[anchor=north west,inner sep=0pt] (bar) at (0,0)
-      {\color{satnavy}\rule{\textwidth}{3pt}};
-    \node[anchor=north west,inner sep=0pt,yshift=-14pt] at (bar.south west)
-      {\fontsize{11}{13}\selectfont\bfseries\color{satblue}%
-       TOPIC \thesattopicno\ \ \textcolor{satline}{\textbar}\ \
-       \color{satgrey}\mdseries\sattopicdomain};
-    \node[anchor=north west,inner sep=0pt,yshift=-34pt,text width=\textwidth] at (bar.south west)
-      {\fontsize{26}{30}\selectfont\bfseries\color{satnavy}#1};
-  \end{tikzpicture}%
-  \vspace{6pt}}
-
-% Start a topic: \sattopic{number}{title}{domain}
+% ------------------------------------------------------------ a lesson -----
+% \sattopic{number}{title}{domain}
 \newcommand{\sattopic}[3]{%
   \setcounter{sattopicno}{#1}%
   \renewcommand{\sattopictitle}{#2}%
   \renewcommand{\sattopicdomain}{#3}%
-  \chapter{#2}%
-  \markboth{Topic #1 \textbullet\ #2}{Topic #1 \textbullet\ #2}%
+  \clearpage
+  \phantomsection
+  \addcontentsline{toc}{section}{Lesson #1: #2}%
+  \markboth{#2}{#2}%
+  \begin{center}
+    {\fontsize{16}{19}\selectfont\bfseries Lesson #1: #2}\\[3pt]
+    \textcolor{satnavy}{\rule{0.30\textwidth}{0.7pt}}
+  \end{center}
+  \vspace{2pt}
+  \setcounter{satproblem}{0}}
+
+\newcommand{\satmodulehead}[3]{%
+  % #1 module number, #2 label, #3 subtitle -- restarts the question numbers
   \setcounter{satproblem}{0}%
-  \renewcommand{\satmodule}{1}}
-
-% ------------------------------------------------------- section styles ----
-\titleformat{\section}
-  {\normalfont\large\bfseries\color{satnavy}}{}{0pt}
-  {\satsectionrule}
-\titlespacing*{\section}{0pt}{16pt}{8pt}
-\newcommand{\satsectionrule}[1]{%
-  \raisebox{1pt}{\color{satteal}\rule{3pt}{11pt}}\hspace{7pt}#1}
-
-\titleformat{\subsection}
-  {\normalfont\normalsize\bfseries\color{satblue}}{}{0pt}{}
-\titlespacing*{\subsection}{0pt}{12pt}{4pt}
+  % Module 2 opens a fresh page, the way the adaptive second module is
+  % presented; Module 1 simply follows the lesson.
+  \ifnum#1>1 \clearpage\fi
+  \needspace{5\baselineskip}%
+  \par\vspace{6pt}%
+  {\fontsize{13}{15}\selectfont\bfseries Module #1}%
+  \ifstrempty{#2}{}{\ \ {\footnotesize\color{satgrey}#2}}%
+  \par\vspace{4pt}}
 
 % ------------------------------------------------------- teaching boxes ----
 \newtcolorbox{satconcept}[1][Key idea]{
-  enhanced, breakable,
-  colback=satsky, colframe=satblue,
-  boxrule=0pt, leftrule=3pt,
-  arc=2pt, left=10pt, right=10pt, top=8pt, bottom=8pt,
-  fonttitle=\bfseries\footnotesize\sffamily,
-  coltitle=satblue,
-  attach boxed title to top left={yshift=-2mm,xshift=8pt},
-  boxed title style={colback=satsky,boxrule=0pt,arc=0pt,left=3pt,right=3pt},
+  enhanced, breakable, colback=satpale!45, colframe=satnavy,
+  boxrule=0pt, leftrule=2.5pt, arc=1pt,
+  left=9pt, right=9pt, top=7pt, bottom=7pt,
+  fonttitle=\bfseries\footnotesize, coltitle=satnavy,
+  attach boxed title to top left={yshift=-2mm,xshift=7pt},
+  boxed title style={colback=satpale!45,boxrule=0pt,arc=0pt,left=3pt,right=3pt},
   title={\MakeUppercase{#1}}}
 
 \newtcolorbox{satformula}[1][Formulas you must know]{
-  enhanced, breakable,
-  colback=satmint, colframe=satteal,
-  boxrule=0pt, leftrule=3pt,
-  arc=2pt, left=10pt, right=10pt, top=8pt, bottom=8pt,
-  fonttitle=\bfseries\footnotesize\sffamily,
-  coltitle=satteal,
-  attach boxed title to top left={yshift=-2mm,xshift=8pt},
-  boxed title style={colback=satmint,boxrule=0pt,arc=0pt,left=3pt,right=3pt},
+  enhanced, breakable, colback=satpale!30, colframe=satblue,
+  boxrule=0pt, leftrule=2.5pt, arc=1pt,
+  left=9pt, right=9pt, top=7pt, bottom=7pt,
+  fonttitle=\bfseries\footnotesize, coltitle=satblue,
+  attach boxed title to top left={yshift=-2mm,xshift=7pt},
+  boxed title style={colback=satpale!30,boxrule=0pt,arc=0pt,left=3pt,right=3pt},
   title={\MakeUppercase{#1}}}
 
 \newtcolorbox{sattrap}[1][Common trap]{
-  enhanced, breakable,
-  colback=satrose, colframe=satcrimson,
-  boxrule=0pt, leftrule=3pt,
-  arc=2pt, left=10pt, right=10pt, top=8pt, bottom=8pt,
-  fonttitle=\bfseries\footnotesize\sffamily,
-  coltitle=satcrimson,
-  attach boxed title to top left={yshift=-2mm,xshift=8pt},
-  boxed title style={colback=satrose,boxrule=0pt,arc=0pt,left=3pt,right=3pt},
-  title={\MakeUppercase{#1}}}
-
-\newtcolorbox{satstrategy}[1][Calculator / strategy]{
-  enhanced, breakable,
-  colback=satsand, colframe=satamber,
-  boxrule=0pt, leftrule=3pt,
-  arc=2pt, left=10pt, right=10pt, top=8pt, bottom=8pt,
-  fonttitle=\bfseries\footnotesize\sffamily,
-  coltitle=satamber,
-  attach boxed title to top left={yshift=-2mm,xshift=8pt},
-  boxed title style={colback=satsand,boxrule=0pt,arc=0pt,left=3pt,right=3pt},
-  title={\MakeUppercase{#1}}}
-
-% Fully worked teaching example (inside the lesson, not part of the 44)
-\newtcolorbox{satworked}[1][Worked example]{
-  enhanced, breakable,
-  colback=white, colframe=satline,
-  boxrule=0.6pt, arc=2pt,
-  left=10pt, right=10pt, top=8pt, bottom=8pt,
-  fonttitle=\bfseries\footnotesize\sffamily,
-  coltitle=satnavy,
-  attach boxed title to top left={yshift=-2mm,xshift=8pt},
+  enhanced, breakable, colback=white, colframe=satgold,
+  boxrule=0pt, leftrule=2.5pt, arc=1pt,
+  left=9pt, right=9pt, top=7pt, bottom=7pt,
+  fonttitle=\bfseries\footnotesize, coltitle=satgold!75!black,
+  attach boxed title to top left={yshift=-2mm,xshift=7pt},
   boxed title style={colback=white,boxrule=0pt,arc=0pt,left=3pt,right=3pt},
   title={\MakeUppercase{#1}}}
 
-% ------------------------------------------------------ module dividers ----
-\newcommand{\satmodulehead}[3]{%
-  % #1 module number, #2 label, #3 subtitle
-  \renewcommand{\satmodule}{#1}%
-  \needspace{7\baselineskip}%
-  \par\vspace{16pt}%
-  \begin{tcolorbox}[width=\textwidth,colback=satnavy,colframe=satnavy,
-      boxrule=0pt,arc=3pt,left=12pt,right=12pt,top=9pt,bottom=9pt,
-      before skip=0pt,after skip=0pt]
-    {\bfseries\large\color{white}MODULE #1}\;\;
-    {\color{satsky}\textbar}\;\;
-    {\color{white}#2}\hfill
-    {\footnotesize\color{satsky}#3}
-  \end{tcolorbox}%
-  \par\vspace{2pt}}
+\newtcolorbox{satstrategy}[1][Strategy]{
+  enhanced, breakable, colback=white, colframe=satblue,
+  boxrule=0pt, leftrule=2.5pt, arc=1pt,
+  left=9pt, right=9pt, top=7pt, bottom=7pt,
+  fonttitle=\bfseries\footnotesize, coltitle=satblue,
+  attach boxed title to top left={yshift=-2mm,xshift=7pt},
+  boxed title style={colback=white,boxrule=0pt,arc=0pt,left=3pt,right=3pt},
+  title={\MakeUppercase{#1}}}
+
+\newtcolorbox{satworked}[1][Worked example]{
+  enhanced, breakable, colback=white, colframe=satline,
+  boxrule=0.6pt, arc=1pt,
+  left=9pt, right=9pt, top=7pt, bottom=7pt,
+  fonttitle=\bfseries\footnotesize, coltitle=satnavy,
+  attach boxed title to top left={yshift=-2mm,xshift=7pt},
+  boxed title style={colback=white,boxrule=0pt,arc=0pt,left=3pt,right=3pt},
+  title={\MakeUppercase{#1}}}
+
+% ------------------------------------------------------- section styles ----
+\titleformat{\section}{\normalfont\large\bfseries\color{satnavy}}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt}{6pt}
+\titleformat{\subsection}{\normalfont\normalsize\bfseries\color{satblue}}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{10pt}{4pt}
 
 % ------------------------------------------------------------- problems ----
-% \satq{difficulty}{type}  begins a numbered practice problem
-% difficulty: E | M | H     type: MC | SPR
-\newcommand{\satdiffchip}[1]{%
-  \ifstrequal{#1}{E}{\tikz[baseline=-2pt]\node[fill=satmint,text=satteal,
-      rounded corners=1.5pt,inner xsep=4pt,inner ysep=1.5pt,
-      font=\bfseries\tiny\sffamily]{EASY};}{}%
-  \ifstrequal{#1}{M}{\tikz[baseline=-2pt]\node[fill=satsand,text=satamber,
-      rounded corners=1.5pt,inner xsep=4pt,inner ysep=1.5pt,
-      font=\bfseries\tiny\sffamily]{MEDIUM};}{}%
-  \ifstrequal{#1}{H}{\tikz[baseline=-2pt]\node[fill=satrose,text=satcrimson,
-      rounded corners=1.5pt,inner xsep=4pt,inner ysep=1.5pt,
-      font=\bfseries\tiny\sffamily]{HARD};}{}}
+% the square marker carrying the question number
+\newcommand{\satmarker}[1]{%
+  \tikz[baseline=(n.base)]{
+    \node[fill=satblue,text=white,inner xsep=3pt,inner ysep=2pt,
+          minimum width=11pt,align=center,
+          font=\bfseries\fontsize{8}{9}\selectfont] (n) {#1};}}
 
-\newcommand{\sattypechip}[1]{%
-  \ifstrequal{#1}{SPR}{\tikz[baseline=-2pt]\node[draw=satline,line width=0.5pt,
-      text=satgrey,rounded corners=1.5pt,inner xsep=4pt,inner ysep=1.5pt,
-      font=\bfseries\tiny\sffamily]{STUDENT-PRODUCED};}{}}
-
+% \begin{satq}{difficulty}{type} -- difficulty and type are accepted so that
+% content written against the earlier layout still compiles; the reference
+% edition prints neither.
+% A question and its choices must never be split across a column break, so
+% the whole item is set in a minipage -- \needspace has no effect inside
+% multicols, and a stem stranded at the foot of a column with its choices at
+% the head of the next one is unreadable.
 \newenvironment{satq}[2]{%
+  \par\vspace{7pt}%
   \refstepcounter{satproblem}%
-  \needspace{5\baselineskip}%
-  \par\vspace{10pt}%
-  \noindent
-  \begin{minipage}[t]{\textwidth}
-  \noindent
-  {\bfseries\color{satnavy}\thesatproblem.}\hspace{6pt}%
-  \satdiffchip{#1}\;\sattypechip{#2}\par
-  \vspace{3pt}
+  \noindent\begin{minipage}{\linewidth}%
+  \noindent\satmarker{\thesatproblem}\par\nobreak\vspace{2pt}%
   \noindent\ignorespaces
 }{%
-  \end{minipage}\par\vspace{2pt}%
+  \par\end{minipage}\par\vspace{1pt}%
 }
 
-% four MCQ choices, laid out in two columns
-\newcommand{\satchoices}[4]{%
-  \par\vspace{5pt}
-  \setlength{\columnsep}{12pt}
-  \begin{multicols}{2}
-  \begin{list}{}{\setlength{\leftmargin}{18pt}\setlength{\itemsep}{3pt}
-                 \setlength{\parsep}{0pt}\setlength{\topsep}{0pt}}
-    \item[\textbf{\color{satblue}A)}] #1
-    \item[\textbf{\color{satblue}B)}] #2
-    \item[\textbf{\color{satblue}C)}] #3
-    \item[\textbf{\color{satblue}D)}] #4
-  \end{list}
+% choices: one per line, "A)  ..."
+\newcommand{\satchoicelist}[4]{%
+  \par\vspace{3pt}
+  \begin{list}{}{%
+    \setlength{\leftmargin}{22pt}\setlength{\labelwidth}{16pt}%
+    \setlength{\labelsep}{5pt}\setlength{\itemindent}{0pt}%
+    \setlength{\itemsep}{4pt}\setlength{\parsep}{0pt}\setlength{\topsep}{0pt}}
+    \item[A)] #1
+    \item[B)] #2
+    \item[C)] #3
+    \item[D)] #4
+  \end{list}}
+\newcommand{\satchoices}[4]{\satchoicelist{#1}{#2}{#3}{#4}}
+\newcommand{\satchoiceswide}[4]{\satchoicelist{#1}{#2}{#3}{#4}}
+
+\newcommand{\satgridin}{}
+
+% a figure inside a narrow column must never overrun it
+% A figure written for a full-width page has to survive a narrow column.
+% varwidth lets the content keep its own lists and centring while still
+% reporting a natural width, which adjustbox can then shrink to fit.
+\newenvironment{satfigure}{%
+  \par\vspace{2pt}\noindent
+  \begin{adjustbox}{max width=\linewidth,center}%
+  \begin{varwidth}{\textwidth}%
+}{%
+  \end{varwidth}%
+  \end{adjustbox}%
+  \par\vspace{2pt}}
+
+% ------------------------------------------------------ the problem body ---
+\newenvironment{satproblems}{%
+  \setlength{\columnsep}{20pt}%
+  \begin{multicols}{2}\raggedcolumns
+}{%
   \end{multicols}}
 
-% wide variant when a choice is long
-\newcommand{\satchoiceswide}[4]{%
-  \par\vspace{5pt}
-  \begin{list}{}{\setlength{\leftmargin}{18pt}\setlength{\itemsep}{3pt}
-                 \setlength{\parsep}{0pt}\setlength{\topsep}{0pt}}
-    \item[\textbf{\color{satblue}A)}] #1
-    \item[\textbf{\color{satblue}B)}] #2
-    \item[\textbf{\color{satblue}C)}] #3
-    \item[\textbf{\color{satblue}D)}] #4
-  \end{list}}
-
-% grid-in answer box hint
-\newcommand{\satgridin}{%
-  \par\vspace{4pt}\noindent
-  {\footnotesize\color{satgrey}\itshape Enter your answer in the grid.}}
-
 % ------------------------------------------------------------ solutions ----
-\newcounter{satsol}
 \newcommand{\satsolhead}[2]{%
-  % #1 problem number, #2 answer
   \needspace{3\baselineskip}
-  \par\vspace{9pt}\noindent
-  {\bfseries\color{satnavy}#1.}\hspace{6pt}%
-  \tikz[baseline=-2pt]\node[fill=satnavy,text=white,rounded corners=2pt,
-     inner xsep=5pt,inner ysep=2pt,font=\bfseries\footnotesize]{Answer: #2};
-  \par\vspace{3pt}\noindent\ignorespaces}
+  \par\vspace{7pt}\noindent
+  \satmarker{#1}\hspace{5pt}%
+  {\bfseries\color{satnavy}Answer: #2}%
+  \par\vspace{2pt}\noindent\ignorespaces}
 
-\newenvironment{satsteps}{%
-  \begin{list}{\textbf{\color{satteal}\arabic{satstepc}.}}%
-    {\usecounter{satstepc}\setlength{\leftmargin}{20pt}
-     \setlength{\itemsep}{2pt}\setlength{\parsep}{2pt}\setlength{\topsep}{3pt}}
-}{\end{list}}
 \newcounter{satstepc}
+\newenvironment{satsteps}{%
+  \begin{list}{\textbf{\color{satblue}\arabic{satstepc}.}}%
+    {\usecounter{satstepc}\setlength{\leftmargin}{18pt}
+     \setlength{\itemsep}{1pt}\setlength{\parsep}{1pt}\setlength{\topsep}{2pt}}
+}{\end{list}}
 
 % --------------------------------------------------------- answer key ------
+\newcommand{\satkeymodule}[1]{%
+  \par\vspace{3pt}{\footnotesize\bfseries\color{satblue}Module #1}\par}
+
 \newcommand{\satkeytable}[1]{%
   {\footnotesize
    \setlength{\tabcolsep}{0pt}%
@@ -294,6 +308,6 @@
 % ------------------------------------------------------------ misc ---------
 \newcommand{\satnote}[1]{{\footnotesize\color{satgrey}\itshape #1\par}}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{4pt}
+\setlength{\parskip}{3pt}
 
 \endinput

@@ -49,7 +49,7 @@ def render_lesson(bank: dict) -> str:
     for block in bank["lesson"]["blocks"]:
         kind = block["kind"]
         if kind == "section":
-            out.append(f"\\section{{{esc(block['title'])}}}")
+            out.append(f"\\section*{{{esc(block['title'])}}}")
             out.append(esc(block["body"]))
         else:
             env = BLOCK_ENV[kind]
@@ -64,7 +64,9 @@ def render_problem(p: dict) -> str:
     out = [f"% {p['id']}",
            f"\\begin{{satq}}{{{p['difficulty']}}}{{{p['type']}}}"]
     if p.get("figure"):
+        out.append("\\begin{satfigure}")
         out.append(p["figure"])
+        out.append("\\end{satfigure}")
     out.append(esc(p["stem"]))
     if p["type"] == "MC":
         cmd = "satchoiceswide" if p.get("wide") else "satchoices"
@@ -88,14 +90,16 @@ def render_topic(bank: dict) -> str:
     m1 = [p for p in problems if p["module"] == 1]
     m2 = [p for p in problems if p["module"] == 2]
 
-    out.append("\\satmodulehead{1}{Foundations and core technique}"
-               "{22 questions \\textbullet\\ easy to hard}")
+    out.append("\\satmodulehead{1}{}{}")
+    out.append("\\begin{satproblems}")
     out.extend(render_problem(p) for p in m1)
+    out.append("\\end{satproblems}")
 
     out.append("")
-    out.append("\\satmodulehead{2}{Adaptive follow-up -- harder and mixed}"
-               "{22 questions \\textbullet\\ continues from question 23}")
+    out.append("\\satmodulehead{2}{}{}")
+    out.append("\\begin{satproblems}")
     out.extend(render_problem(p) for p in m2)
+    out.append("\\end{satproblems}")
     out.append("")
     return "\n".join(out)
 
@@ -115,7 +119,8 @@ def render_solutions(bank: dict) -> str:
             answer = p["answer"]
             if p["type"] == "MC":
                 answer = f"{p['answer']}"
-            out.append(f"\\satsolhead{{{p['n']}}}{{{esc(answer)}}}")
+            shown = p["n"] if p["module"] == 1 else p["n"] - 22
+            out.append(f"\\satsolhead{{{shown}}}{{{esc(answer)}}}")
             if p.get("steps"):
                 out.append("\\begin{satsteps}")
                 out.extend(f"  \\item {esc(s)}" for s in p["steps"])
@@ -139,17 +144,21 @@ def render_answer_key(banks: list[dict]) -> str:
         cols = 8
         colspec = ("r@{\\hspace{5pt}}l@{\\hspace{16pt}}" * (cols - 1)
                    + "r@{\\hspace{5pt}}l")
-        out.append("\\satkeytable{%")
-        out.append("\\noindent\\begin{longtable}{@{}" + colspec + "@{}}")
-        cells = []
-        for p in problems:
-            ans = p["answer"].replace("&", "\\&")
-            cells.append(f"\\textbf{{\\color{{satgrey}}{p['n']}}} & {ans}")
-        for i in range(0, len(cells), cols):
-            row = cells[i:i + cols]
-            row += [" & "] * (cols - len(row))
-            out.append(" & ".join(row) + " \\\\")
-        out.append("\\end{longtable}}")
+        for mod in (1, 2):
+            out.append(f"\\satkeymodule{{{mod}}}")
+            out.append("\\satkeytable{%")
+            out.append("\\noindent\\begin{longtable}{@{}" + colspec + "@{}}")
+            cells = []
+            for p in (q for q in problems if q["module"] == mod):
+                ans = p["answer"].replace("&", "\\&")
+                shown = p["n"] if mod == 1 else p["n"] - 22
+                cells.append(
+                    f"\\textbf{{\\color{{satgrey}}{shown}}} & {ans}")
+            for i in range(0, len(cells), cols):
+                row = cells[i:i + cols]
+                row += [" & "] * (cols - len(row))
+                out.append(" & ".join(row) + " \\\\")
+            out.append("\\end{longtable}}")
         out.append("")
     return "\n".join(out)
 
@@ -167,6 +176,8 @@ def main() -> int:
     includes_topics: list[str] = []
     includes_sols: list[str] = []
     missing: list[int] = []
+    part_no = 0
+    current_domain = None
 
     for entry in order:
         n = entry["number"]
@@ -176,6 +187,13 @@ def main() -> int:
             continue
         bank = json.loads(path.read_text())
         banks.append(bank)
+
+        # a part divider opens each new domain
+        if bank["domain"] != current_domain:
+            current_domain = bank["domain"]
+            part_no += 1
+            includes_topics.append(
+                f"\\satpart{{{part_no}}}{{{esc(current_domain)}}}")
 
         (OUT_TOPIC / f"topic-{n:02d}.tex").write_text(render_topic(bank))
         (OUT_SOL / f"sol-{n:02d}.tex").write_text(render_solutions(bank))
