@@ -35,7 +35,7 @@
       {
         "kind": "trap",
         "title": "Common trap",
-        "body": "Four mistakes account for most wrong answers on this topic.\n\\begin{itemize}\\setlength{\\itemsep}{2pt}\n\\item Using the $\\textbf{diameter}$ where the formula wants the radius. A circle of diameter $10$ has area $25\\pi$, not $100\\pi$.\n\\item Reading $r^{2}$ off the equation and reporting it as $r$. In $(x-3)^{2}+(y+5)^{2}=49$ the radius is $7$, not $49$.\n\\item Getting the $\\textbf{sign}$ of the centre backwards. The form is $(x-h)^2+(y-k)^2=r^2$, so $(x+4)^2$ means $h=-4$: flip the sign you see.\n\\item Halving the wrong angle. The inscribed angle is the small one. If the central angle is $80^\\circ$, the inscribed angle on the same arc is $40^\\circ$ --- not $160^\\circ$."
+        "body": "Four mistakes account for most wrong answers on this topic.\n\\begin{itemize}\\setlength{\\itemsep}{2pt}\n\\item Using the $\\textbf{diameter}$ where the formula wants the radius. A circle of diameter $10$ has area $25\\pi$, not $100\\pi$.\n\\item Reading $r^{2}$ off the equation and reporting it as $r$. In $(x-3)^{2}+(y+5)^{2}=49$ the radius is $7$, not $49$.\n\\item Getting the $\\textbf{sign}$ of the centre backwards. The form is $(x-h)^2+(y-k)^2=r^2$, so $(x+4)^2$ means $h=-4$: flip the sign you see.\n\\item Halving the wrong angle. The inscribed angle is the small one. If the central angle is $80^\\circ$, the inscribed angle on the same arc is $40^\\circ$ --- not $160^\\circ$.\n\\end{itemize}"
       },
       {
         "kind": "strategy",

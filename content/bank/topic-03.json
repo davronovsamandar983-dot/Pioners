@@ -1,994 +1,994 @@
 {
-  "number": 3,
-  "topic": "Linear Equations in Two Variables",
-  "domain": "Algebra",
-  "skills": [
-    "Slope-intercept and standard form",
-    "Graphing lines",
-    "Parallel and perpendicular lines"
-  ],
-  "lesson": {
-    "intro": "A linear equation in two variables describes a straight line in the $xy$-plane: every point $(x,y)$ that makes the equation true lies on the line, and every point on the line makes it true. The Digital SAT returns to this idea constantly -- it asks you to read a slope, to switch between the two standard ways of writing a line, to build a line from two points or from a point and a direction, and to decide when two lines are parallel or perpendicular. Everything in this topic comes back to one number, the slope.",
-    "blocks": [
-      {
-        "kind": "section",
-        "title": "The two forms you must recognise",
-        "body": "A line can be written in \\textbf{slope-intercept form} $y=mx+b$, where $m$ is the slope and $(0,b)$ is the $y$-intercept, or in \\textbf{standard form} $Ax+By=C$. Slope-intercept form is the one that tells you everything at a glance, so most SAT work begins by solving for $y$. Standard form is convenient when a question asks for intercepts, because setting $x=0$ or $y=0$ leaves a one-step equation.\n\nGoing from $Ax+By=C$ to $y=mx+b$ is always the same two moves: subtract the $x$-term, then divide every term by the coefficient of $y$. Doing that in general gives $y=-\\frac{A}{B}x+\\frac{C}{B}$, so the slope of $Ax+By=C$ is $-\\frac{A}{B}$ -- worth memorising, because it turns many questions into a single line of work."
-      },
-      {
-        "kind": "formula",
-        "title": "The facts of this topic",
-        "body": "\\textbf{Slope through two points:} $m=\\dfrac{y_2-y_1}{x_2-x_1}$.\n\n\\textbf{Slope-intercept form:} $y=mx+b$, with $y$-intercept $(0,b)$.\n\n\\textbf{Point-slope form:} $y-y_1=m(x-x_1)$ for a line of slope $m$ through $(x_1,y_1)$.\n\n\\textbf{Standard form:} $Ax+By=C$ has slope $-\\dfrac{A}{B}$, $x$-intercept $\\left(\\dfrac{C}{A},0\\right)$ and $y$-intercept $\\left(0,\\dfrac{C}{B}\\right)$.\n\n\\textbf{Parallel:} $m_1=m_2$. \\qquad \\textbf{Perpendicular:} $m_1m_2=-1$, that is $m_2=-\\dfrac{1}{m_1}$."
-      },
-      {
-        "kind": "concept",
-        "title": "What the slope actually says",
-        "body": "The slope is a rate: $m=\\frac{\\text{rise}}{\\text{run}}$ says that increasing $x$ by $1$ changes $y$ by $m$. That single sentence lets you move along a line without ever finding its equation. If a line has slope $-\\frac{5}{3}$ and passes through $(3,4)$, then running $3$ to the right drops you $5$, landing on $(6,-1)$.\n\nIt also tells you what the picture looks like before you compute anything: positive slope rises left to right, negative slope falls, slope $0$ is horizontal ($y=b$), and a vertical line $x=a$ has no slope at all. Use this as a sanity check -- an answer with the wrong sign on the slope is visibly wrong."
-      },
-      {
-        "kind": "section",
-        "title": "Building a line from what you are given",
-        "body": "Nearly every ``find the equation'' question hands you one of three packages, and each has a fixed route.\n\n\\textbf{A point and a slope.} Substitute the point into $y=mx+b$ and solve for $b$. If the point is already on the $y$-axis, as in $(0,-2)$, then $b$ is handed to you.\n\n\\textbf{Two points.} Compute $m$ first, then use either point to find $b$. Using the second point afterwards is a free check.\n\n\\textbf{Two intercepts.} Write them as the points $(x_{\\text{int}},0)$ and $(0,y_{\\text{int}})$ and you are back in the two-point case. Intercepts are points, not loose numbers, and treating them as points prevents most mistakes here."
-      },
-      {
-        "kind": "concept",
-        "title": "Parallel and perpendicular",
-        "body": "Two distinct lines are parallel exactly when their slopes are equal; the intercepts must differ, or the two equations describe the same line. Two lines are perpendicular exactly when their slopes multiply to $-1$, which means each slope is the \\emph{negative reciprocal} of the other: flip the fraction \\emph{and} change the sign. The negative reciprocal of $\\frac{3}{4}$ is $-\\frac{4}{3}$; of $-\\frac{1}{2}$ it is $2$; of $5$ it is $-\\frac{1}{5}$.\n\nWhen a question puts an unknown constant inside a coefficient, as in $kx+6y=12$, express the slope in terms of that constant, $-\\frac{k}{6}$ here, and then impose the parallel or perpendicular condition as an equation in $k$."
-      },
-      {
-        "kind": "trap",
-        "title": "The three mistakes that cost the most points",
-        "body": "\\textbf{1. Half a negative reciprocal.} Turning $\\frac{2}{3}$ into $\\frac{3}{2}$ (flipped, sign forgotten) or into $-\\frac{2}{3}$ (sign changed, not flipped). Both appear as answer choices on purpose. Say the phrase in full every time: flip \\emph{and} negate.\n\n\\textbf{2. Swapped intercepts.} For $3x+4y=12$ the $x$-intercept is $4$ and the $y$-intercept is $3$. Set $y=0$ for the $x$-intercept -- the variable you set to zero is the one you are \\emph{not} looking for.\n\n\\textbf{3. Sign errors while rearranging.} Moving $2x$ across the equals sign makes it $-2x$, and dividing by a negative coefficient of $y$ changes the sign of \\emph{every} term on the other side. Rewrite the whole line rather than editing it in place."
-      },
-      {
-        "kind": "strategy",
-        "title": "Working faster on test day",
-        "body": "Convert to $y=mx+b$ first, almost always: once a line is in that form, slope, intercept, graph and comparison questions all become reading exercises.\n\nWhen the answer choices are equations, do not solve the whole problem -- filter. Find the slope you need and cross out every choice with the wrong one; usually two or three vanish at once, and the survivors are separated by their intercept, which one substitution settles.\n\nOn a graph question, read the $y$-intercept off the picture, then count rise over run between two lattice points the line clearly passes through. On the Bluebook app you can also enter a candidate equation in the graphing calculator and see whether it lands on the given points; that is often faster than algebra for a two-point question."
-      },
-      {
-        "kind": "worked",
-        "title": "Worked example 1: point and perpendicularity",
-        "body": "\\emph{Line $n$ passes through $(-3,5)$ and is perpendicular to the line $y=\\frac{3}{4}x+2$. Write the equation of line $n$.}\n\n\\textbf{Step 1 -- get the slope.} The given line has slope $\\frac{3}{4}$. Flip and negate: line $n$ has slope $-\\frac{4}{3}$.\n\n\\textbf{Step 2 -- use the point.} Substitute $(-3,5)$ into $y=-\\frac{4}{3}x+b$: $5=-\\frac{4}{3}(-3)+b=4+b$, so $b=1$.\n\n\\textbf{Step 3 -- write and check.} Line $n$ is $y=-\\frac{4}{3}x+1$. Check by putting $x=-3$ back in: $-\\frac{4}{3}(-3)+1=4+1=5$. \\checkmark\n\nThe step that breaks most often is the sign in $-\\frac{4}{3}(-3)$: a negative slope times a negative $x$ is \\emph{positive}. Getting $b=9$ instead of $b=1$ is exactly what that slip produces."
-      },
-      {
-        "kind": "worked",
-        "title": "Worked example 2: an unknown coefficient",
-        "body": "\\emph{In the $xy$-plane, the line $kx+6y=12$ is perpendicular to the line $2x-3y=5$. Find $k$.}\n\n\\textbf{Step 1 -- slopes in terms of the letters.} Using $m=-\\frac{A}{B}$: the first line has slope $-\\frac{k}{6}$, and the second has slope $-\\frac{2}{-3}=\\frac{2}{3}$.\n\n\\textbf{Step 2 -- impose the condition.} Perpendicular means the product of the slopes is $-1$: $-\\frac{k}{6}\\cdot\\frac{2}{3}=-1$, so $-\\frac{2k}{18}=-1$ and $-\\frac{k}{9}=-1$.\n\n\\textbf{Step 3 -- solve and sanity-check.} $k=9$. Then the first line is $9x+6y=12$ with slope $-\\frac{3}{2}$, and $-\\frac{3}{2}\\cdot\\frac{2}{3}=-1$. \\checkmark\n\nNotice that no point, graph or intercept was ever needed. A parallel or perpendicular condition is a statement about slopes alone, so translate it into one equation in the unknown constant and solve."
-      }
-    ]
-  },
-  "problems": [
-    {
-      "id": "T03-M1-01",
-      "module": 1,
-      "n": 1,
-      "difficulty": "E",
-      "type": "MC",
-      "skill": "Slope-intercept form",
-      "stem": "The equation of line $\\ell$ in the $xy$-plane is $y=-3x+7$. What is the slope of line $\\ell$?",
-      "choices": [
-        "$-3$",
-        "$\\frac{1}{3}$",
-        "$3$",
-        "$7$"
-      ],
-      "answer": "A",
-      "solution": "In slope-intercept form $y=mx+b$ the coefficient of $x$ is the slope, so reading the equation is the whole job: $m=-3$. The number $7$ is the $y$-intercept, not the slope.",
-      "steps": [
-        "Compare $y=-3x+7$ with $y=mx+b$.",
-        "The coefficient of $x$ is $m=-3$."
-      ],
-      "verify": "result = -3"
-    },
-    {
-      "id": "T03-M1-02",
-      "module": 1,
-      "n": 2,
-      "difficulty": "E",
-      "type": "MC",
-      "skill": "Slope-intercept form",
-      "stem": "Line $m$ is given by $y=\\frac{1}{2}x-6$. What is the $y$-coordinate of the point where line $m$ crosses the $y$-axis?",
-      "choices": [
-        "$\\frac{1}{2}$",
-        "$-6$",
-        "$6$",
-        "$12$"
-      ],
-      "answer": "B",
-      "solution": "A line crosses the $y$-axis where $x=0$, and substituting $x=0$ into $y=mx+b$ leaves $y=b$. Here $b=-6$, so the crossing point is $(0,-6)$.",
-      "steps": [
-        "Set $x=0$ in $y=\\frac{1}{2}x-6$.",
-        "$y=\\frac{1}{2}(0)-6=-6$."
-      ],
-      "verify": "x, y = symbols('x y')\nresult = (S(1)/2*0 - 6)"
-    },
-    {
-      "id": "T03-M1-03",
-      "module": 1,
-      "n": 3,
-      "difficulty": "E",
-      "type": "SPR",
-      "skill": "Graphing lines",
-      "stem": "A line in the $xy$-plane passes through $(0,4)$ and has slope $3$. What is the value of $y$ when $x=5$?",
-      "answer": "19",
-      "solution": "The point $(0,4)$ is the $y$-intercept, so the line is $y=3x+4$ with no extra work. Substituting $x=5$ gives $y=19$.",
-      "steps": [
-        "The point $(0,4)$ gives $b=4$, so $y=3x+4$.",
-        "Substitute $x=5$: $y=3(5)+4=19$."
-      ],
-      "verify": "x = symbols('x')\nresult = (3*x + 4).subs(x, 5)"
-    },
-    {
-      "id": "T03-M1-04",
-      "module": 1,
-      "n": 4,
-      "difficulty": "E",
-      "type": "MC",
-      "skill": "Standard to slope-intercept form",
-      "stem": "Which equation is equivalent to $2x+y=8$?",
-      "choices": [
-        "$y=2x+8$",
-        "$y=2x-8$",
-        "$y=-2x+8$",
-        "$y=-2x-8$"
-      ],
-      "answer": "C",
-      "solution": "Solving for $y$ means moving the $x$-term to the other side, which changes its sign: $y=-2x+8$. Forgetting that sign change is the most common error on this conversion.",
-      "steps": [
-        "Subtract $2x$ from both sides of $2x+y=8$.",
-        "$y=-2x+8$."
-      ],
-      "verify": "result = \"$y=-2x+8$\""
-    },
-    {
-      "id": "T03-M1-05",
-      "module": 1,
-      "n": 5,
-      "difficulty": "E",
-      "type": "MC",
-      "skill": "Intercepts",
-      "stem": "What is the $x$-coordinate of the $x$-intercept of the graph of $3x+4y=12$?",
-      "choices": [
-        "$-4$",
-        "$3$",
-        "$\\frac{4}{3}$",
-        "$4$"
-      ],
-      "answer": "D",
-      "solution": "Every point on the $x$-axis has $y=0$, so set $y=0$ and solve. The answer $3$ belongs to the $y$-intercept; swapping the two intercepts is the classic slip here.",
-      "steps": [
-        "Set $y=0$: $3x+4(0)=12$.",
-        "$3x=12$, so $x=4$."
-      ],
-      "verify": "x = symbols('x')\nresult = solve(3*x + 4*0 - 12, x)[0]"
-    },
-    {
-      "id": "T03-M1-06",
-      "module": 1,
-      "n": 6,
-      "difficulty": "E",
-      "type": "SPR",
-      "skill": "Slope from two points",
-      "stem": "What is the slope of the line that passes through the points $(2,3)$ and $(6,11)$?",
-      "answer": "2",
-      "solution": "Slope is the change in $y$ divided by the change in $x$, taken in the same order for both coordinates: $\\frac{11-3}{6-2}=2$.",
-      "steps": [
-        "Use $m=\\frac{y_2-y_1}{x_2-x_1}$.",
-        "$m=\\frac{11-3}{6-2}=\\frac{8}{4}=2$."
-      ],
-      "verify": "result = Rational(11-3, 6-2)"
-    },
-    {
-      "id": "T03-M1-07",
-      "module": 1,
-      "n": 7,
-      "difficulty": "E",
-      "type": "MC",
-      "skill": "Parallel lines",
-      "stem": "Which equation represents a line parallel to the line $y=4x-1$ in the $xy$-plane?",
-      "choices": [
-        "$y=-4x+5$",
-        "$y=4x+5$",
-        "$y=-\\frac{1}{4}x+5$",
-        "$y=\\frac{1}{4}x+5$"
-      ],
-      "answer": "B",
-      "solution": "Parallel lines have equal slopes and different $y$-intercepts. Only $y=4x+5$ keeps the slope $4$; the other choices change the slope, which tilts the line instead of shifting it.",
-      "steps": [
-        "Parallel lines share the same slope, here $m=4$.",
-        "$y=4x+5$ has slope $4$ and a different intercept."
-      ],
-      "verify": "result = \"$y=4x+5$\""
-    },
-    {
-      "id": "T03-M1-08",
-      "module": 1,
-      "n": 8,
-      "difficulty": "M",
-      "type": "MC",
-      "skill": "Standard form",
-      "stem": "What is the slope of the line $3x-5y=15$ in the $xy$-plane?",
-      "choices": [
-        "$\\frac{3}{5}$",
-        "$-\\frac{3}{5}$",
-        "$\\frac{5}{3}$",
-        "$3$"
-      ],
-      "answer": "A",
-      "solution": "Rewrite as $y=\\frac{3}{5}x-3$. Dividing by the negative coefficient $-5$ flips both signs on the right, which is exactly where sign errors appear.",
-      "steps": [
-        "$-5y=-3x+15$.",
-        "Divide by $-5$: $y=\\frac{3}{5}x-3$, so $m=\\frac{3}{5}$."
-      ],
-      "verify": "result = Rational(3, 5)"
-    },
-    {
-      "id": "T03-M1-09",
-      "module": 1,
-      "n": 9,
-      "difficulty": "M",
-      "type": "MC",
-      "skill": "Writing an equation",
-      "stem": "A line in the $xy$-plane has slope $\\frac{5}{2}$ and passes through the point $(0,-2)$. Which equation represents the line?",
-      "choices": [
-        "$y=\\frac{5}{2}x+2$",
-        "$y=-\\frac{5}{2}x-2$",
-        "$y=\\frac{5}{2}x-2$",
-        "$y=\\frac{2}{5}x-2$"
-      ],
-      "answer": "C",
-      "solution": "Because the given point has $x=0$, it is the $y$-intercept, so $b=-2$ can be written down immediately and the equation is $y=\\frac{5}{2}x-2$.",
-      "steps": [
-        "The point $(0,-2)$ gives $b=-2$.",
-        "With $m=\\frac{5}{2}$, the line is $y=\\frac{5}{2}x-2$."
-      ],
-      "verify": "result = \"$y=\\\\frac{5}{2}x-2$\""
-    },
-    {
-      "id": "T03-M1-10",
-      "module": 1,
-      "n": 10,
-      "difficulty": "M",
-      "type": "MC",
-      "skill": "Perpendicular lines",
-      "stem": "What is the slope of a line that is perpendicular to the line $2x+3y=9$?",
-      "choices": [
-        "$-\\frac{2}{3}$",
-        "$\\frac{2}{3}$",
-        "$\\frac{3}{2}$",
-        "$-\\frac{3}{2}$"
-      ],
-      "answer": "C",
-      "solution": "The given line has slope $-\\frac{2}{3}$. A perpendicular slope is the negative reciprocal: flip to $-\\frac{3}{2}$ and change the sign to $\\frac{3}{2}$. Flipping without changing the sign is the standard trap.",
-      "steps": [
-        "$3y=-2x+9$, so $y=-\\frac{2}{3}x+3$ and $m=-\\frac{2}{3}$.",
-        "The negative reciprocal of $-\\frac{2}{3}$ is $\\frac{3}{2}$."
-      ],
-      "verify": "result = Rational(3, 2)"
-    },
-    {
-      "id": "T03-M1-11",
-      "module": 1,
-      "n": 11,
-      "difficulty": "M",
-      "type": "MC",
-      "skill": "Line through two points",
-      "stem": "Which equation represents the line that passes through the points $(1,4)$ and $(3,10)$?",
-      "choices": [
-        "$y=3x+1$",
-        "$y=3x-1$",
-        "$y=\\frac{1}{3}x+1$",
-        "$y=3x+4$"
-      ],
-      "answer": "A",
-      "solution": "Find the slope first, then use one point to pin down $b$. With $m=3$ and the point $(1,4)$, $4=3(1)+b$ gives $b=1$, so the line is $y=3x+1$.",
-      "steps": [
-        "$m=\\frac{10-4}{3-1}=3$.",
-        "$4=3(1)+b$, so $b=1$ and $y=3x+1$."
-      ],
-      "verify": "result = \"$y=3x+1$\""
-    },
-    {
-      "id": "T03-M1-12",
-      "module": 1,
-      "n": 12,
-      "difficulty": "M",
-      "type": "SPR",
-      "skill": "Intercepts",
-      "stem": "What is the $x$-coordinate of the $x$-intercept of the graph of $y=\\frac{2}{3}x-8$?",
-      "answer": "12",
-      "solution": "Set $y=0$ and solve. Multiplying by the reciprocal $\\frac{3}{2}$ is faster than clearing the fraction first: $x=8\\cdot\\frac{3}{2}=12$.",
-      "steps": [
-        "Set $y=0$: $0=\\frac{2}{3}x-8$.",
-        "$\\frac{2}{3}x=8$, so $x=12$."
-      ],
-      "verify": "x = symbols('x')\nresult = solve(Rational(2,3)*x - 8, x)[0]"
-    },
-    {
-      "id": "T03-M1-13",
-      "module": 1,
-      "n": 13,
-      "difficulty": "M",
-      "type": "MC",
-      "skill": "Slope-intercept to standard form",
-      "stem": "Which equation is equivalent to $y=-\\frac{3}{4}x+2$?",
-      "choices": [
-        "$3x-4y=8$",
-        "$4x+3y=8$",
-        "$-3x+4y=8$",
-        "$3x+4y=8$"
-      ],
-      "answer": "D",
-      "solution": "Clear the fraction by multiplying every term by $4$, then collect the variables on one side: $4y=-3x+8$ becomes $3x+4y=8$. The $x$-term arrives on the left as $+3x$, not $-3x$.",
-      "steps": [
-        "Multiply by $4$: $4y=-3x+8$.",
-        "Add $3x$: $3x+4y=8$."
-      ],
-      "verify": "result = \"$3x+4y=8$\""
-    },
-    {
-      "id": "T03-M1-14",
-      "module": 1,
-      "n": 14,
-      "difficulty": "M",
-      "type": "MC",
-      "skill": "Graphing lines",
-      "stem": "The graph of a line in the $xy$-plane is shown above. Which equation represents this line?",
-      "figure": "\\begin{center}\\begin{tikzpicture}\\begin{axis}[width=6.2cm,height=6.2cm,axis lines=middle,xmin=-4,xmax=4,ymin=-5,ymax=5,grid=both,grid style={satline},minor tick num=0,xlabel={$x$},ylabel={$y$},xlabel style={anchor=west},ylabel style={anchor=south},tick label style={font=\\tiny},axis line style={-}]\\addplot[very thick,satblue,domain=-2:3]{2*x-1};\\addplot[only marks,mark=*,mark size=1.6pt,satnavy] coordinates {(0,-1)};\\addplot[only marks,mark=*,mark size=1.6pt,satnavy] coordinates {(2,3)};\\end{axis}\\end{tikzpicture}\\end{center}",
-      "choices": [
-        "$y=-2x-1$",
-        "$y=2x-1$",
-        "$y=2x+1$",
-        "$y=\\frac{1}{2}x-1$"
-      ],
-      "answer": "B",
-      "solution": "The line crosses the $y$-axis at $-1$, so $b=-1$. From $(0,-1)$ to $(2,3)$ the line rises $4$ while running $2$, so $m=2$ and the equation is $y=2x-1$.",
-      "steps": [
-        "Read the $y$-intercept from the graph: $b=-1$.",
-        "From $(0,-1)$ to $(2,3)$, $m=\\frac{3-(-1)}{2-0}=2$.",
-        "So $y=2x-1$."
-      ],
-      "verify": "result = \"$y=2x-1$\""
-    },
-    {
-      "id": "T03-M1-15",
-      "module": 1,
-      "n": 15,
-      "difficulty": "M",
-      "type": "SPR",
-      "skill": "Parallel lines",
-      "stem": "Line $k$ is parallel to the line $y=-2x+1$ and passes through the point $(4,7)$. What is the $y$-coordinate of the $y$-intercept of line $k$?",
-      "answer": "15",
-      "solution": "Parallel means the slope is copied, so line $k$ is $y=-2x+b$. Substituting the point gives $7=-8+b$, so $b=15$.",
-      "steps": [
-        "Line $k$ has slope $-2$, so $y=-2x+b$.",
-        "$7=-2(4)+b$, so $b=15$."
-      ],
-      "verify": "b = symbols('b')\nresult = solve(Eq(7, -2*4 + b), b)[0]"
-    },
-    {
-      "id": "T03-M1-16",
-      "module": 1,
-      "n": 16,
-      "difficulty": "H",
-      "type": "MC",
-      "skill": "Perpendicular lines",
-      "stem": "Line $n$ passes through the point $(-3,5)$ and is perpendicular to the line $y=\\frac{3}{4}x+2$. Which equation represents line $n$?",
-      "choices": [
-        "$y=\\frac{3}{4}x+1$",
-        "$y=-\\frac{4}{3}x+9$",
-        "$y=\\frac{4}{3}x+9$",
-        "$y=-\\frac{4}{3}x+1$"
-      ],
-      "answer": "D",
-      "solution": "Perpendicular to slope $\\frac{3}{4}$ means slope $-\\frac{4}{3}$. Then $5=-\\frac{4}{3}(-3)+b=4+b$, so $b=1$. Substituting a negative $x$ into a negative slope produces a positive product, and losing that is what makes $b=9$ look right.",
-      "steps": [
-        "The negative reciprocal of $\\frac{3}{4}$ is $-\\frac{4}{3}$.",
-        "$5=-\\frac{4}{3}(-3)+b=4+b$, so $b=1$.",
-        "Line $n$ is $y=-\\frac{4}{3}x+1$."
-      ],
-      "verify": "result = \"$y=-\\\\frac{4}{3}x+1$\""
-    },
-    {
-      "id": "T03-M1-17",
-      "module": 1,
-      "n": 17,
-      "difficulty": "H",
-      "type": "MC",
-      "skill": "Perpendicular lines",
-      "stem": "In the $xy$-plane, the line $kx+6y=12$ is perpendicular to the line $2x-3y=5$. What is the value of $k$?",
-      "choices": [
-        "$9$",
-        "$-9$",
-        "$4$",
-        "$-4$"
-      ],
-      "answer": "A",
-      "solution": "The two slopes are $-\\frac{k}{6}$ and $\\frac{2}{3}$, and perpendicular lines have slopes whose product is $-1$. Solving $-\\frac{k}{6}\\cdot\\frac{2}{3}=-1$ gives $k=9$.",
-      "steps": [
-        "$kx+6y=12$ has slope $-\\frac{k}{6}$; $2x-3y=5$ has slope $\\frac{2}{3}$.",
-        "Set the product equal to $-1$: $-\\frac{2k}{18}=-1$.",
-        "$k=9$."
-      ],
-      "verify": "k = symbols('k')\nresult = solve(Eq(-k/6 * Rational(2,3), -1), k)[0]"
-    },
-    {
-      "id": "T03-M1-18",
-      "module": 1,
-      "n": 18,
-      "difficulty": "H",
-      "type": "SPR",
-      "skill": "Parallel lines",
-      "stem": "The graph of $4x+ky=20$ in the $xy$-plane has the same slope as the graph of $y=-2x+7$. What is the value of $k$?",
-      "answer": "2",
-      "solution": "Writing $4x+ky=20$ as $y=-\\frac{4}{k}x+\\frac{20}{k}$ shows its slope is $-\\frac{4}{k}$. Setting $-\\frac{4}{k}=-2$ gives $k=2$.",
-      "steps": [
-        "$ky=-4x+20$, so the slope is $-\\frac{4}{k}$.",
-        "Set $-\\frac{4}{k}=-2$.",
-        "$k=2$."
-      ],
-      "verify": "k = symbols('k')\nresult = solve(Eq(Rational(-4,1)/k, -2), k)[0]"
-    },
-    {
-      "id": "T03-M1-19",
-      "module": 1,
-      "n": 19,
-      "difficulty": "H",
-      "type": "MC",
-      "skill": "Intercepts",
-      "stem": "A line in the $xy$-plane has $x$-intercept $6$ and $y$-intercept $-4$. Which equation represents this line?",
-      "choices": [
-        "$2x+3y=12$",
-        "$3x-2y=12$",
-        "$2x-3y=12$",
-        "$2x-3y=-12$"
-      ],
-      "answer": "C",
-      "solution": "The intercepts are the points $(6,0)$ and $(0,-4)$, so the slope is $\\frac{-4-0}{0-6}=\\frac{2}{3}$ and the line is $y=\\frac{2}{3}x-4$. Clearing the fraction gives $2x-3y=12$.",
-      "steps": [
-        "The intercepts are the points $(6,0)$ and $(0,-4)$.",
-        "$m=\\frac{-4-0}{0-6}=\\frac{2}{3}$, so $y=\\frac{2}{3}x-4$.",
-        "Multiply by $3$ and rearrange: $2x-3y=12$."
-      ],
-      "verify": "result = \"$2x-3y=12$\""
-    },
-    {
-      "id": "T03-M1-20",
-      "module": 1,
-      "n": 20,
-      "difficulty": "H",
-      "type": "MC",
-      "skill": "Perpendicular lines",
-      "stem": "Line $\\ell$ passes through the point $(2,-1)$ and is perpendicular to the line that passes through $(0,3)$ and $(4,1)$. What is the $x$-coordinate of the $x$-intercept of line $\\ell$?",
-      "choices": [
-        "$-5$",
-        "$\\frac{5}{2}$",
-        "$5$",
-        "$-\\frac{2}{5}$"
-      ],
-      "answer": "B",
-      "solution": "The line through $(0,3)$ and $(4,1)$ has slope $-\\frac{1}{2}$, so $\\ell$ has slope $2$ and equation $y=2x-5$. Its $x$-intercept comes from $0=2x-5$, giving $x=\\frac{5}{2}$; the value $-5$ is the $y$-intercept, not the $x$-intercept.",
-      "steps": [
-        "$m=\\frac{1-3}{4-0}=-\\frac{1}{2}$, so line $\\ell$ has slope $2$.",
-        "$-1=2(2)+b$ gives $b=-5$, so $y=2x-5$.",
-        "Set $y=0$: $x=\\frac{5}{2}$."
-      ],
-      "verify": "x = symbols('x')\nresult = solve(2*x - 5, x)[0]"
-    },
-    {
-      "id": "T03-M1-21",
-      "module": 1,
-      "n": 21,
-      "difficulty": "H",
-      "type": "MC",
-      "skill": "Line through two points",
-      "stem": "In the $xy$-plane, the line $y=mx+b$ passes through the points $(2,7)$ and $(5,16)$. What is the value of $m+b$?",
-      "choices": [
-        "$4$",
-        "$\\frac{20}{3}$",
-        "$2$",
-        "$10$"
-      ],
-      "answer": "A",
-      "solution": "The slope is $\\frac{16-7}{5-2}=3$, and $7=3(2)+b$ gives $b=1$, so $m+b=4$. Reversing the slope fraction to $\\frac{1}{3}$ is what produces the value $\\frac{20}{3}$.",
-      "steps": [
-        "$m=\\frac{16-7}{5-2}=3$.",
-        "$7=3(2)+b$, so $b=1$.",
-        "$m+b=3+1=4$."
-      ],
-      "verify": "m, b = symbols('m b')\ns = solve([Eq(2*m+b, 7), Eq(5*m+b, 16)], [m, b])\nresult = s[m] + s[b]"
-    },
-    {
-      "id": "T03-M1-22",
-      "module": 1,
-      "n": 22,
-      "difficulty": "H",
-      "type": "SPR",
-      "skill": "Perpendicular lines",
-      "stem": "Line $\\ell$ has equation $y=\\frac{2}{5}x-3$. Line $m$ is perpendicular to line $\\ell$ and passes through the point $(4,1)$. What is the $y$-coordinate of the point where line $m$ crosses the $y$-axis?",
-      "answer": "11",
-      "solution": "Line $m$ has slope $-\\frac{5}{2}$, the negative reciprocal of $\\frac{2}{5}$. Then $1=-\\frac{5}{2}(4)+b=-10+b$, so $b=11$.",
-      "steps": [
-        "The negative reciprocal of $\\frac{2}{5}$ is $-\\frac{5}{2}$.",
-        "$1=-\\frac{5}{2}(4)+b=-10+b$.",
-        "$b=11$."
-      ],
-      "verify": "b = symbols('b')\nresult = solve(Eq(1, Rational(-5,2)*4 + b), b)[0]"
-    },
-    {
-      "id": "T03-M2-01",
-      "module": 2,
-      "n": 23,
-      "difficulty": "E",
-      "type": "MC",
-      "skill": "Slope from two points",
-      "stem": "What is the slope of the line that passes through the points $(-1,4)$ and $(3,-4)$?",
-      "choices": [
-        "$2$",
-        "$-2$",
-        "$-\\frac{1}{2}$",
-        "$\\frac{1}{2}$"
-      ],
-      "answer": "B",
-      "solution": "Both differences must be taken in the same order: $\\frac{-4-4}{3-(-1)}=\\frac{-8}{4}=-2$. Subtracting in mixed order flips the sign of the answer.",
-      "steps": [
-        "$m=\\frac{-4-4}{3-(-1)}$.",
-        "$m=\\frac{-8}{4}=-2$."
-      ],
-      "verify": "result = Rational(-4-4, 3-(-1))"
-    },
-    {
-      "id": "T03-M2-02",
-      "module": 2,
-      "n": 24,
-      "difficulty": "E",
-      "type": "SPR",
-      "skill": "Intercepts",
-      "stem": "What is the $y$-coordinate of the $y$-intercept of the graph of $2x-5y=20$ in the $xy$-plane?",
-      "answer": "-4",
-      "solution": "Set $x=0$, because every point on the $y$-axis has $x=0$. Then $-5y=20$ and $y=-4$.",
-      "steps": [
-        "Set $x=0$: $-5y=20$.",
-        "$y=-4$."
-      ],
-      "verify": "y = symbols('y')\nresult = solve(Eq(2*0 - 5*y, 20), y)[0]"
-    },
-    {
-      "id": "T03-M2-03",
-      "module": 2,
-      "n": 25,
-      "difficulty": "E",
-      "type": "MC",
-      "skill": "Perpendicular lines",
-      "stem": "Which equation represents a line perpendicular to the line $y=-\\frac{1}{2}x+3$?",
-      "choices": [
-        "$y=-2x+1$",
-        "$y=-\\frac{1}{2}x-1$",
-        "$y=2x-1$",
-        "$y=\\frac{1}{2}x+3$"
-      ],
-      "answer": "C",
-      "solution": "The negative reciprocal of $-\\frac{1}{2}$ is $2$: flip the fraction and change the sign. Choice A only changes the sign, and choice D only flips, so neither is perpendicular.",
-      "steps": [
-        "The given slope is $-\\frac{1}{2}$.",
-        "Its negative reciprocal is $2$, so $y=2x-1$ works."
-      ],
-      "verify": "result = \"$y=2x-1$\""
-    },
-    {
-      "id": "T03-M2-04",
-      "module": 2,
-      "n": 26,
-      "difficulty": "E",
-      "type": "MC",
-      "skill": "Standard to slope-intercept form",
-      "stem": "Which equation is equivalent to $6x-2y=18$?",
-      "choices": [
-        "$y=3x+9$",
-        "$y=-3x+9$",
-        "$y=-3x-9$",
-        "$y=3x-9$"
-      ],
-      "answer": "D",
-      "solution": "Isolating $y$ requires dividing by $-2$, which changes the sign of every term on the right: $-2y=-6x+18$ becomes $y=3x-9$.",
-      "steps": [
-        "$-2y=-6x+18$.",
-        "Divide by $-2$: $y=3x-9$."
-      ],
-      "verify": "result = \"$y=3x-9$\""
-    },
-    {
-      "id": "T03-M2-05",
-      "module": 2,
-      "n": 27,
-      "difficulty": "E",
-      "type": "MC",
-      "skill": "Writing an equation",
-      "stem": "A line in the $xy$-plane passes through the point $(0,5)$ and has slope $-\\frac{3}{4}$. Which equation represents the line?",
-      "choices": [
-        "$y=-\\frac{3}{4}x+5$",
-        "$y=\\frac{3}{4}x+5$",
-        "$y=-\\frac{3}{4}x-5$",
-        "$y=\\frac{4}{3}x+5$"
-      ],
-      "answer": "A",
-      "solution": "The point $(0,5)$ is on the $y$-axis, so it is the $y$-intercept and $b=5$. With $m=-\\frac{3}{4}$ the equation is $y=-\\frac{3}{4}x+5$.",
-      "steps": [
-        "$(0,5)$ gives $b=5$.",
-        "With $m=-\\frac{3}{4}$, $y=-\\frac{3}{4}x+5$."
-      ],
-      "verify": "result = \"$y=-\\\\frac{3}{4}x+5$\""
-    },
-    {
-      "id": "T03-M2-06",
-      "module": 2,
-      "n": 28,
-      "difficulty": "E",
-      "type": "MC",
-      "skill": "Writing an equation",
-      "stem": "The graph of $y=4x+c$, where $c$ is a constant, passes through the point $(2,3)$. What is the value of $c$?",
-      "choices": [
-        "$11$",
-        "$-5$",
-        "$5$",
-        "$-11$"
-      ],
-      "answer": "B",
-      "solution": "A point on the graph makes the equation true, so $3=4(2)+c$. Then $c=3-8=-5$; adding instead of subtracting gives the trap value $11$.",
-      "steps": [
-        "Substitute $(2,3)$: $3=4(2)+c$.",
-        "$3=8+c$, so $c=-5$."
-      ],
-      "verify": "c = symbols('c')\nresult = solve(Eq(3, 4*2 + c), c)[0]"
-    },
-    {
-      "id": "T03-M2-07",
-      "module": 2,
-      "n": 29,
-      "difficulty": "E",
-      "type": "MC",
-      "skill": "Graphing lines",
-      "stem": "A line in the $xy$-plane is graphed above. Which of the following is an equation of that line?",
-      "figure": "\\begin{center}\\begin{tikzpicture}\\begin{axis}[width=6.2cm,height=6.2cm,axis lines=middle,xmin=-3,xmax=5,ymin=-4,ymax=5,grid=both,grid style={satline},minor tick num=0,xlabel={$x$},ylabel={$y$},xlabel style={anchor=west},ylabel style={anchor=south},tick label style={font=\\tiny},axis line style={-}]\\addplot[very thick,satblue,domain=-1:4]{-1.5*x+3};\\addplot[only marks,mark=*,mark size=1.6pt,satnavy] coordinates {(0,3)};\\addplot[only marks,mark=*,mark size=1.6pt,satnavy] coordinates {(2,0)};\\end{axis}\\end{tikzpicture}\\end{center}",
-      "choices": [
-        "$y=\\frac{3}{2}x+3$",
-        "$y=-\\frac{2}{3}x+3$",
-        "$y=-\\frac{3}{2}x+3$",
-        "$y=-\\frac{3}{2}x-3$"
-      ],
-      "answer": "C",
-      "solution": "The line meets the $y$-axis at $3$ and the $x$-axis at $2$, so it falls $3$ units while running $2$ units: $m=-\\frac{3}{2}$ and $b=3$.",
-      "steps": [
-        "The $y$-intercept is $3$, so $b=3$.",
-        "From $(0,3)$ to $(2,0)$, $m=\\frac{0-3}{2-0}=-\\frac{3}{2}$.",
-        "The line is $y=-\\frac{3}{2}x+3$."
-      ],
-      "verify": "result = \"$y=-\\\\frac{3}{2}x+3$\""
-    },
-    {
-      "id": "T03-M2-08",
-      "module": 2,
-      "n": 30,
-      "difficulty": "M",
-      "type": "MC",
-      "skill": "Intercepts",
-      "stem": "A line in the $xy$-plane has $x$-intercept $8$ and passes through the point $(2,9)$. What is the $y$-coordinate of its $y$-intercept?",
-      "choices": [
-        "$8$",
-        "$-12$",
-        "$\\frac{3}{2}$",
-        "$12$"
-      ],
-      "answer": "D",
-      "solution": "The $x$-intercept is the point $(8,0)$, so the slope is $\\frac{9-0}{2-8}=-\\frac{3}{2}$. Then $9=-\\frac{3}{2}(2)+b=-3+b$, so $b=12$.",
-      "steps": [
-        "The $x$-intercept is the point $(8,0)$.",
-        "$m=\\frac{9-0}{2-8}=-\\frac{3}{2}$.",
-        "$9=-\\frac{3}{2}(2)+b$, so $b=12$."
-      ],
-      "verify": "b = symbols('b')\nresult = solve(Eq(9, Rational(-3,2)*2 + b), b)[0]"
-    },
-    {
-      "id": "T03-M2-09",
-      "module": 2,
-      "n": 31,
-      "difficulty": "M",
-      "type": "SPR",
-      "skill": "Parallel lines",
-      "stem": "In the $xy$-plane, the graphs of $2x+3y=12$ and $y=mx-4$ are parallel, where $m$ is a constant. What is the value of $m$?",
-      "answer": "$-\\frac{2}{3}$",
-      "accepted": [
-        "-2/3"
-      ],
-      "solution": "Parallel graphs have equal slopes, and $2x+3y=12$ rearranges to $y=-\\frac{2}{3}x+4$, so $m=-\\frac{2}{3}$. The different constant terms guarantee the lines really are distinct.",
-      "steps": [
-        "$3y=-2x+12$, so $y=-\\frac{2}{3}x+4$.",
-        "Parallel lines share the slope, so $m=-\\frac{2}{3}$."
-      ],
-      "verify": "result = Rational(-2, 3)"
-    },
-    {
-      "id": "T03-M2-10",
-      "module": 2,
-      "n": 32,
-      "difficulty": "M",
-      "type": "MC",
-      "skill": "Intercepts",
-      "stem": "Line $\\ell$ passes through the point $(-4,2)$ and has slope $\\frac{1}{2}$. What is the $x$-coordinate of the $x$-intercept of line $\\ell$?",
-      "choices": [
-        "$-8$",
-        "$8$",
-        "$4$",
-        "$-4$"
-      ],
-      "answer": "A",
-      "solution": "From $2=\\frac{1}{2}(-4)+b$ we get $b=4$, so $\\ell$ is $y=\\frac{1}{2}x+4$. Setting $y=0$ gives $x=-8$; the value $4$ is the $y$-intercept, not the $x$-intercept.",
-      "steps": [
-        "$2=\\frac{1}{2}(-4)+b=-2+b$, so $b=4$.",
-        "Set $y=0$: $0=\\frac{1}{2}x+4$.",
-        "$x=-8$."
-      ],
-      "verify": "x = symbols('x')\nresult = solve(Rational(1,2)*x + 4, x)[0]"
-    },
-    {
-      "id": "T03-M2-11",
-      "module": 2,
-      "n": 33,
-      "difficulty": "M",
-      "type": "MC",
-      "skill": "Lines in context",
-      "stem": "The total cost $C$, in dollars, of a gym membership for $m$ months is given by $C=25m+60$, where $60$ dollars is a one-time joining fee. Which equation gives $m$ in terms of $C$?",
-      "choices": [
-        "$m=\\frac{C+60}{25}$",
-        "$m=25C-60$",
-        "$m=\\frac{C-60}{25}$",
-        "$m=\\frac{C}{25}-60$"
-      ],
-      "answer": "C",
-      "solution": "Undo the operations in reverse order: subtract the joining fee first, then divide by the monthly rate. Dividing before subtracting produces the choice $m=\\frac{C}{25}-60$.",
-      "steps": [
-        "Subtract $60$: $C-60=25m$.",
-        "Divide by $25$: $m=\\frac{C-60}{25}$."
-      ],
-      "verify": "result = \"$m=\\\\frac{C-60}{25}$\""
-    },
-    {
-      "id": "T03-M2-12",
-      "module": 2,
-      "n": 34,
-      "difficulty": "M",
-      "type": "MC",
-      "skill": "Slope from two points",
-      "stem": "The line that passes through the points $(1,-3)$ and $(k,9)$ has slope $4$, where $k$ is a constant. What is the value of $k$?",
-      "choices": [
-        "$-2$",
-        "$4$",
-        "$49$",
-        "$2$"
-      ],
-      "answer": "B",
-      "solution": "The slope condition is $\\frac{9-(-3)}{k-1}=4$, so $12=4(k-1)$ and $k=4$. Reading the rise as $9-3=6$ instead of $9-(-3)=12$ is the usual sign slip.",
-      "steps": [
-        "$\\frac{9-(-3)}{k-1}=4$, so $\\frac{12}{k-1}=4$.",
-        "$k-1=3$, so $k=4$."
-      ],
-      "verify": "k = symbols('k')\nresult = solve(Eq(Rational(12,1)/(k-1), 4), k)[0]"
-    },
-    {
-      "id": "T03-M2-13",
-      "module": 2,
-      "n": 35,
-      "difficulty": "M",
-      "type": "MC",
-      "skill": "Perpendicular lines",
-      "stem": "Which equation represents a line perpendicular to the line $4x-6y=15$?",
-      "choices": [
-        "$y=\\frac{3}{2}x+1$",
-        "$y=-\\frac{2}{3}x+1$",
-        "$y=\\frac{2}{3}x+1$",
-        "$y=-\\frac{3}{2}x+1$"
-      ],
-      "answer": "D",
-      "solution": "Rearranging gives $y=\\frac{2}{3}x-\\frac{5}{2}$, so the slope is $\\frac{2}{3}$ and a perpendicular line has slope $-\\frac{3}{2}$. Choice B keeps the size of the slope and only changes its sign, which is not enough.",
-      "steps": [
-        "$-6y=-4x+15$, so $y=\\frac{2}{3}x-\\frac{5}{2}$.",
-        "The negative reciprocal of $\\frac{2}{3}$ is $-\\frac{3}{2}$.",
-        "So $y=-\\frac{3}{2}x+1$ is perpendicular."
-      ],
-      "verify": "result = \"$y=-\\\\frac{3}{2}x+1$\""
-    },
-    {
-      "id": "T03-M2-14",
-      "module": 2,
-      "n": 36,
-      "difficulty": "M",
-      "type": "MC",
-      "skill": "Graphing lines",
-      "stem": "The line shown in the $xy$-plane above passes through the two marked points. Which equation represents this line in the form $Ax+By=C$?",
-      "figure": "\\begin{center}\\begin{tikzpicture}\\begin{axis}[width=6.2cm,height=6.2cm,axis lines=middle,xmin=-2,xmax=5,ymin=-8,ymax=4,grid=both,grid style={satline},minor tick num=0,xlabel={$x$},ylabel={$y$},xlabel style={anchor=west},ylabel style={anchor=south},tick label style={font=\\tiny},axis line style={-}]\\addplot[very thick,satblue,domain=0:4.5]{2*x-6};\\addplot[only marks,mark=*,mark size=1.6pt,satnavy] coordinates {(0,-6)};\\addplot[only marks,mark=*,mark size=1.6pt,satnavy] coordinates {(3,0)};\\end{axis}\\end{tikzpicture}\\end{center}",
-      "choices": [
-        "$2x+y=6$",
-        "$x-2y=6$",
-        "$2x-y=6$",
-        "$2x-y=-6$"
-      ],
-      "answer": "C",
-      "solution": "The line passes through $(0,-6)$ and $(3,0)$, so $m=2$ and $y=2x-6$. Moving the $x$-term left gives $-2x+y=-6$, or equivalently $2x-y=6$.",
-      "steps": [
-        "From the graph the line passes through $(0,-6)$ and $(3,0)$.",
-        "$m=\\frac{0-(-6)}{3-0}=2$, so $y=2x-6$.",
-        "Rearranged: $2x-y=6$."
-      ],
-      "verify": "result = \"$2x-y=6$\""
-    },
-    {
-      "id": "T03-M2-15",
-      "module": 2,
-      "n": 37,
-      "difficulty": "M",
-      "type": "SPR",
-      "skill": "Intercepts",
-      "stem": "What is the $x$-coordinate of the $x$-intercept of the graph of $y=-\\frac{5}{3}x+10$?",
-      "answer": "6",
-      "solution": "Set $y=0$: $\\frac{5}{3}x=10$, so $x=10\\cdot\\frac{3}{5}=6$. A negative slope with a positive intercept must cross the $x$-axis to the right of the origin, so a positive answer is expected.",
-      "steps": [
-        "Set $y=0$: $0=-\\frac{5}{3}x+10$.",
-        "$\\frac{5}{3}x=10$, so $x=6$."
-      ],
-      "verify": "x = symbols('x')\nresult = solve(Rational(-5,3)*x + 10, x)[0]"
-    },
-    {
-      "id": "T03-M2-16",
-      "module": 2,
-      "n": 38,
-      "difficulty": "H",
-      "type": "MC",
-      "skill": "Parallel lines",
-      "stem": "In the $xy$-plane, the graph of $ax-4y=12$ is parallel to the line that passes through the points $(1,2)$ and $(5,8)$, where $a$ is a constant. What is the value of $a$?",
-      "choices": [
-        "$6$",
-        "$-6$",
-        "$\\frac{3}{2}$",
-        "$8$"
-      ],
-      "answer": "A",
-      "solution": "The two-point slope is $\\frac{8-2}{5-1}=\\frac{3}{2}$, and $ax-4y=12$ has slope $\\frac{a}{4}$. Setting $\\frac{a}{4}=\\frac{3}{2}$ gives $a=6$; note that dividing by $-4$ makes the slope positive, so a negative $a$ cannot work.",
-      "steps": [
-        "$m=\\frac{8-2}{5-1}=\\frac{3}{2}$.",
-        "$-4y=-ax+12$, so $y=\\frac{a}{4}x-3$ and the slope is $\\frac{a}{4}$.",
-        "$\\frac{a}{4}=\\frac{3}{2}$, so $a=6$."
-      ],
-      "verify": "a = symbols('a')\nresult = solve(Eq(a/4, Rational(3,2)), a)[0]"
-    },
-    {
-      "id": "T03-M2-17",
-      "module": 2,
-      "n": 39,
-      "difficulty": "H",
-      "type": "SPR",
-      "skill": "Perpendicular lines",
-      "stem": "Line $m$ is perpendicular to the line $y=\\frac{3}{5}x-2$ and passes through the point $(3,4)$. What is the value of $y$ on line $m$ when $x=6$?",
-      "answer": "-1",
-      "solution": "Line $m$ has slope $-\\frac{5}{3}$. Moving from $x=3$ to $x=6$ is a run of $3$, so $y$ changes by $-\\frac{5}{3}\\cdot 3=-5$, giving $y=4-5=-1$; no intercept is needed.",
-      "steps": [
-        "The negative reciprocal of $\\frac{3}{5}$ is $-\\frac{5}{3}$.",
-        "From $x=3$ to $x=6$ the run is $3$, so the rise is $-\\frac{5}{3}(3)=-5$.",
-        "$y=4-5=-1$."
-      ],
-      "verify": "result = 4 + Rational(-5,3)*(6-3)"
-    },
-    {
-      "id": "T03-M2-18",
-      "module": 2,
-      "n": 40,
-      "difficulty": "H",
-      "type": "MC",
-      "skill": "Perpendicular lines",
-      "stem": "Line $\\ell$ passes through the points $(-2,7)$ and $(4,-5)$. Line $m$ is perpendicular to line $\\ell$ and passes through the midpoint of the segment joining those two points. Which equation represents line $m$?",
-      "choices": [
-        "$y=-2x+3$",
-        "$y=\\frac{1}{2}x-\\frac{1}{2}$",
-        "$y=2x-1$",
-        "$y=\\frac{1}{2}x+\\frac{1}{2}$"
-      ],
-      "answer": "D",
-      "solution": "The midpoint is $\\left(\\frac{-2+4}{2},\\frac{7+(-5)}{2}\\right)=(1,1)$ and line $\\ell$ has slope $-2$, so line $m$ has slope $\\frac{1}{2}$. Then $1=\\frac{1}{2}(1)+b$ gives $b=\\frac{1}{2}$.",
-      "steps": [
-        "Midpoint: $(1,1)$.",
-        "$m_\\ell=\\frac{-5-7}{4-(-2)}=-2$, so line $m$ has slope $\\frac{1}{2}$.",
-        "$1=\\frac{1}{2}(1)+b$, so $b=\\frac{1}{2}$ and $y=\\frac{1}{2}x+\\frac{1}{2}$."
-      ],
-      "verify": "result = \"$y=\\\\frac{1}{2}x+\\\\frac{1}{2}$\""
-    },
-    {
-      "id": "T03-M2-19",
-      "module": 2,
-      "n": 41,
-      "difficulty": "H",
-      "type": "MC",
-      "skill": "Writing an equation",
-      "stem": "In the $xy$-plane, the graph of $y=mx+4$ passes through the point at which the graph of $2x+y=16$ crosses the $x$-axis. What is the value of $m$?",
-      "choices": [
-        "$2$",
-        "$-\\frac{1}{2}$",
-        "$\\frac{1}{2}$",
-        "$-2$"
-      ],
-      "answer": "B",
-      "solution": "The graph of $2x+y=16$ meets the $x$-axis at $(8,0)$. Substituting that point gives $0=8m+4$, so $m=-\\frac{1}{2}$; using the $y$-intercept $(0,16)$ by mistake makes the equation unsolvable, which is a useful signal that the wrong intercept was taken.",
-      "steps": [
-        "Set $y=0$ in $2x+y=16$: $x=8$, so the point is $(8,0)$.",
-        "Substitute into $y=mx+4$: $0=8m+4$.",
-        "$m=-\\frac{1}{2}$."
-      ],
-      "verify": "m = symbols('m')\nresult = solve(Eq(0, m*8 + 4), m)[0]"
-    },
-    {
-      "id": "T03-M2-20",
-      "module": 2,
-      "n": 42,
-      "difficulty": "H",
-      "type": "MC",
-      "skill": "Intercepts",
-      "stem": "The graph of a line in the $xy$-plane has slope $-3$ and passes through the points $(a,0)$ and $(0,12)$, where $a$ is a constant. What is the value of $a$?",
-      "choices": [
-        "$-4$",
-        "$36$",
-        "$4$",
-        "$-36$"
-      ],
-      "answer": "C",
-      "solution": "The slope between the two intercepts is $\\frac{12-0}{0-a}=-\\frac{12}{a}$. Setting $-\\frac{12}{a}=-3$ gives $a=4$, and the positive answer matches a falling line that crosses the $x$-axis to the right of the origin.",
-      "steps": [
-        "$m=\\frac{12-0}{0-a}=-\\frac{12}{a}$.",
-        "Set $-\\frac{12}{a}=-3$.",
-        "$a=4$."
-      ],
-      "verify": "a = symbols('a')\nresult = solve(Eq(Rational(-12,1)/a, -3), a)[0]"
-    },
-    {
-      "id": "T03-M2-21",
-      "module": 2,
-      "n": 43,
-      "difficulty": "H",
-      "type": "SPR",
-      "skill": "Perpendicular lines",
-      "stem": "In the $xy$-plane, the graph of $3x+ky=12$ is perpendicular to the graph of $y=\\frac{3}{4}x-1$, where $k$ is a constant. What is the value of $k$?",
-      "answer": "$\\frac{9}{4}$",
-      "accepted": [
-        "9/4",
-        "2.25"
-      ],
-      "solution": "The graph of $3x+ky=12$ has slope $-\\frac{3}{k}$, and perpendicularity to slope $\\frac{3}{4}$ requires slope $-\\frac{4}{3}$. Solving $-\\frac{3}{k}=-\\frac{4}{3}$ gives $k=\\frac{9}{4}$.",
-      "steps": [
-        "$ky=-3x+12$, so the slope is $-\\frac{3}{k}$.",
-        "The required slope is $-\\frac{4}{3}$.",
-        "$-\\frac{3}{k}=-\\frac{4}{3}$ gives $k=\\frac{9}{4}$."
-      ],
-      "verify": "k = symbols('k')\nresult = solve(Eq(Rational(-3,1)/k, Rational(-4,3)), k)[0]"
-    },
-    {
-      "id": "T03-M2-22",
-      "module": 2,
-      "n": 44,
-      "difficulty": "H",
-      "type": "MC",
-      "skill": "Lines in context",
-      "stem": "A technician charges a one-time service fee plus a constant hourly rate. The total charge is $145$ dollars for a $2$-hour job and $280$ dollars for a $5$-hour job. If the total charge $C$, in dollars, is a linear function of the number of hours $h$, what is the one-time service fee, in dollars?",
-      "choices": [
-        "$45$",
-        "$35$",
-        "$100$",
-        "$55$"
-      ],
-      "answer": "D",
-      "solution": "The hourly rate is the slope, $\\frac{280-145}{5-2}=45$ dollars per hour, and the service fee is the value of $C$ when $h=0$, that is the $C$-intercept: $145-2(45)=55$. Reporting $45$ answers a different question, the hourly rate.",
-      "steps": [
-        "$m=\\frac{280-145}{5-2}=45$ dollars per hour.",
-        "$145=45(2)+b$, so $b=55$.",
-        "The one-time fee is the value at $h=0$, namely $55$ dollars."
-      ],
-      "verify": "b, r = symbols('b r')\ns = solve([Eq(2*r+b, 145), Eq(5*r+b, 280)], [b, r])\nresult = s[b]"
-    }
+ "number": 3,
+ "topic": "Linear Equations in Two Variables",
+ "domain": "Algebra",
+ "skills": [
+  "Slope-intercept and standard form",
+  "Graphing lines",
+  "Parallel and perpendicular lines"
+ ],
+ "lesson": {
+  "intro": "A linear equation in two variables describes a straight line in the $xy$-plane: every point $(x,y)$ that makes the equation true lies on the line, and every point on the line makes it true. The Digital SAT returns to this idea constantly -- it asks you to read a slope, to switch between the two standard ways of writing a line, to build a line from two points or from a point and a direction, and to decide when two lines are parallel or perpendicular. Everything in this topic comes back to one number, the slope.",
+  "blocks": [
+   {
+    "kind": "section",
+    "title": "The two forms you must recognise",
+    "body": "A line can be written in \\textbf{slope-intercept form} $y=mx+b$, where $m$ is the slope and $(0,b)$ is the $y$-intercept, or in \\textbf{standard form} $Ax+By=C$. Slope-intercept form is the one that tells you everything at a glance, so most SAT work begins by solving for $y$. Standard form is convenient when a question asks for intercepts, because setting $x=0$ or $y=0$ leaves a one-step equation.\n\nGoing from $Ax+By=C$ to $y=mx+b$ is always the same two moves: subtract the $x$-term, then divide every term by the coefficient of $y$. Doing that in general gives $y=-\\frac{A}{B}x+\\frac{C}{B}$, so the slope of $Ax+By=C$ is $-\\frac{A}{B}$ -- worth memorising, because it turns many questions into a single line of work."
+   },
+   {
+    "kind": "formula",
+    "title": "The facts of this topic",
+    "body": "\\textbf{Slope through two points:} $m=\\dfrac{y_2-y_1}{x_2-x_1}$.\n\n\\textbf{Slope-intercept form:} $y=mx+b$, with $y$-intercept $(0,b)$.\n\n\\textbf{Point-slope form:} $y-y_1=m(x-x_1)$ for a line of slope $m$ through $(x_1,y_1)$.\n\n\\textbf{Standard form:} $Ax+By=C$ has slope $-\\dfrac{A}{B}$, $x$-intercept $\\left(\\dfrac{C}{A},0\\right)$ and $y$-intercept $\\left(0,\\dfrac{C}{B}\\right)$.\n\n\\textbf{Parallel:} $m_1=m_2$. \\qquad \\textbf{Perpendicular:} $m_1m_2=-1$, that is $m_2=-\\dfrac{1}{m_1}$."
+   },
+   {
+    "kind": "concept",
+    "title": "What the slope actually says",
+    "body": "The slope is a rate: $m=\\frac{\\text{rise}}{\\text{run}}$ says that increasing $x$ by $1$ changes $y$ by $m$. That single sentence lets you move along a line without ever finding its equation. If a line has slope $-\\frac{5}{3}$ and passes through $(3,4)$, then running $3$ to the right drops you $5$, landing on $(6,-1)$.\n\nIt also tells you what the picture looks like before you compute anything: positive slope rises left to right, negative slope falls, slope $0$ is horizontal ($y=b$), and a vertical line $x=a$ has no slope at all. Use this as a sanity check -- an answer with the wrong sign on the slope is visibly wrong."
+   },
+   {
+    "kind": "section",
+    "title": "Building a line from what you are given",
+    "body": "Nearly every ``find the equation'' question hands you one of three packages, and each has a fixed route.\n\n\\textbf{A point and a slope.} Substitute the point into $y=mx+b$ and solve for $b$. If the point is already on the $y$-axis, as in $(0,-2)$, then $b$ is handed to you.\n\n\\textbf{Two points.} Compute $m$ first, then use either point to find $b$. Using the second point afterwards is a free check.\n\n\\textbf{Two intercepts.} Write them as the points $(x_{\\text{int}},0)$ and $(0,y_{\\text{int}})$ and you are back in the two-point case. Intercepts are points, not loose numbers, and treating them as points prevents most mistakes here."
+   },
+   {
+    "kind": "concept",
+    "title": "Parallel and perpendicular",
+    "body": "Two distinct lines are parallel exactly when their slopes are equal; the intercepts must differ, or the two equations describe the same line. Two lines are perpendicular exactly when their slopes multiply to $-1$, which means each slope is the \\emph{negative reciprocal} of the other: flip the fraction \\emph{and} change the sign. The negative reciprocal of $\\frac{3}{4}$ is $-\\frac{4}{3}$; of $-\\frac{1}{2}$ it is $2$; of $5$ it is $-\\frac{1}{5}$.\n\nWhen a question puts an unknown constant inside a coefficient, as in $kx+6y=12$, express the slope in terms of that constant, $-\\frac{k}{6}$ here, and then impose the parallel or perpendicular condition as an equation in $k$."
+   },
+   {
+    "kind": "trap",
+    "title": "The three mistakes that cost the most points",
+    "body": "\\textbf{1. Half a negative reciprocal.} Turning $\\frac{2}{3}$ into $\\frac{3}{2}$ (flipped, sign forgotten) or into $-\\frac{2}{3}$ (sign changed, not flipped). Both appear as answer choices on purpose. Say the phrase in full every time: flip \\emph{and} negate.\n\n\\textbf{2. Swapped intercepts.} For $3x+4y=12$ the $x$-intercept is $4$ and the $y$-intercept is $3$. Set $y=0$ for the $x$-intercept -- the variable you set to zero is the one you are \\emph{not} looking for.\n\n\\textbf{3. Sign errors while rearranging.} Moving $2x$ across the equals sign makes it $-2x$, and dividing by a negative coefficient of $y$ changes the sign of \\emph{every} term on the other side. Rewrite the whole line rather than editing it in place."
+   },
+   {
+    "kind": "strategy",
+    "title": "Working faster on test day",
+    "body": "Convert to $y=mx+b$ first, almost always: once a line is in that form, slope, intercept, graph and comparison questions all become reading exercises.\n\nWhen the answer choices are equations, do not solve the whole problem -- filter. Find the slope you need and cross out every choice with the wrong one; usually two or three vanish at once, and the survivors are separated by their intercept, which one substitution settles.\n\nOn a graph question, read the $y$-intercept off the picture, then count rise over run between two lattice points the line clearly passes through. On the Bluebook app you can also enter a candidate equation in the graphing calculator and see whether it lands on the given points; that is often faster than algebra for a two-point question."
+   },
+   {
+    "kind": "worked",
+    "title": "Worked example 1: point and perpendicularity",
+    "body": "\\emph{Line $n$ passes through $(-3,5)$ and is perpendicular to the line $y=\\frac{3}{4}x+2$. Write the equation of line $n$.}\n\n\\textbf{Step 1 -- get the slope.} The given line has slope $\\frac{3}{4}$. Flip and negate: line $n$ has slope $-\\frac{4}{3}$.\n\n\\textbf{Step 2 -- use the point.} Substitute $(-3,5)$ into $y=-\\frac{4}{3}x+b$: $5=-\\frac{4}{3}(-3)+b=4+b$, so $b=1$.\n\n\\textbf{Step 3 -- write and check.} Line $n$ is $y=-\\frac{4}{3}x+1$. Check by putting $x=-3$ back in: $-\\frac{4}{3}(-3)+1=4+1=5$. \\checkmark\n\nThe step that breaks most often is the sign in $-\\frac{4}{3}(-3)$: a negative slope times a negative $x$ is \\emph{positive}. Getting $b=9$ instead of $b=1$ is exactly what that slip produces."
+   },
+   {
+    "kind": "worked",
+    "title": "Worked example 2: an unknown coefficient",
+    "body": "\\emph{In the $xy$-plane, the line $kx+6y=12$ is perpendicular to the line $2x-3y=5$. Find $k$.}\n\n\\textbf{Step 1 -- slopes in terms of the letters.} Using $m=-\\frac{A}{B}$: the first line has slope $-\\frac{k}{6}$, and the second has slope $-\\frac{2}{-3}=\\frac{2}{3}$.\n\n\\textbf{Step 2 -- impose the condition.} Perpendicular means the product of the slopes is $-1$: $-\\frac{k}{6}\\cdot\\frac{2}{3}=-1$, so $-\\frac{2k}{18}=-1$ and $-\\frac{k}{9}=-1$.\n\n\\textbf{Step 3 -- solve and sanity-check.} $k=9$. Then the first line is $9x+6y=12$ with slope $-\\frac{3}{2}$, and $-\\frac{3}{2}\\cdot\\frac{2}{3}=-1$. \\checkmark\n\nNotice that no point, graph or intercept was ever needed. A parallel or perpendicular condition is a statement about slopes alone, so translate it into one equation in the unknown constant and solve."
+   }
   ]
+ },
+ "problems": [
+  {
+   "id": "T03-M1-01",
+   "module": 1,
+   "n": 1,
+   "difficulty": "E",
+   "type": "MC",
+   "skill": "Slope-intercept form",
+   "stem": "The equation of line $\\ell$ in the $xy$-plane is $y=-3x+7$. What is the slope of line $\\ell$?",
+   "choices": [
+    "$-3$",
+    "$\\frac{1}{3}$",
+    "$3$",
+    "$7$"
+   ],
+   "answer": "A",
+   "solution": "In slope-intercept form $y=mx+b$ the coefficient of $x$ is the slope, so reading the equation is the whole job: $m=-3$. The number $7$ is the $y$-intercept, not the slope.",
+   "steps": [
+    "Compare $y=-3x+7$ with $y=mx+b$.",
+    "The coefficient of $x$ is $m=-3$."
+   ],
+   "verify": "result = -3"
+  },
+  {
+   "id": "T03-M1-02",
+   "module": 1,
+   "n": 2,
+   "difficulty": "E",
+   "type": "MC",
+   "skill": "Slope-intercept form",
+   "stem": "Line $m$ is given by $y=\\frac{1}{2}x-6$. What is the $y$-coordinate of the point where line $m$ crosses the $y$-axis?",
+   "choices": [
+    "$\\frac{1}{2}$",
+    "$-6$",
+    "$6$",
+    "$12$"
+   ],
+   "answer": "B",
+   "solution": "A line crosses the $y$-axis where $x=0$, and substituting $x=0$ into $y=mx+b$ leaves $y=b$. Here $b=-6$, so the crossing point is $(0,-6)$.",
+   "steps": [
+    "Set $x=0$ in $y=\\frac{1}{2}x-6$.",
+    "$y=\\frac{1}{2}(0)-6=-6$."
+   ],
+   "verify": "x, y = symbols('x y')\nresult = (S(1)/2*0 - 6)"
+  },
+  {
+   "id": "T03-M1-03",
+   "module": 1,
+   "n": 3,
+   "difficulty": "E",
+   "type": "SPR",
+   "skill": "Graphing lines",
+   "stem": "A line in the $xy$-plane passes through $(0,4)$ and has slope $3$. What is the value of $y$ when $x=5$?",
+   "answer": "19",
+   "solution": "The point $(0,4)$ is the $y$-intercept, so the line is $y=3x+4$ with no extra work. Substituting $x=5$ gives $y=19$.",
+   "steps": [
+    "The point $(0,4)$ gives $b=4$, so $y=3x+4$.",
+    "Substitute $x=5$: $y=3(5)+4=19$."
+   ],
+   "verify": "x = symbols('x')\nresult = (3*x + 4).subs(x, 5)"
+  },
+  {
+   "id": "T03-M1-04",
+   "module": 1,
+   "n": 4,
+   "difficulty": "E",
+   "type": "MC",
+   "skill": "Standard to slope-intercept form",
+   "stem": "Which equation is equivalent to $2x+y=8$?",
+   "choices": [
+    "$y=2x+8$",
+    "$y=2x-8$",
+    "$y=-2x+8$",
+    "$y=-2x-8$"
+   ],
+   "answer": "C",
+   "solution": "Solving for $y$ means moving the $x$-term to the other side, which changes its sign: $y=-2x+8$. Forgetting that sign change is the most common error on this conversion.",
+   "steps": [
+    "Subtract $2x$ from both sides of $2x+y=8$.",
+    "$y=-2x+8$."
+   ],
+   "verify": "result = \"$y=-2x+8$\""
+  },
+  {
+   "id": "T03-M1-05",
+   "module": 1,
+   "n": 5,
+   "difficulty": "E",
+   "type": "MC",
+   "skill": "Intercepts",
+   "stem": "What is the $x$-coordinate of the $x$-intercept of the graph of $3x+4y=12$?",
+   "choices": [
+    "$-4$",
+    "$3$",
+    "$\\frac{4}{3}$",
+    "$4$"
+   ],
+   "answer": "D",
+   "solution": "Every point on the $x$-axis has $y=0$, so set $y=0$ and solve. The answer $3$ belongs to the $y$-intercept; swapping the two intercepts is the classic slip here.",
+   "steps": [
+    "Set $y=0$: $3x+4(0)=12$.",
+    "$3x=12$, so $x=4$."
+   ],
+   "verify": "x = symbols('x')\nresult = solve(3*x + 4*0 - 12, x)[0]"
+  },
+  {
+   "id": "T03-M1-06",
+   "module": 1,
+   "n": 6,
+   "difficulty": "E",
+   "type": "SPR",
+   "skill": "Slope from two points",
+   "stem": "What is the slope of the line that passes through the points $(-1,4)$ and $(3,16)$?",
+   "answer": "3",
+   "solution": "Slope is the change in $y$ divided by the change in $x$, taken in the same order for both coordinates: $\\frac{16-4}{3-(-1)}=\\frac{12}{4}=3$. Subtracting the negative $x$-coordinate is what makes the denominator $4$, not $2$.",
+   "steps": [
+    "Use $m=\\frac{y_2-y_1}{x_2-x_1}$.",
+    "$m=\\frac{16-4}{3-(-1)}=\\frac{12}{4}=3$."
+   ],
+   "verify": "result = Rational(16-4, 3-(-1))"
+  },
+  {
+   "id": "T03-M1-07",
+   "module": 1,
+   "n": 7,
+   "difficulty": "E",
+   "type": "MC",
+   "skill": "Parallel lines",
+   "stem": "Which equation represents a line parallel to the line $y=4x-1$ in the $xy$-plane?",
+   "choices": [
+    "$y=-4x+5$",
+    "$y=4x+5$",
+    "$y=-\\frac{1}{4}x+5$",
+    "$y=\\frac{1}{4}x+5$"
+   ],
+   "answer": "B",
+   "solution": "Parallel lines have equal slopes and different $y$-intercepts. Only $y=4x+5$ keeps the slope $4$; the other choices change the slope, which tilts the line instead of shifting it.",
+   "steps": [
+    "Parallel lines share the same slope, here $m=4$.",
+    "$y=4x+5$ has slope $4$ and a different intercept."
+   ],
+   "verify": "result = \"$y=4x+5$\""
+  },
+  {
+   "id": "T03-M1-08",
+   "module": 1,
+   "n": 8,
+   "difficulty": "M",
+   "type": "MC",
+   "skill": "Standard form",
+   "stem": "What is the slope of the line $3x-5y=15$ in the $xy$-plane?",
+   "choices": [
+    "$\\frac{3}{5}$",
+    "$-\\frac{3}{5}$",
+    "$\\frac{5}{3}$",
+    "$3$"
+   ],
+   "answer": "A",
+   "solution": "Rewrite as $y=\\frac{3}{5}x-3$. Dividing by the negative coefficient $-5$ flips both signs on the right, which is exactly where sign errors appear.",
+   "steps": [
+    "$-5y=-3x+15$.",
+    "Divide by $-5$: $y=\\frac{3}{5}x-3$, so $m=\\frac{3}{5}$."
+   ],
+   "verify": "result = Rational(3, 5)"
+  },
+  {
+   "id": "T03-M1-09",
+   "module": 1,
+   "n": 9,
+   "difficulty": "M",
+   "type": "MC",
+   "skill": "Writing an equation",
+   "stem": "A line in the $xy$-plane has slope $\\frac{5}{2}$ and passes through the point $(0,-2)$. Which equation represents the line?",
+   "choices": [
+    "$y=\\frac{5}{2}x+2$",
+    "$y=-\\frac{5}{2}x-2$",
+    "$y=\\frac{5}{2}x-2$",
+    "$y=\\frac{2}{5}x-2$"
+   ],
+   "answer": "C",
+   "solution": "Because the given point has $x=0$, it is the $y$-intercept, so $b=-2$ can be written down immediately and the equation is $y=\\frac{5}{2}x-2$.",
+   "steps": [
+    "The point $(0,-2)$ gives $b=-2$.",
+    "With $m=\\frac{5}{2}$, the line is $y=\\frac{5}{2}x-2$."
+   ],
+   "verify": "result = \"$y=\\\\frac{5}{2}x-2$\""
+  },
+  {
+   "id": "T03-M1-10",
+   "module": 1,
+   "n": 10,
+   "difficulty": "M",
+   "type": "MC",
+   "skill": "Perpendicular lines",
+   "stem": "What is the slope of a line that is perpendicular to the line $2x+3y=9$?",
+   "choices": [
+    "$-\\frac{2}{3}$",
+    "$\\frac{2}{3}$",
+    "$\\frac{3}{2}$",
+    "$-\\frac{3}{2}$"
+   ],
+   "answer": "C",
+   "solution": "The given line has slope $-\\frac{2}{3}$. A perpendicular slope is the negative reciprocal: flip to $-\\frac{3}{2}$ and change the sign to $\\frac{3}{2}$. Flipping without changing the sign is the standard trap.",
+   "steps": [
+    "$3y=-2x+9$, so $y=-\\frac{2}{3}x+3$ and $m=-\\frac{2}{3}$.",
+    "The negative reciprocal of $-\\frac{2}{3}$ is $\\frac{3}{2}$."
+   ],
+   "verify": "result = Rational(3, 2)"
+  },
+  {
+   "id": "T03-M1-11",
+   "module": 1,
+   "n": 11,
+   "difficulty": "M",
+   "type": "MC",
+   "skill": "Line through two points",
+   "stem": "Which equation represents the line that passes through the points $(1,4)$ and $(3,10)$?",
+   "choices": [
+    "$y=3x+1$",
+    "$y=3x-1$",
+    "$y=\\frac{1}{3}x+1$",
+    "$y=3x+4$"
+   ],
+   "answer": "A",
+   "solution": "Find the slope first, then use one point to pin down $b$. With $m=3$ and the point $(1,4)$, $4=3(1)+b$ gives $b=1$, so the line is $y=3x+1$.",
+   "steps": [
+    "$m=\\frac{10-4}{3-1}=3$.",
+    "$4=3(1)+b$, so $b=1$ and $y=3x+1$."
+   ],
+   "verify": "result = \"$y=3x+1$\""
+  },
+  {
+   "id": "T03-M1-12",
+   "module": 1,
+   "n": 12,
+   "difficulty": "M",
+   "type": "SPR",
+   "skill": "Intercepts",
+   "stem": "What is the $x$-coordinate of the $x$-intercept of the graph of $y=\\frac{2}{3}x-8$?",
+   "answer": "12",
+   "solution": "Set $y=0$ and solve. Multiplying by the reciprocal $\\frac{3}{2}$ is faster than clearing the fraction first: $x=8\\cdot\\frac{3}{2}=12$.",
+   "steps": [
+    "Set $y=0$: $0=\\frac{2}{3}x-8$.",
+    "$\\frac{2}{3}x=8$, so $x=12$."
+   ],
+   "verify": "x = symbols('x')\nresult = solve(Rational(2,3)*x - 8, x)[0]"
+  },
+  {
+   "id": "T03-M1-13",
+   "module": 1,
+   "n": 13,
+   "difficulty": "M",
+   "type": "MC",
+   "skill": "Slope-intercept to standard form",
+   "stem": "Which equation is equivalent to $y=-\\frac{3}{4}x+2$?",
+   "choices": [
+    "$3x-4y=8$",
+    "$4x+3y=8$",
+    "$-3x+4y=8$",
+    "$3x+4y=8$"
+   ],
+   "answer": "D",
+   "solution": "Clear the fraction by multiplying every term by $4$, then collect the variables on one side: $4y=-3x+8$ becomes $3x+4y=8$. The $x$-term arrives on the left as $+3x$, not $-3x$.",
+   "steps": [
+    "Multiply by $4$: $4y=-3x+8$.",
+    "Add $3x$: $3x+4y=8$."
+   ],
+   "verify": "result = \"$3x+4y=8$\""
+  },
+  {
+   "id": "T03-M1-14",
+   "module": 1,
+   "n": 14,
+   "difficulty": "M",
+   "type": "MC",
+   "skill": "Graphing lines",
+   "stem": "The graph of a line in the $xy$-plane is shown above. Which equation represents this line?",
+   "figure": "\\begin{center}\\begin{tikzpicture}\\begin{axis}[width=6.2cm,height=6.2cm,axis lines=middle,xmin=-4,xmax=4,ymin=-5,ymax=5,grid=both,grid style={satline},minor tick num=0,xlabel={$x$},ylabel={$y$},xlabel style={anchor=west},ylabel style={anchor=south},tick label style={font=\\tiny},axis line style={-}]\\addplot[very thick,satblue,domain=-2:3]{2*x-1};\\addplot[only marks,mark=*,mark size=1.6pt,satnavy] coordinates {(0,-1)};\\addplot[only marks,mark=*,mark size=1.6pt,satnavy] coordinates {(2,3)};\\end{axis}\\end{tikzpicture}\\end{center}",
+   "choices": [
+    "$y=-2x-1$",
+    "$y=2x-1$",
+    "$y=2x+1$",
+    "$y=\\frac{1}{2}x-1$"
+   ],
+   "answer": "B",
+   "solution": "The line crosses the $y$-axis at $-1$, so $b=-1$. From $(0,-1)$ to $(2,3)$ the line rises $4$ while running $2$, so $m=2$ and the equation is $y=2x-1$.",
+   "steps": [
+    "Read the $y$-intercept from the graph: $b=-1$.",
+    "From $(0,-1)$ to $(2,3)$, $m=\\frac{3-(-1)}{2-0}=2$.",
+    "So $y=2x-1$."
+   ],
+   "verify": "result = \"$y=2x-1$\""
+  },
+  {
+   "id": "T03-M1-15",
+   "module": 1,
+   "n": 15,
+   "difficulty": "M",
+   "type": "SPR",
+   "skill": "Parallel lines",
+   "stem": "Line $k$ is parallel to the line $y=-2x+1$ and passes through the point $(4,7)$. What is the $y$-coordinate of the $y$-intercept of line $k$?",
+   "answer": "15",
+   "solution": "Parallel means the slope is copied, so line $k$ is $y=-2x+b$. Substituting the point gives $7=-8+b$, so $b=15$.",
+   "steps": [
+    "Line $k$ has slope $-2$, so $y=-2x+b$.",
+    "$7=-2(4)+b$, so $b=15$."
+   ],
+   "verify": "b = symbols('b')\nresult = solve(Eq(7, -2*4 + b), b)[0]"
+  },
+  {
+   "id": "T03-M1-16",
+   "module": 1,
+   "n": 16,
+   "difficulty": "H",
+   "type": "MC",
+   "skill": "Perpendicular lines",
+   "stem": "Line $n$ passes through the point $(-3,5)$ and is perpendicular to the line $y=\\frac{3}{4}x+2$. Which equation represents line $n$?",
+   "choices": [
+    "$y=\\frac{3}{4}x+1$",
+    "$y=-\\frac{4}{3}x+9$",
+    "$y=\\frac{4}{3}x+9$",
+    "$y=-\\frac{4}{3}x+1$"
+   ],
+   "answer": "D",
+   "solution": "Perpendicular to slope $\\frac{3}{4}$ means slope $-\\frac{4}{3}$. Then $5=-\\frac{4}{3}(-3)+b=4+b$, so $b=1$. Substituting a negative $x$ into a negative slope produces a positive product, and losing that is what makes $b=9$ look right.",
+   "steps": [
+    "The negative reciprocal of $\\frac{3}{4}$ is $-\\frac{4}{3}$.",
+    "$5=-\\frac{4}{3}(-3)+b=4+b$, so $b=1$.",
+    "Line $n$ is $y=-\\frac{4}{3}x+1$."
+   ],
+   "verify": "result = \"$y=-\\\\frac{4}{3}x+1$\""
+  },
+  {
+   "id": "T03-M1-17",
+   "module": 1,
+   "n": 17,
+   "difficulty": "H",
+   "type": "MC",
+   "skill": "Perpendicular lines",
+   "stem": "In the $xy$-plane, the line $kx+6y=12$ is perpendicular to the line $2x-3y=5$. What is the value of $k$?",
+   "choices": [
+    "$9$",
+    "$-9$",
+    "$4$",
+    "$-4$"
+   ],
+   "answer": "A",
+   "solution": "The two slopes are $-\\frac{k}{6}$ and $\\frac{2}{3}$, and perpendicular lines have slopes whose product is $-1$. Solving $-\\frac{k}{6}\\cdot\\frac{2}{3}=-1$ gives $k=9$.",
+   "steps": [
+    "$kx+6y=12$ has slope $-\\frac{k}{6}$; $2x-3y=5$ has slope $\\frac{2}{3}$.",
+    "Set the product equal to $-1$: $-\\frac{2k}{18}=-1$.",
+    "$k=9$."
+   ],
+   "verify": "k = symbols('k')\nresult = solve(Eq(-k/6 * Rational(2,3), -1), k)[0]"
+  },
+  {
+   "id": "T03-M1-18",
+   "module": 1,
+   "n": 18,
+   "difficulty": "H",
+   "type": "SPR",
+   "skill": "Parallel lines",
+   "stem": "The graph of $4x+ky=20$ in the $xy$-plane has the same slope as the graph of $y=-2x+7$. What is the value of $k$?",
+   "answer": "2",
+   "solution": "Writing $4x+ky=20$ as $y=-\\frac{4}{k}x+\\frac{20}{k}$ shows its slope is $-\\frac{4}{k}$. Setting $-\\frac{4}{k}=-2$ gives $k=2$.",
+   "steps": [
+    "$ky=-4x+20$, so the slope is $-\\frac{4}{k}$.",
+    "Set $-\\frac{4}{k}=-2$.",
+    "$k=2$."
+   ],
+   "verify": "k = symbols('k')\nresult = solve(Eq(Rational(-4,1)/k, -2), k)[0]"
+  },
+  {
+   "id": "T03-M1-19",
+   "module": 1,
+   "n": 19,
+   "difficulty": "H",
+   "type": "MC",
+   "skill": "Intercepts",
+   "stem": "A line in the $xy$-plane has $x$-intercept $6$ and $y$-intercept $-4$. Which equation represents this line?",
+   "choices": [
+    "$2x+3y=12$",
+    "$3x-2y=12$",
+    "$2x-3y=12$",
+    "$2x-3y=-12$"
+   ],
+   "answer": "C",
+   "solution": "The intercepts are the points $(6,0)$ and $(0,-4)$, so the slope is $\\frac{-4-0}{0-6}=\\frac{2}{3}$ and the line is $y=\\frac{2}{3}x-4$. Clearing the fraction gives $2x-3y=12$.",
+   "steps": [
+    "The intercepts are the points $(6,0)$ and $(0,-4)$.",
+    "$m=\\frac{-4-0}{0-6}=\\frac{2}{3}$, so $y=\\frac{2}{3}x-4$.",
+    "Multiply by $3$ and rearrange: $2x-3y=12$."
+   ],
+   "verify": "result = \"$2x-3y=12$\""
+  },
+  {
+   "id": "T03-M1-20",
+   "module": 1,
+   "n": 20,
+   "difficulty": "H",
+   "type": "MC",
+   "skill": "Perpendicular lines",
+   "stem": "Line $\\ell$ passes through the point $(2,-1)$ and is perpendicular to the line that passes through $(0,3)$ and $(4,1)$. What is the $x$-coordinate of the $x$-intercept of line $\\ell$?",
+   "choices": [
+    "$-5$",
+    "$\\frac{5}{2}$",
+    "$5$",
+    "$-\\frac{2}{5}$"
+   ],
+   "answer": "B",
+   "solution": "The line through $(0,3)$ and $(4,1)$ has slope $-\\frac{1}{2}$, so $\\ell$ has slope $2$ and equation $y=2x-5$. Its $x$-intercept comes from $0=2x-5$, giving $x=\\frac{5}{2}$; the value $-5$ is the $y$-intercept, not the $x$-intercept.",
+   "steps": [
+    "$m=\\frac{1-3}{4-0}=-\\frac{1}{2}$, so line $\\ell$ has slope $2$.",
+    "$-1=2(2)+b$ gives $b=-5$, so $y=2x-5$.",
+    "Set $y=0$: $x=\\frac{5}{2}$."
+   ],
+   "verify": "x = symbols('x')\nresult = solve(2*x - 5, x)[0]"
+  },
+  {
+   "id": "T03-M1-21",
+   "module": 1,
+   "n": 21,
+   "difficulty": "H",
+   "type": "MC",
+   "skill": "Line through two points",
+   "stem": "In the $xy$-plane, the line $y=mx+b$ passes through the points $(2,7)$ and $(5,16)$. What is the value of $m+b$?",
+   "choices": [
+    "$4$",
+    "$\\frac{20}{3}$",
+    "$2$",
+    "$10$"
+   ],
+   "answer": "A",
+   "solution": "The slope is $\\frac{16-7}{5-2}=3$, and $7=3(2)+b$ gives $b=1$, so $m+b=4$. Reversing the slope fraction to $\\frac{1}{3}$ is what produces the value $\\frac{20}{3}$.",
+   "steps": [
+    "$m=\\frac{16-7}{5-2}=3$.",
+    "$7=3(2)+b$, so $b=1$.",
+    "$m+b=3+1=4$."
+   ],
+   "verify": "m, b = symbols('m b')\ns = solve([Eq(2*m+b, 7), Eq(5*m+b, 16)], [m, b])\nresult = s[m] + s[b]"
+  },
+  {
+   "id": "T03-M1-22",
+   "module": 1,
+   "n": 22,
+   "difficulty": "H",
+   "type": "SPR",
+   "skill": "Perpendicular lines",
+   "stem": "Line $\\ell$ has equation $y=\\frac{2}{5}x-3$. Line $m$ is perpendicular to line $\\ell$ and passes through the point $(4,1)$. What is the $y$-coordinate of the point where line $m$ crosses the $y$-axis?",
+   "answer": "11",
+   "solution": "Line $m$ has slope $-\\frac{5}{2}$, the negative reciprocal of $\\frac{2}{5}$. Then $1=-\\frac{5}{2}(4)+b=-10+b$, so $b=11$.",
+   "steps": [
+    "The negative reciprocal of $\\frac{2}{5}$ is $-\\frac{5}{2}$.",
+    "$1=-\\frac{5}{2}(4)+b=-10+b$.",
+    "$b=11$."
+   ],
+   "verify": "b = symbols('b')\nresult = solve(Eq(1, Rational(-5,2)*4 + b), b)[0]"
+  },
+  {
+   "id": "T03-M2-01",
+   "module": 2,
+   "n": 23,
+   "difficulty": "E",
+   "type": "MC",
+   "skill": "Slope from two points",
+   "stem": "What is the slope of the line that passes through the points $(-1,4)$ and $(3,-4)$?",
+   "choices": [
+    "$2$",
+    "$-2$",
+    "$-\\frac{1}{2}$",
+    "$\\frac{1}{2}$"
+   ],
+   "answer": "B",
+   "solution": "Both differences must be taken in the same order: $\\frac{-4-4}{3-(-1)}=\\frac{-8}{4}=-2$. Subtracting in mixed order flips the sign of the answer.",
+   "steps": [
+    "$m=\\frac{-4-4}{3-(-1)}$.",
+    "$m=\\frac{-8}{4}=-2$."
+   ],
+   "verify": "result = Rational(-4-4, 3-(-1))"
+  },
+  {
+   "id": "T03-M2-02",
+   "module": 2,
+   "n": 24,
+   "difficulty": "E",
+   "type": "SPR",
+   "skill": "Intercepts",
+   "stem": "What is the $y$-coordinate of the $y$-intercept of the graph of $2x-5y=20$ in the $xy$-plane?",
+   "answer": "-4",
+   "solution": "Set $x=0$, because every point on the $y$-axis has $x=0$. Then $-5y=20$ and $y=-4$.",
+   "steps": [
+    "Set $x=0$: $-5y=20$.",
+    "$y=-4$."
+   ],
+   "verify": "y = symbols('y')\nresult = solve(Eq(2*0 - 5*y, 20), y)[0]"
+  },
+  {
+   "id": "T03-M2-03",
+   "module": 2,
+   "n": 25,
+   "difficulty": "E",
+   "type": "MC",
+   "skill": "Perpendicular lines",
+   "stem": "Which equation represents a line perpendicular to the line $y=-\\frac{1}{2}x+3$?",
+   "choices": [
+    "$y=-2x+1$",
+    "$y=-\\frac{1}{2}x-1$",
+    "$y=2x-1$",
+    "$y=\\frac{1}{2}x+3$"
+   ],
+   "answer": "C",
+   "solution": "The negative reciprocal of $-\\frac{1}{2}$ is $2$: flip the fraction and change the sign. Choice A only changes the sign, and choice D only flips, so neither is perpendicular.",
+   "steps": [
+    "The given slope is $-\\frac{1}{2}$.",
+    "Its negative reciprocal is $2$, so $y=2x-1$ works."
+   ],
+   "verify": "result = \"$y=2x-1$\""
+  },
+  {
+   "id": "T03-M2-04",
+   "module": 2,
+   "n": 26,
+   "difficulty": "E",
+   "type": "MC",
+   "skill": "Standard to slope-intercept form",
+   "stem": "Which equation is equivalent to $6x-2y=18$?",
+   "choices": [
+    "$y=3x+9$",
+    "$y=-3x+9$",
+    "$y=-3x-9$",
+    "$y=3x-9$"
+   ],
+   "answer": "D",
+   "solution": "Isolating $y$ requires dividing by $-2$, which changes the sign of every term on the right: $-2y=-6x+18$ becomes $y=3x-9$.",
+   "steps": [
+    "$-2y=-6x+18$.",
+    "Divide by $-2$: $y=3x-9$."
+   ],
+   "verify": "result = \"$y=3x-9$\""
+  },
+  {
+   "id": "T03-M2-05",
+   "module": 2,
+   "n": 27,
+   "difficulty": "E",
+   "type": "MC",
+   "skill": "Writing an equation",
+   "stem": "A line in the $xy$-plane passes through the point $(0,5)$ and has slope $-\\frac{3}{4}$. Which equation represents the line?",
+   "choices": [
+    "$y=-\\frac{3}{4}x+5$",
+    "$y=\\frac{3}{4}x+5$",
+    "$y=-\\frac{3}{4}x-5$",
+    "$y=\\frac{4}{3}x+5$"
+   ],
+   "answer": "A",
+   "solution": "The point $(0,5)$ is on the $y$-axis, so it is the $y$-intercept and $b=5$. With $m=-\\frac{3}{4}$ the equation is $y=-\\frac{3}{4}x+5$.",
+   "steps": [
+    "$(0,5)$ gives $b=5$.",
+    "With $m=-\\frac{3}{4}$, $y=-\\frac{3}{4}x+5$."
+   ],
+   "verify": "result = \"$y=-\\\\frac{3}{4}x+5$\""
+  },
+  {
+   "id": "T03-M2-06",
+   "module": 2,
+   "n": 28,
+   "difficulty": "E",
+   "type": "MC",
+   "skill": "Writing an equation",
+   "stem": "The graph of $y=4x+c$, where $c$ is a constant, passes through the point $(2,3)$. What is the value of $c$?",
+   "choices": [
+    "$11$",
+    "$-5$",
+    "$5$",
+    "$-11$"
+   ],
+   "answer": "B",
+   "solution": "A point on the graph makes the equation true, so $3=4(2)+c$. Then $c=3-8=-5$; adding instead of subtracting gives the trap value $11$.",
+   "steps": [
+    "Substitute $(2,3)$: $3=4(2)+c$.",
+    "$3=8+c$, so $c=-5$."
+   ],
+   "verify": "c = symbols('c')\nresult = solve(Eq(3, 4*2 + c), c)[0]"
+  },
+  {
+   "id": "T03-M2-07",
+   "module": 2,
+   "n": 29,
+   "difficulty": "E",
+   "type": "MC",
+   "skill": "Graphing lines",
+   "stem": "A line in the $xy$-plane is graphed above. Which of the following is an equation of that line?",
+   "figure": "\\begin{center}\\begin{tikzpicture}\\begin{axis}[width=6.2cm,height=6.2cm,axis lines=middle,xmin=-3,xmax=5,ymin=-4,ymax=5,grid=both,grid style={satline},minor tick num=0,xlabel={$x$},ylabel={$y$},xlabel style={anchor=west},ylabel style={anchor=south},tick label style={font=\\tiny},axis line style={-}]\\addplot[very thick,satblue,domain=-1:4]{-1.5*x+3};\\addplot[only marks,mark=*,mark size=1.6pt,satnavy] coordinates {(0,3)};\\addplot[only marks,mark=*,mark size=1.6pt,satnavy] coordinates {(2,0)};\\end{axis}\\end{tikzpicture}\\end{center}",
+   "choices": [
+    "$y=\\frac{3}{2}x+3$",
+    "$y=-\\frac{2}{3}x+3$",
+    "$y=-\\frac{3}{2}x+3$",
+    "$y=-\\frac{3}{2}x-3$"
+   ],
+   "answer": "C",
+   "solution": "The line meets the $y$-axis at $3$ and the $x$-axis at $2$, so it falls $3$ units while running $2$ units: $m=-\\frac{3}{2}$ and $b=3$.",
+   "steps": [
+    "The $y$-intercept is $3$, so $b=3$.",
+    "From $(0,3)$ to $(2,0)$, $m=\\frac{0-3}{2-0}=-\\frac{3}{2}$.",
+    "The line is $y=-\\frac{3}{2}x+3$."
+   ],
+   "verify": "result = \"$y=-\\\\frac{3}{2}x+3$\""
+  },
+  {
+   "id": "T03-M2-08",
+   "module": 2,
+   "n": 30,
+   "difficulty": "M",
+   "type": "MC",
+   "skill": "Intercepts",
+   "stem": "A line in the $xy$-plane has $x$-intercept $8$ and passes through the point $(2,9)$. What is the $y$-coordinate of its $y$-intercept?",
+   "choices": [
+    "$8$",
+    "$-12$",
+    "$\\frac{3}{2}$",
+    "$12$"
+   ],
+   "answer": "D",
+   "solution": "The $x$-intercept is the point $(8,0)$, so the slope is $\\frac{9-0}{2-8}=-\\frac{3}{2}$. Then $9=-\\frac{3}{2}(2)+b=-3+b$, so $b=12$.",
+   "steps": [
+    "The $x$-intercept is the point $(8,0)$.",
+    "$m=\\frac{9-0}{2-8}=-\\frac{3}{2}$.",
+    "$9=-\\frac{3}{2}(2)+b$, so $b=12$."
+   ],
+   "verify": "b = symbols('b')\nresult = solve(Eq(9, Rational(-3,2)*2 + b), b)[0]"
+  },
+  {
+   "id": "T03-M2-09",
+   "module": 2,
+   "n": 31,
+   "difficulty": "M",
+   "type": "SPR",
+   "skill": "Parallel lines",
+   "stem": "In the $xy$-plane, the graphs of $2x+3y=12$ and $y=mx-4$ are parallel, where $m$ is a constant. What is the value of $m$?",
+   "answer": "$-\\frac{2}{3}$",
+   "accepted": [
+    "-2/3"
+   ],
+   "solution": "Parallel graphs have equal slopes, and $2x+3y=12$ rearranges to $y=-\\frac{2}{3}x+4$, so $m=-\\frac{2}{3}$. The different constant terms guarantee the lines really are distinct.",
+   "steps": [
+    "$3y=-2x+12$, so $y=-\\frac{2}{3}x+4$.",
+    "Parallel lines share the slope, so $m=-\\frac{2}{3}$."
+   ],
+   "verify": "result = Rational(-2, 3)"
+  },
+  {
+   "id": "T03-M2-10",
+   "module": 2,
+   "n": 32,
+   "difficulty": "M",
+   "type": "MC",
+   "skill": "Intercepts",
+   "stem": "Line $\\ell$ passes through the point $(-4,2)$ and has slope $\\frac{1}{2}$. What is the $x$-coordinate of the $x$-intercept of line $\\ell$?",
+   "choices": [
+    "$-8$",
+    "$8$",
+    "$4$",
+    "$-4$"
+   ],
+   "answer": "A",
+   "solution": "From $2=\\frac{1}{2}(-4)+b$ we get $b=4$, so $\\ell$ is $y=\\frac{1}{2}x+4$. Setting $y=0$ gives $x=-8$; the value $4$ is the $y$-intercept, not the $x$-intercept.",
+   "steps": [
+    "$2=\\frac{1}{2}(-4)+b=-2+b$, so $b=4$.",
+    "Set $y=0$: $0=\\frac{1}{2}x+4$.",
+    "$x=-8$."
+   ],
+   "verify": "x = symbols('x')\nresult = solve(Rational(1,2)*x + 4, x)[0]"
+  },
+  {
+   "id": "T03-M2-11",
+   "module": 2,
+   "n": 33,
+   "difficulty": "M",
+   "type": "MC",
+   "skill": "Lines in context",
+   "stem": "The total cost $C$, in dollars, of a gym membership for $m$ months is given by $C=25m+60$, where $60$ dollars is a one-time joining fee. Which equation gives $m$ in terms of $C$?",
+   "choices": [
+    "$m=\\frac{C+60}{25}$",
+    "$m=25C-60$",
+    "$m=\\frac{C-60}{25}$",
+    "$m=\\frac{C}{25}-60$"
+   ],
+   "answer": "C",
+   "solution": "Undo the operations in reverse order: subtract the joining fee first, then divide by the monthly rate. Dividing before subtracting produces the choice $m=\\frac{C}{25}-60$.",
+   "steps": [
+    "Subtract $60$: $C-60=25m$.",
+    "Divide by $25$: $m=\\frac{C-60}{25}$."
+   ],
+   "verify": "result = \"$m=\\\\frac{C-60}{25}$\""
+  },
+  {
+   "id": "T03-M2-12",
+   "module": 2,
+   "n": 34,
+   "difficulty": "M",
+   "type": "MC",
+   "skill": "Slope from two points",
+   "stem": "The line that passes through the points $(1,-3)$ and $(k,9)$ has slope $4$, where $k$ is a constant. What is the value of $k$?",
+   "choices": [
+    "$-2$",
+    "$4$",
+    "$49$",
+    "$2$"
+   ],
+   "answer": "B",
+   "solution": "The slope condition is $\\frac{9-(-3)}{k-1}=4$, so $12=4(k-1)$ and $k=4$. Reading the rise as $9-3=6$ instead of $9-(-3)=12$ is the usual sign slip.",
+   "steps": [
+    "$\\frac{9-(-3)}{k-1}=4$, so $\\frac{12}{k-1}=4$.",
+    "$k-1=3$, so $k=4$."
+   ],
+   "verify": "k = symbols('k')\nresult = solve(Eq(Rational(12,1)/(k-1), 4), k)[0]"
+  },
+  {
+   "id": "T03-M2-13",
+   "module": 2,
+   "n": 35,
+   "difficulty": "M",
+   "type": "MC",
+   "skill": "Perpendicular lines",
+   "stem": "Which equation represents a line perpendicular to the line $4x-6y=15$?",
+   "choices": [
+    "$y=\\frac{3}{2}x+1$",
+    "$y=-\\frac{2}{3}x+1$",
+    "$y=\\frac{2}{3}x+1$",
+    "$y=-\\frac{3}{2}x+1$"
+   ],
+   "answer": "D",
+   "solution": "Rearranging gives $y=\\frac{2}{3}x-\\frac{5}{2}$, so the slope is $\\frac{2}{3}$ and a perpendicular line has slope $-\\frac{3}{2}$. Choice B keeps the size of the slope and only changes its sign, which is not enough.",
+   "steps": [
+    "$-6y=-4x+15$, so $y=\\frac{2}{3}x-\\frac{5}{2}$.",
+    "The negative reciprocal of $\\frac{2}{3}$ is $-\\frac{3}{2}$.",
+    "So $y=-\\frac{3}{2}x+1$ is perpendicular."
+   ],
+   "verify": "result = \"$y=-\\\\frac{3}{2}x+1$\""
+  },
+  {
+   "id": "T03-M2-14",
+   "module": 2,
+   "n": 36,
+   "difficulty": "M",
+   "type": "MC",
+   "skill": "Graphing lines",
+   "stem": "The line shown in the $xy$-plane above passes through the two marked points. Which equation represents this line in the form $Ax+By=C$?",
+   "figure": "\\begin{center}\\begin{tikzpicture}\\begin{axis}[width=6.2cm,height=6.2cm,axis lines=middle,xmin=-2,xmax=5,ymin=-8,ymax=4,grid=both,grid style={satline},minor tick num=0,xlabel={$x$},ylabel={$y$},xlabel style={anchor=west},ylabel style={anchor=south},tick label style={font=\\tiny},axis line style={-}]\\addplot[very thick,satblue,domain=0:4.5]{2*x-6};\\addplot[only marks,mark=*,mark size=1.6pt,satnavy] coordinates {(0,-6)};\\addplot[only marks,mark=*,mark size=1.6pt,satnavy] coordinates {(3,0)};\\end{axis}\\end{tikzpicture}\\end{center}",
+   "choices": [
+    "$2x+y=6$",
+    "$x-2y=6$",
+    "$2x-y=6$",
+    "$2x-y=-6$"
+   ],
+   "answer": "C",
+   "solution": "The line passes through $(0,-6)$ and $(3,0)$, so $m=2$ and $y=2x-6$. Moving the $x$-term left gives $-2x+y=-6$, or equivalently $2x-y=6$.",
+   "steps": [
+    "From the graph the line passes through $(0,-6)$ and $(3,0)$.",
+    "$m=\\frac{0-(-6)}{3-0}=2$, so $y=2x-6$.",
+    "Rearranged: $2x-y=6$."
+   ],
+   "verify": "result = \"$2x-y=6$\""
+  },
+  {
+   "id": "T03-M2-15",
+   "module": 2,
+   "n": 37,
+   "difficulty": "M",
+   "type": "SPR",
+   "skill": "Intercepts",
+   "stem": "What is the $x$-coordinate of the $x$-intercept of the graph of $y=-\\frac{5}{3}x+10$?",
+   "answer": "6",
+   "solution": "Set $y=0$: $\\frac{5}{3}x=10$, so $x=10\\cdot\\frac{3}{5}=6$. A negative slope with a positive intercept must cross the $x$-axis to the right of the origin, so a positive answer is expected.",
+   "steps": [
+    "Set $y=0$: $0=-\\frac{5}{3}x+10$.",
+    "$\\frac{5}{3}x=10$, so $x=6$."
+   ],
+   "verify": "x = symbols('x')\nresult = solve(Rational(-5,3)*x + 10, x)[0]"
+  },
+  {
+   "id": "T03-M2-16",
+   "module": 2,
+   "n": 38,
+   "difficulty": "H",
+   "type": "MC",
+   "skill": "Parallel lines",
+   "stem": "In the $xy$-plane, the graph of $ax-4y=12$ is parallel to the line that passes through the points $(1,2)$ and $(5,8)$, where $a$ is a constant. What is the value of $a$?",
+   "choices": [
+    "$6$",
+    "$-6$",
+    "$\\frac{3}{2}$",
+    "$8$"
+   ],
+   "answer": "A",
+   "solution": "The two-point slope is $\\frac{8-2}{5-1}=\\frac{3}{2}$, and $ax-4y=12$ has slope $\\frac{a}{4}$. Setting $\\frac{a}{4}=\\frac{3}{2}$ gives $a=6$; note that dividing by $-4$ makes the slope positive, so a negative $a$ cannot work.",
+   "steps": [
+    "$m=\\frac{8-2}{5-1}=\\frac{3}{2}$.",
+    "$-4y=-ax+12$, so $y=\\frac{a}{4}x-3$ and the slope is $\\frac{a}{4}$.",
+    "$\\frac{a}{4}=\\frac{3}{2}$, so $a=6$."
+   ],
+   "verify": "a = symbols('a')\nresult = solve(Eq(a/4, Rational(3,2)), a)[0]"
+  },
+  {
+   "id": "T03-M2-17",
+   "module": 2,
+   "n": 39,
+   "difficulty": "H",
+   "type": "SPR",
+   "skill": "Perpendicular lines",
+   "stem": "Line $m$ is perpendicular to the line $y=\\frac{3}{5}x-2$ and passes through the point $(3,4)$. What is the value of $y$ on line $m$ when $x=6$?",
+   "answer": "-1",
+   "solution": "Line $m$ has slope $-\\frac{5}{3}$. Moving from $x=3$ to $x=6$ is a run of $3$, so $y$ changes by $-\\frac{5}{3}\\cdot 3=-5$, giving $y=4-5=-1$; no intercept is needed.",
+   "steps": [
+    "The negative reciprocal of $\\frac{3}{5}$ is $-\\frac{5}{3}$.",
+    "From $x=3$ to $x=6$ the run is $3$, so the rise is $-\\frac{5}{3}(3)=-5$.",
+    "$y=4-5=-1$."
+   ],
+   "verify": "result = 4 + Rational(-5,3)*(6-3)"
+  },
+  {
+   "id": "T03-M2-18",
+   "module": 2,
+   "n": 40,
+   "difficulty": "H",
+   "type": "MC",
+   "skill": "Perpendicular lines",
+   "stem": "Line $\\ell$ passes through the points $(-2,7)$ and $(4,-5)$. Line $m$ is perpendicular to line $\\ell$ and passes through the midpoint of the segment joining those two points. Which equation represents line $m$?",
+   "choices": [
+    "$y=-2x+3$",
+    "$y=\\frac{1}{2}x-\\frac{1}{2}$",
+    "$y=2x-1$",
+    "$y=\\frac{1}{2}x+\\frac{1}{2}$"
+   ],
+   "answer": "D",
+   "solution": "The midpoint is $\\left(\\frac{-2+4}{2},\\frac{7+(-5)}{2}\\right)=(1,1)$ and line $\\ell$ has slope $-2$, so line $m$ has slope $\\frac{1}{2}$. Then $1=\\frac{1}{2}(1)+b$ gives $b=\\frac{1}{2}$.",
+   "steps": [
+    "Midpoint: $(1,1)$.",
+    "$m_\\ell=\\frac{-5-7}{4-(-2)}=-2$, so line $m$ has slope $\\frac{1}{2}$.",
+    "$1=\\frac{1}{2}(1)+b$, so $b=\\frac{1}{2}$ and $y=\\frac{1}{2}x+\\frac{1}{2}$."
+   ],
+   "verify": "result = \"$y=\\\\frac{1}{2}x+\\\\frac{1}{2}$\""
+  },
+  {
+   "id": "T03-M2-19",
+   "module": 2,
+   "n": 41,
+   "difficulty": "H",
+   "type": "MC",
+   "skill": "Writing an equation",
+   "stem": "In the $xy$-plane, the graph of $y=mx+4$ passes through the point at which the graph of $2x+y=16$ crosses the $x$-axis. What is the value of $m$?",
+   "choices": [
+    "$2$",
+    "$-\\frac{1}{2}$",
+    "$\\frac{1}{2}$",
+    "$-2$"
+   ],
+   "answer": "B",
+   "solution": "The graph of $2x+y=16$ meets the $x$-axis at $(8,0)$. Substituting that point gives $0=8m+4$, so $m=-\\frac{1}{2}$; using the $y$-intercept $(0,16)$ by mistake makes the equation unsolvable, which is a useful signal that the wrong intercept was taken.",
+   "steps": [
+    "Set $y=0$ in $2x+y=16$: $x=8$, so the point is $(8,0)$.",
+    "Substitute into $y=mx+4$: $0=8m+4$.",
+    "$m=-\\frac{1}{2}$."
+   ],
+   "verify": "m = symbols('m')\nresult = solve(Eq(0, m*8 + 4), m)[0]"
+  },
+  {
+   "id": "T03-M2-20",
+   "module": 2,
+   "n": 42,
+   "difficulty": "H",
+   "type": "MC",
+   "skill": "Intercepts",
+   "stem": "The graph of a line in the $xy$-plane has slope $-3$ and passes through the points $(a,0)$ and $(0,12)$, where $a$ is a constant. What is the value of $a$?",
+   "choices": [
+    "$-4$",
+    "$36$",
+    "$4$",
+    "$-36$"
+   ],
+   "answer": "C",
+   "solution": "The slope between the two intercepts is $\\frac{12-0}{0-a}=-\\frac{12}{a}$. Setting $-\\frac{12}{a}=-3$ gives $a=4$, and the positive answer matches a falling line that crosses the $x$-axis to the right of the origin.",
+   "steps": [
+    "$m=\\frac{12-0}{0-a}=-\\frac{12}{a}$.",
+    "Set $-\\frac{12}{a}=-3$.",
+    "$a=4$."
+   ],
+   "verify": "a = symbols('a')\nresult = solve(Eq(Rational(-12,1)/a, -3), a)[0]"
+  },
+  {
+   "id": "T03-M2-21",
+   "module": 2,
+   "n": 43,
+   "difficulty": "H",
+   "type": "SPR",
+   "skill": "Perpendicular lines",
+   "stem": "In the $xy$-plane, the graph of $3x+ky=12$ is perpendicular to the graph of $y=\\frac{3}{4}x-1$, where $k$ is a constant. What is the value of $k$?",
+   "answer": "$\\frac{9}{4}$",
+   "accepted": [
+    "9/4",
+    "2.25"
+   ],
+   "solution": "The graph of $3x+ky=12$ has slope $-\\frac{3}{k}$, and perpendicularity to slope $\\frac{3}{4}$ requires slope $-\\frac{4}{3}$. Solving $-\\frac{3}{k}=-\\frac{4}{3}$ gives $k=\\frac{9}{4}$.",
+   "steps": [
+    "$ky=-3x+12$, so the slope is $-\\frac{3}{k}$.",
+    "The required slope is $-\\frac{4}{3}$.",
+    "$-\\frac{3}{k}=-\\frac{4}{3}$ gives $k=\\frac{9}{4}$."
+   ],
+   "verify": "k = symbols('k')\nresult = solve(Eq(Rational(-3,1)/k, Rational(-4,3)), k)[0]"
+  },
+  {
+   "id": "T03-M2-22",
+   "module": 2,
+   "n": 44,
+   "difficulty": "H",
+   "type": "MC",
+   "skill": "Lines in context",
+   "stem": "A technician charges a one-time service fee plus a constant hourly rate. The total charge is $145$ dollars for a $2$-hour job and $280$ dollars for a $5$-hour job. If the total charge $C$, in dollars, is a linear function of the number of hours $h$, what is the one-time service fee, in dollars?",
+   "choices": [
+    "$45$",
+    "$35$",
+    "$100$",
+    "$55$"
+   ],
+   "answer": "D",
+   "solution": "The hourly rate is the slope, $\\frac{280-145}{5-2}=45$ dollars per hour, and the service fee is the value of $C$ when $h=0$, that is the $C$-intercept: $145-2(45)=55$. Reporting $45$ answers a different question, the hourly rate.",
+   "steps": [
+    "$m=\\frac{280-145}{5-2}=45$ dollars per hour.",
+    "$145=45(2)+b$, so $b=55$.",
+    "The one-time fee is the value at $h=0$, namely $55$ dollars."
+   ],
+   "verify": "b, r = symbols('b r')\ns = solve([Eq(2*r+b, 145), Eq(5*r+b, 280)], [b, r])\nresult = s[b]"
+  }
+ ]
 }

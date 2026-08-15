@@ -292,12 +292,46 @@ def check_math(bank: dict, rep: Report, require_verify: bool) -> tuple[int, int]
 
 # ----------------------------------------------------------------- main ----
 
+_TAUTOLOGY = re.compile(r"^\s*result\s*=\s*(['\"]).*\1\s*$", re.DOTALL)
+
+
+def audit_unverifiable(banks: list[dict]) -> list[tuple[str, str, str]]:
+    """List problems whose `verify` snippet merely restates the answer as a
+    string literal. Those items are structurally checked but their
+    mathematics is NOT machine-checked -- they need a human or model read.
+    """
+    out = []
+    for bank in banks:
+        for p in bank["problems"]:
+            code = p.get("verify", "")
+            if _TAUTOLOGY.match(code):
+                out.append((f"{bank['number']:02d}", p["id"],
+                            re.sub(r"\s+", " ", p["stem"])[:90]))
+    return out
+
+
+def check_cross_topic_duplicates(banks: list[dict], rep: Report) -> None:
+    seen: dict[str, str] = {}
+    for bank in banks:
+        for p in bank["problems"]:
+            key = re.sub(r"\s+", " ", p["stem"]).strip().lower()
+            if key in seen:
+                rep.error("book", f"{p['id']} repeats the stem of "
+                                  f"{seen[key]}: {key[:70]}...")
+            else:
+                seen[key] = p["id"]
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--require-verify", action="store_true",
                     help="treat a missing `verify` snippet as an error")
     ap.add_argument("--topic", type=int, default=None,
                     help="validate a single topic number")
+    ap.add_argument("--audit", action="store_true",
+                    help="also list the problems whose answer is asserted as "
+                         "a string rather than computed, and so is not "
+                         "machine-checked")
     args = ap.parse_args()
 
     schema = json.loads(SCHEMA.read_text())
@@ -312,6 +346,7 @@ def main() -> int:
 
     total_problems = total_verified = 0
     seen_numbers: set[int] = set()
+    all_banks: list[dict] = []
 
     for path in files:
         try:
@@ -330,6 +365,7 @@ def main() -> int:
         if bank["number"] in seen_numbers:
             rep.error(path.name, f"topic number {bank['number']} used twice")
         seen_numbers.add(bank["number"])
+        all_banks.append(bank)
         if path.stem != f"topic-{bank['number']:02d}":
             rep.error(path.name, f"filename does not match topic number "
                                  f"{bank['number']}")
@@ -341,12 +377,21 @@ def main() -> int:
 
     # book-level totals
     if args.topic is None:
+        check_cross_topic_duplicates(all_banks, rep)
         missing = sorted(set(range(1, 21)) - seen_numbers)
         if missing:
             rep.error("book", f"missing topics: "
                               f"{', '.join(f'{m:02d}' for m in missing)}")
         if total_problems != 880 and not missing:
             rep.error("book", f"{total_problems} problems in total, expected 880")
+
+    if args.audit:
+        unchecked = audit_unverifiable(all_banks)
+        print(f"\n  {len(unchecked)} problem(s) assert their answer as a "
+              f"string rather than computing it -- these need a read:\n")
+        for tno, pid, stem in unchecked:
+            print(f"    {pid}  {stem}")
+        print()
 
     for w in rep.warnings:
         print(f"  warn   {w}")

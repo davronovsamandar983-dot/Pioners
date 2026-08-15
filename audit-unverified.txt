@@ -1,0 +1,128 @@
+    T02-M1-05  A plumber charges a fixed call-out fee plus an hourly rate. The total charge, in dollars, 
+    T02-M1-07  A linear function $f$ has a slope of $5$, and $f(0)=-2$. Which of the following defines $f
+    T02-M1-10  A storage tank is being drained. The volume of water in the tank, in gallons, after $t$ mi
+    T02-M1-11  A gym charges a one-time membership fee of $\$25$ plus $\$4$ for each fitness class attend
+    T02-M1-18  The number of subscribers to a streaming service is modeled by $S(m)=250m+3200$, where $m$
+    T02-M1-22  A candle burns at a constant rate. Its height, in centimeters, after $t$ hours of burning 
+    T02-M2-04  A car travels at a constant speed along a highway. Its distance from a rest stop, in miles
+    T02-M2-07  A linear function $f$ has a slope of $4$, and its graph passes through the point $(3,5)$. 
+    T02-M2-11  Water is pumped into an empty-looking pool that already holds some water. The amount of wa
+    T02-M2-15  The function $f$ is defined by $f(x)=2x-5$. Which of the following is equivalent to $f(x+3
+    T02-M2-18  The population of a bird colony is modeled by $P(t)=1500-45t$, where $t$ is the number of 
+    T03-M1-04  Which equation is equivalent to $2x+y=8$?
+    T03-M1-07  Which equation represents a line parallel to the line $y=4x-1$ in the $xy$-plane?
+    T03-M1-09  A line in the $xy$-plane has slope $\frac{5}{2}$ and passes through the point $(0,-2)$. Wh
+    T03-M1-11  Which equation represents the line that passes through the points $(1,4)$ and $(3,10)$?
+    T03-M1-13  Which equation is equivalent to $y=-\frac{3}{4}x+2$?
+    T03-M1-14  The graph of a line in the $xy$-plane is shown above. Which equation represents this line?
+    T03-M1-16  Line $n$ passes through the point $(-3,5)$ and is perpendicular to the line $y=\frac{3}{4}
+    T03-M1-19  A line in the $xy$-plane has $x$-intercept $6$ and $y$-intercept $-4$. Which equation repr
+    T03-M2-03  Which equation represents a line perpendicular to the line $y=-\frac{1}{2}x+3$?
+    T03-M2-04  Which equation is equivalent to $6x-2y=18$?
+    T03-M2-05  A line in the $xy$-plane passes through the point $(0,5)$ and has slope $-\frac{3}{4}$. Wh
+    T03-M2-07  A line in the $xy$-plane is graphed above. Which of the following is an equation of that l
+    T03-M2-11  The total cost $C$, in dollars, of a gym membership for $m$ months is given by $C=25m+60$,
+    T03-M2-13  Which equation represents a line perpendicular to the line $4x-6y=15$?
+    T03-M2-14  The line shown in the $xy$-plane above passes through the two marked points. Which equatio
+    T03-M2-18  Line $\ell$ passes through the points $(-2,7)$ and $(4,-5)$. Line $m$ is perpendicular to 
+    T05-M1-02  A delivery van can carry a total package weight of at most $1200$ pounds. If $w$ represent
+    T05-M1-05  A student buys $x$ notebooks that cost $\$3$ each and $y$ pens that cost $\$2$ each. The s
+    T05-M1-17  A caterer needs at least $40$ pounds of fruit and will buy $a$ pounds of apples at $\$2$ p
+    T05-M2-03  An elevator can hold at most $8$ people. There are already $3$ people inside. If $p$ repre
+    T05-M2-10  A club buys $x$ shirts at $\$4$ each and $y$ hats at $\$7$ each. The club needs at least $
+    T05-M2-17  A student has at most $12$ hours this weekend to study for a math exam and a science exam,
+    T08-M1-03  The function $g$ is defined by $g(x)=(x-2)(x+5)$. What are the $x$-intercepts of the graph
+    T08-M1-07  In the $xy$-plane, which of the following equations defines a parabola with vertex $(5,-2)
+    T08-M1-13  The polynomial function $p$ is defined by $p(x)=-2x^3+5x-1$. Which of the following descri
+    T08-M1-18  The graph of the quadratic function $f$ is shown in the $xy$-plane above. Which equation c
+    T08-M1-22  The function $f$ is defined by $f(x)=a(x-3)^2+5$, where $a$ is a negative constant. Which 
+    T08-M2-03  The polynomial function $p$ is defined by $p(x)=x(x-7)(x+2)$. What are the $x$-intercepts 
+    T08-M2-06  The polynomial function $q$ is defined by $q(x)=4x^4-x^3+2$. Which of the following descri
+    T08-M2-07  In the $xy$-plane, which of the following equations defines a parabola with $x$-intercepts
+    T08-M2-12  The polynomial function $p$ is defined by $p(x)=(x+1)^3(x-2)^2$. Which of the following de
+    T08-M2-13  A quadratic function $f$ has the graph shown in the $xy$-plane above. Which of the followi
+    T08-M2-21  The polynomial function $p$ is defined by $p(x)=-(x-1)^2(x+3)$. Which of the following sta
+    T09-M1-02  A car purchased for $\$24{,}000$ loses $15\%$ of its value each year. Which function gives
+    T09-M1-10  The function $P(t)=1200(1.03)^t$ models the population of a town $t$ years after 2010. Whi
+    T09-M1-11  A savings account with an initial balance of $\$1500$ earns $6\%$ annual interest, compoun
+    T09-M1-16  The value of a rare coin is $\$5000$ today and increases by $12\%$ every $4$ years. Which 
+    T09-M1-19  The value of an investment doubles every $9$ years. If the investment is worth $\$2500$ to
+    T09-M1-22  The population of a town was $8000$ in 2000 and $12{,}000$ in 2010, and the population gro
+    T09-M2-06  A $400$-milligram sample of a radioactive substance has a half-life of $12$ years. Which f
+    T09-M2-10  The function $P(t)=3000(1.08)^t$ gives the value, in dollars, of an account $t$ years afte
+    T09-M2-13  The value of a car $t$ years after it was purchased is modeled by $V(t)=18000(0.88)^t$. Wh
+    T09-M2-21  The function $P(d)=8(2)^d$ gives the number of thousands of people living in a city $d$ de
+    T10-M1-01  The graph of $y=x^{2}$ is shifted $5$ units up in the $xy$-plane. Which equation represent
+    T10-M1-02  The function $g$ is defined by $g(x)=f(x-3)$. Which of the following describes the graph o
+    T10-M1-04  The graph of $y=f(x)$ is reflected across the $x$-axis. Which equation represents the refl
+    T10-M1-05  The graph of $y=3f(x)$ is obtained from the graph of $y=f(x)$ by which transformation?
+    T10-M1-12  The graph of $y=x^{2}$ is transformed to produce the graph of $y=(x+4)^{2}-3$. Which of th
+    T10-M1-14  The function $f$ is defined by $f(x)=x^{2}-6x$, and $g(x)=f(-x)$. Which expression is equi
+    T10-M1-21  The graph of $y=f(x)$ is first shifted $2$ units to the right and then reflected across th
+    T10-M2-01  The function $h$ is defined by $h(x)=f(x+6)$. Which of the following describes the graph o
+    T10-M2-04  How does the graph of $y=f(x)-7$ compare with the graph of $y=f(x)$?
+    T10-M2-06  The function $f$ is defined by $f(x)=x^{3}-2x$, and $h(x)=f(-x)$. Which expression is equi
+    T10-M2-07  The graph of $y=\frac{1}{2}f(x)$ is obtained from the graph of $y=f(x)$ by which transform
+    T10-M2-11  Which transformation takes the graph of $y=x^{2}$ to the graph of $y=-(x-2)^{2}$?
+    T10-M2-12  The function $f$ is defined by $f(x)=(x+1)^{2}$. The graph of $y=f(x)$ is shifted $3$ unit
+    T10-M2-15  The function $g$ is defined by $g(x)=-f(-x)$. Which of the following describes the graph o
+    T10-M2-20  Which sequence of transformations takes the graph of $y=x^{2}$ to the graph of $y=2(x+3)^{
+    T13-M1-11  A data set consists of the nine values $12$, $14$, $15$, $16$, $18$, $19$, $21$, $23$, and
+    T13-M1-13  Data set $X$ consists of the values $20$, $21$, $22$, $23$, and $24$. Data set $Y$ consist
+    T13-M1-18  The dot plots show two data sets, each consisting of $10$ values with a mean of $6$. Which
+    T13-M1-19  The yearly salaries, in thousands of dollars, of the eight employees at a small company ar
+    T13-M2-06  Data set $A$ consists of the five values $50$, $50$, $50$, $50$, and $50$. Data set $B$ co
+    T13-M2-12  The box plots summarize the test scores of the students in class $A$ and class $B$. Which 
+    T13-M2-15  A data set consists of the seven values $4$, $6$, $7$, $9$, $10$, $12$, and $40$. The valu
+    T13-M2-17  Two data sets each consist of $20$ values with a mean of $50$. In data set $R$, $16$ of th
+    T13-M2-20  A data set consists of $15$ values, each between $40$ and $60$. A new value of $200$ is th
+    T14-M1-01  The scatterplot shows the number of hours each of $12$ students spent studying for an exam
+    T14-M1-04  A gym recorded its membership each month after opening. For the scatterplot of $x$, the nu
+    T14-M1-05  For a scatterplot of $x$, the number of weeks since a seedling was potted, and $y$, the he
+    T14-M1-07  The table shows four values of a data set. Which of the following best describes a model f
+    T14-M1-09  A line of best fit predicts that a repair will cost $\$212$, but the repair actually costs
+    T14-M1-10  For a scatterplot of $x$, the number of years since $2010$, and $y$, the number of landlin
+    T14-M1-12  A taxi company plotted $x$, the length of a ride in miles, against $y$, the fare in dollar
+    T14-M1-14  The table shows the value of $P$ at four times $t$. Which of the following describes the t
+    T14-M1-15  A town's population was modeled by $\hat{P}=1.6t+34$, where $t$ is the number of years sin
+    T14-M1-18  A tutoring company plotted $x$, the number of practice tests a student completed, against 
+    T14-M1-21  A biologist restocked a pond and then counted the fish each month. For the scatterplot of 
+    T14-M1-22  The scatterplot shows the membership of a new club, in hundreds, over seven weeks. Which o
+    T14-M2-01  The scatterplot shows the number of tickets remaining for a concert on each of eight days 
+    T14-M2-02  A candle's height was measured as it burned. For the scatterplot of $x$, the number of min
+    T14-M2-04  For a group of phone customers, the line of best fit relating $x$, the number of text mess
+    T14-M2-06  Which of the following situations is best modeled by an exponential function?
+    T14-M2-07  In a scatterplot with a line of best fit, one data point lies below the line. Which of the
+    T14-M2-09  The population of a town is modeled by $P(t)=4800(0.85)^{t}$, where $t$ is the number of y
+    T14-M2-10  A researcher collected data for $x$ between $1$ and $12$ months and found the line of best
+    T14-M2-12  For a scatterplot of $x$, the number of years since $1990$, and $y$, the average price of 
+    T14-M2-15  On one afternoon a weather station recorded the temperature every hour. For the scatterplo
+    T14-M2-16  The table shows the number $N$ of cells in a culture $t$ hours after an experiment began. 
+    T14-M2-17  The table shows the actual number of visitors to a park and the number predicted by a line
+    T14-M2-18  A study of high school students produced the line of best fit $\hat{y}=8.4-0.006x$, where 
+    T14-M2-20  A linear model is fitted to a data set, and the residuals, listed in order of increasing $
+    T14-M2-22  For $40$ employees at a firm, the line of best fit relating $x$, the number of years of ex
+    T16-M1-03  A city library has $2{,}000$ registered members. A librarian surveyed $150$ members select
+    T16-M1-04  A researcher will use a random sample to estimate the mean number of hours per week that a
+    T16-M1-07  A store manager wants to estimate the mean number of minutes that all of the store's custo
+    T16-M1-08  A survey of a random sample of the students at a college found that the mean number of hou
+    T16-M1-10  A swim club at one gym has $400$ members. All $400$ names were listed, $50$ members were s
+    T16-M1-12  Two polls were conducted to estimate the percent of a city's residents who support a bond 
+    T16-M1-14  A researcher recruited $200$ volunteers who experience frequent headaches and randomly ass
+    T16-M1-15  Based on a random sample of a population of fish, a $95\%$ confidence interval for the mea
+    T16-M1-16  A nutritionist selected a random sample of $250$ students from the $3{,}000$ students at o
+    T16-M1-18  From one random sample of batteries, a statistician computes both a $90\%$ confidence inte
+    T16-M1-19  A magazine printed a survey in one issue and asked readers to mail in their responses. Of 
+    T16-M1-21  Based on a random sample of the students at a school, a $95\%$ confidence interval for the
+    T16-M1-22  A survey of a random sample of adults in a country found that the adults who own a dog wal
+    T16-M2-03  Two independent random samples were taken from the same population to estimate the mean da
+    T16-M2-04  A random sample of $60$ employees at one branch of a company was surveyed about the branch
+    T16-M2-07  A researcher wants to estimate the mean number of hours per week that all residents of a t
+    T16-M2-08  Researchers followed a random sample of $1{,}200$ adults for one year and recorded how muc
+    T16-M2-10  A researcher randomly selected $100$ of the $2{,}500$ members of a professional organizati
+    T16-M2-11  A pollster used a random sample of voters to compute a $90\%$ confidence interval for the 
+    T16-M2-14  A school emailed a survey to all $1{,}000$ of its students, and $120$ students responded. 
+    T16-M2-16  A city randomly selected $500$ of its residents and surveyed them about how they commute a
+    T16-M2-17  Study 1 surveyed a random sample of $800$ adults selected from a national list and found a
+    T16-M2-20  A polling organization reports, ``Based on our random sample, we are $95\%$ confident that
+    T16-M2-22  Researchers recruited $300$ volunteers who responded to an online advertisement and random
