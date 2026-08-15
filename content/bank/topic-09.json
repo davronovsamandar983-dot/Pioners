@@ -258,7 +258,7 @@
       "choices": [
         "The population increases by $1.03$ people each year.",
         "The population increases by $103\\%$ each year.",
-        "Each year the population is 1.03 times the population the year before.",
+        "Each year the population is $1.03$ times the population the year before.",
         "The population in 2010 was $1.03$ times $1200$."
       ],
       "answer": "C",
@@ -268,7 +268,7 @@
         "Multiplying by $1.03$ is the same as adding $3\\%$.",
         "So each year's population is $1.03$ times the previous year's."
       ],
-      "verify": "result = \"Each year the population is 1.03 times the population the year before.\"",
+      "verify": "result = \"Each year the population is $1.03$ times the population the year before.\"",
       "wide": true
     },
     {
@@ -801,7 +801,7 @@
       "choices": [
         "The car loses $88\\%$ of its value each year.",
         "The car is worth $\\$0.88$ less each year.",
-        "Each year the car is worth 0.88 times its value the previous year.",
+        "Each year the car is worth $0.88$ times its value the previous year.",
         "The car was worth $\\$18{,}000$ times $0.88$ when it was purchased."
       ],
       "answer": "C",
@@ -811,7 +811,7 @@
         "Here that multiplier is $0.88$, so $88\\%$ of the value remains.",
         "Equivalently, the car loses $12\\%$ of its value each year."
       ],
-      "verify": "result = \"Each year the car is worth 0.88 times its value the previous year.\"",
+      "verify": "result = \"Each year the car is worth $0.88$ times its value the previous year.\"",
       "wide": true
     },
     {
