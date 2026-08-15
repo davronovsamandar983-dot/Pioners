@@ -1,0 +1,1054 @@
+{
+  "number": 18,
+  "topic": "Lines, Angles and Triangles",
+  "domain": "Geometry and Trigonometry",
+  "skills": [
+    "Angle relationships and parallel lines",
+    "Triangle angle and side rules",
+    "Similarity and congruence"
+  ],
+  "lesson": {
+    "intro": "Almost every Digital SAT test form asks two or three questions built out of nothing but angles, triangles and proportion. The figures look different every time, but the toolkit is small and fixed: angles that add to $180^{\\circ}$ or to $90^{\\circ}$, the equal-angle pairs made by a transversal crossing parallel lines, the fact that the three angles of a triangle add to $180^{\\circ}$, the rules that govern the sides of a triangle, and the proportion that comes out of two similar triangles. Learn to name what you are looking at and these questions become bookkeeping.",
+    "blocks": [
+      {
+        "kind": "section",
+        "title": "Angles at a point and on a line",
+        "body": "An angle is a measure of turning, and the whole turn around a point is $360^{\\circ}$. Two facts follow immediately and account for a large share of the easy geometry questions on the test.\n\nIf two angles together form a straight line, they are \\textbf{supplementary}: their measures add to $180^{\\circ}$. If they together form a right angle, they are \\textbf{complementary}: their measures add to $90^{\\circ}$. And when two straight lines cross, the two angles opposite each other -- the \\textbf{vertical} angles -- are equal, because each of them is the supplement of the same neighbouring angle."
+      },
+      {
+        "kind": "concept",
+        "title": "Three angle facts at a point",
+        "body": "$\\bullet$ Angles on a straight line add to $180^{\\circ}$ (supplementary).\n\n$\\bullet$ Angles in a right angle add to $90^{\\circ}$ (complementary).\n\n$\\bullet$ Vertical angles are equal.\n\nWhen a figure gives you one angle, mark every angle you can deduce from it before you read the question again. The answer is usually two marks away."
+      },
+      {
+        "kind": "section",
+        "title": "Parallel lines and a transversal",
+        "body": "A line that crosses two parallel lines is called a \\textbf{transversal}. It creates eight angles, but only two different sizes: a small one and a large one, and any small plus any large makes $180^{\\circ}$.\n\nThe named pairs are worth knowing because the test uses the names. \\textbf{Corresponding} angles sit in matching positions at the two crossings and are equal. \\textbf{Alternate interior} angles sit between the parallel lines on opposite sides of the transversal and are equal. \\textbf{Co-interior} (same-side interior) angles sit between the parallel lines on the same side of the transversal and are supplementary."
+      },
+      {
+        "kind": "formula",
+        "title": "Parallel-line angle facts",
+        "body": "If $\\ell \\parallel m$ and a transversal cuts both:\n\n$\\bullet$ corresponding angles are equal;\n\n$\\bullet$ alternate interior angles are equal;\n\n$\\bullet$ alternate exterior angles are equal;\n\n$\\bullet$ co-interior (same-side interior) angles add to $180^{\\circ}$.\n\nPractical shortcut: in the whole figure every angle is either equal to the one you were given or is its supplement. Decide which by looking at the picture -- angles that \\emph{look} the same size are the same size."
+      },
+      {
+        "kind": "trap",
+        "title": "Equal, or supplementary?",
+        "body": "The single most common wrong answer in this topic is the supplement of the right answer. A student finds that the co-interior partner of $(3x+10)^{\\circ}$ is $(2x+40)^{\\circ}$, then sets the two expressions \\emph{equal} instead of adding them to $180^{\\circ}$ -- or does the reverse.\n\nBefore you write an equation, look at the two marked angles in the figure. If they look about the same size, set them equal. If one looks acute and the other obtuse, add them to $180^{\\circ}$. The figure is drawn accurately unless it says otherwise, and even a figure that is not to scale usually keeps acute angles acute."
+      },
+      {
+        "kind": "section",
+        "title": "The angles of a triangle",
+        "body": "The three interior angles of any triangle add to $180^{\\circ}$. Extend one side and you get the \\textbf{exterior angle}: because it is the supplement of the interior angle next to it, and because the three interior angles add to $180^{\\circ}$, an exterior angle equals the sum of the two \\emph{remote} interior angles -- the two it does not touch. That identity saves a step every time it appears.\n\nA triangle with two equal sides is \\textbf{isosceles}, and the angles opposite those two sides are equal. A triangle with three equal sides is \\textbf{equilateral}, and all three of its angles measure $60^{\\circ}$."
+      },
+      {
+        "kind": "formula",
+        "title": "Triangle rules",
+        "body": "$\\bullet$ Angle sum: $\\angle A+\\angle B+\\angle C=180^{\\circ}$.\n\n$\\bullet$ Exterior angle: an exterior angle $=$ the sum of the two remote interior angles.\n\n$\\bullet$ Isosceles: equal sides face equal angles, so if $AB=AC$ then $\\angle B=\\angle C$ and $\\angle A=180^{\\circ}-2\\angle B$.\n\n$\\bullet$ Equilateral: all angles $60^{\\circ}$.\n\n$\\bullet$ Triangle inequality: with two sides $a$ and $b$, the third side $c$ satisfies $|a-b| < c < a+b$.\n\n$\\bullet$ The largest angle of a triangle faces the longest side."
+      },
+      {
+        "kind": "trap",
+        "title": "The triangle inequality is strict",
+        "body": "With sides $7$ and $12$ the third side must satisfy $5 < c < 19$. The values $5$ and $19$ are \\emph{not} allowed: at $c=19$ the three segments flatten into a straight line and there is no triangle at all. Both endpoints appear as answer choices on purpose.\n\nSo the largest integer third side here is $18$, not $19$, and the smallest is $6$, not $5$."
+      },
+      {
+        "kind": "section",
+        "title": "Similar and congruent triangles",
+        "body": "Two triangles are \\textbf{congruent} when they have the same shape and the same size: every pair of corresponding sides and angles is equal. They are \\textbf{similar} when they have the same shape but possibly different sizes: corresponding angles are equal and corresponding sides are all in the same ratio.\n\nOn the SAT you almost never have to prove similarity from scratch -- the figure hands it to you. Two triangles that share an angle and have a second pair of equal angles are similar (AA). A segment drawn parallel to one side of a triangle cuts off a small triangle at the top that is similar to the whole triangle. Two segments crossing at a point with the outer ends joined by parallel segments give a pair of similar triangles through vertical angles plus alternate interior angles."
+      },
+      {
+        "kind": "concept",
+        "title": "Write the correspondence before you write the proportion",
+        "body": "The statement $\\triangle ABC \\sim \\triangle DEF$ carries information in the \\emph{order} of the letters: $A$ matches $D$, $B$ matches $E$, $C$ matches $F$. Therefore\n$$\\frac{AB}{DE}=\\frac{BC}{EF}=\\frac{AC}{DF}.$$\nWrite that chain of fractions down before substituting numbers. Almost every wrong answer to a similarity question comes from pairing a side of one triangle with the wrong side of the other, and the wrong pairing produces a number that looks perfectly reasonable."
+      },
+      {
+        "kind": "formula",
+        "title": "Ratios of similar figures",
+        "body": "If two similar figures have corresponding lengths in the ratio $k$ (so every length in the second is $k$ times the matching length in the first), then\n\n$\\bullet$ every length -- side, perimeter, height, median -- is in the ratio $k$;\n\n$\\bullet$ every area is in the ratio $k^{2}$;\n\n$\\bullet$ (for solids) every volume is in the ratio $k^{3}$.\n\nRunning it backwards: if the areas are in the ratio $9:16$, the lengths are in the ratio $3:4$."
+      },
+      {
+        "kind": "trap",
+        "title": "A length ratio is not an area ratio",
+        "body": "Similar triangles with sides in the ratio $3:5$ and the smaller one of area $18$: the larger has area $18\\cdot\\left(\\frac{5}{3}\\right)^{2}=50$, not $18\\cdot\\frac{5}{3}=30$.\n\nThe test always offers $30$. It also offers the reverse error -- taking the square root when it was not needed -- so decide first whether the quantity you are scaling is a length or an area, and only then choose between $k$ and $k^{2}$."
+      },
+      {
+        "kind": "strategy",
+        "title": "How to attack a geometry figure",
+        "body": "1. Mark on the figure everything you are told: equal sides with ticks, given angles with numbers.\n\n2. Fill in free consequences: vertical angles, supplements on a line, the third angle of any triangle whose other two you know.\n\n3. Name the relationship the question actually needs (co-interior? exterior angle? similarity?) before writing algebra.\n\n4. If two triangles are involved, write the similarity statement with the vertices in matching order, then the proportion, then substitute.\n\n5. Check the answer against the picture. A figure marked ``not drawn to scale'' still tells you whether an angle is acute or obtuse, and a side that looks shorter usually is."
+      },
+      {
+        "kind": "worked",
+        "title": "Worked example 1 -- an angle chase",
+        "body": "\\textbf{In the figure below, $\\ell \\parallel m$. The angle at $A$ between $\\overline{AB}$ and line $\\ell$ measures $38^{\\circ}$, and $\\angle ACB$ measures $71^{\\circ}$, where $B$ and $C$ lie on $m$. What is the measure of $\\angle BAC$?}\n\n\\textbf{Step 1 -- transfer the angle across the parallel lines.} The $38^{\\circ}$ angle at $A$ and $\\angle ABC$ are alternate interior angles for $\\ell \\parallel m$ with transversal $\\overline{AB}$, so $\\angle ABC = 38^{\\circ}$.\n\n\\textbf{Step 2 -- use the triangle.} In $\\triangle ABC$ the three angles add to $180^{\\circ}$:\n$$\\angle BAC = 180^{\\circ}-38^{\\circ}-71^{\\circ}=71^{\\circ}.$$\n\n\\textbf{Why this is the right path.} The question gives an angle at one line and asks about a triangle sitting on the other; the parallel-line facts are the only bridge between the two. Once the $38^{\\circ}$ has been carried down to $B$, the problem is a one-line angle sum. Note the trap: $180^{\\circ}-71^{\\circ}=109^{\\circ}$ is the supplement of the answer, and it will be one of the choices."
+      },
+      {
+        "kind": "worked",
+        "title": "Worked example 2 -- a nested similar triangle",
+        "body": "\\textbf{In $\\triangle ABC$, point $D$ lies on $\\overline{AB}$ and point $E$ lies on $\\overline{AC}$ so that $\\overline{DE}\\parallel\\overline{BC}$. If $AD=8$, $DB=6$, and $BC=21$, what is the length of $\\overline{DE}$?}\n\n\\textbf{Step 1 -- name the similar triangles, in order.} Because $\\overline{DE}\\parallel\\overline{BC}$, the angles $\\angle ADE$ and $\\angle ABC$ are corresponding angles and are equal, and the two triangles share $\\angle A$. So $\\triangle ADE \\sim \\triangle ABC$, with $A\\leftrightarrow A$, $D\\leftrightarrow B$, $E\\leftrightarrow C$.\n\n\\textbf{Step 2 -- write the proportion the correspondence dictates.}\n$$\\frac{AD}{AB}=\\frac{DE}{BC}.$$\n\n\\textbf{Step 3 -- substitute whole sides, not pieces.} $AB=AD+DB=8+6=14$, so\n$$\\frac{8}{14}=\\frac{DE}{21}\\quad\\Longrightarrow\\quad DE=21\\cdot\\frac{8}{14}=12.$$\n\n\\textbf{Why this is the right path.} The similarity statement pairs $AD$ with $AB$ -- a side of the small triangle with the \\emph{whole} side of the big one. Using $AD/DB=8/6$ instead gives $DE=28$, which is the classic wrong answer: $DB$ is a piece of $\\overline{AB}$, not a side of either triangle. The ratio $AD:DB$ is only legitimate when it is set against the matching pieces $AE:EC$."
+      }
+    ]
+  },
+  "problems": [
+    {
+      "id": "T18-M1-01",
+      "module": 1,
+      "n": 1,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Angle relationships and parallel lines",
+      "stem": "In the figure, ray $OA$ meets line $\\ell$ at point $O$, forming the two marked angles. What is the value of $x$?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[line width=0.7pt,scale=0.95]\n\\draw (-2.4,0) -- (2.4,0);\n\\draw (0,0) -- (1.35,1.55);\n\\node[font=\\small] at (-0.95,0.30) {$118^{\\circ}$};\n\\node[font=\\small] at (1.30,0.24) {$x^{\\circ}$};\n\\node[below left,font=\\small] at (0,0) {$O$};\n\\node[below,font=\\small] at (-2.4,0) {$\\ell$};\n\\end{tikzpicture}\n\\par\n\\satnote{Figure not drawn to scale.}\n\\end{center}",
+      "choices": [
+        "$28$",
+        "$62$",
+        "$118$",
+        "$152$"
+      ],
+      "answer": "B",
+      "solution": "A straight line is a $180^{\\circ}$ angle, so the ray splits it into two angles whose measures add to $180^{\\circ}$; nothing else in the figure is needed. Subtracting gives $x=62$. Choice A is the complement, $90-62$, and choice C simply repeats the given angle, which would be correct only for a vertical angle.",
+      "steps": [
+        "The two marked angles together make a straight line, so they are supplementary.",
+        "$x+118=180$.",
+        "$x=62$."
+      ],
+      "verify": "result = 180 - 118"
+    },
+    {
+      "id": "T18-M1-02",
+      "module": 1,
+      "n": 2,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Angle relationships and parallel lines",
+      "stem": "Angle $A$ and angle $B$ are complementary. The measure of angle $A$ is $27^{\\circ}$. What is the measure, in degrees, of angle $B$?",
+      "answer": "63",
+      "solution": "Complementary means the two angles together form a right angle, so their measures add to $90^{\\circ}$, not $180^{\\circ}$. That gives $m\\angle B=63^{\\circ}$. Answering $153$ means using the supplementary rule by mistake.",
+      "steps": [
+        "Complementary angles add to $90^{\\circ}$.",
+        "$m\\angle B=90-27=63$."
+      ],
+      "verify": "result = 90 - 27"
+    },
+    {
+      "id": "T18-M1-03",
+      "module": 1,
+      "n": 3,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Angle relationships and parallel lines",
+      "stem": "In the figure, two lines intersect and the two marked angles are vertical angles. What is the value of $x$?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[line width=0.7pt,scale=0.95]\n\\draw (-2.3,-1.15) -- (2.3,1.15);\n\\draw (-2.3,1.15) -- (2.3,-1.15);\n\\node[font=\\small] at (-1.35,0) {$(3x+8)^{\\circ}$};\n\\node[font=\\small] at (1.35,0) {$(x+40)^{\\circ}$};\n\\end{tikzpicture}\n\\par\n\\satnote{Figure not drawn to scale.}\n\\end{center}",
+      "choices": [
+        "$8$",
+        "$16$",
+        "$20$",
+        "$33$"
+      ],
+      "answer": "B",
+      "solution": "The two marked angles sit opposite each other where the lines cross, so they are vertical angles and therefore equal; that is what turns the figure into an equation. Solving $3x+8=x+40$ gives $x=16$. Choice A comes from adding $x$ to both sides instead of subtracting, and choice D comes from treating the pair as supplementary.",
+      "steps": [
+        "Vertical angles are equal, so $3x+8=x+40$.",
+        "$2x=32$.",
+        "$x=16$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(Eq(3*x + 8, x + 40), x)[0]"
+    },
+    {
+      "id": "T18-M1-04",
+      "module": 1,
+      "n": 4,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Angle relationships and parallel lines",
+      "stem": "In the figure, line $\\ell$ is parallel to line $m$ and both are crossed by transversal $t$. The two marked angles are interior angles on the same side of $t$. What is the value of $x$?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[line width=0.7pt,scale=0.95]\n\\draw (-2.9,1.5) -- (2.9,1.5) node[right,font=\\small] {$\\ell$};\n\\draw (-2.9,0) -- (2.9,0) node[right,font=\\small] {$m$};\n\\draw (-2.0,-0.71) -- (2.0,2.14) node[above,font=\\small] {$t$};\n\\node[font=\\small] at (-0.35,1.06) {$50^{\\circ}$};\n\\node[font=\\small] at (-1.80,0.30) {$x^{\\circ}$};\n\\end{tikzpicture}\n\\par\n\\satnote{Figure not drawn to scale.}\n\\end{center}",
+      "choices": [
+        "$40$",
+        "$50$",
+        "$65$",
+        "$130$"
+      ],
+      "answer": "D",
+      "solution": "Both marked angles lie between the parallel lines and on the same side of the transversal, which makes them co-interior: they add to $180^{\\circ}$ rather than being equal. Choice B is the answer you get by treating them as alternate interior angles, and the figure rules that out because one marked angle is clearly obtuse and the other acute.",
+      "steps": [
+        "Co-interior (same-side interior) angles between parallel lines are supplementary.",
+        "$x+50=180$.",
+        "$x=130$."
+      ],
+      "verify": "result = 180 - 50"
+    },
+    {
+      "id": "T18-M1-05",
+      "module": 1,
+      "n": 5,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Triangle angle and side rules",
+      "stem": "Two of the interior angles of a triangle measure $47^{\\circ}$ and $68^{\\circ}$. What is the measure, in degrees, of the third interior angle?",
+      "choices": [
+        "$65$",
+        "$112$",
+        "$115$",
+        "$133$"
+      ],
+      "answer": "A",
+      "solution": "Every triangle's interior angles total $180^{\\circ}$, so the third angle is whatever is left after the two given angles are removed. Choice C is the sum of the two given angles rather than the remainder, and choice D subtracts only one of them.",
+      "steps": [
+        "The three interior angles of a triangle add to $180^{\\circ}$.",
+        "$47+68=115$.",
+        "$180-115=65$."
+      ],
+      "verify": "result = 180 - 47 - 68"
+    },
+    {
+      "id": "T18-M1-06",
+      "module": 1,
+      "n": 6,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Triangle angle and side rules",
+      "stem": "In isosceles triangle $ABC$, $AB=AC$ and the measure of $\\angle A$ is $40^{\\circ}$. What is the measure, in degrees, of $\\angle B$?",
+      "answer": "70",
+      "solution": "Equal sides face equal angles, so the two base angles share whatever is left of the $180^{\\circ}$ after the vertex angle is taken out. Half of $140^{\\circ}$ is $70^{\\circ}$. Answering $140$ gives the pair of base angles together rather than one of them.",
+      "steps": [
+        "Since $AB=AC$, the angles opposite them are equal: $\\angle B=\\angle C$.",
+        "$\\angle B+\\angle C=180-40=140$.",
+        "$\\angle B=140/2=70$."
+      ],
+      "verify": "result = Rational(180 - 40, 2)"
+    },
+    {
+      "id": "T18-M1-07",
+      "module": 1,
+      "n": 7,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Triangle angle and side rules",
+      "stem": "In the figure, side $\\overline{BC}$ of triangle $ABC$ is extended through $C$ to point $D$. If $\\angle A$ measures $35^{\\circ}$ and $\\angle B$ measures $65^{\\circ}$, what is the measure, in degrees, of $\\angle ACD$?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[line width=0.7pt,scale=0.95]\n\\coordinate (A) at (-0.5,1.7);\n\\coordinate (B) at (-2.1,0);\n\\coordinate (C) at (1.1,0);\n\\coordinate (D) at (2.5,0);\n\\draw (B) -- (D);\n\\draw (A) -- (B);\n\\draw (A) -- (C);\n\\node[above,font=\\small] at (A) {$A$};\n\\node[below left,font=\\small] at (B) {$B$};\n\\node[below,font=\\small] at (C) {$C$};\n\\node[below right,font=\\small] at (D) {$D$};\n\\node[font=\\small] at (-0.52,1.24) {$35^{\\circ}$};\n\\node[font=\\small] at (-1.36,0.26) {$65^{\\circ}$};\n\\node[font=\\small] at (1.62,0.28) {$?$};\n\\end{tikzpicture}\n\\par\n\\satnote{Figure not drawn to scale.}\n\\end{center}",
+      "choices": [
+        "$80$",
+        "$100$",
+        "$115$",
+        "$145$"
+      ],
+      "answer": "B",
+      "solution": "The exterior angle at $C$ does not touch $\\angle A$ or $\\angle B$, so those two are its remote interior angles and it equals their sum. You can check it the long way: $\\angle ACB=180-35-65=80$, and $\\angle ACD=180-80=100$. Choice A is that interior angle $\\angle ACB$, the supplement of what was asked.",
+      "steps": [
+        "$\\angle ACD$ is an exterior angle of the triangle at $C$.",
+        "An exterior angle equals the sum of the two remote interior angles.",
+        "$\\angle ACD=35+65=100$."
+      ],
+      "verify": "result = 35 + 65"
+    },
+    {
+      "id": "T18-M1-08",
+      "module": 1,
+      "n": 8,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Angle relationships and parallel lines",
+      "stem": "In the figure, $\\ell \\parallel m$ and the two marked angles are corresponding angles. What is the measure, in degrees, of each marked angle?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[line width=0.7pt,scale=0.95]\n\\draw (-2.9,1.5) -- (2.9,1.5) node[right,font=\\small] {$\\ell$};\n\\draw (-2.9,0) -- (2.9,0) node[right,font=\\small] {$m$};\n\\draw (-2.0,-0.71) -- (2.0,2.14) node[above,font=\\small] {$t$};\n\\node[font=\\small] at (2.15,1.88) {$(3x+20)^{\\circ}$};\n\\node[font=\\small] at (0.38,0.30) {$(x+60)^{\\circ}$};\n\\end{tikzpicture}\n\\par\n\\satnote{Figure not drawn to scale.}\n\\end{center}",
+      "choices": [
+        "$20$",
+        "$25$",
+        "$80$",
+        "$100$"
+      ],
+      "answer": "C",
+      "solution": "Corresponding angles sit in matching positions at the two crossings, so setting the expressions equal is legitimate; the work then has two stages, because the question asks for the angle and not for $x$. Choice A stops at $x=20$, choice B comes from adding the expressions to $180^{\\circ}$, and choice D is the supplement of the correct angle.",
+      "steps": [
+        "Corresponding angles between parallel lines are equal: $3x+20=x+60$.",
+        "$2x=40$, so $x=20$.",
+        "Each angle measures $3(20)+20=80$."
+      ],
+      "verify": "x = symbols('x')\nxv = solve(Eq(3*x + 20, x + 60), x)[0]\nresult = 3*xv + 20"
+    },
+    {
+      "id": "T18-M1-09",
+      "module": 1,
+      "n": 9,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Triangle angle and side rules",
+      "stem": "Two sides of a triangle have lengths $7$ and $12$. Which of the following could be the length of the third side?",
+      "choices": [
+        "$4$",
+        "$5$",
+        "$17$",
+        "$19$"
+      ],
+      "answer": "C",
+      "solution": "The triangle inequality says each side must be shorter than the sum of the other two and longer than their difference, which pins the third side strictly between $5$ and $19$. Both endpoints are offered as choices on purpose: at $c=5$ or $c=19$ the three lengths collapse onto a straight line and no triangle exists.",
+      "steps": [
+        "The third side $c$ satisfies $12-7 < c < 12+7$.",
+        "So $5 < c < 19$.",
+        "Of the choices, only $17$ lies strictly between $5$ and $19$."
+      ],
+      "verify": "result = [c for c in [4, 5, 17, 19] if 12 - 7 < c < 12 + 7][0]"
+    },
+    {
+      "id": "T18-M1-10",
+      "module": 1,
+      "n": 10,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Triangle angle and side rules",
+      "stem": "The lengths of two sides of a triangle are $9$ and $5$. What is the greatest possible integer length of the third side?",
+      "answer": "13",
+      "solution": "The upper bound is the sum of the two known sides, and it is a strict bound, so $14$ itself is impossible. The largest integer that works is $13$; answering $14$ is the classic boundary error.",
+      "steps": [
+        "The third side $c$ satisfies $9-5 < c < 9+5$, so $4 < c < 14$.",
+        "The greatest integer strictly less than $14$ is $13$."
+      ],
+      "verify": "result = max([c for c in range(1, 14) if 9 - 5 < c < 9 + 5])"
+    },
+    {
+      "id": "T18-M1-11",
+      "module": 1,
+      "n": 11,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Similarity and congruence",
+      "stem": "Triangle $ABC$ is similar to triangle $DEF$, where $A$ corresponds to $D$, $B$ corresponds to $E$, and $C$ corresponds to $F$. If $AB=8$, $BC=12$, and $DE=6$, what is the length of $\\overline{EF}$?",
+      "choices": [
+        "$9$",
+        "$10$",
+        "$16$",
+        "$18$"
+      ],
+      "answer": "A",
+      "solution": "The order of the letters in $\\triangle ABC \\sim \\triangle DEF$ pairs $\\overline{AB}$ with $\\overline{DE}$ and $\\overline{BC}$ with $\\overline{EF}$, so the scale factor from the first triangle to the second is $6/8=3/4$ and every length shrinks by that factor. Choice C multiplies by $8/6$ instead, and choice B subtracts the difference $8-6=2$ from $12$, treating a proportional relationship as an additive one.",
+      "steps": [
+        "The correspondence gives $\\dfrac{AB}{DE}=\\dfrac{BC}{EF}$.",
+        "$\\dfrac{8}{6}=\\dfrac{12}{EF}$.",
+        "$EF=12\\cdot\\dfrac{6}{8}=9$."
+      ],
+      "verify": "result = 12 * Rational(6, 8)"
+    },
+    {
+      "id": "T18-M1-12",
+      "module": 1,
+      "n": 12,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Angle relationships and parallel lines",
+      "stem": "In the figure, $\\ell \\parallel m$ and the two marked angles are interior angles on the same side of the transversal. What is the value of $x$?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[line width=0.7pt,scale=0.95]\n\\draw (-2.9,1.5) -- (2.9,1.5) node[right,font=\\small] {$\\ell$};\n\\draw (-2.9,0) -- (2.9,0) node[right,font=\\small] {$m$};\n\\draw (-2.0,-0.71) -- (2.0,2.14) node[above,font=\\small] {$t$};\n\\node[font=\\small] at (-0.35,1.06) {$(3x+10)^{\\circ}$};\n\\node[font=\\small] at (-1.80,0.30) {$(2x+40)^{\\circ}$};\n\\end{tikzpicture}\n\\par\n\\satnote{Figure not drawn to scale.}\n\\end{center}",
+      "choices": [
+        "$26$",
+        "$30$",
+        "$88$",
+        "$92$"
+      ],
+      "answer": "A",
+      "solution": "Because the two angles are on the same side of the transversal and between the parallel lines, they add to $180^{\\circ}$; setting them equal instead gives choice B. Choices C and D are the two angle measures themselves, $88^{\\circ}$ and $92^{\\circ}$, which do add to $180$ but are not what the question asked for.",
+      "steps": [
+        "Same-side interior angles between parallel lines are supplementary.",
+        "$(3x+10)+(2x+40)=180$.",
+        "$5x+50=180$, so $5x=130$ and $x=26$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(Eq(3*x + 10 + 2*x + 40, 180), x)[0]"
+    },
+    {
+      "id": "T18-M1-13",
+      "module": 1,
+      "n": 13,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Triangle angle and side rules",
+      "stem": "In triangle $ABC$, side $\\overline{AB}$ is extended beyond $B$ to point $D$. The measure of $\\angle CBD$ is $(5x)^{\\circ}$, the measure of $\\angle A$ is $40^{\\circ}$, and the measure of $\\angle C$ is $(3x+10)^{\\circ}$. What is the value of $x$?",
+      "answer": "25",
+      "solution": "The exterior angle at $B$ is remote from $\\angle A$ and $\\angle C$, so it equals their sum; that single equation carries all three pieces of information. Solving gives $x=25$, which makes the exterior angle $125^{\\circ}$ and the two remote angles $40^{\\circ}$ and $85^{\\circ}$ -- a valid check, since $40+85=125$.",
+      "steps": [
+        "$\\angle CBD$ is the exterior angle at $B$, so it equals the sum of the remote interior angles $\\angle A$ and $\\angle C$.",
+        "$5x=40+(3x+10)$.",
+        "$2x=50$, so $x=25$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(Eq(5*x, 40 + 3*x + 10), x)[0]"
+    },
+    {
+      "id": "T18-M1-14",
+      "module": 1,
+      "n": 14,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Triangle angle and side rules",
+      "stem": "In triangle $ABC$, $AB=AC$. The measure of $\\angle A$ is $(x+20)^{\\circ}$ and the measure of $\\angle B$ is $(2x)^{\\circ}$. What is the value of $x$?",
+      "choices": [
+        "$20$",
+        "$32$",
+        "$52$",
+        "$64$"
+      ],
+      "answer": "B",
+      "solution": "The equal sides $\\overline{AB}$ and $\\overline{AC}$ force the two angles opposite them, $\\angle C$ and $\\angle B$, to be equal, so the base angle expression must be used twice in the angle sum. Choice A comes from setting the vertex angle equal to a base angle, choice C is the resulting vertex angle $52^{\\circ}$, and choice D is a base angle $64^{\\circ}$.",
+      "steps": [
+        "Since $AB=AC$, $\\angle B=\\angle C=(2x)^{\\circ}$.",
+        "$(x+20)+2x+2x=180$.",
+        "$5x=160$, so $x=32$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(Eq(x + 20 + 2*(2*x), 180), x)[0]"
+    },
+    {
+      "id": "T18-M1-15",
+      "module": 1,
+      "n": 15,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Similarity and congruence",
+      "stem": "Triangle $ABC$ is similar to triangle $DEF$, and the ratio of $AB$ to $DE$ is $3$ to $5$. The area of triangle $ABC$ is $18$. What is the area of triangle $DEF$?",
+      "choices": [
+        "$10.8$",
+        "$30$",
+        "$50$",
+        "$90$"
+      ],
+      "answer": "C",
+      "solution": "Scaling a figure by $k$ multiplies every length by $k$ but every area by $k^{2}$, because area depends on two perpendicular dimensions at once. Choice B applies the length ratio $5/3$ straight to the area, the single most common error in this topic, and choice A applies it upside down.",
+      "steps": [
+        "The ratio of corresponding lengths is $k=\\dfrac{5}{3}$.",
+        "Areas of similar figures are in the ratio $k^{2}=\\dfrac{25}{9}$.",
+        "Area $=18\\cdot\\dfrac{25}{9}=50$."
+      ],
+      "verify": "result = 18 * Rational(5, 3)**2"
+    },
+    {
+      "id": "T18-M1-16",
+      "module": 1,
+      "n": 16,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Similarity and congruence",
+      "stem": "In the figure, $D$ lies on $\\overline{AB}$, $E$ lies on $\\overline{AC}$, and $\\overline{DE}\\parallel\\overline{BC}$. If $AD=6$, $DB=4$, and $AE=9$, what is the length of $\\overline{EC}$?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[line width=0.7pt,scale=0.95]\n\\coordinate (A) at (0,2.4);\n\\coordinate (B) at (-2.1,0);\n\\coordinate (C) at (2.1,0);\n\\coordinate (D) at (-1.26,0.96);\n\\coordinate (E) at (1.26,0.96);\n\\draw (A) -- (B) -- (C) -- cycle;\n\\draw (D) -- (E);\n\\node[above,font=\\small] at (A) {$A$};\n\\node[below left,font=\\small] at (B) {$B$};\n\\node[below right,font=\\small] at (C) {$C$};\n\\node[left,font=\\small] at (D) {$D$};\n\\node[right,font=\\small] at (E) {$E$};\n\\node[font=\\small] at (-0.95,1.85) {$6$};\n\\node[font=\\small] at (-1.98,0.50) {$4$};\n\\node[font=\\small] at (0.95,1.85) {$9$};\n\\end{tikzpicture}\n\\par\n\\satnote{Figure not drawn to scale.}\n\\end{center}",
+      "choices": [
+        "$4$",
+        "$6$",
+        "$13.5$",
+        "$15$"
+      ],
+      "answer": "B",
+      "solution": "The parallel segment creates $\\triangle ADE \\sim \\triangle ABC$, and a consequence is that the pieces of the two sides are in the same ratio, so $AD:DB$ must be matched with $AE:EC$ -- piece to piece. Choice D is $AC=15$, the whole side rather than the piece asked for, and choice C comes from inverting the ratio.",
+      "steps": [
+        "Because $\\overline{DE}\\parallel\\overline{BC}$, the parallel line cuts the two sides proportionally: $\\dfrac{AD}{DB}=\\dfrac{AE}{EC}$.",
+        "$\\dfrac{6}{4}=\\dfrac{9}{EC}$.",
+        "$6\\cdot EC=36$, so $EC=6$."
+      ],
+      "verify": "result = 9 * Rational(4, 6)"
+    },
+    {
+      "id": "T18-M1-17",
+      "module": 1,
+      "n": 17,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Similarity and congruence",
+      "stem": "In triangle $PQR$, point $S$ lies on $\\overline{PQ}$ and point $T$ lies on $\\overline{PR}$ so that $\\overline{ST}\\parallel\\overline{QR}$. If $PS=8$, $SQ=12$, and $ST=10$, what is the length of $\\overline{QR}$?",
+      "answer": "25",
+      "solution": "Here $\\overline{ST}$ and $\\overline{QR}$ are sides of the two similar triangles, so they must be compared with a pair of full sides, $\\overline{PS}$ and $\\overline{PQ}$ -- not with the piece $\\overline{SQ}$. Adding $8+12$ first is the whole trick; using $8/12$ instead would give $15$, which is why the sum must be taken before the proportion is written.",
+      "steps": [
+        "$\\overline{ST}\\parallel\\overline{QR}$ gives $\\triangle PST \\sim \\triangle PQR$, with $S$ matching $Q$ and $T$ matching $R$.",
+        "$PQ=PS+SQ=8+12=20$.",
+        "$\\dfrac{PS}{PQ}=\\dfrac{ST}{QR}$, so $\\dfrac{8}{20}=\\dfrac{10}{QR}$ and $QR=25$."
+      ],
+      "verify": "result = 10 * Rational(20, 8)"
+    },
+    {
+      "id": "T18-M1-18",
+      "module": 1,
+      "n": 18,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Angle relationships and parallel lines",
+      "stem": "In the figure, $\\ell \\parallel m$, point $A$ is on $\\ell$, point $B$ is on $m$, and point $P$ lies between the two lines. Segment $\\overline{PA}$ makes a $35^{\\circ}$ angle with $\\ell$ and segment $\\overline{PB}$ makes a $48^{\\circ}$ angle with $m$, as shown. What is the value of $x$, the measure in degrees of $\\angle APB$?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[line width=0.7pt,scale=0.95]\n\\draw (-2.7,1.8) -- (2.7,1.8) node[right,font=\\small] {$\\ell$};\n\\draw (-2.7,0) -- (2.7,0) node[right,font=\\small] {$m$};\n\\coordinate (A) at (-1.2,1.8);\n\\coordinate (P) at (1.1,0.9);\n\\coordinate (B) at (-0.9,0);\n\\draw (A) -- (P) -- (B);\n\\node[above,font=\\small] at (A) {$A$};\n\\node[right,font=\\small] at (P) {$P$};\n\\node[below,font=\\small] at (B) {$B$};\n\\node[font=\\small] at (-0.42,1.55) {$35^{\\circ}$};\n\\node[font=\\small] at (-0.20,0.24) {$48^{\\circ}$};\n\\node[font=\\small] at (0.62,0.92) {$x^{\\circ}$};\n\\end{tikzpicture}\n\\par\n\\satnote{Figure not drawn to scale.}\n\\end{center}",
+      "choices": [
+        "$13$",
+        "$48$",
+        "$83$",
+        "$97$"
+      ],
+      "answer": "C",
+      "solution": "A point trapped between two parallel lines is always handled the same way: run a third parallel through it. The upper part of $\\angle APB$ is then alternate interior with the $35^{\\circ}$ angle and the lower part is alternate interior with the $48^{\\circ}$ angle, so the whole angle is their sum. Choice A subtracts them and choice D is the supplement of the answer.",
+      "steps": [
+        "Draw the line through $P$ parallel to $\\ell$ and $m$.",
+        "That line splits $\\angle APB$ into two parts, each an alternate interior angle with one of the given angles.",
+        "$x=35+48=83$."
+      ],
+      "verify": "result = 35 + 48"
+    },
+    {
+      "id": "T18-M1-19",
+      "module": 1,
+      "n": 19,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Triangle angle and side rules",
+      "stem": "The side lengths of a triangle are $5$, $11$, and $x$, where $x$ is an integer. What is the greatest possible perimeter of the triangle?",
+      "choices": [
+        "$21$",
+        "$23$",
+        "$31$",
+        "$32$"
+      ],
+      "answer": "C",
+      "solution": "The perimeter is largest when the unknown side is as long as the triangle inequality allows, and since the bound $x<16$ is strict, the largest legal integer is $15$. Choice D uses the forbidden boundary value $x=16$, and choice B is the smallest possible perimeter, from $x=7$.",
+      "steps": [
+        "The triangle inequality gives $11-5 < x < 11+5$, so $6 < x < 16$.",
+        "The greatest integer value is $x=15$.",
+        "Perimeter $=5+11+15=31$."
+      ],
+      "verify": "xmax = max([c for c in range(1, 16) if 11 - 5 < c < 11 + 5])\nresult = 5 + 11 + xmax"
+    },
+    {
+      "id": "T18-M1-20",
+      "module": 1,
+      "n": 20,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Similarity and congruence",
+      "stem": "Triangle $ABC$ is similar to triangle $DEF$, and the ratio of the perimeter of triangle $ABC$ to the perimeter of triangle $DEF$ is $2$ to $3$. If the area of triangle $ABC$ is $24$, what is the area of triangle $DEF$?",
+      "answer": "54",
+      "solution": "Perimeter is built from lengths, so a perimeter ratio is the same as the side ratio and can be squared to get the area ratio. Multiplying $24$ by $3/2$ instead would give $36$, the error of applying a length ratio to an area.",
+      "steps": [
+        "Perimeter is a length, so the ratio of corresponding lengths is also $2:3$; the scale factor is $k=\\dfrac{3}{2}$.",
+        "Areas are in the ratio $k^{2}=\\dfrac{9}{4}$.",
+        "Area $=24\\cdot\\dfrac{9}{4}=54$."
+      ],
+      "verify": "result = 24 * Rational(3, 2)**2"
+    },
+    {
+      "id": "T18-M1-21",
+      "module": 1,
+      "n": 21,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Similarity and congruence",
+      "stem": "At the same time of day, a person who is $6$ feet tall casts a shadow $9$ feet long, and a nearby flagpole casts a shadow $24$ feet long. How tall, in feet, is the flagpole?",
+      "choices": [
+        "$16$",
+        "$21$",
+        "$27$",
+        "$36$"
+      ],
+      "answer": "A",
+      "solution": "Both triangles have a right angle at the ground and the same angle of elevation to the sun, so they are similar by AA and height-to-shadow is a constant ratio. Choice D pairs the sides the wrong way round, computing $24\\cdot\\frac{9}{6}$, and choices B and C add or subtract the difference $9-6=3$ instead of scaling.",
+      "steps": [
+        "The sun's rays make equal angles, so the person and shadow form a triangle similar to the one formed by the flagpole and its shadow.",
+        "$\\dfrac{\\text{height}}{\\text{shadow}}$ is the same for both: $\\dfrac{6}{9}=\\dfrac{h}{24}$.",
+        "$h=24\\cdot\\dfrac{6}{9}=16$."
+      ],
+      "verify": "result = 24 * Rational(6, 9)"
+    },
+    {
+      "id": "T18-M1-22",
+      "module": 1,
+      "n": 22,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Similarity and congruence",
+      "stem": "In the figure, $D$ lies on $\\overline{AB}$ and $E$ lies on $\\overline{AC}$, and $\\angle ADE$ is congruent to $\\angle ABC$. If $AD=4$, $DB=6$, and $DE=6$, what is the length of $\\overline{BC}$?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[line width=0.7pt,scale=0.95]\n\\coordinate (A) at (0,2.4);\n\\coordinate (B) at (-2.1,0);\n\\coordinate (C) at (2.1,0);\n\\coordinate (D) at (-1.26,0.96);\n\\coordinate (E) at (1.26,0.96);\n\\draw (A) -- (B) -- (C) -- cycle;\n\\draw (D) -- (E);\n\\node[above,font=\\small] at (A) {$A$};\n\\node[below left,font=\\small] at (B) {$B$};\n\\node[below right,font=\\small] at (C) {$C$};\n\\node[left,font=\\small] at (D) {$D$};\n\\node[right,font=\\small] at (E) {$E$};\n\\node[font=\\small] at (-0.95,1.85) {$4$};\n\\node[font=\\small] at (0,1.14) {$6$};\n\\node[font=\\small] at (-1.98,0.50) {$6$};\n\\end{tikzpicture}\n\\par\n\\satnote{Figure not drawn to scale.}\n\\end{center}",
+      "choices": [
+        "$2.4$",
+        "$9$",
+        "$12$",
+        "$15$"
+      ],
+      "answer": "D",
+      "solution": "Two equal angles are enough for similarity (AA), and the correspondence $\\triangle ADE \\sim \\triangle ABC$ pairs $\\overline{AD}$ with the \\emph{whole} side $\\overline{AB}$, not with the piece $\\overline{DB}$. Choice B is what you get from $\\frac{4}{6}=\\frac{6}{BC}$, using the piece $DB=6$ in place of $AB=10$, and choice A inverts the ratio.",
+      "steps": [
+        "The two triangles share $\\angle A$ and have $\\angle ADE=\\angle ABC$, so $\\triangle ADE \\sim \\triangle ABC$ with $D$ matching $B$ and $E$ matching $C$.",
+        "$AB=AD+DB=4+6=10$.",
+        "$\\dfrac{AD}{AB}=\\dfrac{DE}{BC}$, so $\\dfrac{4}{10}=\\dfrac{6}{BC}$ and $BC=15$."
+      ],
+      "verify": "result = 6 * Rational(10, 4)"
+    },
+    {
+      "id": "T18-M2-01",
+      "module": 2,
+      "n": 23,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Angle relationships and parallel lines",
+      "stem": "In the figure, two rays drawn from point $O$ on line $\\ell$ divide the straight angle above the line into three angles with measures $x^{\\circ}$, $(2x)^{\\circ}$, and $(3x)^{\\circ}$. What is the value of $x$?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[line width=0.7pt,scale=0.95]\n\\draw (-2.4,0) -- (2.4,0) node[right,font=\\small] {$\\ell$};\n\\draw (0,0) -- (1.65,0.95);\n\\draw (0,0) -- (0,1.9);\n\\node[font=\\small] at (1.42,0.22) {$x^{\\circ}$};\n\\node[font=\\small] at (0.62,1.05) {$(2x)^{\\circ}$};\n\\node[font=\\small] at (-1.05,0.55) {$(3x)^{\\circ}$};\n\\node[below,font=\\small] at (0,0) {$O$};\n\\end{tikzpicture}\n\\end{center}",
+      "choices": [
+        "$20$",
+        "$30$",
+        "$45$",
+        "$60$"
+      ],
+      "answer": "B",
+      "solution": "The angles on one side of a straight line always total $180^{\\circ}$, however many rays split it, so the six equal parts of $x$ share that $180^{\\circ}$. Choice D comes from using $360^{\\circ}$, the full turn around a point, which would apply only if the rays split the whole plane around $O$.",
+      "steps": [
+        "The three angles together make a straight angle: $x+2x+3x=180$.",
+        "$6x=180$.",
+        "$x=30$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(Eq(x + 2*x + 3*x, 180), x)[0]"
+    },
+    {
+      "id": "T18-M2-02",
+      "module": 2,
+      "n": 24,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Angle relationships and parallel lines",
+      "stem": "In the figure, line $\\ell$ is parallel to line $m$ and both are crossed by transversal $t$. What is the value of $x$?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[line width=0.7pt,scale=0.95]\n\\draw (-2.9,1.5) -- (2.9,1.5) node[right,font=\\small] {$\\ell$};\n\\draw (-2.9,0) -- (2.9,0) node[right,font=\\small] {$m$};\n\\draw (-2.0,-0.71) -- (2.0,2.14) node[above,font=\\small] {$t$};\n\\node[font=\\small] at (2.15,1.88) {$72^{\\circ}$};\n\\node[font=\\small] at (-0.46,-0.36) {$x^{\\circ}$};\n\\end{tikzpicture}\n\\par\n\\satnote{Figure not drawn to scale.}\n\\end{center}",
+      "choices": [
+        "$18$",
+        "$72$",
+        "$108$",
+        "$162$"
+      ],
+      "answer": "C",
+      "solution": "Carry the given angle down to the second line with the corresponding-angles rule, then take a supplement, because the marked angle is below line $m$ rather than above it. Choice B stops one step early with the corresponding angle itself, and choice A takes the complement instead of the supplement.",
+      "steps": [
+        "The angle corresponding to the $72^{\\circ}$ angle sits above line $m$ on the right of $t$, so it also measures $72^{\\circ}$.",
+        "The marked angle $x^{\\circ}$ is on a straight line with that $72^{\\circ}$ angle.",
+        "$x=180-72=108$."
+      ],
+      "verify": "result = 180 - 72"
+    },
+    {
+      "id": "T18-M2-03",
+      "module": 2,
+      "n": 25,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Triangle angle and side rules",
+      "stem": "The measures of the three interior angles of a triangle are in the ratio $2:3:4$. What is the measure, in degrees, of the largest angle?",
+      "answer": "80",
+      "solution": "A ratio only fixes the relative sizes, so introduce a common multiplier $k$ and let the $180^{\\circ}$ angle sum determine it. The angles are $40^{\\circ}$, $60^{\\circ}$, and $80^{\\circ}$, which do add to $180$.",
+      "steps": [
+        "Write the angles as $2k$, $3k$, and $4k$.",
+        "$2k+3k+4k=180$, so $9k=180$ and $k=20$.",
+        "The largest angle is $4k=80$."
+      ],
+      "verify": "result = 180 * Rational(4, 9)"
+    },
+    {
+      "id": "T18-M2-04",
+      "module": 2,
+      "n": 26,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Triangle angle and side rules",
+      "stem": "In isosceles triangle $ABC$, $AB=AC$ and the measure of $\\angle B$ is $37^{\\circ}$. What is the measure, in degrees, of $\\angle A$?",
+      "choices": [
+        "$37$",
+        "$53$",
+        "$74$",
+        "$106$"
+      ],
+      "answer": "D",
+      "solution": "The equal sides face the two base angles, so the given $37^{\\circ}$ occurs twice and only the vertex angle is unknown. Choice C is the pair of base angles combined, and choice B is the complement of $37^{\\circ}$, which has no role here.",
+      "steps": [
+        "$AB=AC$ makes $\\angle B$ and $\\angle C$ the base angles, so $\\angle C=37^{\\circ}$.",
+        "$\\angle A=180-37-37$.",
+        "$\\angle A=106$."
+      ],
+      "verify": "result = 180 - 2*37"
+    },
+    {
+      "id": "T18-M2-05",
+      "module": 2,
+      "n": 27,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Triangle angle and side rules",
+      "stem": "In triangle $ABC$, side $\\overline{AB}$ is extended through $B$ to point $D$, and $\\angle CBD$ measures $130^{\\circ}$. If $\\angle A$ measures $55^{\\circ}$, what is the measure, in degrees, of $\\angle C$?",
+      "choices": [
+        "$50$",
+        "$75$",
+        "$105$",
+        "$125$"
+      ],
+      "answer": "B",
+      "solution": "The exterior angle at $B$ equals the sum of the two angles it does not touch, so one subtraction finishes the problem. Choice A is the interior angle $\\angle ABC=180-130=50$, and choice C is the supplement of the required angle.",
+      "steps": [
+        "$\\angle CBD$ is the exterior angle at $B$, so it equals $\\angle A+\\angle C$.",
+        "$130=55+\\angle C$.",
+        "$\\angle C=75$."
+      ],
+      "verify": "result = 130 - 55"
+    },
+    {
+      "id": "T18-M2-06",
+      "module": 2,
+      "n": 28,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Similarity and congruence",
+      "stem": "Triangle $RST$ is similar to triangle $XYZ$, where $R$ corresponds to $X$, $S$ corresponds to $Y$, and $T$ corresponds to $Z$. If $RS=12$, $ST=15$, and $XY=8$, what is the length of $\\overline{YZ}$?",
+      "choices": [
+        "$8$",
+        "$10$",
+        "$11$",
+        "$22.5$"
+      ],
+      "answer": "B",
+      "solution": "The scale factor from $\\triangle RST$ to $\\triangle XYZ$ is $8/12=2/3$, so every side of the second triangle is two thirds of its partner in the first. Choice D multiplies by $12/8$ instead, and choice C subtracts the difference $12-8=4$ from $15$.",
+      "steps": [
+        "The correspondence pairs $\\overline{RS}$ with $\\overline{XY}$ and $\\overline{ST}$ with $\\overline{YZ}$.",
+        "$\\dfrac{RS}{XY}=\\dfrac{ST}{YZ}$, so $\\dfrac{12}{8}=\\dfrac{15}{YZ}$.",
+        "$YZ=15\\cdot\\dfrac{8}{12}=10$."
+      ],
+      "verify": "result = 15 * Rational(8, 12)"
+    },
+    {
+      "id": "T18-M2-07",
+      "module": 2,
+      "n": 29,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Similarity and congruence",
+      "stem": "Two similar triangles have corresponding side lengths in the ratio $2$ to $5$. The area of the smaller triangle is $12$. What is the area of the larger triangle?",
+      "answer": "75",
+      "solution": "Doubling every length of a figure quadruples its area, and in general lengths scale by $k$ while areas scale by $k^{2}$. Multiplying $12$ by $5/2$ would give $30$, which is the answer to a question about a length, not an area.",
+      "steps": [
+        "The scale factor from the smaller to the larger is $k=\\dfrac{5}{2}$.",
+        "Areas scale by $k^{2}=\\dfrac{25}{4}$.",
+        "Area $=12\\cdot\\dfrac{25}{4}=75$."
+      ],
+      "verify": "result = 12 * Rational(5, 2)**2"
+    },
+    {
+      "id": "T18-M2-08",
+      "module": 2,
+      "n": 30,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Angle relationships and parallel lines",
+      "stem": "In the figure, $\\ell \\parallel m$ and the two marked angles are interior angles on the same side of the transversal. What is the measure, in degrees, of the larger of the two marked angles?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[line width=0.7pt,scale=0.95]\n\\draw (-2.9,1.5) -- (2.9,1.5) node[right,font=\\small] {$\\ell$};\n\\draw (-2.9,0) -- (2.9,0) node[right,font=\\small] {$m$};\n\\draw (-2.0,-0.71) -- (2.0,2.14) node[above,font=\\small] {$t$};\n\\node[font=\\small] at (-0.35,1.06) {$(7x-20)^{\\circ}$};\n\\node[font=\\small] at (-1.80,0.30) {$(3x)^{\\circ}$};\n\\end{tikzpicture}\n\\par\n\\satnote{Figure not drawn to scale.}\n\\end{center}",
+      "choices": [
+        "$20$",
+        "$40$",
+        "$60$",
+        "$120$"
+      ],
+      "answer": "D",
+      "solution": "The two angles lie between the parallel lines on one side of the transversal, so they add to $180^{\\circ}$; solving for $x$ is only the first half of the work, since the question asks for an angle. Choice A stops at $x$, and choice C is the smaller angle -- the supplement of the one requested.",
+      "steps": [
+        "Same-side interior angles are supplementary: $(7x-20)+3x=180$.",
+        "$10x=200$, so $x=20$.",
+        "The angles measure $7(20)-20=120$ and $3(20)=60$; the larger is $120$."
+      ],
+      "verify": "x = symbols('x')\nxv = solve(Eq(7*x - 20 + 3*x, 180), x)[0]\nresult = max([7*xv - 20, 3*xv])"
+    },
+    {
+      "id": "T18-M2-09",
+      "module": 2,
+      "n": 31,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Triangle angle and side rules",
+      "stem": "The measures of the three interior angles of a triangle are $(x+10)^{\\circ}$, $(2x-20)^{\\circ}$, and $(3x+10)^{\\circ}$. What is the measure, in degrees, of the largest angle?",
+      "answer": "100",
+      "solution": "Collect the three expressions, set the sum to $180^{\\circ}$, and only then substitute back -- the question asks for an angle, not for $x$. The triangle turns out to be isosceles, and $40+40+100=180$ confirms the arithmetic.",
+      "steps": [
+        "$(x+10)+(2x-20)+(3x+10)=180$.",
+        "$6x=180$, so $x=30$.",
+        "The angles are $40^{\\circ}$, $40^{\\circ}$, and $100^{\\circ}$; the largest is $100$."
+      ],
+      "verify": "x = symbols('x')\nxv = solve(Eq(x + 10 + 2*x - 20 + 3*x + 10, 180), x)[0]\nresult = max([xv + 10, 2*xv - 20, 3*xv + 10])"
+    },
+    {
+      "id": "T18-M2-10",
+      "module": 2,
+      "n": 32,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Triangle angle and side rules",
+      "stem": "Two sides of a triangle have lengths $8$ and $15$. If the length of the third side is an integer, how many different values are possible for that length?",
+      "choices": [
+        "$13$",
+        "$14$",
+        "$15$",
+        "$16$"
+      ],
+      "answer": "C",
+      "solution": "Both bounds are strict, so $7$ and $23$ are excluded and the list runs from $8$ to $22$; counting a run of consecutive integers means subtracting and adding one. Choice A comes from forgetting to add that one, and choice D from including one of the forbidden endpoints.",
+      "steps": [
+        "The third side $c$ satisfies $15-8 < c < 15+8$, so $7 < c < 23$.",
+        "The integers strictly between are $8, 9, \\dots, 22$.",
+        "That is $22-8+1=15$ values."
+      ],
+      "verify": "result = len([c for c in range(1, 40) if 15 - 8 < c < 15 + 8])"
+    },
+    {
+      "id": "T18-M2-11",
+      "module": 2,
+      "n": 33,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Similarity and congruence",
+      "stem": "In the figure, $D$ lies on $\\overline{AB}$, $E$ lies on $\\overline{AC}$, and $\\overline{DE}\\parallel\\overline{BC}$. If $AD=9$, $AB=15$, and $BC=20$, what is the length of $\\overline{DE}$?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[line width=0.7pt,scale=0.95]\n\\coordinate (A) at (0,2.4);\n\\coordinate (B) at (-2.1,0);\n\\coordinate (C) at (2.1,0);\n\\coordinate (D) at (-1.26,0.96);\n\\coordinate (E) at (1.26,0.96);\n\\draw (A) -- (B) -- (C) -- cycle;\n\\draw (D) -- (E);\n\\node[above,font=\\small] at (A) {$A$};\n\\node[below left,font=\\small] at (B) {$B$};\n\\node[below right,font=\\small] at (C) {$C$};\n\\node[left,font=\\small] at (D) {$D$};\n\\node[right,font=\\small] at (E) {$E$};\n\\node[font=\\small] at (-0.95,1.85) {$9$};\n\\node[font=\\small] at (0,-0.30) {$20$};\n\\end{tikzpicture}\n\\par\n\\satnote{Figure not drawn to scale.}\n\\end{center}",
+      "choices": [
+        "$12$",
+        "$14$",
+        "$20$",
+        "$30$"
+      ],
+      "answer": "A",
+      "solution": "Because $\\overline{DE}$ and $\\overline{BC}$ are corresponding sides of the two similar triangles, they must be compared using two corresponding full sides, $\\overline{AD}$ and $\\overline{AB}$. Choice D uses $AD:DB=9:6$ by mistake, a ratio that belongs only to the pieces of the sides, and choice B subtracts the difference $15-9=6$ from $20$.",
+      "steps": [
+        "$\\overline{DE}\\parallel\\overline{BC}$ gives $\\triangle ADE \\sim \\triangle ABC$, with $D$ matching $B$ and $E$ matching $C$.",
+        "$\\dfrac{AD}{AB}=\\dfrac{DE}{BC}$, so $\\dfrac{9}{15}=\\dfrac{DE}{20}$.",
+        "$DE=20\\cdot\\dfrac{9}{15}=12$."
+      ],
+      "verify": "result = 20 * Rational(9, 15)"
+    },
+    {
+      "id": "T18-M2-12",
+      "module": 2,
+      "n": 34,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Triangle angle and side rules",
+      "stem": "In triangle $ABC$, $AB=AC$. Side $\\overline{BC}$ is extended through $C$ to point $D$, and $\\angle ACD$ measures $118^{\\circ}$. What is the measure, in degrees, of $\\angle A$?",
+      "choices": [
+        "$56$",
+        "$62$",
+        "$118$",
+        "$124$"
+      ],
+      "answer": "A",
+      "solution": "The exterior angle gives the base angle by a supplement, and the isosceles condition duplicates it, leaving only $\\angle A$ unknown. Faster: the exterior angle equals $\\angle A+\\angle B=\\angle A+62$, so $\\angle A=118-62=56$. Choice B is the base angle rather than the vertex angle.",
+      "steps": [
+        "$\\angle ACB=180-118=62$, so the base angles are $\\angle B=\\angle C=62^{\\circ}$.",
+        "$\\angle A=180-62-62$.",
+        "$\\angle A=56$."
+      ],
+      "verify": "result = 118 - (180 - 118)"
+    },
+    {
+      "id": "T18-M2-13",
+      "module": 2,
+      "n": 35,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Angle relationships and parallel lines",
+      "stem": "In the figure, $\\ell \\parallel m$, vertex $A$ of triangle $ABC$ lies on $\\ell$, and $B$ and $C$ lie on $m$. Side $\\overline{AB}$ makes a $42^{\\circ}$ angle with line $\\ell$ as shown, and $\\angle ACB$ measures $63^{\\circ}$. What is the measure, in degrees, of $\\angle BAC$?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[line width=0.7pt,scale=0.95]\n\\draw (-2.8,1.75) -- (2.8,1.75) node[right,font=\\small] {$\\ell$};\n\\draw (-2.8,0) -- (2.8,0) node[right,font=\\small] {$m$};\n\\coordinate (A) at (-0.5,1.75);\n\\coordinate (B) at (-1.9,0);\n\\coordinate (C) at (1.5,0);\n\\draw (A) -- (B) -- (C) -- cycle;\n\\node[above,font=\\small] at (A) {$A$};\n\\node[below,font=\\small] at (B) {$B$};\n\\node[below,font=\\small] at (C) {$C$};\n\\node[font=\\small] at (-1.12,1.52) {$42^{\\circ}$};\n\\node[font=\\small] at (1.05,0.24) {$63^{\\circ}$};\n\\end{tikzpicture}\n\\par\n\\satnote{Figure not drawn to scale.}\n\\end{center}",
+      "choices": [
+        "$75$",
+        "$105$",
+        "$117$",
+        "$138$"
+      ],
+      "answer": "A",
+      "solution": "The parallel lines are the only bridge between the angle given at $\\ell$ and the triangle sitting on $m$; once $42^{\\circ}$ has been carried down to $B$, the angle sum finishes it. Choice B is the supplement of the answer and choices C and D are supplements of the two given angles.",
+      "steps": [
+        "The $42^{\\circ}$ angle at $A$ and $\\angle ABC$ are alternate interior angles for $\\ell \\parallel m$ cut by $\\overline{AB}$, so $\\angle ABC=42^{\\circ}$.",
+        "$\\angle BAC=180-42-63$.",
+        "$\\angle BAC=75$."
+      ],
+      "verify": "result = 180 - 42 - 63"
+    },
+    {
+      "id": "T18-M2-14",
+      "module": 2,
+      "n": 36,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Similarity and congruence",
+      "stem": "Triangle $ABC$ is similar to triangle $PQR$, where $A$ corresponds to $P$ and $B$ corresponds to $Q$. The area of triangle $ABC$ is $27$ and the area of triangle $PQR$ is $48$. If $AB=9$, what is the length of $\\overline{PQ}$?",
+      "choices": [
+        "$6.75$",
+        "$9$",
+        "$12$",
+        "$16$"
+      ],
+      "answer": "C",
+      "solution": "Areas scale by the square of the length ratio, so going from areas back to lengths means taking a square root. Choice D applies the area ratio $48/27$ directly to the side, and choice A uses the length ratio upside down.",
+      "steps": [
+        "The ratio of areas is $\\dfrac{48}{27}=\\dfrac{16}{9}$.",
+        "The ratio of lengths is the square root of that: $\\sqrt{\\dfrac{16}{9}}=\\dfrac{4}{3}$.",
+        "$PQ=9\\cdot\\dfrac{4}{3}=12$."
+      ],
+      "verify": "result = 9 * sqrt(Rational(48, 27))"
+    },
+    {
+      "id": "T18-M2-15",
+      "module": 2,
+      "n": 37,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Similarity and congruence",
+      "stem": "Triangle $ABC$ is congruent to triangle $XYZ$, where $A$ corresponds to $X$, $B$ corresponds to $Y$, and $C$ corresponds to $Z$. If $AB=3x-4$, $XY=20$, $BC=2y+1$, and $YZ=15$, what is the value of $x+y$?",
+      "choices": [
+        "$7$",
+        "$8$",
+        "$15$",
+        "$16$"
+      ],
+      "answer": "C",
+      "solution": "Congruence is similarity with a scale factor of $1$, so corresponding sides are simply equal and each equation can be solved on its own. The correspondence matters: $\\overline{AB}$ must be matched with $\\overline{XY}$, not with $\\overline{YZ}$. Choices A and B are the individual values of $y$ and $x$.",
+      "steps": [
+        "Congruent triangles have equal corresponding sides, so $AB=XY$ and $BC=YZ$.",
+        "$3x-4=20$ gives $x=8$; $2y+1=15$ gives $y=7$.",
+        "$x+y=8+7=15$."
+      ],
+      "verify": "x, y = symbols('x y')\nresult = solve(Eq(3*x - 4, 20), x)[0] + solve(Eq(2*y + 1, 15), y)[0]"
+    },
+    {
+      "id": "T18-M2-16",
+      "module": 2,
+      "n": 38,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Similarity and congruence",
+      "stem": "In the figure, $D$ lies on $\\overline{AB}$, $E$ lies on $\\overline{AC}$, and $\\overline{DE}\\parallel\\overline{BC}$. If $DB=6$, $AE=8$, and $EC=12$, what is the length of $\\overline{AD}$?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[line width=0.7pt,scale=0.95]\n\\coordinate (A) at (0,2.4);\n\\coordinate (B) at (-2.1,0);\n\\coordinate (C) at (2.1,0);\n\\coordinate (D) at (-1.26,0.96);\n\\coordinate (E) at (1.26,0.96);\n\\draw (A) -- (B) -- (C) -- cycle;\n\\draw (D) -- (E);\n\\node[above,font=\\small] at (A) {$A$};\n\\node[below left,font=\\small] at (B) {$B$};\n\\node[below right,font=\\small] at (C) {$C$};\n\\node[left,font=\\small] at (D) {$D$};\n\\node[right,font=\\small] at (E) {$E$};\n\\node[font=\\small] at (-0.95,1.85) {$?$};\n\\node[font=\\small] at (-1.98,0.50) {$6$};\n\\node[font=\\small] at (0.95,1.85) {$8$};\n\\node[font=\\small] at (1.98,0.50) {$12$};\n\\end{tikzpicture}\n\\par\n\\satnote{Figure not drawn to scale.}\n\\end{center}",
+      "answer": "4",
+      "solution": "Here every given length is a \\emph{piece} of a side, so the piece-to-piece proportion is the right one; matching $AD$ with $AE$ and $DB$ with $EC$ keeps the two sides of the triangle in step. As a check, $AB=10$ and $AC=20$, and $AD:AB=4:10=8:20=AE:AC$.",
+      "steps": [
+        "A line parallel to one side cuts the other two sides proportionally: $\\dfrac{AD}{DB}=\\dfrac{AE}{EC}$.",
+        "$\\dfrac{AD}{6}=\\dfrac{8}{12}=\\dfrac{2}{3}$.",
+        "$AD=6\\cdot\\dfrac{2}{3}=4$."
+      ],
+      "verify": "result = 6 * Rational(8, 12)"
+    },
+    {
+      "id": "T18-M2-17",
+      "module": 2,
+      "n": 39,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Similarity and congruence",
+      "stem": "In the figure, $\\overline{AC}$ and $\\overline{BD}$ intersect at point $E$, and $\\overline{AB}\\parallel\\overline{CD}$. If $AE=4$, $EC=10$, and $BE=6$, what is the length of $\\overline{ED}$?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[line width=0.7pt,scale=0.95]\n\\coordinate (A) at (-1.4,1.3);\n\\coordinate (B) at (1.4,1.3);\n\\coordinate (C) at (2.0,-1.3);\n\\coordinate (D) at (-2.0,-1.3);\n\\coordinate (E) at (0,0);\n\\draw (A) -- (B);\n\\draw (D) -- (C);\n\\draw (A) -- (C);\n\\draw (B) -- (D);\n\\node[above left,font=\\small] at (A) {$A$};\n\\node[above right,font=\\small] at (B) {$B$};\n\\node[below right,font=\\small] at (C) {$C$};\n\\node[below left,font=\\small] at (D) {$D$};\n\\node[above,font=\\small] at (E) {$E$};\n\\end{tikzpicture}\n\\par\n\\satnote{Figure not drawn to scale.}\n\\end{center}",
+      "choices": [
+        "$2.4$",
+        "$6$",
+        "$10$",
+        "$15$"
+      ],
+      "answer": "D",
+      "solution": "The two triangles point away from each other at $E$, so the correspondence runs $A\\leftrightarrow C$ and $B\\leftrightarrow D$ -- across the intersection, never within the same triangle. The scale factor from $\\triangle AEB$ to $\\triangle CED$ is $10/4$, so $ED=6\\cdot\\frac{10}{4}=15$. Choice A inverts that ratio; choices B and C assume the triangles are congruent and copy $BE$ or $EC$.",
+      "steps": [
+        "$\\angle AEB$ and $\\angle CED$ are vertical angles, and $\\angle BAE=\\angle DCE$ are alternate interior angles because $\\overline{AB}\\parallel\\overline{CD}$.",
+        "So $\\triangle AEB \\sim \\triangle CED$, with $A$ matching $C$, $E$ matching $E$, and $B$ matching $D$.",
+        "$\\dfrac{AE}{CE}=\\dfrac{BE}{DE}$, so $\\dfrac{4}{10}=\\dfrac{6}{DE}$ and $DE=15$."
+      ],
+      "verify": "result = 6 * Rational(10, 4)"
+    },
+    {
+      "id": "T18-M2-18",
+      "module": 2,
+      "n": 40,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Angle relationships and parallel lines",
+      "stem": "In the figure, $\\ell \\parallel m$, point $A$ is on $\\ell$, and points $B$ and $C$ are on $m$, where $AB=AC$. Side $\\overline{AB}$ makes a $34^{\\circ}$ angle with line $\\ell$ as shown. What is the measure, in degrees, of $\\angle BAC$?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[line width=0.7pt,scale=0.95]\n\\draw (-2.8,1.75) -- (2.8,1.75) node[right,font=\\small] {$\\ell$};\n\\draw (-2.8,0) -- (2.8,0) node[right,font=\\small] {$m$};\n\\coordinate (A) at (-0.5,1.75);\n\\coordinate (B) at (-1.9,0);\n\\coordinate (C) at (1.5,0);\n\\draw (A) -- (B) -- (C) -- cycle;\n\\node[above,font=\\small] at (A) {$A$};\n\\node[below,font=\\small] at (B) {$B$};\n\\node[below,font=\\small] at (C) {$C$};\n\\node[font=\\small] at (-1.12,1.52) {$34^{\\circ}$};\n\\end{tikzpicture}\n\\par\n\\satnote{Figure not drawn to scale.}\n\\end{center}",
+      "choices": [
+        "$56$",
+        "$68$",
+        "$112$",
+        "$146$"
+      ],
+      "answer": "C",
+      "solution": "Two separate facts are needed: the parallel lines transfer the $34^{\\circ}$ down to $B$, and the isosceles condition copies it across to $C$. Choice B is the two base angles combined rather than the vertex angle, choice D is the supplement of $34^{\\circ}$, and choice A is its complement.",
+      "steps": [
+        "The $34^{\\circ}$ angle and $\\angle ABC$ are alternate interior angles, so $\\angle ABC=34^{\\circ}$.",
+        "$AB=AC$ makes $\\angle ACB=\\angle ABC=34^{\\circ}$.",
+        "$\\angle BAC=180-34-34=112$."
+      ],
+      "verify": "result = 180 - 2*34"
+    },
+    {
+      "id": "T18-M2-19",
+      "module": 2,
+      "n": 41,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Similarity and congruence",
+      "stem": "Two similar triangular plots of land have corresponding side lengths in the ratio $1$ to $1.5$. The area of the smaller plot is $40$ square meters. What is the area, in square meters, of the larger plot?",
+      "choices": [
+        "$60$",
+        "$90$",
+        "$120$",
+        "$160$"
+      ],
+      "answer": "B",
+      "solution": "Sides that are $50\\%$ longer do not give an area that is $50\\%$ larger: the area is multiplied by $1.5^{2}=2.25$. Choice A multiplies the area by $1.5$, and choice D uses a scale factor of $2$ by mistake.",
+      "steps": [
+        "The scale factor is $k=1.5=\\dfrac{3}{2}$.",
+        "Areas scale by $k^{2}=\\dfrac{9}{4}$.",
+        "Area $=40\\cdot\\dfrac{9}{4}=90$."
+      ],
+      "verify": "result = 40 * Rational(3, 2)**2"
+    },
+    {
+      "id": "T18-M2-20",
+      "module": 2,
+      "n": 42,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Similarity and congruence",
+      "stem": "In triangle $ABC$, point $D$ lies on $\\overline{AB}$ and point $E$ lies on $\\overline{AC}$ so that $\\overline{DE}\\parallel\\overline{BC}$. The area of triangle $ADE$ is $16$ and the area of quadrilateral $DBCE$ is $48$. If $AD=6$, what is the length of $\\overline{AB}$?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[line width=0.7pt,scale=0.95]\n\\coordinate (A) at (0,2.4);\n\\coordinate (B) at (-2.1,0);\n\\coordinate (C) at (2.1,0);\n\\coordinate (D) at (-1.26,0.96);\n\\coordinate (E) at (1.26,0.96);\n\\draw (A) -- (B) -- (C) -- cycle;\n\\draw (D) -- (E);\n\\node[above,font=\\small] at (A) {$A$};\n\\node[below left,font=\\small] at (B) {$B$};\n\\node[below right,font=\\small] at (C) {$C$};\n\\node[left,font=\\small] at (D) {$D$};\n\\node[right,font=\\small] at (E) {$E$};\n\\node[font=\\small] at (-0.95,1.85) {$6$};\n\\end{tikzpicture}\n\\par\n\\satnote{Figure not drawn to scale.}\n\\end{center}",
+      "answer": "12",
+      "solution": "The quadrilateral is not a similar figure, so the first move is to rebuild the whole triangle: $\\triangle ABC$ has area $64$. From there the area ratio $1:4$ gives a length ratio $1:2$ by taking a square root, and $\\overline{AD}$ and $\\overline{AB}$ are corresponding sides. Using the area ratio $4$ as a length ratio would give $24$.",
+      "steps": [
+        "The area of $\\triangle ABC$ is $16+48=64$.",
+        "$\\triangle ADE \\sim \\triangle ABC$, and the ratio of their areas is $\\dfrac{16}{64}=\\dfrac{1}{4}$.",
+        "The ratio of corresponding lengths is $\\sqrt{\\dfrac{1}{4}}=\\dfrac{1}{2}$, so $AB=2\\cdot AD=12$."
+      ],
+      "verify": "result = 6 * sqrt(Rational(16 + 48, 16))"
+    },
+    {
+      "id": "T18-M2-21",
+      "module": 2,
+      "n": 43,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Triangle angle and side rules",
+      "stem": "An isosceles triangle has two sides of lengths $5$ and $12$. What is the perimeter of the triangle?",
+      "choices": [
+        "$17$",
+        "$22$",
+        "$24$",
+        "$29$"
+      ],
+      "answer": "D",
+      "solution": "There are only two candidate triangles, and the triangle inequality eliminates one of them: two sides of length $5$ cannot reach across a side of length $12$. Choice B is the perimeter of that impossible triangle, choice C forgets the third side entirely, and choice A adds only the two given lengths.",
+      "steps": [
+        "The third side must equal $5$ or $12$, since the triangle is isosceles.",
+        "Sides $5$, $5$, $12$ fail the triangle inequality, because $5+5=10<12$.",
+        "So the sides are $5$, $12$, $12$, and the perimeter is $29$."
+      ],
+      "verify": "result = 12 + 12 + 5"
+    },
+    {
+      "id": "T18-M2-22",
+      "module": 2,
+      "n": 44,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Similarity and congruence",
+      "stem": "In triangle $ABC$, point $D$ lies on $\\overline{BC}$ so that $\\angle BAD$ is congruent to $\\angle BCA$. If $AB=8$ and $BD=4$, what is the length of $\\overline{BC}$?",
+      "choices": [
+        "$4$",
+        "$8$",
+        "$12$",
+        "$16$"
+      ],
+      "answer": "D",
+      "solution": "The two triangles overlap, which is exactly why the correspondence has to be written down before any proportion: $\\overline{BA}$ in the small triangle matches $\\overline{BC}$ in the large one, while $\\overline{BD}$ in the small matches $\\overline{BA}$ in the large. That makes $\\overline{AB}$ the geometric mean of $\\overline{BD}$ and $\\overline{BC}$. Choice C is $DC=BC-BD=12$, the remaining piece rather than the whole side, and choice B assumes the two triangles are congruent.",
+      "steps": [
+        "Triangles $BAD$ and $BCA$ share $\\angle B$, and $\\angle BAD=\\angle BCA$ is given, so $\\triangle BAD \\sim \\triangle BCA$.",
+        "The correspondence is $B\\leftrightarrow B$, $A\\leftrightarrow C$, $D\\leftrightarrow A$, so $\\dfrac{BA}{BC}=\\dfrac{BD}{BA}$.",
+        "$BA^{2}=BC\\cdot BD$, so $64=4\\cdot BC$ and $BC=16$."
+      ],
+      "verify": "result = Rational(8**2, 4)"
+    }
+  ]
+}
