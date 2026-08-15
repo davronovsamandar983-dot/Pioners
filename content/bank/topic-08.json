@@ -1,0 +1,934 @@
+{
+  "number": 8,
+  "topic": "Quadratic and Polynomial Functions",
+  "domain": "Advanced Math",
+  "skills": [
+    "Vertex, axis of symmetry and intercepts",
+    "Forms of a parabola",
+    "Polynomial behaviour and the remainder theorem"
+  ],
+
+  "lesson": {
+    "intro": "Topic 7 asked you to \\emph{solve} a quadratic equation. This topic asks something different: given a quadratic or polynomial \\emph{function}, what does its graph look like, and which algebraic form of the rule shows you that? The Digital SAT tests this constantly, and almost always in the same three ways: read a feature (vertex, intercept, axis of symmetry) off a form that already displays it; rewrite the rule into the form that displays the feature you want; or reason about a higher-degree polynomial from its factors. A question such as ``which of the following equivalent forms displays the minimum value as a constant or coefficient?'' is not asking you to compute anything at all -- it is asking whether you know what each form shows.",
+    "blocks": [
+      {
+        "kind": "section",
+        "title": "The three forms of a parabola",
+        "body": "Every quadratic function can be written in three ways, and all three describe the same curve. What changes is which feature is visible without doing any work.\n\n\\textbf{Standard form} $f(x)=ax^2+bx+c$ shows the $y$-intercept: putting $x=0$ leaves $f(0)=c$, so the graph crosses the $y$-axis at $(0,c)$.\n\n\\textbf{Vertex form} $f(x)=a(x-h)^2+k$ shows the vertex $(h,k)$ and therefore the axis of symmetry $x=h$ and the maximum or minimum value $k$.\n\n\\textbf{Factored form} $f(x)=a(x-r)(x-s)$ shows the $x$-intercepts $(r,0)$ and $(s,0)$, the values of $x$ that make the output zero.\n\nIn all three, the sign of $a$ decides the direction: $a>0$ opens upward and the vertex is a minimum, $a<0$ opens downward and the vertex is a maximum."
+      },
+      {
+        "kind": "formula",
+        "title": "The facts to have automatic",
+        "body": "\\textbf{Axis of symmetry / vertex $x$-coordinate from standard form:}\n\\[ x=-\\frac{b}{2a} \\]\n\\textbf{Vertex $y$-coordinate:} substitute that $x$ back into the function -- $f\\!\\left(-\\frac{b}{2a}\\right)$ is the maximum or minimum value.\n\n\\textbf{Midpoint shortcut:} if the graph crosses the $x$-axis at $x=r$ and $x=s$, the axis of symmetry is exactly halfway between them, $x=\\dfrac{r+s}{2}$.\n\n\\textbf{Vertex form:} $f(x)=a(x-h)^2+k$ has vertex $(h,k)$.\n\n\\textbf{$y$-intercept, always:} evaluate $f(0)$, whatever the form."
+      },
+      {
+        "kind": "concept",
+        "title": "Match the question to the form",
+        "body": "When a question names a feature, it is telling you which form to move toward.\n\\begin{itemize}[leftmargin=14pt,itemsep=2pt,topsep=2pt]\n  \\item ``vertex'', ``maximum'', ``minimum'', ``axis of symmetry'' $\\Rightarrow$ vertex form, or $x=-\\frac{b}{2a}$.\n  \\item ``$x$-intercepts'', ``zeros'', ``solutions'', ``where the graph meets the $x$-axis'' $\\Rightarrow$ factored form.\n  \\item ``$y$-intercept'', ``initial value'', ``value when $x=0$'' $\\Rightarrow$ standard form, or just substitute $0$.\n\\end{itemize}\nNothing about the parabola changes when you rewrite it. Only your view of it does."
+      },
+      {
+        "kind": "section",
+        "title": "Completing the square: standard form to vertex form",
+        "body": "To rewrite $ax^2+bx+c$ in vertex form, factor $a$ out of the first two terms, add and subtract the square of half the resulting linear coefficient, and tidy up. On the SAT you can almost always skip the algebra: compute $h=-\\frac{b}{2a}$, compute $k=f(h)$, and write $a(x-h)^2+k$. That takes two substitutions and is far harder to botch than completing the square under time pressure."
+      },
+      {
+        "kind": "worked",
+        "title": "Worked example 1 -- rewriting to show the minimum",
+        "body": "\\textbf{Which of the following is equivalent to $f(x)=2x^2-12x+13$ and displays the minimum value of $f$ as a constant or coefficient?}\n\nThe phrase ``minimum value \\dots\\ as a constant'' means vertex form, so we need $2(x-h)^2+k$.\n\n\\emph{Step 1.} $h=-\\dfrac{b}{2a}=-\\dfrac{-12}{2(2)}=3$.\n\n\\emph{Step 2.} $k=f(3)=2(9)-12(3)+13=18-36+13=-5$.\n\n\\emph{Step 3.} So $f(x)=2(x-3)^2-5$, and a quick expansion confirms it: $2(x^2-6x+9)-5=2x^2-12x+18-5=2x^2-12x+13$. \\checkmark\n\nThe minimum value is $-5$, attained at $x=3$. Notice that $-5$ is now sitting in the expression as a constant, which is exactly what the question asked for; in the original form it was invisible."
+      },
+      {
+        "kind": "trap",
+        "title": "Three ways students lose this point",
+        "body": "\\textbf{1. The sign of $h$.} In $f(x)=(x+6)^2-11$ the vertex is $(-6,-11)$, not $(6,-11)$. Vertex form is $a(x-h)^2+k$, so $x+6$ means $h=-6$. Ask yourself: what value of $x$ makes the squared part zero?\n\n\\textbf{2. Answering the wrong coordinate.} ``What is the maximum height?'' wants the $y$-value; ``after how many seconds is the height greatest?'' wants the $x$-value. Both numbers appear in the choices, every time.\n\n\\textbf{3. Reading a zero as its negative.} From $g(x)=(x-2)(x+5)$ the $x$-intercepts are $x=2$ and $x=-5$ -- the values that make each factor zero, not the numbers you see written."
+      },
+      {
+        "kind": "section",
+        "title": "Polynomials: zeros, multiplicity and end behaviour",
+        "body": "For a polynomial in factored form, each factor $(x-r)$ contributes a zero at $x=r$. The exponent on that factor is its \\textbf{multiplicity}, and multiplicity controls what the graph does there: an odd multiplicity means the graph \\emph{crosses} the $x$-axis, an even multiplicity means it \\emph{touches} and turns back.\n\n\\textbf{End behaviour} depends on only two things, the degree and the sign of the leading coefficient. Odd degree sends the two ends in opposite directions; even degree sends them the same way. A positive leading coefficient sends the right-hand end up, a negative one sends it down. So $p(x)=-2x^3+5x-1$ (odd degree, negative lead) falls to $-\\infty$ on the right and rises to $+\\infty$ on the left."
+      },
+      {
+        "kind": "formula",
+        "title": "The remainder and factor theorems",
+        "body": "\\textbf{Remainder theorem.} When a polynomial $p(x)$ is divided by $x-a$, the remainder is $p(a)$. You never have to do long division on the SAT -- substitute.\n\n\\textbf{Factor theorem.} $x-a$ is a factor of $p(x)$ exactly when $p(a)=0$; equivalently, $a$ is a zero of $p$ and $(a,0)$ is an $x$-intercept of the graph.\n\nWatch the sign: dividing by $x+3$ means $a=-3$, so evaluate $p(-3)$."
+      },
+      {
+        "kind": "worked",
+        "title": "Worked example 2 -- the factor theorem with an unknown",
+        "body": "\\textbf{The polynomial $p$ is defined by $p(x)=3x^3-5x^2+kx+8$, where $k$ is a constant. If $x-2$ is a factor of $p(x)$, what is the value of $k$?}\n\n\\emph{Step 1.} ``$x-2$ is a factor'' translates, by the factor theorem, into $p(2)=0$. That single translation is the whole question.\n\n\\emph{Step 2.} $p(2)=3(8)-5(4)+2k+8=24-20+2k+8=2k+12$.\n\n\\emph{Step 3.} Set it equal to zero: $2k+12=0$, so $k=-6$.\n\nCheck: with $k=-6$, $p(2)=24-20-12+8=0$. \\checkmark\\ If the question had instead said ``the remainder is $4$ when $p(x)$ is divided by $x-2$'', the only change would be $2k+12=4$."
+      },
+      {
+        "kind": "strategy",
+        "title": "On test day",
+        "body": "\\textbf{Read the answer choices first} on ``which form displays\\dots'' questions. If every choice is factored, the question is about intercepts; if every choice is $a(x-h)^2+k$, it is about the vertex. You then only have to check which one is genuinely equivalent, and expanding a choice is faster than completing the square.\n\n\\textbf{Use the graphing calculator for confirmation, not for solving.} Typing the function in and reading the vertex takes about as long as $-\\frac{b}{2a}$, but it is an excellent check when a question is worth a full re-read.\n\n\\textbf{Underline what is asked} -- ``$x$-coordinate'', ``value of $f$'', ``how many seconds'', ``how high''. The distractors on this topic are built almost entirely from students answering the right question's neighbour."
+      }
+    ]
+  },
+
+  "problems": [
+    {
+      "id": "T08-M1-01",
+      "module": 1,
+      "n": 1,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Vertex form",
+      "stem": "The function $f$ is defined by $f(x)=(x-4)^2+7$. What is the vertex of the graph of $y=f(x)$ in the $xy$-plane?",
+      "choices": ["$(-4,7)$", "$(4,-7)$", "$(4,7)$", "$(7,4)$"],
+      "answer": "C",
+      "solution": "Vertex form is $f(x)=a(x-h)^2+k$ with vertex $(h,k)$. The squared part is zero when $x=4$, which is where the parabola turns, and the value there is $7$. The number inside the parentheses is subtracted, so $x-4$ gives $h=+4$, not $-4$.",
+      "steps": [
+        "Compare $f(x)=(x-4)^2+7$ with $f(x)=a(x-h)^2+k$.",
+        "$x-h=x-4$, so $h=4$; the constant added is $k=7$.",
+        "The vertex is $(h,k)=(4,7)$."
+      ],
+      "verify": "result = (4, 7)"
+    },
+    {
+      "id": "T08-M1-02",
+      "module": 1,
+      "n": 2,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Axis of symmetry",
+      "stem": "The function $f$ is defined by $f(x)=x^2-6x+11$. The axis of symmetry of the graph of $y=f(x)$ in the $xy$-plane is the line $x=c$. What is the value of $c$?",
+      "answer": "3",
+      "solution": "A parabola is symmetric about the vertical line through its vertex, and the vertex of $ax^2+bx+c$ sits at $x=-\\frac{b}{2a}$. With $a=1$ and $b=-6$ that line is $x=3$.",
+      "steps": [
+        "Identify $a=1$ and $b=-6$.",
+        "Compute $x=-\\frac{b}{2a}=-\\frac{-6}{2}=3$."
+      ],
+      "verify": "a, b = 1, -6\nresult = Rational(-b, 2*a)"
+    },
+    {
+      "id": "T08-M1-03",
+      "module": 1,
+      "n": 3,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Factored form",
+      "stem": "The function $g$ is defined by $g(x)=(x-2)(x+5)$. What are the $x$-intercepts of the graph of $y=g(x)$ in the $xy$-plane?",
+      "choices": [
+        "$x=-2$ and $x=5$",
+        "$x=2$ and $x=5$",
+        "$x=-2$ and $x=-5$",
+        "$x=2$ and $x=-5$"
+      ],
+      "answer": "D",
+      "solution": "A product is zero exactly when one of its factors is zero, so set each factor equal to $0$. The intercepts are the values that make the factors vanish, which are the opposites of the numbers you see written: $x-2=0$ gives $x=2$ and $x+5=0$ gives $x=-5$.",
+      "steps": [
+        "Set $g(x)=0$, so $(x-2)(x+5)=0$.",
+        "$x-2=0$ gives $x=2$; $x+5=0$ gives $x=-5$."
+      ],
+      "verify": "result = \"$x=2$ and $x=-5$\""
+    },
+    {
+      "id": "T08-M1-04",
+      "module": 1,
+      "n": 4,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Intercepts",
+      "stem": "What is the $y$-coordinate of the $y$-intercept of the graph of $y=(x-3)(x+8)$ in the $xy$-plane?",
+      "choices": ["$-24$", "$-11$", "$5$", "$24$"],
+      "answer": "A",
+      "solution": "Every $y$-intercept is found the same way, in any form: substitute $x=0$. Here $(0-3)(0+8)=-24$. The choice $24$ comes from multiplying $3$ and $8$ without tracking the signs.",
+      "steps": [
+        "The $y$-intercept occurs where $x=0$.",
+        "Substitute: $y=(0-3)(0+8)=(-3)(8)=-24$."
+      ],
+      "verify": "result = (0-3)*(0+8)"
+    },
+    {
+      "id": "T08-M1-05",
+      "module": 1,
+      "n": 5,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Vertex form",
+      "stem": "The function $f$ is defined by $f(x)=-(x-1)^2+6$. What is the maximum value of $f(x)$?",
+      "choices": ["$-6$", "$-1$", "$1$", "$6$"],
+      "answer": "D",
+      "solution": "Because $(x-1)^2$ is never negative, $-(x-1)^2$ is never positive, so the largest possible output happens when the squared term is $0$, at $x=1$. The value there is $6$. The number $1$ is where the maximum occurs, not the maximum itself.",
+      "steps": [
+        "$(x-1)^2\\ge 0$ for all $x$, so $-(x-1)^2\\le 0$.",
+        "The greatest value of $f$ occurs when $(x-1)^2=0$, that is at $x=1$.",
+        "$f(1)=-0+6=6$."
+      ],
+      "verify": "x = symbols('x')\nresult = (-(x-1)**2+6).subs(x, 1)"
+    },
+    {
+      "id": "T08-M1-06",
+      "module": 1,
+      "n": 6,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Remainder theorem",
+      "stem": "The remainder when the polynomial $p(x)=x^2+3x-5$ is divided by $x-2$ is $r$. What is the value of $r$?",
+      "answer": "5",
+      "solution": "The remainder theorem replaces division entirely: dividing by $x-a$ leaves the remainder $p(a)$. Here $a=2$, so evaluate $p(2)=4+6-5=5$.",
+      "steps": [
+        "Dividing by $x-2$ means $a=2$.",
+        "By the remainder theorem the remainder is $p(2)$.",
+        "$p(2)=2^2+3(2)-5=4+6-5=5$."
+      ],
+      "verify": "x = symbols('x')\np = x**2 + 3*x - 5\nresult = p.subs(x, 2)"
+    },
+    {
+      "id": "T08-M1-07",
+      "module": 1,
+      "n": 7,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Forms of a parabola",
+      "stem": "In the $xy$-plane, which of the following equations defines a parabola with vertex $(5,-2)$?",
+      "choices": [
+        "$y=(x+5)^2-2$",
+        "$y=(x-5)^2+2$",
+        "$y=(x-5)^2-2$",
+        "$y=(x-2)^2+5$"
+      ],
+      "answer": "C",
+      "solution": "Vertex form $y=(x-h)^2+k$ has vertex $(h,k)$, so a vertex of $(5,-2)$ requires $h=5$ and $k=-2$; that is, $x$ minus $5$, then minus $2$ at the end. Writing $x+5$ would place the vertex at $x=-5$, and swapping the two numbers gives the vertex $(2,5)$ instead.",
+      "steps": [
+        "Vertex $(h,k)=(5,-2)$ means $h=5$ and $k=-2$.",
+        "Substitute into $y=(x-h)^2+k$ to get $y=(x-5)^2-2$."
+      ],
+      "verify": "result = \"$y=(x-5)^2-2$\""
+    },
+    {
+      "id": "T08-M1-08",
+      "module": 1,
+      "n": 8,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Forms of a parabola",
+      "stem": "Which of the following expressions is equivalent to $x^2+8x+3$ and displays the minimum value of the function $f(x)=x^2+8x+3$ as a constant or coefficient?",
+      "choices": [
+        "$(x+4)^2+3$",
+        "$(x-4)^2-13$",
+        "$(x+8)^2-13$",
+        "$(x+4)^2-13$"
+      ],
+      "answer": "D",
+      "solution": "The minimum value is displayed by vertex form, so complete the square: half of $8$ is $4$, and $(x+4)^2=x^2+8x+16$, which overshoots the constant by $16$. Subtracting that gives $(x+4)^2-13$, whose expansion returns the original expression, so the minimum value is $-13$.",
+      "steps": [
+        "Vertex form displays the minimum as the constant $k$.",
+        "$x^2+8x=(x+4)^2-16$.",
+        "So $x^2+8x+3=(x+4)^2-16+3=(x+4)^2-13$."
+      ],
+      "verify": "x = symbols('x')\nresult = expand(x**2 + 8*x + 3)"
+    },
+    {
+      "id": "T08-M1-09",
+      "module": 1,
+      "n": 9,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Vertex from standard form",
+      "stem": "The function $f$ is defined by $f(x)=3x^2-12x+7$. What is the $x$-coordinate of the vertex of the graph of $y=f(x)$ in the $xy$-plane?",
+      "answer": "2",
+      "solution": "With a leading coefficient other than $1$ the formula $x=-\\frac{b}{2a}$ still applies, but the $2a$ in the denominator matters: $-\\frac{-12}{2(3)}=2$. Forgetting the $a$ would give $6$.",
+      "steps": [
+        "Identify $a=3$ and $b=-12$.",
+        "Compute $x=-\\frac{b}{2a}=\\frac{12}{6}=2$."
+      ],
+      "verify": "result = Rational(12, 2*3)"
+    },
+    {
+      "id": "T08-M1-10",
+      "module": 1,
+      "n": 10,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Maximum in context",
+      "stem": "A ball is thrown upward from a platform. Its height above the ground, in feet, $t$ seconds after it is thrown is given by $h(t)=-16t^2+64t+5$. What is the maximum height, in feet, reached by the ball?",
+      "choices": ["$2$", "$5$", "$64$", "$69$"],
+      "answer": "D",
+      "solution": "The greatest height is the $y$-value of the vertex, so first find when it occurs, $t=-\\frac{64}{2(-16)}=2$ seconds, then substitute back to get the height itself. The number $2$ is the time, and $5$ is the height at the moment of release, so neither answers the question asked.",
+      "steps": [
+        "The parabola opens downward, so the vertex is the maximum.",
+        "$t=-\\frac{b}{2a}=-\\frac{64}{-32}=2$ seconds.",
+        "$h(2)=-16(4)+64(2)+5=-64+128+5=69$ feet."
+      ],
+      "verify": "t = symbols('t')\nh = -16*t**2 + 64*t + 5\nresult = h.subs(t, 2)"
+    },
+    {
+      "id": "T08-M1-11",
+      "module": 1,
+      "n": 11,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Forms of a parabola",
+      "stem": "Which of the following expressions is equivalent to $x^2-2x-15$ and displays the $x$-intercepts of the graph of $y=x^2-2x-15$ as constants or coefficients?",
+      "choices": [
+        "$(x+5)(x-3)$",
+        "$(x-5)(x+3)$",
+        "$(x-5)(x-3)$",
+        "$(x-15)(x+1)$"
+      ],
+      "answer": "B",
+      "solution": "The $x$-intercepts are displayed by factored form, so look for two numbers multiplying to $-15$ and adding to $-2$: those are $-5$ and $+3$. Expanding $(x+5)(x-3)$ instead gives $x^2+2x-15$, the right constant but the wrong middle term, which is why checking the linear coefficient is the fast way to eliminate.",
+      "steps": [
+        "Look for two numbers with product $-15$ and sum $-2$.",
+        "They are $-5$ and $3$, so $x^2-2x-15=(x-5)(x+3)$.",
+        "The intercepts $x=5$ and $x=-3$ are now visible."
+      ],
+      "verify": "x = symbols('x')\nresult = expand(x**2 - 2*x - 15)"
+    },
+    {
+      "id": "T08-M1-12",
+      "module": 1,
+      "n": 12,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Zeros and multiplicity",
+      "stem": "The polynomial function $p$ is defined by $p(x)=x(x-3)^2(x+4)$. Which zero of $p$ has multiplicity $2$?",
+      "choices": ["$-4$", "$0$", "$2$", "$3$"],
+      "answer": "D",
+      "solution": "The multiplicity of a zero is the exponent on its factor. Only $(x-3)$ is squared, so the zero $x=3$ has multiplicity $2$; the exponent $2$ is not itself a zero, which is the trap in choice C.",
+      "steps": [
+        "The zeros come from $x=0$, $x-3=0$, and $x+4=0$.",
+        "The factor $(x-3)$ appears with exponent $2$.",
+        "So the zero $x=3$ has multiplicity $2$."
+      ],
+      "verify": "result = 3"
+    },
+    {
+      "id": "T08-M1-13",
+      "module": 1,
+      "n": 13,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "End behaviour",
+      "wide": true,
+      "stem": "The polynomial function $p$ is defined by $p(x)=-2x^3+5x-1$. Which of the following describes the end behaviour of the graph of $y=p(x)$ in the $xy$-plane?",
+      "choices": [
+        "As $x$ increases without bound, $p(x)$ increases without bound; as $x$ decreases without bound, $p(x)$ decreases without bound.",
+        "As $x$ increases without bound, $p(x)$ decreases without bound; as $x$ decreases without bound, $p(x)$ increases without bound.",
+        "As $x$ increases or decreases without bound, $p(x)$ increases without bound.",
+        "As $x$ increases or decreases without bound, $p(x)$ decreases without bound."
+      ],
+      "answer": "B",
+      "solution": "End behaviour is decided entirely by the leading term $-2x^3$. The degree $3$ is odd, so the two ends go opposite ways, and the leading coefficient $-2$ is negative, so the right-hand end goes down. The lower-degree terms $5x-1$ are irrelevant once $|x|$ is large.",
+      "steps": [
+        "The leading term is $-2x^3$.",
+        "Odd degree means the ends behave oppositely.",
+        "The negative coefficient sends the graph down on the right and up on the left."
+      ],
+      "verify": "result = \"As $x$ increases without bound, $p(x)$ decreases without bound; as $x$ decreases without bound, $p(x)$ increases without bound.\""
+    },
+    {
+      "id": "T08-M1-14",
+      "module": 1,
+      "n": 14,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Factor theorem",
+      "stem": "Which of the following is a factor of the polynomial $p(x)=x^3-7x+6$?",
+      "choices": ["$x+1$", "$x+2$", "$x-1$", "$x-3$"],
+      "answer": "C",
+      "solution": "By the factor theorem, $x-a$ is a factor exactly when $p(a)=0$, so test the candidates rather than dividing. $p(1)=1-7+6=0$, so $x-1$ is a factor; by contrast $p(-1)=-1+7+6=12$ and $p(3)=27-21+6=12$, so those are not.",
+      "steps": [
+        "For each choice $x-a$, evaluate $p(a)$.",
+        "$p(-1)=12$, $p(-2)=12$, $p(3)=12$: none is zero.",
+        "$p(1)=1-7+6=0$, so $x-1$ is a factor."
+      ],
+      "verify": "x = symbols('x')\nzeros = sorted(solve(x**3 - 7*x + 6, x))\nresult = x - zeros[1]"
+    },
+    {
+      "id": "T08-M1-15",
+      "module": 1,
+      "n": 15,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Axis of symmetry",
+      "stem": "In the $xy$-plane, the graph of the quadratic function $g$ crosses the $x$-axis at $(1,0)$ and at $(7,0)$. What is the $x$-coordinate of the vertex of the graph of $g$?",
+      "choices": ["$3$", "$4$", "$6$", "$8$"],
+      "answer": "B",
+      "solution": "A parabola is symmetric, so its two $x$-intercepts are the same distance from the axis of symmetry, and the vertex sits exactly halfway between them. The midpoint of $1$ and $7$ is $\\frac{1+7}{2}=4$. Choice C is their difference and choice D their sum, neither of which is a midpoint.",
+      "steps": [
+        "The vertex lies on the axis of symmetry, midway between the $x$-intercepts.",
+        "$x=\\frac{1+7}{2}=4$."
+      ],
+      "verify": "result = Rational(1 + 7, 2)"
+    },
+    {
+      "id": "T08-M1-16",
+      "module": 1,
+      "n": 16,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Vertex form",
+      "stem": "In the $xy$-plane, the graph of the quadratic function $f$ has vertex $(2,-3)$ and passes through the point $(4,5)$. The function can be written as $f(x)=a(x-2)^2-3$, where $a$ is a constant. What is the value of $a$?",
+      "choices": ["$\\frac{1}{2}$", "$2$", "$4$", "$8$"],
+      "answer": "B",
+      "solution": "The vertex fixes $h$ and $k$; one more point is exactly enough to pin down $a$. Substituting $(4,5)$ gives $a(2)^2-3=5$, so $4a=8$ and $a=2$. Choice D is the value of $4a$, the number you get if you forget to divide.",
+      "steps": [
+        "Substitute $x=4$, $f(x)=5$ into $f(x)=a(x-2)^2-3$.",
+        "$a(4-2)^2-3=5$, so $4a-3=5$.",
+        "$4a=8$, hence $a=2$."
+      ],
+      "verify": "a = symbols('a')\nresult = solve(Eq(a*(4-2)**2 - 3, 5), a)[0]"
+    },
+    {
+      "id": "T08-M1-17",
+      "module": 1,
+      "n": 17,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Remainder theorem",
+      "stem": "The polynomial $p$ is defined by $p(x)=2x^3+kx-6$, where $k$ is a constant. When $p(x)$ is divided by $x-2$, the remainder is $4$. What is the value of $k$?",
+      "answer": "-3",
+      "solution": "The remainder theorem turns a division statement into a single equation: dividing by $x-2$ leaves $p(2)$, so $p(2)=4$. Expanding gives $16+2k-6=4$, and solving yields $k=-3$.",
+      "steps": [
+        "By the remainder theorem, $p(2)=4$.",
+        "$2(2)^3+k(2)-6=16+2k-6=2k+10$.",
+        "Set $2k+10=4$, so $2k=-6$ and $k=-3$."
+      ],
+      "verify": "k = symbols('k')\nresult = solve(Eq(2*2**3 + k*2 - 6, 4), k)[0]"
+    },
+    {
+      "id": "T08-M1-18",
+      "module": 1,
+      "n": 18,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Matching a graph",
+      "figure": "\\begin{center}\\begin{tikzpicture}\\begin{axis}[width=6.4cm,height=5.2cm,axis lines=middle,xlabel={$x$},ylabel={$y$},xlabel style={below right},ylabel style={above left},xmin=-4.2,xmax=6.2,ymin=-6.2,ymax=6.2,xtick={-4,-2,2,4,6},ytick={-6,-4,-2,2,4,6},tick label style={font=\\tiny},grid=both,grid style={line width=0.1pt,draw=satline},samples=101]\\addplot[thick,satblue,domain=-2.05:4.05]{(x-1)^2-4};\\end{axis}\\end{tikzpicture}\\end{center}",
+      "stem": "The graph of the quadratic function $f$ is shown in the $xy$-plane above. Which equation could define $f$?",
+      "choices": [
+        "$f(x)=(x+1)^2-4$",
+        "$f(x)=(x-1)^2+4$",
+        "$f(x)=-(x-1)^2-4$",
+        "$f(x)=(x-1)^2-4$"
+      ],
+      "answer": "D",
+      "solution": "Read the vertex off the picture: it is at $(1,-4)$, so vertex form must be $(x-1)^2-4$. The graph opens upward, which rules out the negative leading coefficient, and the $x$-intercepts at $-1$ and $3$ confirm the choice, since $(x-1)^2-4=(x-3)(x+1)$.",
+      "steps": [
+        "The lowest point of the graph is $(1,-4)$, so $h=1$ and $k=-4$.",
+        "The parabola opens upward, so $a>0$.",
+        "Vertex form gives $f(x)=(x-1)^2-4$."
+      ],
+      "verify": "result = \"$f(x)=(x-1)^2-4$\""
+    },
+    {
+      "id": "T08-M1-19",
+      "module": 1,
+      "n": 19,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Forms of a parabola",
+      "stem": "Which of the following expressions is equivalent to $(x-3)^2-16$ and displays the $y$-coordinate of the $y$-intercept of the graph of $y=(x-3)^2-16$ as a constant or coefficient?",
+      "choices": [
+        "$x^2-6x+9$",
+        "$x^2+6x-7$",
+        "$x^2-6x-7$",
+        "$x^2-9x-7$"
+      ],
+      "answer": "C",
+      "solution": "The $y$-intercept is displayed by standard form, whose constant term is $f(0)$. Expanding, $(x-3)^2-16=x^2-6x+9-16=x^2-6x-7$, so the graph crosses the $y$-axis at $(0,-7)$. Choice A is what you get by expanding the square but forgetting the $-16$.",
+      "steps": [
+        "Expand the square: $(x-3)^2=x^2-6x+9$.",
+        "Subtract $16$: $x^2-6x+9-16=x^2-6x-7$.",
+        "The constant $-7$ is the $y$-coordinate of the $y$-intercept."
+      ],
+      "verify": "x = symbols('x')\nresult = expand((x-3)**2 - 16)"
+    },
+    {
+      "id": "T08-M1-20",
+      "module": 1,
+      "n": 20,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Factor theorem",
+      "stem": "The polynomial $p$ is defined by $p(x)=x^3+ax^2-9x-18$, where $a$ is a constant. If $x+2$ is a factor of $p(x)$, what is the value of $a$?",
+      "answer": "2",
+      "solution": "``$x+2$ is a factor'' means $p(-2)=0$ -- note the sign, since $x+2=x-(-2)$. Substituting gives $-8+4a+18-18=0$, so $4a=8$ and $a=2$.",
+      "steps": [
+        "Write $x+2$ as $x-(-2)$, so the factor theorem gives $p(-2)=0$.",
+        "$(-2)^3+a(-2)^2-9(-2)-18=-8+4a+18-18=4a-8$.",
+        "Set $4a-8=0$, so $a=2$."
+      ],
+      "verify": "a = symbols('a')\nresult = solve(Eq((-2)**3 + a*(-2)**2 - 9*(-2) - 18, 0), a)[0]"
+    },
+    {
+      "id": "T08-M1-21",
+      "module": 1,
+      "n": 21,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Maximum in context",
+      "stem": "A store's daily revenue, in dollars, from selling an item at a price of $p$ dollars is modelled by $R(p)=p(120-4p)$. What is the maximum daily revenue, in dollars?",
+      "choices": ["$15$", "$60$", "$900$", "$1800$"],
+      "answer": "C",
+      "solution": "In factored form the zeros of $R$ are $p=0$ and $p=30$, so by symmetry the maximum occurs halfway between, at $p=15$; the revenue there is $15(120-60)=900$. Choice A is the price that produces the maximum, not the revenue, and choice B is the second factor's value.",
+      "steps": [
+        "$R(p)=p(120-4p)$ is zero at $p=0$ and $p=30$.",
+        "The vertex lies midway: $p=\\frac{0+30}{2}=15$.",
+        "$R(15)=15(120-60)=15(60)=900$ dollars."
+      ],
+      "verify": "p = symbols('p')\nR = p*(120 - 4*p)\nresult = R.subs(p, 15)"
+    },
+    {
+      "id": "T08-M1-22",
+      "module": 1,
+      "n": 22,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Vertex form",
+      "wide": true,
+      "stem": "The function $f$ is defined by $f(x)=a(x-3)^2+5$, where $a$ is a negative constant. Which of the following must be true?",
+      "choices": [
+        "The graph of $y=f(x)$ has a minimum at the point $(3,5)$.",
+        "The maximum value of $f$ is $5$.",
+        "The graph of $y=f(x)$ has no $x$-intercepts.",
+        "The graph of $y=f(x)$ is symmetric about the line $x=5$."
+      ],
+      "answer": "B",
+      "solution": "Since $a<0$ the parabola opens downward, so the vertex $(3,5)$ is a maximum and the greatest output is $5$. The axis of symmetry is $x=3$, not $x=5$, and because the vertex lies above the $x$-axis on a downward parabola the graph must in fact cross the $x$-axis twice.",
+      "steps": [
+        "Vertex form gives vertex $(3,5)$ and axis of symmetry $x=3$.",
+        "$a<0$ means the parabola opens downward, so the vertex is the highest point.",
+        "Therefore the maximum value of $f$ is $5$."
+      ],
+      "verify": "result = \"The maximum value of $f$ is $5$.\""
+    },
+
+    {
+      "id": "T08-M2-01",
+      "module": 2,
+      "n": 23,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Vertex form",
+      "stem": "The function $f$ is defined by $f(x)=-(x+6)^2+11$. For what value of $x$ does $f$ attain its maximum value?",
+      "choices": ["$-11$", "$-6$", "$6$", "$11$"],
+      "answer": "B",
+      "solution": "The squared term is subtracted, so $f$ is largest when $(x+6)^2=0$, which happens at $x=-6$. Writing vertex form as $a(x-h)^2+k$ shows $x+6=x-(-6)$, so $h=-6$; the value $11$ is the maximum itself, not where it occurs.",
+      "steps": [
+        "$f(x)=-(x+6)^2+11$ is greatest when $(x+6)^2$ is smallest.",
+        "$(x+6)^2=0$ when $x=-6$."
+      ],
+      "verify": "result = -6"
+    },
+    {
+      "id": "T08-M2-02",
+      "module": 2,
+      "n": 24,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Axis of symmetry",
+      "stem": "The function $g$ is defined by $g(x)=2x^2-16x+5$. The graph of $y=g(x)$ in the $xy$-plane is symmetric about the line $x=c$. What is the value of $c$?",
+      "answer": "4",
+      "solution": "The line of symmetry passes through the vertex, at $x=-\\frac{b}{2a}$. With $a=2$ and $b=-16$ this is $\\frac{16}{4}=4$; dividing by $a$ alone rather than $2a$ would wrongly give $8$.",
+      "steps": [
+        "Identify $a=2$ and $b=-16$.",
+        "$x=-\\frac{b}{2a}=\\frac{16}{2(2)}=4$."
+      ],
+      "verify": "result = Rational(16, 2*2)"
+    },
+    {
+      "id": "T08-M2-03",
+      "module": 2,
+      "n": 25,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Zeros of a polynomial",
+      "stem": "The polynomial function $p$ is defined by $p(x)=x(x-7)(x+2)$. What are the $x$-intercepts of the graph of $y=p(x)$ in the $xy$-plane?",
+      "choices": [
+        "$x=0$, $x=7$, and $x=-2$",
+        "$x=0$, $x=-7$, and $x=2$",
+        "$x=7$ and $x=-2$",
+        "$x=0$, $x=-7$, and $x=-2$"
+      ],
+      "answer": "A",
+      "solution": "Each factor contributes one zero: $x=0$ from the bare $x$, $x=7$ from $x-7$, and $x=-2$ from $x+2$. Dropping the factor $x$ itself, as in choice C, is the most common slip, since it looks like a coefficient rather than a factor.",
+      "steps": [
+        "Set each factor equal to zero.",
+        "$x=0$; $x-7=0$ gives $x=7$; $x+2=0$ gives $x=-2$."
+      ],
+      "verify": "result = \"$x=0$, $x=7$, and $x=-2$\""
+    },
+    {
+      "id": "T08-M2-04",
+      "module": 2,
+      "n": 26,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Remainder theorem",
+      "stem": "What is the remainder when the polynomial $p(x)=x^3-2x^2+5$ is divided by $x+1$?",
+      "choices": ["$-2$", "$2$", "$4$", "$8$"],
+      "answer": "B",
+      "solution": "Dividing by $x+1$ means dividing by $x-(-1)$, so the remainder is $p(-1)=-1-2+5=2$. Evaluating $p(1)=4$ instead -- the sign slip -- is choice C.",
+      "steps": [
+        "Write $x+1=x-(-1)$, so $a=-1$.",
+        "$p(-1)=(-1)^3-2(-1)^2+5=-1-2+5=2$."
+      ],
+      "verify": "x = symbols('x')\np = x**3 - 2*x**2 + 5\nresult = p.subs(x, -1)"
+    },
+    {
+      "id": "T08-M2-05",
+      "module": 2,
+      "n": 27,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Intercepts",
+      "stem": "The function $h$ is defined by $h(x)=3(x-2)^2-5$. What is the $y$-coordinate of the $y$-intercept of the graph of $y=h(x)$ in the $xy$-plane?",
+      "answer": "7",
+      "solution": "The $y$-intercept is always $h(0)$, whatever form the rule is in: $3(0-2)^2-5=3(4)-5=7$. Vertex form does not display the $y$-intercept, so the constant $-5$ is the minimum value, not the intercept.",
+      "steps": [
+        "Substitute $x=0$: $h(0)=3(0-2)^2-5$.",
+        "$(0-2)^2=4$, so $h(0)=12-5=7$."
+      ],
+      "verify": "x = symbols('x')\nresult = (3*(x-2)**2 - 5).subs(x, 0)"
+    },
+    {
+      "id": "T08-M2-06",
+      "module": 2,
+      "n": 28,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "End behaviour",
+      "wide": true,
+      "stem": "The polynomial function $q$ is defined by $q(x)=4x^4-x^3+2$. Which of the following describes the end behaviour of the graph of $y=q(x)$ in the $xy$-plane?",
+      "choices": [
+        "As $x$ increases or decreases without bound, $q(x)$ increases without bound.",
+        "As $x$ increases or decreases without bound, $q(x)$ decreases without bound.",
+        "As $x$ increases without bound, $q(x)$ increases without bound; as $x$ decreases without bound, $q(x)$ decreases without bound.",
+        "As $x$ increases without bound, $q(x)$ decreases without bound; as $x$ decreases without bound, $q(x)$ increases without bound."
+      ],
+      "answer": "A",
+      "solution": "Only the leading term $4x^4$ matters far from the origin. The degree $4$ is even, so both ends behave the same way, and the coefficient $4$ is positive, so both ends rise. The $-x^3$ term changes the middle of the graph but not its ends.",
+      "steps": [
+        "The leading term is $4x^4$.",
+        "Even degree means both ends go the same direction.",
+        "The positive leading coefficient sends both ends upward."
+      ],
+      "verify": "result = \"As $x$ increases or decreases without bound, $q(x)$ increases without bound.\""
+    },
+    {
+      "id": "T08-M2-07",
+      "module": 2,
+      "n": 29,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Factored form",
+      "stem": "In the $xy$-plane, which of the following equations defines a parabola with $x$-intercepts at $(6,0)$ and $(-1,0)$?",
+      "choices": [
+        "$y=(x+6)(x-1)$",
+        "$y=(x-6)(x-1)$",
+        "$y=(x-6)(x+1)$",
+        "$y=(x+6)(x+1)$"
+      ],
+      "answer": "C",
+      "solution": "A zero at $x=r$ comes from the factor $x-r$, so intercepts at $6$ and $-1$ require the factors $x-6$ and $x-(-1)=x+1$. Choice A reverses both signs and would give intercepts at $-6$ and $1$.",
+      "steps": [
+        "An $x$-intercept at $(6,0)$ needs the factor $x-6$.",
+        "An $x$-intercept at $(-1,0)$ needs the factor $x+1$.",
+        "So $y=(x-6)(x+1)$."
+      ],
+      "verify": "result = \"$y=(x-6)(x+1)$\""
+    },
+    {
+      "id": "T08-M2-08",
+      "module": 2,
+      "n": 30,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Completing the square",
+      "stem": "The function $f$ is defined by $f(x)=x^2-10x+21$. When $f(x)$ is written in the form $(x-h)^2+k$, where $h$ and $k$ are constants, what is the value of $h+k$?",
+      "answer": "1",
+      "solution": "Half of $-10$ is $-5$, and $(x-5)^2=x^2-10x+25$, which is $4$ too large, so $f(x)=(x-5)^2-4$. That gives $h=5$ and $k=-4$, so $h+k=1$.",
+      "steps": [
+        "$h=-\\frac{b}{2a}=5$.",
+        "$k=f(5)=25-50+21=-4$.",
+        "$h+k=5+(-4)=1$."
+      ],
+      "verify": "x = symbols('x')\nh = Rational(10, 2)\nk = (x**2 - 10*x + 21).subs(x, h)\nresult = h + k"
+    },
+    {
+      "id": "T08-M2-09",
+      "module": 2,
+      "n": 31,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Maximum in context",
+      "stem": "A rocket is launched from a platform. Its height above the ground, in metres, $t$ seconds after launch is given by $h(t)=-5t^2+40t+2$. How many seconds after launch does the rocket reach its greatest height?",
+      "choices": ["$2$", "$4$", "$8$", "$82$"],
+      "answer": "B",
+      "solution": "The question asks \\emph{when}, so it wants the $x$-coordinate of the vertex: $t=-\\frac{40}{2(-5)}=4$ seconds. Choice D, $82$, is the greatest height in metres, and choice A is the launch height -- both are numbers in the problem, but neither is a time.",
+      "steps": [
+        "The parabola opens downward, so the vertex gives the greatest height.",
+        "$t=-\\frac{b}{2a}=-\\frac{40}{-10}=4$ seconds."
+      ],
+      "verify": "result = Rational(40, 2*5)"
+    },
+    {
+      "id": "T08-M2-10",
+      "module": 2,
+      "n": 32,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Forms of a parabola",
+      "stem": "Which of the following expressions is equivalent to $2x^2-12x+13$ and displays the minimum value of the function $f(x)=2x^2-12x+13$ as a constant or coefficient?",
+      "choices": [
+        "$2(x-3)^2+5$",
+        "$2(x-6)^2-5$",
+        "$2(x-3)^2-5$",
+        "$2(x+3)^2-5$"
+      ],
+      "answer": "C",
+      "solution": "Vertex form displays the minimum. Here $h=-\\frac{-12}{2(2)}=3$ and $k=f(3)=18-36+13=-5$, so the expression is $2(x-3)^2-5$; expanding confirms $2x^2-12x+18-5=2x^2-12x+13$. Choice B uses $b$ itself instead of $-\\frac{b}{2a}$ for $h$.",
+      "steps": [
+        "$h=-\\frac{b}{2a}=\\frac{12}{4}=3$.",
+        "$k=f(3)=2(9)-12(3)+13=-5$.",
+        "So $2x^2-12x+13=2(x-3)^2-5$."
+      ],
+      "verify": "x = symbols('x')\nresult = expand(2*x**2 - 12*x + 13)"
+    },
+    {
+      "id": "T08-M2-11",
+      "module": 2,
+      "n": 33,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Evaluating a polynomial",
+      "stem": "The polynomial function $p$ is defined by $p(x)=(x-1)(x+3)(x+4)$. What is the value of $p(2)$?",
+      "choices": ["$-30$", "$6$", "$24$", "$30$"],
+      "answer": "D",
+      "solution": "Substitute directly into the factored form rather than expanding: $p(2)=(2-1)(2+3)(2+4)=(1)(5)(6)=30$. Choice A comes from mishandling the sign of the first factor as $1-2=-1$.",
+      "steps": [
+        "$p(2)=(2-1)(2+3)(2+4)$.",
+        "$=(1)(5)(6)=30$."
+      ],
+      "verify": "x = symbols('x')\np = (x-1)*(x+3)*(x+4)\nresult = p.subs(x, 2)"
+    },
+    {
+      "id": "T08-M2-12",
+      "module": 2,
+      "n": 34,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Zeros and multiplicity",
+      "wide": true,
+      "stem": "The polynomial function $p$ is defined by $p(x)=(x+1)^3(x-2)^2$. Which of the following describes the behaviour of the graph of $y=p(x)$ at its $x$-intercepts?",
+      "choices": [
+        "The graph crosses the $x$-axis at $x=-1$ and touches the $x$-axis at $x=2$.",
+        "The graph touches the $x$-axis at $x=-1$ and crosses the $x$-axis at $x=2$.",
+        "The graph crosses the $x$-axis at both $x=-1$ and $x=2$.",
+        "The graph touches the $x$-axis at both $x=-1$ and $x=2$."
+      ],
+      "answer": "A",
+      "solution": "Multiplicity decides the behaviour at a zero. The factor $(x+1)$ has odd multiplicity $3$, so the graph passes through the axis at $x=-1$; the factor $(x-2)$ has even multiplicity $2$, so near $x=2$ the sign of $p$ cannot change and the graph touches and turns back.",
+      "steps": [
+        "The zero $x=-1$ has multiplicity $3$, which is odd, so the graph crosses there.",
+        "The zero $x=2$ has multiplicity $2$, which is even, so the graph touches there."
+      ],
+      "verify": "result = \"The graph crosses the $x$-axis at $x=-1$ and touches the $x$-axis at $x=2$.\""
+    },
+    {
+      "id": "T08-M2-13",
+      "module": 2,
+      "n": 35,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Matching a graph",
+      "figure": "\\begin{center}\\begin{tikzpicture}\\begin{axis}[width=6.4cm,height=5.2cm,axis lines=middle,xlabel={$x$},ylabel={$y$},xlabel style={below right},ylabel style={above left},xmin=-7.2,xmax=3.2,ymin=-11,ymax=8,xtick={-6,-4,-2,2},ytick={-9,-6,-3,3,6},tick label style={font=\\tiny},grid=both,grid style={line width=0.1pt,draw=satline},samples=101]\\addplot[thick,satblue,domain=-6.1:2.1]{(x+2)^2-9};\\end{axis}\\end{tikzpicture}\\end{center}",
+      "stem": "The graph of the quadratic function $f$ is shown in the $xy$-plane above. Which equation could define $f$?",
+      "choices": [
+        "$y=(x+2)^2-9$",
+        "$y=(x-2)^2-9$",
+        "$y=(x+2)^2+9$",
+        "$y=-(x+2)^2-9$"
+      ],
+      "answer": "A",
+      "solution": "The lowest point of the graph is $(-2,-9)$, so vertex form needs $h=-2$ and $k=-9$, and $h=-2$ appears in the equation as $x+2$. The curve opens upward, so the leading coefficient is positive; as a check, the $x$-intercepts $-5$ and $1$ satisfy $(x+2)^2-9=(x+5)(x-1)$.",
+      "steps": [
+        "Read the vertex from the graph: $(-2,-9)$.",
+        "$h=-2$ gives the factor $(x-(-2))^2=(x+2)^2$, and $k=-9$.",
+        "The graph opens upward, so $y=(x+2)^2-9$."
+      ],
+      "verify": "result = \"$y=(x+2)^2-9$\""
+    },
+    {
+      "id": "T08-M2-14",
+      "module": 2,
+      "n": 36,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Factored form",
+      "stem": "In the $xy$-plane, the graph of the quadratic function $f$ crosses the $x$-axis at $(1,0)$ and $(9,0)$, and the minimum value of $f$ is $-32$. The function is defined by $f(x)=a(x-1)(x-9)$, where $a$ is a constant. What is the value of $a$?",
+      "answer": "2",
+      "solution": "The minimum occurs on the axis of symmetry, midway between the intercepts, at $x=5$. Then $f(5)=a(4)(-4)=-16a$, and setting $-16a=-32$ gives $a=2$.",
+      "steps": [
+        "The axis of symmetry is $x=\\frac{1+9}{2}=5$.",
+        "$f(5)=a(5-1)(5-9)=-16a$.",
+        "Set $-16a=-32$, so $a=2$."
+      ],
+      "verify": "a = symbols('a')\nresult = solve(Eq(a*(5-1)*(5-9), -32), a)[0]"
+    },
+    {
+      "id": "T08-M2-15",
+      "module": 2,
+      "n": 37,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Factor theorem",
+      "stem": "Which of the following is a factor of the polynomial $p(x)=x^3+2x^2-11x-12$?",
+      "choices": ["$x-2$", "$x-1$", "$x+3$", "$x-3$"],
+      "answer": "D",
+      "solution": "Test each candidate with the factor theorem instead of dividing. $p(3)=27+18-33-12=0$, so $x-3$ is a factor. The other candidates give $p(2)=-18$, $p(1)=-20$ and $p(-3)=12$, none of which is zero.",
+      "steps": [
+        "For a factor $x-a$, the factor theorem requires $p(a)=0$.",
+        "$p(2)=-18$, $p(1)=-20$, $p(-3)=12$: none works.",
+        "$p(3)=27+18-33-12=0$, so $x-3$ is a factor."
+      ],
+      "verify": "x = symbols('x')\nzeros = sorted(solve(x**3 + 2*x**2 - 11*x - 12, x))\nresult = x - zeros[2]"
+    },
+    {
+      "id": "T08-M2-16",
+      "module": 2,
+      "n": 38,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Forms of a parabola",
+      "stem": "Which of the following expressions is equivalent to $2x^2-2x-12$ and displays the $x$-intercepts of the graph of $y=2x^2-2x-12$ as constants or coefficients?",
+      "choices": [
+        "$(x-3)(x+2)$",
+        "$2(x-3)(x+2)$",
+        "$2(x+3)(x-2)$",
+        "$2(x-6)(x+1)$"
+      ],
+      "answer": "B",
+      "solution": "Factor the common $2$ out first: $2x^2-2x-12=2(x^2-x-6)=2(x-3)(x+2)$. Choice A factors correctly but drops the leading $2$, so it is not equivalent to the original expression -- and equivalence is part of what the question demands, even though both would suggest the same intercepts.",
+      "steps": [
+        "Factor out the common factor: $2x^2-2x-12=2(x^2-x-6)$.",
+        "$x^2-x-6=(x-3)(x+2)$.",
+        "So the expression is $2(x-3)(x+2)$, showing intercepts at $x=3$ and $x=-2$."
+      ],
+      "verify": "x = symbols('x')\nresult = expand(2*x**2 - 2*x - 12)"
+    },
+    {
+      "id": "T08-M2-17",
+      "module": 2,
+      "n": 39,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Factor theorem",
+      "stem": "The polynomial $p$ is defined by $p(x)=3x^3-5x^2+kx+8$, where $k$ is a constant. If $x-2$ is a factor of $p(x)$, what is the value of $k$?",
+      "answer": "-6",
+      "solution": "By the factor theorem, $x-2$ being a factor means $p(2)=0$. Evaluating gives $24-20+2k+8=2k+12$, so $2k+12=0$ and $k=-6$.",
+      "steps": [
+        "The factor theorem gives $p(2)=0$.",
+        "$3(8)-5(4)+2k+8=24-20+2k+8=2k+12$.",
+        "Set $2k+12=0$, so $k=-6$."
+      ],
+      "verify": "k = symbols('k')\nresult = solve(Eq(3*2**3 - 5*2**2 + k*2 + 8, 0), k)[0]"
+    },
+    {
+      "id": "T08-M2-18",
+      "module": 2,
+      "n": 40,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Vertex from standard form",
+      "stem": "The function $f$ is defined by $f(x)=x^2+5x+3$. What is the minimum value of $f(x)$?",
+      "choices": [
+        "$-\\frac{13}{2}$",
+        "$-\\frac{13}{4}$",
+        "$-\\frac{5}{2}$",
+        "$\\frac{13}{4}$"
+      ],
+      "answer": "B",
+      "solution": "The minimum value is the output at the vertex, so first find $x=-\\frac{5}{2}$, then substitute: $\\frac{25}{4}-\\frac{25}{2}+3=-\\frac{13}{4}$. Choice C is the $x$-coordinate of the vertex, the classic wrong-coordinate answer on this topic.",
+      "steps": [
+        "$x=-\\frac{b}{2a}=-\\frac{5}{2}$.",
+        "$f\\!\\left(-\\frac{5}{2}\\right)=\\frac{25}{4}-\\frac{25}{2}+3$.",
+        "$=\\frac{25-50+12}{4}=-\\frac{13}{4}$."
+      ],
+      "verify": "x = symbols('x')\nresult = (x**2 + 5*x + 3).subs(x, Rational(-5, 2))"
+    },
+    {
+      "id": "T08-M2-19",
+      "module": 2,
+      "n": 41,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Forms of a parabola",
+      "stem": "In the $xy$-plane, the graph of $y=x^2+bx+c$ has its vertex at $(3,-4)$, where $b$ and $c$ are constants. What is the value of $c$?",
+      "choices": ["$-6$", "$-4$", "$5$", "$13$"],
+      "answer": "C",
+      "solution": "Start from the form that shows the vertex, $y=(x-3)^2-4$, then expand into standard form to read off $c$: $x^2-6x+9-4=x^2-6x+5$. Equivalently, $c=f(0)=9-4=5$. Choice A is $b$, and choice B is the $y$-coordinate of the vertex.",
+      "steps": [
+        "Vertex $(3,-4)$ with leading coefficient $1$ gives $y=(x-3)^2-4$.",
+        "Expand: $x^2-6x+9-4=x^2-6x+5$.",
+        "So $b=-6$ and $c=5$."
+      ],
+      "verify": "x = symbols('x')\nresult = expand((x-3)**2 - 4).subs(x, 0)"
+    },
+    {
+      "id": "T08-M2-20",
+      "module": 2,
+      "n": 42,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Maximum in context",
+      "stem": "A company's daily profit, in dollars, from selling $x$ units of a product is modelled by $P(x)=-2x^2+56x-180$. What is the maximum daily profit, in dollars?",
+      "answer": "212",
+      "solution": "The parabola opens downward, so the maximum profit is the value at the vertex. It occurs at $x=-\\frac{56}{2(-2)}=14$ units, and $P(14)=-392+784-180=212$ dollars. Stopping at $14$ answers ``how many units'', not ``how much profit''.",
+      "steps": [
+        "$x=-\\frac{b}{2a}=-\\frac{56}{-4}=14$ units.",
+        "$P(14)=-2(196)+56(14)-180$.",
+        "$=-392+784-180=212$ dollars."
+      ],
+      "verify": "x = symbols('x')\nP = -2*x**2 + 56*x - 180\nresult = P.subs(x, 14)"
+    },
+    {
+      "id": "T08-M2-21",
+      "module": 2,
+      "n": 43,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Polynomial behaviour",
+      "wide": true,
+      "stem": "The polynomial function $p$ is defined by $p(x)=-(x-1)^2(x+3)$. Which of the following statements about the graph of $y=p(x)$ in the $xy$-plane is true?",
+      "choices": [
+        "The graph touches the $x$-axis at $x=1$, and $p(x)$ decreases without bound as $x$ increases without bound.",
+        "The graph crosses the $x$-axis at $x=1$, and $p(x)$ increases without bound as $x$ increases without bound.",
+        "The graph touches the $x$-axis at $x=-3$, and $p(x)$ decreases without bound as $x$ increases without bound.",
+        "The graph touches the $x$-axis at $x=1$, and $p(x)$ increases without bound as $x$ increases without bound."
+      ],
+      "answer": "A",
+      "solution": "Two independent readings are needed. The factor $(x-1)^2$ has even multiplicity, so the graph touches the axis at $x=1$, while $(x+3)$ has multiplicity $1$, so it crosses at $x=-3$. Expanding mentally, the leading term is $-x^3$: odd degree with a negative coefficient, so the right-hand end falls.",
+      "steps": [
+        "$(x-1)^2$ has even multiplicity, so the graph touches at $x=1$.",
+        "The degree is $2+1=3$ and the leading coefficient is $-1$.",
+        "Odd degree with a negative lead means $p(x)$ falls without bound as $x$ grows."
+      ],
+      "verify": "result = \"The graph touches the $x$-axis at $x=1$, and $p(x)$ decreases without bound as $x$ increases without bound.\""
+    },
+    {
+      "id": "T08-M2-22",
+      "module": 2,
+      "n": 44,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Factor theorem",
+      "stem": "The polynomial $p$ is defined by $p(x)=x^3-6x^2+11x-6$. If $p(x)=(x-3)q(x)$ for some polynomial $q$, which of the following is the expression $q(x)$?",
+      "choices": [
+        "$x^2-3x+2$",
+        "$x^2-3x-2$",
+        "$x^2+3x+2$",
+        "$x^2-9x+2$"
+      ],
+      "answer": "A",
+      "solution": "Because $p(3)=27-54+33-6=0$, the factor $x-3$ does divide $p$, and the quotient must be a quadratic $x^2+mx+2$: its leading coefficient is $1$ to reproduce $x^3$, and its constant term must satisfy $(-3)(\\text{constant})=-6$, so the constant is $2$. Matching the $x^2$ term, $m-3=-6$ gives $m=-3$, so $q(x)=x^2-3x+2$.",
+      "steps": [
+        "Confirm $p(3)=27-54+33-6=0$, so $x-3$ is a factor.",
+        "The quotient is quadratic with leading coefficient $1$ and constant $\\frac{-6}{-3}=2$.",
+        "Expanding $(x-3)(x^2-3x+2)=x^3-6x^2+11x-6$ confirms $q(x)=x^2-3x+2$."
+      ],
+      "verify": "x = symbols('x')\nresult = expand(sp.cancel((x**3 - 6*x**2 + 11*x - 6)/(x - 3)))"
+    }
+  ]
+}

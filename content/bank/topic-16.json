@@ -1,0 +1,1002 @@
+{
+  "number": 16,
+  "topic": "Inference, Margin of Error and Evaluating Statistical Claims",
+  "domain": "Problem-Solving and Data Analysis",
+  "skills": [
+    "Sample statistics and population inference",
+    "Margin of error and confidence intervals",
+    "Study design, random sampling and causation"
+  ],
+  "lesson": {
+    "intro": "Every question in this topic starts from the same situation: someone measured a small group and wants to say something about a much larger one. The SAT asks three things about that leap. How do you scale a sample statistic up to a population? What does the margin of error let you claim, and what does it not let you claim? And what does the design of the study --- who was chosen, and who was assigned --- permit you to conclude? The arithmetic here is easy on purpose; almost all of the difficulty is in reading a claim carefully enough to see whether the study actually supports it.",
+    "blocks": [
+      {
+        "kind": "section",
+        "title": "From a sample to a population",
+        "body": "A \\textbf{population} is the entire group you want to describe. A \\textbf{sample} is the part of it you actually measure. A number computed from the sample (a sample mean, a sample proportion) is a \\textbf{statistic}; the matching number for the whole population (the population mean, the population proportion) is a \\textbf{parameter}. The statistic is known and the parameter is not --- estimating the parameter from the statistic is the whole game.\n\nThe estimate itself is nothing more than a proportion applied to a bigger group. If $84$ of $240$ sampled trees are maples, the sample proportion is $\\dfrac{84}{240}=0.35$, so in a park of $8{,}000$ trees the estimated number of maples is $0.35\\times 8000=2800$. Two habits will keep this clean: reduce the sample proportion to a decimal first, and check what the question wants back --- a proportion, a percent, or a count."
+      },
+      {
+        "kind": "formula",
+        "title": "The three formulas",
+        "body": "\\textbf{Estimating a population count.}\n$$\\text{estimated count}=\\frac{\\text{count in sample}}{\\text{sample size}}\\times \\text{population size}$$\n\n\\textbf{The plausible range.} If an estimate is reported with a margin of error $E$,\n$$\\text{estimate}-E \\;\\le\\; \\text{parameter} \\;\\le\\; \\text{estimate}+E$$\nso the interval is $[\\,\\text{estimate}-E,\\ \\text{estimate}+E\\,]$.\n\n\\textbf{Reading an interval backwards.} Given endpoints $a$ and $b$,\n$$\\text{estimate}=\\frac{a+b}{2}, \\qquad E=\\frac{b-a}{2}.$$\nThe estimate is the midpoint and the margin of error is half the width. Any question that hands you an interval is asking for one of these two."
+      },
+      {
+        "kind": "concept",
+        "title": "What moves the margin of error",
+        "body": "Only two things on this test change the margin of error, and they move it in opposite directions.\n\n\\textbf{Sample size.} A larger random sample means a smaller margin of error. The relationship is $E \\propto \\dfrac{1}{\\sqrt{n}}$: to cut the margin of error in half you need four times the sample; to divide it by $3$ you need nine times the sample.\n\n\\textbf{Confidence level.} A higher confidence level means a \\emph{larger} margin of error, hence a wider interval. Demanding to be right more often, from the same data, forces you to cast a wider net.\n\nWhat does \\emph{not} change the margin of error: the size of the population, and the value of the estimate itself. A poll of $1{,}000$ people is about as precise in a city of fifty thousand as in a country of fifty million."
+      },
+      {
+        "kind": "trap",
+        "title": "What a 95\\% confidence interval does not say",
+        "body": "Suppose a $95\\%$ confidence interval for a mean is $48$ to $62$. All four of these are wrong:\n\n\\begin{itemize}\n\\item ``There is a $95\\%$ probability that the population mean is between $48$ and $62$.'' The population mean is a fixed number, not a random one. It is either inside this interval or it is not.\n\\item ``$95\\%$ of the population lies between $48$ and $62$.'' The interval estimates \\emph{one number}, the mean --- not the spread of individuals.\n\\item ``$95\\%$ of the sample lies between $48$ and $62$.'' Same error, aimed at the sample.\n\\item ``The population mean must be $55$.'' No single value is established; the interval offers a range of plausible values.\n\\end{itemize}\n\nThe correct reading is a statement about the \\emph{procedure}: if you drew many random samples and built an interval from each one the same way, about $95\\%$ of those intervals would contain the population mean. And the usable consequence on test day is simply this: every value inside the interval is plausible, every value outside it is not."
+      },
+      {
+        "kind": "concept",
+        "title": "Random selection versus random assignment",
+        "body": "These two phrases sound alike and do completely different jobs. Keep them in separate boxes.\n\n\\textbf{Random selection} is how participants get \\emph{into} the study. If subjects were randomly selected from a population, the results generalize to that population --- and to no wider one. A random sample of one university describes that university, not every university.\n\n\\textbf{Random assignment} is how participants, once in the study, get sorted into \\emph{treatment groups}. If the researcher randomly assigned who receives what, the groups start out alike, so a difference at the end is attributed to the treatment. This --- and only this --- licenses the word \\emph{causes}.\n\nSo a survey, in which nobody is assigned anything, can never establish cause, no matter how large or how carefully random it is. And an experiment on $300$ volunteers who answered an advertisement can establish cause for those volunteers, but cannot be generalized beyond them."
+      },
+      {
+        "kind": "strategy",
+        "title": "How to attack the verbal items",
+        "body": "The conclusion questions are all the same question in different clothing. Read the stem and answer two yes/no questions before you look at the choices:\n\n\\begin{enumerate}\n\\item \\textbf{Were subjects randomly selected from a population?} If yes, you may generalize to that population. If no (volunteers, self-selected respondents, one convenient location), the conclusion is confined to the participants.\n\\item \\textbf{Were subjects randomly assigned to groups?} If yes, cause is allowed. If no, only \\emph{association} is allowed --- words like ``is associated with,'' ``tend to,'' ``related to.''\n\\end{enumerate}\n\nThen strike out every choice that claims more than your two answers permit. The wrong choices are almost always over-claims: cause from a survey, a whole country from one school, an exact value from an estimate. The right choice is usually the most cautious one that still says something."
+      },
+      {
+        "kind": "worked",
+        "title": "Worked example 1 --- estimate, interval, and count",
+        "body": "\\textbf{A random sample of $500$ of the $6{,}400$ employees at a company was surveyed. Based on the sample, the proportion of all employees who bike to work is estimated to be $0.36$, with a margin of error of $0.04$. What is the greatest number of employees who bike to work that is consistent with this estimate?}\n\n\\emph{Step 1 --- build the plausible range for the proportion.} The estimate is $0.36$ and the margin of error is $0.04$, so plausible proportions run from $0.36-0.04=0.32$ to $0.36+0.04=0.40$.\n\n\\emph{Step 2 --- take the end the question asks for.} ``Greatest number'' means the largest proportion, $0.40$.\n\n\\emph{Step 3 --- scale up to the population.} $0.40\\times 6400 = 2560$ employees.\n\n\\emph{Why this order.} The margin of error attaches to the \\emph{proportion}, so widen first and multiply second. Notice also that the sample size $500$ never appears in the arithmetic --- it has already done its work by determining how large the margin of error is. A number in the stem that is not needed is normal on this topic."
+      },
+      {
+        "kind": "worked",
+        "title": "Worked example 2 --- reading a study's design",
+        "body": "\\textbf{A researcher selected a random sample of $250$ students from the $3{,}000$ students at one university, then recorded whether each student ate breakfast and how much energy the student reported. Students in the sample who ate breakfast reported higher energy levels. Which conclusion is supported?}\n\n\\emph{Step 1 --- random selection?} Yes: $250$ students drawn at random from all $3{,}000$ at this university. So the finding may be generalized to the students at \\emph{this university} --- not to university students in general.\n\n\\emph{Step 2 --- random assignment?} No. The researcher recorded what students already did; nobody was assigned to eat breakfast. Students who eat breakfast may also sleep more, live on campus, or have earlier classes, and any of those could explain the energy difference. So no causal claim is available.\n\n\\emph{Step 3 --- combine.} Generalize, but only to an association: \\emph{among the students at this university, eating breakfast is associated with higher reported energy levels.}\n\n\\emph{The fix.} If the researcher wanted to say breakfast \\emph{causes} higher energy, the design would have to change: randomly assign students to eat or skip breakfast, then compare. Collecting more survey data would never be enough."
+      }
+    ]
+  },
+  "problems": [
+    {
+      "id": "T16-M1-01",
+      "module": 1,
+      "n": 1,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Sample statistics and population inference",
+      "stem": "A researcher selected a random sample of $200$ of the $1{,}500$ students at a high school and found that $60$ of the students in the sample walk to school. Based on this sample, which of the following is the best estimate of the total number of students at the school who walk to school?",
+      "choices": [
+        "$60$",
+        "$300$",
+        "$450$",
+        "$750$"
+      ],
+      "answer": "C",
+      "solution": "A random sample is used as a miniature of the population, so the proportion found in the sample is the best available estimate of the proportion in the population; multiplying it by the population size converts that proportion into a count.",
+      "steps": [
+        "The sample proportion is $\\dfrac{60}{200}=0.3$.",
+        "Apply that proportion to the whole population: $0.3\\times 1500$.",
+        "$0.3\\times 1500 = 450$."
+      ],
+      "verify": "result = Rational(60,200)*1500"
+    },
+    {
+      "id": "T16-M1-02",
+      "module": 1,
+      "n": 2,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Margin of error and confidence intervals",
+      "stem": "A poll of a random sample of voters estimated that $42\\%$ of all voters in a city support a new transit plan, with an associated margin of error of $3\\%$. What is the least percent of all voters that is consistent with this estimate? (Ignore the percent sign when entering your answer.)",
+      "answer": "39",
+      "solution": "The margin of error measures how far the population value may reasonably sit from the sample estimate, so the smallest plausible value is the estimate minus the margin of error.",
+      "steps": [
+        "A plausible range runs from estimate $-$ margin of error to estimate $+$ margin of error.",
+        "The lower endpoint is $42-3$.",
+        "$42-3=39$."
+      ],
+      "verify": "result = 42 - 3"
+    },
+    {
+      "id": "T16-M1-03",
+      "module": 1,
+      "n": 3,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Study design, random sampling and causation",
+      "stem": "A city library has $2{,}000$ registered members. A librarian surveyed $150$ members selected at random from the list of all registered members. Which of the following is the population that this survey is designed to describe?",
+      "choices": [
+        "The 150 members who were surveyed.",
+        "All 2,000 registered members of the library.",
+        "All residents of the city.",
+        "All people who visited the library on the day of the survey."
+      ],
+      "answer": "B",
+      "solution": "The population is the group the sample was randomly drawn from, because that is the only group the random selection makes the sample representative of.",
+      "steps": [
+        "Identify the list from which the sample was drawn: the list of all registered members.",
+        "The population is that whole list, not the sample and not a wider group."
+      ],
+      "verify": "result = \"All 2,000 registered members of the library.\"",
+      "wide": true
+    },
+    {
+      "id": "T16-M1-04",
+      "module": 1,
+      "n": 4,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Margin of error and confidence intervals",
+      "stem": "A researcher will use a random sample to estimate the mean number of hours per week that adults in a town exercise. If the researcher increases the size of the random sample but keeps the confidence level the same, what is the most likely effect on the margin of error?",
+      "choices": [
+        "It will decrease.",
+        "It will increase.",
+        "It will stay exactly the same.",
+        "It will become negative."
+      ],
+      "answer": "A",
+      "solution": "The margin of error measures uncertainty about the population value, and taking a larger random sample reduces that uncertainty, so the margin of error decreases.",
+      "steps": [
+        "A larger sample carries more information about the population.",
+        "More information means less uncertainty, so the margin of error shrinks."
+      ],
+      "verify": "result = \"It will decrease.\""
+    },
+    {
+      "id": "T16-M1-05",
+      "module": 1,
+      "n": 5,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Sample statistics and population inference",
+      "stem": "In a random sample of $80$ of the $1{,}200$ households in a town, $28$ households own a pet. Based on this sample, which of the following is the best estimate of the number of households in the town that own a pet?",
+      "choices": [
+        "$336$",
+        "$420$",
+        "$480$",
+        "$560$"
+      ],
+      "answer": "B",
+      "solution": "Scaling a sample proportion up to the population size is the standard way to turn a sample count into an estimate for the whole group.",
+      "steps": [
+        "The sample proportion is $\\dfrac{28}{80}=0.35$.",
+        "Estimate the population count: $0.35\\times 1200$.",
+        "$0.35\\times 1200 = 420$."
+      ],
+      "verify": "result = Rational(28,80)*1200"
+    },
+    {
+      "id": "T16-M1-06",
+      "module": 1,
+      "n": 6,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Margin of error and confidence intervals",
+      "stem": "Based on a random sample, a biologist estimates that the mean mass of a certain species of frog is between $12.4$ grams and $13.6$ grams. What is the margin of error associated with this estimate?",
+      "choices": [
+        "$0.6$",
+        "$1.2$",
+        "$12.4$",
+        "$13.0$"
+      ],
+      "answer": "A",
+      "solution": "An interval built as estimate $\\pm$ margin of error is symmetric about the estimate, so the margin of error is half the width of the interval.",
+      "steps": [
+        "The estimate sits at the center of the interval: $\\dfrac{12.4+13.6}{2}=13.0$.",
+        "The margin of error is the distance from the center to an endpoint: $13.6-13.0=0.6$."
+      ],
+      "verify": "result = (Rational(136,10)-Rational(124,10))/2"
+    },
+    {
+      "id": "T16-M1-07",
+      "module": 1,
+      "n": 7,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Study design, random sampling and causation",
+      "stem": "A store manager wants to estimate the mean number of minutes that all of the store's customers wait in line. Which of the following sampling methods is most likely to produce a biased estimate?",
+      "choices": [
+        "Selecting a random sample of customers from a list of all purchases made during the week.",
+        "Selecting a random sample of customers from each day of the week.",
+        "Selecting only customers who shop during the single busiest hour of the week.",
+        "Selecting a random sample of customers throughout the entire week."
+      ],
+      "answer": "C",
+      "solution": "A sample is biased when the method of choosing it systematically favors one kind of member; restricting the sample to the busiest hour guarantees waits longer than those of a typical customer.",
+      "steps": [
+        "Ask whether every customer has a chance of being chosen.",
+        "Sampling only during the busiest hour systematically favors long waits."
+      ],
+      "verify": "result = \"Selecting only customers who shop during the single busiest hour of the week.\"",
+      "wide": true
+    },
+    {
+      "id": "T16-M1-08",
+      "module": 1,
+      "n": 8,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Margin of error and confidence intervals",
+      "stem": "A survey of a random sample of the students at a college found that the mean number of hours per week that the students in the sample study is $15.2$ hours, with an associated margin of error of $1.3$ hours. Which of the following is the most appropriate conclusion?",
+      "choices": [
+        "Every student at the college studies between 13.9 and 16.5 hours per week.",
+        "Exactly 95 percent of the students at the college study between 13.9 and 16.5 hours per week.",
+        "The mean number of hours per week that all students at the college study is exactly 15.2 hours.",
+        "It is plausible that the mean number of hours per week that all students at the college study is between 13.9 and 16.5 hours."
+      ],
+      "answer": "D",
+      "solution": "A margin of error attaches to the estimate of the population mean, so the interval it creates lists plausible values for that one mean; it says nothing about how the individual students are spread out.",
+      "steps": [
+        "Form the interval: $15.2-1.3=13.9$ and $15.2+1.3=16.5$.",
+        "The interval describes plausible values of the population mean, not of individual students."
+      ],
+      "verify": "result = \"It is plausible that the mean number of hours per week that all students at the college study is between 13.9 and 16.5 hours.\"",
+      "wide": true
+    },
+    {
+      "id": "T16-M1-09",
+      "module": 1,
+      "n": 9,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Margin of error and confidence intervals",
+      "stem": "A random sample of $250$ adults in a city was asked how many minutes they commute to work each day. The mean for the sample was $27.5$ minutes, with an associated margin of error of $1.2$ minutes. What is the greatest number of minutes that is consistent with this estimate?",
+      "answer": "28.7",
+      "solution": "The margin of error bounds how far the population mean may plausibly lie from the sample mean in either direction, so the largest plausible value is the sample mean plus the margin of error.",
+      "steps": [
+        "The greatest plausible value is estimate $+$ margin of error.",
+        "$27.5+1.2=28.7$."
+      ],
+      "verify": "result = Rational(275,10) + Rational(12,10)"
+    },
+    {
+      "id": "T16-M1-10",
+      "module": 1,
+      "n": 10,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Study design, random sampling and causation",
+      "stem": "A swim club at one gym has $400$ members. All $400$ names were listed, $50$ members were selected at random, and each was asked about a proposed change to the pool schedule. Of those surveyed, $34$ supported the change. Which of the following conclusions is best supported by these results?",
+      "choices": [
+        "Most members of the swim club at this gym likely support the change.",
+        "Most people who swim in the city likely support the change.",
+        "The proposed schedule change causes members to swim more often.",
+        "Exactly 34 of the 400 members of the swim club support the change."
+      ],
+      "answer": "A",
+      "solution": "A random sample supports a general statement about the population it was drawn from, and about nothing wider; it also gives an estimate rather than an exact count.",
+      "steps": [
+        "The sample was drawn at random from the 400 club members, so conclusions apply to those members.",
+        "$34$ out of $50$ is $68\\%$, a clear majority of the sample."
+      ],
+      "verify": "result = \"Most members of the swim club at this gym likely support the change.\"",
+      "wide": true
+    },
+    {
+      "id": "T16-M1-11",
+      "module": 1,
+      "n": 11,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Sample statistics and population inference",
+      "stem": "A random sample of $320$ of the $12{,}000$ registered voters in a county was surveyed, and $208$ of those surveyed said they plan to vote in an upcoming election. Based on this sample, which of the following is the best estimate of the number of registered voters in the county who plan to vote?",
+      "choices": [
+        "$6\\,000$",
+        "$7\\,800$",
+        "$8\\,400$",
+        "$9\\,600$"
+      ],
+      "answer": "B",
+      "solution": "The random sample estimates the proportion of the whole county that plans to vote, and multiplying that proportion by the number of registered voters converts it into an estimated count.",
+      "steps": [
+        "The sample proportion is $\\dfrac{208}{320}=0.65$.",
+        "Estimate the population count: $0.65\\times 12000$.",
+        "$0.65\\times 12000 = 7800$."
+      ],
+      "verify": "result = Rational(208,320)*12000"
+    },
+    {
+      "id": "T16-M1-12",
+      "module": 1,
+      "n": 12,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Margin of error and confidence intervals",
+      "stem": "Two polls were conducted to estimate the percent of a city's residents who support a bond measure. Both polls used a random sample of residents and the same confidence level, but Poll A surveyed $400$ residents and Poll B surveyed $1{,}600$ residents. Which of the following statements about the margins of error is most likely true?",
+      "choices": [
+        "Poll A has the smaller margin of error, because it surveyed fewer residents.",
+        "The two polls must have the same margin of error, because they used the same confidence level.",
+        "The margins of error cannot be compared without knowing the results of the two polls.",
+        "Poll B has the smaller margin of error, because it surveyed more residents."
+      ],
+      "answer": "D",
+      "solution": "With the confidence level fixed, the margin of error depends on the sample size: a larger random sample pins down the population value more tightly.",
+      "steps": [
+        "Hold the confidence level fixed and compare sample sizes.",
+        "The larger sample, Poll B, produces the smaller margin of error."
+      ],
+      "verify": "result = \"Poll B has the smaller margin of error, because it surveyed more residents.\"",
+      "wide": true
+    },
+    {
+      "id": "T16-M1-13",
+      "module": 1,
+      "n": 13,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Margin of error and confidence intervals",
+      "stem": "Based on a random sample of the trees in a forest, a plausible range for the proportion of all trees in the forest that are oak trees is $0.38$ to $0.46$. What is the proportion of oak trees estimated from the sample?",
+      "answer": "0.42",
+      "solution": "An interval of plausible values is built as estimate $\\pm$ margin of error, so the estimate sits exactly halfway between the endpoints.",
+      "steps": [
+        "The estimate is the center of the interval.",
+        "$\\dfrac{0.38+0.46}{2}=0.42$."
+      ],
+      "verify": "result = (Rational(38,100)+Rational(46,100))/2"
+    },
+    {
+      "id": "T16-M1-14",
+      "module": 1,
+      "n": 14,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Study design, random sampling and causation",
+      "stem": "A researcher recruited $200$ volunteers who experience frequent headaches and randomly assigned each volunteer to take either a new medication or a placebo. After eight weeks, the volunteers taking the new medication reported significantly fewer headaches than those taking the placebo. Which of the following conclusions is best supported?",
+      "choices": [
+        "The new medication caused a reduction in headaches for the volunteers in the study.",
+        "The new medication would reduce headaches for all adults who experience frequent headaches.",
+        "Adults who take medication are more likely to experience frequent headaches.",
+        "No conclusion about cause can be drawn, because the volunteers were not selected at random."
+      ],
+      "answer": "A",
+      "solution": "Random assignment is what licenses a cause-and-effect conclusion; random selection is a separate question that controls only how widely the conclusion may be generalized.",
+      "steps": [
+        "Check for random assignment: each volunteer was randomly assigned to a group.",
+        "Random assignment balances the two groups, so the difference is attributed to the treatment.",
+        "The volunteers were not randomly selected, so the result cannot be extended beyond them."
+      ],
+      "verify": "result = \"The new medication caused a reduction in headaches for the volunteers in the study.\"",
+      "wide": true
+    },
+    {
+      "id": "T16-M1-15",
+      "module": 1,
+      "n": 15,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Margin of error and confidence intervals",
+      "stem": "Based on a random sample of a population of fish, a $95\\%$ confidence interval for the mean weight of the fish in the population is $2.1$ kilograms to $2.7$ kilograms. Which of the following statements is best supported by this interval?",
+      "choices": [
+        "Ninety-five percent of the fish in the population weigh between 2.1 kilograms and 2.7 kilograms.",
+        "Ninety-five percent of the fish in the sample weigh between 2.1 kilograms and 2.7 kilograms.",
+        "It is plausible that the mean weight of all the fish in the population is 2.5 kilograms.",
+        "The mean weight of all the fish in the population must be 2.4 kilograms."
+      ],
+      "answer": "C",
+      "solution": "A confidence interval is a statement about one number, the population mean; any value inside it is plausible, no value is certain, and individual fish are not described at all.",
+      "steps": [
+        "The interval gives plausible values for the population mean.",
+        "$2.5$ lies between $2.1$ and $2.7$, so it is a plausible value of that mean."
+      ],
+      "verify": "result = \"It is plausible that the mean weight of all the fish in the population is 2.5 kilograms.\"",
+      "wide": true
+    },
+    {
+      "id": "T16-M1-16",
+      "module": 1,
+      "n": 16,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Study design, random sampling and causation",
+      "stem": "A nutritionist selected a random sample of $250$ students from the $3{,}000$ students at one university and recorded each student's breakfast habits and reported energy level. Students in the sample who ate breakfast reported higher energy levels than students who did not. Which of the following conclusions is best supported by this study?",
+      "choices": [
+        "Eating breakfast causes higher energy levels in students at this university.",
+        "Eating breakfast causes higher energy levels in university students throughout the country.",
+        "Students at this university who want more energy must eat breakfast.",
+        "Among the students at this university, eating breakfast is associated with higher reported energy levels."
+      ],
+      "answer": "D",
+      "solution": "An observational study with a random sample supports generalizing an association to the sampled population, but without random assignment it cannot separate the treatment from the other ways the two groups differ.",
+      "steps": [
+        "The nutritionist observed habits; no treatment was assigned, so no cause can be established.",
+        "The sample was random from this university only, so the conclusion is limited to that university.",
+        "What remains is an association within that population."
+      ],
+      "verify": "result = \"Among the students at this university, eating breakfast is associated with higher reported energy levels.\"",
+      "wide": true
+    },
+    {
+      "id": "T16-M1-17",
+      "module": 1,
+      "n": 17,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Sample statistics and population inference",
+      "stem": "A random sample of $500$ of the $6{,}400$ employees at a company was surveyed. Based on the sample, the proportion of all employees at the company who bike to work is estimated to be $0.36$, with an associated margin of error of $0.04$. What is the greatest number of employees at the company who bike to work that is consistent with this estimate?",
+      "answer": "2560",
+      "solution": "First push the proportion to the far end of its plausible range, then scale that proportion up to the population; the sample size of $500$ has already been used to produce the margin of error and plays no further role.",
+      "steps": [
+        "The greatest plausible proportion is $0.36+0.04=0.40$.",
+        "Convert to a count: $0.40\\times 6400$.",
+        "$0.40\\times 6400 = 2560$."
+      ],
+      "verify": "result = (Rational(36,100)+Rational(4,100))*6400"
+    },
+    {
+      "id": "T16-M1-18",
+      "module": 1,
+      "n": 18,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Margin of error and confidence intervals",
+      "stem": "From one random sample of batteries, a statistician computes both a $90\\%$ confidence interval and a $99\\%$ confidence interval for the mean lifetime of the batteries produced at a factory. Which of the following correctly compares the two intervals?",
+      "choices": [
+        "The 99 percent interval is wider, because a higher confidence level requires a larger margin of error.",
+        "The 90 percent interval is wider, because a lower confidence level requires a larger margin of error.",
+        "The two intervals have the same width, because they are computed from the same sample.",
+        "The 99 percent interval is narrower, because a higher confidence level is more precise."
+      ],
+      "answer": "A",
+      "solution": "Confidence and precision trade off: with the sample fixed, the only way to be right more often is to state a wider interval, so a higher confidence level always brings a larger margin of error.",
+      "steps": [
+        "Raising the confidence level means the procedure must succeed more often.",
+        "Succeeding more often from the same data requires casting a wider net."
+      ],
+      "verify": "result = \"The 99 percent interval is wider, because a higher confidence level requires a larger margin of error.\"",
+      "wide": true
+    },
+    {
+      "id": "T16-M1-19",
+      "module": 1,
+      "n": 19,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Study design, random sampling and causation",
+      "stem": "A magazine printed a survey in one issue and asked readers to mail in their responses. Of the $3{,}000$ readers who responded, $82\\%$ said they were dissatisfied with a new city policy. Which of the following is the best reason that this result may be a poor estimate of the percent of all city residents who are dissatisfied with the policy?",
+      "choices": [
+        "The sample of 3,000 is too small for a city-wide estimate.",
+        "A percent cannot be estimated unless a mean is also reported.",
+        "The survey asked about only one policy instead of several.",
+        "The readers who chose to respond were not randomly selected, so people with strong opinions are likely overrepresented."
+      ],
+      "answer": "D",
+      "solution": "Bias comes from how a sample is chosen, not from how big it is; a self-selected sample of magazine readers over-represents people motivated to respond, so no sample size can rescue the estimate.",
+      "steps": [
+        "Note that the respondents selected themselves.",
+        "Self-selected respondents differ systematically from the population, which biases the estimate.",
+        "A large sample does not repair that bias."
+      ],
+      "verify": "result = \"The readers who chose to respond were not randomly selected, so people with strong opinions are likely overrepresented.\"",
+      "wide": true
+    },
+    {
+      "id": "T16-M1-20",
+      "module": 1,
+      "n": 20,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Margin of error and confidence intervals",
+      "stem": "Based on a random sample of the bags of chips produced at a factory, a $95\\%$ confidence interval for the mean mass, in grams, of all bags produced at the factory is $142.9$ to $148.3$. What is the margin of error for this estimate?",
+      "answer": "2.7",
+      "solution": "The interval is centered at the sample mean and reaches one margin of error in each direction, so the margin of error is half the total width.",
+      "steps": [
+        "The width of the interval is $148.3-142.9=5.4$.",
+        "The margin of error is half the width: $\\dfrac{5.4}{2}=2.7$."
+      ],
+      "verify": "result = (Rational(1483,10)-Rational(1429,10))/2"
+    },
+    {
+      "id": "T16-M1-21",
+      "module": 1,
+      "n": 21,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Margin of error and confidence intervals",
+      "stem": "Based on a random sample of the students at a school, a $95\\%$ confidence interval for the mean number of text messages sent per day by the students at the school is $48$ to $62$. Which of the following best describes what the confidence level of $95\\%$ means?",
+      "choices": [
+        "There is a 95 percent chance that the mean for all students at the school is between 48 and 62.",
+        "If this sampling procedure were repeated many times, about 95 percent of the intervals produced would contain the mean for all students at the school.",
+        "About 95 percent of the students at the school send between 48 and 62 text messages per day.",
+        "About 95 percent of the students in the sample send between 48 and 62 text messages per day."
+      ],
+      "answer": "B",
+      "solution": "The $95\\%$ is a property of the procedure: repeated random samples give many different intervals, and about $95\\%$ of them capture the fixed population mean. This particular interval is not assigned a probability.",
+      "steps": [
+        "The confidence level describes the long-run behavior of the method, not this one interval.",
+        "The population mean is a fixed number; it either is or is not inside 48 to 62.",
+        "The interval also describes a mean, not individual students."
+      ],
+      "verify": "result = \"If this sampling procedure were repeated many times, about 95 percent of the intervals produced would contain the mean for all students at the school.\"",
+      "wide": true
+    },
+    {
+      "id": "T16-M1-22",
+      "module": 1,
+      "n": 22,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Study design, random sampling and causation",
+      "stem": "A survey of a random sample of adults in a country found that the adults who own a dog walk more minutes per week, on average, than the adults who do not own a dog. A reporter concluded that owning a dog causes adults to walk more. Which of the following changes to the study would be needed to support the reporter's conclusion?",
+      "choices": [
+        "Surveying a larger random sample of adults in the country.",
+        "Reporting a margin of error along with each estimate.",
+        "Randomly assigning adults to own a dog or not to own a dog and then comparing the two groups.",
+        "Surveying only adults who already walk regularly."
+      ],
+      "answer": "C",
+      "solution": "No amount of extra data turns an observational study into an experiment; cause requires that the researcher, not the participant, decide who receives the treatment, and that the decision be made at random.",
+      "steps": [
+        "The study is observational: the adults chose whether to own a dog.",
+        "Only random assignment to the groups can rule out other differences between dog owners and others.",
+        "More data or a margin of error improves precision, not the type of conclusion."
+      ],
+      "verify": "result = \"Randomly assigning adults to own a dog or not to own a dog and then comparing the two groups.\"",
+      "wide": true
+    },
+    {
+      "id": "T16-M2-01",
+      "module": 2,
+      "n": 23,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Sample statistics and population inference",
+      "stem": "A random sample of $150$ of the $900$ books in a school library was examined, and $45$ of the books in the sample were published before 2010. Based on this sample, which of the following is the best estimate of the number of books in the library that were published before 2010?",
+      "choices": [
+        "$135$",
+        "$225$",
+        "$270$",
+        "$300$"
+      ],
+      "answer": "C",
+      "solution": "The proportion observed in a random sample is the best estimate of the proportion in the whole collection, so multiplying it by $900$ estimates the count.",
+      "steps": [
+        "The sample proportion is $\\dfrac{45}{150}=0.3$.",
+        "Estimate the population count: $0.3\\times 900 = 270$."
+      ],
+      "verify": "result = Rational(45,150)*900"
+    },
+    {
+      "id": "T16-M2-02",
+      "module": 2,
+      "n": 24,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Margin of error and confidence intervals",
+      "stem": "Based on a random sample of its residents, a city estimates that the proportion of all residents who recycle is $0.58$, with an associated margin of error of $0.03$. What is the least proportion of all residents who recycle that is consistent with this estimate?",
+      "answer": "0.55",
+      "solution": "The plausible range is built symmetrically around the estimate, so its lower endpoint is the estimate minus the margin of error.",
+      "steps": [
+        "The least plausible value is estimate $-$ margin of error.",
+        "$0.58-0.03=0.55$."
+      ],
+      "verify": "result = Rational(58,100) - Rational(3,100)"
+    },
+    {
+      "id": "T16-M2-03",
+      "module": 2,
+      "n": 25,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Margin of error and confidence intervals",
+      "stem": "Two independent random samples were taken from the same population to estimate the mean daily rainfall, in millimeters, using the same confidence level. Study A used $100$ days and Study B used $900$ days. The margin of error reported by Study B was smaller than the one reported by Study A. Which of the following best explains why?",
+      "choices": [
+        "A larger random sample gives more information about the population, which reduces the margin of error.",
+        "A larger random sample always produces a larger mean, which reduces the margin of error.",
+        "Study B must have used a higher confidence level than Study A.",
+        "Study B measured rainfall on more days, so its measurements must be more accurate individually."
+      ],
+      "answer": "A",
+      "solution": "The margin of error reflects how much the sample mean might miss the population mean by; averaging over more randomly chosen days makes that miss smaller.",
+      "steps": [
+        "Both studies used the same confidence level, so that is not the difference.",
+        "Study B's sample is nine times as large, which reduces the uncertainty about the population mean."
+      ],
+      "verify": "result = \"A larger random sample gives more information about the population, which reduces the margin of error.\"",
+      "wide": true
+    },
+    {
+      "id": "T16-M2-04",
+      "module": 2,
+      "n": 26,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Study design, random sampling and causation",
+      "stem": "A random sample of $60$ employees at one branch of a company was surveyed about the branch's parking policy. To which of the following groups can the results of the survey be generalized?",
+      "choices": [
+        "All employees at that branch of the company.",
+        "All employees at every branch of the company.",
+        "All people who work in the city where the branch is located.",
+        "Only the 60 employees who were surveyed."
+      ],
+      "answer": "A",
+      "solution": "Random selection is what makes a sample stand in for a larger group, and the group it stands in for is the one the sample was drawn from.",
+      "steps": [
+        "The sample was randomly selected from the employees at one branch.",
+        "Random selection allows generalizing to exactly that group."
+      ],
+      "verify": "result = \"All employees at that branch of the company.\"",
+      "wide": true
+    },
+    {
+      "id": "T16-M2-05",
+      "module": 2,
+      "n": 27,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Sample statistics and population inference",
+      "stem": "In a random sample of $300$ of the $5{,}500$ students at a university, $24$ students said that they own a car. Based on this sample, what is the best estimate of the number of students at the university who own a car?",
+      "answer": "440",
+      "solution": "A random sample estimates the proportion of car owners in the whole university, and multiplying that proportion by $5{,}500$ turns it into an estimated number of students.",
+      "steps": [
+        "The sample proportion is $\\dfrac{24}{300}=0.08$.",
+        "Estimate the population count: $0.08\\times 5500$.",
+        "$0.08\\times 5500 = 440$."
+      ],
+      "verify": "result = Rational(24,300)*5500"
+    },
+    {
+      "id": "T16-M2-06",
+      "module": 2,
+      "n": 28,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Margin of error and confidence intervals",
+      "stem": "Based on a random sample of the students at a school, the mean number of hours of sleep per night for all students at the school is estimated to be $7.4$ hours, with an associated margin of error of $0.5$ hours. Which of the following is a plausible value for the mean number of hours of sleep per night for all students at the school?",
+      "choices": [
+        "$6.8$",
+        "$7.1$",
+        "$8.0$",
+        "$8.4$"
+      ],
+      "answer": "B",
+      "solution": "Any value inside estimate $\\pm$ margin of error is consistent with the sample; values outside it are not, so the test reduces to checking which choice lies between $6.9$ and $7.9$.",
+      "steps": [
+        "The plausible range is $7.4-0.5=6.9$ to $7.4+0.5=7.9$.",
+        "Only $7.1$ falls inside that range."
+      ],
+      "verify": "result = Rational(71,10)"
+    },
+    {
+      "id": "T16-M2-07",
+      "module": 2,
+      "n": 29,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Study design, random sampling and causation",
+      "stem": "A researcher wants to estimate the mean number of hours per week that all residents of a town spend exercising. Which of the following samples is most likely to produce an estimate that is too high?",
+      "choices": [
+        "A random sample of residents chosen from the town census list.",
+        "A random sample of residents chosen from a list of all households in the town.",
+        "A random sample of residents chosen from a list of all registered voters in the town.",
+        "A sample of residents chosen as they leave a fitness center on a weekday evening."
+      ],
+      "answer": "D",
+      "solution": "A sample taken where the behavior being measured is concentrated is biased upward; the three random methods give every resident a chance of selection and so have no such tilt.",
+      "steps": [
+        "Ask which method systematically favors one kind of resident.",
+        "People leaving a fitness center exercise far more than a typical resident."
+      ],
+      "verify": "result = \"A sample of residents chosen as they leave a fitness center on a weekday evening.\"",
+      "wide": true
+    },
+    {
+      "id": "T16-M2-08",
+      "module": 2,
+      "n": 30,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Study design, random sampling and causation",
+      "stem": "Researchers followed a random sample of $1{,}200$ adults for one year and recorded how much coffee each adult drank and how many hours each adult slept. Adults who drank more coffee reported fewer hours of sleep. The researchers did not assign any adult to drink a particular amount of coffee. Which of the following conclusions is best supported?",
+      "choices": [
+        "Drinking coffee causes adults to sleep fewer hours.",
+        "Sleeping fewer hours causes adults to drink more coffee.",
+        "There is an association between coffee consumption and hours of sleep among adults, but the study cannot establish a cause.",
+        "The study shows that coffee consumption and hours of sleep are unrelated."
+      ],
+      "answer": "C",
+      "solution": "Without random assignment the two groups may differ in many ways besides coffee, so the study is limited to reporting the association it observed.",
+      "steps": [
+        "No treatment was assigned, so this is an observational study.",
+        "Observational data can show that two variables move together.",
+        "It cannot say which one drives the other, or whether a third factor drives both."
+      ],
+      "verify": "result = \"There is an association between coffee consumption and hours of sleep among adults, but the study cannot establish a cause.\"",
+      "wide": true
+    },
+    {
+      "id": "T16-M2-09",
+      "module": 2,
+      "n": 31,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Margin of error and confidence intervals",
+      "stem": "Based on a random sample of the packages shipped by a company, a plausible range for the mean weight, in pounds, of all packages shipped by the company is $21.4$ to $24.8$. What is the mean weight, in pounds, estimated from the sample?",
+      "answer": "23.1",
+      "solution": "The interval is the sample estimate plus or minus one margin of error, so the estimate is recovered by averaging the endpoints.",
+      "steps": [
+        "The sample estimate is the midpoint of the interval.",
+        "$\\dfrac{21.4+24.8}{2}=\\dfrac{46.2}{2}=23.1$."
+      ],
+      "verify": "result = (Rational(214,10)+Rational(248,10))/2"
+    },
+    {
+      "id": "T16-M2-10",
+      "module": 2,
+      "n": 32,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Study design, random sampling and causation",
+      "stem": "A researcher randomly selected $100$ of the $2{,}500$ members of a professional organization and asked each selected member whether they attended the organization's annual conference. Which of the following is an appropriate use of the results?",
+      "choices": [
+        "Estimating the proportion of all professionals in this field who attended the conference.",
+        "Concluding that attending the conference causes members to be more satisfied with their jobs.",
+        "Determining the exact number of members of the organization who attended the conference.",
+        "Estimating the proportion of all 2,500 members of the organization who attended the conference."
+      ],
+      "answer": "D",
+      "solution": "Random selection from the membership list supports one thing: an estimate, with uncertainty, of a proportion for that membership.",
+      "steps": [
+        "The sample was random from the organization's membership only.",
+        "A sample yields an estimate, not an exact count, and nothing about cause."
+      ],
+      "verify": "result = \"Estimating the proportion of all 2,500 members of the organization who attended the conference.\"",
+      "wide": true
+    },
+    {
+      "id": "T16-M2-11",
+      "module": 2,
+      "n": 33,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Margin of error and confidence intervals",
+      "stem": "A pollster used a random sample of voters to compute a $90\\%$ confidence interval for the percent of all voters who support a measure. Using the same sample, the pollster then computes a $99\\%$ confidence interval instead. Compared with the first interval, the second interval will be described by which of the following?",
+      "choices": [
+        "It is wider, and the estimate at its center is the same.",
+        "It is narrower, and the estimate at its center is the same.",
+        "It is wider, and the estimate at its center is larger.",
+        "It is unchanged, because the sample did not change."
+      ],
+      "answer": "A",
+      "solution": "Changing the confidence level changes only how far the interval reaches from the sample estimate; the estimate itself comes from the data and stays put.",
+      "steps": [
+        "The center is the sample estimate, which does not depend on the confidence level.",
+        "Raising the confidence level enlarges the margin of error, widening the interval."
+      ],
+      "verify": "result = \"It is wider, and the estimate at its center is the same.\"",
+      "wide": true
+    },
+    {
+      "id": "T16-M2-12",
+      "module": 2,
+      "n": 34,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Sample statistics and population inference",
+      "stem": "In a random sample of $240$ of the $8{,}000$ trees in a park, $84$ of the trees are maple trees. Based on this sample, which of the following is the best estimate of the number of maple trees in the park?",
+      "choices": [
+        "$1\\,960$",
+        "$2\\,400$",
+        "$2\\,600$",
+        "$2\\,800$"
+      ],
+      "answer": "D",
+      "solution": "The random sample estimates the fraction of the park's trees that are maples, and that fraction applied to all $8{,}000$ trees gives the estimated count.",
+      "steps": [
+        "The sample proportion is $\\dfrac{84}{240}=0.35$.",
+        "Estimate the population count: $0.35\\times 8000$.",
+        "$0.35\\times 8000 = 2800$."
+      ],
+      "verify": "result = Rational(84,240)*8000"
+    },
+    {
+      "id": "T16-M2-13",
+      "module": 2,
+      "n": 35,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Margin of error and confidence intervals",
+      "stem": "Based on a random sample of a store's customers, a $95\\%$ confidence interval for the mean number of minutes per visit that all of the store's customers spend in the store is $28.6$ to $31.2$. Which of the following values of the mean for all customers is NOT plausible based on this interval?",
+      "choices": [
+        "$28.9$",
+        "$30.0$",
+        "$31.1$",
+        "$32.4$"
+      ],
+      "answer": "D",
+      "solution": "A confidence interval is a list of plausible values for the population mean, so a value fails to be plausible precisely when it falls outside the endpoints.",
+      "steps": [
+        "Plausible values are exactly those between $28.6$ and $31.2$.",
+        "$32.4$ lies outside the interval."
+      ],
+      "verify": "result = Rational(324,10)"
+    },
+    {
+      "id": "T16-M2-14",
+      "module": 2,
+      "n": 36,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Study design, random sampling and causation",
+      "stem": "A school emailed a survey to all $1{,}000$ of its students, and $120$ students responded. Of the students who responded, $90\\%$ said they were satisfied with the cafeteria. Which of the following is the best criticism of using this result to estimate the percent of all students at the school who are satisfied with the cafeteria?",
+      "choices": [
+        "The sample of 120 students is a random sample, so the estimate applies only to those 120 students.",
+        "The students who chose to respond may differ systematically from the students who did not respond.",
+        "The survey should have been emailed to fewer students so that more would respond.",
+        "A percent cannot be computed from only 120 responses."
+      ],
+      "answer": "B",
+      "solution": "Sending a survey to everyone does not make the responses random; the students who bother to reply may hold different opinions, and nothing in the data reveals how the silent $880$ would have answered.",
+      "steps": [
+        "Everyone received the survey, but only volunteers answered.",
+        "That makes the respondents a self-selected group rather than a random sample."
+      ],
+      "verify": "result = \"The students who chose to respond may differ systematically from the students who did not respond.\"",
+      "wide": true
+    },
+    {
+      "id": "T16-M2-15",
+      "module": 2,
+      "n": 37,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Margin of error and confidence intervals",
+      "stem": "Based on a random sample of the households in a town, the mean number of hours per day that a television is on in the households of the town is estimated to be $3.6$ hours, with an associated margin of error of $0.45$ hours. What is the greatest number of hours that is consistent with this estimate?",
+      "answer": "4.05",
+      "solution": "The plausible range reaches one margin of error above the estimate, so its upper endpoint is $3.6+0.45$.",
+      "steps": [
+        "The greatest plausible value is estimate $+$ margin of error.",
+        "$3.6+0.45=4.05$."
+      ],
+      "verify": "result = Rational(36,10) + Rational(45,100)"
+    },
+    {
+      "id": "T16-M2-16",
+      "module": 2,
+      "n": 38,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Study design, random sampling and causation",
+      "stem": "A city randomly selected $500$ of its residents and surveyed them about how they commute and how much stress they experience. Residents who reported commuting by bicycle also reported lower stress levels. Which of the following is the strongest conclusion justified by this survey?",
+      "choices": [
+        "Commuting by bicycle lowers stress for the residents of the city.",
+        "Lower stress causes residents of the city to commute by bicycle.",
+        "Because the sample was randomly selected, the association between bicycle commuting and lower stress can be generalized to the city's residents, but no cause-and-effect relationship is established.",
+        "Because the sample was randomly selected, the survey establishes that bicycle commuting causes lower stress for the city's residents."
+      ],
+      "answer": "C",
+      "solution": "Random selection and random assignment answer different questions: the first settles who the result applies to, the second settles whether the result is causal. This study has only the first.",
+      "steps": [
+        "Random selection was used, so the finding extends to the city's residents.",
+        "No random assignment was used, so cause is out of reach.",
+        "Combine the two: a generalizable association."
+      ],
+      "verify": "result = \"Because the sample was randomly selected, the association between bicycle commuting and lower stress can be generalized to the city's residents, but no cause-and-effect relationship is established.\"",
+      "wide": true
+    },
+    {
+      "id": "T16-M2-17",
+      "module": 2,
+      "n": 39,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Study design, random sampling and causation",
+      "stem": "Study 1 surveyed a random sample of $800$ adults selected from a national list and found an association between hours of screen time and reported sleep quality. Study 2 recruited $200$ volunteers and randomly assigned each volunteer to one of two screen-time schedules, then compared the groups' reported sleep quality. Which of the following correctly describes what the two studies can support?",
+      "choices": [
+        "Study 1 can establish cause and effect for adults nationally, and Study 2 cannot establish cause and effect at all.",
+        "Study 2 can establish cause and effect for its volunteers, and Study 1 can generalize an association to adults nationally.",
+        "Both studies can establish cause and effect for adults nationally.",
+        "Neither study can support any conclusion about anyone other than the people who took part."
+      ],
+      "answer": "B",
+      "solution": "Each design buys exactly one thing. Random selection buys generalization, random assignment buys causation, and a study earns only what its own design provides.",
+      "steps": [
+        "Study 1: random selection, no random assignment, so a generalizable association.",
+        "Study 2: random assignment, no random selection, so cause for the volunteers only.",
+        "Match each study to the conclusion its design supports."
+      ],
+      "verify": "result = \"Study 2 can establish cause and effect for its volunteers, and Study 1 can generalize an association to adults nationally.\"",
+      "wide": true
+    },
+    {
+      "id": "T16-M2-18",
+      "module": 2,
+      "n": 40,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Sample statistics and population inference",
+      "stem": "A random sample of $400$ of the $4{,}500$ students at a college was surveyed. Based on the sample, the proportion of all students at the college who live on campus is estimated to be $0.42$, with an associated margin of error of $0.03$. What is the greatest number of students at the college who live on campus that is consistent with this estimate?",
+      "answer": "2025",
+      "solution": "Push the proportion to the top of its plausible range first, then scale to the population; the sample size of $400$ is already accounted for inside the margin of error.",
+      "steps": [
+        "The greatest plausible proportion is $0.42+0.03=0.45$.",
+        "Convert to a count: $0.45\\times 4500$.",
+        "$0.45\\times 4500 = 2025$."
+      ],
+      "verify": "result = (Rational(42,100)+Rational(3,100))*4500"
+    },
+    {
+      "id": "T16-M2-19",
+      "module": 2,
+      "n": 41,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Margin of error and confidence intervals",
+      "stem": "A survey of a random sample of $400$ people produced a margin of error of $4$ percentage points at a $95\\%$ confidence level. The margin of error is inversely proportional to the square root of the sample size. Approximately how many people would need to be surveyed, at the same confidence level, to reduce the margin of error to $2$ percentage points?",
+      "choices": [
+        "$800$",
+        "$1\\,200$",
+        "$1\\,600$",
+        "$3\\,200$"
+      ],
+      "answer": "C",
+      "solution": "Because the margin of error falls like $1/\\sqrt{n}$, precision is expensive: each halving of the margin of error costs four times the sample.",
+      "steps": [
+        "Halving the margin of error requires doubling $\\sqrt{n}$.",
+        "Doubling $\\sqrt{n}$ requires multiplying $n$ by $2^2=4$.",
+        "$4\\times 400 = 1600$."
+      ],
+      "verify": "result = 400*(4/2)**2"
+    },
+    {
+      "id": "T16-M2-20",
+      "module": 2,
+      "n": 42,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Margin of error and confidence intervals",
+      "stem": "A polling organization reports, ``Based on our random sample, we are $95\\%$ confident that between $46\\%$ and $52\\%$ of all voters support the measure.'' Which of the following is the most accurate interpretation of this report?",
+      "choices": [
+        "There is a 95 percent probability that the percent of all voters who support the measure is between 46 and 52.",
+        "Between 46 percent and 52 percent of the voters in the sample support the measure.",
+        "The interval was produced by a method that, used repeatedly, captures the percent of all voters who support the measure about 95 percent of the time.",
+        "If 95 more random samples were taken, every one of them would give a percent between 46 and 52."
+      ],
+      "answer": "C",
+      "solution": "The confidence level is a track record of the procedure across all possible samples; once a particular interval is written down, the population value is either in it or not, so no probability attaches to this one interval.",
+      "steps": [
+        "The percent of all voters who support the measure is a fixed unknown number, not a random one.",
+        "The randomness lives in the sampling, so the 95 percent describes the method.",
+        "The sample percent is the center, 49 percent, not the whole interval."
+      ],
+      "verify": "result = \"The interval was produced by a method that, used repeatedly, captures the percent of all voters who support the measure about 95 percent of the time.\"",
+      "wide": true
+    },
+    {
+      "id": "T16-M2-21",
+      "module": 2,
+      "n": 43,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Margin of error and confidence intervals",
+      "stem": "A study using a random sample of $900$ adults reported a margin of error of $2.4$ percentage points. The margin of error is inversely proportional to the square root of the sample size. How many adults must be included in a random sample, at the same confidence level, for the margin of error to be $0.8$ percentage points?",
+      "answer": "8100",
+      "solution": "Since the margin of error behaves like $1/\\sqrt{n}$, dividing it by $3$ costs nine times as many people; this is why very precise polls are so large.",
+      "steps": [
+        "The margin of error must shrink by a factor of $\\dfrac{2.4}{0.8}=3$.",
+        "So $\\sqrt{n}$ must grow by a factor of $3$, and $n$ must grow by a factor of $3^2=9$.",
+        "$9\\times 900 = 8100$."
+      ],
+      "verify": "result = 900*(Rational(24,10)/Rational(8,10))**2"
+    },
+    {
+      "id": "T16-M2-22",
+      "module": 2,
+      "n": 44,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Study design, random sampling and causation",
+      "stem": "Researchers recruited $300$ volunteers who responded to an online advertisement and randomly assigned each volunteer to one of two exercise programs. After twelve weeks, the volunteers in Program A had significantly greater improvement in endurance than those in Program B. Which of the following conclusions is best supported?",
+      "choices": [
+        "Program A causes greater improvement in endurance than Program B for all adults.",
+        "Program A caused greater improvement in endurance for the volunteers in this study, but the result may not extend to all adults.",
+        "No conclusion about cause can be drawn, because the volunteers were not randomly selected.",
+        "Adults who want to improve their endurance are more likely to choose Program A."
+      ],
+      "answer": "B",
+      "solution": "This is the standard split the test asks about: random assignment earns the word ``caused,'' while the absence of random selection keeps that causal claim confined to the people who actually took part.",
+      "steps": [
+        "Random assignment was used, so a cause-and-effect conclusion is available.",
+        "The volunteers answered an advertisement, so they are not a random sample of adults.",
+        "Cause holds for the participants; generalization does not."
+      ],
+      "verify": "result = \"Program A caused greater improvement in endurance for the volunteers in this study, but the result may not extend to all adults.\"",
+      "wide": true
+    }
+  ]
+}

@@ -1,0 +1,1015 @@
+{
+  "number": 4,
+  "topic": "Systems of Two Linear Equations in Two Variables",
+  "domain": "Algebra",
+  "skills": [
+    "Substitution and elimination",
+    "Number of solutions",
+    "System word problems"
+  ],
+  "lesson": {
+    "intro": "A system of two linear equations asks a single question: is there a point $(x, y)$ that satisfies both equations at once? Graphically that point is where two lines cross. The Digital SAT tests three things about such systems -- solving them quickly by substitution or elimination, recognising when a system has no solution or infinitely many, and building a system from a short story about tickets, prices, speeds or mixtures. Every one of those tasks is worth practising until it is automatic, because systems appear on both modules of every test.",
+    "blocks": [
+      {
+        "kind": "section",
+        "title": "What a solution is",
+        "body": "A solution to a system such as\n\\[\\begin{cases}2x + y = 7\\\\x - y = 2\\end{cases}\\]is an ordered pair $(x, y)$ that makes \\emph{both} equations true. Here $(3, 1)$ works: $2(3)+1 = 7$ and $3-1 = 2$. Because each equation graphs as a line, the solutions of the system are exactly the points the two lines share. Two distinct lines either cross once, or never cross (they are parallel), or coincide completely -- which is why a linear system has one solution, no solution, or infinitely many, and never exactly two.\n\nChecking a candidate pair is always legitimate: substitute it into both equations. If it satisfies only one, it is not a solution."
+      },
+      {
+        "kind": "section",
+        "title": "Method 1 -- substitution",
+        "body": "Substitution is the right tool when one equation is already solved for a variable, or when a variable has coefficient $1$ so isolating it costs nothing.\n\n\\begin{enumerate}\n\\item Solve one equation for one variable.\n\\item Substitute that expression into the \\emph{other} equation. You now have one equation in one variable.\n\\item Solve it, then substitute back to get the second variable.\n\\end{enumerate}\n\nSubstituting back into the equation you just came from returns a true but useless statement such as $7 = 7$; always go back to the other equation."
+      },
+      {
+        "kind": "worked",
+        "title": "Worked example -- substitution",
+        "body": "Solve \\[\\begin{cases}y = 3x - 4\\\\2x + y = 11\\end{cases}\\]\n\nThe first equation is already solved for $y$, so replace $y$ in the second equation:\n\\[2x + (3x - 4) = 11 \\;\\Longrightarrow\\; 5x - 4 = 11 \\;\\Longrightarrow\\; 5x = 15 \\;\\Longrightarrow\\; x = 3.\\]\nNow substitute $x = 3$ into $y = 3x - 4$: $y = 9 - 4 = 5$. The solution is $(3, 5)$.\n\nCheck it in the equation that was not used for the back-substitution: $2(3) + 5 = 11$. True, so the pair is correct."
+      },
+      {
+        "kind": "section",
+        "title": "Method 2 -- elimination",
+        "body": "Elimination is faster when both equations are in the form $ax + by = c$. Add or subtract multiples of the equations so that one variable cancels.\n\n\\begin{enumerate}\n\\item Multiply one or both equations so that the coefficients of one variable are equal in size and opposite in sign.\n\\item Add the equations; that variable disappears.\n\\item Solve for the survivor, then substitute back.\n\\end{enumerate}\n\nWhen you multiply an equation, multiply \\emph{every} term, including the constant on the right."
+      },
+      {
+        "kind": "worked",
+        "title": "Worked example -- elimination",
+        "body": "Solve \\[\\begin{cases}4x + 3y = 18\\\\5x - 2y = 11\\end{cases}\\]\n\nTo cancel $y$, scale the first equation by $2$ and the second by $3$:\n\\[\\begin{aligned}\n8x + 6y &= 36\\\\\n15x - 6y &= 33\n\\end{aligned}\\]\nAdding gives $23x = 69$, so $x = 3$. Substituting into $4x + 3y = 18$ gives $12 + 3y = 18$, so $y = 2$. The solution is $(3, 2)$.\n\nNotice that the choice to eliminate $y$ was deliberate: its coefficients $3$ and $-2$ already had opposite signs, so the scaled equations could simply be added."
+      },
+      {
+        "kind": "concept",
+        "title": "How many solutions?",
+        "body": "Write both equations as $a_1x + b_1y = c_1$ and $a_2x + b_2y = c_2$ and compare the three ratios.\n\n\\begin{itemize}\n\\item $\\dfrac{a_1}{a_2} \\neq \\dfrac{b_1}{b_2}$: the slopes differ, the lines cross once -- \\textbf{exactly one solution}.\n\\item $\\dfrac{a_1}{a_2} = \\dfrac{b_1}{b_2} \\neq \\dfrac{c_1}{c_2}$: same slope, different intercept -- \\textbf{no solution}.\n\\item $\\dfrac{a_1}{a_2} = \\dfrac{b_1}{b_2} = \\dfrac{c_1}{c_2}$: one equation is a multiple of the other -- \\textbf{infinitely many solutions}.\n\\end{itemize}\n\nIn slope-intercept form the same rules read: different slopes give one solution; equal slopes with different $y$-intercepts give none; identical equations give infinitely many."
+      },
+      {
+        "kind": "formula",
+        "title": "The facts to memorise",
+        "body": "For the system $a_1x + b_1y = c_1$ and $a_2x + b_2y = c_2$:\n\\[\\text{one solution} \\iff a_1b_2 - a_2b_1 \\neq 0.\\]\nWhen $a_1b_2 = a_2b_1$ the lines are parallel; they coincide only if the constants scale by the same factor.\n\\[\\text{no solution} \\iff \\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2}, \\qquad \\text{infinitely many} \\iff \\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2}.\\]"
+      },
+      {
+        "kind": "trap",
+        "title": "Answering the wrong question",
+        "body": "The single most common way to lose a system question is to solve it perfectly and then report the wrong number. If you find $x = 3$ and $y = 5$, the test may ask for $y$, for $x + y$, for $2x - y$, or for the price of one shirt \\emph{and} one hat. Every one of $3$, $5$, $8$ and $1$ will be sitting in the answer choices.\n\nUnderline what is being asked before you start, and write both coordinates down before you look at the choices. A second trap: when a question asks for $x + y$ or $x - y$, adding or subtracting the two equations often produces it in one line, so check for that shortcut before grinding out both variables."
+      },
+      {
+        "kind": "strategy",
+        "title": "Choosing a method, and using the calculator",
+        "body": "Scan the system first.\n\n\\begin{itemize}\n\\item A variable already isolated, or a coefficient of $1$: \\textbf{substitute}.\n\\item Matching or opposite coefficients: \\textbf{eliminate}.\n\\item Coefficients swapped between the equations, as in $4x + 7y$ and $7x + 4y$: add for $x+y$, subtract for $x-y$.\n\\item Fractions or decimals: multiply through to clear them \\emph{before} doing anything else.\n\\end{itemize}\n\nOn the Bluebook Desmos calculator you can type both equations and read the intersection point straight off the graph -- fast and reliable for messy numbers. For questions with a parameter such as $k$, algebra is still faster than graphing, because the ratio test answers them in one line."
+      },
+      {
+        "kind": "section",
+        "title": "Building a system from words",
+        "body": "Nearly every SAT system word problem has two unknowns and two facts. One fact usually counts objects and the other counts money, distance or amount.\n\n\\begin{itemize}\n\\item \\emph{Tickets}: $a + c = \\text{total tickets}$ and $12a + 8c = \\text{total dollars}$.\n\\item \\emph{Mixture}: $x + y = \\text{total volume}$ and $0.10x + 0.30y = \\text{total acid}$.\n\\item \\emph{Two plans}: set the two cost expressions equal to find when they match.\n\\item \\emph{Upstream and downstream}: the effective speeds are $b + c$ and $b - c$.\n\\end{itemize}\n\nDefine your variables in writing, with units. \"$a$ = number of adult tickets\" prevents the wrong-variable error at the end."
+      },
+      {
+        "kind": "worked",
+        "title": "Worked example -- a word problem",
+        "body": "A shop sells notebooks for $\\$4$ and folders for $\\$3$. A customer buys $10$ items and pays $\\$34$. How many notebooks did the customer buy?\n\nLet $n$ be the number of notebooks and $f$ the number of folders. Counting items gives $n + f = 10$; counting money gives $4n + 3f = 34$. Substituting $f = 10 - n$:\n\\[4n + 3(10 - n) = 34 \\;\\Longrightarrow\\; n + 30 = 34 \\;\\Longrightarrow\\; n = 4.\\]\nSo the customer bought $4$ notebooks and $6$ folders. Check: $4(4) + 3(6) = 16 + 18 = 34$.\n\nThe structure is worth remembering: if all $10$ items were folders the bill would be $\\$30$, and each notebook adds $\\$1$ to that baseline, so the $\\$4$ excess means $4$ notebooks."
+      }
+    ]
+  },
+  "problems": [
+    {
+      "id": "T04-M1-01",
+      "module": 1,
+      "n": 1,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Substitution and elimination",
+      "stem": "In the system shown, what is the value of $x$?\\[\\begin{cases}y = 2x\\\\3x + y = 20\\end{cases}\\]",
+      "choices": [
+        "$4$",
+        "$5$",
+        "$8$",
+        "$20$"
+      ],
+      "answer": "A",
+      "solution": "The first equation already gives $y$ in terms of $x$, so substitution is the fastest route: replacing $y$ by $2x$ turns a two-variable system into a one-variable equation. Once $x=4$ is known, $y=8$ follows, but the question asked only for $x$.",
+      "steps": [
+        "Substitute $y = 2x$ into $3x + y = 20$: $3x + 2x = 20$.",
+        "Combine like terms: $5x = 20$, so $x = 4$."
+      ],
+      "verify": "x, y = symbols('x y')\nsol = solve([Eq(y, 2*x), Eq(3*x + y, 20)], [x, y])\nresult = sol[x]"
+    },
+    {
+      "id": "T04-M1-02",
+      "module": 1,
+      "n": 2,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Substitution and elimination",
+      "stem": "What is the value of $x$ in the system below?\\[\\begin{cases}x + y = 10\\\\x - y = 4\\end{cases}\\]",
+      "choices": [
+        "$3$",
+        "$5$",
+        "$7$",
+        "$14$"
+      ],
+      "answer": "C",
+      "solution": "When the same variable appears with opposite coefficients, adding the equations eliminates it in one line. The $y$ terms cancel, leaving $2x = 14$. The value $3$ is $y$, the variable the question did not ask about.",
+      "steps": [
+        "Add the two equations: $(x+y)+(x-y) = 10 + 4$.",
+        "The $y$ terms cancel: $2x = 14$, so $x = 7$."
+      ],
+      "verify": "x, y = symbols('x y')\nsol = solve([Eq(x + y, 10), Eq(x - y, 4)], [x, y])\nresult = sol[x]"
+    },
+    {
+      "id": "T04-M1-03",
+      "module": 1,
+      "n": 3,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Substitution and elimination",
+      "stem": "If $x + y = 12$ and $2x + y = 17$, what is the value of $y$?",
+      "answer": "7",
+      "solution": "Subtracting the first equation from the second removes $y$ immediately, because both equations carry exactly one $y$. That gives $x=5$, and back-substitution gives $y=7$.",
+      "steps": [
+        "Subtract: $(2x+y)-(x+y) = 17-12$, so $x = 5$.",
+        "Substitute into $x + y = 12$: $5 + y = 12$, so $y = 7$."
+      ],
+      "verify": "x, y = symbols('x y')\nsol = solve([Eq(x + y, 12), Eq(2*x + y, 17)], [x, y])\nresult = sol[y]"
+    },
+    {
+      "id": "T04-M1-04",
+      "module": 1,
+      "n": 4,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Substitution and elimination",
+      "stem": "The system below has exactly one solution $(x, y)$. What is the value of $y$?\\[\\begin{cases}y = x + 3\\\\y = 2x - 1\\end{cases}\\]",
+      "choices": [
+        "$4$",
+        "$5$",
+        "$7$",
+        "$11$"
+      ],
+      "answer": "C",
+      "solution": "Two expressions equal to the same $y$ must be equal to each other. Setting them equal gives $x=4$; substituting back into either equation gives $y=7$. Stopping at $x=4$ is the standard error here.",
+      "steps": [
+        "Set the two expressions for $y$ equal: $x + 3 = 2x - 1$.",
+        "Solve: $4 = x$.",
+        "Substitute into $y = x + 3$: $y = 7$."
+      ],
+      "verify": "x, y = symbols('x y')\nsol = solve([Eq(y, x + 3), Eq(y, 2*x - 1)], [x, y])\nresult = sol[y]"
+    },
+    {
+      "id": "T04-M1-05",
+      "module": 1,
+      "n": 5,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Substitution and elimination",
+      "stem": "For the solution $(x, y)$ of the system shown, what is the value of $x + y$?\\[\\begin{cases}4x + y = 17\\\\y = x + 2\\end{cases}\\]",
+      "choices": [
+        "$2$",
+        "$3$",
+        "$5$",
+        "$8$"
+      ],
+      "answer": "D",
+      "solution": "The SAT often asks for a combination rather than for a single variable. Solve the system fully, then build what was asked: $x=3$ and $y=5$ give $x+y=8$. Answering $3$ or $5$ means answering a question that was not posed.",
+      "steps": [
+        "Substitute $y = x + 2$ into $4x + y = 17$: $4x + x + 2 = 17$.",
+        "Solve: $5x = 15$, so $x = 3$ and $y = 5$.",
+        "Therefore $x + y = 8$."
+      ],
+      "verify": "x, y = symbols('x y')\nsol = solve([Eq(4*x + y, 17), Eq(y, x + 2)], [x, y])\nresult = sol[x] + sol[y]"
+    },
+    {
+      "id": "T04-M1-06",
+      "module": 1,
+      "n": 6,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Substitution and elimination",
+      "stem": "What is the value of $y$ in the system below?\\[\\begin{cases}2x + y = 7\\\\3x - y = 8\\end{cases}\\]",
+      "choices": [
+        "$-1$",
+        "$1$",
+        "$2$",
+        "$3$"
+      ],
+      "answer": "B",
+      "solution": "The coefficients of $y$ are $+1$ and $-1$, so adding the equations kills $y$ at once and gives $x=3$. The question, though, asks for $y$: substitute back to get $y = 7 - 6 = 1$.",
+      "steps": [
+        "Add the equations: $5x = 15$, so $x = 3$.",
+        "Substitute into $2x + y = 7$: $6 + y = 7$, so $y = 1$."
+      ],
+      "verify": "x, y = symbols('x y')\nsol = solve([Eq(2*x + y, 7), Eq(3*x - y, 8)], [x, y])\nresult = sol[y]"
+    },
+    {
+      "id": "T04-M1-07",
+      "module": 1,
+      "n": 7,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "System word problems",
+      "stem": "A theater sells adult tickets for $\\$12$ each and child tickets for $\\$8$ each. On one evening the theater sold $24$ tickets and collected $\\$232$. How many adult tickets were sold?",
+      "answer": "10",
+      "solution": "Two unknowns need two equations: one counting tickets and one counting dollars. The count equation is the easy one to substitute with, since $c = 24 - a$ has no fractions.",
+      "steps": [
+        "Let $a$ be adult tickets and $c$ child tickets: $a + c = 24$ and $12a + 8c = 232$.",
+        "Substitute $c = 24 - a$: $12a + 8(24-a) = 232$.",
+        "Simplify: $4a + 192 = 232$, so $a = 10$."
+      ],
+      "verify": "a, c = symbols('a c')\nsol = solve([Eq(a + c, 24), Eq(12*a + 8*c, 232)], [a, c])\nresult = sol[a]"
+    },
+    {
+      "id": "T04-M1-08",
+      "module": 1,
+      "n": 8,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Substitution and elimination",
+      "stem": "What is the value of $y$ in the system below?\\[\\begin{cases}3x + 2y = 16\\\\5x - 4y = -10\\end{cases}\\]",
+      "choices": [
+        "$2$",
+        "$5$",
+        "$7$",
+        "$11$"
+      ],
+      "answer": "B",
+      "solution": "Neither variable cancels as written, so scale first: doubling the top equation makes the $y$ coefficients $+4$ and $-4$. Adding then gives $x = 2$, and substituting back gives $y = 5$.",
+      "steps": [
+        "Multiply the first equation by $2$: $6x + 4y = 32$.",
+        "Add to $5x - 4y = -10$: $11x = 22$, so $x = 2$.",
+        "Substitute into $3x + 2y = 16$: $6 + 2y = 16$, so $y = 5$."
+      ],
+      "verify": "x, y = symbols('x y')\nsol = solve([Eq(3*x + 2*y, 16), Eq(5*x - 4*y, -10)], [x, y])\nresult = sol[y]"
+    },
+    {
+      "id": "T04-M1-09",
+      "module": 1,
+      "n": 9,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Substitution and elimination",
+      "stem": "If $2x - 3y = 5$ and $4x + 3y = 19$, what is the value of $x + y$?",
+      "answer": "5",
+      "solution": "The $y$ coefficients are already opposites, so no scaling is needed: adding gives $6x = 24$. Solve for both variables and then form the requested sum.",
+      "steps": [
+        "Add the equations: $6x = 24$, so $x = 4$.",
+        "Substitute into $2x - 3y = 5$: $8 - 3y = 5$, so $y = 1$.",
+        "Therefore $x + y = 5$."
+      ],
+      "verify": "x, y = symbols('x y')\nsol = solve([Eq(2*x - 3*y, 5), Eq(4*x + 3*y, 19)], [x, y])\nresult = sol[x] + sol[y]"
+    },
+    {
+      "id": "T04-M1-10",
+      "module": 1,
+      "n": 10,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Substitution and elimination",
+      "stem": "The ordered pair $(x, y)$ is the solution to the system shown. What is the value of $2x - y$?\\[\\begin{cases}3x + 2y = 19\\\\x - 2y = -7\\end{cases}\\]",
+      "choices": [
+        "$1$",
+        "$3$",
+        "$5$",
+        "$11$"
+      ],
+      "answer": "A",
+      "solution": "Adding eliminates $y$ and gives $x = 3$; back-substitution gives $y = 5$. The requested expression is $2x - y = 6 - 5 = 1$. Choice D is what you get if you compute $2x + y$ instead.",
+      "steps": [
+        "Add the equations: $4x = 12$, so $x = 3$.",
+        "Substitute into $x - 2y = -7$: $3 - 2y = -7$, so $y = 5$.",
+        "Therefore $2x - y = 6 - 5 = 1$."
+      ],
+      "verify": "x, y = symbols('x y')\nsol = solve([Eq(3*x + 2*y, 19), Eq(x - 2*y, -7)], [x, y])\nresult = 2*sol[x] - sol[y]"
+    },
+    {
+      "id": "T04-M1-11",
+      "module": 1,
+      "n": 11,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Number of solutions",
+      "stem": "For what value of $k$ does the system below have infinitely many solutions?\\[\\begin{cases}kx + 6y = 10\\\\2x + 3y = 5\\end{cases}\\]",
+      "choices": [
+        "$2$",
+        "$3$",
+        "$4$",
+        "$6$"
+      ],
+      "answer": "C",
+      "solution": "Infinitely many solutions means the two equations describe the same line, so one must be a constant multiple of the other. Comparing the $y$ terms, $6 = 2 \\cdot 3$, and the constants agree as well, $10 = 2 \\cdot 5$; so the multiplier is $2$ and $k = 2 \\cdot 2 = 4$.",
+      "steps": [
+        "For one line to be a multiple of the other, compare $y$ terms: $6 \\div 3 = 2$.",
+        "Check the constants: $10 \\div 5 = 2$, the same multiplier.",
+        "So the $x$ terms must also match: $k = 2 \\cdot 2 = 4$."
+      ],
+      "verify": "k = symbols('k')\nresult = solve(Eq(k/2, S(6)/3), k)[0]"
+    },
+    {
+      "id": "T04-M1-12",
+      "module": 1,
+      "n": 12,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Number of solutions",
+      "stem": "The system below has no solution. What is the value of $k$?\\[\\begin{cases}6x + ky = 9\\\\2x + 5y = 4\\end{cases}\\]",
+      "choices": [
+        "$\\frac{5}{3}$",
+        "$3$",
+        "$10$",
+        "$15$"
+      ],
+      "answer": "D",
+      "solution": "No solution means parallel but distinct lines: the coefficients are proportional while the constants are not. From $6 \\div 2 = 3$ the multiplier is $3$, so $k = 3 \\cdot 5 = 15$; and since $9 \\neq 3 \\cdot 4$, the lines really are distinct.",
+      "steps": [
+        "Compare the $x$ terms: $6 \\div 2 = 3$.",
+        "For parallel lines the $y$ terms must scale the same way: $k = 3 \\cdot 5 = 15$.",
+        "Check the constants: $3 \\cdot 4 = 12 \\neq 9$, so there is indeed no solution."
+      ],
+      "verify": "k = symbols('k')\nresult = solve(Eq(S(6)/2, k/5), k)[0]"
+    },
+    {
+      "id": "T04-M1-13",
+      "module": 1,
+      "n": 13,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "System word problems",
+      "stem": "At a school store a pen costs $\\$2$ and a notebook costs $\\$5$. Maria buys $12$ items in total and pays $\\$39$. How many notebooks does she buy?",
+      "choices": [
+        "$3$",
+        "$5$",
+        "$7$",
+        "$12$"
+      ],
+      "answer": "B",
+      "solution": "Let $p$ and $n$ be the numbers of pens and notebooks. The count equation $p + n = 12$ substitutes cleanly into the cost equation. Notice the answer $7$ is the number of pens: label your variables before you answer.",
+      "steps": [
+        "Write the system: $p + n = 12$ and $2p + 5n = 39$.",
+        "Substitute $p = 12 - n$: $2(12-n) + 5n = 39$.",
+        "Simplify: $24 + 3n = 39$, so $n = 5$."
+      ],
+      "verify": "p, n = symbols('p n')\nsol = solve([Eq(p + n, 12), Eq(2*p + 5*n, 39)], [p, n])\nresult = sol[n]"
+    },
+    {
+      "id": "T04-M1-14",
+      "module": 1,
+      "n": 14,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "System word problems",
+      "stem": "Two cars start at the same time from points $300$ miles apart and drive toward each other along a straight road. They meet after $3$ hours. One car travels $20$ miles per hour faster than the other. What is the speed, in miles per hour, of the faster car?",
+      "choices": [
+        "$40$",
+        "$50$",
+        "$60$",
+        "$80$"
+      ],
+      "answer": "C",
+      "solution": "In $3$ hours the two cars together cover $300$ miles, so the sum of their speeds is $100$ mph. With the difference of the speeds given as $20$, the sum-and-difference system solves in one step. Choice A is the slower car.",
+      "steps": [
+        "Combined speed: $300 \\div 3 = 100$, so $r + s = 100$.",
+        "The faster car satisfies $r = s + 20$.",
+        "Substitute: $s + 20 + s = 100$, so $s = 40$ and $r = 60$."
+      ],
+      "verify": "r, s = symbols('r s')\nsol = solve([Eq(r + s, 100), Eq(r, s + 20)], [r, s])\nresult = sol[r]"
+    },
+    {
+      "id": "T04-M1-15",
+      "module": 1,
+      "n": 15,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Substitution and elimination",
+      "stem": "If $5x + 2y = 2$ and $3x - 2y = 14$, what is the value of $x - y$?",
+      "answer": "6",
+      "solution": "The $y$ terms are already opposites, so adding gives $8x = 16$ and $x = 2$. Then $y = -4$, and the requested difference is $2 - (-4) = 6$ -- subtracting a negative is where this item is usually lost.",
+      "steps": [
+        "Add the equations: $8x = 16$, so $x = 2$.",
+        "Substitute into $5x + 2y = 2$: $10 + 2y = 2$, so $y = -4$.",
+        "Therefore $x - y = 2 - (-4) = 6$."
+      ],
+      "verify": "x, y = symbols('x y')\nsol = solve([Eq(5*x + 2*y, 2), Eq(3*x - 2*y, 14)], [x, y])\nresult = sol[x] - sol[y]"
+    },
+    {
+      "id": "T04-M1-16",
+      "module": 1,
+      "n": 16,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Substitution and elimination",
+      "stem": "What is the value of $y$ in the system below?\\[\\begin{cases}\\frac{x}{2} + \\frac{y}{3} = 4\\\\x - y = 3\\end{cases}\\]",
+      "choices": [
+        "$3$",
+        "$6$",
+        "$9$",
+        "$12$"
+      ],
+      "answer": "A",
+      "solution": "Clear the fractions first: multiplying by the common denominator $6$ turns the top equation into $3x + 2y = 24$. Then substitute $x = y + 3$ to get $5y + 9 = 24$, so $y = 3$ and $x = 6$. Choice B is $x$.",
+      "steps": [
+        "Multiply the first equation by $6$: $3x + 2y = 24$.",
+        "From the second equation, $x = y + 3$.",
+        "Substitute: $3(y+3) + 2y = 24$, so $5y = 15$ and $y = 3$."
+      ],
+      "verify": "x, y = symbols('x y')\nsol = solve([Eq(x/2 + y/3, 4), Eq(x - y, 3)], [x, y])\nresult = sol[y]"
+    },
+    {
+      "id": "T04-M1-17",
+      "module": 1,
+      "n": 17,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Substitution and elimination",
+      "stem": "If $4x + 7y = 17$ and $7x + 4y = 27$, what is the value of $x + y$?",
+      "choices": [
+        "$2$",
+        "$4$",
+        "$11$",
+        "$44$"
+      ],
+      "answer": "B",
+      "solution": "When the coefficients are swapped between the two equations, adding them produces a multiple of $x + y$ directly -- no need to find $x$ and $y$ separately. Here $11x + 11y = 44$, so $x + y = 4$. Choice D is the sum before dividing by $11$.",
+      "steps": [
+        "Add the equations: $11x + 11y = 44$.",
+        "Factor: $11(x + y) = 44$.",
+        "Divide by $11$: $x + y = 4$."
+      ],
+      "verify": "x, y = symbols('x y')\nsol = solve([Eq(4*x + 7*y, 17), Eq(7*x + 4*y, 27)], [x, y])\nresult = sol[x] + sol[y]"
+    },
+    {
+      "id": "T04-M1-18",
+      "module": 1,
+      "n": 18,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Number of solutions",
+      "stem": "The system $ax + 4y = 10$ and $3x + 6y = 12$ has no solution. What is the value of $a$?",
+      "answer": "2",
+      "solution": "Parallel distinct lines have equal slopes. Matching the ratio of the $x$ terms to the ratio of the $y$ terms gives $a/3 = 4/6$, so $a = 2$; the constants $10$ and $12$ are not in that same ratio, which is exactly why no solution exists.",
+      "steps": [
+        "Set the coefficient ratios equal: $\\dfrac{a}{3} = \\dfrac{4}{6}$.",
+        "Solve: $a = 3 \\cdot \\dfrac{2}{3} = 2$.",
+        "Check: $\\dfrac{10}{12} \\neq \\dfrac{2}{3}$, so the lines are parallel and distinct."
+      ],
+      "verify": "a = symbols('a')\nresult = solve(Eq(a/3, S(4)/6), a)[0]"
+    },
+    {
+      "id": "T04-M1-19",
+      "module": 1,
+      "n": 19,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "System word problems",
+      "stem": "A chemist mixes a $10\\%$ acid solution with a $30\\%$ acid solution to make $20$ liters of a $25\\%$ acid solution. How many liters of the $30\\%$ solution are used?",
+      "choices": [
+        "$5$",
+        "$10$",
+        "$12$",
+        "$15$"
+      ],
+      "answer": "D",
+      "solution": "One equation tracks total volume and the other tracks total acid. The acid equation is $0.10x + 0.30y = 0.25(20) = 5$. Solving gives $x = 5$ and $y = 15$; choice A is the amount of the weak solution, the classic wrong-variable trap.",
+      "steps": [
+        "Let $x$ and $y$ be the liters of $10\\%$ and $30\\%$ solution: $x + y = 20$.",
+        "Acid: $0.10x + 0.30y = 0.25(20) = 5$.",
+        "Substitute $x = 20 - y$: $2 + 0.20y = 5$, so $y = 15$."
+      ],
+      "verify": "x, y = symbols('x y')\nsol = solve([Eq(x + y, 20), Eq(S(1)/10*x + S(3)/10*y, 5)], [x, y])\nresult = sol[y]"
+    },
+    {
+      "id": "T04-M1-20",
+      "module": 1,
+      "n": 20,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Number of solutions",
+      "stem": "Which of the following statements about the system $2x - 5y = 8$ and $-4x + 10y = -16$ is true?",
+      "choices": [
+        "The system has no solution.",
+        "The system has exactly one solution.",
+        "The system has exactly two solutions.",
+        "The system has infinitely many solutions."
+      ],
+      "wide": true,
+      "answer": "D",
+      "solution": "Multiplying the first equation by $-2$ reproduces the second equation exactly, so the two equations graph as the same line and every point on it is a solution. A system of two linear equations can never have exactly two solutions, which rules out choice C outright.",
+      "steps": [
+        "Multiply $2x - 5y = 8$ by $-2$: $-4x + 10y = -16$.",
+        "That is precisely the second equation.",
+        "The equations describe one line, so every point on it solves the system."
+      ],
+      "verify": "a1, b1, c1 = 2, -5, 8\na2, b2, c2 = -4, 10, -16\ndet = a1*b2 - a2*b1\nif det != 0:\n    result = \"The system has exactly one solution.\"\nelif a1*c2 - a2*c1 == 0:\n    result = \"The system has infinitely many solutions.\"\nelse:\n    result = \"The system has no solution.\""
+    },
+    {
+      "id": "T04-M1-21",
+      "module": 1,
+      "n": 21,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Substitution and elimination",
+      "stem": "If $5x + 3y = 29$ and $3x + 5y = 27$, what is the value of $x - y$?",
+      "answer": "1",
+      "solution": "Subtracting the second equation from the first gives $2x - 2y = 2$, which is $2(x-y)$. The combination the question asks for appears without ever computing $x$ or $y$ on their own -- always check whether the requested expression is a shortcut away.",
+      "steps": [
+        "Subtract: $(5x+3y)-(3x+5y) = 29 - 27$.",
+        "Simplify: $2x - 2y = 2$, so $2(x-y) = 2$.",
+        "Divide by $2$: $x - y = 1$."
+      ],
+      "verify": "x, y = symbols('x y')\nsol = solve([Eq(5*x + 3*y, 29), Eq(3*x + 5*y, 27)], [x, y])\nresult = sol[x] - sol[y]"
+    },
+    {
+      "id": "T04-M1-22",
+      "module": 1,
+      "n": 22,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Number of solutions",
+      "stem": "For what value of $c$ does the system below have infinitely many solutions?\\[\\begin{cases}4x - 6y = 10\\\\-2x + 3y = c\\end{cases}\\]",
+      "choices": [
+        "$-10$",
+        "$-5$",
+        "$5$",
+        "$10$"
+      ],
+      "answer": "B",
+      "solution": "The first equation is $-2$ times the left side of the second, so the two are the same line only when the constants obey the same factor: $10 = -2c$, giving $c = -5$. Forgetting the negative sign produces choice C.",
+      "steps": [
+        "Compare the $x$ terms: $4 \\div (-2) = -2$.",
+        "The same multiplier must work on the constants: $10 = -2c$.",
+        "Solve: $c = -5$."
+      ],
+      "verify": "c = symbols('c')\nresult = solve(Eq(c/10, S(-2)/4), c)[0]"
+    },
+    {
+      "id": "T04-M2-01",
+      "module": 2,
+      "n": 23,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Substitution and elimination",
+      "stem": "The system shown has solution $(x, y)$. What is the value of $x + y$?\\[\\begin{cases}y = 4x - 1\\\\y = 2x + 7\\end{cases}\\]",
+      "choices": [
+        "$4$",
+        "$15$",
+        "$19$",
+        "$23$"
+      ],
+      "answer": "C",
+      "solution": "Both equations are solved for $y$, so set the right sides equal: $4x - 1 = 2x + 7$ gives $x = 4$ and then $y = 15$. The question asks for the sum, $19$; choices A and B are the individual coordinates.",
+      "steps": [
+        "Set the expressions equal: $4x - 1 = 2x + 7$.",
+        "Solve: $2x = 8$, so $x = 4$.",
+        "Then $y = 2(4) + 7 = 15$, so $x + y = 19$."
+      ],
+      "verify": "x, y = symbols('x y')\nsol = solve([Eq(y, 4*x - 1), Eq(y, 2*x + 7)], [x, y])\nresult = sol[x] + sol[y]"
+    },
+    {
+      "id": "T04-M2-02",
+      "module": 2,
+      "n": 24,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Substitution and elimination",
+      "stem": "What is the value of $y$ in the system below?\\[\\begin{cases}2x + 5y = 19\\\\4x - 5y = -7\\end{cases}\\]",
+      "choices": [
+        "$2$",
+        "$3$",
+        "$5$",
+        "$19$"
+      ],
+      "answer": "B",
+      "solution": "The $y$ coefficients are exact opposites, so adding the equations eliminates $y$ and gives $x = 2$. Substituting back gives $5y = 15$, so $y = 3$; choice A is $x$.",
+      "steps": [
+        "Add the equations: $6x = 12$, so $x = 2$.",
+        "Substitute into $2x + 5y = 19$: $4 + 5y = 19$.",
+        "Solve: $5y = 15$, so $y = 3$."
+      ],
+      "verify": "x, y = symbols('x y')\nsol = solve([Eq(2*x + 5*y, 19), Eq(4*x - 5*y, -7)], [x, y])\nresult = sol[y]"
+    },
+    {
+      "id": "T04-M2-03",
+      "module": 2,
+      "n": 25,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "System word problems",
+      "stem": "A concert sold student tickets for $\\$9$ each and adult tickets for $\\$15$ each. A total of $40$ tickets were sold for $\\$456$. How many adult tickets were sold?",
+      "answer": "16",
+      "solution": "Substituting $s = 40 - a$ into the money equation is the efficient move: the $\\$9$ baseline accounts for $\\$360$, and every adult ticket adds $\\$6$ more than a student ticket does.",
+      "steps": [
+        "Let $s$ and $a$ be student and adult tickets: $s + a = 40$.",
+        "Money: $9s + 15a = 456$; substitute $s = 40 - a$.",
+        "$360 + 6a = 456$, so $a = 16$."
+      ],
+      "verify": "s, a = symbols('s a')\nsol = solve([Eq(s + a, 40), Eq(9*s + 15*a, 456)], [s, a])\nresult = sol[a]"
+    },
+    {
+      "id": "T04-M2-04",
+      "module": 2,
+      "n": 26,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Substitution and elimination",
+      "stem": "If $(x, y)$ satisfies $7x + 3y = 27$ and $2x + 3y = 12$, what is the value of $2x - y$?",
+      "choices": [
+        "$2$",
+        "$3$",
+        "$4$",
+        "$8$"
+      ],
+      "answer": "C",
+      "solution": "Both equations carry $3y$, so subtracting removes $y$ at once: $5x = 15$. With $x = 3$ and $y = 2$, the requested expression is $6 - 2 = 4$. Choice D is $2x + y$, the sign-slip answer.",
+      "steps": [
+        "Subtract the second equation from the first: $5x = 15$, so $x = 3$.",
+        "Substitute into $2x + 3y = 12$: $6 + 3y = 12$, so $y = 2$.",
+        "Therefore $2x - y = 6 - 2 = 4$."
+      ],
+      "verify": "x, y = symbols('x y')\nsol = solve([Eq(7*x + 3*y, 27), Eq(2*x + 3*y, 12)], [x, y])\nresult = 2*sol[x] - sol[y]"
+    },
+    {
+      "id": "T04-M2-05",
+      "module": 2,
+      "n": 27,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Number of solutions",
+      "stem": "The system $8x + ky = 12$ and $2x + 5y = 7$ has no solution. What is the value of $k$?",
+      "choices": [
+        "$-20$",
+        "$-5$",
+        "$5$",
+        "$20$"
+      ],
+      "answer": "D",
+      "solution": "No solution means the lines are parallel, so the coefficients scale by the same factor: $8 \\div 2 = 4$ forces $k = 4 \\cdot 5 = 20$. Since $12 \\neq 4 \\cdot 7$, the lines are distinct, confirming there is truly no solution.",
+      "steps": [
+        "Compare the $x$ terms: $8 \\div 2 = 4$.",
+        "Apply the same factor to the $y$ terms: $k = 4 \\cdot 5 = 20$.",
+        "Check the constants: $4 \\cdot 7 = 28 \\neq 12$, so the lines never meet."
+      ],
+      "verify": "k = symbols('k')\nresult = solve(Eq(S(8)/2, k/5), k)[0]"
+    },
+    {
+      "id": "T04-M2-06",
+      "module": 2,
+      "n": 28,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Substitution and elimination",
+      "stem": "The graphs of $y = -2x + 9$ and $y = x - 3$ intersect at the point $(x, y)$. What is the value of $x + 2y$?",
+      "choices": [
+        "$4$",
+        "$5$",
+        "$6$",
+        "$9$"
+      ],
+      "answer": "C",
+      "solution": "An intersection point is exactly a solution of the system, so set the two expressions for $y$ equal. That gives $x = 4$ and $y = 1$, so $x + 2y = 6$. Choice A is $x$ alone and choice B is $x + y$.",
+      "steps": [
+        "Set $-2x + 9 = x - 3$.",
+        "Solve: $12 = 3x$, so $x = 4$ and $y = 1$.",
+        "Therefore $x + 2y = 4 + 2 = 6$."
+      ],
+      "verify": "x, y = symbols('x y')\nsol = solve([Eq(y, -2*x + 9), Eq(y, x - 3)], [x, y])\nresult = sol[x] + 2*sol[y]"
+    },
+    {
+      "id": "T04-M2-07",
+      "module": 2,
+      "n": 29,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "System word problems",
+      "stem": "A bakery sells muffins for $\\$3$ each and scones for $\\$4$ each. One morning it sold $25$ of these items for a total of $\\$87$. How many muffins did it sell?",
+      "choices": [
+        "$10$",
+        "$11$",
+        "$12$",
+        "$13$"
+      ],
+      "answer": "D",
+      "solution": "If all $25$ items were muffins the total would be $\\$75$; each scone adds $\\$1$, so there were $12$ scones and therefore $13$ muffins. Choice C is the number of scones -- the count the question did not ask for.",
+      "steps": [
+        "Let $m$ and $s$ be muffins and scones: $m + s = 25$ and $3m + 4s = 87$.",
+        "Substitute $m = 25 - s$: $75 + s = 87$, so $s = 12$.",
+        "Therefore $m = 25 - 12 = 13$."
+      ],
+      "verify": "m, s = symbols('m s')\nsol = solve([Eq(m + s, 25), Eq(3*m + 4*s, 87)], [m, s])\nresult = sol[m]"
+    },
+    {
+      "id": "T04-M2-08",
+      "module": 2,
+      "n": 30,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Substitution and elimination",
+      "stem": "What is the value of $y$ in the system below?\\[\\begin{cases}0.5x + 0.2y = 2.6\\\\x - y = 1\\end{cases}\\]",
+      "choices": [
+        "$1$",
+        "$3$",
+        "$4$",
+        "$7$"
+      ],
+      "answer": "B",
+      "solution": "Multiply the first equation by $10$ to clear decimals: $5x + 2y = 26$. Substituting $x = y + 1$ gives $7y + 5 = 26$, so $y = 3$ and $x = 4$. Choice C is $x$; choice D is $x + y$.",
+      "steps": [
+        "Multiply the first equation by $10$: $5x + 2y = 26$.",
+        "From the second equation, $x = y + 1$.",
+        "Substitute: $5(y+1) + 2y = 26$, so $7y = 21$ and $y = 3$."
+      ],
+      "verify": "x, y = symbols('x y')\nsol = solve([Eq(S(1)/2*x + S(1)/5*y, S(13)/5), Eq(x - y, 1)], [x, y])\nresult = sol[y]"
+    },
+    {
+      "id": "T04-M2-09",
+      "module": 2,
+      "n": 31,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Substitution and elimination",
+      "stem": "If $5x + 4y = 6$ and $3x + 2y = 4$, what is the value of $x - y$?",
+      "answer": "3",
+      "solution": "Doubling the second equation matches its $y$ term to the first, so subtracting eliminates $y$ and leaves $x = 2$. Then $y = -1$, and $x - y = 2 - (-1) = 3$.",
+      "steps": [
+        "Double the second equation: $6x + 4y = 8$.",
+        "Subtract the first: $x = 2$.",
+        "Then $3(2) + 2y = 4$ gives $y = -1$, so $x - y = 3$."
+      ],
+      "verify": "x, y = symbols('x y')\nsol = solve([Eq(5*x + 4*y, 6), Eq(3*x + 2*y, 4)], [x, y])\nresult = sol[x] - sol[y]"
+    },
+    {
+      "id": "T04-M2-10",
+      "module": 2,
+      "n": 32,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Number of solutions",
+      "stem": "In the system $2x + 3y = 7$ and $6x + 9y = c$, $c$ is a constant. For what value of $c$ does the system have infinitely many solutions?",
+      "choices": [
+        "$7$",
+        "$14$",
+        "$21$",
+        "$63$"
+      ],
+      "answer": "C",
+      "solution": "The second left side is exactly $3$ times the first, so the equations agree only when the constants share that factor: $c = 3 \\cdot 7 = 21$. For any other $c$ the lines are parallel and there is no solution at all.",
+      "steps": [
+        "Note $6x + 9y = 3(2x + 3y)$.",
+        "Since $2x + 3y = 7$, the second equation reads $3(7) = c$.",
+        "So $c = 21$."
+      ],
+      "verify": "c = symbols('c')\nresult = solve(Eq(c/7, S(6)/2), c)[0]"
+    },
+    {
+      "id": "T04-M2-11",
+      "module": 2,
+      "n": 33,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "System word problems",
+      "stem": "A museum charges $\\$8$ for an adult ticket and $\\$5$ for a child ticket. On Saturday it sold $90$ tickets and collected $\\$600$. How many child tickets were sold?",
+      "choices": [
+        "$20$",
+        "$30$",
+        "$40$",
+        "$50$"
+      ],
+      "answer": "C",
+      "solution": "If all $90$ tickets were child tickets the museum would collect $\\$450$; each adult ticket adds $\\$3$, so $150 \\div 3 = 50$ adults and $40$ children. Choice D is the number of adults.",
+      "steps": [
+        "Let $a$ and $c$ be adult and child tickets: $a + c = 90$ and $8a + 5c = 600$.",
+        "Substitute $c = 90 - a$: $450 + 3a = 600$, so $a = 50$.",
+        "Therefore $c = 90 - 50 = 40$."
+      ],
+      "verify": "a, c = symbols('a c')\nsol = solve([Eq(a + c, 90), Eq(8*a + 5*c, 600)], [a, c])\nresult = sol[c]"
+    },
+    {
+      "id": "T04-M2-12",
+      "module": 2,
+      "n": 34,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Substitution and elimination",
+      "stem": "If $4x + y = 13$ and $2x + 3y = 9$, what is the value of $3x + 2y$?",
+      "answer": "11",
+      "solution": "Solve the system once, then assemble the requested expression. Substituting $y = 13 - 4x$ gives $x = 3$ and $y = 1$, so $3x + 2y = 9 + 2 = 11$.",
+      "steps": [
+        "From the first equation, $y = 13 - 4x$.",
+        "Substitute: $2x + 3(13-4x) = 9$, so $-10x = -30$ and $x = 3$.",
+        "Then $y = 1$, so $3x + 2y = 9 + 2 = 11$."
+      ],
+      "verify": "x, y = symbols('x y')\nsol = solve([Eq(4*x + y, 13), Eq(2*x + 3*y, 9)], [x, y])\nresult = 3*sol[x] + 2*sol[y]"
+    },
+    {
+      "id": "T04-M2-13",
+      "module": 2,
+      "n": 35,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "System word problems",
+      "stem": "Gym A charges a $\\$40$ registration fee plus $\\$15$ per month. Gym B charges a $\\$10$ registration fee plus $\\$20$ per month. After how many months will the two gyms have cost the same total amount?",
+      "choices": [
+        "$2$",
+        "$5$",
+        "$6$",
+        "$10$"
+      ],
+      "answer": "C",
+      "solution": "Write a cost equation for each gym and set them equal -- the point where two linear models agree is the solution of the system. The $\\$30$ head start of Gym B is erased at $\\$5$ per month, so it takes $6$ months.",
+      "steps": [
+        "Gym A: $C = 40 + 15m$. Gym B: $C = 10 + 20m$.",
+        "Set equal: $40 + 15m = 10 + 20m$.",
+        "Solve: $30 = 5m$, so $m = 6$."
+      ],
+      "verify": "m, C = symbols('m C')\nsol = solve([Eq(C, 40 + 15*m), Eq(C, 10 + 20*m)], [m, C])\nresult = sol[m]"
+    },
+    {
+      "id": "T04-M2-14",
+      "module": 2,
+      "n": 36,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Substitution and elimination",
+      "stem": "If $3(x + y) = 15$ and $2x - y = 4$, what is the value of $2y - x$?",
+      "choices": [
+        "$1$",
+        "$3$",
+        "$5$",
+        "$7$"
+      ],
+      "answer": "A",
+      "solution": "Divide the first equation by $3$ to get the far friendlier $x + y = 5$; adding it to $2x - y = 4$ gives $3x = 9$. With $x = 3$ and $y = 2$, the requested value is $4 - 3 = 1$. Choice D is $2y + x$.",
+      "steps": [
+        "Divide the first equation by $3$: $x + y = 5$.",
+        "Add $2x - y = 4$: $3x = 9$, so $x = 3$ and $y = 2$.",
+        "Therefore $2y - x = 4 - 3 = 1$."
+      ],
+      "verify": "x, y = symbols('x y')\nsol = solve([Eq(3*(x + y), 15), Eq(2*x - y, 4)], [x, y])\nresult = 2*sol[y] - sol[x]"
+    },
+    {
+      "id": "T04-M2-15",
+      "module": 2,
+      "n": 37,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "System word problems",
+      "stem": "A boat travels $24$ miles downstream in $2$ hours and the same $24$ miles upstream in $3$ hours. What is the speed of the current, in miles per hour?",
+      "answer": "2",
+      "solution": "Downstream the current helps and upstream it hinders, so the effective speeds are $b + c$ and $b - c$. Those come to $12$ and $8$ mph, a sum-and-difference system whose solution is $b = 10$, $c = 2$.",
+      "steps": [
+        "Downstream: $b + c = 24 \\div 2 = 12$.",
+        "Upstream: $b - c = 24 \\div 3 = 8$.",
+        "Subtract: $2c = 4$, so $c = 2$."
+      ],
+      "verify": "b, c = symbols('b c')\nsol = solve([Eq(b + c, 12), Eq(b - c, 8)], [b, c])\nresult = sol[c]"
+    },
+    {
+      "id": "T04-M2-16",
+      "module": 2,
+      "n": 38,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Number of solutions",
+      "stem": "The system $ax + 5y = 12$ and $4x + 10y = 7$ has no solution, where $a$ is a constant. What is the value of $a$?",
+      "choices": [
+        "$2$",
+        "$\\frac{5}{2}$",
+        "$8$",
+        "$20$"
+      ],
+      "answer": "A",
+      "solution": "Parallel lines need proportional coefficients: $a/4 = 5/10$, so $a = 2$. The constants must not follow that ratio, and indeed $12/7 \\neq 1/2$. Choice D comes from doubling the wrong equation.",
+      "steps": [
+        "Set the ratios equal: $\\dfrac{a}{4} = \\dfrac{5}{10} = \\dfrac{1}{2}$.",
+        "Solve: $a = 2$.",
+        "Check: $\\dfrac{12}{7} \\neq \\dfrac{1}{2}$, so the lines are parallel and distinct."
+      ],
+      "verify": "a = symbols('a')\nresult = solve(Eq(a/4, S(5)/10), a)[0]"
+    },
+    {
+      "id": "T04-M2-17",
+      "module": 2,
+      "n": 39,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Number of solutions",
+      "stem": "The system $3x + ky = 8$ and $6x + 10y = 16$ has infinitely many solutions, where $k$ is a constant. What is the value of $k$?",
+      "choices": [
+        "$2$",
+        "$5$",
+        "$10$",
+        "$20$"
+      ],
+      "answer": "B",
+      "solution": "Every part of the second equation is twice the corresponding part of the first: $6 = 2 \\cdot 3$ and $16 = 2 \\cdot 8$. For the equations to be identical, $10$ must equal $2k$, so $k = 5$. Choice C is the coefficient copied without halving it.",
+      "steps": [
+        "Compare the $x$ terms: $6 \\div 3 = 2$.",
+        "Compare the constants: $16 \\div 8 = 2$, the same factor.",
+        "So $10 = 2k$, giving $k = 5$."
+      ],
+      "verify": "k = symbols('k')\nresult = solve(Eq(S(3)/6, k/10), k)[0]"
+    },
+    {
+      "id": "T04-M2-18",
+      "module": 2,
+      "n": 40,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "System word problems",
+      "stem": "The sum of two numbers is $34$. Three times the larger number exceeds twice the smaller number by $62$. What is the larger number?",
+      "choices": [
+        "$8$",
+        "$18$",
+        "$26$",
+        "$34$"
+      ],
+      "answer": "C",
+      "solution": "Translate each sentence into an equation: $x + y = 34$ and $3x - 2y = 62$, where $x$ is the larger. Substituting $y = 34 - x$ gives $5x = 130$, so $x = 26$ and $y = 8$. Choice A is the smaller number.",
+      "steps": [
+        "Let $x$ be the larger and $y$ the smaller: $x + y = 34$.",
+        "Translate the second sentence: $3x - 2y = 62$.",
+        "Substitute $y = 34 - x$: $3x - 68 + 2x = 62$, so $5x = 130$ and $x = 26$."
+      ],
+      "verify": "x, y = symbols('x y')\nsol = solve([Eq(x + y, 34), Eq(3*x - 2*y, 62)], [x, y])\nresult = sol[x]"
+    },
+    {
+      "id": "T04-M2-19",
+      "module": 2,
+      "n": 41,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Substitution and elimination",
+      "stem": "If $7x + 5y = 31$ and $5x + 7y = 17$, what is the value of $x - y$?",
+      "choices": [
+        "$4$",
+        "$7$",
+        "$12$",
+        "$14$"
+      ],
+      "answer": "B",
+      "solution": "With the coefficients swapped, subtracting the equations gives $2x - 2y = 14$, so $x - y = 7$ without ever isolating a variable. Choice A is $x + y$, which comes from adding instead; choice D is the difference before dividing by $2$.",
+      "steps": [
+        "Subtract the second equation from the first: $2x - 2y = 14$.",
+        "Factor: $2(x - y) = 14$.",
+        "Divide by $2$: $x - y = 7$."
+      ],
+      "verify": "x, y = symbols('x y')\nsol = solve([Eq(7*x + 5*y, 31), Eq(5*x + 7*y, 17)], [x, y])\nresult = sol[x] - sol[y]"
+    },
+    {
+      "id": "T04-M2-20",
+      "module": 2,
+      "n": 42,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Number of solutions",
+      "stem": "The system $y = 5x + 2$ and $y = (k - 1)x - 3$ has no solution, where $k$ is a constant. What is the value of $k$?",
+      "answer": "6",
+      "solution": "Two lines in slope-intercept form miss each other exactly when their slopes match but their intercepts do not. Setting $k - 1 = 5$ gives $k = 6$, and since $-3 \\neq 2$ the lines really are parallel rather than identical.",
+      "steps": [
+        "Parallel lines have equal slopes: $k - 1 = 5$.",
+        "Solve: $k = 6$.",
+        "The intercepts $2$ and $-3$ differ, so the system has no solution."
+      ],
+      "verify": "k = symbols('k')\nresult = solve(Eq(k - 1, 5), k)[0]"
+    },
+    {
+      "id": "T04-M2-21",
+      "module": 2,
+      "n": 43,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Number of solutions",
+      "stem": "In the system $2x - y = 4$ and $6x - 3y = c$, $c$ is a constant. For what value of $c$ does the system have at least one solution?",
+      "choices": [
+        "$2$",
+        "$4$",
+        "$8$",
+        "$12$"
+      ],
+      "answer": "D",
+      "solution": "Since $6x - 3y = 3(2x - y)$ and $2x - y = 4$, the second equation is forced to read $c = 12$. For any other value the two lines are parallel and the system has no solution at all, so $12$ is the only value that permits a solution.",
+      "steps": [
+        "Factor the second equation: $6x - 3y = 3(2x - y)$.",
+        "The first equation gives $2x - y = 4$.",
+        "Therefore $c = 3(4) = 12$."
+      ],
+      "verify": "x, y = symbols('x y')\nresult = simplify((6*x - 3*y).subs(y, 2*x - 4))"
+    },
+    {
+      "id": "T04-M2-22",
+      "module": 2,
+      "n": 44,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "System word problems",
+      "stem": "At a shop, $3$ shirts and $2$ hats cost $\\$85$, and $2$ shirts and $5$ hats cost $\\$75$. What is the total cost, in dollars, of one shirt and one hat?",
+      "choices": [
+        "$5$",
+        "$20$",
+        "$25$",
+        "$30$"
+      ],
+      "answer": "D",
+      "solution": "Let $s$ and $h$ be the two prices. Elimination gives $s = 25$ and $h = 5$, so a shirt and a hat together cost $\\$30$. Choices B and C are the individual prices; the question asks for their sum.",
+      "steps": [
+        "Write the system: $3s + 2h = 85$ and $2s + 5h = 75$.",
+        "Multiply the first by $5$ and the second by $2$: $15s + 10h = 425$ and $4s + 10h = 150$.",
+        "Subtract: $11s = 275$, so $s = 25$, $h = 5$ and $s + h = 30$."
+      ],
+      "verify": "s, h = symbols('s h')\nsol = solve([Eq(3*s + 2*h, 85), Eq(2*s + 5*h, 75)], [s, h])\nresult = sol[s] + sol[h]"
+    }
+  ]
+}

@@ -28,6 +28,13 @@ from collections import Counter
 
 import jsonschema
 import sympy
+from sympy.parsing.sympy_parser import (
+    parse_expr, standard_transformations,
+    implicit_multiplication_application, convert_xor,
+)
+
+_TRANSFORMS = (standard_transformations
+               + (implicit_multiplication_application, convert_xor))
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 BANK = ROOT / "content" / "bank"
@@ -76,21 +83,51 @@ def run_verify(code: str):
 
 
 def to_expr(text: str):
-    """Parse an answer string (LaTeX-lite or plain) into a sympy expression."""
+    """Parse an answer string (LaTeX-lite or plain) into a sympy expression.
+
+    Handles the LaTeX the book actually renders -- \\frac, \\sqrt, \\pi,
+    \\cdot, \\dfrac, \\%, and implicit multiplication such as ``5x`` or
+    ``3\\sqrt{2}`` -- so that verification compares against the answer the
+    reader sees, not against a separate machine-readable copy of it.
+    """
     t = text.strip()
-    t = t.replace("$", "").replace("\\!", "").replace("\\,", "").replace(" ", "")
+    t = t.replace("$", "").replace("\\!", "").replace("\\,", "")
+    t = t.replace("\\;", "").replace("\\ ", " ")
     t = t.replace("\\left", "").replace("\\right", "")
-    t = re.sub(r"\\d?frac\{([^{}]+)\}\{([^{}]+)\}", r"((\1)/(\2))", t)
-    t = re.sub(r"\\sqrt\{([^{}]+)\}", r"sqrt(\1)", t)
-    t = re.sub(r"\\sqrt(\d)", r"sqrt(\1)", t)
-    t = t.replace("\\pi", "pi").replace("^", "**").replace("\\cdot", "*")
-    t = t.replace("\\times", "*").replace("\\div", "/")
+    t = t.replace("\\dfrac", "\\frac").replace("\\tfrac", "\\frac")
+
+    # \frac{a}{b} may nest, so rewrite innermost-first until none remain
+    frac = re.compile(r"\\frac\{([^{}]*)\}\{([^{}]*)\}")
+    while frac.search(t):
+        t = frac.sub(r"((\1)/(\2))", t)
+
+    t = re.sub(r"\\sqrt\[(\d+)\]\{([^{}]*)\}", r"((\2)**(1/(\1)))", t)
+    t = re.sub(r"\\sqrt\{([^{}]*)\}", r"sqrt(\1)", t)
+    t = re.sub(r"\\sqrt\s*(\d+)", r"sqrt(\1)", t)
+
+    t = t.replace("\\pi", "pi")
+    t = t.replace("\\cdot", "*").replace("\\times", "*").replace("\\div", "/")
+    t = t.replace("\\%", "").replace("%", "")
+    t = re.sub(r"\\text\{[^{}]*\}", "", t)
     t = re.sub(r"[{}]", "", t)
-    t = t.rstrip("%")
-    return sympy.sympify(t, rational=True)
+    t = t.replace(",", "")          # thousands separators
+    t = t.strip()
+
+    return parse_expr(t, transformations=_TRANSFORMS, evaluate=True)
+
+
+def norm_text(s: str) -> str:
+    """Normalise a prose answer for comparison: drop math delimiters, collapse
+    whitespace, ignore case and a trailing full stop."""
+    s = s.replace("$", " ").replace("\\%", "%")
+    s = re.sub(r"\\text\{([^{}]*)\}", r"\1", s)
+    s = re.sub(r"[~]|\\,|\\;|\\ ", " ", s)
+    s = re.sub(r"\s+", " ", s).strip()
+    return s.rstrip(".").strip().lower()
 
 
 def answers_match(a, b) -> bool:
+    """Numeric comparison for sympy values."""
     try:
         return sympy.simplify(sympy.nsimplify(a) - sympy.nsimplify(b)) == 0
     except Exception:
@@ -203,26 +240,41 @@ def check_math(bank: dict, rep: Report, require_verify: bool) -> tuple[int, int]
             target = p["answer"]
 
         candidates = [target] + list(p.get("accepted", []))
-        ok = False
-        for cand in candidates:
-            try:
-                if answers_match(result, to_expr(cand)):
-                    ok = True
-                    break
-            except Exception:                          # noqa: BLE001
-                if str(result).strip() == cand.strip():
-                    ok = True
-                    break
+
+        # A `verify` snippet that returns a Python string is asserting a prose
+        # or expression-shaped answer; compare it as text, never through
+        # sympy -- a sentence sympifies into a Symbol and would compare true
+        # against anything else that happens to reduce to the same Symbol.
+        if isinstance(result, str):
+            ok = any(norm_text(result) == norm_text(c) for c in candidates)
+        else:
+            ok = False
+            for cand in candidates:
+                try:
+                    if answers_match(result, to_expr(cand)):
+                        ok = True
+                        break
+                except Exception:                      # noqa: BLE001
+                    if norm_text(str(result)) == norm_text(cand):
+                        ok = True
+                        break
         if ok:
             verified += 1
         else:
             rep.error(where, f"{p['id']}: verify gives {result!r} but the "
                              f"stated answer is {target!r}")
 
-        # a distractor must never equal the key
-        if p["type"] == "MC":
+        # A distractor must never equal the key -- unless the question is
+        # about the FORM of an expression, where an equal-but-wrongly-written
+        # distractor is the whole point.
+        if p["type"] == "MC" and not p.get("form"):
+            key_idx = "ABCD".index(p["answer"])
             for i, choice in enumerate(p["choices"]):
-                if i == "ABCD".index(p["answer"]):
+                if i == key_idx:
+                    continue
+                if norm_text(choice) == norm_text(target):
+                    rep.error(where, f"{p['id']}: distractor "
+                                     f"{'ABCD'[i]} is the key verbatim")
                     continue
                 try:
                     if answers_match(to_expr(choice), to_expr(target)):

@@ -1,0 +1,1016 @@
+{
+  "number": 9,
+  "topic": "Exponential Functions, Radicals and Rational Expressions",
+  "domain": "Advanced Math",
+  "skills": [
+    "Growth and decay",
+    "Radical and rational equations",
+    "Extraneous solutions"
+  ],
+  "lesson": {
+    "intro": "Exponential models, radical equations and rational equations look like three different topics, but the Digital SAT groups them because they share one habit of mind: you must know what the algebra is allowed to do. An exponential model is built by multiplying, not adding; a radical equation is solved by squaring, an operation that can invent solutions; and a rational equation is solved by clearing denominators, an operation that can hide a value the equation was never allowed to use. Roughly one question in eight on the Advanced Math section comes from this cluster, and the majority of the wrong answers on them are traceable to two mistakes: using $0.08$ where $1.08$ belongs, and keeping a solution that fails the check.",
+    "blocks": [
+      {
+        "kind": "section",
+        "title": "Building an exponential model",
+        "body": "Every exponential model on the SAT has the form \\[f(t)=a\\cdot b^{t},\\] where $a$ is the value at $t=0$ (the initial amount) and $b$ is the factor the quantity is multiplied by during one time period. A linear model adds the same amount each period; an exponential model multiplies by the same factor each period. When a problem says ``increases by $8\\%$ each year'' it is describing multiplication: next year's value is this year's value plus $8\\%$ of it, which is $1.08$ times this year's value. When it says ``decreases by $8\\%$'', what remains is $92\\%$, so the factor is $0.92$."
+      },
+      {
+        "kind": "formula",
+        "title": "The four numbers you must read off",
+        "body": "For a percent rate $r$ written as a decimal:\\[\\text{growth: } f(t)=a(1+r)^{t},\\qquad \\text{decay: } f(t)=a(1-r)^{t}.\\]For a quantity that is multiplied by $b$ once every $k$ time units,\\[f(t)=a\\cdot b^{t/k},\\]so doubling every $9$ years is $a(2)^{t/9}$ and halving every $12$ years is $a\\left(\\tfrac{1}{2}\\right)^{t/12}$. To change the time unit, change the exponent, never the base: if $t$ is in years, then $m$ months means $t=\\tfrac{m}{12}$, giving $a\\cdot b^{m/12}$. Interest compounded $n$ times a year at annual rate $r$ is $a\\left(1+\\tfrac{r}{n}\\right)^{nt}$."
+      },
+      {
+        "kind": "trap",
+        "title": "$0.08$ is not $1.08$",
+        "body": "The most common wrong answer in this whole topic is writing $a(0.08)^{t}$ for a quantity that grows by $8\\%$ a year. That model keeps only $8\\%$ of the quantity each year --- it is a catastrophic decay, not growth. Ask yourself which way the quantity is moving: a growth factor is greater than $1$, a decay factor is between $0$ and $1$. A second version of the same trap is reading the base as the percent: in $200(1.15)^{x}$ the percent increase is $15\\%$, not $115\\%$ and not $1.15\\%$."
+      },
+      {
+        "kind": "section",
+        "title": "Radical equations and the check",
+        "body": "To solve an equation containing $\\sqrt{\\phantom{x}}$, isolate the radical, then square both sides. Squaring is not reversible: $-2$ and $2$ have the same square, so squaring can turn a false statement into a true one and hand you a number that solves the squared equation but not the original. Such a number is called an \\emph{extraneous solution}. Because $\\sqrt{A}$ is never negative, any equation of the form $\\sqrt{A}=B$ requires $B\\ge 0$; that one observation catches most extraneous roots before you even substitute. When two radicals appear, isolate one, square, isolate the remaining radical, and square again."
+      },
+      {
+        "kind": "section",
+        "title": "Rational equations and the domain",
+        "body": "To solve an equation with variables in denominators, multiply every term by the least common denominator and solve the polynomial equation that results. Before you do, note which values make any denominator zero: those values are excluded from the domain forever. If clearing denominators produces one of them, it is extraneous. This is why $\\dfrac{1}{x-2}+\\dfrac{1}{x+2}=\\dfrac{4}{x^{2}-4}$ leads to $x=2$ and yet has \\emph{no} solution."
+      },
+      {
+        "kind": "concept",
+        "title": "Extraneous solutions in one sentence",
+        "body": "Squaring and multiplying by a variable expression are the two moves that can add solutions, so any answer produced by either move must be substituted back into the \\emph{original} equation before it is accepted. A radical equation and a rational equation fail the check for different reasons --- a radical because a square root cannot be negative, a rational because a denominator cannot be zero --- but the discipline is identical: solve, then check, then discard."
+      },
+      {
+        "kind": "worked",
+        "title": "Worked example 1 --- building and using a model",
+        "body": "\\textbf{A colony of $4000$ bacteria decreases by $15\\%$ every $3$ hours. Write a model for the population $t$ hours later, and find the population after $12$ hours.}\\par\\smallskip Start with the factor. A $15\\%$ decrease leaves $100\\%-15\\%=85\\%$, so the factor for one $3$-hour period is $0.85$. That factor belongs to a $3$-hour period, so the exponent must count $3$-hour periods, and $t$ hours contain $t/3$ of them:\\[P(t)=4000(0.85)^{t/3}.\\]After $12$ hours there are $12/3=4$ periods, so \\[P(12)=4000(0.85)^{4}=4000(0.52200625)\\approx 2088.\\]Two checks are worth building into your habits. First, the answer should be smaller than $4000$, since the colony is shrinking --- if you had used $1.15$ you would have got about $6996$ and should have caught it. Second, $0.85^4$ is a little more than one half, and $2088$ is a little more than half of $4000$."
+      },
+      {
+        "kind": "worked",
+        "title": "Worked example 2 --- a radical and a rational equation",
+        "body": "\\textbf{(a) Solve $\\sqrt{x+9}=x+3$.} Square both sides: $x+9=x^{2}+6x+9$, so $x^{2}+5x=0$ and $x(x+5)=0$, giving $x=0$ or $x=-5$. Now check in the original. For $x=0$: $\\sqrt{9}=3$ and $0+3=3$, true. For $x=-5$: $\\sqrt{4}=2$ but $-5+3=-2$, and $2\\neq -2$, so $x=-5$ is extraneous. The only solution is $x=0$. Notice that the requirement $x+3\\ge 0$ would have ruled out $-5$ immediately.\\par\\smallskip\\textbf{(b) Solve $\\dfrac{x}{x-4}=\\dfrac{4}{x-4}+3$.} The value $x=4$ is excluded before any work is done. Multiplying every term by $x-4$ gives $x=4+3(x-4)$, so $x=3x-8$, $-2x=-8$ and $x=4$. That is precisely the excluded value, so it is extraneous and the equation has no solution. A student who skipped the domain check would have confidently gridded in $4$."
+      },
+      {
+        "kind": "strategy",
+        "title": "On test day",
+        "body": "For ``which function models this'' questions, do not build the whole model --- identify the initial value and the factor, and eliminate. Any choice whose base is the raw percent ($0.08$ rather than $1.08$) is wrong; any choice that puts the period length as a multiplier in the exponent instead of a divisor is wrong. For radical and rational equations, the built-in graphing calculator is faster than algebra: graph each side of the equation and read the intersection, or graph $\\text{left}-\\text{right}$ and find the zero. The graph shows only true solutions, so it silently performs the extraneous check for you. If the algebra gives you two candidates and the graph shows one intersection, trust the graph."
+      }
+    ]
+  },
+  "problems": [
+    {
+      "id": "T09-M1-01",
+      "module": 1,
+      "n": 1,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Growth and decay",
+      "stem": "The function $P(x)=750(1.06)^x$ gives the population of a town $x$ years after 2015. What was the population of the town in 2015?",
+      "choices": [
+        "$1.06$",
+        "$750$",
+        "$795$",
+        "$45$"
+      ],
+      "answer": "B",
+      "solution": "In $a\\cdot b^{x}$ the number $a$ is the value when $x=0$, because $b^{0}=1$. Setting $x=0$ gives $P(0)=750(1.06)^{0}=750$, so the initial population is $750$. The number $1.06$ is the growth factor, not a population.",
+      "steps": [
+        "The year 2015 corresponds to $x=0$.",
+        "Evaluate $P(0)=750(1.06)^{0}$.",
+        "Any nonzero base raised to the $0$ power is $1$, so $P(0)=750$."
+      ],
+      "verify": "result = 750*1.06**0"
+    },
+    {
+      "id": "T09-M1-02",
+      "module": 1,
+      "n": 2,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Growth and decay",
+      "stem": "A car purchased for $\\$24{,}000$ loses $15\\%$ of its value each year. Which function gives the value $V(t)$, in dollars, of the car $t$ years after it was purchased?",
+      "choices": [
+        "$V(t)=24000(0.15)^t$",
+        "$V(t)=24000(1.15)^t$",
+        "$V(t)=24000-0.15t$",
+        "$V(t)=24000(0.85)^t$"
+      ],
+      "answer": "D",
+      "solution": "A loss of $15\\%$ leaves $85\\%$ of the value, so each year the value is multiplied by $1-0.15=0.85$. The decay factor is $0.85$, not $0.15$: multiplying by $0.15$ would leave only $15\\%$ of the car's value after one year.",
+      "steps": [
+        "Each year the car keeps $100\\%-15\\%=85\\%$ of its value.",
+        "Write $85\\%$ as the decimal $0.85$; this is the decay factor.",
+        "Multiply the starting value by the decay factor once per year: $V(t)=24000(0.85)^t$."
+      ],
+      "verify": "result = \"$V(t)=24000(0.85)^t$\""
+    },
+    {
+      "id": "T09-M1-03",
+      "module": 1,
+      "n": 3,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Radical equations",
+      "stem": "What is the solution to $\\sqrt{2x+1}=7$?",
+      "answer": "24",
+      "solution": "Squaring both sides removes the radical: $2x+1=49$, so $x=24$. Checking, $\\sqrt{2(24)+1}=\\sqrt{49}=7$, so the solution is genuine and not extraneous.",
+      "steps": [
+        "Square both sides: $2x+1=49$.",
+        "Subtract $1$: $2x=48$.",
+        "Divide by $2$: $x=24$, and $\\sqrt{49}=7$ checks."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(sqrt(2*x+1) - 7, x)[0]"
+    },
+    {
+      "id": "T09-M1-04",
+      "module": 1,
+      "n": 4,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Rational equations",
+      "stem": "What value of $x$ satisfies $\\dfrac{12}{x-2}=4$?",
+      "choices": [
+        "$1$",
+        "$3$",
+        "$5$",
+        "$7$"
+      ],
+      "answer": "C",
+      "solution": "A rational equation with a single fraction is fastest to clear by multiplying both sides by the denominator: $12=4(x-2)$. Then $3=x-2$ and $x=5$. Answer $3$ comes from stopping at $x-2=3$.",
+      "steps": [
+        "Multiply both sides by $x-2$: $12=4(x-2)$.",
+        "Divide by $4$: $3=x-2$.",
+        "Add $2$: $x=5$, and $x=5$ does not make the denominator zero."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(12/(x-2) - 4, x)[0]"
+    },
+    {
+      "id": "T09-M1-05",
+      "module": 1,
+      "n": 5,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Growth and decay",
+      "stem": "For an exponential function $f$, $f(0)=5$, $f(1)=15$, and $f(2)=45$. What is the value of $f(4)$?",
+      "choices": [
+        "$75$",
+        "$135$",
+        "$405$",
+        "$1215$"
+      ],
+      "answer": "C",
+      "solution": "Each step in $x$ multiplies the output by the same factor: $15/5=3$ and $45/15=3$, so $f(x)=5(3)^x$. Then $f(4)=5\\cdot 81=405$. A common slip is to answer $f(3)=135$.",
+      "steps": [
+        "Find the common ratio: $15\\div 5=3$.",
+        "So $f(x)=5(3)^x$.",
+        "Evaluate $f(4)=5(3)^4=5(81)=405$."
+      ],
+      "verify": "result = 5*3**4"
+    },
+    {
+      "id": "T09-M1-06",
+      "module": 1,
+      "n": 6,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Growth and decay",
+      "stem": "The function $A(x)=80(0.5)^x$ gives the number of grams of a sample that remain after $x$ half-lives. How many grams remain after $3$ half-lives?",
+      "answer": "10",
+      "solution": "Each half-life multiplies the amount by $0.5$, so after three of them the sample has been halved three times: $80\\to 40\\to 20\\to 10$. Equivalently $A(3)=80(0.5)^3=80/8=10$.",
+      "steps": [
+        "Substitute $x=3$: $A(3)=80(0.5)^3$.",
+        "Compute $(0.5)^3=0.125$.",
+        "Multiply: $80(0.125)=10$ grams."
+      ],
+      "verify": "result = 80*Rational(1,2)**3"
+    },
+    {
+      "id": "T09-M1-07",
+      "module": 1,
+      "n": 7,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Growth and decay",
+      "stem": "A quantity increases by $7\\%$ each year. Which of the following is the growth factor for one year?",
+      "choices": [
+        "$0.07$",
+        "$0.93$",
+        "$1.07$",
+        "$7$"
+      ],
+      "answer": "C",
+      "solution": "``Increases by $7\\%$'' means the new amount is the old amount plus $7\\%$ of it, that is $100\\%+7\\%=107\\%$ of the old amount. As a decimal that is $1.07$. Using $0.07$ instead of $1.07$ models keeping only $7\\%$ of the quantity, which is the single most common error in this topic.",
+      "steps": [
+        "An increase of $7\\%$ gives $100\\%+7\\%=107\\%$ of the original.",
+        "Convert $107\\%$ to a decimal: $1.07$.",
+        "The growth factor is $1+r=1.07$."
+      ],
+      "verify": "result = 1 + Rational(7,100)"
+    },
+    {
+      "id": "T09-M1-08",
+      "module": 1,
+      "n": 8,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Extraneous solutions",
+      "stem": "What is the solution to $\\sqrt{x+7}=x+1$?",
+      "choices": [
+        "$-3$",
+        "$2$",
+        "$3$",
+        "$-3$ and $2$"
+      ],
+      "answer": "B",
+      "solution": "Squaring gives $x+7=x^2+2x+1$, so $x^2+x-6=0$ and $x=2$ or $x=-3$. Squaring can create solutions the original equation never had: at $x=-3$ the left side is $\\sqrt{4}=2$ while the right side is $-2$. Only $x=2$ survives the check.",
+      "steps": [
+        "Square both sides: $x+7=x^2+2x+1$.",
+        "Rearrange: $x^2+x-6=0$, so $(x+3)(x-2)=0$.",
+        "Check both: $x=-3$ gives $2=-2$, false; $x=2$ gives $3=3$, true."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(sqrt(x+7) - (x+1), x)[0]"
+    },
+    {
+      "id": "T09-M1-09",
+      "module": 1,
+      "n": 9,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Rational equations",
+      "stem": "What is the solution to $\\dfrac{1}{x}+\\dfrac{1}{2x}=\\dfrac{3}{4}$?",
+      "answer": "2",
+      "solution": "The two fractions on the left have a common denominator of $2x$: $\\frac{2}{2x}+\\frac{1}{2x}=\\frac{3}{2x}$. Setting $\\frac{3}{2x}=\\frac{3}{4}$ forces $2x=4$, so $x=2$, which is allowed since it does not make a denominator zero.",
+      "steps": [
+        "Rewrite with denominator $2x$: $\\frac{2}{2x}+\\frac{1}{2x}=\\frac{3}{2x}$.",
+        "Set $\\frac{3}{2x}=\\frac{3}{4}$; equal numerators force equal denominators.",
+        "So $2x=4$ and $x=2$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(Eq(1/x + 1/(2*x), Rational(3,4)), x)[0]"
+    },
+    {
+      "id": "T09-M1-10",
+      "module": 1,
+      "n": 10,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Growth and decay",
+      "stem": "The function $P(t)=1200(1.03)^t$ models the population of a town $t$ years after 2010. Which of the following is the best interpretation of the number $1.03$ in this context?",
+      "choices": [
+        "The population increases by $1.03$ people each year.",
+        "The population increases by $103\\%$ each year.",
+        "Each year the population is 1.03 times the population the year before.",
+        "The population in 2010 was $1.03$ times $1200$."
+      ],
+      "answer": "C",
+      "solution": "In $a\\cdot b^{t}$ the base $b$ is a multiplier, not an amount added. Because $b=1.03=1+0.03$, the population is $1.03$ times as large each year, an increase of $3\\%$ per year --- not $103\\%$ and not $1.03$ people.",
+      "steps": [
+        "The base of the exponential is the yearly multiplier.",
+        "Multiplying by $1.03$ is the same as adding $3\\%$.",
+        "So each year's population is $1.03$ times the previous year's."
+      ],
+      "verify": "result = \"Each year the population is 1.03 times the population the year before.\"",
+      "wide": true
+    },
+    {
+      "id": "T09-M1-11",
+      "module": 1,
+      "n": 11,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Growth and decay",
+      "stem": "A savings account with an initial balance of $\\$1500$ earns $6\\%$ annual interest, compounded monthly. Which function gives the balance $B(t)$, in dollars, after $t$ years?",
+      "choices": [
+        "$B(t)=1500(1.06)^{12t}$",
+        "$B(t)=1500(1.5)^{t}$",
+        "$B(t)=1500(1.005)^{t}$",
+        "$B(t)=1500(1.005)^{12t}$"
+      ],
+      "answer": "D",
+      "solution": "Compounding monthly means the annual rate is split into $12$ equal pieces, $0.06/12=0.005$ per month, and there are $12t$ months in $t$ years. So the factor is $(1.005)^{12t}$. Using $1.06$ with the exponent $12t$ would compound a full $6\\%$ twelve times a year.",
+      "steps": [
+        "Monthly rate: $0.06\\div 12=0.005$, so the monthly factor is $1.005$.",
+        "Number of compounding periods in $t$ years: $12t$.",
+        "Balance: $B(t)=1500(1.005)^{12t}$."
+      ],
+      "verify": "result = \"$B(t)=1500(1.005)^{12t}$\""
+    },
+    {
+      "id": "T09-M1-12",
+      "module": 1,
+      "n": 12,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Rational equations",
+      "stem": "What is the solution to $\\dfrac{5}{x+1}=\\dfrac{2}{x-1}$?",
+      "choices": [
+        "$\\frac{7}{3}$",
+        "$\\frac{3}{7}$",
+        "$-\\frac{7}{3}$",
+        "$1$"
+      ],
+      "answer": "A",
+      "solution": "Two equal fractions can be cross multiplied: $5(x-1)=2(x+1)$, giving $5x-5=2x+2$ and $x=\\frac{7}{3}$. Since $\\frac{7}{3}$ is neither $1$ nor $-1$, no denominator is zero and the solution is valid.",
+      "steps": [
+        "Cross multiply: $5(x-1)=2(x+1)$.",
+        "Expand: $5x-5=2x+2$.",
+        "Solve: $3x=7$, so $x=\\frac{7}{3}$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(Eq(5/(x+1), 2/(x-1)), x)[0]"
+    },
+    {
+      "id": "T09-M1-13",
+      "module": 1,
+      "n": 13,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Growth and decay",
+      "stem": "A machine purchased for $\\$30{,}000$ depreciates by $20\\%$ of its value each year. What is the value of the machine, in dollars, after $3$ years?",
+      "choices": [
+        "$12{,}000$",
+        "$15{,}360$",
+        "$18{,}000$",
+        "$51{,}840$"
+      ],
+      "answer": "B",
+      "accepted": [
+        "15360"
+      ],
+      "solution": "Percent decay is repeated multiplication, not repeated subtraction: the machine keeps $80\\%$ of its value each year, so its value is $30000(0.8)^3=30000(0.512)=15360$. Subtracting $20\\%$ of the original three times would wrongly give $\\$12{,}000$.",
+      "steps": [
+        "Each year the machine keeps $100\\%-20\\%=80\\%$ of its value.",
+        "After $3$ years the value is $30000(0.8)^3$.",
+        "Compute $(0.8)^3=0.512$, so the value is $\\$15{,}360$."
+      ],
+      "verify": "result = 30000*Rational(8,10)**3"
+    },
+    {
+      "id": "T09-M1-14",
+      "module": 1,
+      "n": 14,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Extraneous solutions",
+      "stem": "Squaring both sides of $\\sqrt{3x+4}=x$ produces an equation with two solutions. Which of the following is an extraneous solution of the original equation?",
+      "choices": [
+        "$-1$",
+        "$1$",
+        "$4$",
+        "$-4$"
+      ],
+      "answer": "A",
+      "solution": "Squaring gives $3x+4=x^2$, so $x^2-3x-4=0$ and $x=-1$ or $x=4$. A square root is never negative, so the right side must satisfy $x\\ge 0$; $x=-1$ fails that test ($\\sqrt{1}=1\\neq -1$) and is extraneous, while $x=4$ checks.",
+      "steps": [
+        "Square both sides: $3x+4=x^2$.",
+        "Solve $x^2-3x-4=0$: $x=-1$ or $x=4$.",
+        "Test each in the original: $x=-1$ gives $1=-1$, false, so $-1$ is extraneous."
+      ],
+      "verify": "x = symbols('x')\ncands = solve(x**2 - 3*x - 4, x)\nresult = 0\nfor c in cands:\n    if sqrt(3*c+4) != c:\n        result = c"
+    },
+    {
+      "id": "T09-M1-15",
+      "module": 1,
+      "n": 15,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Growth and decay",
+      "stem": "A bacteria population doubles every $5$ hours. If there are $300$ bacteria at time $t=0$, how many bacteria are there after $20$ hours?",
+      "answer": "4800",
+      "solution": "The number of doublings is $20\\div 5=4$, so the population is multiplied by $2$ four times: $300\\cdot 2^4=300\\cdot 16=4800$. Writing $300(2)^{t/5}$ and substituting $t=20$ gives the same thing.",
+      "steps": [
+        "Count doublings: $20\\div 5=4$.",
+        "Multiply by $2$ four times: $300(2)^4$.",
+        "$300\\cdot 16=4800$ bacteria."
+      ],
+      "verify": "result = 300*2**(20//5)"
+    },
+    {
+      "id": "T09-M1-16",
+      "module": 1,
+      "n": 16,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Growth and decay",
+      "stem": "The value of a rare coin is $\\$5000$ today and increases by $12\\%$ every $4$ years. Which function gives the value $V(t)$, in dollars, of the coin $t$ years from today?",
+      "choices": [
+        "$V(t)=5000(1.12)^{4t}$",
+        "$V(t)=5000(1.12)^{t/4}$",
+        "$V(t)=5000(0.12)^{t/4}$",
+        "$V(t)=5000(1.03)^{t}$"
+      ],
+      "answer": "B",
+      "solution": "The growth factor $1.12$ belongs to a $4$-year period, so the exponent must count $4$-year periods: after $t$ years there are $t/4$ of them. Writing $4t$ in the exponent would apply the $12\\%$ growth four times per year instead of once every four years.",
+      "steps": [
+        "The factor for one $4$-year period is $1+0.12=1.12$.",
+        "In $t$ years there are $t/4$ such periods.",
+        "So $V(t)=5000(1.12)^{t/4}$."
+      ],
+      "verify": "result = \"$V(t)=5000(1.12)^{t/4}$\""
+    },
+    {
+      "id": "T09-M1-17",
+      "module": 1,
+      "n": 17,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Extraneous solutions",
+      "stem": "What is the solution to $\\dfrac{x^2}{x-3}=\\dfrac{9}{x-3}$?",
+      "choices": [
+        "$-3$",
+        "$3$",
+        "$-3$ and $3$",
+        "There is no solution."
+      ],
+      "answer": "A",
+      "solution": "Multiplying by $x-3$ gives $x^2=9$, so $x=3$ or $x=-3$. But $x=3$ makes the original denominator zero, so it is not in the domain and must be thrown out. Only $x=-3$ is a solution.",
+      "steps": [
+        "Multiply both sides by $x-3$: $x^2=9$.",
+        "So $x=3$ or $x=-3$.",
+        "Reject $x=3$: it makes $x-3=0$, so the original expression is undefined."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(Eq(x**2/(x-3), 9/(x-3)), x)[0]"
+    },
+    {
+      "id": "T09-M1-18",
+      "module": 1,
+      "n": 18,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Radical equations",
+      "stem": "What is the solution to $\\sqrt{x+5}-\\sqrt{x}=1$?",
+      "answer": "4",
+      "solution": "Isolate one radical before squaring: $\\sqrt{x+5}=1+\\sqrt{x}$. Squaring gives $x+5=1+2\\sqrt{x}+x$, so $4=2\\sqrt{x}$ and $\\sqrt{x}=2$, hence $x=4$. Checking, $\\sqrt{9}-\\sqrt{4}=3-2=1$.",
+      "steps": [
+        "Isolate a radical: $\\sqrt{x+5}=1+\\sqrt{x}$.",
+        "Square: $x+5=1+2\\sqrt{x}+x$, so $2\\sqrt{x}=4$.",
+        "Then $\\sqrt{x}=2$ and $x=4$, which checks in the original."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(sqrt(x+5) - sqrt(x) - 1, x)[0]"
+    },
+    {
+      "id": "T09-M1-19",
+      "module": 1,
+      "n": 19,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Growth and decay",
+      "stem": "The value of an investment doubles every $9$ years. If the investment is worth $\\$2500$ today, which function gives its value $V(t)$, in dollars, $t$ years from today?",
+      "choices": [
+        "$V(t)=2500(2)^{9t}$",
+        "$V(t)=2500(9)^{t/2}$",
+        "$V(t)=2500+2^{t/9}$",
+        "$V(t)=2500(2)^{t/9}$"
+      ],
+      "answer": "D",
+      "solution": "``Doubles every $9$ years'' means the base is $2$ and one full period is $9$ years, so the exponent counts periods: $t/9$. The exponent $9t$ would double the money nine times a year.",
+      "steps": [
+        "The base is $2$ because the value doubles.",
+        "One doubling period is $9$ years, so $t$ years contain $t/9$ periods.",
+        "Therefore $V(t)=2500(2)^{t/9}$."
+      ],
+      "verify": "result = \"$V(t)=2500(2)^{t/9}$\""
+    },
+    {
+      "id": "T09-M1-20",
+      "module": 1,
+      "n": 20,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Rational expressions",
+      "stem": "The expression $\\dfrac{8^{x+1}}{2^{x}}$ can be written in the form $2^{ax+b}$, where $a$ and $b$ are constants. What is the value of $a+b$?",
+      "choices": [
+        "$2$",
+        "$3$",
+        "$5$",
+        "$6$"
+      ],
+      "answer": "C",
+      "solution": "Rewrite every power with the same base before dividing: $8^{x+1}=(2^3)^{x+1}=2^{3x+3}$. Dividing powers of the same base subtracts exponents, so $\\frac{2^{3x+3}}{2^{x}}=2^{3x+3-x}=2^{2x+3}$. Then $a=2$, $b=3$ and $a+b=5$.",
+      "steps": [
+        "Write $8=2^3$, so $8^{x+1}=2^{3(x+1)}=2^{3x+3}$.",
+        "Divide by $2^x$ by subtracting exponents: $2^{3x+3-x}=2^{2x+3}$.",
+        "So $a=2$ and $b=3$, giving $a+b=5$."
+      ],
+      "verify": "a = 3 - 1\nb = 3\nresult = a + b"
+    },
+    {
+      "id": "T09-M1-21",
+      "module": 1,
+      "n": 21,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Extraneous solutions",
+      "stem": "What is the solution to $\\sqrt{2x+3}=x-6$?",
+      "answer": "11",
+      "solution": "Squaring gives $2x+3=x^2-12x+36$, so $x^2-14x+33=0$ and $x=3$ or $x=11$. Because the left side is never negative, any solution must satisfy $x-6\\ge 0$; $x=3$ fails and is extraneous, and $x=11$ checks: $\\sqrt{25}=5=11-6$.",
+      "steps": [
+        "Square both sides: $2x+3=x^2-12x+36$.",
+        "Rearrange: $x^2-14x+33=0$, so $(x-3)(x-11)=0$.",
+        "Check: $x=3$ gives $3=-3$, false; $x=11$ gives $5=5$, true."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(sqrt(2*x+3) - (x-6), x)[0]"
+    },
+    {
+      "id": "T09-M1-22",
+      "module": 1,
+      "n": 22,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Growth and decay",
+      "stem": "The population of a town was $8000$ in 2000 and $12{,}000$ in 2010, and the population grows exponentially. Which function gives the population $P(t)$ of the town $t$ years after 2000?",
+      "choices": [
+        "$P(t)=8000(1.5)^{t/10}$",
+        "$P(t)=8000(1.5)^{10t}$",
+        "$P(t)=8000(0.5)^{t/10}$",
+        "$P(t)=8000+400t$"
+      ],
+      "answer": "A",
+      "solution": "Over the $10$ years the population was multiplied by $12000/8000=1.5$, so $1.5$ is the factor for a $10$-year period and the exponent must be $t/10$. The model is $P(t)=8000(1.5)^{t/10}$; a linear model $8000+400t$ would not keep the ratio constant.",
+      "steps": [
+        "Find the multiplier over 10 years: $12000\\div 8000=1.5$.",
+        "That factor applies once per $10$ years, so use the exponent $t/10$.",
+        "Therefore $P(t)=8000(1.5)^{t/10}$."
+      ],
+      "verify": "result = \"$P(t)=8000(1.5)^{t/10}$\""
+    },
+    {
+      "id": "T09-M2-01",
+      "module": 2,
+      "n": 23,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Growth and decay",
+      "stem": "The function $f(x)=200(1.15)^x$ increases by $p\\%$ for each increase of $1$ in the value of $x$. What is the value of $p$?",
+      "choices": [
+        "$0.15$",
+        "$15$",
+        "$115$",
+        "$1.15$"
+      ],
+      "answer": "B",
+      "solution": "The base $1.15$ equals $1+0.15$, and the $0.15$ is the part added, so the percent increase is $0.15\\cdot 100=15$. Reading the whole base as the percent gives $115$, a classic misread.",
+      "steps": [
+        "Write the base as $1+r$: $1.15=1+0.15$.",
+        "The rate of increase is $r=0.15$.",
+        "As a percent, $r=15\\%$, so $p=15$."
+      ],
+      "verify": "result = (Rational(115,100) - 1)*100"
+    },
+    {
+      "id": "T09-M2-02",
+      "module": 2,
+      "n": 24,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Rational equations",
+      "stem": "What is the solution to $\\dfrac{8}{x+3}=2$?",
+      "answer": "1",
+      "solution": "Multiplying by $x+3$ gives $8=2(x+3)$, so $4=x+3$ and $x=1$. The value $x=1$ does not make the denominator zero, so it is a genuine solution.",
+      "steps": [
+        "Multiply both sides by $x+3$: $8=2(x+3)$.",
+        "Divide by $2$: $4=x+3$.",
+        "Subtract $3$: $x=1$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(Eq(8/(x+3), 2), x)[0]"
+    },
+    {
+      "id": "T09-M2-03",
+      "module": 2,
+      "n": 25,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Radical equations",
+      "stem": "What is the solution to $\\sqrt{x-1}+4=9$?",
+      "choices": [
+        "$6$",
+        "$10$",
+        "$24$",
+        "$26$"
+      ],
+      "answer": "D",
+      "solution": "Isolate the radical first: $\\sqrt{x-1}=5$. Only then square, giving $x-1=25$ and $x=26$. Squaring before isolating, or forgetting to undo the $-1$, produces $24$.",
+      "steps": [
+        "Subtract $4$: $\\sqrt{x-1}=5$.",
+        "Square both sides: $x-1=25$.",
+        "Add $1$: $x=26$, and $\\sqrt{25}+4=9$ checks."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(sqrt(x-1) + 4 - 9, x)[0]"
+    },
+    {
+      "id": "T09-M2-04",
+      "module": 2,
+      "n": 26,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Growth and decay",
+      "stem": "The value of a piece of equipment decreases by $35\\%$ each year. Which of the following is the decay factor for one year?",
+      "choices": [
+        "$0.35$",
+        "$1.35$",
+        "$35$",
+        "$0.65$"
+      ],
+      "answer": "D",
+      "solution": "A decrease of $35\\%$ leaves $100\\%-35\\%=65\\%$, so the factor is $0.65$. The decay factor is what remains, not what is lost, so $0.35$ is the trap answer.",
+      "steps": [
+        "After the decrease, $100\\%-35\\%=65\\%$ of the value remains.",
+        "Write $65\\%$ as a decimal: $0.65$.",
+        "The decay factor is $1-r=0.65$."
+      ],
+      "verify": "result = 1 - Rational(35,100)"
+    },
+    {
+      "id": "T09-M2-05",
+      "module": 2,
+      "n": 27,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Growth and decay",
+      "stem": "The function $g$ is defined by $g(x)=6(3)^x$. What is the value of $g(-1)$?",
+      "choices": [
+        "$-18$",
+        "$\\frac{1}{2}$",
+        "$2$",
+        "$18$"
+      ],
+      "answer": "C",
+      "solution": "A negative exponent means a reciprocal: $3^{-1}=\\frac{1}{3}$, so $g(-1)=6\\cdot\\frac{1}{3}=2$. A negative exponent never makes the output negative, so $-18$ is wrong.",
+      "steps": [
+        "Substitute $x=-1$: $g(-1)=6(3)^{-1}$.",
+        "Rewrite $3^{-1}=\\frac{1}{3}$.",
+        "Multiply: $6\\cdot\\frac{1}{3}=2$."
+      ],
+      "verify": "result = 6*Rational(1,3)"
+    },
+    {
+      "id": "T09-M2-06",
+      "module": 2,
+      "n": 28,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Growth and decay",
+      "stem": "A $400$-milligram sample of a radioactive substance has a half-life of $12$ years. Which function gives the amount $A(t)$, in milligrams, of the sample remaining after $t$ years?",
+      "choices": [
+        "$A(t)=400(0.5)^{12t}$",
+        "$A(t)=400(0.5)^{t/12}$",
+        "$A(t)=400(1.5)^{t/12}$",
+        "$A(t)=400-\\frac{t}{12}$"
+      ],
+      "answer": "B",
+      "solution": "Half-life means the base is $\\frac{1}{2}$ and one period lasts $12$ years, so the exponent must count periods: $t/12$. The exponent $12t$ would halve the sample twelve times a year.",
+      "steps": [
+        "The base is $0.5$ because the amount halves.",
+        "A period is $12$ years long, so $t$ years contain $t/12$ periods.",
+        "Therefore $A(t)=400(0.5)^{t/12}$."
+      ],
+      "verify": "result = \"$A(t)=400(0.5)^{t/12}$\""
+    },
+    {
+      "id": "T09-M2-07",
+      "module": 2,
+      "n": 29,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Growth and decay",
+      "stem": "The value of an investment, in dollars, is modeled by $V(t)=800(1.05)^t$, where $t$ is the number of years since the investment was made. What is the value, in dollars, of the investment after $2$ years?",
+      "answer": "882",
+      "solution": "Substituting $t=2$ gives $800(1.05)^2=800(1.1025)=882$. Adding $5\\%$ of $800$ twice would give $880$; compound growth is applied to the new balance each year, not the original.",
+      "steps": [
+        "Substitute $t=2$: $V(2)=800(1.05)^2$.",
+        "Compute $(1.05)^2=1.1025$.",
+        "Multiply: $800(1.1025)=882$ dollars."
+      ],
+      "verify": "result = 800*Rational(105,100)**2"
+    },
+    {
+      "id": "T09-M2-08",
+      "module": 2,
+      "n": 30,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Rational equations",
+      "stem": "What is the solution to $\\dfrac{x}{x-1}=\\dfrac{2}{x-1}+3$?",
+      "choices": [
+        "$\\frac{1}{2}$",
+        "$-\\frac{1}{2}$",
+        "$1$",
+        "$2$"
+      ],
+      "answer": "A",
+      "solution": "Multiply every term by $x-1$: $x=2+3(x-1)$, so $x=3x-1$ and $x=\\frac{1}{2}$. Since $\\frac{1}{2}\\neq 1$ the denominator is not zero, so this solution is genuine.",
+      "steps": [
+        "Multiply each term by $x-1$: $x=2+3(x-1)$.",
+        "Expand and collect: $x=3x-1$, so $-2x=-1$.",
+        "Then $x=\\frac{1}{2}$, which does not make $x-1=0$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(Eq(x/(x-1), 2/(x-1) + 3), x)[0]"
+    },
+    {
+      "id": "T09-M2-09",
+      "module": 2,
+      "n": 31,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Radical equations",
+      "stem": "What is the sum of all solutions to $\\sqrt{5x-4}=x$?",
+      "answer": "5",
+      "solution": "Squaring gives $5x-4=x^2$, so $x^2-5x+4=0$ and $x=1$ or $x=4$. Both make the right side nonnegative and both check ($\\sqrt{1}=1$ and $\\sqrt{16}=4$), so neither is extraneous and the sum is $5$.",
+      "steps": [
+        "Square both sides: $5x-4=x^2$.",
+        "Solve $x^2-5x+4=0$: $x=1$ or $x=4$.",
+        "Both check in the original equation, so the sum is $1+4=5$."
+      ],
+      "verify": "x = symbols('x')\nresult = sum(solve(sqrt(5*x-4) - x, x))"
+    },
+    {
+      "id": "T09-M2-10",
+      "module": 2,
+      "n": 32,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Growth and decay",
+      "stem": "The function $P(t)=3000(1.08)^t$ gives the value, in dollars, of an account $t$ years after it was opened. Which function gives the value of the account $m$ months after it was opened?",
+      "choices": [
+        "$P(m)=3000(1.08)^{12m}$",
+        "$P(m)=3000\\left(\\frac{1.08}{12}\\right)^{m}$",
+        "$P(m)=250(1.08)^{m}$",
+        "$P(m)=3000(1.08)^{m/12}$"
+      ],
+      "answer": "D",
+      "solution": "Changing the time unit changes the exponent, not the base: $m$ months is $m/12$ years, so replace $t$ by $m/12$. The yearly factor $1.08$ stays; dividing the base by $12$ is not the same as dividing the exponent.",
+      "steps": [
+        "Convert months to years: $t=\\frac{m}{12}$.",
+        "Substitute into the model: $3000(1.08)^{m/12}$.",
+        "The base stays $1.08$ because the yearly growth has not changed."
+      ],
+      "verify": "result = \"$P(m)=3000(1.08)^{m/12}$\""
+    },
+    {
+      "id": "T09-M2-11",
+      "module": 2,
+      "n": 33,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Growth and decay",
+      "stem": "The number of bacteria in a culture triples every $4$ hours. There are $90$ bacteria in the culture at time $t=0$. How many bacteria are in the culture after $12$ hours?",
+      "choices": [
+        "$270$",
+        "$810$",
+        "$1080$",
+        "$2430$"
+      ],
+      "answer": "D",
+      "solution": "There are $12\\div 4=3$ tripling periods, so the count is multiplied by $3$ three times: $90\\cdot 3^3=90\\cdot 27=2430$. Tripling only once gives $270$, and multiplying by $12$ gives $1080$.",
+      "steps": [
+        "Count periods: $12\\div 4=3$.",
+        "Multiply by $3$ three times: $90(3)^3$.",
+        "$90\\cdot 27=2430$ bacteria."
+      ],
+      "verify": "result = 90*3**3"
+    },
+    {
+      "id": "T09-M2-12",
+      "module": 2,
+      "n": 34,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Rational equations",
+      "stem": "What is the positive solution to $\\dfrac{1}{x}+\\dfrac{1}{x+2}=\\dfrac{3}{4}$?",
+      "choices": [
+        "$\\frac{2}{3}$",
+        "$2$",
+        "$-\\frac{4}{3}$",
+        "$4$"
+      ],
+      "answer": "B",
+      "solution": "Multiplying by the common denominator $4x(x+2)$ gives $4(x+2)+4x=3x(x+2)$, so $8x+8=3x^2+6x$ and $3x^2-2x-8=0$. Factoring, $(3x+4)(x-2)=0$, so $x=-\\frac{4}{3}$ or $x=2$; the positive solution is $2$.",
+      "steps": [
+        "Multiply through by $4x(x+2)$: $4(x+2)+4x=3x(x+2)$.",
+        "Simplify: $8x+8=3x^2+6x$, so $3x^2-2x-8=0$.",
+        "Factor $(3x+4)(x-2)=0$ and keep the positive root, $x=2$."
+      ],
+      "verify": "x = symbols('x')\nresult = max(solve(Eq(1/x + 1/(x+2), Rational(3,4)), x))"
+    },
+    {
+      "id": "T09-M2-13",
+      "module": 2,
+      "n": 35,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Growth and decay",
+      "stem": "The value of a car $t$ years after it was purchased is modeled by $V(t)=18000(0.88)^t$. Which of the following is the best interpretation of $0.88$ in this model?",
+      "choices": [
+        "The car loses $88\\%$ of its value each year.",
+        "The car is worth $\\$0.88$ less each year.",
+        "Each year the car is worth 0.88 times its value the previous year.",
+        "The car was worth $\\$18{,}000$ times $0.88$ when it was purchased."
+      ],
+      "answer": "C",
+      "solution": "The base is the yearly multiplier, so each year the car is worth $0.88$ times its previous value --- a loss of $12\\%$, not $88\\%$. Confusing what remains ($88\\%$) with what is lost ($12\\%$) is the standard decay-model error.",
+      "steps": [
+        "The base of an exponential model multiplies the previous value.",
+        "Here that multiplier is $0.88$, so $88\\%$ of the value remains.",
+        "Equivalently, the car loses $12\\%$ of its value each year."
+      ],
+      "verify": "result = \"Each year the car is worth 0.88 times its value the previous year.\"",
+      "wide": true
+    },
+    {
+      "id": "T09-M2-14",
+      "module": 2,
+      "n": 36,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Rational expressions",
+      "stem": "Which of the following is equivalent to $\\dfrac{x^2-9}{x+3}$ for $x\\neq -3$?",
+      "choices": [
+        "$x-3$",
+        "$x+3$",
+        "$x^2-3$",
+        "$\\frac{1}{x-3}$"
+      ],
+      "answer": "A",
+      "solution": "The numerator is a difference of squares: $x^2-9=(x+3)(x-3)$. Cancelling the common factor $x+3$ leaves $x-3$. Cancelling is legal only because $x\\neq -3$, which is why the restriction is stated.",
+      "steps": [
+        "Factor the numerator: $x^2-9=(x+3)(x-3)$.",
+        "Write the quotient as $\\frac{(x+3)(x-3)}{x+3}$.",
+        "Cancel $x+3$ to get $x-3$."
+      ],
+      "verify": "x = symbols('x')\nresult = simplify((x**2-9)/(x+3))"
+    },
+    {
+      "id": "T09-M2-15",
+      "module": 2,
+      "n": 37,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Extraneous solutions",
+      "stem": "What is the solution to $2\\sqrt{x}=x-3$?",
+      "choices": [
+        "$1$",
+        "$3$",
+        "$9$",
+        "$1$ and $9$"
+      ],
+      "answer": "C",
+      "solution": "Squaring gives $4x=x^2-6x+9$, so $x^2-10x+9=0$ and $x=1$ or $x=9$. At $x=1$ the equation reads $2=-2$, which is false, so $1$ is extraneous; $x=9$ gives $6=6$ and is the only solution.",
+      "steps": [
+        "Square both sides: $4x=x^2-6x+9$.",
+        "Solve $x^2-10x+9=0$: $x=1$ or $x=9$.",
+        "Check: $x=1$ gives $2=-2$, false; $x=9$ gives $6=6$, true."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(2*sqrt(x) - (x-3), x)[0]"
+    },
+    {
+      "id": "T09-M2-16",
+      "module": 2,
+      "n": 38,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Growth and decay",
+      "stem": "The function $N(t)=1600\\left(\\frac{1}{2}\\right)^{t/8}$ gives the number of grams of a sample remaining $t$ years after the sample was formed. After how many years will $100$ grams remain?",
+      "choices": [
+        "$16$",
+        "$24$",
+        "$32$",
+        "$64$"
+      ],
+      "answer": "C",
+      "solution": "Divide to find the number of halvings: $\\frac{100}{1600}=\\frac{1}{16}=\\left(\\frac{1}{2}\\right)^4$, so $t/8=4$ and $t=32$. Reading the $8$ as the answer, or halving once too few times, gives $8$ or $24$.",
+      "steps": [
+        "Set $1600\\left(\\frac{1}{2}\\right)^{t/8}=100$, so $\\left(\\frac{1}{2}\\right)^{t/8}=\\frac{1}{16}$.",
+        "Since $\\frac{1}{16}=\\left(\\frac{1}{2}\\right)^4$, the exponents match: $\\frac{t}{8}=4$.",
+        "Therefore $t=32$ years."
+      ],
+      "verify": "t = symbols('t')\nresult = solve(Eq(1600*Rational(1,2)**(t/8), 100), t)[0]"
+    },
+    {
+      "id": "T09-M2-17",
+      "module": 2,
+      "n": 39,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Extraneous solutions",
+      "stem": "What is the sum of all solutions to $\\sqrt{2x+7}=1+\\sqrt{x+3}$?",
+      "choices": [
+        "$-3$",
+        "$-2$",
+        "$1$",
+        "$4$"
+      ],
+      "answer": "B",
+      "solution": "Squaring gives $2x+7=1+2\\sqrt{x+3}+x+3$, so $x+3=2\\sqrt{x+3}$. Squaring again gives $(x+3)^2=4(x+3)$, so $x+3=0$ or $x+3=4$, that is $x=-3$ or $x=1$. Both check here, so the sum is $-2$; the lesson is that a candidate is extraneous only if the check says so.",
+      "steps": [
+        "Square both sides: $2x+7=x+4+2\\sqrt{x+3}$, so $x+3=2\\sqrt{x+3}$.",
+        "Square again: $(x+3)^2=4(x+3)$, giving $x=-3$ or $x=1$.",
+        "Check both: $x=-3$ gives $1=1$ and $x=1$ gives $3=3$, so the sum is $-3+1=-2$."
+      ],
+      "verify": "x = symbols('x')\nresult = sum(solve(sqrt(2*x+7) - 1 - sqrt(x+3), x))"
+    },
+    {
+      "id": "T09-M2-18",
+      "module": 2,
+      "n": 40,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Growth and decay",
+      "stem": "A population grows exponentially. The population is $500$ at time $t=0$ and $720$ when $t=2$, where $t$ is measured in years. If the population increases by $p\\%$ each year, what is the value of $p$?",
+      "choices": [
+        "$20$",
+        "$22$",
+        "$44$",
+        "$144$"
+      ],
+      "answer": "A",
+      "solution": "Two years of growth multiply the population by $\\frac{720}{500}=1.44$, so the one-year factor $b$ satisfies $b^2=1.44$ and $b=1.2$. Then $p=20$. Halving the total percent increase of $44\\%$ would give $22$, which ignores compounding.",
+      "steps": [
+        "Find the two-year multiplier: $720\\div 500=1.44$.",
+        "The annual factor satisfies $b^2=1.44$, so $b=\\sqrt{1.44}=1.2$.",
+        "Since $b=1+0.20$, the annual increase is $20\\%$, so $p=20$."
+      ],
+      "verify": "result = (sqrt(Rational(720,500)) - 1)*100"
+    },
+    {
+      "id": "T09-M2-19",
+      "module": 2,
+      "n": 41,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Rational equations",
+      "stem": "What is the solution to $\\dfrac{3}{x-1}+\\dfrac{2}{x+1}=\\dfrac{10}{x^2-1}$?",
+      "answer": "9/5",
+      "accepted": [
+        "1.8"
+      ],
+      "solution": "Since $x^2-1=(x-1)(x+1)$, the common denominator is $(x-1)(x+1)$. Multiplying through gives $3(x+1)+2(x-1)=10$, so $5x+1=10$ and $x=\\frac{9}{5}$. That value is neither $1$ nor $-1$, so it does not make a denominator zero and is a genuine solution.",
+      "steps": [
+        "Factor $x^2-1=(x-1)(x+1)$ to find the common denominator.",
+        "Multiply through: $3(x+1)+2(x-1)=10$.",
+        "Simplify: $5x+1=10$, so $x=\\frac{9}{5}$; check that $x\\neq\\pm 1$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(Eq(3/(x-1) + 2/(x+1), 10/(x**2-1)), x)[0]"
+    },
+    {
+      "id": "T09-M2-20",
+      "module": 2,
+      "n": 42,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Growth and decay",
+      "stem": "What value of $x$ satisfies $3^{2x-1}=27^{x-2}$?",
+      "answer": "5",
+      "solution": "Write both sides with the same base: $27=3^3$, so $27^{x-2}=3^{3x-6}$. When two equal powers share a base, their exponents are equal: $2x-1=3x-6$, so $x=5$.",
+      "steps": [
+        "Rewrite $27$ as $3^3$: $27^{x-2}=3^{3(x-2)}=3^{3x-6}$.",
+        "With equal bases, set the exponents equal: $2x-1=3x-6$.",
+        "Solve: $x=5$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(Eq(3**(2*x-1), 27**(x-2)), x)[0]"
+    },
+    {
+      "id": "T09-M2-21",
+      "module": 2,
+      "n": 43,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Growth and decay",
+      "stem": "The function $P(d)=8(2)^d$ gives the number of thousands of people living in a city $d$ decades after 1990. Which function gives the number of thousands of people living in the city $y$ years after 1990?",
+      "choices": [
+        "$P(y)=8(2)^{10y}$",
+        "$P(y)=8(2)^{y/10}$",
+        "$P(y)=8(20)^{y}$",
+        "$P(y)=80(2)^{y}$"
+      ],
+      "answer": "B",
+      "solution": "One decade is $10$ years, so $d=\\frac{y}{10}$. Substituting changes only the exponent: $P(y)=8(2)^{y/10}$. Multiplying the exponent by $10$ instead would double the population every year.",
+      "steps": [
+        "Convert years to decades: $d=\\frac{y}{10}$.",
+        "Substitute into $P(d)=8(2)^d$.",
+        "This gives $P(y)=8(2)^{y/10}$."
+      ],
+      "verify": "result = \"$P(y)=8(2)^{y/10}$\""
+    },
+    {
+      "id": "T09-M2-22",
+      "module": 2,
+      "n": 44,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Extraneous solutions",
+      "stem": "How many solutions does the equation $\\dfrac{1}{x-2}+\\dfrac{1}{x+2}=\\dfrac{4}{x^2-4}$ have?",
+      "choices": [
+        "$0$",
+        "$1$",
+        "$2$",
+        "Infinitely many"
+      ],
+      "answer": "A",
+      "solution": "With $x^2-4=(x-2)(x+2)$, multiplying through gives $(x+2)+(x-2)=4$, so $2x=4$ and $x=2$. But $x=2$ makes two of the original denominators zero, so it is extraneous and must be discarded --- the equation has no solution at all.",
+      "steps": [
+        "Factor $x^2-4=(x-2)(x+2)$ and multiply every term by it.",
+        "This gives $(x+2)+(x-2)=4$, so $2x=4$ and $x=2$.",
+        "Check: $x=2$ makes $x-2=0$, so it is extraneous and there are no solutions."
+      ],
+      "verify": "x = symbols('x')\nresult = len(solve(Eq(1/(x-2) + 1/(x+2), 4/(x**2-4)), x))"
+    }
+  ]
+}

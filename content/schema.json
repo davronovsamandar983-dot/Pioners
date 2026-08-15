@@ -67,6 +67,10 @@
         "stem":       { "type": "string", "minLength": 5 },
         "figure":     { "type": "string" },
         "wide":       { "type": "boolean" },
+        "form": {
+          "type": "boolean",
+          "description": "True when the question asks about the FORM of an expression rather than its value -- 'factored completely', 'which form displays the vertex as a constant'. Such a question deliberately offers a distractor that is mathematically equal to the key but written in the wrong form, so the distractor-equals-key check is suppressed for it."
+        },
         "choices": {
           "type": "array",
           "minItems": 4,

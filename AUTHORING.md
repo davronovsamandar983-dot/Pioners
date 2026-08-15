@@ -68,13 +68,30 @@ Available names: `sp`, `S`, `Rational`, `sqrt`, `pi`, `symbols`, `solve`,
 float int round`. `import`, `open`, `exec`, `eval` and dunders are rejected.
 
 For a question whose answer is not a number (an interpretation question, say),
-make `result` the exact string of the correct choice:
+make `result` a Python **string** holding the correct choice:
 
 ```python
 result = "The slope of the line of best fit"
 ```
 
-The validator falls back to a string comparison when sympy cannot parse.
+A string `result` is always compared as text — never through sympy — ignoring
+case, surrounding whitespace, `$` delimiters and a trailing full stop. You do
+not need to punctuate a sentence a particular way to make this work.
+
+The comparison of a non-string `result` understands the LaTeX the book
+actually renders: `\frac` (nested), `\sqrt`, `\pi`, `\cdot`, `\%`, `^`, and
+implicit multiplication such as `5x` or `3\sqrt{2}`. Write the choice the way
+the reader should see it; do not add a machine-readable copy in `accepted`
+just to get it to parse. Use `accepted` only for genuinely alternative correct
+forms of an SPR answer (`0.5` and `1/2`).
+
+### Questions about form, not value
+
+A "which expression is equivalent" or "factored completely" or "which form
+displays the vertex as a constant" question deliberately offers a distractor
+that is *mathematically equal* to the key but written the wrong way. Mark such
+a problem `"form": true` so the distractor-equals-key check is suppressed for
+it. Do not use this flag to excuse an accidental duplicate answer.
 
 ## Rules the validator enforces
 

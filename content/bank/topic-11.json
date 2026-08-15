@@ -1,0 +1,989 @@
+{
+  "number": 11,
+  "topic": "Ratios, Rates, Proportional Relationships and Units",
+  "domain": "Problem-Solving and Data Analysis",
+  "skills": [
+    "Ratios and proportions",
+    "Unit rates and unit conversion",
+    "Scale and density"
+  ],
+  "lesson": {
+    "intro": "A ratio compares two quantities, a rate compares two quantities with different units, and a proportional relationship is what you get when that comparison never changes. The Digital SAT leans on this trio harder than on almost anything else in Problem-Solving and Data Analysis: recipes, fuel economy, currency, map scales, population per square kilometre and density all reduce to the same move --- find the constant multiplier, then multiply. This topic also carries the test's unit-conversion questions, where the arithmetic is easy but the bookkeeping is not.",
+    "blocks": [
+      {
+        "kind": "section",
+        "title": "Ratios: parts, the whole and the multiplier",
+        "body": "A ratio $a:b$ does not say how many of anything there are; it says how the quantities are built out of equal \\emph{parts}. If red and blue marbles are in the ratio $3:4$, then the reds come in $3$ parts and the blues in $4$ parts, and every part has the same size $k$. So the counts are $3k$ and $4k$ and the total is $7k$.\n\nThat single letter $k$ is the whole topic. Every ratio question hands you one piece of information --- one of the quantities, the total, or the difference between the quantities --- and asks for another. Turn the given information into an equation in $k$, solve for $k$, then read off whatever was asked.\n\nFor example, with red$\\,$:$\\,$blue $=3:4$ and $84$ marbles in all: $3k+4k=84$, so $7k=84$ and $k=12$. There are $3(12)=36$ red marbles and $4(12)=48$ blue ones."
+      },
+      {
+        "kind": "concept",
+        "title": "Part-to-part is not part-to-whole",
+        "body": "The ratio $3:4$ says the reds are $\\frac{3}{4}$ of the \\emph{blues} --- it does \\emph{not} say the reds are $\\frac{3}{4}$ of the bag. As a fraction of the whole, the reds are $\\dfrac{3}{3+4}=\\dfrac{3}{7}$.\n\nWhenever a question gives you a \\emph{total}, add the parts of the ratio first and work with the part-to-whole fractions $\\frac{3}{7}$ and $\\frac{4}{7}$. Whenever it gives you \\emph{one quantity}, use the part-to-part fraction. Choosing the wrong one of these two is the single most common error on the topic, and the test always supplies the answer it produces."
+      },
+      {
+        "kind": "section",
+        "title": "Rates, unit rates and proportional relationships",
+        "body": "A rate is a ratio between quantities measured in different units: $245$ kilometres per $35$ litres, $\\$6$ per $500$ sheets, $250$ people per square kilometre. A \\emph{unit rate} is the same information rewritten with a denominator of $1$: $7$ kilometres per litre, $\\$0.012$ per sheet, and so on. Dividing to get the unit rate first almost always makes the rest of the question one multiplication.\n\nTwo quantities are \\emph{directly proportional} when $y=kx$ for a constant $k$; equivalently, $\\dfrac{y_1}{x_1}=\\dfrac{y_2}{x_2}$. That equality is the proportion you cross-multiply. Proportional quantities scale multiplicatively, never additively: if $x$ goes up by a factor of $\\frac{5}{3}$, so does $y$. Adding the same amount to both is not a proportional relationship."
+      },
+      {
+        "kind": "formula",
+        "title": "The relationships worth memorising",
+        "body": "\\[\\text{proportion: } \\frac{y_1}{x_1}=\\frac{y_2}{x_2}\\quad\\Longrightarrow\\quad y_1x_2=y_2x_1\\]\\[\\text{unit rate}=\\frac{\\text{total amount}}{\\text{number of units}}\\qquad \\text{density}=\\frac{\\text{mass}}{\\text{volume}}\\qquad \\text{population density}=\\frac{\\text{population}}{\\text{area}}\\]\\[\\text{actual distance}=(\\text{drawing distance})\\times(\\text{scale factor})\\]For a scale factor $r$ applied to a figure: lengths multiply by $r$, areas multiply by $r^{2}$, volumes multiply by $r^{3}$."
+      },
+      {
+        "kind": "strategy",
+        "title": "Dimensional analysis: make the units cancel",
+        "body": "The hardest items on this topic are conversion chains, and there is a mechanical method that never fails. Write the starting quantity as a fraction, then multiply by conversion factors --- fractions equal to $1$, such as $\\frac{1000\\text{ m}}{1\\text{ km}}$ --- chosen so that every unit you do not want cancels.\n\nSpeed of $72$ kilometres per hour into metres per second:\\[\\frac{72\\ {\\text{km}}}{1\\ {\\text{h}}}\\times\\frac{1000\\ \\text{m}}{1\\ {\\text{km}}}\\times\\frac{1\\ {\\text{h}}}{3600\\ \\text{s}}=\\frac{72\\,000}{3600}\\ \\frac{\\text{m}}{\\text{s}}=20\\ \\text{m/s}\\]Two rules make this reliable. First, never decide whether to multiply or divide by feel --- write the factor with the unwanted unit on the side where it cancels, and the arithmetic decides for you. Second, chain as many factors as you need in one line: hours to seconds and kilometres to metres and litres to cubic metres can all sit in the same product, so you only round once, at the end."
+      },
+      {
+        "kind": "trap",
+        "title": "Squared and cubed units, and areas under a scale",
+        "body": "$1\\text{ m}=100\\text{ cm}$, but $1\\text{ m}^2=100^2=10\\,000\\text{ cm}^2$ and $1\\text{ m}^3=100^3=1\\,000\\,000\\text{ cm}^3$. The conversion factor gets squared or cubed along with the unit, and the answer choice that used the plain factor $100$ is always on the list.\n\nThe same trap wears a second costume. If a map has $1$ cm representing $4$ km, then $1\\text{ cm}^2$ represents $4^2=16\\text{ km}^2$, so a lake covering $12\\text{ cm}^2$ on the map really covers $12\\times16=192\\text{ km}^2$, not $12\\times 4=48$. Whenever the quantity is an area, square the scale factor; whenever it is a volume, cube it."
+      },
+      {
+        "kind": "concept",
+        "title": "Scale drawings, maps and similar figures",
+        "body": "A scale written $1:25\\,000$ has no units: one unit on the drawing is $25\\,000$ of the same units in reality, so $8$ cm on the map is $200\\,000$ cm, which is $2$ km. A scale written ``$1$ cm represents $25$ km'' already carries its units and needs no conversion.\n\nSimilar figures are the same idea without a map: corresponding lengths are in a fixed ratio $r$. Enlarging a $4\\times 6$ photograph so that its width becomes $10$ gives $r=\\frac{10}{4}=2.5$, so the length becomes $6(2.5)=15$. Perimeters scale by $r$ too, because a perimeter is a sum of lengths --- but areas scale by $r^{2}$."
+      },
+      {
+        "kind": "worked",
+        "title": "Worked example 1 --- a ratio given as a difference",
+        "body": "\\textbf{In a survey, the ratio of people who prefer tea to people who prefer coffee is $5:7$. There are $96$ more people who prefer coffee. How many people were surveyed?}\n\nWrite the two groups as $5k$ and $7k$. The information given is a difference, so turn it into an equation in $k$:\\[7k-5k=96\\quad\\Longrightarrow\\quad 2k=96\\quad\\Longrightarrow\\quad k=48.\\]The question asks for the total, which is $5k+7k=12k=12(48)=576$ people.\n\nNotice what went wrong for anyone who divided $96$ by $12$ instead of by $2$: the $96$ is not the whole, it is the gap of $2$ parts. Always match the number you are given to the number of parts it represents before you solve for $k$."
+      },
+      {
+        "kind": "worked",
+        "title": "Worked example 2 --- a full conversion chain",
+        "body": "\\textbf{A bottling machine fills $250$ bottles per hour and each bottle holds $0.75$ litres. Given that $1$ cubic metre $=1000$ litres, how many cubic metres does the machine bottle in $8$ hours?}\n\nSet out one product in which every unwanted unit cancels:\\[\\frac{250\\ {\\text{bottles}}}{1\\ {\\text{h}}}\\times8\\ {\\text{h}}\\times\\frac{0.75\\ {\\text{L}}}{1\\ {\\text{bottle}}}\\times\\frac{1\\ \\text{m}^3}{1000\\ {\\text{L}}}=\\frac{250\\cdot 8\\cdot 0.75}{1000}\\ \\text{m}^3=1.5\\ \\text{m}^3.\\]The intermediate value $250\\cdot 8\\cdot 0.75=1500$ litres is worth writing down: it is the sanity check. A machine bottling $1500$ litres in a working day should land near a cubic metre and a half, so $0.15$ or $15$ would both be visibly wrong --- and both are on the answer list, one for each direction of dividing by $1000$."
+      },
+      {
+        "kind": "strategy",
+        "title": "Estimate first, then compute",
+        "body": "Almost every wrong answer on this topic is off by a factor of $10$, of $100$, or of the ratio you inverted. A one-second estimate catches all three. Before computing, ask whether the answer should be bigger or smaller than the number you started with: metres per second are smaller than kilometres per hour, grams are bigger than kilograms, the actual field is bigger than the map.\n\nThen compute exactly, keeping fractions rather than decimals wherever you can --- $\\frac{3}{24}\\cdot 60$ is cleaner by hand than $0.125\\times 60$ --- and finish by rereading the last line of the question. Rate problems routinely ask for the quantity you did \\emph{not} just solve for: the blue marbles, the total, the cost rather than the amount."
+      }
+    ]
+  },
+  "problems": [
+    {
+      "id": "T11-M1-01",
+      "module": 1,
+      "n": 1,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Ratios and proportions",
+      "stem": "In a school choir, the ratio of boys to girls is $2:3$. If there are $18$ boys in the choir, how many girls are in the choir?",
+      "choices": [
+        "$12$",
+        "$15$",
+        "$18$",
+        "$27$"
+      ],
+      "answer": "D",
+      "solution": "The ratio $2:3$ means the choir is built from blocks of $2$ boys and $3$ girls. Since $18$ boys is $9$ such blocks, there are $9$ blocks of girls as well, giving $27$. Choice A comes from multiplying by $\\frac{2}{3}$ instead of $\\frac{3}{2}$, which inverts the ratio.",
+      "steps": [
+        "Write the counts as $2k$ boys and $3k$ girls.",
+        "Solve $2k=18$, so $k=9$.",
+        "The number of girls is $3k=3(9)=27$."
+      ],
+      "verify": "result = Rational(18*3, 2)"
+    },
+    {
+      "id": "T11-M1-02",
+      "module": 1,
+      "n": 2,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Unit rates and unit conversion",
+      "stem": "A car travels $245$ kilometres using $35$ litres of fuel. At this rate, how many kilometres does the car travel per litre of fuel?",
+      "answer": "7",
+      "solution": "``Per litre'' means a denominator of $1$ litre, so divide the distance by the number of litres. The unit rate $7$ km/L is the constant of proportionality between distance and fuel used.",
+      "steps": [
+        "A unit rate is $\\dfrac{\\text{total distance}}{\\text{number of litres}}$.",
+        "Compute $\\dfrac{245}{35}=7$ kilometres per litre."
+      ],
+      "verify": "result = Rational(245, 35)"
+    },
+    {
+      "id": "T11-M1-03",
+      "module": 1,
+      "n": 3,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Unit rates and unit conversion",
+      "stem": "A bag of rice has a mass of $3.5$ kilograms. Given that $1$ kilogram $=1000$ grams, what is the mass of the bag, in grams?",
+      "choices": [
+        "$350$",
+        "$3500$",
+        "$35\\,000$",
+        "$350\\,000$"
+      ],
+      "answer": "B",
+      "solution": "A gram is a much smaller unit than a kilogram, so the number of grams must be much larger than $3.5$. Multiplying by the conversion factor $\\frac{1000\\text{ g}}{1\\text{ kg}}$ cancels the kilograms and leaves $3500$ grams. Choice A divides by $10$ somewhere along the way.",
+      "steps": [
+        "Multiply by $\\dfrac{1000\\text{ g}}{1\\text{ kg}}$ so that kilograms cancel.",
+        "$3.5\\times 1000 = 3500$ grams."
+      ],
+      "verify": "result = Rational(35,10)*1000"
+    },
+    {
+      "id": "T11-M1-04",
+      "module": 1,
+      "n": 4,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Ratios and proportions",
+      "stem": "Two business partners divide a profit of $\\$60$ in the ratio $2:3$. How many dollars does the partner with the larger share receive?",
+      "choices": [
+        "$12$",
+        "$24$",
+        "$30$",
+        "$36$"
+      ],
+      "answer": "D",
+      "solution": "The profit is given as a total, so use part-to-whole fractions: the parts add to $5$, and the larger share is $\\frac{3}{5}$ of the whole. Choice C is what you get by splitting the profit evenly instead of in the given ratio.",
+      "steps": [
+        "The ratio has $2+3=5$ parts, so one part is $\\dfrac{60}{5}=12$ dollars.",
+        "The larger share is $3$ parts: $3(12)=36$ dollars."
+      ],
+      "verify": "result = Rational(60*3,5)"
+    },
+    {
+      "id": "T11-M1-05",
+      "module": 1,
+      "n": 5,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Ratios and proportions",
+      "stem": "Four identical notebooks cost $\\$6.00$. At this rate, what is the cost, in dollars, of $10$ of these notebooks?",
+      "choices": [
+        "$15$",
+        "$20$",
+        "$24$",
+        "$60$"
+      ],
+      "answer": "A",
+      "solution": "Cost is proportional to the number of notebooks, so find the unit price and multiply. Choice D multiplies the price of four notebooks by $10$, which prices $40$ notebooks rather than $10$.",
+      "steps": [
+        "One notebook costs $\\dfrac{6}{4}=1.50$ dollars.",
+        "Ten notebooks cost $10(1.50)=15$ dollars."
+      ],
+      "verify": "result = Rational(6,4)*10"
+    },
+    {
+      "id": "T11-M1-06",
+      "module": 1,
+      "n": 6,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Scale and density",
+      "stem": "On a map, $1$ centimetre represents $25$ kilometres. Two cities are $6$ centimetres apart on the map. What is the actual distance, in kilometres, between the two cities?",
+      "answer": "150",
+      "solution": "This scale already carries its units, so no unit conversion is needed: each map centimetre is worth $25$ real kilometres, and the actual distance is proportional to the map distance.",
+      "steps": [
+        "Actual distance $=$ (map distance) $\\times$ (kilometres per centimetre).",
+        "$6\\times 25 = 150$ kilometres."
+      ],
+      "verify": "result = 6*25"
+    },
+    {
+      "id": "T11-M1-07",
+      "module": 1,
+      "n": 7,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Scale and density",
+      "stem": "A metal block has a mass of $480$ grams and a volume of $60$ cubic centimetres. What is the density of the block, in grams per cubic centimetre?",
+      "choices": [
+        "$0.125$",
+        "$8$",
+        "$80$",
+        "$540$"
+      ],
+      "answer": "B",
+      "solution": "Density is mass per unit volume, so divide mass by volume. Choice A is the reciprocal, $\\frac{60}{480}$, which gives the volume per gram instead.",
+      "steps": [
+        "Use $\\text{density}=\\dfrac{\\text{mass}}{\\text{volume}}$.",
+        "$\\dfrac{480\\text{ g}}{60\\text{ cm}^3}=8$ grams per cubic centimetre."
+      ],
+      "verify": "result = Rational(480,60)"
+    },
+    {
+      "id": "T11-M1-08",
+      "module": 1,
+      "n": 8,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Ratios and proportions",
+      "stem": "A bag contains only red marbles and blue marbles. The ratio of red marbles to blue marbles is $3:4$, and there are $84$ marbles in the bag. How many of the marbles are red?",
+      "choices": [
+        "$12$",
+        "$36$",
+        "$48$",
+        "$63$"
+      ],
+      "answer": "B",
+      "solution": "Because a total is given, the reds are $\\frac{3}{7}$ of the bag, not $\\frac{3}{4}$ of it. Choice D is exactly the trap: it treats the part-to-part ratio $\\frac{3}{4}$ as a part-to-whole fraction. Choice C counts the blue marbles.",
+      "steps": [
+        "Write $3k$ red and $4k$ blue marbles, so $3k+4k=84$.",
+        "Then $7k=84$, so $k=12$.",
+        "The number of red marbles is $3k=36$."
+      ],
+      "verify": "result = Rational(3,7)*84"
+    },
+    {
+      "id": "T11-M1-09",
+      "module": 1,
+      "n": 9,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Unit rates and unit conversion",
+      "stem": "A train travels at a constant speed of $72$ kilometres per hour. What is the speed of the train, in metres per second?",
+      "answer": "20",
+      "solution": "Chain the two conversion factors so kilometres and hours both cancel. A metre per second is a bigger unit than a kilometre per hour, so the number must come out smaller than $72$ --- a useful check against inverting a factor.",
+      "steps": [
+        "$\\dfrac{72\\text{ km}}{1\\text{ h}}\\times\\dfrac{1000\\text{ m}}{1\\text{ km}}\\times\\dfrac{1\\text{ h}}{3600\\text{ s}}$.",
+        "$\\dfrac{72\\,000}{3600}=20$ metres per second."
+      ],
+      "verify": "result = Rational(72*1000, 3600)"
+    },
+    {
+      "id": "T11-M1-10",
+      "module": 1,
+      "n": 10,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Ratios and proportions",
+      "stem": "A recipe that uses $3$ cups of flour makes $24$ cookies. At the same rate, how many cups of flour are needed to make $60$ cookies?",
+      "choices": [
+        "$4.5$",
+        "$7.5$",
+        "$8$",
+        "$20$"
+      ],
+      "answer": "B",
+      "solution": "Flour is proportional to cookies, so the ratio $\\frac{\\text{cups}}{\\text{cookies}}$ is constant. Choice D comes from dividing $60$ by $3$, which uses the wrong pair of quantities entirely.",
+      "steps": [
+        "Set up $\\dfrac{3}{24}=\\dfrac{f}{60}$.",
+        "Cross-multiply: $24f=180$, so $f=7.5$ cups."
+      ],
+      "verify": "result = Rational(3,24)*60"
+    },
+    {
+      "id": "T11-M1-11",
+      "module": 1,
+      "n": 11,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Unit rates and unit conversion",
+      "stem": "A bank exchanges currency at the rate $1$ euro $=1.25$ dollars. How many euros does a traveller receive in exchange for $400$ dollars?",
+      "choices": [
+        "$320$",
+        "$400$",
+        "$425$",
+        "$500$"
+      ],
+      "answer": "A",
+      "solution": "A euro is worth more than a dollar, so the number of euros must be smaller than $400$; that alone rules out choices C and D. Dividing by $1.25$ cancels the dollars, whereas choice D multiplies by $1.25$ --- the classic inverted conversion factor.",
+      "steps": [
+        "Multiply by $\\dfrac{1\\text{ euro}}{1.25\\text{ dollars}}$ so that dollars cancel.",
+        "$\\dfrac{400}{1.25}=320$ euros."
+      ],
+      "verify": "result = Rational(400*4,5)"
+    },
+    {
+      "id": "T11-M1-12",
+      "module": 1,
+      "n": 12,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Scale and density",
+      "stem": "A photograph is $4$ inches wide and $6$ inches long. The photograph is enlarged proportionally so that the new width is $10$ inches. What is the new length, in inches?",
+      "choices": [
+        "$2.4$",
+        "$12$",
+        "$15$",
+        "$18$"
+      ],
+      "answer": "C",
+      "solution": "An enlargement multiplies every length by the same scale factor $r=\\frac{10}{4}=2.5$. Choice B adds $6$ inches to the length because the width gained $6$ inches, but proportional scaling is multiplicative, not additive.",
+      "steps": [
+        "The scale factor is $r=\\dfrac{10}{4}=2.5$.",
+        "The new length is $6(2.5)=15$ inches."
+      ],
+      "verify": "result = Rational(6*10,4)"
+    },
+    {
+      "id": "T11-M1-13",
+      "module": 1,
+      "n": 13,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Unit rates and unit conversion",
+      "stem": "A tabletop has an area of $2$ square metres. Given that $1$ metre $=100$ centimetres, what is the area of the tabletop, in square centimetres?",
+      "choices": [
+        "$20$",
+        "$200$",
+        "$2000$",
+        "$20\\,000$"
+      ],
+      "answer": "D",
+      "solution": "The conversion factor must be squared along with the unit: $1\\text{ m}^2=(100\\text{ cm})^2=10\\,000\\text{ cm}^2$. Choice B uses the plain factor $100$ and is the answer for anyone who forgot the square.",
+      "steps": [
+        "$1\\text{ m}^2=100^2=10\\,000\\text{ cm}^2$.",
+        "$2\\times 10\\,000=20\\,000$ square centimetres."
+      ],
+      "verify": "result = 2*100**2"
+    },
+    {
+      "id": "T11-M1-14",
+      "module": 1,
+      "n": 14,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Scale and density",
+      "stem": "Aluminium has a density of $2.7$ grams per cubic centimetre. What is the mass, in grams, of a solid aluminium part with a volume of $50$ cubic centimetres?",
+      "choices": [
+        "$27$",
+        "$52.7$",
+        "$135$",
+        "$270$"
+      ],
+      "answer": "C",
+      "solution": "Rearranging $\\text{density}=\\frac{\\text{mass}}{\\text{volume}}$ gives $\\text{mass}=\\text{density}\\times\\text{volume}$. Choice B adds the two given numbers, which the units immediately forbid: you cannot add grams per cubic centimetre to cubic centimetres.",
+      "steps": [
+        "Use $\\text{mass}=\\text{density}\\times\\text{volume}$.",
+        "$2.7\\times 50=135$ grams."
+      ],
+      "verify": "result = Rational(27,10)*50"
+    },
+    {
+      "id": "T11-M1-15",
+      "module": 1,
+      "n": 15,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Ratios and proportions",
+      "stem": "The quantity $y$ is directly proportional to the quantity $x$. When $x=12$, the value of $y$ is $45$. What is the value of $y$ when $x=20$?",
+      "choices": [
+        "$53$",
+        "$75$",
+        "$80$",
+        "$135$"
+      ],
+      "answer": "B",
+      "solution": "Direct proportion means $y=kx$ with $k$ constant, so $\\frac{y}{x}$ never changes. Choice A adds $8$ to $y$ because $x$ increased by $8$; that is additive reasoning, which a proportional relationship does not obey.",
+      "steps": [
+        "Find the constant: $k=\\dfrac{45}{12}=\\dfrac{15}{4}$.",
+        "Then $y=\\dfrac{15}{4}(20)=75$."
+      ],
+      "verify": "result = Rational(45,12)*20"
+    },
+    {
+      "id": "T11-M1-16",
+      "module": 1,
+      "n": 16,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Unit rates and unit conversion",
+      "stem": "A bottling machine fills $250$ bottles per hour, and each bottle holds $0.75$ litres. Given that $1$ cubic metre $=1000$ litres, how many cubic metres of liquid does the machine bottle in $8$ hours?",
+      "choices": [
+        "$0.0015$",
+        "$0.015$",
+        "$0.15$",
+        "$1.5$"
+      ],
+      "answer": "D",
+      "solution": "Build one chain in which bottles, hours and litres all cancel: $250\\cdot 8\\cdot 0.75=1500$ litres, and dividing by $1000$ gives $1.5$ cubic metres. Choice C divides by $1000$ a second time; choices A and B divide by $1000$ three and two times over.",
+      "steps": [
+        "Bottles filled: $250\\times 8 = 2000$.",
+        "Volume: $2000\\times 0.75 = 1500$ litres.",
+        "Convert: $\\dfrac{1500}{1000}=1.5$ cubic metres."
+      ],
+      "verify": "result = Rational(250*8*3,4)/1000"
+    },
+    {
+      "id": "T11-M1-17",
+      "module": 1,
+      "n": 17,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Ratios and proportions",
+      "stem": "A pastry recipe mixes flour, sugar and butter by mass in the ratio $5:2:3$. One batch of the recipe uses $400$ grams of sugar. What is the total mass, in grams, of the three ingredients in that batch?",
+      "answer": "2000",
+      "solution": "With a three-term ratio the method is unchanged: one part is the size of one share, and the total is the sum of all parts. The $400$ grams matches the $2$ in the ratio, not the $10$ of the total, so divide by $2$ before multiplying by $10$.",
+      "steps": [
+        "The ratio has $5+2+3=10$ parts.",
+        "Sugar is $2$ parts, so one part is $\\dfrac{400}{2}=200$ grams.",
+        "The total is $10$ parts: $10(200)=2000$ grams."
+      ],
+      "verify": "result = Rational(400,2)*10"
+    },
+    {
+      "id": "T11-M1-18",
+      "module": 1,
+      "n": 18,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Scale and density",
+      "stem": "A map is drawn to a scale of $1:25\\,000$. Two landmarks are $8$ centimetres apart on the map. What is the actual distance between the landmarks, in kilometres?",
+      "choices": [
+        "$0.02$",
+        "$0.2$",
+        "$2$",
+        "$20$"
+      ],
+      "answer": "C",
+      "solution": "A unitless scale means one map centimetre stands for $25\\,000$ real centimetres, so the actual distance is $200\\,000$ cm and must then be converted to kilometres by dividing by $100\\,000$. Choice D stops at metres divided by $100$; choice B divides by an extra factor of $10$.",
+      "steps": [
+        "Actual distance $=8\\times 25\\,000=200\\,000$ centimetres.",
+        "$1$ km $=100\\,000$ cm, so $\\dfrac{200\\,000}{100\\,000}=2$ kilometres."
+      ],
+      "verify": "result = Rational(8*25000, 100000)"
+    },
+    {
+      "id": "T11-M1-19",
+      "module": 1,
+      "n": 19,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Scale and density",
+      "stem": "On a map, $1$ centimetre represents $4$ kilometres. A lake covers an area of $12$ square centimetres on the map. What is the actual area of the lake, in square kilometres?",
+      "choices": [
+        "$48$",
+        "$96$",
+        "$192$",
+        "$768$"
+      ],
+      "answer": "C",
+      "solution": "Areas scale by the square of the length scale factor: $1\\text{ cm}^2$ on the map represents $4^2=16\\text{ km}^2$. Choice A multiplies by $4$ instead of $16$, the standard error of forgetting to square the scale factor.",
+      "steps": [
+        "$1\\text{ cm}^2$ represents $4^2=16$ square kilometres.",
+        "$12\\times 16=192$ square kilometres."
+      ],
+      "verify": "result = 12*4**2"
+    },
+    {
+      "id": "T11-M1-20",
+      "module": 1,
+      "n": 20,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Unit rates and unit conversion",
+      "stem": "A car uses $8$ litres of fuel for every $100$ kilometres driven, and fuel costs $\\$1.60$ per litre. What is the cost, in dollars, of the fuel used on a trip of $250$ kilometres?",
+      "choices": [
+        "$32$",
+        "$40$",
+        "$50$",
+        "$320$"
+      ],
+      "answer": "A",
+      "solution": "Two rates chain together: litres per kilometre, then dollars per litre. The trip uses $\\frac{8}{100}\\times 250=20$ litres, and $20$ litres cost $\\$32$. Choice D forgets that the $8$ litres covers $100$ kilometres, not one.",
+      "steps": [
+        "Fuel used: $\\dfrac{8\\text{ L}}{100\\text{ km}}\\times 250\\text{ km}=20$ litres.",
+        "Cost: $20\\times 1.60=32$ dollars."
+      ],
+      "verify": "result = Rational(8,100)*250*Rational(16,10)"
+    },
+    {
+      "id": "T11-M1-21",
+      "module": 1,
+      "n": 21,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Scale and density",
+      "stem": "A solid metal cube has edges of length $5$ centimetres and is made of a metal with a density of $8.4$ grams per cubic centimetre. What is the mass of the cube, in kilograms?",
+      "answer": "1.05",
+      "accepted": [
+        "21/20"
+      ],
+      "solution": "Find the volume from the edge length first, then convert mass to the unit the question asks for. The final division by $1000$ is what the question is really testing: the density is in grams, but the answer is wanted in kilograms.",
+      "steps": [
+        "Volume $=5^3=125$ cubic centimetres.",
+        "Mass $=8.4\\times 125=1050$ grams.",
+        "Convert: $\\dfrac{1050}{1000}=1.05$ kilograms."
+      ],
+      "verify": "result = Rational(84,10)*5**3/1000"
+    },
+    {
+      "id": "T11-M1-22",
+      "module": 1,
+      "n": 22,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Unit rates and unit conversion",
+      "stem": "A printer prints $15$ pages per minute, and each page uses one sheet of paper. Paper costs $\\$6.00$ per package of $500$ sheets. What is the cost, in dollars, of the paper used if the printer runs continuously for $3$ hours?",
+      "choices": [
+        "$16.20$",
+        "$27$",
+        "$32.40$",
+        "$54$"
+      ],
+      "answer": "C",
+      "solution": "Convert hours to minutes before applying the printing rate, then convert sheets to packages before applying the price. Choice D uses $3$ hours as $300$ minutes; choice B prices the paper at a whole number of packages by rounding down instead of using the exact rate.",
+      "steps": [
+        "Running time: $3\\times 60=180$ minutes.",
+        "Sheets used: $15\\times 180=2700$.",
+        "Cost: $\\dfrac{2700}{500}\\times 6=32.40$ dollars."
+      ],
+      "verify": "result = Rational(15*180,500)*6"
+    },
+    {
+      "id": "T11-M2-01",
+      "module": 2,
+      "n": 23,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Ratios and proportions",
+      "stem": "A paint mixture is made by combining red paint and blue paint in the ratio $4:7$. A batch of this mixture uses $28$ litres of red paint. How many litres of blue paint does it use?",
+      "choices": [
+        "$16$",
+        "$25$",
+        "$35$",
+        "$49$"
+      ],
+      "answer": "D",
+      "solution": "The $28$ litres corresponds to the $4$ in the ratio, so one part is $7$ litres and the blue paint is $7$ parts. Choice A multiplies by $\\frac{4}{7}$ rather than $\\frac{7}{4}$, inverting the ratio.",
+      "steps": [
+        "One part is $\\dfrac{28}{4}=7$ litres.",
+        "Blue paint is $7$ parts: $7\\times 7=49$ litres."
+      ],
+      "verify": "result = Rational(28*7,4)"
+    },
+    {
+      "id": "T11-M2-02",
+      "module": 2,
+      "n": 24,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Unit rates and unit conversion",
+      "stem": "A printer produces $84$ pages in $6$ minutes. At this constant rate, how many pages does the printer produce per minute?",
+      "answer": "14",
+      "solution": "The phrase ``per minute'' asks for the rate with a denominator of $1$ minute, so divide the number of pages by the number of minutes.",
+      "steps": [
+        "Unit rate $=\\dfrac{84\\text{ pages}}{6\\text{ min}}$.",
+        "$\\dfrac{84}{6}=14$ pages per minute."
+      ],
+      "verify": "result = Rational(84,6)"
+    },
+    {
+      "id": "T11-M2-03",
+      "module": 2,
+      "n": 25,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Unit rates and unit conversion",
+      "stem": "An experiment ran for $5400$ seconds. Given that $1$ hour $=3600$ seconds, how many hours did the experiment run?",
+      "choices": [
+        "$0.9$",
+        "$1.5$",
+        "$15$",
+        "$90$"
+      ],
+      "answer": "B",
+      "solution": "An hour is a much larger unit than a second, so the number of hours must be far smaller than $5400$: divide by $3600$. Choice A divides by $60$ twice but keeps only one of the divisions in the right place.",
+      "steps": [
+        "Multiply by $\\dfrac{1\\text{ h}}{3600\\text{ s}}$ so that seconds cancel.",
+        "$\\dfrac{5400}{3600}=1.5$ hours."
+      ],
+      "verify": "result = Rational(5400,3600)"
+    },
+    {
+      "id": "T11-M2-04",
+      "module": 2,
+      "n": 26,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Ratios and proportions",
+      "stem": "A prize of $\\$96$ is divided among three students in the ratio $1:2:5$. How many dollars does the student with the largest share receive?",
+      "choices": [
+        "$12$",
+        "$24$",
+        "$60$",
+        "$80$"
+      ],
+      "answer": "C",
+      "solution": "A total is given, so the largest share is $\\frac{5}{8}$ of the prize. Choice D uses $\\frac{5}{6}$, treating the ratio of the largest share to the other two shares as if it were a share of the whole.",
+      "steps": [
+        "The ratio has $1+2+5=8$ parts, so one part is $\\dfrac{96}{8}=12$ dollars.",
+        "The largest share is $5$ parts: $5(12)=60$ dollars."
+      ],
+      "verify": "result = Rational(96*5,8)"
+    },
+    {
+      "id": "T11-M2-05",
+      "module": 2,
+      "n": 27,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Ratios and proportions",
+      "stem": "Seven identical textbooks have a total mass of $2.8$ kilograms. What is the total mass, in kilograms, of $12$ of these textbooks?",
+      "choices": [
+        "$4.8$",
+        "$5.6$",
+        "$7.2$",
+        "$8.4$"
+      ],
+      "answer": "A",
+      "solution": "Mass is proportional to the number of books, so find the mass of one book and multiply. Choice B doubles the mass of seven books, which would be the mass of $14$ books, not $12$.",
+      "steps": [
+        "One book has mass $\\dfrac{2.8}{7}=0.4$ kilograms.",
+        "Twelve books have mass $12(0.4)=4.8$ kilograms."
+      ],
+      "verify": "result = Rational(28,10)/7*12"
+    },
+    {
+      "id": "T11-M2-06",
+      "module": 2,
+      "n": 28,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Scale and density",
+      "stem": "A model car is built to a scale of $1:18$. The model is $25$ centimetres long. What is the length, in centimetres, of the actual car?",
+      "answer": "450",
+      "solution": "A scale of $1:18$ means every length on the actual car is $18$ times the corresponding length on the model, so the actual car must be longer than the model --- multiply rather than divide.",
+      "steps": [
+        "Actual length $=$ model length $\\times 18$.",
+        "$25\\times 18=450$ centimetres."
+      ],
+      "verify": "result = 25*18"
+    },
+    {
+      "id": "T11-M2-07",
+      "module": 2,
+      "n": 29,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Scale and density",
+      "stem": "A rural district has a population density of $250$ people per square kilometre and an area of $36$ square kilometres. What is the population of the district?",
+      "choices": [
+        "$286$",
+        "$900$",
+        "$9000$",
+        "$90\\,000$"
+      ],
+      "answer": "C",
+      "solution": "Population density is population per unit area, so population $=$ density $\\times$ area. Choice A divides the area by the density, which produces a quantity in square kilometres per person.",
+      "steps": [
+        "Population $=$ density $\\times$ area.",
+        "$250\\times 36=9000$ people."
+      ],
+      "verify": "result = 250*36"
+    },
+    {
+      "id": "T11-M2-08",
+      "module": 2,
+      "n": 30,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Ratios and proportions",
+      "stem": "In a survey, the ratio of the number of people who prefer tea to the number who prefer coffee is $5:7$. There are $96$ more people who prefer coffee than prefer tea. How many people were surveyed?",
+      "choices": [
+        "$288$",
+        "$576$",
+        "$672$",
+        "$1152$"
+      ],
+      "answer": "B",
+      "solution": "The given number is a difference, and the difference between $7k$ and $5k$ is $2k$ --- two parts, not twelve. Once $k=48$, the total is $12k=576$. Choice A comes from matching the $96$ to the wrong number of parts.",
+      "steps": [
+        "Write $5k$ for tea and $7k$ for coffee.",
+        "$7k-5k=96$, so $2k=96$ and $k=48$.",
+        "The total surveyed is $12k=12(48)=576$ people."
+      ],
+      "verify": "result = Rational(96,2)*12"
+    },
+    {
+      "id": "T11-M2-09",
+      "module": 2,
+      "n": 31,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Unit rates and unit conversion",
+      "stem": "A drone flies at a constant speed of $15$ metres per second. What is this speed, in kilometres per hour?",
+      "answer": "54",
+      "solution": "Going from metres per second to kilometres per hour multiplies by $3600$ and divides by $1000$, a net factor of $3.6$; because a kilometre per hour is a smaller unit than a metre per second, the number must come out larger than $15$.",
+      "steps": [
+        "$\\dfrac{15\\text{ m}}{1\\text{ s}}\\times\\dfrac{3600\\text{ s}}{1\\text{ h}}=54\\,000$ metres per hour.",
+        "$\\dfrac{54\\,000}{1000}=54$ kilometres per hour."
+      ],
+      "verify": "result = Rational(15*3600,1000)"
+    },
+    {
+      "id": "T11-M2-10",
+      "module": 2,
+      "n": 32,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Unit rates and unit conversion",
+      "stem": "A storage tank has a volume of $2.5$ cubic metres. Given that $1$ metre $=100$ centimetres, what is the volume of the tank, in cubic centimetres?",
+      "choices": [
+        "$2500$",
+        "$25\\,000$",
+        "$250\\,000$",
+        "$2\\,500\\,000$"
+      ],
+      "answer": "D",
+      "solution": "For a volume the conversion factor is cubed: $1\\text{ m}^3=100^3=1\\,000\\,000\\text{ cm}^3$. Choice B uses $100^2$ and choice A uses $100$ alone, the two ways of under-applying the factor.",
+      "steps": [
+        "$1\\text{ m}^3=100^3=1\\,000\\,000\\text{ cm}^3$.",
+        "$2.5\\times 1\\,000\\,000=2\\,500\\,000$ cubic centimetres."
+      ],
+      "verify": "result = Rational(25,10)*100**3"
+    },
+    {
+      "id": "T11-M2-11",
+      "module": 2,
+      "n": 33,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Scale and density",
+      "stem": "A triangle has sides of length $6$ centimetres, $8$ centimetres and $10$ centimetres. A second triangle is similar to the first and has a longest side of length $25$ centimetres. What is the perimeter, in centimetres, of the second triangle?",
+      "choices": [
+        "$30$",
+        "$48$",
+        "$60$",
+        "$75$"
+      ],
+      "answer": "C",
+      "solution": "Similar figures have a single scale factor, here $r=\\frac{25}{10}=2.5$, and a perimeter is a sum of lengths, so it scales by $r$ as well. Choice B is the perimeter of the original triangle doubled, not scaled by $2.5$.",
+      "steps": [
+        "The scale factor is $r=\\dfrac{25}{10}=2.5$.",
+        "The first perimeter is $6+8+10=24$ centimetres.",
+        "The second perimeter is $24(2.5)=60$ centimetres."
+      ],
+      "verify": "result = Rational(25,10)*24"
+    },
+    {
+      "id": "T11-M2-12",
+      "module": 2,
+      "n": 34,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Unit rates and unit conversion",
+      "stem": "In a certain country, petrol costs $1.40$ euros per litre, and $1$ euro is worth $1.10$ dollars. What is the cost, in dollars, of $40$ litres of petrol?",
+      "choices": [
+        "$44$",
+        "$50.91$",
+        "$56$",
+        "$61.60$"
+      ],
+      "answer": "D",
+      "solution": "Two conversion factors chain: litres to euros, then euros to dollars. Because a euro is worth more than a dollar, the dollar figure must exceed the euro figure of $56$; choice B divides by $1.10$ instead of multiplying, inverting the exchange factor.",
+      "steps": [
+        "Cost in euros: $1.40\\times 40=56$ euros.",
+        "Cost in dollars: $56\\times 1.10=61.60$ dollars."
+      ],
+      "verify": "result = Rational(14,10)*40*Rational(11,10)"
+    },
+    {
+      "id": "T11-M2-13",
+      "module": 2,
+      "n": 35,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Scale and density",
+      "stem": "A map has a scale of $1:50\\,000$. Two towns are $12$ kilometres apart. How far apart, in centimetres, are the two towns on the map?",
+      "answer": "24",
+      "solution": "The scale is unitless, so both distances must be in the same unit before dividing: convert $12$ kilometres to $1\\,200\\,000$ centimetres, then divide by $50\\,000$ because the map distance is the smaller of the two.",
+      "steps": [
+        "$12$ km $=12\\times 100\\,000=1\\,200\\,000$ centimetres.",
+        "Map distance $=\\dfrac{1\\,200\\,000}{50\\,000}=24$ centimetres."
+      ],
+      "verify": "result = Rational(12*100000, 50000)"
+    },
+    {
+      "id": "T11-M2-14",
+      "module": 2,
+      "n": 36,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Ratios and proportions",
+      "stem": "A $40$-litre mixture of water and syrup contains water and syrup in the ratio $7:3$. How many litres of syrup must be added so that the mixture contains equal amounts of water and syrup?",
+      "choices": [
+        "$16$",
+        "$20$",
+        "$24$",
+        "$28$"
+      ],
+      "answer": "A",
+      "solution": "Break the mixture into parts first: one part is $4$ litres, so there are $28$ litres of water and $12$ of syrup. Only syrup is added, so the water stays at $28$ and the syrup must reach $28$ as well. Choice D is the target amount of syrup rather than the amount added.",
+      "steps": [
+        "One part is $\\dfrac{40}{10}=4$ litres, so there are $28$ litres of water and $12$ of syrup.",
+        "Adding only syrup leaves the water at $28$ litres.",
+        "Syrup needed: $28-12=16$ litres."
+      ],
+      "verify": "result = Rational(7,10)*40 - Rational(3,10)*40"
+    },
+    {
+      "id": "T11-M2-15",
+      "module": 2,
+      "n": 37,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Scale and density",
+      "stem": "Cooking oil has a density of $0.8$ grams per cubic centimetre. What is the volume, in cubic centimetres, of $1.2$ kilograms of this oil?",
+      "choices": [
+        "$150$",
+        "$960$",
+        "$1500$",
+        "$1600$"
+      ],
+      "answer": "C",
+      "solution": "Convert the mass to grams so that it matches the units of the density, then divide: $\\text{volume}=\\frac{\\text{mass}}{\\text{density}}$. Choice B multiplies by the density instead of dividing, and because the density is less than $1$ the volume must exceed the number of grams.",
+      "steps": [
+        "$1.2$ kg $=1200$ grams.",
+        "Volume $=\\dfrac{1200}{0.8}=1500$ cubic centimetres."
+      ],
+      "verify": "result = Rational(1200,1)/Rational(8,10)"
+    },
+    {
+      "id": "T11-M2-16",
+      "module": 2,
+      "n": 38,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Unit rates and unit conversion",
+      "stem": "A rectangular field measures $250$ metres by $160$ metres. Fertiliser is applied at a rate of $3$ kilograms per hectare, where $1$ hectare $=10\\,000$ square metres. How many kilograms of fertiliser are needed to cover the field?",
+      "choices": [
+        "$1.2$",
+        "$12$",
+        "$120$",
+        "$12\\,000$"
+      ],
+      "answer": "B",
+      "solution": "The rate is per hectare, so the area must be converted from square metres to hectares before it is used: $40\\,000\\text{ m}^2$ is $4$ hectares, needing $12$ kilograms. Choice D applies the rate directly to the $40\\,000$ square metres without converting.",
+      "steps": [
+        "Area $=250\\times 160=40\\,000$ square metres.",
+        "$\\dfrac{40\\,000}{10\\,000}=4$ hectares.",
+        "Fertiliser $=4\\times 3=12$ kilograms."
+      ],
+      "verify": "result = Rational(250*160,10000)*3"
+    },
+    {
+      "id": "T11-M2-17",
+      "module": 2,
+      "n": 39,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Unit rates and unit conversion",
+      "stem": "A car travels at a constant speed of $90$ kilometres per hour. How many metres does the car travel in $12$ seconds?",
+      "answer": "300",
+      "solution": "Convert the speed to metres per second before applying the time, so that the seconds cancel: $90$ km/h is $25$ m/s, and $25$ metres each second for $12$ seconds is $300$ metres.",
+      "steps": [
+        "$\\dfrac{90\\text{ km}}{1\\text{ h}}\\times\\dfrac{1000\\text{ m}}{1\\text{ km}}\\times\\dfrac{1\\text{ h}}{3600\\text{ s}}=25$ metres per second.",
+        "Distance $=25\\times 12=300$ metres."
+      ],
+      "verify": "result = Rational(90*1000,3600)*12"
+    },
+    {
+      "id": "T11-M2-18",
+      "module": 2,
+      "n": 40,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Scale and density",
+      "stem": "Two rectangles are similar, and the ratio of the length of a side of the smaller rectangle to the length of the corresponding side of the larger rectangle is $3:5$. The area of the smaller rectangle is $27$ square centimetres. What is the area, in square centimetres, of the larger rectangle?",
+      "choices": [
+        "$45$",
+        "$75$",
+        "$125$",
+        "$225$"
+      ],
+      "answer": "B",
+      "solution": "Lengths scale by $\\frac{5}{3}$, so areas scale by $\\left(\\frac{5}{3}\\right)^2=\\frac{25}{9}$, giving $27\\cdot\\frac{25}{9}=75$. Choice A multiplies the area by $\\frac{5}{3}$ and is the answer for anyone who forgot to square the scale factor.",
+      "steps": [
+        "The length scale factor is $\\dfrac{5}{3}$.",
+        "Areas scale by $\\left(\\dfrac{5}{3}\\right)^2=\\dfrac{25}{9}$.",
+        "$27\\times\\dfrac{25}{9}=75$ square centimetres."
+      ],
+      "verify": "result = 27*Rational(25,9)"
+    },
+    {
+      "id": "T11-M2-19",
+      "module": 2,
+      "n": 41,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Scale and density",
+      "stem": "A solid rectangular block measures $20$ centimetres by $15$ centimetres by $8$ centimetres and has a mass of $6.72$ kilograms. What is the density of the block, in grams per cubic centimetre?",
+      "answer": "2.8",
+      "accepted": [
+        "14/5"
+      ],
+      "solution": "The requested unit fixes the plan: express the mass in grams and the volume in cubic centimetres, then divide. Leaving the mass in kilograms would give a density $1000$ times too small.",
+      "steps": [
+        "Volume $=20\\times 15\\times 8=2400$ cubic centimetres.",
+        "Mass $=6.72$ kg $=6720$ grams.",
+        "Density $=\\dfrac{6720}{2400}=2.8$ grams per cubic centimetre."
+      ],
+      "verify": "result = Rational(6720,20*15*8)"
+    },
+    {
+      "id": "T11-M2-20",
+      "module": 2,
+      "n": 42,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Unit rates and unit conversion",
+      "stem": "A car travels $30$ miles on each gallon of fuel. Using $1$ mile $=1.6$ kilometres and $1$ gallon $=4$ litres, how many kilometres does the car travel on each litre of fuel?",
+      "choices": [
+        "$12$",
+        "$18.75$",
+        "$48$",
+        "$75$"
+      ],
+      "answer": "A",
+      "solution": "Convert the numerator from miles to kilometres and the denominator from gallons to litres in the same chain: $\\frac{30\\cdot 1.6}{4}=12$. Choice C converts only the miles, and choice D divides by $1.6$ instead of multiplying, inverting one factor.",
+      "steps": [
+        "$\\dfrac{30\\text{ mi}}{1\\text{ gal}}\\times\\dfrac{1.6\\text{ km}}{1\\text{ mi}}=48$ kilometres per gallon.",
+        "$\\dfrac{48\\text{ km}}{4\\text{ L}}=12$ kilometres per litre."
+      ],
+      "verify": "result = Rational(30*16,10)/4"
+    },
+    {
+      "id": "T11-M2-21",
+      "module": 2,
+      "n": 43,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Scale and density",
+      "stem": "A floor plan is drawn to a scale of $1:200$. On the plan, a rectangular room measures $4.5$ centimetres by $3$ centimetres. What is the actual floor area of the room, in square metres?",
+      "choices": [
+        "$13.5$",
+        "$27$",
+        "$54$",
+        "$108$"
+      ],
+      "answer": "C",
+      "solution": "Scale each length by $200$ first --- $9$ metres by $6$ metres --- and only then multiply. Choice A is the area on the plan converted as if it were already in square metres; choice B scales the plan area by $200$ once instead of by $200^2$.",
+      "steps": [
+        "Actual length: $4.5\\times 200=900$ cm $=9$ metres.",
+        "Actual width: $3\\times 200=600$ cm $=6$ metres.",
+        "Area $=9\\times 6=54$ square metres."
+      ],
+      "verify": "l = Rational(45,10)*200/100\nw = 3*200/100\nresult = l*w"
+    },
+    {
+      "id": "T11-M2-22",
+      "module": 2,
+      "n": 44,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Unit rates and unit conversion",
+      "stem": "A water tank with a capacity of $4.5$ cubic metres is filled by a hose that delivers $15$ litres every $10$ seconds. Given that $1$ cubic metre $=1000$ litres, how many minutes does it take to fill the tank?",
+      "choices": [
+        "$30$",
+        "$50$",
+        "$75$",
+        "$300$"
+      ],
+      "answer": "B",
+      "solution": "Put both quantities in matching units before dividing: the tank holds $4500$ litres and the hose delivers $90$ litres per minute, so the fill takes $50$ minutes. Choice D reports the answer in seconds rather than minutes.",
+      "steps": [
+        "Capacity $=4.5\\times 1000=4500$ litres.",
+        "Rate $=\\dfrac{15\\text{ L}}{10\\text{ s}}\\times\\dfrac{60\\text{ s}}{1\\text{ min}}=90$ litres per minute.",
+        "Time $=\\dfrac{4500}{90}=50$ minutes."
+      ],
+      "verify": "result = Rational(45,10)*1000/(Rational(15,10)*60)"
+    }
+  ]
+}

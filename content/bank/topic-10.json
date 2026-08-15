@@ -1,0 +1,1041 @@
+{
+  "number": 10,
+  "topic": "Nonlinear Systems and Function Transformations",
+  "domain": "Advanced Math",
+  "skills": [
+    "Line-parabola and other nonlinear systems",
+    "Shifts, stretches and reflections",
+    "Reading transformed graphs"
+  ],
+  "lesson": {
+    "intro": "Two kinds of question live in this topic, and the test likes to put them side by side. The first is a \\emph{nonlinear system}: a line meeting a parabola or a circle, where the work is to substitute one equation into the other and solve the quadratic that appears. The second is \\emph{function transformation}: reading $f(x-3)$, $-f(x)$ or $2f(x)$ and knowing exactly how the picture moves. Both reward the same habit --- decide what is happening to the input and what is happening to the output, then do the algebra one step at a time.",
+    "blocks": [
+      {
+        "kind": "section",
+        "title": "Solving a nonlinear system by substitution",
+        "body": "A system is a pair of conditions that must hold at the same point. When one equation is already solved for $y$, put that expression into the other equation. Every $y$ disappears and a single equation in $x$ is left --- almost always a quadratic.\\\\[4pt] For $y=x^{2}-3x+5$ and $y=x+2$: substitute to get $x^{2}-3x+5=x+2$, collect everything on one side, $x^{2}-4x+3=0$, and factor, $(x-1)(x-3)=0$. The $x$-coordinates are $1$ and $3$. \\emph{Finish the job}: put each back into the line to get $y=3$ and $y=5$, so the solutions are $(1,3)$ and $(3,5)$. A system with two intersection points has two solutions, and a question asking for a sum of coordinates wants both of them."
+      },
+      {
+        "kind": "concept",
+        "title": "Two equations become one equation",
+        "body": "Whatever the curves are, the goal never changes: eliminate a variable. With a circle $x^{2}+y^{2}=r^{2}$ and a line, substitute the line's $y$ into the circle. With a circle and a parabola $y=x^{2}+k$, it is often faster to eliminate $x^{2}$ instead, since $x^{2}=y-k$ turns the circle equation into a quadratic in $y$. Then remember that one $y$-value can correspond to two $x$-values: if $x^{2}=7$, that is two points, but if $x^{2}=0$, it is only one."
+      },
+      {
+        "kind": "section",
+        "title": "How many times do the graphs meet?",
+        "body": "Once the system has been reduced to $ax^{2}+bx+c=0$, the number of intersection points is the number of \\emph{real} solutions, and the discriminant $b^{2}-4ac$ answers that without any solving:\\\\[4pt] $b^{2}-4ac>0$: two intersection points. $\\;b^{2}-4ac=0$: one point, and the line is \\emph{tangent} to the curve. $\\;b^{2}-4ac<0$: the graphs never meet.\\\\[4pt] Every ``for what value of $c$ is the line tangent to the curve'' question is this identity read backwards: set the discriminant equal to zero and solve for the parameter."
+      },
+      {
+        "kind": "formula",
+        "title": "The transformation table",
+        "body": "Let $k>0$ and let $f$ be any function.\\\\[4pt] $f(x)+k$ --- shift \\textbf{up} $k$. \\quad $f(x)-k$ --- shift \\textbf{down} $k$.\\\\ $f(x+k)$ --- shift \\textbf{left} $k$. \\quad $f(x-k)$ --- shift \\textbf{right} $k$.\\\\ $-f(x)$ --- reflect across the $\\boldsymbol{x}$\\textbf{-axis}. \\quad $f(-x)$ --- reflect across the $\\boldsymbol{y}$\\textbf{-axis}.\\\\ $af(x)$ with $a>1$ --- vertical \\textbf{stretch} by $a$; with $0<a<1$ --- vertical \\textbf{shrink}.\\\\ $f(bx)$ with $b>1$ --- horizontal \\textbf{compression} by $b$; with $0<b<1$ --- horizontal \\textbf{stretch}.\\\\[4pt] One rule organises the whole table: changes \\emph{outside} the parentheses act on $y$ and behave as written; changes \\emph{inside} act on $x$ and behave in reverse."
+      },
+      {
+        "kind": "trap",
+        "title": "The shift inside the parentheses goes the wrong way",
+        "body": "$f(x-3)$ shifts the graph $3$ units \\textbf{right}, not left, and $f(x+6)$ shifts it $6$ units \\textbf{left}. The minus sign looks like ``go negative'', which is why this is the single most missed transformation on the test.\\\\[4pt] Never argue from the sign --- test a point. If $g(x)=f(x-3)$, then $g(3)=f(0)$: the output $f$ produced at $x=0$ now appears at $x=3$, so the picture moved to the right. The same check settles $f(2x)$: if $f$ has an $x$-intercept at $6$, then $f(2x)=0$ needs $2x=6$, so the new intercept is at $x=3$ --- the graph was squeezed toward the $y$-axis, not stretched away from it."
+      },
+      {
+        "kind": "trap",
+        "title": "Stretches act on one variable only",
+        "body": "$3f(x)$ multiplies every \\emph{output} by $3$: the point $(2,5)$ becomes $(2,15)$, and the $x$-coordinate does not budge. $f(3x)$ multiplies every \\emph{input} by $3$: the point $(6,5)$ becomes $(2,5)$, and the $y$-coordinate does not budge. Mixing these up --- or adding $3$ where the rule says multiply --- accounts for most wrong answers on stretch questions."
+      },
+      {
+        "kind": "strategy",
+        "title": "Work outside-in, and use a single point",
+        "body": "For a compound transformation such as $y=-2f(x+1)-3$, name the pieces in order: inside first ($1$ unit left), then the stretch and reflection ($\\times(-2)$: flip across the $x$-axis and stretch vertically by $2$), then the vertical shift ($3$ down).\\\\[4pt] When a graph or a table is given, do not transform the whole picture --- transform one point you can read exactly, usually a vertex or an intercept, and see which choice agrees. And when a question gives a table, remember that the inside change tells you \\emph{which row to read} and the outside change tells you \\emph{what to do with the number you read}."
+      },
+      {
+        "kind": "worked",
+        "title": "Worked example 1 --- a line and a parabola",
+        "body": "\\textbf{The graphs of $y=x^{2}-4x+7$ and $y=2x-1$ intersect at two points. What is the sum of the $y$-coordinates of those points?}\\\\[4pt] Substitute the line into the parabola: $x^{2}-4x+7=2x-1$. Bring everything to one side: $x^{2}-6x+8=0$, which factors as $(x-2)(x-4)=0$, so $x=2$ and $x=4$.\\\\[4pt] The question asks for $y$-coordinates, so use the line (it is the easier equation): $y=2(2)-1=3$ and $y=2(4)-1=7$. The sum is $3+7=10$.\\\\[4pt] \\emph{Why this order:} substituting the \\emph{linear} expression is what keeps the algebra to a single quadratic, and returning to the \\emph{linear} equation at the end keeps the arithmetic to one multiplication. Stopping at $x=2,4$ and answering $6$ is the classic incomplete answer."
+      },
+      {
+        "kind": "worked",
+        "title": "Worked example 2 --- tangency and the discriminant",
+        "body": "\\textbf{For what value of $c$ is the line $y=6x+c$ tangent to the parabola $y=x^{2}+2x+5$?}\\\\[4pt] Substitute: $x^{2}+2x+5=6x+c$, so $x^{2}-4x+(5-c)=0$. Tangent means the two intersection points have merged into one, so this quadratic has exactly one real root and its discriminant is zero:\\\\[4pt] $(-4)^{2}-4(1)(5-c)=0 \\;\\Rightarrow\\; 16-20+4c=0 \\;\\Rightarrow\\; c=1$.\\\\[4pt] \\emph{Check:} with $c=1$ the equation is $x^{2}-4x+4=(x-2)^{2}=0$, a repeated root at $x=2$ --- a single point of contact, as tangency requires. Note the sign work in $5-c$: carrying $c$ across the equals sign incorrectly is where this problem is normally lost."
+      },
+      {
+        "kind": "worked",
+        "title": "Worked example 3 --- reading a transformed function from a table",
+        "body": "\\textbf{The table below gives values of $f$. If $g(x)=-2f(x-1)+4$, what is $g(3)$?}\\\\[4pt] \\begin{center}\\renewcommand{\\arraystretch}{1.2}\\begin{tabular}{@{}c|cccc@{}} $x$ & $1$ & $2$ & $3$ & $4$ \\\\ \\midrule $f(x)$ & $0$ & $5$ & $-2$ & $7$ \\end{tabular}\\end{center} Inside first: $g(3)$ requires $f(3-1)=f(2)$, and the table gives $f(2)=5$. Now apply the outside operations in order: multiply by $-2$ to get $-10$, then add $4$ to get $-6$. So $g(3)=-6$.\\\\[4pt] \\emph{Why the inside comes first:} $x-1$ decides which input $f$ receives, and that has to be settled before $f$ can produce a number at all. Reading $f(3)=-2$ (ignoring the shift) gives $8$, and reading $f(4)=7$ (shifting the wrong way) gives $-10$ --- both appear as answer choices on the real test."
+      }
+    ]
+  },
+  "problems": [
+    {
+      "id": "T10-M1-01",
+      "module": 1,
+      "n": 1,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Shifts, stretches and reflections",
+      "stem": "The graph of $y=x^{2}$ is shifted $5$ units up in the $xy$-plane. Which equation represents the resulting graph?",
+      "choices": [
+        "$y=x^{2}+5$",
+        "$y=x^{2}-5$",
+        "$y=(x+5)^{2}$",
+        "$y=(x-5)^{2}$"
+      ],
+      "answer": "A",
+      "solution": "Adding a constant \\emph{outside} the function changes the output, so every point moves straight up: $y=x^{2}+5$. The choices with $5$ inside the parentheses move the graph sideways, not up.",
+      "steps": [
+        "A shift up adds to the output: replace $y$ by $y-5$, i.e. $y=x^{2}+5$.",
+        "Check the vertex: $(0,0)$ moves to $(0,5)$, and $y=0^{2}+5=5$."
+      ],
+      "verify": "result = \"$y=x^{2}+5$\""
+    },
+    {
+      "id": "T10-M1-02",
+      "module": 1,
+      "n": 2,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Shifts, stretches and reflections",
+      "stem": "The function $g$ is defined by $g(x)=f(x-3)$. Which of the following describes the graph of $y=g(x)$ compared with the graph of $y=f(x)$?",
+      "wide": true,
+      "choices": [
+        "The graph of $f$ shifted $3$ units to the left.",
+        "The graph of $f$ shifted $3$ units to the right.",
+        "The graph of $f$ shifted $3$ units up.",
+        "The graph of $f$ shifted $3$ units down."
+      ],
+      "answer": "B",
+      "solution": "A change inside the parentheses moves the graph horizontally, and it moves it the \\emph{opposite} way from the sign you see. To get the same output that $f$ gave at some input, $g$ needs an $x$ that is $3$ larger, so every point slides $3$ units right.",
+      "steps": [
+        "The change $x-3$ is inside the function, so the shift is horizontal.",
+        "$g(3)=f(0)$: the point that $f$ had at $x=0$ now sits at $x=3$.",
+        "So the graph moves $3$ units to the right."
+      ],
+      "verify": "result = \"The graph of $f$ shifted $3$ units to the right.\""
+    },
+    {
+      "id": "T10-M1-03",
+      "module": 1,
+      "n": 3,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Line-parabola and other nonlinear systems",
+      "stem": "In the $xy$-plane, the graphs of $y=2x$ and $y=x^{2}-3$ intersect at two points. What is the greatest $x$-coordinate of an intersection point?",
+      "answer": "3",
+      "solution": "Two graphs meet where their $y$-values agree, so setting the two expressions equal turns the system into a single quadratic equation in $x$.",
+      "steps": [
+        "Set $2x=x^{2}-3$.",
+        "Rearrange: $x^{2}-2x-3=0$.",
+        "Factor: $(x-3)(x+1)=0$, so $x=3$ or $x=-1$.",
+        "The greatest is $x=3$."
+      ],
+      "verify": "x = symbols('x')\nresult = max(solve(x**2 - 2*x - 3, x))"
+    },
+    {
+      "id": "T10-M1-04",
+      "module": 1,
+      "n": 4,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Shifts, stretches and reflections",
+      "stem": "The graph of $y=f(x)$ is reflected across the $x$-axis. Which equation represents the reflected graph?",
+      "choices": [
+        "$y=-f(x)$",
+        "$y=f(-x)$",
+        "$y=-f(-x)$",
+        "$y=\\lvert f(x)\\rvert$"
+      ],
+      "answer": "A",
+      "solution": "Reflecting across the $x$-axis flips the sign of every output, which is a change on the outside: $y=-f(x)$. Changing the sign of the input instead, $f(-x)$, would flip the graph left-to-right.",
+      "steps": [
+        "A reflection across the $x$-axis sends $(x,y)$ to $(x,-y)$.",
+        "The $x$-values are untouched, so the negative sign goes outside: $y=-f(x)$."
+      ],
+      "verify": "result = \"$y=-f(x)$\""
+    },
+    {
+      "id": "T10-M1-05",
+      "module": 1,
+      "n": 5,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Shifts, stretches and reflections",
+      "stem": "The graph of $y=3f(x)$ is obtained from the graph of $y=f(x)$ by which transformation?",
+      "wide": true,
+      "choices": [
+        "A shift of $3$ units up.",
+        "A horizontal stretch by a factor of $3$.",
+        "A vertical stretch by a factor of $3$.",
+        "A horizontal compression by a factor of $3$."
+      ],
+      "answer": "C",
+      "solution": "Multiplying the whole function by $3$ triples every output while leaving every input alone, so the graph is pulled away from the $x$-axis: a vertical stretch by a factor of $3$.",
+      "steps": [
+        "The factor $3$ multiplies the output, not the input.",
+        "A point $(a,b)$ becomes $(a,3b)$.",
+        "That is a vertical stretch by a factor of $3$."
+      ],
+      "verify": "result = \"A vertical stretch by a factor of $3$.\""
+    },
+    {
+      "id": "T10-M1-06",
+      "module": 1,
+      "n": 6,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Line-parabola and other nonlinear systems",
+      "stem": "The graphs of $y=x^{2}$ and $y=x+6$ intersect at two points in the $xy$-plane. What is the sum of the $y$-coordinates of those two points?",
+      "choices": [
+        "$1$",
+        "$5$",
+        "$9$",
+        "$13$"
+      ],
+      "answer": "D",
+      "solution": "Solve for the $x$-coordinates first, then feed each one back into either equation. A common slip is to stop after finding the $x$-values, or to report only one of the two points.",
+      "steps": [
+        "Set $x^{2}=x+6$, so $x^{2}-x-6=0$.",
+        "Factor: $(x-3)(x+2)=0$, giving $x=3$ and $x=-2$.",
+        "Then $y=3^{2}=9$ and $y=(-2)^{2}=4$.",
+        "The sum is $9+4=13$."
+      ],
+      "verify": "x = symbols('x')\nxs = solve(x**2 - (x + 6), x)\nresult = sum([v**2 for v in xs])"
+    },
+    {
+      "id": "T10-M1-07",
+      "module": 1,
+      "n": 7,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Line-parabola and other nonlinear systems",
+      "stem": "How many points of intersection do the graphs of $y=x^{2}+1$ and $y=x-2$ have in the $xy$-plane?",
+      "choices": [
+        "$0$",
+        "$1$",
+        "$2$",
+        "$4$"
+      ],
+      "answer": "A",
+      "solution": "The number of intersection points is the number of real solutions of the combined equation, and the discriminant settles that without solving anything.",
+      "steps": [
+        "Set $x^{2}+1=x-2$, so $x^{2}-x+3=0$.",
+        "Discriminant: $(-1)^{2}-4(1)(3)=1-12=-11$.",
+        "A negative discriminant means no real solutions, so the graphs never meet."
+      ],
+      "verify": "x = symbols('x', real=True)\nresult = len(solve(x**2 + 1 - (x - 2), x))"
+    },
+    {
+      "id": "T10-M1-08",
+      "module": 1,
+      "n": 8,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Line-parabola and other nonlinear systems",
+      "stem": "$$y=x^{2}-4x+7$$ $$y=2x-1$$ Which ordered pair $(x,y)$ is a solution to the system of equations above?",
+      "choices": [
+        "$(1,1)$",
+        "$(2,3)$",
+        "$(3,5)$",
+        "$(4,9)$"
+      ],
+      "answer": "B",
+      "solution": "Substituting the line into the parabola is the whole method: it removes $y$ and leaves a quadratic in $x$. A point must satisfy \\emph{both} equations, so always finish by computing the matching $y$.",
+      "steps": [
+        "Substitute: $x^{2}-4x+7=2x-1$.",
+        "Rearrange: $x^{2}-6x+8=0$, so $(x-2)(x-4)=0$.",
+        "Then $x=2$ gives $y=2(2)-1=3$, and $x=4$ gives $y=7$.",
+        "$(2,3)$ is one of the two solutions."
+      ],
+      "verify": "x = symbols('x')\nxs = sorted(solve(x**2 - 4*x + 7 - (2*x - 1), x))\na = xs[0]\nresult = (a, 2*a - 1)"
+    },
+    {
+      "id": "T10-M1-09",
+      "module": 1,
+      "n": 9,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Line-parabola and other nonlinear systems",
+      "stem": "In the $xy$-plane, the line $y=4x+c$ is tangent to the parabola $y=x^{2}$, where $c$ is a constant. What is the value of $c$?",
+      "answer": "-4",
+      "solution": "Tangent means the line touches the curve exactly once, so the quadratic you get after substituting must have exactly one real solution --- its discriminant is zero.",
+      "steps": [
+        "Substitute: $x^{2}=4x+c$, so $x^{2}-4x-c=0$.",
+        "One solution means the discriminant is $0$: $(-4)^{2}-4(1)(-c)=0$.",
+        "$16+4c=0$, so $c=-4$."
+      ],
+      "verify": "c = symbols('c')\nresult = solve(16 + 4*c, c)[0]"
+    },
+    {
+      "id": "T10-M1-10",
+      "module": 1,
+      "n": 10,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Line-parabola and other nonlinear systems",
+      "stem": "The system of equations $x^{2}+y^{2}=25$ and $y=x+1$ has two solutions in the $xy$-plane. What is the greatest $y$-coordinate of a solution?",
+      "choices": [
+        "$3$",
+        "$4$",
+        "$5$",
+        "$7$"
+      ],
+      "answer": "B",
+      "solution": "A circle and a line are handled exactly like a parabola and a line: substitute the linear equation into the other one. The quadratic that appears has two roots, and each root produces its own $y$.",
+      "steps": [
+        "Substitute $y=x+1$: $x^{2}+(x+1)^{2}=25$.",
+        "Expand: $2x^{2}+2x-24=0$, so $x^{2}+x-12=0$.",
+        "Factor: $(x+4)(x-3)=0$, giving $x=-4$ and $x=3$.",
+        "Then $y=-3$ and $y=4$; the greatest is $4$."
+      ],
+      "verify": "x = symbols('x')\nxs = solve(x**2 + (x + 1)**2 - 25, x)\nresult = max([v + 1 for v in xs])"
+    },
+    {
+      "id": "T10-M1-11",
+      "module": 1,
+      "n": 11,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Reading transformed graphs",
+      "stem": "The table gives five values of the function $f$.\n\\begin{center}\\renewcommand{\\arraystretch}{1.2}\n\\begin{tabular}{@{}c|ccccc@{}}\n$x$ & $-1$ & $0$ & $1$ & $2$ & $3$ \\\\ \\midrule\n$f(x)$ & $5$ & $2$ & $6$ & $-1$ & $8$\n\\end{tabular}\\end{center}\nThe function $g$ is defined by $g(x)=f(x+2)$. What is the value of $g(1)$?",
+      "choices": [
+        "$2$",
+        "$5$",
+        "$6$",
+        "$8$"
+      ],
+      "answer": "D",
+      "solution": "Evaluating a transformed function is a substitution, not a guess: $g(1)$ means $f$ evaluated at $1+2=3$. Reading $f(1)$ or $f(-1)$ instead is the usual error, and the table is built so both wrong readings are available.",
+      "steps": [
+        "$g(1)=f(1+2)=f(3)$.",
+        "From the table, $f(3)=8$.",
+        "So $g(1)=8$."
+      ],
+      "verify": "f = {-1: 5, 0: 2, 1: 6, 2: -1, 3: 8}\nresult = f[3]"
+    },
+    {
+      "id": "T10-M1-12",
+      "module": 1,
+      "n": 12,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Shifts, stretches and reflections",
+      "stem": "The graph of $y=x^{2}$ is transformed to produce the graph of $y=(x+4)^{2}-3$. Which of the following describes the transformation?",
+      "wide": true,
+      "choices": [
+        "A shift $4$ units to the right and $3$ units down.",
+        "A shift $4$ units to the right and $3$ units up.",
+        "A shift $4$ units to the left and $3$ units down.",
+        "A shift $4$ units to the left and $3$ units up."
+      ],
+      "answer": "C",
+      "solution": "Read the two changes separately. The $+4$ sits inside the square, so it is horizontal and it moves the graph the opposite way: $4$ units left. The $-3$ sits outside, so it means exactly what it says: $3$ units down.",
+      "steps": [
+        "$x+4$ inside the square shifts the graph $4$ units \\emph{left}, since the vertex needs $x+4=0$, i.e. $x=-4$.",
+        "$-3$ outside subtracts $3$ from every output: $3$ units down.",
+        "The new vertex is $(-4,-3)$."
+      ],
+      "verify": "result = \"A shift $4$ units to the left and $3$ units down.\""
+    },
+    {
+      "id": "T10-M1-13",
+      "module": 1,
+      "n": 13,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Shifts, stretches and reflections",
+      "stem": "The point $(2,5)$ lies on the graph of $y=f(x)$. The graph of $y=3f(x)$ passes through the point $(2,k)$. What is the value of $k$?",
+      "choices": [
+        "$\\frac{5}{3}$",
+        "$8$",
+        "$15$",
+        "$45$"
+      ],
+      "answer": "C",
+      "solution": "A vertical stretch multiplies the $y$-coordinate and leaves the $x$-coordinate alone, so $(2,5)$ becomes $(2,15)$. Adding $3$ instead of multiplying, or dividing by $3$, are the two mistakes this question is built to catch.",
+      "steps": [
+        "$y=3f(x)$ means the output is tripled.",
+        "At $x=2$: $3f(2)=3(5)=15$.",
+        "So $k=15$."
+      ],
+      "verify": "result = 3*5"
+    },
+    {
+      "id": "T10-M1-14",
+      "module": 1,
+      "n": 14,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Shifts, stretches and reflections",
+      "stem": "The function $f$ is defined by $f(x)=x^{2}-6x$, and $g(x)=f(-x)$. Which expression is equivalent to $g(x)$?",
+      "choices": [
+        "$x^{2}-6x$",
+        "$x^{2}+6x$",
+        "$-x^{2}+6x$",
+        "$-x^{2}-6x$"
+      ],
+      "answer": "B",
+      "solution": "Replacing $x$ by $-x$ reflects the graph across the $y$-axis. Do it algebraically: every $x$ in the formula becomes $-x$, so the even-power term is unchanged and the odd-power term flips sign.",
+      "steps": [
+        "$g(x)=f(-x)=(-x)^{2}-6(-x)$.",
+        "$(-x)^{2}=x^{2}$ and $-6(-x)=6x$.",
+        "So $g(x)=x^{2}+6x$."
+      ],
+      "verify": "result = \"$x^{2}+6x$\""
+    },
+    {
+      "id": "T10-M1-15",
+      "module": 1,
+      "n": 15,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Line-parabola and other nonlinear systems",
+      "stem": "In the $xy$-plane, the graph of $y=-x^{2}+6x$ intersects the line $y=5$ at two points. What is the positive difference between the $x$-coordinates of those two points?",
+      "answer": "4",
+      "solution": "A horizontal line makes the substitution trivial: set the quadratic equal to $5$ and solve. The two roots are the $x$-coordinates, and their difference is what the question asks for.",
+      "steps": [
+        "Set $-x^{2}+6x=5$.",
+        "Rearrange: $x^{2}-6x+5=0$.",
+        "Factor: $(x-1)(x-5)=0$, so $x=1$ and $x=5$.",
+        "The positive difference is $5-1=4$."
+      ],
+      "verify": "x = symbols('x')\nxs = solve(-x**2 + 6*x - 5, x)\nresult = max(xs) - min(xs)"
+    },
+    {
+      "id": "T10-M1-16",
+      "module": 1,
+      "n": 16,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Line-parabola and other nonlinear systems",
+      "stem": "In the $xy$-plane, the line $y=mx-4$ is tangent to the graph of $y=x^{2}$, where $m$ is a positive constant. What is the value of $m$?",
+      "choices": [
+        "$2$",
+        "$4$",
+        "$8$",
+        "$16$"
+      ],
+      "answer": "B",
+      "solution": "Tangency is a discriminant question in disguise. Substituting gives a quadratic whose discriminant must be zero; that produces $m^{2}=16$, and the condition $m>0$ picks the root.",
+      "steps": [
+        "Substitute: $x^{2}=mx-4$, so $x^{2}-mx+4=0$.",
+        "Exactly one solution means $(-m)^{2}-4(1)(4)=0$.",
+        "$m^{2}-16=0$, so $m=4$ or $m=-4$.",
+        "Since $m>0$, $m=4$."
+      ],
+      "verify": "m = symbols('m')\nresult = max(solve(m**2 - 16, m))"
+    },
+    {
+      "id": "T10-M1-17",
+      "module": 1,
+      "n": 17,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Line-parabola and other nonlinear systems",
+      "stem": "The solutions to the system $y=x^{2}-2x-3$ and $y=2x+2$ are $(x_{1},y_{1})$ and $(x_{2},y_{2})$. What is the value of $y_{1}+y_{2}$?",
+      "answer": "12",
+      "solution": "Find both $x$-values, then convert each to a $y$-value with the easier of the two equations --- the line. Adding the $x$-values instead of the $y$-values is the trap here.",
+      "steps": [
+        "Set $x^{2}-2x-3=2x+2$.",
+        "Rearrange: $x^{2}-4x-5=0$, so $(x-5)(x+1)=0$.",
+        "$x=5$ gives $y=2(5)+2=12$; $x=-1$ gives $y=2(-1)+2=0$.",
+        "$y_{1}+y_{2}=12+0=12$."
+      ],
+      "verify": "x = symbols('x')\nxs = solve(x**2 - 2*x - 3 - (2*x + 2), x)\nresult = sum([2*v + 2 for v in xs])"
+    },
+    {
+      "id": "T10-M1-18",
+      "module": 1,
+      "n": 18,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Reading transformed graphs",
+      "stem": "The graph of $y=f(x)$ is shown, where $f(x)=x^{2}-4$. The function $g$ is defined by $g(x)=f(x+3)$. What is the vertex of the graph of $y=g(x)$?",
+      "figure": "\\begin{center}\\begin{tikzpicture}\\begin{axis}[width=6.6cm,height=5.4cm,axis lines=middle,xlabel=$x$,ylabel=$y$,xmin=-3.6,xmax=3.6,ymin=-5.6,ymax=5.6,xtick={-2,2},ytick={-4,4},tick label style={font=\\footnotesize},grid=both,grid style={satline!60,very thin}]\\addplot[domain=-3:3,samples=80,thick,satblue]{x^2-4};\\end{axis}\\end{tikzpicture}\\end{center}",
+      "choices": [
+        "$(-3,-4)$",
+        "$(3,-4)$",
+        "$(-3,-1)$",
+        "$(0,-1)$"
+      ],
+      "answer": "A",
+      "solution": "The vertex of $f$ is at $(0,-4)$. Since the $+3$ is inside the function, the graph slides horizontally, and it slides $3$ units \\emph{left}, carrying the vertex to $(-3,-4)$. The height is untouched because nothing was added outside.",
+      "steps": [
+        "From the graph, the vertex of $f$ is $(0,-4)$.",
+        "$g(x)=f(x+3)$ shifts the graph $3$ units left.",
+        "Check: $g(-3)=f(0)=-4$.",
+        "The vertex is $(-3,-4)$."
+      ],
+      "verify": "x = symbols('x')\nh = (x + 3)**2 - 4\nxv = solve(sp.diff(h, x), x)[0]\nresult = (xv, h.subs(x, xv))"
+    },
+    {
+      "id": "T10-M1-19",
+      "module": 1,
+      "n": 19,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Shifts, stretches and reflections",
+      "stem": "The minimum value of the function $f$ is $-3$, and it occurs at $x=1$. The function $g$ is defined by $g(x)=-2f(x)$. What is the maximum value of $g$?",
+      "choices": [
+        "$-6$",
+        "$-3$",
+        "$3$",
+        "$6$"
+      ],
+      "answer": "D",
+      "solution": "The factor $-2$ does two things at once: the negative sign flips the graph across the $x$-axis, so a minimum becomes a maximum, and the $2$ doubles the distance from the axis. So the least output $-3$ becomes the greatest output $6$.",
+      "steps": [
+        "Multiplying by $-1$ turns the minimum of $f$ into a maximum of $g$.",
+        "That extreme output is $-2\\cdot(-3)=6$.",
+        "So the maximum value of $g$ is $6$, still at $x=1$."
+      ],
+      "verify": "result = -2*(-3)"
+    },
+    {
+      "id": "T10-M1-20",
+      "module": 1,
+      "n": 20,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Line-parabola and other nonlinear systems",
+      "stem": "In the $xy$-plane, the line $y=2x+c$ is tangent to the circle $x^{2}+y^{2}=45$, where $c$ is a positive constant. What is the value of $c$?",
+      "answer": "15",
+      "solution": "Tangency to a circle works the same way as tangency to a parabola: substitute, collect a quadratic in $x$, and force the discriminant to zero so the two intersection points collapse into one.",
+      "steps": [
+        "Substitute: $x^{2}+(2x+c)^{2}=45$.",
+        "Expand: $5x^{2}+4cx+(c^{2}-45)=0$.",
+        "Set the discriminant to $0$: $(4c)^{2}-4(5)(c^{2}-45)=0$.",
+        "$16c^{2}-20c^{2}+900=0$, so $c^{2}=225$ and $c=15$ (as $c>0$)."
+      ],
+      "verify": "c = symbols('c')\nresult = max(solve(-4*c**2 + 900, c))"
+    },
+    {
+      "id": "T10-M1-21",
+      "module": 1,
+      "n": 21,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Shifts, stretches and reflections",
+      "stem": "The graph of $y=f(x)$ is first shifted $2$ units to the right and then reflected across the $x$-axis. Which equation represents the resulting graph?",
+      "choices": [
+        "$y=-f(x+2)$",
+        "$y=f(-x-2)$",
+        "$y=-f(x-2)$",
+        "$y=-f(x)-2$"
+      ],
+      "answer": "C",
+      "solution": "Handle the two steps in order. The shift right $2$ replaces $x$ by $x-2$, giving $y=f(x-2)$; reflecting that across the $x$-axis negates the whole output, giving $y=-f(x-2)$. The negative sign never reaches inside the parentheses.",
+      "steps": [
+        "Shift right $2$: $y=f(x-2)$.",
+        "Reflect across the $x$-axis: negate the output.",
+        "$y=-f(x-2)$."
+      ],
+      "verify": "result = \"$y=-f(x-2)$\""
+    },
+    {
+      "id": "T10-M1-22",
+      "module": 1,
+      "n": 22,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Reading transformed graphs",
+      "stem": "The graph of $y=f(x)$ has an $x$-intercept at $x=6$. The function $g$ is defined by $g(x)=f(2x)$. At what value of $x$ does the graph of $y=g(x)$ have an $x$-intercept?",
+      "choices": [
+        "$3$",
+        "$4$",
+        "$8$",
+        "$12$"
+      ],
+      "answer": "A",
+      "solution": "A factor multiplying $x$ inside the function compresses the graph horizontally: to make the inside equal $6$, the new input only has to be half as large. Multiplying by $2$ instead of dividing is the standard error.",
+      "steps": [
+        "$g(x)=0$ when $f(2x)=0$.",
+        "$f$ is zero when its input is $6$, so $2x=6$.",
+        "Therefore $x=3$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(2*x - 6, x)[0]"
+    },
+    {
+      "id": "T10-M2-01",
+      "module": 2,
+      "n": 23,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Shifts, stretches and reflections",
+      "stem": "The function $h$ is defined by $h(x)=f(x+6)$. Which of the following describes the graph of $y=h(x)$ compared with the graph of $y=f(x)$?",
+      "wide": true,
+      "choices": [
+        "The graph of $f$ shifted $6$ units to the left.",
+        "The graph of $f$ shifted $6$ units to the right.",
+        "The graph of $f$ shifted $6$ units up.",
+        "The graph of $f$ shifted $6$ units down."
+      ],
+      "answer": "A",
+      "solution": "A constant added inside the parentheses shifts the graph horizontally in the direction opposite to its sign. Here $h(-6)=f(0)$, so the point $f$ had at $x=0$ now appears at $x=-6$: the graph moves $6$ units left.",
+      "steps": [
+        "$x+6$ is inside the function, so the shift is horizontal.",
+        "$h(-6)=f(0)$, so points move to smaller $x$-values.",
+        "The graph shifts $6$ units to the left."
+      ],
+      "verify": "result = \"The graph of $f$ shifted $6$ units to the left.\""
+    },
+    {
+      "id": "T10-M2-02",
+      "module": 2,
+      "n": 24,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Line-parabola and other nonlinear systems",
+      "stem": "The graphs of $y=x^{2}+3x$ and $y=x+8$ intersect at two points in the $xy$-plane. What is the greater of the two $x$-coordinates?",
+      "answer": "2",
+      "solution": "Setting the two expressions equal eliminates $y$ and leaves a quadratic. Both roots are $x$-coordinates of genuine intersection points, so the question is only asking which one is larger.",
+      "steps": [
+        "Set $x^{2}+3x=x+8$.",
+        "Rearrange: $x^{2}+2x-8=0$.",
+        "Factor: $(x+4)(x-2)=0$, so $x=-4$ or $x=2$.",
+        "The greater value is $2$."
+      ],
+      "verify": "x = symbols('x')\nresult = max(solve(x**2 + 3*x - (x + 8), x))"
+    },
+    {
+      "id": "T10-M2-03",
+      "module": 2,
+      "n": 25,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Line-parabola and other nonlinear systems",
+      "stem": "In the $xy$-plane, how many points does the graph of $y=x^{2}-4$ have in common with the line $y=-4$?",
+      "choices": [
+        "$0$",
+        "$1$",
+        "$2$",
+        "$3$"
+      ],
+      "answer": "B",
+      "solution": "The line $y=-4$ passes exactly through the vertex of the parabola, so it touches the curve once instead of cutting it twice. Algebraically, the combined equation $x^{2}=0$ has a single (repeated) root.",
+      "steps": [
+        "Set $x^{2}-4=-4$.",
+        "Simplify: $x^{2}=0$.",
+        "The only solution is $x=0$, so the graphs meet at exactly one point."
+      ],
+      "verify": "x = symbols('x', real=True)\nresult = len(solve(x**2 - 4 + 4, x))"
+    },
+    {
+      "id": "T10-M2-04",
+      "module": 2,
+      "n": 26,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Shifts, stretches and reflections",
+      "stem": "How does the graph of $y=f(x)-7$ compare with the graph of $y=f(x)$?",
+      "wide": true,
+      "choices": [
+        "It is shifted $7$ units to the left.",
+        "It is shifted $7$ units to the right.",
+        "It is shifted $7$ units up.",
+        "It is shifted $7$ units down."
+      ],
+      "answer": "D",
+      "solution": "Subtracting $7$ outside the function lowers every output by $7$, so the whole graph slides straight down. Only changes inside the parentheses move a graph sideways.",
+      "steps": [
+        "The $-7$ is applied to the output, not the input.",
+        "Every point $(a,b)$ becomes $(a,b-7)$.",
+        "The graph shifts $7$ units down."
+      ],
+      "verify": "result = \"It is shifted $7$ units down.\""
+    },
+    {
+      "id": "T10-M2-05",
+      "module": 2,
+      "n": 27,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Shifts, stretches and reflections",
+      "stem": "The point $(-3,8)$ lies on the graph of $y=f(x)$. The graph of $y=f(x)+5$ passes through the point $(-3,k)$. What is the value of $k$?",
+      "answer": "13",
+      "solution": "Adding $5$ outside the function raises the output at every input, and it never touches the $x$-coordinate. So the point at $x=-3$ keeps its position horizontally and climbs $5$ units.",
+      "steps": [
+        "$f(-3)=8$.",
+        "The new function value at $x=-3$ is $f(-3)+5$.",
+        "$k=8+5=13$."
+      ],
+      "verify": "result = 8 + 5"
+    },
+    {
+      "id": "T10-M2-06",
+      "module": 2,
+      "n": 28,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Shifts, stretches and reflections",
+      "stem": "The function $f$ is defined by $f(x)=x^{3}-2x$, and $h(x)=f(-x)$. Which expression is equivalent to $h(x)$?",
+      "choices": [
+        "$x^{3}-2x$",
+        "$x^{3}+2x$",
+        "$-x^{3}+2x$",
+        "$-x^{3}-2x$"
+      ],
+      "answer": "C",
+      "solution": "Substitute $-x$ everywhere: the odd power flips sign and so does the $-2x$ term. The result, $-x^{3}+2x$, is the mirror image of $f$ across the $y$-axis.",
+      "steps": [
+        "$h(x)=f(-x)=(-x)^{3}-2(-x)$.",
+        "$(-x)^{3}=-x^{3}$ and $-2(-x)=2x$.",
+        "So $h(x)=-x^{3}+2x$."
+      ],
+      "verify": "result = \"$-x^{3}+2x$\""
+    },
+    {
+      "id": "T10-M2-07",
+      "module": 2,
+      "n": 29,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Shifts, stretches and reflections",
+      "stem": "The graph of $y=\\frac{1}{2}f(x)$ is obtained from the graph of $y=f(x)$ by which transformation?",
+      "wide": true,
+      "choices": [
+        "A horizontal compression by a factor of $2$.",
+        "A horizontal stretch by a factor of $2$.",
+        "A shift down $\\frac{1}{2}$ unit.",
+        "A vertical shrink by a factor of $\\frac{1}{2}$."
+      ],
+      "answer": "D",
+      "solution": "The factor $\\frac{1}{2}$ multiplies the output, so every point moves halfway toward the $x$-axis while keeping its $x$-coordinate. That is a vertical shrink, not a horizontal one.",
+      "steps": [
+        "$\\frac{1}{2}$ is outside the function, so the effect is vertical.",
+        "A point $(a,b)$ becomes $\\left(a,\\frac{b}{2}\\right)$.",
+        "That is a vertical shrink by a factor of $\\frac{1}{2}$."
+      ],
+      "verify": "result = \"A vertical shrink by a factor of $\\frac{1}{2}$.\""
+    },
+    {
+      "id": "T10-M2-08",
+      "module": 2,
+      "n": 30,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Line-parabola and other nonlinear systems",
+      "stem": "In the $xy$-plane, the line $y=2x+c$ intersects the parabola $y=x^{2}+6x+11$ at exactly one point, where $c$ is a constant. What is the value of $c$?",
+      "answer": "7",
+      "solution": "Exactly one intersection point means the quadratic left after substitution has a repeated root, so its discriminant is zero. Solving that equation for $c$ is the whole problem.",
+      "steps": [
+        "Substitute: $x^{2}+6x+11=2x+c$.",
+        "Rearrange: $x^{2}+4x+(11-c)=0$.",
+        "Set the discriminant to $0$: $4^{2}-4(1)(11-c)=0$.",
+        "$16-44+4c=0$, so $c=7$."
+      ],
+      "verify": "c = symbols('c')\nresult = solve(16 - 4*(11 - c), c)[0]"
+    },
+    {
+      "id": "T10-M2-09",
+      "module": 2,
+      "n": 31,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Line-parabola and other nonlinear systems",
+      "stem": "How many solutions does the system of equations $y=x^{2}-6x+9$ and $y=x-3$ have?",
+      "choices": [
+        "$0$",
+        "$1$",
+        "$2$",
+        "$3$"
+      ],
+      "answer": "C",
+      "solution": "Even though the parabola is a perfect square and the line passes through its vertex region, the combined quadratic has a positive discriminant, so the line cuts the curve twice.",
+      "steps": [
+        "Set $x^{2}-6x+9=x-3$.",
+        "Rearrange: $x^{2}-7x+12=0$.",
+        "Discriminant: $49-48=1>0$, so there are two real solutions ($x=3$ and $x=4$)."
+      ],
+      "verify": "x = symbols('x', real=True)\nresult = len(solve(x**2 - 6*x + 9 - (x - 3), x))"
+    },
+    {
+      "id": "T10-M2-10",
+      "module": 2,
+      "n": 32,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Reading transformed graphs",
+      "stem": "The table gives four values of the function $f$.\n\\begin{center}\\renewcommand{\\arraystretch}{1.2}\n\\begin{tabular}{@{}c|cccc@{}}\n$x$ & $1$ & $3$ & $5$ & $7$ \\\\ \\midrule\n$f(x)$ & $2$ & $6$ & $-1$ & $4$\n\\end{tabular}\\end{center}\nThe function $g$ is defined by $g(x)=f(x-2)+3$. What is the value of $g(5)$?",
+      "choices": [
+        "$2$",
+        "$6$",
+        "$7$",
+        "$9$"
+      ],
+      "answer": "D",
+      "solution": "Do the inside first: $g(5)$ needs $f(5-2)=f(3)$, and only then add the $3$ that sits outside. Reading $f(7)$ (shifting the wrong way) or forgetting the $+3$ are the two failures this item checks.",
+      "steps": [
+        "$g(5)=f(5-2)+3=f(3)+3$.",
+        "From the table, $f(3)=6$.",
+        "$g(5)=6+3=9$."
+      ],
+      "verify": "f = {1: 2, 3: 6, 5: -1, 7: 4}\nresult = f[3] + 3"
+    },
+    {
+      "id": "T10-M2-11",
+      "module": 2,
+      "n": 33,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Shifts, stretches and reflections",
+      "stem": "Which transformation takes the graph of $y=x^{2}$ to the graph of $y=-(x-2)^{2}$?",
+      "wide": true,
+      "choices": [
+        "A reflection across the $x$-axis and a shift $2$ units to the left.",
+        "A reflection across the $x$-axis and a shift $2$ units to the right.",
+        "A reflection across the $y$-axis and a shift $2$ units to the right.",
+        "A reflection across the $y$-axis and a shift $2$ units to the left."
+      ],
+      "answer": "B",
+      "solution": "The minus sign is outside the square, so it reflects the parabola across the $x$-axis. The $-2$ is inside, so it is horizontal and moves the graph in the opposite direction from its sign: $2$ units right.",
+      "steps": [
+        "$-(\\,\\cdot\\,)$ outside negates every output: reflection across the $x$-axis.",
+        "$x-2$ inside shifts the graph $2$ units right (the vertex needs $x-2=0$).",
+        "The new vertex is $(2,0)$ and the parabola opens downward."
+      ],
+      "verify": "result = \"A reflection across the $x$-axis and a shift $2$ units to the right.\""
+    },
+    {
+      "id": "T10-M2-12",
+      "module": 2,
+      "n": 34,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Shifts, stretches and reflections",
+      "stem": "The function $f$ is defined by $f(x)=(x+1)^{2}$. The graph of $y=f(x)$ is shifted $3$ units to the right. Which equation represents the resulting graph?",
+      "choices": [
+        "$y=(x+4)^{2}$",
+        "$y=(x+1)^{2}+3$",
+        "$y=(x-2)^{2}$",
+        "$y=(x-3)^{2}+1$"
+      ],
+      "answer": "C",
+      "solution": "A shift $3$ units right replaces $x$ by $x-3$ in the formula: $f(x-3)=((x-3)+1)^{2}=(x-2)^{2}$. Replacing $x$ by $x+3$ --- shifting the wrong way --- gives $(x+4)^{2}$, which is the distractor to avoid.",
+      "steps": [
+        "A right shift of $3$ means evaluating $f(x-3)$.",
+        "$f(x-3)=\\big((x-3)+1\\big)^{2}=(x-2)^{2}$.",
+        "The vertex moves from $(-1,0)$ to $(2,0)$."
+      ],
+      "verify": "result = \"$y=(x-2)^{2}$\""
+    },
+    {
+      "id": "T10-M2-13",
+      "module": 2,
+      "n": 35,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Shifts, stretches and reflections",
+      "stem": "The function $f$ is defined by $f(x)=x^{2}-16$, and $g$ is defined by $g(x)=f\\left(\\frac{x}{2}\\right)$. What is the positive $x$-intercept of the graph of $y=g(x)$?",
+      "answer": "8",
+      "solution": "Dividing the input by $2$ stretches the graph horizontally by a factor of $2$, so each $x$-intercept moves twice as far from the $y$-axis. The stretch acts on $x$, never on the outputs.",
+      "steps": [
+        "$g(x)=\\left(\\frac{x}{2}\\right)^{2}-16=\\frac{x^{2}}{4}-16$.",
+        "Set $g(x)=0$: $\\frac{x^{2}}{4}=16$, so $x^{2}=64$.",
+        "$x=\\pm 8$; the positive intercept is $8$."
+      ],
+      "verify": "x = symbols('x')\nresult = max(solve((x/2)**2 - 16, x))"
+    },
+    {
+      "id": "T10-M2-14",
+      "module": 2,
+      "n": 36,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Line-parabola and other nonlinear systems",
+      "stem": "$$y=x^{2}+5x+4$$ $$y=3x+7$$ The system above has two solutions. What is the sum of the $y$-coordinates of the two solutions?",
+      "choices": [
+        "$-2$",
+        "$8$",
+        "$10$",
+        "$12$"
+      ],
+      "answer": "B",
+      "solution": "Substituting the line into the parabola gives the $x$-values; the line then converts each one to a $y$-value in a single step. Reporting only one point's $y$-value, or the sum of the $x$-values, are the two traps.",
+      "steps": [
+        "Set $x^{2}+5x+4=3x+7$.",
+        "Rearrange: $x^{2}+2x-3=0$, so $(x+3)(x-1)=0$.",
+        "$x=1$ gives $y=10$; $x=-3$ gives $y=-2$.",
+        "The sum is $10+(-2)=8$."
+      ],
+      "verify": "x = symbols('x')\nxs = solve(x**2 + 5*x + 4 - (3*x + 7), x)\nresult = sum([3*v + 7 for v in xs])"
+    },
+    {
+      "id": "T10-M2-15",
+      "module": 2,
+      "n": 37,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Shifts, stretches and reflections",
+      "stem": "The function $g$ is defined by $g(x)=-f(-x)$. Which of the following describes the graph of $y=g(x)$ in terms of the graph of $y=f(x)$?",
+      "wide": true,
+      "choices": [
+        "The graph of $f$ reflected across both the $x$-axis and the $y$-axis.",
+        "The graph of $f$ reflected across the $x$-axis only.",
+        "The graph of $f$ reflected across the $y$-axis only.",
+        "The graph of $f$ reflected across the line $y=x$."
+      ],
+      "answer": "A",
+      "solution": "There are two independent sign changes: the inner $-x$ reflects the graph across the $y$-axis, and the outer minus sign reflects it across the $x$-axis. Applying both is the same as rotating the graph $180^\\circ$ about the origin.",
+      "steps": [
+        "$f(-x)$ reflects the graph across the $y$-axis.",
+        "The leading minus sign then reflects that result across the $x$-axis.",
+        "A point $(a,b)$ on $f$ ends up at $(-a,-b)$."
+      ],
+      "verify": "result = \"The graph of $f$ reflected across both the $x$-axis and the $y$-axis.\""
+    },
+    {
+      "id": "T10-M2-16",
+      "module": 2,
+      "n": 38,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Line-parabola and other nonlinear systems",
+      "stem": "In the $xy$-plane, at how many points does the graph of $x^{2}+y^{2}=16$ intersect the graph of $y=x^{2}-4$?",
+      "choices": [
+        "$1$",
+        "$2$",
+        "$3$",
+        "$4$"
+      ],
+      "answer": "C",
+      "solution": "Here it is cleaner to eliminate $x^{2}$ rather than $y$: the parabola gives $x^{2}=y+4$, which turns the circle equation into a quadratic in $y$. Each $y$-value must then be checked for how many $x$-values it produces --- one of them yields a single point, not two.",
+      "steps": [
+        "From $y=x^{2}-4$, $x^{2}=y+4$.",
+        "Substitute into the circle: $(y+4)+y^{2}=16$, so $y^{2}+y-12=0$.",
+        "$(y+4)(y-3)=0$, so $y=-4$ or $y=3$.",
+        "$y=3$ gives $x^{2}=7$, two points; $y=-4$ gives $x^{2}=0$, one point.",
+        "In total there are $3$ intersection points."
+      ],
+      "verify": "x, y = symbols('x y', real=True)\nresult = len(solve([x**2 + y**2 - 16, y - (x**2 - 4)], [x, y]))"
+    },
+    {
+      "id": "T10-M2-17",
+      "module": 2,
+      "n": 39,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Line-parabola and other nonlinear systems",
+      "stem": "In the $xy$-plane, the line $y=kx$ is tangent to the graph of $y=x^{2}-2x+4$, where $k$ is a positive constant. What is the value of $k$?",
+      "choices": [
+        "$2$",
+        "$4$",
+        "$6$",
+        "$8$"
+      ],
+      "answer": "A",
+      "solution": "Substituting gives $x^{2}-(2+k)x+4=0$, and tangency forces its discriminant to zero. That yields $(2+k)^{2}=16$, whose two roots are $k=2$ and $k=-6$; only the positive one is wanted.",
+      "steps": [
+        "Set $x^{2}-2x+4=kx$, so $x^{2}-(2+k)x+4=0$.",
+        "Tangency: $(2+k)^{2}-4(1)(4)=0$.",
+        "$(2+k)^{2}=16$, so $2+k=\\pm 4$ and $k=2$ or $k=-6$.",
+        "Since $k>0$, $k=2$."
+      ],
+      "verify": "k = symbols('k')\nresult = max(solve((2 + k)**2 - 16, k))"
+    },
+    {
+      "id": "T10-M2-18",
+      "module": 2,
+      "n": 40,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Reading transformed graphs",
+      "stem": "The graph of $y=f(x)$ is shown, where $f(x)=(x-2)^{2}-1$. What is the vertex of the graph of $y=f(x+1)-2$?",
+      "figure": "\\begin{center}\\begin{tikzpicture}\\begin{axis}[width=6.6cm,height=5.4cm,axis lines=middle,xlabel=$x$,ylabel=$y$,xmin=-1.6,xmax=5.6,ymin=-2.6,ymax=6.6,xtick={1,2,3,4},ytick={-1,2,4},tick label style={font=\\footnotesize},grid=both,grid style={satline!60,very thin}]\\addplot[domain=-0.6:4.6,samples=80,thick,satblue]{(x-2)^2-1};\\end{axis}\\end{tikzpicture}\\end{center}",
+      "choices": [
+        "$(3,-3)$",
+        "$(1,1)$",
+        "$(3,1)$",
+        "$(1,-3)$"
+      ],
+      "answer": "D",
+      "solution": "Two transformations, read separately: $x+1$ inside moves the graph $1$ unit \\emph{left}, and $-2$ outside moves it $2$ units down. The vertex $(2,-1)$ therefore lands at $(1,-3)$.",
+      "steps": [
+        "From the graph, the vertex of $f$ is $(2,-1)$.",
+        "$f(x+1)$ shifts the graph $1$ unit left: the vertex $x$-coordinate becomes $2-1=1$.",
+        "Subtracting $2$ lowers it: $-1-2=-3$.",
+        "The vertex is $(1,-3)$."
+      ],
+      "verify": "x = symbols('x')\nh = (x - 1)**2 - 3\nxv = solve(sp.diff(h, x), x)[0]\nresult = (xv, h.subs(x, xv))"
+    },
+    {
+      "id": "T10-M2-19",
+      "module": 2,
+      "n": 41,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Reading transformed graphs",
+      "stem": "The table gives five values of the function $f$.\n\\begin{center}\\renewcommand{\\arraystretch}{1.2}\n\\begin{tabular}{@{}c|ccccc@{}}\n$x$ & $0$ & $1$ & $2$ & $3$ & $4$ \\\\ \\midrule\n$f(x)$ & $5$ & $-3$ & $8$ & $6$ & $1$\n\\end{tabular}\\end{center}\nThe function $h$ is defined by $h(x)=2f(x+1)$. What is the value of $h(2)$?",
+      "answer": "12",
+      "solution": "Work from the inside out: the input $2$ becomes $2+1=3$ before $f$ is applied, and only the result is doubled. The factor $2$ multiplies the output, so it can never change which row of the table you read.",
+      "steps": [
+        "$h(2)=2f(2+1)=2f(3)$.",
+        "From the table, $f(3)=6$.",
+        "$h(2)=2(6)=12$."
+      ],
+      "verify": "f = {0: 5, 1: -3, 2: 8, 3: 6, 4: 1}\nresult = 2*f[3]"
+    },
+    {
+      "id": "T10-M2-20",
+      "module": 2,
+      "n": 42,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Shifts, stretches and reflections",
+      "stem": "Which sequence of transformations takes the graph of $y=x^{2}$ to the graph of $y=2(x+3)^{2}$?",
+      "wide": true,
+      "choices": [
+        "A vertical stretch by a factor of $2$ and a shift $3$ units to the right.",
+        "A vertical stretch by a factor of $2$ and a shift $3$ units to the left.",
+        "A horizontal stretch by a factor of $2$ and a shift $3$ units to the left.",
+        "A shift $3$ units to the left and $2$ units up."
+      ],
+      "answer": "B",
+      "solution": "The $2$ multiplies the output, so it is a vertical stretch; the $+3$ lives inside the square, so it is a horizontal shift in the opposite direction --- $3$ units left. Mixing up which variable the $2$ acts on, or shifting right, are the intended errors.",
+      "steps": [
+        "$2\\cdot(\\,\\cdot\\,)$ outside: vertical stretch by a factor of $2$.",
+        "$x+3$ inside: horizontal shift $3$ units left, since the vertex needs $x=-3$.",
+        "The vertex of the image is $(-3,0)$ and the parabola is twice as steep."
+      ],
+      "verify": "result = \"A vertical stretch by a factor of $2$ and a shift $3$ units to the left.\""
+    },
+    {
+      "id": "T10-M2-21",
+      "module": 2,
+      "n": 43,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Line-parabola and other nonlinear systems",
+      "stem": "In the $xy$-plane, the graph of $x^{2}+y^{2}=25$ and the graph of $y=x^{2}-13$ intersect at how many points?",
+      "answer": "4",
+      "solution": "Eliminating $x^{2}$ turns the system into a quadratic in $y$. Each admissible $y$ must then be traced back: here both $y$-values give a positive $x^{2}$, so each contributes two points.",
+      "steps": [
+        "From $y=x^{2}-13$, $x^{2}=y+13$.",
+        "Substitute: $(y+13)+y^{2}=25$, so $y^{2}+y-12=0$.",
+        "$(y+4)(y-3)=0$, so $y=3$ or $y=-4$.",
+        "$y=3$ gives $x^{2}=16$, i.e. $x=\\pm 4$; $y=-4$ gives $x^{2}=9$, i.e. $x=\\pm 3$.",
+        "That is $4$ intersection points."
+      ],
+      "verify": "x, y = symbols('x y', real=True)\nresult = len(solve([x**2 + y**2 - 25, y - (x**2 - 13)], [x, y]))"
+    },
+    {
+      "id": "T10-M2-22",
+      "module": 2,
+      "n": 44,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Line-parabola and other nonlinear systems",
+      "stem": "$$y=x^{2}-2x+c$$ $$y=2x-5$$ In the system of equations above, $c$ is a constant. For what value of $c$ does the system have exactly one real solution?",
+      "choices": [
+        "$-1$",
+        "$1$",
+        "$5$",
+        "$9$"
+      ],
+      "answer": "A",
+      "solution": "Substituting leaves $x^{2}-4x+(c+5)=0$, and \\emph{exactly one} real solution means a discriminant of zero. Note the $+5$: moving $-5$ across the equals sign is where the arithmetic usually goes wrong.",
+      "steps": [
+        "Set $x^{2}-2x+c=2x-5$.",
+        "Rearrange: $x^{2}-4x+(c+5)=0$.",
+        "One solution requires $(-4)^{2}-4(1)(c+5)=0$.",
+        "$16-4c-20=0$, so $-4c=4$ and $c=-1$."
+      ],
+      "verify": "c = symbols('c')\nresult = solve(16 - 4*(c + 5), c)[0]"
+    }
+  ]
+}

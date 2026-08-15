@@ -1,0 +1,996 @@
+{
+  "number": 5,
+  "topic": "Linear Inequalities in One or Two Variables",
+  "domain": "Algebra",
+  "skills": [
+    "Solving inequalities",
+    "Graphing half-planes",
+    "Systems of inequalities"
+  ],
+  "lesson": {
+    "intro": "An inequality is an equation that has been loosened: instead of pinning $x$ to a single value it names a whole range of values. The Digital SAT uses inequalities for every situation with a limit in it -- a budget, a weight capacity, a minimum score, a maximum number of items. You will be asked to solve a one-variable inequality, to translate a sentence such as ``no more than'' into symbols, to decide whether a point lies in a shaded half-plane, and to pick the ordered pair that satisfies a whole system. Everything you already know about solving linear equations carries over, with exactly one new rule to remember.",
+    "blocks": [
+      {
+        "kind": "section",
+        "title": "Solving a linear inequality",
+        "body": "Solve $3x+7\\le 25$ the same way you would solve $3x+7=25$: subtract $7$ from both sides to get $3x\\le 18$, then divide both sides by $3$ to get $x\\le 6$. Adding or subtracting the same number on both sides, and multiplying or dividing by a \\emph{positive} number, never disturb the direction of the inequality sign.\n\nThe answer $x\\le 6$ is not one number; it is every number up to and including $6$. A quick way to check a solution set is to test one value inside it and one value outside it. Here $x=0$ gives $7\\le 25$, true, and $x=10$ gives $37\\le 25$, false -- so $x\\le 6$ is pointing the right way."
+      },
+      {
+        "kind": "trap",
+        "title": "Multiply or divide by a negative: flip the sign",
+        "body": "This is the single most tested idea in the topic. If you multiply or divide both sides of an inequality by a \\emph{negative} number, you must reverse the inequality symbol.\n\n$$-2x < 8 \\quad\\Longrightarrow\\quad x > -4 \\qquad \\text{(divide by $-2$, and $<$ becomes $>$)}$$\n\nWhy? Because $3 < 5$ is true but $-3 < -5$ is false: multiplying by a negative reflects both numbers across $0$ and swaps their order. Note that subtracting a negative, as in $x-(-4)\\le 9$, does \\emph{not} trigger the rule -- only multiplying or dividing does. A safe dodge if you distrust yourself: move the variable term to the side that keeps its coefficient positive. From $-2x<8$, add $2x$ and subtract $8$ to get $-8<2x$, then divide by $2$ to get $-4<x$, which says $x>-4$ with no flipping at all."
+      },
+      {
+        "kind": "formula",
+        "title": "Translating the words into symbols",
+        "body": "\\begin{tabular}{@{}ll@{}}\nat most, no more than, maximum of, up to & $\\le$\\\\\nat least, no less than, minimum of, or more & $\\ge$\\\\\nless than, under, fewer than & $<$\\\\\nmore than, over, exceeds & $>$\\\\\n\\end{tabular}\n\n``At most $\\$40$'' means $c\\le 40$: spending exactly $\\$40$ is still allowed. ``Under $\\$40$'' means $c<40$: exactly $\\$40$ is not allowed. The test writes distractors that differ from the key only in that one detail, so read the phrase before you read the numbers."
+      },
+      {
+        "kind": "worked",
+        "title": "Worked example 1: a budget",
+        "body": "\\textbf{A caterer charges a $\\$75$ setup fee plus $\\$12$ per guest. A club can spend no more than $\\$500$. What is the greatest number of guests the club can have?}\n\nLet $g$ be the number of guests. ``No more than $\\$500$'' is $\\le 500$, so the cost $75+12g$ must satisfy\n$$75+12g\\le 500.$$\nSubtract $75$: $12g\\le 425$. Divide by $12$: $g\\le 35.41\\ldots$\n\nNow interpret. Guests come in whole numbers, and $g$ must be at most $35.41\\ldots$, so the greatest whole number that works is $g=35$. Check: $75+12(35)=495\\le 500$, while $36$ guests would cost $507$. When a context forces whole numbers, always round \\emph{toward} the allowed side -- down for a maximum, up for a minimum."
+      },
+      {
+        "kind": "section",
+        "title": "Compound inequalities",
+        "body": "A compound inequality such as $-5\\le 2x-1<9$ is two statements at once: $-5\\le 2x-1$ and $2x-1<9$. Solve it by doing the same operation to all three parts. Add $1$ everywhere: $-4\\le 2x<10$. Divide everything by $2$: $-2\\le x<5$.\n\nThe solution is every number from $-2$ up to but not including $5$. The least integer in the set is $-2$ and the greatest is $4$. If you ever multiply all three parts by a negative number, both symbols flip and the two ends trade places."
+      },
+      {
+        "kind": "concept",
+        "title": "A linear inequality in two variables is a half-plane",
+        "body": "The graph of $y\\le 2x+1$ is the line $y=2x+1$ together with everything below it. Two features carry all the information:\n\n\\textbf{The boundary line.} Graph the related equation. Draw it \\emph{solid} for $\\le$ or $\\ge$, because points on the line satisfy the inequality, and \\emph{dashed} for $<$ or $>$, because they do not.\n\n\\textbf{Which side to shade.} When the inequality is solved for $y$, $y>$ shades above the line and $y<$ shades below it. If the inequality is not solved for $y$ -- say $3x-2y\\ge 6$ -- do not guess: pick a test point not on the line, usually $(0,0)$, and substitute. Here $0\\ge 6$ is false, so shade the side that does \\emph{not} contain the origin."
+      },
+      {
+        "kind": "strategy",
+        "title": "Systems: test the point, do not graph",
+        "body": "A system of inequalities is solved by the region where all the shaded half-planes overlap. On the SAT you are almost never asked to draw that region -- you are asked which ordered pair lies in it, or which system matches a story.\n\nFor ``which ordered pair is a solution,'' substitute each choice into the \\emph{simpler} inequality first and cross off everything that fails; usually only one or two choices survive to face the second inequality. This is far faster than sketching, and it cannot go wrong. For ``which system matches the story,'' check the direction of each symbol first ($\\le$ for a budget or a capacity, $\\ge$ for a requirement or a minimum); the choices usually differ there before they differ anywhere else."
+      },
+      {
+        "kind": "worked",
+        "title": "Worked example 2: a system in context",
+        "body": "\\textbf{A store sells notebooks for $\\$4$ and binders for $\\$6$. A teacher must buy at least $20$ items in total and can spend at most $\\$96$. Which system models this, and is $(12,8)$ a solution?}\n\nLet $n$ be the number of notebooks and $b$ the number of binders. ``At least $20$ items'' counts items, not dollars, so it is $n+b\\ge 20$. ``At most $\\$96$'' counts dollars, so it is $4n+6b\\le 96$. The system is\n$$n+b\\ge 20,\\qquad 4n+6b\\le 96.$$\nNow test $(12,8)$: $12+8=20\\ge 20$ is true (equality is allowed by $\\ge$), and $4(12)+6(8)=48+48=96\\le 96$ is true as well. So $(12,8)$ does satisfy the system -- it sits exactly on the corner where both boundary lines meet, which is precisely the sort of point the test uses to catch students who wrote $>$ and $<$ instead of $\\ge$ and $\\le$."
+      },
+      {
+        "kind": "trap",
+        "title": "Three ways students lose the point",
+        "body": "\\textbf{1. Answering the boundary instead of the question.} If $g\\le 35.4$ and the question asks for the greatest number of guests, the answer is $35$, not $35.4$ and not $36$.\n\n\\textbf{2. Reversing a subtraction.} ``$5$ less than $x$ is at most $12$'' is $x-5\\le 12$, not $5-x\\le 12$.\n\n\\textbf{3. Attaching the constraint to the wrong quantity.} If shirts cost $\\$4$ and hats cost $\\$7$, the money inequality is $4s+7h\\le 100$; writing $7s+4h\\le 100$ swaps the prices, and writing $s+h\\le 100$ confuses a count with a cost."
+      }
+    ]
+  },
+  "problems": [
+    {
+      "id": "T05-M1-01",
+      "module": 1,
+      "n": 1,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Solving inequalities",
+      "stem": "Which of the following is equivalent to the inequality $3x+5\\le 20$?",
+      "choices": [
+        "$x\\le 15$",
+        "$x\\le 5$",
+        "$x\\ge 5$",
+        "$x\\le \\frac{25}{3}$"
+      ],
+      "answer": "B",
+      "solution": "Because $3$ is positive, dividing by it leaves the inequality symbol pointing the same way, so the solution set is every number at most $5$. Testing $x=0$ gives $5\\le 20$, true, which confirms the direction.",
+      "steps": [
+        "Subtract $5$ from both sides: $3x\\le 15$.",
+        "Divide both sides by $3$: $x\\le 5$."
+      ],
+      "verify": "x = symbols('x')\nb = solve(Eq(3*x + 5, 20), x)[0]\nresult = '$x\\\\le ' + str(b) + '$'"
+    },
+    {
+      "id": "T05-M1-02",
+      "module": 1,
+      "n": 2,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Translating inequalities",
+      "stem": "A delivery van can carry a total package weight of at most $1200$ pounds. If $w$ represents the total weight, in pounds, of the packages in the van, which inequality represents this situation?",
+      "choices": [
+        "$w\\ge 1200$",
+        "$w>1200$",
+        "$w\\le 1200$",
+        "$w<1200$"
+      ],
+      "answer": "C",
+      "solution": "``At most'' allows the limit itself: a load of exactly $1200$ pounds is legal, so the symbol must include equality and point toward the smaller values.",
+      "steps": [
+        "``At most $1200$'' means the weight can equal $1200$ but not exceed it.",
+        "Write $w\\le 1200$."
+      ],
+      "verify": "result = '$w\\\\le 1200$'"
+    },
+    {
+      "id": "T05-M1-03",
+      "module": 1,
+      "n": 3,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Solving inequalities",
+      "stem": "What is the least integer value of $x$ that satisfies $2x-7>5$?",
+      "answer": "7",
+      "solution": "The inequality is strict, so $x=6$ is not a solution even though it satisfies the related equation. The least integer strictly greater than $6$ is $7$.",
+      "steps": [
+        "Add $7$ to both sides: $2x>12$.",
+        "Divide both sides by $2$: $x>6$.",
+        "The least integer greater than $6$ is $7$."
+      ],
+      "verify": "result = min([k for k in range(-50, 60) if 2*k - 7 > 5])"
+    },
+    {
+      "id": "T05-M1-04",
+      "module": 1,
+      "n": 4,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Graphing half-planes",
+      "stem": "Which of the following ordered pairs $(x,y)$ is a solution to the inequality $y>2x-1$?",
+      "choices": [
+        "$(0,0)$",
+        "$(1,1)$",
+        "$(2,3)$",
+        "$(3,4)$"
+      ],
+      "answer": "A",
+      "solution": "A point is a solution exactly when substituting it makes the inequality true; the pairs that fail here all sit on or below the boundary line $y=2x-1$.",
+      "steps": [
+        "Substitute $(0,0)$: $0>2(0)-1$, that is $0>-1$, which is true.",
+        "The other three pairs give $1>1$, $3>3$ and $4>5$, all false."
+      ],
+      "verify": "pts = [(0, 0), (1, 1), (2, 3), (3, 4)]\ngood = [p for p in pts if p[1] > 2*p[0] - 1]\nresult = sp.Tuple(*good[0])"
+    },
+    {
+      "id": "T05-M1-05",
+      "module": 1,
+      "n": 5,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Translating inequalities",
+      "stem": "A student buys $x$ notebooks that cost $\\$3$ each and $y$ pens that cost $\\$2$ each. The student spends no more than $\\$30$. Which inequality represents this situation?",
+      "choices": [
+        "$2x+3y\\le 30$",
+        "$3x+2y\\ge 30$",
+        "$3x+2y<30$",
+        "$3x+2y\\le 30$"
+      ],
+      "answer": "D",
+      "solution": "Each notebook contributes $3$ dollars and each pen contributes $2$ dollars, so the total cost is $3x+2y$; ``no more than $\\$30$'' caps that total at $30$ while still allowing exactly $30$.",
+      "steps": [
+        "Cost of the notebooks: $3x$. Cost of the pens: $2y$.",
+        "Total cost is $3x+2y$, and ``no more than $\\$30$'' gives $3x+2y\\le 30$."
+      ],
+      "verify": "result = '$3x+2y\\\\le 30$'"
+    },
+    {
+      "id": "T05-M1-06",
+      "module": 1,
+      "n": 6,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Solving inequalities",
+      "stem": "What is the greatest value of $x$ that satisfies $4x+3\\le 27$?",
+      "choices": [
+        "$5$",
+        "$6$",
+        "$7$",
+        "$24$"
+      ],
+      "answer": "B",
+      "solution": "The symbol $\\le$ includes equality, so the boundary value itself is a solution and is therefore the greatest one.",
+      "steps": [
+        "Subtract $3$: $4x\\le 24$.",
+        "Divide by $4$: $x\\le 6$, so the greatest value is $6$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(Eq(4*x + 3, 27), x)[0]"
+    },
+    {
+      "id": "T05-M1-07",
+      "module": 1,
+      "n": 7,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Solving inequalities",
+      "stem": "If $5-x\\ge 2$, which of the following must be true?",
+      "choices": [
+        "$x\\ge 3$",
+        "$x\\le 7$",
+        "$x\\le 3$",
+        "$x\\ge -3$"
+      ],
+      "answer": "C",
+      "solution": "Isolating $x$ requires dividing by $-1$, and that single step reverses the direction of the symbol; the check $x=0$ gives $5\\ge 2$, true, so the solution set must contain $0$.",
+      "steps": [
+        "Subtract $5$ from both sides: $-x\\ge -3$.",
+        "Divide both sides by $-1$ and reverse the symbol: $x\\le 3$."
+      ],
+      "verify": "x = symbols('x')\nb = solve(Eq(5 - x, 2), x)[0]\nresult = '$x\\\\le ' + str(b) + '$'"
+    },
+    {
+      "id": "T05-M1-08",
+      "module": 1,
+      "n": 8,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Compound inequalities",
+      "stem": "Which of the following values of $x$ satisfies $-3<2x+1\\le 7$?",
+      "choices": [
+        "$-3$",
+        "$3$",
+        "$-2$",
+        "$4$"
+      ],
+      "answer": "B",
+      "solution": "Solving all three parts at once gives $-2<x\\le 3$; the left end is excluded because that inequality is strict, while the right end is included.",
+      "steps": [
+        "Subtract $1$ from all three parts: $-4<2x\\le 6$.",
+        "Divide all three parts by $2$: $-2<x\\le 3$.",
+        "Of the choices, only $3$ lies in that interval."
+      ],
+      "verify": "vals = [-3, 3, -2, 4]\ngood = [v for v in vals if -3 < 2*v + 1 <= 7]\nresult = good[0]"
+    },
+    {
+      "id": "T05-M1-09",
+      "module": 1,
+      "n": 9,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Solving inequalities",
+      "stem": "What is the least integer value of $n$ that satisfies $\\dfrac{n}{3}+4>10$?",
+      "answer": "19",
+      "solution": "Clearing the fraction first avoids decimals: the boundary is $n=18$, and because the inequality is strict, $18$ itself fails and the next integer wins.",
+      "steps": [
+        "Subtract $4$: $\\dfrac{n}{3}>6$.",
+        "Multiply both sides by $3$: $n>18$.",
+        "The least integer greater than $18$ is $19$."
+      ],
+      "verify": "result = min([k for k in range(0, 100) if k + 12 > 30])"
+    },
+    {
+      "id": "T05-M1-10",
+      "module": 1,
+      "n": 10,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Inequality word problems",
+      "stem": "Movie tickets cost $\\$9$ each, and an online order also carries a one-time service fee of $\\$6$. Maria has $\\$60$ to spend. What is the greatest number of tickets she can order?",
+      "choices": [
+        "$4$",
+        "$5$",
+        "$6$",
+        "$7$"
+      ],
+      "answer": "C",
+      "solution": "The fee is charged once, not once per ticket, so it is added outside the product; here the boundary comes out to a whole number, so $6$ tickets cost exactly $\\$60$ and are affordable.",
+      "steps": [
+        "Let $t$ be the number of tickets: $9t+6\\le 60$.",
+        "Subtract $6$: $9t\\le 54$.",
+        "Divide by $9$: $t\\le 6$."
+      ],
+      "verify": "result = max([t for t in range(0, 50) if 9*t + 6 <= 60])"
+    },
+    {
+      "id": "T05-M1-11",
+      "module": 1,
+      "n": 11,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Systems of inequalities",
+      "stem": "Which ordered pair $(x,y)$ is a solution to the system $y\\ge 2x-3$ and $x+y<5$?",
+      "choices": [
+        "$(2,4)$",
+        "$(3,3)$",
+        "$(4,1)$",
+        "$(0,0)$"
+      ],
+      "answer": "D",
+      "solution": "A solution must satisfy \\emph{both} inequalities; checking the simpler one first, $x+y<5$, eliminates every pair whose coordinates sum to $5$ or more.",
+      "steps": [
+        "Test $(2,4)$: $2+4=6$, and $6<5$ is false.",
+        "Test $(3,3)$: $3+3=6<5$ is false. Test $(4,1)$: $1\\ge 2(4)-3=5$ is false.",
+        "Test $(0,0)$: $0\\ge -3$ is true and $0+0=0<5$ is true."
+      ],
+      "verify": "pts = [(2, 4), (3, 3), (4, 1), (0, 0)]\ngood = [p for p in pts if p[1] >= 2*p[0] - 3 and p[0] + p[1] < 5]\nresult = sp.Tuple(*good[0])"
+    },
+    {
+      "id": "T05-M1-12",
+      "module": 1,
+      "n": 12,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Solving inequalities",
+      "stem": "The solution to the inequality $12-5x\\ge -3$ is $x\\le k$. What is the value of $k$?",
+      "answer": "3",
+      "solution": "The coefficient of $x$ is negative, so the last step divides by $-5$ and turns $\\ge$ into $\\le$ -- which is exactly why the given solution has the form $x\\le k$ rather than $x\\ge k$.",
+      "steps": [
+        "Subtract $12$: $-5x\\ge -15$.",
+        "Divide by $-5$ and reverse the symbol: $x\\le 3$, so $k=3$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(Eq(12 - 5*x, -3), x)[0]"
+    },
+    {
+      "id": "T05-M1-13",
+      "module": 1,
+      "n": 13,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Graphing half-planes",
+      "stem": "The shaded region in the $xy$-plane above is the graph of a linear inequality whose boundary line passes through $(0,-2)$ and $(1,0)$. Which inequality is graphed?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[scale=0.38]\n\\begin{scope}\n\\clip (-5,-6) rectangle (5,6);\n\\fill[satsky] (-5,-6) -- (-2,-6) -- (4,6) -- (-5,6) -- cycle;\n\\draw[satgrey!30,very thin] (-5,-6) grid (5,6);\n\\draw[satnavy,dashed,very thick] (-2.5,-7) -- (4.5,7);\n\\end{scope}\n\\draw[->,thick] (-5,0) -- (5.4,0) node[right] {\\small $x$};\n\\draw[->,thick] (0,-6) -- (0,6.4) node[above] {\\small $y$};\n\\foreach \\i in {-4,-2,2,4} {\\draw (\\i,-0.15) -- (\\i,0.15) node[below=3pt] {\\tiny $\\i$};}\n\\foreach \\j in {-4,-2,2,4} {\\draw (-0.15,\\j) -- (0.15,\\j) node[left=3pt] {\\tiny $\\j$};}\n\\end{tikzpicture}\n\\end{center}",
+      "choices": [
+        "$y\\ge 2x-2$",
+        "$y>2x-2$",
+        "$y<2x-2$",
+        "$y\\le 2x-2$"
+      ],
+      "answer": "B",
+      "solution": "The boundary has slope $2$ and $y$-intercept $-2$, so the line is $y=2x-2$; a dashed line means points on it are excluded, and shading above a line means $y$ is greater than the expression.",
+      "steps": [
+        "From $(0,-2)$ and $(1,0)$ the slope is $\\dfrac{0-(-2)}{1-0}=2$ and the $y$-intercept is $-2$, so the boundary is $y=2x-2$.",
+        "The line is dashed, so the symbol is strict.",
+        "The shading lies above the line, so $y>2x-2$."
+      ],
+      "verify": "m = S(0 - (-2))/S(1 - 0)\nresult = '$y>' + str(m) + 'x-2$'"
+    },
+    {
+      "id": "T05-M1-14",
+      "module": 1,
+      "n": 14,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Inequality word problems",
+      "stem": "A student's grade is the average (arithmetic mean) of four test scores. The student scored $76$, $85$, and $82$ on the first three tests and wants an average of at least $80$. Which inequality gives all possible scores $s$ on the fourth test?",
+      "choices": [
+        "$s\\ge 77$",
+        "$s>77$",
+        "$s\\ge 80$",
+        "$s\\le 77$"
+      ],
+      "answer": "A",
+      "solution": "``At least $80$'' means the average may equal $80$, so the symbol is $\\ge$; the requirement is on the average of all four scores, not on the fourth score by itself.",
+      "steps": [
+        "The average condition is $\\dfrac{76+85+82+s}{4}\\ge 80$.",
+        "Multiply both sides by $4$: $243+s\\ge 320$.",
+        "Subtract $243$: $s\\ge 77$."
+      ],
+      "verify": "s = symbols('s')\nb = solve(Eq((76 + 85 + 82 + s)/4, 80), s)[0]\nresult = '$s\\\\ge ' + str(b) + '$'"
+    },
+    {
+      "id": "T05-M1-15",
+      "module": 1,
+      "n": 15,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Solving inequalities",
+      "stem": "What is the greatest integer value of $x$ that satisfies $-4x+9>-11$?",
+      "answer": "4",
+      "solution": "Dividing by $-4$ reverses the symbol, giving $x<5$; because the inequality is strict, $5$ is excluded and the greatest integer solution is one less.",
+      "steps": [
+        "Subtract $9$: $-4x>-20$.",
+        "Divide by $-4$ and reverse the symbol: $x<5$.",
+        "The greatest integer less than $5$ is $4$."
+      ],
+      "verify": "result = max([k for k in range(-50, 50) if -4*k + 9 > -11])"
+    },
+    {
+      "id": "T05-M1-16",
+      "module": 1,
+      "n": 16,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Compound inequalities",
+      "stem": "If $-2\\le 3-2x<7$, which of the following describes all possible values of $x$?",
+      "choices": [
+        "$-2\\le x<\\frac{5}{2}$",
+        "$-\\frac{5}{2}\\le x<2$",
+        "$-2<x\\le \\frac{5}{2}$",
+        "$-\\frac{1}{2}<x\\le 2$"
+      ],
+      "answer": "C",
+      "solution": "Every part is divided by $-2$, so both symbols reverse and the two endpoints trade places: the end that came from the strict inequality stays strict, but it is now the left end.",
+      "steps": [
+        "Subtract $3$ from all three parts: $-5\\le -2x<4$.",
+        "Divide all three parts by $-2$ and reverse both symbols: $\\frac{5}{2}\\ge x>-2$.",
+        "Rewrite with the smaller number first: $-2<x\\le \\frac{5}{2}$."
+      ],
+      "verify": "x = symbols('x')\nlo = solve(Eq(3 - 2*x, 7), x)[0]\nhi = solve(Eq(3 - 2*x, -2), x)[0]\nresult = '$-2<x\\\\le \\\\frac{5}{2}$' if (lo == -2 and hi == Rational(5, 2)) else 'mismatch'"
+    },
+    {
+      "id": "T05-M1-17",
+      "module": 1,
+      "n": 17,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Systems of inequalities",
+      "stem": "A caterer needs at least $40$ pounds of fruit and will buy $a$ pounds of apples at $\\$2$ per pound and $p$ pounds of pears at $\\$3$ per pound. The caterer can spend at most $\\$90$. Which system of inequalities represents this situation?",
+      "wide": true,
+      "choices": [
+        "$a+p\\le 40$ and $2a+3p\\ge 90$",
+        "$a+p\\ge 40$ and $2a+3p\\le 90$",
+        "$a+p\\ge 40$ and $3a+2p\\le 90$",
+        "$a+p\\ge 40$ and $2a+3p\\ge 90$"
+      ],
+      "answer": "B",
+      "solution": "One inequality counts pounds and one counts dollars. ``At least $40$ pounds'' sets a minimum on $a+p$, and ``at most $\\$90$'' sets a maximum on the cost $2a+3p$; mixing the two symbols, or attaching $\\$3$ to the apples, produces the other choices.",
+      "steps": [
+        "Pounds of fruit: $a+p$, and it must be at least $40$, so $a+p\\ge 40$.",
+        "Cost: apples contribute $2a$ dollars and pears contribute $3p$ dollars.",
+        "``At most $\\$90$'' gives $2a+3p\\le 90$."
+      ],
+      "verify": "result = '$a+p\\\\ge 40$ and $2a+3p\\\\le 90$'"
+    },
+    {
+      "id": "T05-M1-18",
+      "module": 1,
+      "n": 18,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Inequality word problems",
+      "stem": "A phone plan costs $\\$25$ per month plus $\\$0.10$ for each text message sent. A customer wants the monthly bill to be at most $\\$40$. What is the greatest number of text messages the customer can send in a month?",
+      "choices": [
+        "$15$",
+        "$150$",
+        "$250$",
+        "$400$"
+      ],
+      "answer": "B",
+      "solution": "Only the $\\$15$ left after the fixed charge buys text messages, and each one costs a tenth of a dollar, so the count is $15\\div 0.10$ -- ten times $15$, not a fraction of it.",
+      "steps": [
+        "Let $t$ be the number of texts: $25+0.10t\\le 40$.",
+        "Subtract $25$: $0.10t\\le 15$.",
+        "Divide by $0.10$: $t\\le 150$."
+      ],
+      "verify": "result = max([t for t in range(0, 1000) if 250 + t <= 400])"
+    },
+    {
+      "id": "T05-M1-19",
+      "module": 1,
+      "n": 19,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Systems of inequalities",
+      "stem": "How many ordered pairs $(x,y)$ satisfy both $y\\le -x+4$ and $y\\ge -x+7$?",
+      "choices": [
+        "$0$",
+        "$1$",
+        "$2$",
+        "Infinitely many"
+      ],
+      "answer": "A",
+      "solution": "The two boundary lines have the same slope, so they are parallel and never meet. The first inequality asks for points on or below the lower line and the second asks for points on or above the higher line, and no point can be both.",
+      "steps": [
+        "Both boundaries have slope $-1$, so the lines $y=-x+4$ and $y=-x+7$ are parallel.",
+        "Combining the two conditions would require $-x+7\\le y\\le -x+4$, that is $7\\le 4$.",
+        "That is impossible, so the regions do not overlap."
+      ],
+      "verify": "result = len([k for k in range(0, 5) if 7 <= 4])"
+    },
+    {
+      "id": "T05-M1-20",
+      "module": 1,
+      "n": 20,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Graphing half-planes",
+      "stem": "In the $xy$-plane, the boundary line of the inequality $y\\ge mx+1$ passes through the point $(4,9)$. What is the value of $m$?",
+      "answer": "2",
+      "solution": "The boundary line is the graph of $y=mx+1$, so a point on the boundary satisfies that equation with equality; substituting it turns the geometry question into a one-step equation.",
+      "steps": [
+        "The boundary line is $y=mx+1$.",
+        "Substitute $(4,9)$: $9=4m+1$.",
+        "Solve: $4m=8$, so $m=2$."
+      ],
+      "verify": "m = symbols('m')\nresult = solve(Eq(9, 4*m + 1), m)[0]"
+    },
+    {
+      "id": "T05-M1-21",
+      "module": 1,
+      "n": 21,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Solving inequalities",
+      "stem": "Which of the following describes all values of $x$ that satisfy $\\dfrac{2x-1}{3}\\ge \\dfrac{x+4}{2}$?",
+      "choices": [
+        "$x\\ge \\frac{13}{7}$",
+        "$x\\ge 10$",
+        "$x\\ge 14$",
+        "$x\\le 14$"
+      ],
+      "answer": "C",
+      "solution": "Multiplying by the positive number $6$ clears both denominators at once and leaves the symbol alone; the only real risk is failing to distribute across the parentheses on each side.",
+      "steps": [
+        "Multiply both sides by $6$: $2(2x-1)\\ge 3(x+4)$.",
+        "Distribute: $4x-2\\ge 3x+12$.",
+        "Subtract $3x$ and add $2$: $x\\ge 14$."
+      ],
+      "verify": "x = symbols('x')\nb = solve(Eq((2*x - 1)/3, (x + 4)/2), x)[0]\nresult = '$x\\\\ge ' + str(b) + '$'"
+    },
+    {
+      "id": "T05-M1-22",
+      "module": 1,
+      "n": 22,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Solving inequalities",
+      "stem": "Which of the following describes all values of $x$ that satisfy $-\\dfrac{1}{2}x+3>x-6$?",
+      "choices": [
+        "$x<6$",
+        "$x>6$",
+        "$x<\\frac{9}{2}$",
+        "$x<-6$"
+      ],
+      "answer": "A",
+      "solution": "Collecting the variable terms on the right keeps the coefficient of $x$ positive, so no symbol has to be reversed; the result $6>x$ is read from right to left as $x<6$.",
+      "steps": [
+        "Add $\\dfrac{1}{2}x$ to both sides: $3>\\dfrac{3}{2}x-6$.",
+        "Add $6$: $9>\\dfrac{3}{2}x$.",
+        "Multiply by $\\dfrac{2}{3}$: $6>x$, that is $x<6$."
+      ],
+      "verify": "x = symbols('x')\nb = solve(Eq(-x/2 + 3, x - 6), x)[0]\nresult = (x < b)"
+    },
+    {
+      "id": "T05-M2-01",
+      "module": 2,
+      "n": 23,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Solving inequalities",
+      "stem": "Which of the following is equivalent to $-3x\\ge 12$?",
+      "choices": [
+        "$x\\ge -4$",
+        "$x\\le -4$",
+        "$x\\le 4$",
+        "$x\\ge 4$"
+      ],
+      "answer": "B",
+      "solution": "Dividing both sides by $-3$ is the one operation that changes the direction of the symbol; a quick check settles it, since $x=-5$ gives $15\\ge 12$, true, and $x=0$ gives $0\\ge 12$, false.",
+      "steps": [
+        "Divide both sides by $-3$.",
+        "Because $-3$ is negative, reverse the symbol: $x\\le -4$."
+      ],
+      "verify": "x = symbols('x')\nb = solve(Eq(-3*x, 12), x)[0]\nresult = '$x\\\\le ' + str(b) + '$'"
+    },
+    {
+      "id": "T05-M2-02",
+      "module": 2,
+      "n": 24,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Solving inequalities",
+      "stem": "What is the greatest integer value of $x$ that satisfies $7-2x\\ge 1$?",
+      "answer": "3",
+      "solution": "After dividing by $-2$ the symbol reverses to $\\le$, and because $\\le$ includes equality the boundary value $3$ is itself the greatest solution.",
+      "steps": [
+        "Subtract $7$: $-2x\\ge -6$.",
+        "Divide by $-2$ and reverse the symbol: $x\\le 3$."
+      ],
+      "verify": "result = max([k for k in range(-50, 50) if 7 - 2*k >= 1])"
+    },
+    {
+      "id": "T05-M2-03",
+      "module": 2,
+      "n": 25,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Translating inequalities",
+      "stem": "An elevator can hold at most $8$ people. There are already $3$ people inside. If $p$ represents the number of additional people who can enter, which inequality represents all possible values of $p$?",
+      "choices": [
+        "$p\\ge 5$",
+        "$p\\le 8$",
+        "$p<5$",
+        "$p\\le 5$"
+      ],
+      "answer": "D",
+      "solution": "The capacity applies to everyone in the elevator, so the three people already inside use up part of it; the remaining room is $8-3=5$, and ``at most'' keeps equality.",
+      "steps": [
+        "Total riders must satisfy $3+p\\le 8$.",
+        "Subtract $3$: $p\\le 5$."
+      ],
+      "verify": "result = '$p\\\\le 5$'"
+    },
+    {
+      "id": "T05-M2-04",
+      "module": 2,
+      "n": 26,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Graphing half-planes",
+      "stem": "Which of the following ordered pairs $(x,y)$ is NOT a solution to $2x+3y\\le 12$?",
+      "choices": [
+        "$(0,0)$",
+        "$(1,1)$",
+        "$(3,2)$",
+        "$(6,1)$"
+      ],
+      "answer": "D",
+      "solution": "Substituting each pair tests membership in the half-plane; three of the pairs give a value of at most $12$, and the one that exceeds $12$ lies on the far side of the boundary line.",
+      "steps": [
+        "$(0,0)$ gives $0\\le 12$; $(1,1)$ gives $5\\le 12$; $(3,2)$ gives $6+6=12\\le 12$.",
+        "$(6,1)$ gives $12+3=15$, and $15\\le 12$ is false."
+      ],
+      "verify": "pts = [(0, 0), (1, 1), (3, 2), (6, 1)]\nbad = [p for p in pts if 2*p[0] + 3*p[1] > 12]\nresult = sp.Tuple(*bad[0])"
+    },
+    {
+      "id": "T05-M2-05",
+      "module": 2,
+      "n": 27,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Solving inequalities",
+      "stem": "Which of the following describes all values of $x$ that satisfy $5(x-2)<3x$?",
+      "choices": [
+        "$x<5$",
+        "$x>5$",
+        "$x<\\frac{5}{2}$",
+        "$x<-5$"
+      ],
+      "answer": "A",
+      "solution": "Distributing first turns the problem into an ordinary two-step inequality; every coefficient stays positive, so the strict symbol never changes direction.",
+      "steps": [
+        "Distribute: $5x-10<3x$.",
+        "Subtract $3x$: $2x-10<0$, so $2x<10$.",
+        "Divide by $2$: $x<5$."
+      ],
+      "verify": "x = symbols('x')\nb = solve(Eq(5*(x - 2), 3*x), x)[0]\nresult = (x < b)"
+    },
+    {
+      "id": "T05-M2-06",
+      "module": 2,
+      "n": 28,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Solving inequalities",
+      "stem": "What is the least integer value of $x$ that satisfies $6x+5\\ge 41$?",
+      "answer": "6",
+      "solution": "The boundary is $x=6$, and since $\\ge$ allows equality that boundary value is itself the least solution -- no rounding up is needed.",
+      "steps": [
+        "Subtract $5$: $6x\\ge 36$.",
+        "Divide by $6$: $x\\ge 6$."
+      ],
+      "verify": "result = min([k for k in range(-50, 50) if 6*k + 5 >= 41])"
+    },
+    {
+      "id": "T05-M2-07",
+      "module": 2,
+      "n": 29,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Translating inequalities",
+      "stem": "To qualify for a tournament, a player needs a total of at least $240$ points over three games. After two games the player has $152$ points. Which inequality gives all possible scores $p$ in the third game that qualify the player?",
+      "choices": [
+        "$p\\ge 88$",
+        "$p>88$",
+        "$p\\le 88$",
+        "$p\\ge 392$"
+      ],
+      "answer": "A",
+      "solution": "``At least $240$'' constrains the three-game total, so the third score must make up the difference $240-152=88$; equality still qualifies, so the symbol is $\\ge$.",
+      "steps": [
+        "The total must satisfy $152+p\\ge 240$.",
+        "Subtract $152$: $p\\ge 88$."
+      ],
+      "verify": "p = symbols('p')\nb = solve(Eq(152 + p, 240), p)[0]\nresult = '$p\\\\ge ' + str(b) + '$'"
+    },
+    {
+      "id": "T05-M2-08",
+      "module": 2,
+      "n": 30,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Compound inequalities",
+      "stem": "If $4\\le 3x-5\\le 16$, what is the greatest possible value of $x$?",
+      "choices": [
+        "$3$",
+        "$6$",
+        "$7$",
+        "$9$"
+      ],
+      "answer": "C",
+      "solution": "Only the right-hand inequality controls the upper end, and because it is $\\le$ the boundary value belongs to the solution set.",
+      "steps": [
+        "Add $5$ to all three parts: $9\\le 3x\\le 21$.",
+        "Divide all three parts by $3$: $3\\le x\\le 7$.",
+        "The greatest possible value is $7$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(Eq(3*x - 5, 16), x)[0]"
+    },
+    {
+      "id": "T05-M2-09",
+      "module": 2,
+      "n": 31,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Inequality word problems",
+      "stem": "An empty truck weighs $4200$ pounds. It is loaded with boxes that weigh $65$ pounds each. A bridge allows a total weight of no more than $7000$ pounds. What is the greatest number of boxes the truck can carry across the bridge?",
+      "answer": "43",
+      "solution": "The boundary works out to about $43.08$ boxes, and a box cannot be split, so the answer must round \\emph{down} to stay under the limit: $43$ boxes weigh $6995$ pounds in total with the truck, while $44$ would weigh $7060$.",
+      "steps": [
+        "Let $b$ be the number of boxes: $4200+65b\\le 7000$.",
+        "Subtract $4200$: $65b\\le 2800$.",
+        "Divide by $65$: $b\\le 43.07\\ldots$, so at most $43$ whole boxes."
+      ],
+      "verify": "result = max([b for b in range(0, 200) if 4200 + 65*b <= 7000])"
+    },
+    {
+      "id": "T05-M2-10",
+      "module": 2,
+      "n": 32,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Systems of inequalities",
+      "stem": "A club buys $x$ shirts at $\\$4$ each and $y$ hats at $\\$7$ each. The club needs at least $20$ items in all and can spend at most $\\$100$. Which system represents this situation?",
+      "wide": true,
+      "choices": [
+        "$x+y\\le 20$ and $4x+7y\\ge 100$",
+        "$x+y\\ge 20$ and $7x+4y\\le 100$",
+        "$x+y\\ge 20$ and $4x+7y\\le 100$",
+        "$x+y>20$ and $4x+7y<100$"
+      ],
+      "answer": "C",
+      "solution": "The item count and the cost are two different totals: $x+y$ counts items and $4x+7y$ counts dollars. A requirement uses $\\ge$ and a budget uses $\\le$, and both allow the endpoint.",
+      "steps": [
+        "``At least $20$ items'' gives $x+y\\ge 20$.",
+        "The cost is $4x+7y$ dollars, and ``at most $\\$100$'' gives $4x+7y\\le 100$."
+      ],
+      "verify": "result = '$x+y\\\\ge 20$ and $4x+7y\\\\le 100$'"
+    },
+    {
+      "id": "T05-M2-11",
+      "module": 2,
+      "n": 33,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Solving inequalities",
+      "stem": "Which of the following describes all values of $x$ that satisfy $\\dfrac{3}{4}x-2\\le 7$?",
+      "choices": [
+        "$x\\le \\frac{20}{3}$",
+        "$x\\le 9$",
+        "$x\\ge 12$",
+        "$x\\le 12$"
+      ],
+      "answer": "D",
+      "solution": "Multiplying by $\\frac{4}{3}$ -- a positive number -- leaves the symbol alone; the common error is to multiply by $\\frac{3}{4}$ instead of dividing by it.",
+      "steps": [
+        "Add $2$ to both sides: $\\dfrac{3}{4}x\\le 9$.",
+        "Multiply both sides by $\\dfrac{4}{3}$: $x\\le 12$."
+      ],
+      "verify": "x = symbols('x')\nb = solve(Eq(Rational(3, 4)*x - 2, 7), x)[0]\nresult = '$x\\\\le ' + str(b) + '$'"
+    },
+    {
+      "id": "T05-M2-12",
+      "module": 2,
+      "n": 34,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Graphing half-planes",
+      "stem": "The shaded region above is the graph of a linear inequality whose boundary line passes through $(0,3)$ and $(6,0)$. Which inequality is graphed?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[xscale=0.34,yscale=0.42]\n\\begin{scope}\n\\clip (-4,-4) rectangle (10,7);\n\\fill[satmint] (-4,-4) -- (10,-4) -- (10,-2) -- (-4,5) -- cycle;\n\\draw[satgrey!30,very thin] (-4,-4) grid (10,7);\n\\draw[satteal,very thick] (-4,5) -- (10,-2);\n\\end{scope}\n\\draw[->,thick] (-4,0) -- (10.5,0) node[right] {\\small $x$};\n\\draw[->,thick] (0,-4) -- (0,7.4) node[above] {\\small $y$};\n\\foreach \\i in {-2,2,4,6,8} {\\draw (\\i,-0.12) -- (\\i,0.12) node[below=3pt] {\\tiny $\\i$};}\n\\foreach \\j in {-2,2,4,6} {\\draw (-0.12,\\j) -- (0.12,\\j) node[left=3pt] {\\tiny $\\j$};}\n\\end{tikzpicture}\n\\end{center}",
+      "choices": [
+        "$y\\ge -\\frac{1}{2}x+3$",
+        "$y\\le -\\frac{1}{2}x+3$",
+        "$y<-\\frac{1}{2}x+3$",
+        "$y\\le -2x+3$"
+      ],
+      "answer": "B",
+      "solution": "The slope is $\\frac{0-3}{6-0}=-\\frac{1}{2}$ and the $y$-intercept is $3$, so the boundary is $y=-\\frac{1}{2}x+3$. The line is solid, so the symbol includes equality, and the shading lies below the line, so $y$ is less than the expression.",
+      "steps": [
+        "Slope: $\\dfrac{0-3}{6-0}=-\\dfrac{1}{2}$; $y$-intercept: $3$.",
+        "The boundary line is solid, so use $\\le$ or $\\ge$.",
+        "The region below the line is shaded, so $y\\le -\\dfrac{1}{2}x+3$."
+      ],
+      "verify": "m = S(0 - 3)/S(6 - 0)\nresult = '$y\\\\le -\\\\frac{1}{2}x+3$' if m == Rational(-1, 2) else 'mismatch'"
+    },
+    {
+      "id": "T05-M2-13",
+      "module": 2,
+      "n": 35,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Solving inequalities",
+      "stem": "Which of the following describes all values of $x$ that satisfy $-\\dfrac{x}{4}+1>3$?",
+      "choices": [
+        "$x<-8$",
+        "$x>-8$",
+        "$x<8$",
+        "$x>8$"
+      ],
+      "answer": "A",
+      "solution": "Multiplying by $-4$ reverses the symbol; students who multiply by $4$ and forget the negative sign, or who keep the symbol as it was, land on the other choices.",
+      "steps": [
+        "Subtract $1$: $-\\dfrac{x}{4}>2$.",
+        "Multiply both sides by $-4$ and reverse the symbol: $x<-8$."
+      ],
+      "verify": "x = symbols('x')\nb = solve(Eq(-x/4 + 1, 3), x)[0]\nresult = (x < b)"
+    },
+    {
+      "id": "T05-M2-14",
+      "module": 2,
+      "n": 36,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Compound inequalities",
+      "stem": "How many integer values of $x$ satisfy $-7<2x+1\\le 9$?",
+      "choices": [
+        "$5$",
+        "$7$",
+        "$8$",
+        "$9$"
+      ],
+      "answer": "C",
+      "solution": "The solution interval is $-4<x\\le 4$: the left endpoint is excluded and the right endpoint is included, so the integers run from $-3$ to $4$ and there are eight of them.",
+      "steps": [
+        "Subtract $1$ from all parts: $-8<2x\\le 8$.",
+        "Divide all parts by $2$: $-4<x\\le 4$.",
+        "The integers are $-3,-2,-1,0,1,2,3,4$ -- eight values."
+      ],
+      "verify": "result = len([k for k in range(-50, 50) if -7 < 2*k + 1 <= 9])"
+    },
+    {
+      "id": "T05-M2-15",
+      "module": 2,
+      "n": 37,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Systems of inequalities",
+      "stem": "The point $(3,k)$ is a solution to the inequality $2x+y\\ge 11$. What is the least possible value of $k$?",
+      "answer": "5",
+      "solution": "Substituting $x=3$ turns the two-variable inequality into $k\\ge 5$, and because $\\ge$ allows equality the boundary value is attainable.",
+      "steps": [
+        "Substitute $x=3$ and $y=k$: $2(3)+k\\ge 11$.",
+        "Simplify: $6+k\\ge 11$, so $k\\ge 5$."
+      ],
+      "verify": "k = symbols('k')\nresult = solve(Eq(2*3 + k, 11), k)[0]"
+    },
+    {
+      "id": "T05-M2-16",
+      "module": 2,
+      "n": 38,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Solving inequalities",
+      "stem": "The solution to the inequality $3-kx\\ge 12$ is $x\\le -3$, where $k$ is a constant. What is the value of $k$?",
+      "choices": [
+        "$-3$",
+        "$-\\frac{1}{3}$",
+        "$\\frac{1}{3}$",
+        "$3$"
+      ],
+      "answer": "D",
+      "solution": "The solution set has the form $x\\le\\ $ something, so the division that isolated $x$ must have reversed the symbol -- which tells you $-k$ is negative, that is, $k$ is positive. The endpoint $x=-3$ then satisfies the related equation.",
+      "steps": [
+        "Isolating $x$: $-kx\\ge 9$, so $x\\le -\\dfrac{9}{k}$ when $k>0$.",
+        "Match the endpoints: $-\\dfrac{9}{k}=-3$.",
+        "Solve: $k=3$."
+      ],
+      "verify": "k = symbols('k')\nresult = solve(Eq(3 - k*(-3), 12), k)[0]"
+    },
+    {
+      "id": "T05-M2-17",
+      "module": 2,
+      "n": 39,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Systems of inequalities",
+      "stem": "A student has at most $12$ hours this weekend to study for a math exam and a science exam, and must spend at least $4$ hours on science. If $m$ is the number of hours spent on math and $s$ is the number of hours spent on science, which system represents this situation?",
+      "wide": true,
+      "choices": [
+        "$m+s\\le 12$ and $s\\ge 4$",
+        "$m+s\\ge 12$ and $s\\ge 4$",
+        "$m+s\\le 12$ and $s\\le 4$",
+        "$m+s\\le 12$ and $m\\ge 4$"
+      ],
+      "answer": "A",
+      "solution": "The $12$ hours cap the \\emph{combined} time, so that inequality involves both variables and uses $\\le$; the $4$-hour requirement applies to science alone and uses $\\ge$. Swapping either symbol or attaching the requirement to $m$ gives one of the other choices.",
+      "steps": [
+        "Total study time is $m+s$, and ``at most $12$ hours'' gives $m+s\\le 12$.",
+        "``At least $4$ hours on science'' gives $s\\ge 4$."
+      ],
+      "verify": "result = '$m+s\\\\le 12$ and $s\\\\ge 4$'"
+    },
+    {
+      "id": "T05-M2-18",
+      "module": 2,
+      "n": 40,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Solving inequalities",
+      "stem": "What is the greatest integer value of $x$ that satisfies $\\dfrac{2x+1}{5}<\\dfrac{x+4}{3}$?",
+      "answer": "16",
+      "solution": "Multiplying by the positive number $15$ clears both denominators without touching the symbol; the boundary $x=17$ is excluded because the inequality is strict, so the greatest integer solution is $16$.",
+      "steps": [
+        "Multiply both sides by $15$: $3(2x+1)<5(x+4)$.",
+        "Distribute: $6x+3<5x+20$.",
+        "Subtract $5x$ and $3$: $x<17$, so the greatest integer is $16$."
+      ],
+      "verify": "result = max([k for k in range(-50, 60) if 3*(2*k + 1) < 5*(k + 4)])"
+    },
+    {
+      "id": "T05-M2-19",
+      "module": 2,
+      "n": 41,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Solving inequalities",
+      "stem": "Which of the following has the same solution set as $2(3-x)\\le 4x-6$?",
+      "choices": [
+        "$x\\le 2$",
+        "$x\\ge \\frac{1}{2}$",
+        "$x\\ge 2$",
+        "$x\\le \\frac{2}{3}$"
+      ],
+      "answer": "C",
+      "solution": "Moving the $x$-terms to the right keeps their coefficient positive, so nothing has to be reversed: $6-2x\\le 4x-6$ becomes $12\\le 6x$, and reading it backwards gives $x\\ge 2$.",
+      "steps": [
+        "Distribute the left side: $6-2x\\le 4x-6$.",
+        "Add $2x$ and $6$ to both sides: $12\\le 6x$.",
+        "Divide by $6$: $2\\le x$, that is $x\\ge 2$."
+      ],
+      "verify": "x = symbols('x')\nb = solve(Eq(2*(3 - x), 4*x - 6), x)[0]\nresult = '$x\\\\ge ' + str(b) + '$'"
+    },
+    {
+      "id": "T05-M2-20",
+      "module": 2,
+      "n": 42,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Inequality word problems",
+      "stem": "At a school fair a vendor sells hot dogs for $\\$3$ each and drinks for $\\$2$ each, and must take in at least $\\$180$ in total. The vendor has already sold $40$ drinks. What is the least number of hot dogs the vendor must sell to reach the goal?",
+      "answer": "34",
+      "solution": "The drinks have already brought in $\\$80$, leaving $\\$100$ to raise at $\\$3$ each; that is $33\\frac{1}{3}$ hot dogs, and since a partial hot dog cannot be sold the count must round \\emph{up} to $34$ to clear the minimum.",
+      "steps": [
+        "Revenue from drinks: $2(40)=80$ dollars.",
+        "Let $h$ be the number of hot dogs: $3h+80\\ge 180$.",
+        "Subtract $80$ and divide by $3$: $h\\ge 33.3\\ldots$, so $h=34$."
+      ],
+      "verify": "result = min([h for h in range(0, 200) if 3*h + 80 >= 180])"
+    },
+    {
+      "id": "T05-M2-21",
+      "module": 2,
+      "n": 43,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Systems of inequalities",
+      "stem": "Which ordered pair $(x,y)$ is a solution to the system $3x-y>6$ and $x+2y\\le 4$?",
+      "choices": [
+        "$(0,2)$",
+        "$(2,0)$",
+        "$(3,-2)$",
+        "$(4,1)$"
+      ],
+      "answer": "C",
+      "solution": "The first inequality is strict, so a pair that makes $3x-y$ exactly $6$ fails; the surviving pair must then also satisfy the second inequality, where equality would be allowed.",
+      "steps": [
+        "$(0,2)$: $3(0)-2=-2$, and $-2>6$ is false.",
+        "$(2,0)$: $3(2)-0=6$, and $6>6$ is false because the symbol is strict.",
+        "$(3,-2)$: $9+2=11>6$ is true, and $3+2(-2)=-1\\le 4$ is true."
+      ],
+      "verify": "pts = [(0, 2), (2, 0), (3, -2), (4, 1)]\ngood = [p for p in pts if 3*p[0] - p[1] > 6 and p[0] + 2*p[1] <= 4]\nresult = sp.Tuple(*good[0])"
+    },
+    {
+      "id": "T05-M2-22",
+      "module": 2,
+      "n": 44,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Systems of inequalities",
+      "stem": "The shaded triangular region above is the graph of the system $y\\le -x+6$, $y\\ge 2$, and $x\\ge 1$. Which of the following points lies in the shaded region?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[scale=0.5]\n\\draw[satgrey!30,very thin] (-1,-1) grid (7,7);\n\\fill[satsand] (1,2) -- (1,5) -- (4,2) -- cycle;\n\\draw[satamber,very thick] (1,2) -- (1,5) -- (4,2) -- cycle;\n\\draw[->,thick] (-1,0) -- (7.4,0) node[right] {\\small $x$};\n\\draw[->,thick] (0,-1) -- (0,7.4) node[above] {\\small $y$};\n\\foreach \\i in {1,2,3,4,5,6} {\\draw (\\i,-0.12) -- (\\i,0.12) node[below=3pt] {\\tiny $\\i$};}\n\\foreach \\j in {1,2,3,4,5,6} {\\draw (-0.12,\\j) -- (0.12,\\j) node[left=3pt] {\\tiny $\\j$};}\n\\end{tikzpicture}\n\\end{center}",
+      "choices": [
+        "$(2,3)$",
+        "$(0,3)$",
+        "$(2,1)$",
+        "$(3,4)$"
+      ],
+      "answer": "A",
+      "solution": "A point in the region must satisfy all three inequalities, boundaries included; each of the other three points violates exactly one of them, which is enough to rule it out.",
+      "steps": [
+        "$(2,3)$: $3\\le -2+6=4$, $3\\ge 2$, and $2\\ge 1$ -- all true.",
+        "$(0,3)$ fails $x\\ge 1$; $(2,1)$ fails $y\\ge 2$.",
+        "$(3,4)$ fails $y\\le -x+6$, since $4\\le 3$ is false."
+      ],
+      "verify": "pts = [(2, 3), (0, 3), (2, 1), (3, 4)]\ngood = [p for p in pts if p[1] <= -p[0] + 6 and p[1] >= 2 and p[0] >= 1]\nresult = sp.Tuple(*good[0])"
+    }
+  ]
+}

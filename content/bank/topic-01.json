@@ -1,0 +1,993 @@
+{
+  "number": 1,
+  "topic": "Linear Equations in One Variable",
+  "domain": "Algebra",
+  "skills": [
+    "Solving linear equations",
+    "Equations with no or infinitely many solutions",
+    "Linear word problems"
+  ],
+  "lesson": {
+    "intro": "A linear equation in one variable is a statement that two expressions built from a single unknown --- using only addition, subtraction, and multiplication by numbers --- are equal. Almost every algebra question on the Digital SAT either is one of these or collapses into one after a line of work, so the routine in this topic is the routine you will reuse in systems, inequalities, functions, and word problems for the rest of the test. The goal is not just to get $x$; it is to get $x$ quickly, in a way that leaves nowhere for a sign to hide.",
+    "blocks": [
+      {
+        "kind": "section",
+        "title": "What a linear equation is",
+        "body": "Any equation that can be rewritten in the form \\[ ax + b = 0, \\qquad a \\neq 0 \\] is linear in $x$. The unknown appears to the first power only: no $x^2$, no $\\sqrt{x}$, no $x$ in a denominator. Equations such as $3x + 12 = 30$, $5x - 8 = 3x + 14$, and $\\frac{x+5}{3} - \\frac{x-1}{2} = 1$ all look different, but each becomes $ax + b = 0$ after expanding and combining, and each therefore has exactly one solution, $x = -\\frac{b}{a}$.\n\nThat last sentence is worth reading twice. As long as the coefficient $a$ that survives the simplification is not zero, there is one and only one answer. The special cases that the test loves --- no solution, infinitely many solutions --- are precisely the cases where $a$ turns out to be zero."
+      },
+      {
+        "kind": "concept",
+        "title": "The balance principle",
+        "body": "An equation is a balanced scale. Whatever you do to one side you must do to the other, and if you do, the balance is preserved: the new equation has exactly the same solutions as the old one. You may add or subtract the same quantity on both sides, and you may multiply or divide both sides by the same \\emph{nonzero} number.\n\nThis is the reason every legal step is reversible, and it is why you can check an answer by substitution. If $x = 7$ solves $5x - 8 = 3x + 14$, then substituting must make both sides read $27$. On a timed test, one substitution is often cheaper than re-doing the algebra."
+      },
+      {
+        "kind": "section",
+        "title": "The solving routine",
+        "body": "Work in this order and the arithmetic stays clean.\n\n\\textbf{1. Clear fractions and decimals.} Multiply every term on both sides by the least common denominator (or by a power of $10$). $\\frac{3}{4}x + \\frac{1}{2} = \\frac{5}{8}x + 3$ becomes $6x + 4 = 5x + 24$.\n\n\\textbf{2. Expand.} Distribute across every parenthesis, remembering that a factor multiplies \\emph{each} term inside: $-4(x - 7) = -4x + 28$.\n\n\\textbf{3. Combine like terms} on each side separately, so each side reads $ax + b$.\n\n\\textbf{4. Collect} the variable terms on one side and the constants on the other. Move the smaller variable term so the coefficient you keep is positive.\n\n\\textbf{5. Divide} by the coefficient of the variable --- once, at the very end.\n\n\\textbf{6. Answer the question that was asked.} If the question wants $x + 2$, or the length rather than the width, one more line of work is still owed."
+      },
+      {
+        "kind": "formula",
+        "title": "How many solutions an equation has",
+        "body": "Simplify both sides until the equation reads \\[ ax + b = cx + d. \\] Then\n\n\\textbf{One solution:} $a \\neq c$. The variable survives and $x = \\dfrac{d - b}{a - c}$.\n\n\\textbf{No solution:} $a = c$ and $b \\neq d$. The variable cancels and leaves a false statement such as $15 = 12$.\n\n\\textbf{Infinitely many solutions:} $a = c$ and $b = d$. The two sides are the same expression, and the equation reduces to $0 = 0$, which is true for every $x$.\n\nSo when a question hands you a constant and asks for no solution or for infinitely many, you are being asked to match coefficients: set the coefficients equal, then check the constants to see which of the two cases you are in."
+      },
+      {
+        "kind": "trap",
+        "title": "Four traps the test sets",
+        "body": "\\textbf{Distributing to only the first term.} $5(2x - 5) = 10x - 25$, not $10x - 5$. The wrong answers on these items are built from exactly this slip.\n\n\\textbf{A minus sign in front of a group.} In $\\frac{x+5}{3} - \\frac{x-1}{2}$, the subtraction applies to the whole second numerator; after clearing denominators it becomes $-3(x-1) = -3x + 3$.\n\n\\textbf{Dividing by a negative.} From $-2x = -8$ the answer is $x = 4$; from $-2x = 8$ it is $x = -4$. Do the division once, deliberately.\n\n\\textbf{Solving for the wrong quantity.} The equation gives the width, but the question asked for the length. Underline the final phrase of the question before you start."
+      },
+      {
+        "kind": "strategy",
+        "title": "Strategy: substitution and clean setup",
+        "body": "If an answer-choice question resists you, put the choices back into the equation. Four substitutions are slow, but one is fast, and the choices are usually ordered, so starting with choice B or C tells you which direction to move.\n\nIn word problems, define the variable in writing before you write the equation: \\emph{let $w$ be the width in meters}. Everything else in the problem then gets expressed in terms of that one letter --- the length becomes $2w + 3$, the number of dimes becomes $2n$ --- and the sentence turns into a single equation instead of a guess.\n\nKeep units in one system. A value problem with nickels and dimes is easier entirely in cents: $5n + 10(2n) = 250$."
+      },
+      {
+        "kind": "worked",
+        "title": "Worked example 1: variables on both sides",
+        "body": "\\textbf{Solve } $2(3x - 5) - 4(x - 7) = 3x + 6$.\n\nExpand first, watching the $-4$: \\[ 6x - 10 - 4x + 28 = 3x + 6. \\] Combine like terms on the left: \\[ 2x + 18 = 3x + 6. \\] The smaller variable term is $2x$, so subtract $2x$ from both sides and subtract $6$ from both sides: \\[ 12 = x. \\] Check by substitution: the left side is $2(31) - 4(5) = 62 - 20 = 42$, and the right side is $36 + 6 = 42$. The two sides agree, so $x = 12$."
+      },
+      {
+        "kind": "worked",
+        "title": "Worked example 2: a no-solution question",
+        "body": "\\textbf{In } $ax + 15 = 4(3x + 5) - 8$ \\textbf{, } $a$ \\textbf{ is a constant. If the equation has no solution, what is } $a$ \\textbf{?}\n\nSimplify the side that contains no unknown constant: \\[ 4(3x + 5) - 8 = 12x + 20 - 8 = 12x + 12. \\] The equation now reads $ax + 15 = 12x + 12$. No solution requires the variable to disappear while the constants disagree, so the coefficients must be equal: $a = 12$. Substituting back gives $12x + 15 = 12x + 12$, and subtracting $12x$ leaves $15 = 12$ --- false for every $x$, which is exactly what \\emph{no solution} means. If instead the constants had matched, the same value of $a$ would have given infinitely many solutions, so the constant check is not optional."
+      },
+      {
+        "kind": "worked",
+        "title": "Worked example 3: a word problem",
+        "body": "\\textbf{Tank A holds 240 liters and drains at 8 liters per minute. Tank B holds 120 liters and fills at 4 liters per minute. After how many minutes do they hold the same amount?}\n\nLet $t$ be the number of minutes. Draining makes the rate negative and filling makes it positive, so the two amounts are $240 - 8t$ and $120 + 4t$. \\emph{The same amount} means the two expressions are equal: \\[ 240 - 8t = 120 + 4t. \\] Add $8t$ to both sides and subtract $120$: \\[ 120 = 12t, \\qquad t = 10. \\] Notice what the $12$ means: the gap between the tanks is $120$ liters and it closes at $8 + 4 = 12$ liters per minute. Reading the algebra back into the story like this is the fastest way to catch a setup error."
+      }
+    ]
+  },
+  "problems": [
+    {
+      "id": "T01-M1-01",
+      "module": 1,
+      "n": 1,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Solving linear equations",
+      "stem": "If $3x + 12 = 30$, what is the value of $x$?",
+      "choices": [
+        "$6$",
+        "$10$",
+        "$14$",
+        "$18$"
+      ],
+      "answer": "A",
+      "solution": "Every linear equation is undone in the reverse of the order it was built: the $12$ was added last, so it is removed first, and only then is the multiplication by $3$ undone. Peeling the constant off before the coefficient is what keeps the arithmetic clean.",
+      "steps": [
+        "Subtract $12$ from both sides: $3x = 18$.",
+        "Divide both sides by $3$: $x = 6$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(3*x + 12 - 30, x)[0]"
+    },
+    {
+      "id": "T01-M1-02",
+      "module": 1,
+      "n": 2,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Solving linear equations",
+      "stem": "If $7x = 4x + 21$, what is the value of $x$?",
+      "answer": "7",
+      "solution": "When the variable appears on both sides, the first move is to collect it on one side. Subtracting $4x$ is legal because subtracting the same quantity from both sides leaves the two sides equal, and it turns the problem into an ordinary one-step equation.",
+      "steps": [
+        "Subtract $4x$ from both sides: $3x = 21$.",
+        "Divide both sides by $3$: $x = 7$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(7*x - (4*x + 21), x)[0]"
+    },
+    {
+      "id": "T01-M1-03",
+      "module": 1,
+      "n": 3,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Solving linear equations",
+      "stem": "If $\\dfrac{x}{4} + 3 = 11$, what is the value of $x$?",
+      "choices": [
+        "$8$",
+        "$32$",
+        "$44$",
+        "$56$"
+      ],
+      "answer": "B",
+      "solution": "The variable is divided by $4$, so the last undoing step is a multiplication by $4$ --- but only after the $+3$ is gone. Multiplying before subtracting would force the $3$ to be multiplied as well.",
+      "steps": [
+        "Subtract $3$ from both sides: $\\dfrac{x}{4} = 8$.",
+        "Multiply both sides by $4$: $x = 32$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(x/4 + 3 - 11, x)[0]"
+    },
+    {
+      "id": "T01-M1-04",
+      "module": 1,
+      "n": 4,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Solving linear equations",
+      "stem": "If $3(x - 4) = 18$, what is the value of $x$?",
+      "choices": [
+        "$2$",
+        "$6$",
+        "$10$",
+        "$22$"
+      ],
+      "answer": "C",
+      "solution": "A product equal to a number can be split immediately: if $3$ times a quantity is $18$, that quantity is $6$. Dividing first avoids distributing at all, which is faster and removes a chance to slip a sign.",
+      "steps": [
+        "Divide both sides by $3$: $x - 4 = 6$.",
+        "Add $4$ to both sides: $x = 10$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(3*(x - 4) - 18, x)[0]"
+    },
+    {
+      "id": "T01-M1-05",
+      "module": 1,
+      "n": 5,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Linear word problems",
+      "stem": "A gym charges a one-time membership fee of \\$30 plus \\$15 for each month of use. If a member paid a total of \\$180, for how many months did the member use the gym?",
+      "choices": [
+        "$6$",
+        "$10$",
+        "$12$",
+        "$14$"
+      ],
+      "answer": "B",
+      "solution": "A one-time charge is a constant and a repeated charge is a rate, so the total is $15m + 30$. Recognising which number is attached to the variable and which stands alone is the whole task; the algebra afterwards is two steps.",
+      "steps": [
+        "Let $m$ be the number of months: $15m + 30 = 180$.",
+        "Subtract $30$: $15m = 150$.",
+        "Divide by $15$: $m = 10$."
+      ],
+      "verify": "m = symbols('m')\nresult = solve(15*m + 30 - 180, m)[0]"
+    },
+    {
+      "id": "T01-M1-06",
+      "module": 1,
+      "n": 6,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Solving linear equations",
+      "stem": "If $4x - 9 = 23$, what is the value of $x + 2$?",
+      "answer": "10",
+      "solution": "The question asks for $x + 2$, not for $x$, so the work is not finished when $x$ is found. Reading the last line of the question again before gridding an answer is the habit that prevents this whole family of errors.",
+      "steps": [
+        "Add $9$ to both sides: $4x = 32$, so $x = 8$.",
+        "The question asks for $x + 2 = 8 + 2 = 10$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(4*x - 9 - 23, x)[0] + 2"
+    },
+    {
+      "id": "T01-M1-07",
+      "module": 1,
+      "n": 7,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Solving linear equations",
+      "stem": "If $-2x + 9 = 1$, what is the value of $x$?",
+      "choices": [
+        "$-5$",
+        "$-4$",
+        "$4$",
+        "$5$"
+      ],
+      "answer": "C",
+      "solution": "The coefficient of $x$ is $-2$, and dividing by a negative number is what trips students here. Isolating $-2x$ first and then dividing once by $-2$ keeps exactly one sign change in the whole problem.",
+      "steps": [
+        "Subtract $9$ from both sides: $-2x = -8$.",
+        "Divide both sides by $-2$: $x = 4$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(-2*x + 9 - 1, x)[0]"
+    },
+    {
+      "id": "T01-M1-08",
+      "module": 1,
+      "n": 8,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Solving linear equations",
+      "stem": "If $5x - 8 = 3x + 14$, what is the value of $x$?",
+      "choices": [
+        "$-3$",
+        "$3$",
+        "$11$",
+        "$22$"
+      ],
+      "answer": "C",
+      "solution": "With variables on both sides, move the smaller variable term across so the remaining coefficient stays positive, then move the constants the other way. Each move is the same operation applied to both sides, which is why the equality survives.",
+      "steps": [
+        "Subtract $3x$ from both sides: $2x - 8 = 14$.",
+        "Add $8$ to both sides: $2x = 22$.",
+        "Divide by $2$: $x = 11$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(5*x - 8 - (3*x + 14), x)[0]"
+    },
+    {
+      "id": "T01-M1-09",
+      "module": 1,
+      "n": 9,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Solving linear equations",
+      "stem": "If $\\dfrac{5}{2}x - 3 = 7$, what is the value of $x$?",
+      "choices": [
+        "$4$",
+        "$10$",
+        "$20$",
+        "$25$"
+      ],
+      "answer": "A",
+      "solution": "A fractional coefficient is undone by multiplying by its reciprocal: $\\frac{2}{5}$, not $\\frac{5}{2}$. Multiplying by the fraction itself is the single most common slip on this item type.",
+      "steps": [
+        "Add $3$ to both sides: $\\dfrac{5}{2}x = 10$.",
+        "Multiply both sides by $\\dfrac{2}{5}$: $x = 4$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(Rational(5,2)*x - 3 - 7, x)[0]"
+    },
+    {
+      "id": "T01-M1-10",
+      "module": 1,
+      "n": 10,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Solving linear equations",
+      "stem": "If $4(x + 3) = 2(x + 9)$, what is the value of $x$?",
+      "answer": "3",
+      "solution": "Both sides are products, so both must be expanded before like terms can be combined. Expanding is just the distributive property, and it is what turns two grouped expressions into a form where the $x$ terms can meet.",
+      "steps": [
+        "Expand: $4x + 12 = 2x + 18$.",
+        "Subtract $2x$ and $12$: $2x = 6$.",
+        "Divide by $2$: $x = 3$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(4*(x + 3) - 2*(x + 9), x)[0]"
+    },
+    {
+      "id": "T01-M1-11",
+      "module": 1,
+      "n": 11,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Solving linear equations",
+      "stem": "If $3x + 2y = 12$, which expression gives $x$ in terms of $y$?",
+      "choices": [
+        "$\\dfrac{12 - 2y}{3}$",
+        "$\\dfrac{12 + 2y}{3}$",
+        "$12 - \\dfrac{2y}{3}$",
+        "$\\dfrac{12 - 2y}{2}$"
+      ],
+      "answer": "A",
+      "solution": "Solving a literal equation uses exactly the same moves as solving a numerical one; the only difference is that the answer is an expression. Because the whole quantity $12 - 2y$ is what equals $3x$, the entire numerator must be divided by $3$, not just one term of it.",
+      "steps": [
+        "Subtract $2y$ from both sides: $3x = 12 - 2y$.",
+        "Divide both sides by $3$: $x = \\dfrac{12 - 2y}{3}$."
+      ],
+      "verify": "x, y = symbols('x y')\nsol = solve(3*x + 2*y - 12, x)[0]\nok = simplify(sol - (12 - 2*y)/3) == 0\nresult = r\"$\\dfrac{12 - 2y}{3}$\" if ok else \"mismatch\""
+    },
+    {
+      "id": "T01-M1-12",
+      "module": 1,
+      "n": 12,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Linear word problems",
+      "stem": "At noon the temperature in a town was $12^\\circ$F, and it fell at a constant rate of $3^\\circ$F per hour. After how many hours was the temperature $-9^\\circ$F?",
+      "choices": [
+        "$-7$",
+        "$1$",
+        "$3$",
+        "$7$"
+      ],
+      "answer": "D",
+      "solution": "A falling quantity gets a negative rate, so the model is $12 - 3h$. Setting that equal to $-9$ and solving carefully keeps both negatives straight: the constant moves left, the negative coefficient divides last.",
+      "steps": [
+        "Write the model: $12 - 3h = -9$.",
+        "Subtract $12$: $-3h = -21$.",
+        "Divide by $-3$: $h = 7$."
+      ],
+      "verify": "h = symbols('h')\nresult = solve(12 - 3*h + 9, h)[0]"
+    },
+    {
+      "id": "T01-M1-13",
+      "module": 1,
+      "n": 13,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Equations with no or infinitely many solutions",
+      "stem": "In the equation $4(x - a) = 4x - 12$, $a$ is a constant. If the equation is true for all values of $x$, what is the value of $a$?",
+      "choices": [
+        "$-3$",
+        "$3$",
+        "$12$",
+        "$48$"
+      ],
+      "answer": "B",
+      "solution": "\\\"True for all values of $x$\\\" means the two sides are the same expression, so their constant terms must match once both are expanded. Expanding gives $4x - 4a$ on the left, and $-4a$ can only equal $-12$ when $a = 3$.",
+      "steps": [
+        "Expand the left side: $4x - 4a = 4x - 12$.",
+        "The $4x$ terms already match, so $-4a = -12$.",
+        "Divide by $-4$: $a = 3$."
+      ],
+      "verify": "a = symbols('a')\nresult = solve(-4*a + 12, a)[0]"
+    },
+    {
+      "id": "T01-M1-14",
+      "module": 1,
+      "n": 14,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Equations with no or infinitely many solutions",
+      "stem": "The equation $6x + 12 = 3(2x + k)$, where $k$ is a constant, has infinitely many solutions. What is the value of $k$?",
+      "answer": "4",
+      "solution": "Infinitely many solutions means the equation collapses to a true statement such as $0 = 0$, which happens only when the two sides are identical expressions. Expanding the right side gives $6x + 3k$, so the constants must agree: $3k = 12$.",
+      "steps": [
+        "Expand the right side: $6x + 12 = 6x + 3k$.",
+        "The $6x$ terms cancel, leaving $12 = 3k$.",
+        "Divide by $3$: $k = 4$."
+      ],
+      "verify": "k = symbols('k')\nresult = solve(3*k - 12, k)[0]"
+    },
+    {
+      "id": "T01-M1-15",
+      "module": 1,
+      "n": 15,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Solving linear equations",
+      "stem": "If $0.4x + 1.2 = 3.6$, what is the value of $x$?",
+      "choices": [
+        "$0.6$",
+        "$6$",
+        "$9$",
+        "$12$"
+      ],
+      "answer": "B",
+      "solution": "Decimals obey the same rules as integers, but multiplying every term by $10$ first turns $0.4x + 1.2 = 3.6$ into $4x + 12 = 36$, where no decimal point can be misplaced. Clearing decimals is a legal move because both sides are scaled equally.",
+      "steps": [
+        "Multiply every term by $10$: $4x + 12 = 36$.",
+        "Subtract $12$: $4x = 24$.",
+        "Divide by $4$: $x = 6$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(Rational(2,5)*x + Rational(6,5) - Rational(18,5), x)[0]"
+    },
+    {
+      "id": "T01-M1-16",
+      "module": 1,
+      "n": 16,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Solving linear equations",
+      "stem": "If $\\dfrac{x + 5}{3} - \\dfrac{x - 1}{2} = 1$, what is the value of $x$?",
+      "choices": [
+        "$-7$",
+        "$1$",
+        "$7$",
+        "$12$"
+      ],
+      "answer": "C",
+      "solution": "Multiplying by the least common denominator $6$ clears both fractions at once, but every term --- including the $1$ on the right --- must be multiplied. The minus sign in front of the second fraction then applies to the whole numerator, which is where the sign errors live.",
+      "steps": [
+        "Multiply every term by $6$: $2(x + 5) - 3(x - 1) = 6$.",
+        "Expand: $2x + 10 - 3x + 3 = 6$.",
+        "Combine: $-x + 13 = 6$, so $x = 7$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(Rational(1,3)*(x + 5) - Rational(1,2)*(x - 1) - 1, x)[0]"
+    },
+    {
+      "id": "T01-M1-17",
+      "module": 1,
+      "n": 17,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Solving linear equations",
+      "stem": "The formula $C = \\dfrac{5}{9}(F - 32)$ converts a Fahrenheit temperature $F$ to a Celsius temperature $C$. Which of the following gives $F$ in terms of $C$?",
+      "choices": [
+        "$\\dfrac{5}{9}C + 32$",
+        "$\\dfrac{9}{5}(C + 32)$",
+        "$\\dfrac{9}{5}C - 32$",
+        "$\\dfrac{9}{5}C + 32$"
+      ],
+      "answer": "D",
+      "solution": "To free $F$, undo the operations that were applied to it: the multiplication by $\\frac{5}{9}$ comes off first (multiply by $\\frac{9}{5}$), and only then does the $-32$ come off. Reversing that order produces $\\frac{9}{5}(C + 32)$, which is a different function.",
+      "steps": [
+        "Multiply both sides by $\\dfrac{9}{5}$: $\\dfrac{9}{5}C = F - 32$.",
+        "Add $32$ to both sides: $F = \\dfrac{9}{5}C + 32$."
+      ],
+      "verify": "C, F = symbols('C F')\nsol = solve(Eq(C, Rational(5,9)*(F - 32)), F)[0]\nok = simplify(sol - (Rational(9,5)*C + 32)) == 0\nresult = r\"$\\dfrac{9}{5}C + 32$\" if ok else \"mismatch\""
+    },
+    {
+      "id": "T01-M1-18",
+      "module": 1,
+      "n": 18,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Solving linear equations",
+      "stem": "If $2(3x - 5) - 4(x - 7) = 3x + 6$, what is the value of $x$?",
+      "answer": "12",
+      "solution": "The factor $-4$ multiplies both terms inside its parentheses, so $-4(x - 7)$ becomes $-4x + 28$, not $-4x - 28$. Once each side is simplified to the form $ax + b$, one subtraction of variables and one of constants finishes it.",
+      "steps": [
+        "Expand: $6x - 10 - 4x + 28 = 3x + 6$.",
+        "Combine on the left: $2x + 18 = 3x + 6$.",
+        "Subtract $2x$ and $6$: $12 = x$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(2*(3*x - 5) - 4*(x - 7) - (3*x + 6), x)[0]"
+    },
+    {
+      "id": "T01-M1-19",
+      "module": 1,
+      "n": 19,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Linear word problems",
+      "stem": "Tank A holds 240 liters of water and is draining at a constant rate of 8 liters per minute. Tank B holds 120 liters and is filling at a constant rate of 4 liters per minute. After how many minutes will the two tanks hold the same amount of water?",
+      "choices": [
+        "$10$",
+        "$15$",
+        "$20$",
+        "$30$"
+      ],
+      "answer": "A",
+      "solution": "Each tank is a linear model in the same variable, so setting the two expressions equal locates the moment they agree. Because one tank falls while the other rises, collecting the $t$ terms adds the rates: the gap of $120$ liters closes at $12$ liters per minute.",
+      "steps": [
+        "Model the tanks: $240 - 8t = 120 + 4t$.",
+        "Add $8t$ and subtract $120$: $120 = 12t$.",
+        "Divide by $12$: $t = 10$."
+      ],
+      "verify": "t = symbols('t')\nresult = solve(240 - 8*t - (120 + 4*t), t)[0]"
+    },
+    {
+      "id": "T01-M1-20",
+      "module": 1,
+      "n": 20,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Equations with no or infinitely many solutions",
+      "stem": "In the equation $ax + 15 = 4(3x + 5) - 8$, $a$ is a constant. If the equation has no solution, what is the value of $a$?",
+      "choices": [
+        "$3$",
+        "$4$",
+        "$5$",
+        "$12$"
+      ],
+      "answer": "D",
+      "solution": "An equation has no solution exactly when the variable terms match but the constants do not, leaving something like $15 = 12$. Simplifying the right side to $12x + 12$ shows the coefficient must be $a = 12$; the constants $15$ and $12$ then disagree, which is what makes the equation impossible.",
+      "steps": [
+        "Simplify the right side: $4(3x + 5) - 8 = 12x + 12$.",
+        "For no solution the $x$ coefficients must be equal: $a = 12$.",
+        "Check the constants: $15 \\neq 12$, so there is indeed no solution."
+      ],
+      "verify": "a = symbols('a')\nresult = solve(a - 12, a)[0]"
+    },
+    {
+      "id": "T01-M1-21",
+      "module": 1,
+      "n": 21,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Solving linear equations",
+      "stem": "If $\\dfrac{2x - 7}{5} = \\dfrac{x + 4}{3}$, what is the value of $x$?",
+      "answer": "41",
+      "solution": "When a single fraction equals a single fraction, cross multiplication is just multiplying both sides by both denominators at once. Each numerator must be kept in parentheses so the whole numerator gets multiplied, not only its first term.",
+      "steps": [
+        "Cross multiply: $3(2x - 7) = 5(x + 4)$.",
+        "Expand: $6x - 21 = 5x + 20$.",
+        "Subtract $5x$ and add $21$: $x = 41$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(Rational(1,5)*(2*x - 7) - Rational(1,3)*(x + 4), x)[0]"
+    },
+    {
+      "id": "T01-M1-22",
+      "module": 1,
+      "n": 22,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Linear word problems",
+      "stem": "The perimeter of a rectangle is 48 centimeters. The length of the rectangle is 4 centimeters more than its width. What is the length, in centimeters, of the rectangle?",
+      "choices": [
+        "$10$",
+        "$14$",
+        "$20$",
+        "$24$"
+      ],
+      "answer": "B",
+      "solution": "Writing both dimensions in terms of one variable is what makes this a single linear equation: if the width is $w$, the length is $w + 4$. The perimeter formula then gives one equation in $w$, and the final step is to convert the $w$ that is found into the length that is asked for.",
+      "steps": [
+        "Let $w$ be the width; the length is $w + 4$.",
+        "Perimeter: $2(w + w + 4) = 48$, so $4w + 8 = 48$.",
+        "Then $w = 10$, and the length is $w + 4 = 14$."
+      ],
+      "verify": "w = symbols('w')\nresult = solve(2*(w + w + 4) - 48, w)[0] + 4"
+    },
+    {
+      "id": "T01-M2-01",
+      "module": 2,
+      "n": 23,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Solving linear equations",
+      "stem": "If $7 - 2x = 19$, what is the value of $x$?",
+      "choices": [
+        "$-12$",
+        "$-6$",
+        "$6$",
+        "$13$"
+      ],
+      "answer": "B",
+      "solution": "The variable term is $-2x$, so the constant $7$ must leave first and the division by $-2$ must be done in one step at the end. Treating the coefficient as $2$ instead of $-2$ is what produces the positive answer.",
+      "steps": [
+        "Subtract $7$ from both sides: $-2x = 12$.",
+        "Divide both sides by $-2$: $x = -6$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(7 - 2*x - 19, x)[0]"
+    },
+    {
+      "id": "T01-M2-02",
+      "module": 2,
+      "n": 24,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Solving linear equations",
+      "stem": "If $\\dfrac{x}{3} - \\dfrac{x}{5} = 4$, what is the value of $x$?",
+      "answer": "30",
+      "solution": "The two fractions are like terms in disguise: over the common denominator $15$ they combine into $\\frac{2x}{15}$. Combining before solving is faster than clearing denominators here, and it shows why the answer is a multiple of $15$.",
+      "steps": [
+        "Write with denominator $15$: $\\dfrac{5x - 3x}{15} = 4$.",
+        "Combine: $\\dfrac{2x}{15} = 4$, so $2x = 60$.",
+        "Divide by $2$: $x = 30$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(x/3 - x/5 - 4, x)[0]"
+    },
+    {
+      "id": "T01-M2-03",
+      "module": 2,
+      "n": 25,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Solving linear equations",
+      "stem": "If $5(2x - 5) + 4 = 39$, what is the value of $x$?",
+      "choices": [
+        "$1$",
+        "$4$",
+        "$6$",
+        "$60$"
+      ],
+      "answer": "C",
+      "solution": "The $5$ outside the parentheses multiplies both terms inside, so the $-5$ becomes $-25$. Distributing to only the first term leaves a different equation entirely, which is exactly the mistake the wrong answers here record.",
+      "steps": [
+        "Expand: $10x - 25 + 4 = 39$.",
+        "Combine constants: $10x - 21 = 39$, so $10x = 60$.",
+        "Divide by $10$: $x = 6$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(5*(2*x - 5) + 4 - 39, x)[0]"
+    },
+    {
+      "id": "T01-M2-04",
+      "module": 2,
+      "n": 26,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Linear word problems",
+      "stem": "A phone plan costs \\$25 per month plus \\$0.10 for each text message sent. In one month the bill was \\$43. How many text messages were sent that month?",
+      "choices": [
+        "$680$",
+        "$430$",
+        "$180$",
+        "$18$"
+      ],
+      "answer": "C",
+      "solution": "The fixed monthly charge is the constant and the per-text charge is the coefficient, giving $25 + 0.10t = 43$. Dividing the remaining \\$18 by \\$0.10 --- not by $10$ --- is the step where the decimal must be handled honestly.",
+      "steps": [
+        "Write the model: $25 + 0.10t = 43$.",
+        "Subtract $25$: $0.10t = 18$.",
+        "Divide by $0.10$: $t = 180$."
+      ],
+      "verify": "t = symbols('t')\nresult = solve(25 + Rational(1,10)*t - 43, t)[0]"
+    },
+    {
+      "id": "T01-M2-05",
+      "module": 2,
+      "n": 27,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Solving linear equations",
+      "stem": "If $5m - 2n = 20$, which expression gives $n$ in terms of $m$?",
+      "choices": [
+        "$\\dfrac{20 - 5m}{2}$",
+        "$5m - 10$",
+        "$\\dfrac{5m + 20}{2}$",
+        "$\\dfrac{5m - 20}{2}$"
+      ],
+      "answer": "D",
+      "solution": "Isolating $-2n$ first and then dividing by $-2$ changes the sign of both remaining terms, which is why the numerator is $5m - 20$ and not $20 - 5m$. Dividing only one term by $2$ is the other common slip.",
+      "steps": [
+        "Subtract $5m$ from both sides: $-2n = 20 - 5m$.",
+        "Divide both sides by $-2$: $n = \\dfrac{5m - 20}{2}$."
+      ],
+      "verify": "m, n = symbols('m n')\nsol = solve(5*m - 2*n - 20, n)[0]\nok = simplify(sol - (5*m - 20)/2) == 0\nresult = r\"$\\dfrac{5m - 20}{2}$\" if ok else \"mismatch\""
+    },
+    {
+      "id": "T01-M2-06",
+      "module": 2,
+      "n": 28,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Solving linear equations",
+      "stem": "If $2(x + 6) = 5x - 3$, what is the value of $x$?",
+      "choices": [
+        "$-5$",
+        "$3$",
+        "$5$",
+        "$15$"
+      ],
+      "answer": "C",
+      "solution": "Expanding first puts both sides in the form $ax + b$, and then moving the smaller $x$ term to the right keeps the coefficient positive. The constants travel the opposite way, which is the standard two-move routine.",
+      "steps": [
+        "Expand the left side: $2x + 12 = 5x - 3$.",
+        "Subtract $2x$ and add $3$: $15 = 3x$.",
+        "Divide by $3$: $x = 5$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(2*(x + 6) - (5*x - 3), x)[0]"
+    },
+    {
+      "id": "T01-M2-07",
+      "module": 2,
+      "n": 29,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Solving linear equations",
+      "stem": "If $5(x - 2) = 3x + 4$, what is the value of $x$?",
+      "answer": "7",
+      "solution": "Because the right side is not a single product, dividing by $5$ first would create fractions on the right; expanding is the cleaner opening move. After expanding, the variable terms and the constants each get one move.",
+      "steps": [
+        "Expand: $5x - 10 = 3x + 4$.",
+        "Subtract $3x$ and add $10$: $2x = 14$.",
+        "Divide by $2$: $x = 7$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(5*(x - 2) - (3*x + 4), x)[0]"
+    },
+    {
+      "id": "T01-M2-08",
+      "module": 2,
+      "n": 30,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Solving linear equations",
+      "stem": "If $2(3x - 1) = 4(x + 5) + 2$, what is the value of $x$?",
+      "choices": [
+        "$-12$",
+        "$10$",
+        "$12$",
+        "$24$"
+      ],
+      "answer": "C",
+      "solution": "Both sides must be fully simplified before anything is moved: the right side is $4x + 20 + 2 = 4x + 22$. Combining the two constants on the right before crossing sides is what keeps the second step to a single subtraction.",
+      "steps": [
+        "Expand both sides: $6x - 2 = 4x + 22$.",
+        "Subtract $4x$ and add $2$: $2x = 24$.",
+        "Divide by $2$: $x = 12$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(2*(3*x - 1) - (4*(x + 5) + 2), x)[0]"
+    },
+    {
+      "id": "T01-M2-09",
+      "module": 2,
+      "n": 31,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Solving linear equations",
+      "stem": "If $\\dfrac{2}{3}(x + 6) = 10$, what is the value of $x$?",
+      "choices": [
+        "$6$",
+        "$9$",
+        "$15$",
+        "$21$"
+      ],
+      "answer": "B",
+      "solution": "The fraction multiplies the whole parenthesis, so multiplying both sides by $\\frac{3}{2}$ removes it in one step and leaves $x + 6 = 15$. Attaching the $\\frac{2}{3}$ to $x$ alone --- as if the equation read $\\frac{2}{3}x + 6 = 10$ --- changes the problem.",
+      "steps": [
+        "Multiply both sides by $\\dfrac{3}{2}$: $x + 6 = 15$.",
+        "Subtract $6$: $x = 9$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(Rational(2,3)*(x + 6) - 10, x)[0]"
+    },
+    {
+      "id": "T01-M2-10",
+      "module": 2,
+      "n": 32,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Linear word problems",
+      "stem": "Ana bought 4 identical notebooks and one pen that cost \\$8. The total cost of the items, before tax, was \\$32. What was the cost, in dollars, of one notebook?",
+      "choices": [
+        "$6$",
+        "$8$",
+        "$10$",
+        "$24$"
+      ],
+      "answer": "A",
+      "solution": "The pen is a single fixed cost and the notebooks are a repeated cost, so the receipt reads $4n + 8 = 32$. Dividing the full \\$32 by $4$ would charge the pen to the notebooks as well, which is why the constant leaves first.",
+      "steps": [
+        "Let $n$ be the price of one notebook: $4n + 8 = 32$.",
+        "Subtract $8$: $4n = 24$.",
+        "Divide by $4$: $n = 6$."
+      ],
+      "verify": "n = symbols('n')\nresult = solve(4*n + 8 - 32, n)[0]"
+    },
+    {
+      "id": "T01-M2-11",
+      "module": 2,
+      "n": 33,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Solving linear equations",
+      "stem": "If $\\dfrac{x + 2}{4} = \\dfrac{x - 6}{2}$, what is the value of $x$?",
+      "answer": "14",
+      "solution": "Cross multiplying turns a proportion into a plain linear equation, and the parentheses around each numerator are essential so that the $-6$ is multiplied by $4$ as well. The variable then appears on both sides and is collected in one move.",
+      "steps": [
+        "Cross multiply: $2(x + 2) = 4(x - 6)$.",
+        "Expand: $2x + 4 = 4x - 24$.",
+        "Subtract $2x$ and add $24$: $28 = 2x$, so $x = 14$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(Rational(1,4)*(x + 2) - Rational(1,2)*(x - 6), x)[0]"
+    },
+    {
+      "id": "T01-M2-12",
+      "module": 2,
+      "n": 34,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Solving linear equations",
+      "stem": "If $y = \\dfrac{2x - 5}{3}$, which expression gives $x$ in terms of $y$?",
+      "choices": [
+        "$\\dfrac{3y + 5}{2}$",
+        "$\\dfrac{3y - 5}{2}$",
+        "$\\dfrac{2y + 5}{3}$",
+        "$\\dfrac{3y}{2} + 5$"
+      ],
+      "answer": "A",
+      "solution": "Undo the division by $3$ before anything else, because that division was applied to the whole numerator: $3y = 2x - 5$. Only after the $+5$ is restored can both terms be divided by $2$.",
+      "steps": [
+        "Multiply both sides by $3$: $3y = 2x - 5$.",
+        "Add $5$: $3y + 5 = 2x$.",
+        "Divide by $2$: $x = \\dfrac{3y + 5}{2}$."
+      ],
+      "verify": "x, y = symbols('x y')\nsol = solve(Eq(y, (2*x - 5)/3), x)[0]\nok = simplify(sol - (3*y + 5)/2) == 0\nresult = r\"$\\dfrac{3y + 5}{2}$\" if ok else \"mismatch\""
+    },
+    {
+      "id": "T01-M2-13",
+      "module": 2,
+      "n": 35,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Equations with no or infinitely many solutions",
+      "stem": "The equation $5(2x + 3) = ax + 15$, where $a$ is a constant, has infinitely many solutions. What is the value of $a$?",
+      "choices": [
+        "$2$",
+        "$3$",
+        "$5$",
+        "$10$"
+      ],
+      "answer": "D",
+      "solution": "Infinitely many solutions means the two sides are the same expression after simplification. The left side expands to $10x + 15$; the constants already agree, so the coefficients must agree too, forcing $a = 10$.",
+      "steps": [
+        "Expand the left side: $10x + 15 = ax + 15$.",
+        "The constants match, so the coefficients must match: $a = 10$."
+      ],
+      "verify": "a = symbols('a')\nresult = solve(a - 10, a)[0]"
+    },
+    {
+      "id": "T01-M2-14",
+      "module": 2,
+      "n": 36,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Equations with no or infinitely many solutions",
+      "stem": "In the equation $3(2x - 4) + 5 = 6x + c$, $c$ is a constant. For which value of $c$ does the equation have infinitely many solutions?",
+      "choices": [
+        "$-12$",
+        "$-7$",
+        "$5$",
+        "$7$"
+      ],
+      "answer": "B",
+      "solution": "Simplify the left side to $6x - 7$. The $x$ terms already match, so the equation is an identity precisely when the constants match as well, which means $c = -7$; any other $c$ makes the equation impossible.",
+      "steps": [
+        "Expand and combine: $6x - 12 + 5 = 6x - 7$.",
+        "Compare with $6x + c$: the coefficients agree automatically.",
+        "Match the constants: $c = -7$."
+      ],
+      "verify": "c = symbols('c')\nresult = solve(c + 7, c)[0]"
+    },
+    {
+      "id": "T01-M2-15",
+      "module": 2,
+      "n": 37,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Linear word problems",
+      "stem": "The length of a rectangle is 3 meters more than twice its width. The perimeter of the rectangle is 36 meters. What is the width, in meters, of the rectangle?",
+      "choices": [
+        "$5$",
+        "$6$",
+        "$11$",
+        "$13$"
+      ],
+      "answer": "A",
+      "solution": "Naming the width $w$ lets the length be written as $2w + 3$, so the perimeter becomes a single linear equation. The factor of $2$ in the perimeter formula applies to the sum of a length and a width, not to one of them, which is the step most often dropped.",
+      "steps": [
+        "Let $w$ be the width; the length is $2w + 3$.",
+        "Perimeter: $2(w + 2w + 3) = 36$, so $6w + 6 = 36$.",
+        "Then $6w = 30$ and $w = 5$."
+      ],
+      "verify": "w = symbols('w')\nresult = solve(2*(w + 2*w + 3) - 36, w)[0]"
+    },
+    {
+      "id": "T01-M2-16",
+      "module": 2,
+      "n": 38,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Equations with no or infinitely many solutions",
+      "stem": "The equation $\\dfrac{2}{3}(6x - 9) = 4x + k - 10$, where $k$ is a constant, has infinitely many solutions. What is the value of $k$?",
+      "answer": "4",
+      "solution": "Simplify each side first: the left side is $4x - 6$. Since the coefficients of $x$ already agree, the equation is an identity exactly when the constants agree, so $k - 10$ must equal $-6$.",
+      "steps": [
+        "Expand the left side: $\\dfrac{2}{3}(6x - 9) = 4x - 6$.",
+        "The $4x$ terms match, so $k - 10 = -6$.",
+        "Add $10$: $k = 4$."
+      ],
+      "verify": "k = symbols('k')\nresult = solve(k - 10 + 6, k)[0]"
+    },
+    {
+      "id": "T01-M2-17",
+      "module": 2,
+      "n": 39,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Linear word problems",
+      "stem": "A studio charges a one-time registration fee of \\$60 plus \\$10 for each class. A second studio charges \\$25 for each class and no registration fee. For how many classes is the total cost at the two studios the same?",
+      "choices": [
+        "$100$",
+        "$6$",
+        "$4$",
+        "$-4$"
+      ],
+      "answer": "C",
+      "solution": "Both totals are linear in the same variable, so the equal-cost point is found by setting the two expressions equal. The registration fee is paid once, so it is a constant, and the difference in the per-class rates is what eventually pays it off: \\$15 per class against \\$60.",
+      "steps": [
+        "Set the totals equal: $60 + 10c = 25c$.",
+        "Subtract $10c$: $60 = 15c$.",
+        "Divide by $15$: $c = 4$."
+      ],
+      "verify": "c = symbols('c')\nresult = solve(60 + 10*c - 25*c, c)[0]"
+    },
+    {
+      "id": "T01-M2-18",
+      "module": 2,
+      "n": 40,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Solving linear equations",
+      "stem": "If $3(x - a) = 2(x + a)$, where $a$ is a nonzero constant, what is $x$ in terms of $a$?",
+      "choices": [
+        "$-a$",
+        "$\\dfrac{a}{5}$",
+        "$a$",
+        "$5a$"
+      ],
+      "answer": "D",
+      "solution": "Treat $a$ as a number and solve for $x$ exactly as usual: expand, gather the $x$ terms on one side and the $a$ terms on the other. The two $a$ terms are $-3a$ on the left and $+2a$ on the right, so moving $-3a$ across makes $5a$, not $-a$.",
+      "steps": [
+        "Expand: $3x - 3a = 2x + 2a$.",
+        "Subtract $2x$ and add $3a$: $x = 5a$."
+      ],
+      "verify": "x, a = symbols('x a')\nsol = solve(3*(x - a) - 2*(x + a), x)[0]\nok = simplify(sol - 5*a) == 0\nresult = r\"$5a$\" if ok else \"mismatch\""
+    },
+    {
+      "id": "T01-M2-19",
+      "module": 2,
+      "n": 41,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Linear word problems",
+      "stem": "The sum of three consecutive even integers is 96. What is the least of the three integers?",
+      "choices": [
+        "$30$",
+        "$32$",
+        "$34$",
+        "$36$"
+      ],
+      "answer": "A",
+      "solution": "Consecutive even integers differ by $2$, so naming them $n$, $n + 2$, $n + 4$ turns the sentence into $3n + 6 = 96$. The variable was defined as the least integer, so $n$ itself is the answer --- dropping the $+6$ or answering with the largest are the two ways to lose the point.",
+      "steps": [
+        "Let the integers be $n$, $n + 2$, $n + 4$.",
+        "Their sum: $3n + 6 = 96$, so $3n = 90$.",
+        "Divide by $3$: $n = 30$."
+      ],
+      "verify": "n = symbols('n')\nresult = solve(3*n + 6 - 96, n)[0]"
+    },
+    {
+      "id": "T01-M2-20",
+      "module": 2,
+      "n": 42,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Linear word problems",
+      "stem": "A jar contains only nickels and dimes and has twice as many dimes as nickels. The total value of the coins is \\$2.50. How many nickels are in the jar?",
+      "choices": [
+        "$30$",
+        "$25$",
+        "$20$",
+        "$10$"
+      ],
+      "answer": "D",
+      "solution": "Value problems need both a count relationship and a value equation. Writing the number of dimes as $2n$ keeps everything in one variable, and each coin must be counted at its own value: $5$ cents for a nickel and $10$ for a dime, with the total written in the same unit.",
+      "steps": [
+        "Let $n$ be the number of nickels; the number of dimes is $2n$.",
+        "Value in cents: $5n + 10(2n) = 250$, so $25n = 250$.",
+        "Divide by $25$: $n = 10$."
+      ],
+      "verify": "n = symbols('n')\nresult = solve(5*n + 10*(2*n) - 250, n)[0]"
+    },
+    {
+      "id": "T01-M2-21",
+      "module": 2,
+      "n": 43,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Solving linear equations",
+      "stem": "If $\\dfrac{3}{4}x + \\dfrac{1}{2} = \\dfrac{5}{8}x + 3$, what is the value of $x$?",
+      "answer": "20",
+      "solution": "Multiplying every term by the least common denominator $8$ clears all four fractions at once and leaves $6x + 4 = 5x + 24$. Clearing denominators before collecting like terms is what keeps the fractional coefficients from having to be subtracted.",
+      "steps": [
+        "Multiply every term by $8$: $6x + 4 = 5x + 24$.",
+        "Subtract $5x$ and $4$: $x = 20$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(Rational(3,4)*x + Rational(1,2) - Rational(5,8)*x - 3, x)[0]"
+    },
+    {
+      "id": "T01-M2-22",
+      "module": 2,
+      "n": 44,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Equations with no or infinitely many solutions",
+      "stem": "In the equation $2(kx - 3) = 6x + 5 - k$, $k$ is a constant. If the equation has no solution, what is the value of $k$?",
+      "choices": [
+        "$-6$",
+        "$3$",
+        "$6$",
+        "$11$"
+      ],
+      "answer": "B",
+      "solution": "No solution requires the variable terms to be identical while the constants differ. Expanding gives $2kx - 6$, so $2k = 6$ and $k = 3$; with $k = 3$ the constants read $-6$ and $2$, which disagree, so the equation is indeed impossible. Matching the constants instead of the coefficients is the trap.",
+      "steps": [
+        "Expand the left side: $2kx - 6 = 6x + 5 - k$.",
+        "For no solution the coefficients must match: $2k = 6$, so $k = 3$.",
+        "Check: the constants become $-6$ and $2$, which differ, so there is no solution."
+      ],
+      "verify": "k = symbols('k')\nresult = solve(2*k - 6, k)[0]"
+    }
+  ]
+}
