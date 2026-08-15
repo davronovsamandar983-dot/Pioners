@@ -1,0 +1,1026 @@
+{
+  "number": 2,
+  "topic": "Linear Functions",
+  "domain": "Algebra",
+  "skills": [
+    "Slope and rate of change",
+    "Function notation",
+    "Interpreting linear models"
+  ],
+  "lesson": {
+    "intro": "A linear function is a rule whose output changes by the same amount for every equal step in the input. That single property, a constant rate of change, is what makes lines the backbone of the Digital SAT's Algebra domain: it lets you find a whole function from two points, predict a value you were never given, and say in ordinary English what a coefficient means in a real situation. Roughly one question in six on the test is a linear function in disguise, and most of them reward the same three moves: compute a slope, evaluate or invert $f(x)$, and read a model's numbers as quantities with units.",
+    "blocks": [
+      {
+        "kind": "section",
+        "title": "What makes a function linear",
+        "body": "A function $f$ is \\textbf{linear} when equal steps in $x$ always produce equal steps in $y$. Written out, every linear function can be put in the form\n\\[ f(x)=mx+b, \\]\nwhere $m$ is the \\textbf{slope} (the change in output per unit change in input) and $b$ is the \\textbf{$y$-intercept} (the output when the input is $0$). The graph of such a function is a straight line, and the two constants are all the information there is: give a test-taker $m$ and $b$ and every question about the function is already answered.\n\nTwo facts follow immediately and are worth memorizing as facts, not derivations. First, $f(0)=m(0)+b=b$, so \\emph{the value of the function at zero is the $y$-intercept}. Second, for any two inputs $x_1$ and $x_2$,\n\\[ f(x_2)-f(x_1)=(mx_2+b)-(mx_1+b)=m(x_2-x_1), \\]\nso the change in output is the slope times the change in input. Every slope computation on the test is just this identity rearranged."
+      },
+      {
+        "kind": "concept",
+        "title": "Slope is a rate, and rates carry units",
+        "body": "Solving $f(x_2)-f(x_1)=m(x_2-x_1)$ for $m$ gives the slope formula. In a bare $xy$-plane the slope is a number; in a word problem it is a \\emph{rate} whose units are the output units divided by the input units. If $C(h)=45h+60$ gives a cost in dollars for $h$ hours, then $45$ is measured in dollars per hour and $60$ in dollars. Getting the units right converts almost every interpretation question into a one-line answer, because the only choice with the correct units is usually the key.\n\nA positive slope means the output grows as the input grows; a negative slope means it shrinks. A slope of $-12$ in a draining-tank model does not mean $12$ gallons; it means $12$ gallons lost \\emph{per minute}."
+      },
+      {
+        "kind": "formula",
+        "title": "The four formulas that cover the topic",
+        "body": "\\[ m=\\frac{y_2-y_1}{x_2-x_1}=\\frac{f(x_2)-f(x_1)}{x_2-x_1} \\qquad\\text{(slope from two points)} \\]\n\\[ y=mx+b \\qquad\\text{(slope-intercept form; } b=f(0)\\text{)} \\]\n\\[ y-y_1=m(x-x_1) \\qquad\\text{(point-slope form)} \\]\n\\[ Ax+By=C \\;\\Longrightarrow\\; y=-\\frac{A}{B}x+\\frac{C}{B} \\qquad\\text{(standard form; slope } -\\tfrac{A}{B}\\text{)} \\]\nPoint-slope is the fastest route when you are handed a slope and a point that is \\emph{not} the intercept. For standard form, either quote the slope $-\\frac{A}{B}$ or, more safely, solve the equation for $y$ and read the coefficient."
+      },
+      {
+        "kind": "section",
+        "title": "Function notation, forwards and backwards",
+        "body": "The symbol $f(4)$ is not multiplication. It is an instruction: \\emph{substitute $4$ for every $x$ in the rule and simplify}. That is the forwards direction, and it is pure arithmetic.\n\nThe backwards direction is where points are won and lost. A question that says $f(x)=30$ hands you the \\emph{output} and asks for the \\emph{input}, so you write the rule equal to $30$ and solve the resulting linear equation. Read carefully which of the two you have been given: \\emph{what is $f(3)$} and \\emph{for what $x$ is $f(x)=3$} are different questions with different answers.\n\nThe input may also be an expression. $f(x+3)$ means the whole quantity $x+3$ goes in wherever $x$ appears, so for $f(x)=2x-5$ we get $f(x+3)=2(x+3)-5=2x+1$. It does not mean $f(x)+3$."
+      },
+      {
+        "kind": "concept",
+        "title": "Reading a model in context",
+        "body": "When a linear function models a real situation, write it as\n\\[ (\\text{output quantity}) = (\\text{rate})\\times(\\text{input quantity}) + (\\text{starting amount}). \\]\nThe constant term is the value \\emph{before the process starts} --- the flat fee, the initial population, the height of the unlit candle. The coefficient is what happens \\emph{per unit} --- per hour, per class, per month, per year.\n\nTwo follow-up questions appear constantly. \\emph{What does the solution of $f(x)=0$ represent?} It is the moment the measured quantity runs out: the candle burns away, the tank empties, the balance hits zero. \\emph{What does $f(0)$ represent?} It is the starting value. Neither requires computation --- only a correct reading of what the variables stand for."
+      },
+      {
+        "kind": "trap",
+        "title": "Five traps the test sets on purpose",
+        "body": "\\textbf{1. Inverting the slope.} $\\frac{\\Delta y}{\\Delta x}$, never $\\frac{\\Delta x}{\\Delta y}$. A slope of $-\\frac{3}{4}$ has the distractor $-\\frac{4}{3}$ waiting for you.\n\n\\textbf{2. Mixing the order of subtraction.} If the numerator runs from point $1$ to point $2$, the denominator must too. Reversing one of them flips the sign.\n\n\\textbf{3. Reading the intercept as the slope.} In $y=-3x+8$ the slope is $-3$, not $8$, and not $3$.\n\n\\textbf{4. Treating a given point as the intercept.} If a line of slope $4$ passes through $(3,5)$, then $b\\ne 5$; solving $5=4(3)+b$ gives $b=-7$.\n\n\\textbf{5. Forgetting to divide by $\\Delta x$ when the inputs are not one apart.} If $x$ goes $2,5,8$ and $g$ goes $3,12,21$, the rate is $\\frac{9}{3}=3$, not $9$."
+      },
+      {
+        "kind": "strategy",
+        "title": "A three-second checklist",
+        "body": "\\textbf{Two points given?} Subtract in a consistent order, divide, and sanity-check the sign against the picture: falling left-to-right means negative.\n\n\\textbf{A table given?} Check that the $x$-values are evenly spaced before treating the output differences as the rate. If they are, the common difference in the outputs divided by the common difference in the inputs is the slope.\n\n\\textbf{An equation in standard form?} Solve for $y$; it takes ten seconds and removes every sign trap.\n\n\\textbf{An interpretation question?} Attach units to each number in the model first. The number multiplied by the variable is a rate ``per something''; the lone constant is a starting amount. On the calculator section, graphing $y_1=$ the model and reading its intercepts confirms both in one step."
+      },
+      {
+        "kind": "worked",
+        "title": "Worked example 1 --- a function from two points",
+        "body": "\\textbf{For the linear function $f$, $f(2)=5$ and $f(6)=17$. What is $f(10)$?}\n\nThe two given facts are the points $(2,5)$ and $(6,17)$. The slope is\n\\[ m=\\frac{17-5}{6-2}=\\frac{12}{4}=3. \\]\nThere are now two honest finishes. \\emph{Stepping:} from $x=6$ to $x=10$ is $4$ units, each worth $+3$, so $f(10)=17+3(4)=29$. \\emph{Full rule:} from $5=3(2)+b$ we get $b=-1$, so $f(x)=3x-1$ and $f(10)=30-1=29$. Stepping is faster when only one more value is wanted; building the rule is better when the question will ask for several things, or for $b$ itself.\n\nAnswer: $f(10)=29$."
+      },
+      {
+        "kind": "worked",
+        "title": "Worked example 2 --- interpreting a model",
+        "body": "\\textbf{A storage tank is being drained, and $V(t)=180-12t$ gives the volume in gallons after $t$ minutes. What does $12$ mean, and what does the solution of $V(t)=0$ mean?}\n\nAttach units. $V$ is in gallons and $t$ is in minutes, so the coefficient of $t$ must be in gallons per minute. Its sign is negative, so the volume \\emph{falls} by $12$ gallons each minute. The constant $180$ is $V(0)$, the volume at the moment draining began.\n\nNow $V(t)=0$ asks when the volume reaches zero gallons --- that is, when the tank is empty. Solving, $180-12t=0$ gives $t=15$, so the tank empties after $15$ minutes. Notice that no interpretation question needed the number $15$; the meaning came entirely from the units.\n\nAnswer: $12$ is the number of gallons lost per minute; the solution of $V(t)=0$ is the time at which the tank is empty."
+      },
+      {
+        "kind": "worked",
+        "title": "Worked example 3 --- working backwards through $f$",
+        "body": "\\textbf{The function $f$ is defined by $f(x)=ax+7$, where $a$ is a constant, and $f(4)=-5$. What is $a$, and for what $x$ is $f(x)=1$?}\n\nThe statement $f(4)=-5$ means: input $4$, output $-5$. Substituting both gives one equation in the one unknown constant:\n\\[ a(4)+7=-5 \\;\\Longrightarrow\\; 4a=-12 \\;\\Longrightarrow\\; a=-3. \\]\nStopping at $4a=-12$ and answering $-12$ is the single most common error on this question type; the division by $4$ is part of the problem.\n\nWith $f(x)=-3x+7$, the second question hands you an output and wants an input: $-3x+7=1$, so $-3x=-6$ and $x=2$.\n\nAnswer: $a=-3$, and $f(x)=1$ when $x=2$."
+      }
+    ]
+  },
+  "problems": [
+    {
+      "id": "T02-M1-01",
+      "module": 1,
+      "n": 1,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Slope and rate of change",
+      "stem": "What is the slope of the line that passes through the points $(2,3)$ and $(6,11)$?",
+      "choices": [
+        "$-2$",
+        "$\\frac{1}{2}$",
+        "$2$",
+        "$4$"
+      ],
+      "answer": "C",
+      "solution": "Slope is the change in $y$ divided by the change in $x$, taken in the same order for both coordinates: $\\frac{11-3}{6-2}=\\frac{8}{4}=2$. Keeping the same point first in both differences is what guarantees the sign is right.",
+      "steps": [
+        "Write $m=\\frac{y_2-y_1}{x_2-x_1}$.",
+        "Substitute: $m=\\frac{11-3}{6-2}$.",
+        "Simplify: $m=\\frac{8}{4}=2$."
+      ],
+      "verify": "result = (11-3)/S(6-2)"
+    },
+    {
+      "id": "T02-M1-02",
+      "module": 1,
+      "n": 2,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Function notation",
+      "stem": "The function $f$ is defined by $f(x)=3x-5$. What is the value of $f(4)$?",
+      "choices": [
+        "$-17$",
+        "$2$",
+        "$7$",
+        "$12$"
+      ],
+      "answer": "C",
+      "solution": "Function notation means substitute: $f(4)$ asks for the output when the input is $4$, so replace every $x$ with $4$ and evaluate $3(4)-5=7$.",
+      "steps": [
+        "Substitute $x=4$: $f(4)=3(4)-5$.",
+        "Multiply first: $3(4)=12$.",
+        "Subtract: $12-5=7$."
+      ],
+      "verify": "result = 3*4-5"
+    },
+    {
+      "id": "T02-M1-03",
+      "module": 1,
+      "n": 3,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Function notation",
+      "stem": "The function $f$ is defined by $f(x)=7x+2$. If $f(x)=30$, what is the value of $x$?",
+      "answer": "4",
+      "solution": "Here the output is known and the input is missing, so set the rule equal to $30$ and undo the operations in reverse order: subtract $2$, then divide by $7$.",
+      "steps": [
+        "Write $7x+2=30$.",
+        "Subtract $2$ from both sides: $7x=28$.",
+        "Divide by $7$: $x=4$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(7*x+2-30, x)[0]"
+    },
+    {
+      "id": "T02-M1-04",
+      "module": 1,
+      "n": 4,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Slope and rate of change",
+      "stem": "What is the slope of the graph of $y=-3x+8$ in the $xy$-plane?",
+      "choices": [
+        "$-8$",
+        "$-3$",
+        "$3$",
+        "$8$"
+      ],
+      "answer": "B",
+      "solution": "An equation written as $y=mx+b$ shows the slope and the $y$-intercept directly: $m$ is the coefficient of $x$, including its sign, and $b$ is the constant. Here $m=-3$ and $b=8$.",
+      "steps": [
+        "Compare $y=-3x+8$ with $y=mx+b$.",
+        "The coefficient of $x$ is $-3$.",
+        "So the slope is $-3$ (the $8$ is the $y$-intercept)."
+      ],
+      "verify": "result = -3"
+    },
+    {
+      "id": "T02-M1-05",
+      "module": 1,
+      "n": 5,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Interpreting linear models",
+      "stem": "A plumber charges a fixed call-out fee plus an hourly rate. The total charge, in dollars, for a job lasting $h$ hours is given by $C(h)=45h+60$. What is the best interpretation of the number $60$ in this context?",
+      "wide": true,
+      "choices": [
+        "The number of hours the plumber works.",
+        "The plumber's hourly rate, in dollars per hour.",
+        "The total cost, in dollars, of a one-hour job.",
+        "The fixed fee, in dollars, charged before any hours are worked."
+      ],
+      "answer": "D",
+      "solution": "The constant term is the output when the input is zero: $C(0)=60$. Zero hours of work still costs $60$ dollars, so $60$ is the fixed fee, not a rate. The rate is the coefficient $45$.",
+      "steps": [
+        "Evaluate the model at $h=0$: $C(0)=45(0)+60=60$.",
+        "Zero hours of work still costs $60$ dollars.",
+        "So $60$ is the fixed charge, and $45$ is the hourly rate."
+      ],
+      "verify": "result = \"The fixed fee, in dollars, charged before any hours are worked.\""
+    },
+    {
+      "id": "T02-M1-06",
+      "module": 1,
+      "n": 6,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Function notation",
+      "stem": "The table shows several values of the linear function $f$. What is the value of $f(0)$?",
+      "figure": "\\begin{center}\n\\begin{tabular}{|c|c|c|c|c|}\n\\hline\n$x$ & 1 & 2 & 3 & 4 \\\\ \\hline\n$f(x)$ & 5 & 9 & 13 & 17 \\\\ \\hline\n\\end{tabular}\n\\end{center}",
+      "answer": "1",
+      "solution": "The inputs go up by $1$ each time and the outputs go up by $4$ each time, so the constant rate of change is $4$. Stepping one unit backwards from $f(1)=5$ subtracts $4$, giving $f(0)=1$.",
+      "steps": [
+        "Find the rate of change: $9-5=4$ for each increase of $1$ in $x$.",
+        "Step backwards from $x=1$ to $x=0$: subtract $4$.",
+        "$f(0)=5-4=1$."
+      ],
+      "verify": "m, b = symbols('m b')\nsol = solve([Eq(m+b, 5), Eq(2*m+b, 9)], [m, b])\nresult = sol[b]"
+    },
+    {
+      "id": "T02-M1-07",
+      "module": 1,
+      "n": 7,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Function notation",
+      "stem": "A linear function $f$ has a slope of $5$, and $f(0)=-2$. Which of the following defines $f(x)$?",
+      "choices": [
+        "$5x-2$",
+        "$5x+2$",
+        "$\\frac{1}{5}x-2$",
+        "$-2x+5$"
+      ],
+      "answer": "A",
+      "solution": "For a linear function $f(x)=mx+b$, the value $f(0)$ is exactly $b$, because the $mx$ term vanishes. So $b=-2$ and $m=5$.",
+      "steps": [
+        "Write the general form $f(x)=mx+b$.",
+        "$f(0)=b$, so $b=-2$.",
+        "The slope is $m=5$, giving $f(x)=5x-2$."
+      ],
+      "verify": "result = \"$5x-2$\""
+    },
+    {
+      "id": "T02-M1-08",
+      "module": 1,
+      "n": 8,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Slope and rate of change",
+      "stem": "A line in the $xy$-plane passes through the points $(-4,9)$ and $(6,4)$. What is the slope of this line?",
+      "choices": [
+        "$-2$",
+        "$-\\frac{1}{2}$",
+        "$\\frac{1}{2}$",
+        "$2$"
+      ],
+      "answer": "B",
+      "solution": "Subtracting in a consistent order gives $\\frac{4-9}{6-(-4)}=\\frac{-5}{10}=-\\frac{1}{2}$. The double negative in the denominator is where sign errors happen: $6-(-4)=10$, not $2$.",
+      "steps": [
+        "Apply $m=\\frac{y_2-y_1}{x_2-x_1}$ with $(-4,9)$ first.",
+        "Numerator: $4-9=-5$. Denominator: $6-(-4)=10$.",
+        "Simplify: $m=-\\frac{5}{10}=-\\frac{1}{2}$."
+      ],
+      "verify": "result = (4-9)/S(6-(-4))"
+    },
+    {
+      "id": "T02-M1-09",
+      "module": 1,
+      "n": 9,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Function notation",
+      "stem": "For the linear function $f$, $f(2)=5$ and $f(6)=17$. What is the value of $f(10)$?",
+      "answer": "29",
+      "solution": "A linear function changes by the same amount for every equal step in the input. From $x=2$ to $x=6$ the output rises $12$ over $4$ units, a rate of $3$ per unit, so the next four units add another $12$.",
+      "steps": [
+        "Rate of change: $\\frac{17-5}{6-2}=3$.",
+        "From $x=6$ to $x=10$ is $4$ more units.",
+        "$f(10)=17+3(4)=29$."
+      ],
+      "verify": "m, b = symbols('m b')\nsol = solve([Eq(2*m+b, 5), Eq(6*m+b, 17)], [m, b])\nresult = 10*sol[m] + sol[b]"
+    },
+    {
+      "id": "T02-M1-10",
+      "module": 1,
+      "n": 10,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Interpreting linear models",
+      "stem": "A storage tank is being drained. The volume of water in the tank, in gallons, after $t$ minutes of draining is given by $V(t)=180-12t$. Which statement is the best interpretation of the number $12$ in this context?",
+      "wide": true,
+      "choices": [
+        "The volume of water decreases by 12 gallons each minute.",
+        "The volume of water increases by 12 gallons each minute.",
+        "The tank holds 12 gallons when draining begins.",
+        "The tank is completely empty after 12 minutes."
+      ],
+      "answer": "A",
+      "solution": "The coefficient of the input variable is always a rate, and the minus sign in front of it makes that rate a decrease. Each additional minute subtracts $12$ gallons.",
+      "steps": [
+        "Compare with $V(t)=V_0+mt$: the coefficient of $t$ is $-12$.",
+        "A negative coefficient means the output decreases as $t$ grows.",
+        "So the tank loses $12$ gallons every minute."
+      ],
+      "verify": "result = \"The volume of water decreases by 12 gallons each minute.\""
+    },
+    {
+      "id": "T02-M1-11",
+      "module": 1,
+      "n": 11,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Interpreting linear models",
+      "stem": "A gym charges a one-time membership fee of $\\$25$ plus $\\$4$ for each fitness class attended. Which expression gives the total cost, in dollars, for a member who attends $n$ classes?",
+      "choices": [
+        "$4n+25$",
+        "$25n+4$",
+        "$29n$",
+        "$4n-25$"
+      ],
+      "answer": "A",
+      "solution": "The quantity that repeats gets multiplied by the count, and the quantity charged once is added on its own. Only the per-class charge scales with $n$.",
+      "steps": [
+        "The $\\$4$ charge happens once per class: $4n$.",
+        "The $\\$25$ fee happens once, no matter how many classes: $+25$.",
+        "Total cost is $4n+25$."
+      ],
+      "verify": "result = \"$4n+25$\""
+    },
+    {
+      "id": "T02-M1-12",
+      "module": 1,
+      "n": 12,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Slope and rate of change",
+      "stem": "The graph of a linear function is shown in the $xy$-plane. What is the slope of the graph?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}\n\\begin{axis}[width=7cm,height=6cm,axis lines=middle,\n  xmin=-1,xmax=5.5,ymin=-1.5,ymax=4.5,\n  xtick={1,2,3,4,5},ytick={-1,1,2,3,4},\n  tick label style={font=\\footnotesize},\n  grid=both,grid style={satline,very thin},\n  xlabel={$x$},ylabel={$y$},\n  xlabel style={anchor=west},ylabel style={anchor=south},\n  samples=2]\n\\addplot[satblue,very thick,domain=-0.5:5]{3-0.75*x};\n\\end{axis}\n\\end{tikzpicture}\n\\end{center}",
+      "choices": [
+        "$-\\frac{4}{3}$",
+        "$-\\frac{3}{4}$",
+        "$\\frac{3}{4}$",
+        "$\\frac{4}{3}$"
+      ],
+      "answer": "B",
+      "solution": "Pick the two points where the line meets the axes, $(0,3)$ and $(4,0)$. The line falls as it goes right, so the slope must be negative: $\\frac{0-3}{4-0}=-\\frac{3}{4}$.",
+      "steps": [
+        "Read two lattice points from the graph: $(0,3)$ and $(4,0)$.",
+        "Slope $=\\frac{0-3}{4-0}$.",
+        "Simplify: $-\\frac{3}{4}$."
+      ],
+      "verify": "result = (0-3)/S(4-0)"
+    },
+    {
+      "id": "T02-M1-13",
+      "module": 1,
+      "n": 13,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Function notation",
+      "stem": "The table gives values of the linear function $f$. For what value of $x$ does $f(x)=0$?",
+      "figure": "\\begin{center}\n\\begin{tabular}{|c|c|c|c|c|}\n\\hline\n$x$ & 0 & 3 & 6 & 9 \\\\ \\hline\n$f(x)$ & 14 & 8 & 2 & -4 \\\\ \\hline\n\\end{tabular}\n\\end{center}",
+      "answer": "7",
+      "solution": "The outputs drop by $6$ for every increase of $3$ in $x$, a rate of $-2$ per unit. Starting from $f(6)=2$, one more unit of $x$ removes $2$ and lands exactly on zero.",
+      "steps": [
+        "Rate of change: $\\frac{8-14}{3-0}=-2$.",
+        "So $f(x)=14-2x$.",
+        "Set $14-2x=0$, giving $x=7$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(14-2*x, x)[0]"
+    },
+    {
+      "id": "T02-M1-14",
+      "module": 1,
+      "n": 14,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Function notation",
+      "stem": "The function $f$ is defined by $f(x)=\\frac{3}{4}x+6$. For what value of $x$ does $f(x)=0$?",
+      "choices": [
+        "$-8$",
+        "$-\\frac{9}{2}$",
+        "$-6$",
+        "$8$"
+      ],
+      "answer": "A",
+      "solution": "Setting the output to zero locates the $x$-intercept. Undo the $+6$ first, then undo the multiplication by $\\frac{3}{4}$ by multiplying by its reciprocal $\\frac{4}{3}$.",
+      "steps": [
+        "Set $\\frac{3}{4}x+6=0$.",
+        "Subtract $6$: $\\frac{3}{4}x=-6$.",
+        "Multiply by $\\frac{4}{3}$: $x=-8$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(Rational(3,4)*x+6, x)[0]"
+    },
+    {
+      "id": "T02-M1-15",
+      "module": 1,
+      "n": 15,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Slope and rate of change",
+      "stem": "At 2:00 p.m. the temperature outside was $68^{\\circ}$F, and at 8:00 p.m. it was $56^{\\circ}$F. If the temperature changed at a constant rate, what was that rate, in degrees Fahrenheit per hour?",
+      "choices": [
+        "$-12$",
+        "$-6$",
+        "$-2$",
+        "$2$"
+      ],
+      "answer": "C",
+      "solution": "A rate of change is a difference of outputs divided by the matching difference of inputs, so the $12$-degree drop must be spread over the $6$ hours in which it happened.",
+      "steps": [
+        "Change in temperature: $56-68=-12$ degrees.",
+        "Change in time: $8-2=6$ hours.",
+        "Rate: $\\frac{-12}{6}=-2$ degrees per hour."
+      ],
+      "verify": "result = (56-68)/S(8-2)"
+    },
+    {
+      "id": "T02-M1-16",
+      "module": 1,
+      "n": 16,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Function notation",
+      "stem": "The function $f$ is defined by $f(x)=ax+b$, where $a$ and $b$ are constants. If $f(1)=4$ and $f(5)=16$, what is the value of $f(0)$?",
+      "choices": [
+        "$-3$",
+        "$1$",
+        "$3$",
+        "$4$"
+      ],
+      "answer": "B",
+      "solution": "Two points determine $a$ and $b$. The slope $a$ comes from the two given values, and then $b=f(0)$ is found by stepping back to $x=0$; $b$ is not the same as either given output.",
+      "steps": [
+        "Slope: $a=\\frac{16-4}{5-1}=3$.",
+        "Use $f(1)=4$: $3(1)+b=4$, so $b=1$.",
+        "$f(0)=b=1$."
+      ],
+      "verify": "a, b, x = symbols('a b x')\nsol = solve([Eq(a*1+b, 4), Eq(a*5+b, 16)], [a, b])\nresult = sol[b]"
+    },
+    {
+      "id": "T02-M1-17",
+      "module": 1,
+      "n": 17,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Slope and rate of change",
+      "stem": "In the $xy$-plane, a line with slope $3$ passes through the points $(2,k)$ and $(6,17)$. What is the value of $k$?",
+      "answer": "5",
+      "solution": "The slope formula still applies when one coordinate is unknown; it turns into an equation in $k$. Moving $4$ units right raises $y$ by $3(4)=12$, so the earlier point must sit $12$ lower.",
+      "steps": [
+        "Write $\\frac{17-k}{6-2}=3$.",
+        "Multiply both sides by $4$: $17-k=12$.",
+        "Solve: $k=5$."
+      ],
+      "verify": "k = symbols('k')\nresult = solve(Eq((17-k)/S(6-2), 3), k)[0]"
+    },
+    {
+      "id": "T02-M1-18",
+      "module": 1,
+      "n": 18,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Interpreting linear models",
+      "stem": "The number of subscribers to a streaming service is modeled by $S(m)=250m+3200$, where $m$ is the number of months after January 2020. Which statement is the best interpretation of the number $250$ in this model?",
+      "wide": true,
+      "choices": [
+        "There were 250 subscribers in January 2020.",
+        "The service reached 250 subscribers after 3200 months.",
+        "The number of subscribers increases by 250 each year.",
+        "The number of subscribers increases by 250 each month."
+      ],
+      "answer": "D",
+      "solution": "Because $m$ is measured in months, the coefficient of $m$ carries the units \\emph{subscribers per month}. The constant $3200$ is the starting count, not a rate.",
+      "steps": [
+        "Identify the coefficient of the input: $250$.",
+        "The input $m$ counts months, so the coefficient is a per-month rate.",
+        "The service gains $250$ subscribers each month."
+      ],
+      "verify": "result = \"The number of subscribers increases by 250 each month.\""
+    },
+    {
+      "id": "T02-M1-19",
+      "module": 1,
+      "n": 19,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Slope and rate of change",
+      "stem": "What is the slope of the line given by the equation $4x-6y=18$ in the $xy$-plane?",
+      "choices": [
+        "$-\\frac{3}{2}$",
+        "$-\\frac{2}{3}$",
+        "$\\frac{2}{3}$",
+        "$\\frac{3}{2}$"
+      ],
+      "answer": "C",
+      "solution": "Standard form hides the slope, so solve for $y$. Dividing by $-6$ flips both signs on the right-hand side, which is exactly where the classic sign error occurs.",
+      "steps": [
+        "Subtract $4x$: $-6y=-4x+18$.",
+        "Divide every term by $-6$: $y=\\frac{2}{3}x-3$.",
+        "The slope is $\\frac{2}{3}$."
+      ],
+      "verify": "x, y = symbols('x y')\nsol = solve(Eq(4*x-6*y, 18), y)[0]\nresult = sol.coeff(x)"
+    },
+    {
+      "id": "T02-M1-20",
+      "module": 1,
+      "n": 20,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Function notation",
+      "stem": "For the linear function $g$, $g(3)=10$ and $g(7)=2$. What is the value of $g(0)$?",
+      "answer": "16",
+      "solution": "The rate of change is negative here, so moving left from $x=3$ to $x=0$ increases the output. Three steps of $+2$ are added to $10$.",
+      "steps": [
+        "Slope: $\\frac{2-10}{7-3}=-2$.",
+        "Use $g(3)=10$: $-2(3)+b=10$, so $b=16$.",
+        "$g(0)=b=16$."
+      ],
+      "verify": "m, b = symbols('m b')\nsol = solve([Eq(3*m+b, 10), Eq(7*m+b, 2)], [m, b])\nresult = sol[b]"
+    },
+    {
+      "id": "T02-M1-21",
+      "module": 1,
+      "n": 21,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Function notation",
+      "stem": "The function $f$ is defined by $f(x)=5x-3$. If $f(c)=2c+9$ for some constant $c$, what is the value of $c$?",
+      "choices": [
+        "$-4$",
+        "$2$",
+        "$4$",
+        "$12$"
+      ],
+      "answer": "C",
+      "solution": "Substituting the unknown input into the rule gives $5c-3$, and setting that equal to the given expression turns function notation into an ordinary linear equation.",
+      "steps": [
+        "Substitute: $f(c)=5c-3$.",
+        "Set $5c-3=2c+9$.",
+        "Subtract $2c$ and add $3$: $3c=12$, so $c=4$."
+      ],
+      "verify": "c = symbols('c')\nresult = solve(Eq(5*c-3, 2*c+9), c)[0]"
+    },
+    {
+      "id": "T02-M1-22",
+      "module": 1,
+      "n": 22,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Interpreting linear models",
+      "stem": "A candle burns at a constant rate. Its height, in centimeters, after $t$ hours of burning is given by $h(t)=18-1.5t$. Which of the following is the best interpretation of the solution to the equation $h(t)=0$?",
+      "wide": true,
+      "choices": [
+        "The height, in centimeters, of the candle before it is lit.",
+        "The number of centimeters the candle burns in one hour.",
+        "The height, in centimeters, of the candle after one hour.",
+        "The number of hours it takes for the candle to burn down completely."
+      ],
+      "answer": "D",
+      "solution": "Setting the output of a model to zero asks when the quantity being measured runs out. Here the quantity is height, so $h(t)=0$ is the moment the candle has no height left.",
+      "steps": [
+        "$h(t)$ measures the candle's height in centimeters.",
+        "$h(t)=0$ means the height has reached zero.",
+        "The solution is the time at which the candle is completely burned."
+      ],
+      "verify": "result = \"The number of hours it takes for the candle to burn down completely.\""
+    },
+    {
+      "id": "T02-M2-01",
+      "module": 2,
+      "n": 23,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Function notation",
+      "stem": "The function $f$ is defined by $f(x)=-2x+11$. What is the value of $f(-3)$?",
+      "choices": [
+        "$-17$",
+        "$5$",
+        "$6$",
+        "$17$"
+      ],
+      "answer": "D",
+      "solution": "A negative input multiplied by a negative coefficient gives a positive product: $-2(-3)=6$. Losing either minus sign changes the answer.",
+      "steps": [
+        "Substitute $x=-3$: $f(-3)=-2(-3)+11$.",
+        "Multiply: $-2(-3)=6$.",
+        "Add: $6+11=17$."
+      ],
+      "verify": "result = -2*(-3)+11"
+    },
+    {
+      "id": "T02-M2-02",
+      "module": 2,
+      "n": 24,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Slope and rate of change",
+      "stem": "A line in the $xy$-plane passes through the points $(-2,5)$ and $(4,-7)$. What is the slope of this line?",
+      "answer": "-2",
+      "solution": "Both differences must be taken in the same order. Going from the first point to the second, $y$ falls by $12$ while $x$ rises by $6$, so the line drops $2$ units for every unit right.",
+      "steps": [
+        "Numerator: $-7-5=-12$.",
+        "Denominator: $4-(-2)=6$.",
+        "Slope: $\\frac{-12}{6}=-2$."
+      ],
+      "verify": "result = (-7-5)/S(4-(-2))"
+    },
+    {
+      "id": "T02-M2-03",
+      "module": 2,
+      "n": 25,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Slope and rate of change",
+      "stem": "The table shows several values of the linear function $g$. What is the rate of change of $g$ with respect to $x$?",
+      "figure": "\\begin{center}\n\\begin{tabular}{|c|c|c|c|c|}\n\\hline\n$x$ & 2 & 5 & 8 & 11 \\\\ \\hline\n$g(x)$ & 3 & 12 & 21 & 30 \\\\ \\hline\n\\end{tabular}\n\\end{center}",
+      "choices": [
+        "$\\frac{1}{3}$",
+        "$3$",
+        "$\\frac{9}{2}$",
+        "$9$"
+      ],
+      "answer": "B",
+      "solution": "The inputs are spaced $3$ apart, not $1$, so the jump of $9$ in the outputs must be divided by $3$ before it can be called a rate.",
+      "steps": [
+        "Change in output: $12-3=9$.",
+        "Change in input: $5-2=3$.",
+        "Rate of change: $\\frac{9}{3}=3$."
+      ],
+      "verify": "result = (12-3)/S(5-2)"
+    },
+    {
+      "id": "T02-M2-04",
+      "module": 2,
+      "n": 26,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Interpreting linear models",
+      "stem": "A car travels at a constant speed along a highway. Its distance from a rest stop, in miles, after $t$ hours of driving is given by $d(t)=45t+30$. What is the best interpretation of the number $30$ in this model?",
+      "wide": true,
+      "choices": [
+        "The car travels 30 miles each hour.",
+        "The car drives for a total of 30 hours.",
+        "The car travels a total distance of 30 miles.",
+        "The car was 30 miles from the rest stop when it started driving."
+      ],
+      "answer": "D",
+      "solution": "Evaluating at $t=0$ gives $d(0)=30$, the distance at the instant the driving begins. The speed is the coefficient $45$, in miles per hour.",
+      "steps": [
+        "Substitute $t=0$: $d(0)=45(0)+30=30$.",
+        "$t=0$ is the moment the drive starts.",
+        "So the car began $30$ miles from the rest stop."
+      ],
+      "verify": "result = \"The car was 30 miles from the rest stop when it started driving.\""
+    },
+    {
+      "id": "T02-M2-05",
+      "module": 2,
+      "n": 27,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Function notation",
+      "stem": "The function $f$ is defined by $f(x)=\\frac{1}{2}x-7$. If $f(x)=-3$, what is the value of $x$?",
+      "choices": [
+        "$-20$",
+        "$-8$",
+        "$2$",
+        "$8$"
+      ],
+      "answer": "D",
+      "solution": "Adding $7$ to both sides isolates $\\frac{1}{2}x$; undoing a multiplication by $\\frac{1}{2}$ means multiplying by $2$, not dividing by $2$.",
+      "steps": [
+        "Set $\\frac{1}{2}x-7=-3$.",
+        "Add $7$: $\\frac{1}{2}x=4$.",
+        "Multiply by $2$: $x=8$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve(Eq(Rational(1,2)*x-7, -3), x)[0]"
+    },
+    {
+      "id": "T02-M2-06",
+      "module": 2,
+      "n": 28,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Slope and rate of change",
+      "stem": "The graph of $2x+5y=20$ is drawn in the $xy$-plane. What is the $y$-coordinate of the point where the graph crosses the $y$-axis?",
+      "choices": [
+        "$-4$",
+        "$4$",
+        "$10$",
+        "$20$"
+      ],
+      "answer": "B",
+      "solution": "Every point on the $y$-axis has $x=0$, so substituting $x=0$ isolates the $y$-intercept. The constant $20$ is not the intercept because the $y$-term has a coefficient of $5$.",
+      "steps": [
+        "Set $x=0$: $2(0)+5y=20$.",
+        "So $5y=20$.",
+        "Divide by $5$: $y=4$."
+      ],
+      "verify": "y = symbols('y')\nresult = solve(Eq(2*0+5*y, 20), y)[0]"
+    },
+    {
+      "id": "T02-M2-07",
+      "module": 2,
+      "n": 29,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Function notation",
+      "stem": "A linear function $f$ has a slope of $4$, and its graph passes through the point $(3,5)$. Which of the following defines $f(x)$?",
+      "choices": [
+        "$4x-7$",
+        "$4x+5$",
+        "$4x+17$",
+        "$\\frac{1}{4}x-7$"
+      ],
+      "answer": "A",
+      "solution": "The point $(3,5)$ is not the $y$-intercept, so $5$ cannot be used as $b$. Substituting the point into $f(x)=4x+b$ gives $5=12+b$, hence $b=-7$.",
+      "steps": [
+        "Write $f(x)=4x+b$.",
+        "Substitute $(3,5)$: $5=4(3)+b=12+b$.",
+        "So $b=-7$ and $f(x)=4x-7$."
+      ],
+      "verify": "result = \"$4x-7$\""
+    },
+    {
+      "id": "T02-M2-08",
+      "module": 2,
+      "n": 30,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Function notation",
+      "stem": "The function $f$ is defined by $f(x)=ax+7$, where $a$ is a constant. If $f(4)=-5$, what is the value of $a$?",
+      "choices": [
+        "$-12$",
+        "$-3$",
+        "$-\\frac{1}{3}$",
+        "$3$"
+      ],
+      "answer": "B",
+      "solution": "Substituting the input and the output leaves a single equation in $a$. After subtracting $7$ the product $4a$ equals $-12$, so $a$ must still be divided by $4$.",
+      "steps": [
+        "Substitute: $a(4)+7=-5$.",
+        "Subtract $7$: $4a=-12$.",
+        "Divide by $4$: $a=-3$."
+      ],
+      "verify": "a = symbols('a')\nresult = solve(Eq(a*4+7, -5), a)[0]"
+    },
+    {
+      "id": "T02-M2-09",
+      "module": 2,
+      "n": 31,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Function notation",
+      "stem": "For the linear function $f$, $f(-2)=13$ and $f(4)=-5$. What is the value of $f(1)$?",
+      "answer": "4",
+      "solution": "The rate of change is $-3$ per unit, so each step to the right lowers the output by $3$. From $x=-2$ to $x=1$ is three steps, a total drop of $9$.",
+      "steps": [
+        "Slope: $\\frac{-5-13}{4-(-2)}=\\frac{-18}{6}=-3$.",
+        "From $x=-2$ to $x=1$ is $3$ units to the right.",
+        "$f(1)=13-3(3)=4$."
+      ],
+      "verify": "m, b = symbols('m b')\nsol = solve([Eq(-2*m+b, 13), Eq(4*m+b, -5)], [m, b])\nresult = sol[m] + sol[b]"
+    },
+    {
+      "id": "T02-M2-10",
+      "module": 2,
+      "n": 32,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Function notation",
+      "stem": "The graph of the linear function $f$ is shown in the $xy$-plane. What is the value of $f(3)$?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}\n\\begin{axis}[width=7cm,height=6cm,axis lines=middle,\n  xmin=-4,xmax=3.5,ymin=-4,ymax=16,\n  xtick={-3,-2,-1,1,2,3},ytick={-3,3,6,9,12,15},\n  tick label style={font=\\footnotesize},\n  grid=both,grid style={satline,very thin},\n  xlabel={$x$},ylabel={$y$},\n  xlabel style={anchor=west},ylabel style={anchor=south},\n  samples=2]\n\\addplot[satblue,very thick,domain=-3.3:3.2]{3*x+6};\n\\end{axis}\n\\end{tikzpicture}\n\\end{center}",
+      "choices": [
+        "$9$",
+        "$12$",
+        "$15$",
+        "$18$"
+      ],
+      "answer": "C",
+      "solution": "Read the intercepts $(-2,0)$ and $(0,6)$ off the graph: the slope is $\\frac{6-0}{0-(-2)}=3$ and the $y$-intercept is $6$, so $f(x)=3x+6$ and $f(3)=15$.",
+      "steps": [
+        "Read two points: $(-2,0)$ and $(0,6)$.",
+        "Slope $=\\frac{6-0}{0-(-2)}=3$, and $f(0)=6$, so $f(x)=3x+6$.",
+        "$f(3)=3(3)+6=15$."
+      ],
+      "verify": "m, b = symbols('m b')\nsol = solve([Eq(-2*m+b, 0), Eq(b, 6)], [m, b])\nresult = 3*sol[m] + sol[b]"
+    },
+    {
+      "id": "T02-M2-11",
+      "module": 2,
+      "n": 33,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Interpreting linear models",
+      "stem": "Water is pumped into an empty-looking pool that already holds some water. The amount of water in the pool, in liters, after $t$ minutes of pumping is given by $W(t)=25t+150$. Which statement about the pool must be true?",
+      "wide": true,
+      "choices": [
+        "The pool gains 25 liters of water each minute.",
+        "The pool gains 150 liters of water each minute.",
+        "The pool is empty when pumping begins.",
+        "The pool is full after 25 minutes."
+      ],
+      "answer": "A",
+      "solution": "The coefficient of $t$ is the amount added per minute, and the constant is the amount already present at $t=0$. Only the statement about $25$ liters per minute describes the rate correctly.",
+      "steps": [
+        "The coefficient of $t$ is $25$, a rate in liters per minute.",
+        "The constant $150$ is the amount already in the pool at $t=0$.",
+        "So the pool gains $25$ liters every minute."
+      ],
+      "verify": "result = \"The pool gains 25 liters of water each minute.\""
+    },
+    {
+      "id": "T02-M2-12",
+      "module": 2,
+      "n": 34,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Slope and rate of change",
+      "stem": "In the $xy$-plane, a line with slope $-\\frac{3}{2}$ passes through the points $(0,9)$ and $(t,0)$. What is the value of $t$?",
+      "answer": "6",
+      "solution": "The line starts at height $9$ and must fall to $0$; at $\\frac{3}{2}$ units of drop per unit right, that takes $9\\div\\frac{3}{2}=6$ units.",
+      "steps": [
+        "Write $\\frac{0-9}{t-0}=-\\frac{3}{2}$.",
+        "Cross-multiply: $-18=-3t$.",
+        "Solve: $t=6$."
+      ],
+      "verify": "t = symbols('t')\nresult = solve(Eq((0-9)/t, Rational(-3,2)), t)[0]"
+    },
+    {
+      "id": "T02-M2-13",
+      "module": 2,
+      "n": 35,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Interpreting linear models",
+      "stem": "A candle burns at a constant rate. After $2$ hours its height is $21$ centimeters, and after $5$ hours its height is $15$ centimeters. What was the height, in centimeters, of the candle before it was lit?",
+      "choices": [
+        "$19$",
+        "$23$",
+        "$25$",
+        "$27$"
+      ],
+      "answer": "C",
+      "solution": "The height falls $6$ centimeters in $3$ hours, a rate of $-2$ per hour. Going backwards from $t=2$ to $t=0$ reverses the sign of the change, so $2$ hours of burning are added back.",
+      "steps": [
+        "Rate: $\\frac{15-21}{5-2}=-2$ centimeters per hour.",
+        "Step back from $t=2$ to $t=0$: add $2(2)=4$.",
+        "Initial height: $21+4=25$."
+      ],
+      "verify": "m, b = symbols('m b')\nsol = solve([Eq(2*m+b, 21), Eq(5*m+b, 15)], [m, b])\nresult = sol[b]"
+    },
+    {
+      "id": "T02-M2-14",
+      "module": 2,
+      "n": 36,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Slope and rate of change",
+      "stem": "The equation $3x-4y=24$ defines a line in the $xy$-plane. What is the value of $y$ when $x=12$?",
+      "choices": [
+        "$-3$",
+        "$3$",
+        "$9$",
+        "$12$"
+      ],
+      "answer": "B",
+      "solution": "Substituting first keeps the arithmetic simple. Dividing $12$ by $4$ before subtracting the constant is the usual slip; the whole right-hand side must be divided.",
+      "steps": [
+        "Substitute $x=12$: $3(12)-4y=24$.",
+        "So $36-4y=24$, giving $-4y=-12$.",
+        "Divide by $-4$: $y=3$."
+      ],
+      "verify": "y = symbols('y')\nresult = solve(Eq(3*12-4*y, 24), y)[0]"
+    },
+    {
+      "id": "T02-M2-15",
+      "module": 2,
+      "n": 37,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Function notation",
+      "stem": "The function $f$ is defined by $f(x)=2x-5$. Which of the following is equivalent to $f(x+3)$?",
+      "choices": [
+        "$2x-15$",
+        "$2x-2$",
+        "$2x+1$",
+        "$2x+6$"
+      ],
+      "answer": "C",
+      "solution": "The notation $f(x+3)$ means the entire quantity $x+3$ is used as the input, so it replaces $x$ inside the rule before anything else happens: $2(x+3)-5=2x+1$.",
+      "steps": [
+        "Replace the input: $f(x+3)=2(x+3)-5$.",
+        "Distribute: $2x+6-5$.",
+        "Combine: $2x+1$."
+      ],
+      "verify": "result = \"$2x+1$\""
+    },
+    {
+      "id": "T02-M2-16",
+      "module": 2,
+      "n": 38,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Slope and rate of change",
+      "stem": "For the linear function $f$, $f(3)=8$ and $f(x+1)-f(x)=-4$ for every value of $x$. What is the value of $f(6)$?",
+      "choices": [
+        "$-4$",
+        "$4$",
+        "$12$",
+        "$20$"
+      ],
+      "answer": "A",
+      "solution": "The condition $f(x+1)-f(x)=-4$ is a statement of the slope: each unit step right lowers the output by $4$. Three steps from $x=3$ to $x=6$ lower it by $12$.",
+      "steps": [
+        "The stated difference means the slope is $-4$.",
+        "From $x=3$ to $x=6$ is $3$ unit steps.",
+        "$f(6)=8+3(-4)=-4$."
+      ],
+      "verify": "m, b, x = symbols('m b x')\nm0 = solve(Eq((m*(x+1)+b)-(m*x+b), -4), m)[0]\nb0 = solve(Eq(3*m0+b, 8), b)[0]\nresult = 6*m0 + b0"
+    },
+    {
+      "id": "T02-M2-17",
+      "module": 2,
+      "n": 39,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Function notation",
+      "stem": "A linear function $f$ satisfies $f(-3)=-1$ and $f(6)=5$. If $f(x)=mx+b$, what is the value of $b$?",
+      "answer": "1",
+      "solution": "Once the slope $\\frac{2}{3}$ is known, $b$ follows from either point; $b$ is the output at $x=0$, which lies between the two given inputs, so its value must lie between $-1$ and $5$.",
+      "steps": [
+        "Slope: $m=\\frac{5-(-1)}{6-(-3)}=\\frac{6}{9}=\\frac{2}{3}$.",
+        "Use $f(-3)=-1$: $\\frac{2}{3}(-3)+b=-1$, so $-2+b=-1$.",
+        "Therefore $b=1$."
+      ],
+      "verify": "m, b = symbols('m b')\nsol = solve([Eq(-3*m+b, -1), Eq(6*m+b, 5)], [m, b])\nresult = sol[b]"
+    },
+    {
+      "id": "T02-M2-18",
+      "module": 2,
+      "n": 40,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Interpreting linear models",
+      "stem": "The population of a bird colony is modeled by $P(t)=1500-45t$, where $t$ is the number of years after 2010. Which of the following best describes the meanings of $1500$ and $45$ in this model?",
+      "wide": true,
+      "choices": [
+        "The colony had 1500 birds in 2010, and it gains 45 birds each year.",
+        "The colony had 45 birds in 2010, and it loses 1500 birds each year.",
+        "The colony had 1500 birds in 2010, and it disappears after 45 years.",
+        "The colony had 1500 birds in 2010, and it loses 45 birds each year."
+      ],
+      "answer": "D",
+      "solution": "The constant term is the value at $t=0$, which the definition of $t$ fixes as the year 2010, and the coefficient of $t$ is a yearly rate whose minus sign makes it a decrease.",
+      "steps": [
+        "At $t=0$ (the year 2010), $P(0)=1500$.",
+        "The coefficient of $t$ is $-45$, a rate per year.",
+        "So the colony starts at $1500$ birds and loses $45$ birds per year."
+      ],
+      "verify": "result = \"The colony had 1500 birds in 2010, and it loses 45 birds each year.\""
+    },
+    {
+      "id": "T02-M2-19",
+      "module": 2,
+      "n": 41,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Function notation",
+      "stem": "The function $f$ is defined by $f(x)=3x+c$, where $c$ is a constant. If $f(4)=2f(1)$, what is the value of $c$?",
+      "choices": [
+        "$2$",
+        "$3$",
+        "$6$",
+        "$9$"
+      ],
+      "answer": "C",
+      "solution": "Both sides must be written in terms of $c$ before comparing them; the factor of $2$ multiplies the whole of $f(1)$, including the constant, which is the step most students skip.",
+      "steps": [
+        "$f(4)=12+c$ and $f(1)=3+c$.",
+        "Set $12+c=2(3+c)=6+2c$.",
+        "Subtract $c$ and $6$: $c=6$."
+      ],
+      "verify": "c = symbols('c')\nresult = solve(Eq(3*4+c, 2*(3*1+c)), c)[0]"
+    },
+    {
+      "id": "T02-M2-20",
+      "module": 2,
+      "n": 42,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Interpreting linear models",
+      "stem": "The total cost, in dollars, of a gym membership for $m$ months is given by $C(m)=35m+80$. After how many months will the total cost be $\\$1200$?",
+      "answer": "32",
+      "solution": "The one-time $\\$80$ fee must be removed before dividing, because only the $\\$35$ portion repeats each month; dividing $1200$ by $35$ directly would charge the join fee every month.",
+      "steps": [
+        "Set $35m+80=1200$.",
+        "Subtract $80$: $35m=1120$.",
+        "Divide by $35$: $m=32$."
+      ],
+      "verify": "m = symbols('m')\nresult = solve(Eq(35*m+80, 1200), m)[0]"
+    },
+    {
+      "id": "T02-M2-21",
+      "module": 2,
+      "n": 43,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Slope and rate of change",
+      "stem": "The table gives three values of the linear function $f$. What is the value of $f(0)$?",
+      "figure": "\\begin{center}\n\\begin{tabular}{|c|c|c|c|}\n\\hline\n$x$ & -4 & 1 & 7 \\\\ \\hline\n$f(x)$ & 23 & 8 & -10 \\\\ \\hline\n\\end{tabular}\n\\end{center}",
+      "choices": [
+        "$5$",
+        "$8$",
+        "$11$",
+        "$23$"
+      ],
+      "answer": "C",
+      "solution": "The inputs are unevenly spaced, so the rate must be computed as a quotient rather than read off as a repeated difference: $\\frac{8-23}{1-(-4)}=-3$. Then $f(0)=f(1)+3=11$.",
+      "steps": [
+        "Slope: $\\frac{8-23}{1-(-4)}=\\frac{-15}{5}=-3$.",
+        "Use $f(1)=8$: $-3(1)+b=8$, so $b=11$.",
+        "$f(0)=b=11$."
+      ],
+      "verify": "m, b = symbols('m b')\nsol = solve([Eq(-4*m+b, 23), Eq(7*m+b, -10)], [m, b])\nresult = sol[b]"
+    },
+    {
+      "id": "T02-M2-22",
+      "module": 2,
+      "n": 44,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Function notation",
+      "stem": "For the linear function $f$, $f(0)=k$ and $f(4)=3k$, where $k$ is a constant. If $f(2)=10$, what is the value of $k$?",
+      "choices": [
+        "$\\frac{5}{2}$",
+        "$5$",
+        "$10$",
+        "$20$"
+      ],
+      "answer": "B",
+      "solution": "Because $f$ is linear and $x=2$ is exactly halfway between $0$ and $4$, the output $f(2)$ is the average of $f(0)$ and $f(4)$, so $\\frac{k+3k}{2}=2k=10$.",
+      "steps": [
+        "The slope is $\\frac{3k-k}{4-0}=\\frac{k}{2}$, so $f(x)=\\frac{k}{2}x+k$.",
+        "Substitute $x=2$: $f(2)=k+k=2k$.",
+        "Set $2k=10$, so $k=5$."
+      ],
+      "verify": "m, b, k = symbols('m b k')\nsol = solve([Eq(b, k), Eq(4*m+b, 3*k), Eq(2*m+b, 10)], [m, b, k])\nresult = sol[k]"
+    }
+  ]
+}

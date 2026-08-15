@@ -1,0 +1,1115 @@
+{
+  "number": 6,
+  "topic": "Equivalent Expressions",
+  "domain": "Advanced Math",
+  "skills": [
+    "Operations with polynomials",
+    "Factoring",
+    "Rational expressions",
+    "Exponent and radical rules"
+  ],
+  "lesson": {
+    "intro": "Every \\emph{equivalent expressions} question asks the same thing in different clothing: rewrite an expression in a new form without changing its value for any allowed input. The Digital SAT tests this constantly --- expanding and multiplying polynomials, factoring, simplifying and combining rational expressions, and rewriting powers and radicals. Nothing here requires clever tricks; it requires knowing which moves are legal and applying them in a sensible order.",
+    "blocks": [
+      {
+        "kind": "section",
+        "title": "What equivalent means",
+        "body": "Two expressions are equivalent when they produce the same value for every value of the variable for which both are defined. That definition gives you a free checking tool: substitute a convenient number such as $x=2$ into the original expression and into each answer choice, and the choices that disagree are gone. It also explains the phrase ``for $x\\neq 3$'' that so often appears in the stem --- the two forms agree everywhere except where the original was undefined."
+      },
+      {
+        "kind": "section",
+        "title": "Multiplying polynomials",
+        "body": "Multiplication distributes over addition, so every term of the first factor must multiply every term of the second. For two binomials that means four products; for a binomial times a trinomial it means six. After multiplying, collect like terms --- terms with the identical power of the variable. $x^2$ and $x$ are never like terms, and neither are $x$ and a constant."
+      },
+      {
+        "kind": "formula",
+        "title": "The three products worth memorising",
+        "body": "\\begin{align*} (a+b)^2 &= a^2+2ab+b^2\\\\ (a-b)^2 &= a^2-2ab+b^2\\\\ (a+b)(a-b) &= a^2-b^2 \\end{align*} Read them left to right to expand and right to left to factor. The middle term $2ab$ in the first two is the one students lose; the missing middle term in the third is the reason a difference of squares factors so cleanly."
+      },
+      {
+        "kind": "trap",
+        "title": "$(a+b)^2$ is not $a^2+b^2$",
+        "body": "Squaring a sum is not squaring each piece. $(2x-5)^2=4x^2-20x+25$, not $4x^2+25$. The same warning covers radicals and reciprocals: $\\sqrt{a+b}\\neq\\sqrt a+\\sqrt b$ and $\\dfrac{1}{a+b}\\neq\\dfrac1a+\\dfrac1b$. Every one of these test writers' favourite distractors comes from applying an operation term by term when the operation does not distribute."
+      },
+      {
+        "kind": "section",
+        "title": "Factoring, in the order you should try it",
+        "body": "First pull out the greatest common factor: $3x^2-12=3\\left(x^2-4\\right)$. Then look at what is left. If it is a difference of squares, split it: $x^2-4=(x+2)(x-2)$. If it is a trinomial $x^2+bx+c$, find two numbers with product $c$ and sum $b$. If the leading coefficient is not $1$, as in $6x^2-x-15$, find two numbers with product $ac=-90$ and sum $b=-1$ --- here $9$ and $-10$ --- split the middle term and group. Factoring is finished only when no factor can be factored further."
+      },
+      {
+        "kind": "concept",
+        "title": "Cancelling is dividing by a common factor",
+        "body": "In a fraction you may cancel only a factor that multiplies the \\emph{entire} numerator and the \\emph{entire} denominator. So $\\dfrac{(x+2)(x-3)}{(x+2)}=x-3$ is legal, but $\\dfrac{x+2}{x+4}$ cannot become $\\dfrac{2}{4}$ --- those are terms of a sum. This is why the first move on any rational expression is to factor top and bottom completely; until you have factored, you have nothing to cancel."
+      },
+      {
+        "kind": "section",
+        "title": "Adding and subtracting rational expressions",
+        "body": "Rewrite each fraction over a common denominator, then combine numerators only. For $\\dfrac{2}{x+1}+\\dfrac{3}{x}$ the common denominator is $x(x+1)$, so the fractions become $\\dfrac{2x}{x(x+1)}$ and $\\dfrac{3(x+1)}{x(x+1)}$ and the sum is $\\dfrac{5x+3}{x^2+x}$. When subtracting, put the second numerator in parentheses first: the minus sign applies to all of it."
+      },
+      {
+        "kind": "formula",
+        "title": "Exponent and radical rules",
+        "body": "\\begin{align*} x^a\\cdot x^b &= x^{a+b} & \\frac{x^a}{x^b} &= x^{a-b} & \\left(x^a\\right)^b &= x^{ab}\\\\ (xy)^a &= x^ay^a & x^{-a} &= \\frac{1}{x^a} & x^{m/n} &= \\sqrt[n]{x^m}=\\left(\\sqrt[n]{x}\\right)^m \\end{align*} For radicals, factor out the largest perfect square: $\\sqrt{72x^2}=\\sqrt{36x^2}\\cdot\\sqrt2=6x\\sqrt2$ for $x>0$. Radical terms add only when the radicands match: $4\\sqrt3-2\\sqrt3=2\\sqrt3$."
+      },
+      {
+        "kind": "trap",
+        "title": "Exponents on coefficients and the add/multiply mix-up",
+        "body": "An outside exponent lands on the coefficient too: $\\left(2x^3\\right)^3=8x^9$, not $6x^9$, and $\\left(8x^6\\right)^{2/3}=4x^4$, not $\\frac{16}{3}x^4$. And keep the two rules apart --- multiplying powers \\emph{adds} exponents while a power of a power \\emph{multiplies} them. $x^5\\cdot x^3=x^8$, but $\\left(x^5\\right)^3=x^{15}$."
+      },
+      {
+        "kind": "strategy",
+        "title": "Plug in a number when the algebra gets long",
+        "body": "If the choices are all expressions in $x$, pick a small number that is legal in every expression (avoid $0$, $1$ and anything that makes a denominator zero --- $x=2$ or $x=3$ usually works), evaluate the original, then evaluate the choices. Only the equivalent one matches. This costs about thirty seconds and never requires you to factor anything; it is the fastest route through a hard rational-expression item, and it is a perfect check when you have done the algebra and are not sure."
+      },
+      {
+        "kind": "worked",
+        "title": "Worked example 1: a rational expression",
+        "body": "\\textbf{For $x\\neq 2$ and $x\\neq -2$, which expression is equivalent to $\\dfrac{x^2-x-6}{x^2-4}$?}\\\\[2pt] \\textbf{Step 1 --- factor the numerator.} Two numbers with product $-6$ and sum $-1$ are $-3$ and $2$, so $x^2-x-6=(x-3)(x+2)$.\\\\ \\textbf{Step 2 --- factor the denominator.} It is a difference of squares: $x^2-4=(x+2)(x-2)$.\\\\ \\textbf{Step 3 --- cancel the common factor.} The expression is $\\dfrac{(x-3)(x+2)}{(x+2)(x-2)}$, and $x+2$ is a factor of both, so it cancels: $\\dfrac{x-3}{x-2}$.\\\\ \\textbf{Step 4 --- check.} Put $x=3$ into the original: $\\dfrac{9-3-6}{9-4}=0$. Put $x=3$ into $\\dfrac{x-3}{x-2}$: $\\dfrac{0}{1}=0$. They agree. Note what was \\emph{not} legal: cancelling $x^2$ against $x^2$, since those are terms, not factors."
+      },
+      {
+        "kind": "worked",
+        "title": "Worked example 2: matching coefficients",
+        "body": "\\textbf{The equation $(3x+a)(2x+b)=6x^2+19x+15$ is true for all $x$, where $a$ and $b$ are positive integers. What is $a+b$?}\\\\[2pt] \\textbf{Step 1 --- expand the left side.} $(3x+a)(2x+b)=6x^2+3bx+2ax+ab=6x^2+(2a+3b)x+ab$.\\\\ \\textbf{Step 2 --- match coefficients.} ``True for all $x$'' means the two sides are the same polynomial, so corresponding coefficients are equal: $2a+3b=19$ and $ab=15$.\\\\ \\textbf{Step 3 --- test the factor pairs of $15$.} The positive pairs are $(1,15)$, $(3,5)$, $(5,3)$, $(15,1)$. Only $a=5$, $b=3$ gives $2(5)+3(3)=19$.\\\\ \\textbf{Step 4 --- answer the question asked.} It asks for $a+b$, not for $a$: the answer is $8$. Notice that getting the constant term right is not enough --- the middle term is what selects the pair."
+      }
+    ]
+  },
+  "problems": [
+    {
+      "id": "T06-M1-01",
+      "module": 1,
+      "n": 1,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Operations with polynomials",
+      "stem": "Which expression is equivalent to $(x+3)(x+5)$?",
+      "choices": [
+        "$x^2+8x+15$",
+        "$x^2+15$",
+        "$x^2+8x+8$",
+        "$x^2+15x+8$"
+      ],
+      "answer": "A",
+      "accepted": [
+        "x**2+8*x+15"
+      ],
+      "solution": "Each term of the first factor multiplies each term of the second, so there are four products. The two middle products $5x$ and $3x$ are like terms and must be combined; a student who multiplies only the first terms and only the last terms gets $x^2+15$ and loses the entire middle term.",
+      "steps": [
+        "Multiply: $x\\cdot x=x^2$, $x\\cdot 5=5x$, $3\\cdot x=3x$, $3\\cdot 5=15$.",
+        "Combine like terms: $5x+3x=8x$.",
+        "The product is $x^2+8x+15$."
+      ],
+      "verify": "x = symbols('x')\nresult = expand((x+3)*(x+5))"
+    },
+    {
+      "id": "T06-M1-02",
+      "module": 1,
+      "n": 2,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Operations with polynomials",
+      "stem": "Which expression is equivalent to $3x(2x^2-4x+5)$?",
+      "choices": [
+        "$6x^3-12x^2+15$",
+        "$6x^3-12x^2+15x$",
+        "$6x^3-4x+5$",
+        "$5x^3-x^2+8x$"
+      ],
+      "answer": "B",
+      "accepted": [
+        "6*x**3-12*x**2+15*x"
+      ],
+      "solution": "The distributive property sends the factor $3x$ to \\emph{every} term inside the parentheses, and the variable multiplies too: $3x\\cdot 5=15x$, not $15$. Stopping the distribution early is the mistake behind the other choices.",
+      "steps": [
+        "$3x\\cdot 2x^2=6x^3$.",
+        "$3x\\cdot(-4x)=-12x^2$.",
+        "$3x\\cdot 5=15x$."
+      ],
+      "verify": "x = symbols('x')\nresult = expand(3*x*(2*x**2-4*x+5))"
+    },
+    {
+      "id": "T06-M1-03",
+      "module": 1,
+      "n": 3,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Operations with polynomials",
+      "stem": "The expression $(2x+3)(x-1)$ can be written in the form $2x^2+bx-3$, where $b$ is a constant. What is the value of $b$?",
+      "answer": "1",
+      "solution": "Two expressions are equivalent only when every matching coefficient agrees, so $b$ is simply the coefficient of $x$ in the expanded product. Expanding gives $-2x+3x=x$, so $b=1$ --- not $-2$ or $3$ alone.",
+      "steps": [
+        "Expand: $2x^2-2x+3x-3$.",
+        "Combine the $x$ terms: $-2x+3x=x$.",
+        "So the product is $2x^2+x-3$ and $b=1$."
+      ],
+      "verify": "x = symbols('x')\nresult = expand((2*x+3)*(x-1)).coeff(x, 1)"
+    },
+    {
+      "id": "T06-M1-04",
+      "module": 1,
+      "n": 4,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Factoring",
+      "stem": "Which of the following is equivalent to $x^2-9$?",
+      "choices": [
+        "$(x-3)^2$",
+        "$(x+9)(x-1)$",
+        "$x(x-9)$",
+        "$(x+3)(x-3)$"
+      ],
+      "answer": "D",
+      "accepted": [
+        "(x+3)*(x-3)"
+      ],
+      "solution": "A difference of two squares always factors as (first root $+$ second root)(first root $-$ second root). Since $x^2-9=x^2-3^2$, the factors are $(x+3)$ and $(x-3)$. It is not $(x-3)^2$, because that would expand to $x^2-6x+9$.",
+      "steps": [
+        "Recognize $9=3^2$, so the expression is $x^2-3^2$.",
+        "Apply $a^2-b^2=(a+b)(a-b)$ with $a=x$ and $b=3$."
+      ],
+      "verify": "x = symbols('x')\nresult = factor(x**2-9)"
+    },
+    {
+      "id": "T06-M1-05",
+      "module": 1,
+      "n": 5,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Exponent rules",
+      "stem": "Which expression is equivalent to $\\dfrac{x^5\\cdot x^3}{x^2}$ for $x\\neq 0$?",
+      "choices": [
+        "$x^6$",
+        "$x^8$",
+        "$x^{10}$",
+        "$x^{13}$"
+      ],
+      "answer": "A",
+      "solution": "Multiplying powers of the same base \\emph{adds} exponents and dividing \\emph{subtracts} them. Here $5+3=8$ and then $8-2=6$. Multiplying the exponents instead of adding them is what produces the larger choices.",
+      "steps": [
+        "$x^5\\cdot x^3=x^{5+3}=x^8$.",
+        "$\\dfrac{x^8}{x^2}=x^{8-2}=x^6$."
+      ],
+      "verify": "x = symbols('x')\nresult = simplify(x**5*x**3/x**2)"
+    },
+    {
+      "id": "T06-M1-06",
+      "module": 1,
+      "n": 6,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Exponent rules",
+      "stem": "Which expression is equivalent to $\\dfrac{12x^5}{3x^2}$ for $x\\neq 0$?",
+      "choices": [
+        "$9x^3$",
+        "$4x^7$",
+        "$4x^3$",
+        "$36x^3$"
+      ],
+      "answer": "C",
+      "accepted": [
+        "4*x**3"
+      ],
+      "solution": "Divide the numerical coefficients and subtract the exponents separately: $12\\div 3=4$ and $x^{5-2}=x^3$. The coefficients are divided, never subtracted, and the exponents are subtracted, never divided.",
+      "steps": [
+        "$\\dfrac{12}{3}=4$.",
+        "$\\dfrac{x^5}{x^2}=x^{5-2}=x^3$.",
+        "The quotient is $4x^3$."
+      ],
+      "verify": "x = symbols('x')\nresult = simplify(12*x**5/(3*x**2))"
+    },
+    {
+      "id": "T06-M1-07",
+      "module": 1,
+      "n": 7,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Factoring",
+      "stem": "Which expression is equivalent to $6x^2+9x$?",
+      "choices": [
+        "$3x(2x+9)$",
+        "$6x(x+3)$",
+        "$3x(3x+2)$",
+        "$3x(2x+3)$"
+      ],
+      "answer": "D",
+      "accepted": [
+        "3*x*(2*x+3)"
+      ],
+      "solution": "Factoring out the greatest common factor is division: the GCF of $6x^2$ and $9x$ is $3x$, and dividing each term by $3x$ leaves $2x$ and $3$. Checking by redistributing is the fastest way to reject the other choices.",
+      "steps": [
+        "The GCF of $6$ and $9$ is $3$; both terms contain $x$, so the GCF is $3x$.",
+        "$6x^2\\div 3x=2x$ and $9x\\div 3x=3$.",
+        "So $6x^2+9x=3x(2x+3)$."
+      ],
+      "verify": "x = symbols('x')\nresult = factor(6*x**2+9*x)"
+    },
+    {
+      "id": "T06-M1-08",
+      "module": 1,
+      "n": 8,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Factoring",
+      "stem": "Which of the following is equivalent to $x^2+7x+12$?",
+      "choices": [
+        "$(x+2)(x+6)$",
+        "$(x+1)(x+12)$",
+        "$(x-3)(x-4)$",
+        "$(x+3)(x+4)$"
+      ],
+      "answer": "D",
+      "accepted": [
+        "(x+3)*(x+4)"
+      ],
+      "solution": "For a monic trinomial you need two numbers whose product is the constant term and whose sum is the middle coefficient. Here $3\\cdot 4=12$ and $3+4=7$. The pair $(2,6)$ multiplies to $12$ but sums to $8$, which is why that choice fails.",
+      "steps": [
+        "Look for two numbers with product $12$ and sum $7$.",
+        "$3$ and $4$ work.",
+        "So $x^2+7x+12=(x+3)(x+4)$."
+      ],
+      "verify": "x = symbols('x')\nresult = factor(x**2+7*x+12)"
+    },
+    {
+      "id": "T06-M1-09",
+      "module": 1,
+      "n": 9,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Operations with polynomials",
+      "stem": "Which expression is equivalent to $(2x-5)^2$?",
+      "choices": [
+        "$4x^2+25$",
+        "$4x^2-25$",
+        "$4x^2-20x+25$",
+        "$4x^2-10x+25$"
+      ],
+      "answer": "C",
+      "accepted": [
+        "4*x**2-20*x+25"
+      ],
+      "solution": "Squaring a binomial is not squaring each term: $(a-b)^2=a^2-2ab+b^2$ carries a middle term. With $a=2x$ and $b=5$ the middle term is $-2(2x)(5)=-20x$; halving it to $-10x$ is the other common slip.",
+      "steps": [
+        "Write $(2x-5)^2=(2x)^2-2(2x)(5)+5^2$.",
+        "$(2x)^2=4x^2$ and $-2(2x)(5)=-20x$ and $5^2=25$."
+      ],
+      "verify": "x = symbols('x')\nresult = expand((2*x-5)**2)"
+    },
+    {
+      "id": "T06-M1-10",
+      "module": 1,
+      "n": 10,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Rational expressions",
+      "stem": "For $x\\neq 4$, the expression $\\dfrac{x^2-16}{x-4}$ is equivalent to $x+c$, where $c$ is a constant. What is the value of $c$?",
+      "answer": "4",
+      "solution": "You may cancel only a common \\emph{factor}, so the numerator must be factored first. Since $x^2-16=(x+4)(x-4)$, the factor $x-4$ cancels and $x+4$ remains, giving $c=4$.",
+      "steps": [
+        "Factor the numerator: $x^2-16=(x+4)(x-4)$.",
+        "Cancel the common factor $x-4$ (legal because $x\\neq 4$).",
+        "What is left is $x+4$, so $c=4$."
+      ],
+      "verify": "x = symbols('x')\nresult = simplify((x**2-16)/(x-4)) - x"
+    },
+    {
+      "id": "T06-M1-11",
+      "module": 1,
+      "n": 11,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Rational expressions",
+      "stem": "For $x\\neq -2$, which expression is equivalent to $\\dfrac{x^2+5x+6}{x+2}$?",
+      "choices": [
+        "$x+6$",
+        "$\\dfrac{5x+6}{2}$",
+        "$x+4$",
+        "$x+3$"
+      ],
+      "answer": "D",
+      "accepted": [
+        "x+3"
+      ],
+      "solution": "Factor before you cancel. The numerator is $(x+2)(x+3)$, so the whole factor $x+2$ divides out and $x+3$ remains. Cancelling the loose $x$ in $x+2$ against the $x^2$ is not allowed, because $x+2$ is a sum, not a product.",
+      "steps": [
+        "Factor: $x^2+5x+6=(x+2)(x+3)$.",
+        "Cancel the common factor $x+2$.",
+        "The result is $x+3$."
+      ],
+      "verify": "x = symbols('x')\nresult = simplify((x**2+5*x+6)/(x+2))"
+    },
+    {
+      "id": "T06-M1-12",
+      "module": 1,
+      "n": 12,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Exponent rules",
+      "stem": "For $x\\neq 0$, which expression is equivalent to $\\left(3x^{-2}\\right)^{-1}$?",
+      "choices": [
+        "$\\dfrac{x^2}{3}$",
+        "$3x^2$",
+        "$\\dfrac{1}{3x^2}$",
+        "$-3x^2$"
+      ],
+      "answer": "A",
+      "accepted": [
+        "x**2/3"
+      ],
+      "solution": "An outer exponent hits every factor inside, including the coefficient: $3^{-1}=\\frac13$ and $\\left(x^{-2}\\right)^{-1}=x^{2}$. Leaving the $3$ untouched, or leaving $x$ in the denominator, are the two mistakes the distractors record.",
+      "steps": [
+        "$\\left(3x^{-2}\\right)^{-1}=3^{-1}\\left(x^{-2}\\right)^{-1}$.",
+        "$3^{-1}=\\dfrac13$ and $\\left(x^{-2}\\right)^{-1}=x^{(-2)(-1)}=x^2$.",
+        "So the expression equals $\\dfrac{x^2}{3}$."
+      ],
+      "verify": "x = symbols('x')\nresult = simplify((3*x**(-2))**(-1))"
+    },
+    {
+      "id": "T06-M1-13",
+      "module": 1,
+      "n": 13,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Exponent rules",
+      "stem": "What is the value of $16^{3/4}$?",
+      "answer": "8",
+      "solution": "A fractional exponent is a root and a power: the denominator gives the root, the numerator gives the power. Taking the fourth root first keeps the numbers small: $\\sqrt[4]{16}=2$, then $2^3=8$.",
+      "steps": [
+        "$16^{3/4}=\\left(\\sqrt[4]{16}\\right)^{3}$.",
+        "$\\sqrt[4]{16}=2$ because $2^4=16$.",
+        "$2^3=8$."
+      ],
+      "verify": "result = S(16)**Rational(3, 4)"
+    },
+    {
+      "id": "T06-M1-14",
+      "module": 1,
+      "n": 14,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Radicals",
+      "stem": "For $x>0$, which expression is equivalent to $\\sqrt{72x^2}$?",
+      "choices": [
+        "$36x\\sqrt{2}$",
+        "$6x^2\\sqrt{2}$",
+        "$6x\\sqrt{2}$",
+        "$8x\\sqrt{3}$"
+      ],
+      "answer": "C",
+      "accepted": [
+        "6*x*sqrt(2)"
+      ],
+      "solution": "Pull out the largest perfect-square factor. Here $72=36\\cdot 2$ and $x^2$ is already a perfect square, so $\\sqrt{72x^2}=6x\\sqrt{2}$. The square root of $x^2$ is $x$, not $x^2$.",
+      "steps": [
+        "$\\sqrt{72x^2}=\\sqrt{36\\cdot 2\\cdot x^2}$.",
+        "$\\sqrt{36}=6$ and $\\sqrt{x^2}=x$ for $x>0$.",
+        "What is left under the radical is $2$, so the value is $6x\\sqrt{2}$."
+      ],
+      "verify": "a = symbols('a', positive=True)\nx = symbols('x')\nresult = sqrt(72*a**2).subs(a, x)"
+    },
+    {
+      "id": "T06-M1-15",
+      "module": 1,
+      "n": 15,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Rational expressions",
+      "stem": "For $x\\neq 0$, which expression is equivalent to $\\dfrac{1}{x}+\\dfrac{1}{2x}$?",
+      "choices": [
+        "$\\dfrac{1}{3x}$",
+        "$\\dfrac{2}{3x}$",
+        "$\\dfrac{3}{2x}$",
+        "$\\dfrac{1}{2x^2}$"
+      ],
+      "answer": "C",
+      "accepted": [
+        "3/(2*x)"
+      ],
+      "solution": "Fractions are added over a common denominator, never by adding denominators. Rewriting $\\frac1x$ as $\\frac{2}{2x}$ makes the sum $\\frac{2}{2x}+\\frac{1}{2x}=\\frac{3}{2x}$.",
+      "steps": [
+        "The common denominator is $2x$.",
+        "$\\dfrac1x=\\dfrac{2}{2x}$.",
+        "$\\dfrac{2}{2x}+\\dfrac{1}{2x}=\\dfrac{3}{2x}$."
+      ],
+      "verify": "x = symbols('x')\nresult = simplify(1/x + 1/(2*x))"
+    },
+    {
+      "id": "T06-M1-16",
+      "module": 1,
+      "n": 16,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Factoring",
+      "stem": "Which of the following is equivalent to $2x^2+7x+3$?",
+      "choices": [
+        "$(2x+1)(x+3)$",
+        "$(2x+3)(x+1)$",
+        "$(2x-1)(x-3)$",
+        "$(x+1)(x+3)$"
+      ],
+      "answer": "A",
+      "accepted": [
+        "(2*x+1)*(x+3)"
+      ],
+      "solution": "When the leading coefficient is not $1$, the middle term mixes the outer and inner products. For $(2x+1)(x+3)$ the outer and inner products are $6x$ and $x$, which total $7x$; for $(2x+3)(x+1)$ they total $5x$, so that pairing fails.",
+      "steps": [
+        "The factors must have the form $(2x+m)(x+n)$ with $mn=3$.",
+        "Try $m=1$, $n=3$: the middle term is $6x+x=7x$.",
+        "So $2x^2+7x+3=(2x+1)(x+3)$."
+      ],
+      "verify": "x = symbols('x')\nresult = factor(2*x**2+7*x+3)"
+    },
+    {
+      "id": "T06-M1-17",
+      "module": 1,
+      "n": 17,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Rational expressions",
+      "stem": "For $x\\neq 2$ and $x\\neq -2$, which expression is equivalent to $\\dfrac{x+2}{x^2-4}$?",
+      "choices": [
+        "$\\dfrac{1}{x^2-2}$",
+        "$\\dfrac{1}{x+2}$",
+        "$x-2$",
+        "$\\dfrac{1}{x-2}$"
+      ],
+      "answer": "D",
+      "accepted": [
+        "1/(x-2)"
+      ],
+      "solution": "Factor the denominator as $(x+2)(x-2)$; the common factor $x+2$ cancels and leaves $\\frac{1}{x-2}$. Cancelling the $2$ in the numerator against the $4$ in the denominator is illegal --- both are inside sums, not factors.",
+      "steps": [
+        "Factor: $x^2-4=(x+2)(x-2)$.",
+        "$\\dfrac{x+2}{(x+2)(x-2)}$ has the common factor $x+2$.",
+        "Cancelling it leaves $\\dfrac{1}{x-2}$."
+      ],
+      "verify": "x = symbols('x')\nresult = simplify((x+2)/(x**2-4))"
+    },
+    {
+      "id": "T06-M1-18",
+      "module": 1,
+      "n": 18,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Rational expressions",
+      "stem": "For $x\\neq 2$ and $x\\neq -3$, the expression $\\dfrac{x^2-9}{x^2+x-6}$ is equivalent to $\\dfrac{x-3}{x-c}$, where $c$ is a constant. What is the value of $c$?",
+      "answer": "2",
+      "solution": "Factor top and bottom completely before cancelling: $\\frac{(x-3)(x+3)}{(x+3)(x-2)}$. Only the shared factor $x+3$ disappears, leaving $\\frac{x-3}{x-2}$, so $c=2$.",
+      "steps": [
+        "Factor the numerator: $x^2-9=(x-3)(x+3)$.",
+        "Factor the denominator: $x^2+x-6=(x+3)(x-2)$.",
+        "Cancel $x+3$ to get $\\dfrac{x-3}{x-2}$, so $c=2$."
+      ],
+      "verify": "x = symbols('x')\nresult = simplify(x - (x-3)/simplify((x**2-9)/(x**2+x-6)))"
+    },
+    {
+      "id": "T06-M1-19",
+      "module": 1,
+      "n": 19,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Rational expressions",
+      "stem": "For $x\\neq 1$ and $x\\neq -1$, which expression is equivalent to $\\dfrac{1}{x-1}-\\dfrac{1}{x+1}$?",
+      "choices": [
+        "$0$",
+        "$\\dfrac{-2}{x^2-1}$",
+        "$\\dfrac{2}{x^2-1}$",
+        "$\\dfrac{2x}{x^2-1}$"
+      ],
+      "answer": "C",
+      "accepted": [
+        "2/(x**2-1)"
+      ],
+      "solution": "The common denominator is $(x-1)(x+1)=x^2-1$. The numerators become $(x+1)-(x-1)=2$, and the minus sign must be distributed across both terms of the second numerator. Subtracting the numerators as $1-1=0$ ignores the rewriting step entirely.",
+      "steps": [
+        "Common denominator: $(x-1)(x+1)=x^2-1$.",
+        "$\\dfrac{x+1}{x^2-1}-\\dfrac{x-1}{x^2-1}$.",
+        "$(x+1)-(x-1)=2$, so the difference is $\\dfrac{2}{x^2-1}$."
+      ],
+      "verify": "x = symbols('x')\nresult = simplify(1/(x-1) - 1/(x+1))"
+    },
+    {
+      "id": "T06-M1-20",
+      "module": 1,
+      "n": 20,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Exponent rules",
+      "stem": "For $x>0$, which expression is equivalent to $\\left(8x^6\\right)^{2/3}$?",
+      "choices": [
+        "$4x^4$",
+        "$4x^9$",
+        "$16x^4$",
+        "$64x^4$"
+      ],
+      "answer": "A",
+      "accepted": [
+        "4*x**4"
+      ],
+      "solution": "The outside exponent applies to the coefficient and to the variable power: $8^{2/3}=\\left(\\sqrt[3]{8}\\right)^2=4$ and $x^{6\\cdot 2/3}=x^4$. Multiplying $8$ by $\\frac23$, or adding the exponents instead of multiplying them, gives the wrong choices.",
+      "steps": [
+        "$\\left(8x^6\\right)^{2/3}=8^{2/3}\\cdot x^{6\\cdot(2/3)}$.",
+        "$8^{2/3}=\\left(\\sqrt[3]{8}\\right)^2=2^2=4$.",
+        "$x^{6\\cdot(2/3)}=x^4$, so the value is $4x^4$."
+      ],
+      "verify": "a = symbols('a', positive=True)\nx = symbols('x')\nresult = simplify((8*a**6)**Rational(2, 3)).subs(a, x)"
+    },
+    {
+      "id": "T06-M1-21",
+      "module": 1,
+      "n": 21,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Factoring",
+      "stem": "The equation $(3x+a)(2x+b)=6x^2+19x+15$ is true for all $x$, where $a$ and $b$ are positive integers. What is the value of $a+b$?",
+      "answer": "8",
+      "solution": "Matching coefficients gives two conditions at once: $ab=15$ for the constant term and $2a+3b=19$ for the $x$ term. Only $a=5$, $b=3$ satisfies both, so a factor pair that gives the right constant is not enough --- it must also give the right middle term.",
+      "steps": [
+        "Expanding gives $6x^2+(2a+3b)x+ab$.",
+        "So $ab=15$ and $2a+3b=19$.",
+        "The positive integer pair $a=5$, $b=3$ works, so $a+b=8$."
+      ],
+      "verify": "result = sum([a + 15//a for a in [1, 3, 5, 15] if 2*a + 3*(15//a) == 19])"
+    },
+    {
+      "id": "T06-M1-22",
+      "module": 1,
+      "n": 22,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Rational expressions",
+      "stem": "For $x\\neq -5$, which expression is equivalent to $\\dfrac{2x^2+7x-15}{x+5}$?",
+      "choices": [
+        "$2x+3$",
+        "$2x-3$",
+        "$2x-15$",
+        "$x-3$"
+      ],
+      "answer": "B",
+      "accepted": [
+        "2*x-3"
+      ],
+      "solution": "Factor the numerator as $(x+5)(2x-3)$ --- the pair that produces the middle term $7x$ from $10x-3x$. Cancelling $x+5$ leaves $2x-3$. Choosing $2x+3$ means the signs of the constant were never checked against $-15$.",
+      "steps": [
+        "Factor: $2x^2+7x-15=(x+5)(2x-3)$.",
+        "Cancel the common factor $x+5$.",
+        "The result is $2x-3$."
+      ],
+      "verify": "x = symbols('x')\nresult = simplify((2*x**2+7*x-15)/(x+5))"
+    },
+    {
+      "id": "T06-M2-01",
+      "module": 2,
+      "n": 23,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Operations with polynomials",
+      "stem": "Which expression is equivalent to $(x-4)(x+4)$?",
+      "choices": [
+        "$x^2-16$",
+        "$x^2+16$",
+        "$x^2-8x-16$",
+        "$x^2-16x$"
+      ],
+      "answer": "A",
+      "accepted": [
+        "x**2-16"
+      ],
+      "solution": "The outer and inner products are $4x$ and $-4x$, which cancel; that is exactly why a sum times a difference of the same two terms is a difference of squares.",
+      "steps": [
+        "Expand: $x^2+4x-4x-16$.",
+        "The middle terms cancel, leaving $x^2-16$."
+      ],
+      "verify": "x = symbols('x')\nresult = expand((x-4)*(x+4))"
+    },
+    {
+      "id": "T06-M2-02",
+      "module": 2,
+      "n": 24,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Operations with polynomials",
+      "stem": "Which expression is equivalent to $2x(3x-7)+5x$?",
+      "choices": [
+        "$6x^2-2x$",
+        "$6x^2+5x-7$",
+        "$6x^2-9x$",
+        "$6x^2-19x$"
+      ],
+      "answer": "C",
+      "accepted": [
+        "6*x**2-9*x"
+      ],
+      "solution": "Distribute first, then combine like terms. After distributing you have $6x^2-14x+5x$, and $-14x+5x=-9x$. Only terms with the same power of $x$ may be combined, so $6x^2$ stays alone.",
+      "steps": [
+        "$2x(3x-7)=6x^2-14x$.",
+        "Add $5x$: $6x^2-14x+5x$.",
+        "Combine: $-14x+5x=-9x$, giving $6x^2-9x$."
+      ],
+      "verify": "x = symbols('x')\nresult = expand(2*x*(3*x-7) + 5*x)"
+    },
+    {
+      "id": "T06-M2-03",
+      "module": 2,
+      "n": 25,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Factoring",
+      "stem": "The expression $x^2+10x+25$ is equivalent to $(x+k)^2$, where $k$ is a positive constant. What is the value of $k$?",
+      "answer": "5",
+      "solution": "A perfect-square trinomial has a constant equal to the square of $k$ and a middle coefficient equal to $2k$. Both tests agree here: $5^2=25$ and $2(5)=10$, so $k=5$.",
+      "steps": [
+        "$(x+k)^2=x^2+2kx+k^2$.",
+        "Match the middle term: $2k=10$, so $k=5$.",
+        "Check the constant: $5^2=25$."
+      ],
+      "verify": "x = symbols('x')\nresult = -solve(x**2+10*x+25, x)[0]"
+    },
+    {
+      "id": "T06-M2-04",
+      "module": 2,
+      "n": 26,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Factoring",
+      "stem": "Which of the following is equivalent to $4x^2-25$?",
+      "choices": [
+        "$(2x-5)^2$",
+        "$(4x+5)(x-5)$",
+        "$(2x+5)(2x-5)$",
+        "$(2x+5)^2$"
+      ],
+      "answer": "C",
+      "accepted": [
+        "(2*x+5)*(2*x-5)"
+      ],
+      "solution": "Both terms are perfect squares: $4x^2=(2x)^2$ and $25=5^2$. A difference of squares factors as $(2x+5)(2x-5)$; the squared forms are wrong because they would create a middle term.",
+      "steps": [
+        "Write $4x^2-25=(2x)^2-5^2$.",
+        "Apply $a^2-b^2=(a+b)(a-b)$ with $a=2x$, $b=5$."
+      ],
+      "verify": "x = symbols('x')\nresult = factor(4*x**2-25)"
+    },
+    {
+      "id": "T06-M2-05",
+      "module": 2,
+      "n": 27,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Exponent rules",
+      "stem": "For $x\\neq 0$ and $y\\neq 0$, which expression is equivalent to $\\dfrac{x^4y^3}{xy^5}$?",
+      "choices": [
+        "$x^3y^2$",
+        "$\\dfrac{x^4}{y^2}$",
+        "$\\dfrac{x^3}{y^8}$",
+        "$\\dfrac{x^3}{y^2}$"
+      ],
+      "answer": "D",
+      "accepted": [
+        "x**3/y**2"
+      ],
+      "solution": "Handle each base separately: $x^{4-1}=x^3$ and $y^{3-5}=y^{-2}$, and a negative exponent means the factor belongs in the denominator. Adding the $y$ exponents instead of subtracting them gives $y^8$.",
+      "steps": [
+        "$\\dfrac{x^4}{x}=x^{4-1}=x^3$.",
+        "$\\dfrac{y^3}{y^5}=y^{3-5}=y^{-2}=\\dfrac{1}{y^2}$.",
+        "So the quotient is $\\dfrac{x^3}{y^2}$."
+      ],
+      "verify": "x, y = symbols('x y')\nresult = simplify(x**4*y**3/(x*y**5))"
+    },
+    {
+      "id": "T06-M2-06",
+      "module": 2,
+      "n": 28,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Exponent rules",
+      "stem": "What is the value of $27^{2/3}$?",
+      "answer": "9",
+      "solution": "The denominator of the exponent is the root and the numerator is the power. Taking the cube root first keeps the arithmetic small: $\\sqrt[3]{27}=3$, and $3^2=9$.",
+      "steps": [
+        "$27^{2/3}=\\left(\\sqrt[3]{27}\\right)^2$.",
+        "$\\sqrt[3]{27}=3$.",
+        "$3^2=9$."
+      ],
+      "verify": "result = S(27)**Rational(2, 3)"
+    },
+    {
+      "id": "T06-M2-07",
+      "module": 2,
+      "n": 29,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Factoring",
+      "stem": "Which expression shows $3x^2-12$ factored completely?",
+      "choices": [
+        "$3(x^2-4)$",
+        "$3(x+2)(x-2)$",
+        "$(x+2)(x-2)$",
+        "$3(x-2)^2$"
+      ],
+      "answer": "B",
+      "accepted": [
+        "3*(x+2)*(x-2)"
+      ],
+      "solution": "Always take the greatest common factor out first, then look again: $3x^2-12=3(x^2-4)$, and $x^2-4$ is still a difference of squares. Stopping at $3(x^2-4)$ leaves the factoring unfinished.",
+      "steps": [
+        "Factor out the GCF $3$: $3(x^2-4)$.",
+        "$x^2-4=(x+2)(x-2)$.",
+        "So $3x^2-12=3(x+2)(x-2)$."
+      ],
+      "verify": "x = symbols('x')\nresult = factor(3*x**2-12)"
+    },
+    {
+      "id": "T06-M2-08",
+      "module": 2,
+      "n": 30,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Operations with polynomials",
+      "stem": "Which expression is equivalent to $(x+3)\\left(x^2-2x+4\\right)$?",
+      "choices": [
+        "$x^3+x^2+2x+12$",
+        "$x^3+x^2-2x+12$",
+        "$x^3-5x^2+10x+12$",
+        "$x^3+27$"
+      ],
+      "answer": "B",
+      "accepted": [
+        "x**3+x**2-2*x+12"
+      ],
+      "solution": "Every term of the trinomial must be multiplied by $x$ and by $3$, giving six products before like terms are collected: $-2x^2+3x^2=x^2$ and $4x-6x=-2x$. Multiplying only matching-degree terms is what produces the other answers.",
+      "steps": [
+        "$x\\left(x^2-2x+4\\right)=x^3-2x^2+4x$.",
+        "$3\\left(x^2-2x+4\\right)=3x^2-6x+12$.",
+        "Add: $x^3+x^2-2x+12$."
+      ],
+      "verify": "x = symbols('x')\nresult = expand((x+3)*(x**2-2*x+4))"
+    },
+    {
+      "id": "T06-M2-09",
+      "module": 2,
+      "n": 31,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Operations with polynomials",
+      "stem": "The equation $(2x-3)(3x+k)=6x^2+x-15$ is true for all values of $x$, where $k$ is a constant. What is the value of $k$?",
+      "answer": "5",
+      "solution": "Because the equation holds for every $x$, matching coefficients is legal. The constant term gives $-3k=-15$, so $k=5$, and the middle term confirms it: $2k-9=1$.",
+      "steps": [
+        "Expand the left side: $6x^2+2kx-9x-3k$.",
+        "Match constants: $-3k=-15$, so $k=5$.",
+        "Check the $x$ term: $2(5)-9=1$."
+      ],
+      "verify": "x, k = symbols('x k')\nresult = solve(expand((2*x-3)*(3*x+k)) - (6*x**2+x-15), k)[0]"
+    },
+    {
+      "id": "T06-M2-10",
+      "module": 2,
+      "n": 32,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Rational expressions",
+      "stem": "For $x\\neq -3$, which expression is equivalent to $\\dfrac{3x^2-27}{x+3}$?",
+      "choices": [
+        "$3x-9$",
+        "$3x+9$",
+        "$3x-27$",
+        "$x-9$"
+      ],
+      "answer": "A",
+      "accepted": [
+        "3*x-9"
+      ],
+      "solution": "Take out the common factor $3$ first, then recognise the difference of squares: $3(x-3)(x+3)$. After cancelling $x+3$ the $3$ must stay attached to both terms, giving $3x-9$ rather than $3x-27$.",
+      "steps": [
+        "$3x^2-27=3\\left(x^2-9\\right)=3(x+3)(x-3)$.",
+        "Cancel the common factor $x+3$.",
+        "What remains is $3(x-3)=3x-9$."
+      ],
+      "verify": "x = symbols('x')\nresult = simplify((3*x**2-27)/(x+3))"
+    },
+    {
+      "id": "T06-M2-11",
+      "module": 2,
+      "n": 33,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Rational expressions",
+      "stem": "For $x\\neq 0$ and $x\\neq -1$, which expression is equivalent to $\\dfrac{2}{x+1}+\\dfrac{3}{x}$?",
+      "choices": [
+        "$\\dfrac{5}{x^2+x}$",
+        "$\\dfrac{5x+3}{x^2+x}$",
+        "$\\dfrac{5}{2x+1}$",
+        "$\\dfrac{5x+2}{x^2+x}$"
+      ],
+      "answer": "B",
+      "accepted": [
+        "(5*x+3)/(x**2+x)"
+      ],
+      "solution": "The common denominator is the product $x(x+1)=x^2+x$. Each numerator must be scaled by what its denominator was missing: $2x$ and $3(x+1)$, whose sum is $5x+3$. Adding numerators and denominators straight across is the classic error.",
+      "steps": [
+        "Common denominator: $x(x+1)=x^2+x$.",
+        "$\\dfrac{2x}{x^2+x}+\\dfrac{3(x+1)}{x^2+x}$.",
+        "$2x+3x+3=5x+3$, so the sum is $\\dfrac{5x+3}{x^2+x}$."
+      ],
+      "verify": "x = symbols('x')\nresult = simplify(2/(x+1) + 3/x)"
+    },
+    {
+      "id": "T06-M2-12",
+      "module": 2,
+      "n": 34,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Exponent rules",
+      "stem": "For $x>0$, the expression $x^{1/2}\\cdot x^{3/2}$ is equivalent to $x^{k}$, where $k$ is a constant. What is the value of $k$?",
+      "answer": "2",
+      "solution": "Powers of the same base multiply by adding exponents, and fractional exponents are added like ordinary fractions: $\\frac12+\\frac32=\\frac42=2$. Multiplying the exponents would give $\\frac34$, which is not what the product rule says.",
+      "steps": [
+        "$x^{1/2}\\cdot x^{3/2}=x^{1/2+3/2}$.",
+        "$\\dfrac12+\\dfrac32=2$.",
+        "So $k=2$."
+      ],
+      "verify": "result = Rational(1, 2) + Rational(3, 2)"
+    },
+    {
+      "id": "T06-M2-13",
+      "module": 2,
+      "n": 35,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Radicals",
+      "stem": "Which expression is equivalent to $\\sqrt{48}-\\sqrt{12}$?",
+      "choices": [
+        "$6$",
+        "$2\\sqrt{3}$",
+        "$6\\sqrt{3}$",
+        "$2\\sqrt{6}$"
+      ],
+      "answer": "B",
+      "accepted": [
+        "2*sqrt(3)"
+      ],
+      "solution": "Radicals combine only after they are simplified to the same radicand: $\\sqrt{48}=4\\sqrt3$ and $\\sqrt{12}=2\\sqrt3$, so the difference is $2\\sqrt3$. Subtracting under one radical sign, $\\sqrt{48-12}=6$, is not a legal move.",
+      "steps": [
+        "$\\sqrt{48}=\\sqrt{16\\cdot 3}=4\\sqrt{3}$.",
+        "$\\sqrt{12}=\\sqrt{4\\cdot 3}=2\\sqrt{3}$.",
+        "$4\\sqrt{3}-2\\sqrt{3}=2\\sqrt{3}$."
+      ],
+      "verify": "result = simplify(sqrt(48) - sqrt(12))"
+    },
+    {
+      "id": "T06-M2-14",
+      "module": 2,
+      "n": 36,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Exponent rules",
+      "stem": "For $x\\neq 0$ and $y\\neq 0$, which expression is equivalent to $\\left(2x^3y^{-2}\\right)^3$?",
+      "choices": [
+        "$\\dfrac{8x^9}{y^6}$",
+        "$\\dfrac{6x^9}{y^6}$",
+        "$\\dfrac{8x^6}{y^5}$",
+        "$8x^9y^6$"
+      ],
+      "answer": "A",
+      "accepted": [
+        "8*x**9/y**6"
+      ],
+      "solution": "A power of a product raises each factor: $2^3=8$, $\\left(x^3\\right)^3=x^9$, and $\\left(y^{-2}\\right)^3=y^{-6}$, which moves to the denominator. Multiplying the coefficient by the exponent instead of raising it gives $6$.",
+      "steps": [
+        "$\\left(2x^3y^{-2}\\right)^3=2^3\\left(x^3\\right)^3\\left(y^{-2}\\right)^3$.",
+        "$2^3=8$, $\\left(x^3\\right)^3=x^9$, $\\left(y^{-2}\\right)^3=y^{-6}$.",
+        "$y^{-6}=\\dfrac{1}{y^6}$, so the result is $\\dfrac{8x^9}{y^6}$."
+      ],
+      "verify": "x, y = symbols('x y')\nresult = simplify((2*x**3*y**(-2))**3)"
+    },
+    {
+      "id": "T06-M2-15",
+      "module": 2,
+      "n": 37,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Rational expressions",
+      "stem": "For $x\\neq 3$, which expression is equivalent to $\\dfrac{x^2-5x+6}{x-3}$?",
+      "choices": [
+        "$x+2$",
+        "$x-6$",
+        "$x-2$",
+        "$x-3$"
+      ],
+      "answer": "C",
+      "accepted": [
+        "x-2"
+      ],
+      "solution": "The numerator factors as $(x-2)(x-3)$, since $(-2)(-3)=6$ and $-2-3=-5$. Cancelling $x-3$ leaves $x-2$; the leftover factor is the one you did \\emph{not} cancel.",
+      "steps": [
+        "Factor: $x^2-5x+6=(x-2)(x-3)$.",
+        "Cancel the common factor $x-3$.",
+        "The result is $x-2$."
+      ],
+      "verify": "x = symbols('x')\nresult = simplify((x**2-5*x+6)/(x-3))"
+    },
+    {
+      "id": "T06-M2-16",
+      "module": 2,
+      "n": 38,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Factoring",
+      "stem": "Which of the following is equivalent to $6x^2-x-15$?",
+      "choices": [
+        "$(2x-3)(3x+5)$",
+        "$(2x+3)(3x-5)$",
+        "$(6x+5)(x-3)$",
+        "$(2x+5)(3x-3)$"
+      ],
+      "answer": "B",
+      "accepted": [
+        "(2*x+3)*(3*x-5)"
+      ],
+      "solution": "Split the middle term using two numbers with product $6(-15)=-90$ and sum $-1$: those are $9$ and $-10$. Grouping then gives $(2x+3)(3x-5)$; swapping the signs produces $x$ instead of $-x$ in the middle.",
+      "steps": [
+        "Look for two numbers with product $-90$ and sum $-1$: $9$ and $-10$.",
+        "$6x^2+9x-10x-15=3x(2x+3)-5(2x+3)$.",
+        "Factor out $2x+3$: $(2x+3)(3x-5)$."
+      ],
+      "verify": "x = symbols('x')\nresult = factor(6*x**2-x-15)"
+    },
+    {
+      "id": "T06-M2-17",
+      "module": 2,
+      "n": 39,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Rational expressions",
+      "stem": "For $x\\neq 1$ and $x\\neq -3$, which expression is equivalent to $\\dfrac{x^2-1}{x+3}\\cdot\\dfrac{x^2+3x}{x-1}$?",
+      "choices": [
+        "$x^2-x$",
+        "$x+1$",
+        "$\\dfrac{x^2+x}{x+3}$",
+        "$x^2+x$"
+      ],
+      "answer": "D",
+      "accepted": [
+        "x**2+x"
+      ],
+      "solution": "Factor every piece before multiplying: $\\frac{(x-1)(x+1)}{x+3}\\cdot\\frac{x(x+3)}{x-1}$. Both $x-1$ and $x+3$ cancel diagonally, leaving $x(x+1)=x^2+x$. Cancelling before factoring would strand the $x+3$ in the denominator.",
+      "steps": [
+        "$x^2-1=(x-1)(x+1)$ and $x^2+3x=x(x+3)$.",
+        "Cancel $x-1$ and $x+3$.",
+        "What is left is $x(x+1)=x^2+x$."
+      ],
+      "verify": "x = symbols('x')\nresult = simplify((x**2-1)/(x+3)*(x**2+3*x)/(x-1))"
+    },
+    {
+      "id": "T06-M2-18",
+      "module": 2,
+      "n": 40,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Rational expressions",
+      "stem": "For $x\\neq \\tfrac12$, the expression $\\dfrac{2x^2+5x-3}{2x-1}$ is equivalent to $x+c$, where $c$ is a constant. What is the value of $c$?",
+      "answer": "3",
+      "solution": "The numerator factors as $(2x-1)(x+3)$: the constant $-3$ comes from $(-1)(3)$ and the middle term from $6x-x=5x$. Cancelling $2x-1$ leaves $x+3$, so $c=3$.",
+      "steps": [
+        "Factor: $2x^2+5x-3=(2x-1)(x+3)$.",
+        "Cancel the common factor $2x-1$.",
+        "The quotient is $x+3$, so $c=3$."
+      ],
+      "verify": "x = symbols('x')\nresult = simplify((2*x**2+5*x-3)/(2*x-1)) - x"
+    },
+    {
+      "id": "T06-M2-19",
+      "module": 2,
+      "n": 41,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Exponent rules",
+      "stem": "For nonzero values of $x$ and $y$, which expression is equivalent to $\\dfrac{1}{x^{-1}+y^{-1}}$?",
+      "choices": [
+        "$x+y$",
+        "$\\dfrac{xy}{x+y}$",
+        "$\\dfrac{x+y}{xy}$",
+        "$\\dfrac{1}{x+y}$"
+      ],
+      "answer": "B",
+      "accepted": [
+        "x*y/(x+y)"
+      ],
+      "solution": "Rewrite the negative exponents as fractions first: $\\frac1x+\\frac1y=\\frac{y+x}{xy}$. The whole expression is the reciprocal of that sum, which flips it to $\\frac{xy}{x+y}$. Turning $\\frac{1}{x^{-1}+y^{-1}}$ into $x+y$ treats a sum of reciprocals as the reciprocal of a sum.",
+      "steps": [
+        "$x^{-1}+y^{-1}=\\dfrac1x+\\dfrac1y=\\dfrac{x+y}{xy}$.",
+        "Dividing $1$ by that fraction flips it.",
+        "So the expression equals $\\dfrac{xy}{x+y}$."
+      ],
+      "verify": "x, y = symbols('x y')\nresult = simplify(1/(x**(-1) + y**(-1)))"
+    },
+    {
+      "id": "T06-M2-20",
+      "module": 2,
+      "n": 42,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Operations with polynomials",
+      "stem": "The expression $(2x+3)^2-(2x-3)^2$ is equivalent to $kx$, where $k$ is a constant. What is the value of $k$?",
+      "answer": "24",
+      "solution": "Expanding both squares gives $\\left(4x^2+12x+9\\right)-\\left(4x^2-12x+9\\right)$; the $4x^2$ and $9$ cancel and the two middle terms add, leaving $24x$. Forgetting to distribute the minus sign over all three terms of the second square is what loses half of that.",
+      "steps": [
+        "$(2x+3)^2=4x^2+12x+9$ and $(2x-3)^2=4x^2-12x+9$.",
+        "Subtract: $12x-(-12x)=24x$.",
+        "So $k=24$."
+      ],
+      "verify": "x = symbols('x')\nresult = simplify(expand((2*x+3)**2 - (2*x-3)**2)/x)"
+    },
+    {
+      "id": "T06-M2-21",
+      "module": 2,
+      "n": 43,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Rational expressions",
+      "stem": "For $x\\neq 2$ and $x\\neq -2$, which expression is equivalent to $\\dfrac{x^2-x-6}{x^2-4}$?",
+      "choices": [
+        "$\\dfrac{x+3}{x+2}$",
+        "$\\dfrac{x+6}{4}$",
+        "$\\dfrac{x-3}{x+2}$",
+        "$\\dfrac{x-3}{x-2}$"
+      ],
+      "answer": "D",
+      "accepted": [
+        "(x-3)/(x-2)"
+      ],
+      "solution": "Factor both parts: $\\frac{(x-3)(x+2)}{(x+2)(x-2)}$. Only $x+2$ is common, so it alone cancels and $\\frac{x-3}{x-2}$ remains. Cancelling the $x^2$ terms first is the trap, because they are terms of a sum, not factors.",
+      "steps": [
+        "$x^2-x-6=(x-3)(x+2)$.",
+        "$x^2-4=(x+2)(x-2)$.",
+        "Cancel $x+2$ to get $\\dfrac{x-3}{x-2}$."
+      ],
+      "verify": "x = symbols('x')\nresult = simplify((x**2-x-6)/(x**2-4))"
+    },
+    {
+      "id": "T06-M2-22",
+      "module": 2,
+      "n": 44,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Rational expressions",
+      "stem": "For $x\\neq 1$ and $x\\neq -1$, which expression is equivalent to $\\dfrac{x}{x-1}-\\dfrac{1}{x+1}$?",
+      "choices": [
+        "$\\dfrac{x-1}{x^2-1}$",
+        "$\\dfrac{x^2+x-1}{x^2-1}$",
+        "$\\dfrac{x^2+1}{x^2-1}$",
+        "$\\dfrac{x^2-x+1}{x^2-1}$"
+      ],
+      "answer": "C",
+      "accepted": [
+        "(x**2+1)/(x**2-1)"
+      ],
+      "solution": "Over the common denominator $x^2-1$ the numerator is $x(x+1)-(x-1)=x^2+x-x+1=x^2+1$. The subtraction sign must reach both terms of $x-1$; dropping it on the $-1$ leaves $x^2+x-1$ instead.",
+      "steps": [
+        "Common denominator: $(x-1)(x+1)=x^2-1$.",
+        "Numerators: $x(x+1)-1(x-1)=x^2+x-x+1$.",
+        "That simplifies to $x^2+1$, so the difference is $\\dfrac{x^2+1}{x^2-1}$."
+      ],
+      "verify": "x = symbols('x')\nresult = simplify(x/(x-1) - 1/(x+1))"
+    }
+  ]
+}
