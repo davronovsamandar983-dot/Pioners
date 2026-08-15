@@ -768,7 +768,7 @@
       "difficulty": "M",
       "type": "MC",
       "skill": "Interpreting linear models",
-      "stem": "Water is pumped into an empty-looking pool that already holds some water. The amount of water in the pool, in liters, after $t$ minutes of pumping is given by $W(t)=25t+150$. Which statement about the pool must be true?",
+      "stem": "Water is pumped into a pool that already holds some water. The amount of water in the pool, in liters, after $t$ minutes of pumping is given by $W(t)=25t+150$. Which statement about the pool must be true?",
       "wide": true,
       "choices": [
         "The pool gains 25 liters of water each minute.",

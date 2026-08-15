@@ -144,7 +144,7 @@
       "stem": "In a right triangle, both acute angles measure $45^\\circ$ and each leg has length $7$. What is the length of the hypotenuse?",
       "figure": "\\begin{center}\n\\begin{tikzpicture}[scale=1,line join=round]\n\\draw[thick,satnavy] (0,0) -- (2.6,0) -- (0,2.6) -- cycle;\n\\draw[satnavy] (0,0) rectangle (0.26,0.26);\n\\node[below] at (1.3,0) {$7$};\n\\node[left] at (0,1.3) {$7$};\n\\node[above right] at (1.3,1.3) {$?$};\n\\node[anchor=south east,inner sep=1pt] at (2.48,0.06) {\\footnotesize $45^\\circ$};\n\\end{tikzpicture}\n\\end{center}\n\\satnote{Figure not drawn to scale.}",
       "choices": [
-        "$\\frac{7\\sqrt{2}}{2}$",
+        "$\\frac{7}{2}\\sqrt{2}$",
         "$7\\sqrt{2}$",
         "$7\\sqrt{3}$",
         "$14$"
@@ -156,7 +156,7 @@
         "The hypotenuse is the $x\\sqrt{2}$ side.",
         "So the hypotenuse is $7\\sqrt{2}$."
       ],
-      "verify": "v = sqrt(7**2 + 7**2)\nresult = \"$7\\\\sqrt{2}$\" if simplify(v - (7*sqrt(2))) == 0 else \"MISMATCH\""
+      "verify": "result = sqrt(7**2 + 7**2)"
     },
     {
       "id": "T19-M1-05",
@@ -290,7 +290,7 @@
         "The side opposite $60^\\circ$ is $x\\sqrt{3}$.",
         "So it has length $6\\sqrt{3}$."
       ],
-      "verify": "v = 6*sqrt(3)\nresult = \"$6\\\\sqrt{3}$\" if simplify(v - (6*sqrt(3))) == 0 else \"MISMATCH\""
+      "verify": "result = 6 * sqrt(3)"
     },
     {
       "id": "T19-M1-11",
@@ -490,7 +490,7 @@
         "That creates a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle with short leg $6$ and hypotenuse $12$.",
         "The altitude is the long leg, $6\\sqrt{3}$."
       ],
-      "verify": "v = sqrt(12**2 - 6**2)\nresult = \"$6\\\\sqrt{3}$\" if simplify(v - (6*sqrt(3))) == 0 else \"MISMATCH\""
+      "verify": "result = sqrt(12**2 - 6**2)"
     },
     {
       "id": "T19-M1-20",
@@ -544,16 +544,16 @@
       "figure": "\\begin{center}\n\\begin{tikzpicture}[scale=1,line join=round]\n\\draw[thick,satnavy] (0,0) -- (3.0,0) -- (0,1.732) -- cycle;\n\\draw[satnavy] (0,0) rectangle (0.26,0.26);\n\\node[above right] at (1.5,0.866) {$2x$};\n\\node[below left] at (0,0) {$C$};\n\\node[below right] at (3.0,0) {$B$};\n\\node[above] at (0,1.732) {$A$};\n\\end{tikzpicture}\n\\end{center}\n\\satnote{Figure not drawn to scale.}",
       "choices": [
         "$\\frac{1}{2}$",
-        "$\\sqrt{3}/3$",
-        "$\\sqrt{3}/2$",
+        "$\\frac{1}{3}\\sqrt{3}$",
+        "$\\frac{1}{2}\\sqrt{3}$",
         "$\\sqrt{3}$"
       ],
       "answer": "B",
-      "solution": "Set $BC=1$ and $AB=2$; the triangle is forced to be a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle, with $AC=\\sqrt{3}$. Then $\\tan A$ is opposite over adjacent, which is $\\frac{1}{\\sqrt{3}}$, and rationalising gives $\\frac{\\sqrt{3}}{3}$. Choosing $\\sqrt{3}$ means the ratio was inverted.",
+      "solution": "Set $BC=1$ and $AB=2$; the triangle is forced to be a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle, with $AC=\\sqrt{3}$. Then $\\tan A$ is opposite over adjacent, which is $\\frac{1}{\\sqrt{3}}$, and rationalising gives $\\frac{1}{3}\\sqrt{3}$. Choosing $\\sqrt{3}$ means the ratio was inverted.",
       "steps": [
         "Let $BC=1$, so $AB=2$ and $AC=\\sqrt{2^2-1^2}=\\sqrt{3}$.",
         "For angle $A$, the opposite leg is $BC=1$ and the adjacent leg is $AC=\\sqrt{3}$.",
-        "$\\tan A=\\dfrac{1}{\\sqrt{3}}=\\dfrac{\\sqrt{3}}{3}$."
+        "$\\tan A=\\dfrac{1}{\\sqrt{3}}=\\frac{1}{3}\\sqrt{3}$."
       ],
       "verify": "result = 1 / sqrt(3)"
     },
@@ -591,7 +591,7 @@
       "stem": "The hypotenuse of a $45^\\circ$-$45^\\circ$-$90^\\circ$ triangle has length $8\\sqrt{2}$. What is the length of each leg?",
       "choices": [
         "$4$",
-        "$\\frac{8\\sqrt{3}}{3}$",
+        "$\\frac{8}{3}\\sqrt{3}$",
         "$4\\sqrt{2}$",
         "$8$"
       ],
@@ -656,7 +656,7 @@
       "skill": "Special right triangles",
       "stem": "In a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle, the side opposite the $60^\\circ$ angle has length $9\\sqrt{3}$. What is the length of the hypotenuse?",
       "choices": [
-        "$\\frac{9\\sqrt{3}}{2}$",
+        "$\\frac{9}{2}\\sqrt{3}$",
         "$9$",
         "$9\\sqrt{3}$",
         "$18$"
@@ -886,7 +886,7 @@
         "Long leg $=$ short leg $\\times\\sqrt{3}$, so $12=BC\\sqrt{3}$.",
         "$BC=\\dfrac{12}{\\sqrt{3}}=4\\sqrt{3}$."
       ],
-      "verify": "v = 12/sqrt(3)\nresult = \"$4\\\\sqrt{3}$\" if simplify(v - (4*sqrt(3))) == 0 else \"MISMATCH\""
+      "verify": "result = 12 / sqrt(3)"
     },
     {
       "id": "T19-M2-16",
@@ -899,17 +899,17 @@
       "choices": [
         "$\\frac{1}{3}$",
         "$\\frac{2}{3}$",
-        "$\\frac{\\sqrt{5}}{3}$",
-        "$\\frac{\\sqrt{13}}{3}$"
+        "$\\frac{1}{3}\\sqrt{5}$",
+        "$\\frac{1}{3}\\sqrt{13}$"
       ],
       "answer": "C",
       "solution": "The legs of a right triangle need not be integers. With opposite $=2$ and hypotenuse $=3$, the adjacent leg is $\\sqrt{3^2-2^2}=\\sqrt{5}$, so the cosine carries a radical. Subtracting the numerators to get $\\frac{1}{3}$ is the trap.",
       "steps": [
         "$\\sin A=\\frac{2}{3}$ gives opposite $=2$, hypotenuse $=3$.",
         "The adjacent leg is $\\sqrt{9-4}=\\sqrt{5}$.",
-        "$\\cos A=\\dfrac{\\sqrt{5}}{3}$."
+        "$\\cos A=\\frac{1}{3}\\sqrt{5}$."
       ],
-      "verify": "v = sqrt(1 - Rational(2,3)**2)\nresult = \"$\\\\frac{\\\\sqrt{5}}{3}$\" if simplify(v - (sqrt(5)/3)) == 0 else \"MISMATCH\""
+      "verify": "result = sqrt(1 - Rational(2, 3)**2)"
     },
     {
       "id": "T19-M2-17",
@@ -1025,12 +1025,12 @@
       "stem": "In right triangle $ABC$, angle $C$ is a right angle and the measure of angle $A$ is twice the measure of angle $B$. What is the value of $\\dfrac{AC}{AB}$?",
       "choices": [
         "$\\frac{1}{2}$",
-        "$\\frac{\\sqrt{2}}{2}$",
-        "$\\frac{\\sqrt{3}}{2}$",
-        "$\\frac{2\\sqrt{3}}{3}$"
+        "$\\frac{1}{2}\\sqrt{2}$",
+        "$\\frac{1}{2}\\sqrt{3}$",
+        "$\\frac{2}{3}\\sqrt{3}$"
       ],
       "answer": "A",
-      "solution": "The acute angles are complementary, so $2B+B=90$ and $B=30^\\circ$. $\\overline{AC}$ is the leg opposite $B$ and $\\overline{AB}$ is the hypotenuse, so the ratio is $\\sin B=\\sin 30^\\circ=\\frac{1}{2}$; reading it as $\\sin A$ instead gives $\\frac{\\sqrt{3}}{2}$.",
+      "solution": "The acute angles are complementary, so $2B+B=90$ and $B=30^\\circ$. $\\overline{AC}$ is the leg opposite $B$ and $\\overline{AB}$ is the hypotenuse, so the ratio is $\\sin B=\\sin 30^\\circ=\\frac{1}{2}$; reading it as $\\sin A$ instead gives $\\frac{1}{2}\\sqrt{3}$.",
       "steps": [
         "$A+B=90^\\circ$ and $A=2B$, so $3B=90^\\circ$ and $B=30^\\circ$.",
         "$\\overline{AC}$ is opposite angle $B$ and $\\overline{AB}$ is the hypotenuse, so $\\dfrac{AC}{AB}=\\sin B$.",

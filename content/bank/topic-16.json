@@ -667,7 +667,7 @@
         "A sample of residents chosen as they leave a fitness center on a weekday evening."
       ],
       "answer": "D",
-      "solution": "A sample taken where the behavior being measured is concentrated is biased upward; the three random methods give every resident a chance of selection and so have no such tilt.",
+      "solution": "A sample taken where the behavior being measured is concentrated is biased upward; the three random methods choose residents without regard to how much they exercise, so none of them tilts the estimate high.",
       "steps": [
         "Ask which method systematically favors one kind of resident.",
         "People leaving a fitness center exercise far more than a typical resident."
