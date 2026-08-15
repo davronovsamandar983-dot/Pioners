@@ -10,7 +10,9 @@ book/*.pdf
 book/generated/
 book/topics/*.tex
 book/solutions/*.tex
-dist/
+# the built book itself is published in the repo so it can be downloaded
+dist/*
+!dist/SAT-Math-Mastery.pdf
 
 # Python
 __pycache__/
