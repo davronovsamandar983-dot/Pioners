@@ -78,7 +78,7 @@
         "Subtract $5$ from both sides: $3x\\le 15$.",
         "Divide both sides by $3$: $x\\le 5$."
       ],
-      "verify": "x = symbols('x')\nb = solve(Eq(3*x + 5, 20), x)[0]\nresult = '$x\\\\le ' + str(b) + '$'"
+      "verify": "x = symbols('x')\nb = solve(Eq(3*x + 5, 20), x)[0]\nresult = '$x\\\\le %s$' % b"
     },
     {
       "id": "T05-M1-02",
@@ -139,7 +139,7 @@
         "Substitute $(0,0)$: $0>2(0)-1$, that is $0>-1$, which is true.",
         "The other three pairs give $1>1$, $3>3$ and $4>5$, all false."
       ],
-      "verify": "pts = [(0, 0), (1, 1), (2, 3), (3, 4)]\ngood = [p for p in pts if p[1] > 2*p[0] - 1]\nresult = sp.Tuple(*good[0])"
+      "verify": "pts = [(0, 0), (1, 1), (2, 3), (3, 4)]\ngood = [p for p in pts if p[1] > 2*p[0] - 1]\nresult = '$(%s,%s)$' % (good[0][0], good[0][1])"
     },
     {
       "id": "T05-M1-05",
@@ -205,7 +205,7 @@
         "Subtract $5$ from both sides: $-x\\ge -3$.",
         "Divide both sides by $-1$ and reverse the symbol: $x\\le 3$."
       ],
-      "verify": "x = symbols('x')\nb = solve(Eq(5 - x, 2), x)[0]\nresult = '$x\\\\le ' + str(b) + '$'"
+      "verify": "x = symbols('x')\nb = solve(Eq(5 - x, 2), x)[0]\nresult = '$x\\\\le %s$' % b"
     },
     {
       "id": "T05-M1-08",
@@ -291,7 +291,7 @@
         "Test $(3,3)$: $3+3=6<5$ is false. Test $(4,1)$: $1\\ge 2(4)-3=5$ is false.",
         "Test $(0,0)$: $0\\ge -3$ is true and $0+0=0<5$ is true."
       ],
-      "verify": "pts = [(2, 4), (3, 3), (4, 1), (0, 0)]\ngood = [p for p in pts if p[1] >= 2*p[0] - 3 and p[0] + p[1] < 5]\nresult = sp.Tuple(*good[0])"
+      "verify": "pts = [(2, 4), (3, 3), (4, 1), (0, 0)]\ngood = [p for p in pts if p[1] >= 2*p[0] - 3 and p[0] + p[1] < 5]\nresult = '$(%s,%s)$' % (good[0][0], good[0][1])"
     },
     {
       "id": "T05-M1-12",
@@ -331,7 +331,7 @@
         "The line is dashed, so the symbol is strict.",
         "The shading lies above the line, so $y>2x-2$."
       ],
-      "verify": "m = S(0 - (-2))/S(1 - 0)\nresult = '$y>' + str(m) + 'x-2$'"
+      "verify": "m = S(0 - (-2))/S(1 - 0)\nresult = '$y>%sx-2$' % m"
     },
     {
       "id": "T05-M1-14",
@@ -354,7 +354,7 @@
         "Multiply both sides by $4$: $243+s\\ge 320$.",
         "Subtract $243$: $s\\ge 77$."
       ],
-      "verify": "s = symbols('s')\nb = solve(Eq((76 + 85 + 82 + s)/4, 80), s)[0]\nresult = '$s\\\\ge ' + str(b) + '$'"
+      "verify": "s = symbols('s')\nb = solve(Eq((76 + 85 + 82 + s)/4, 80), s)[0]\nresult = '$s\\\\ge %s$' % b"
     },
     {
       "id": "T05-M1-15",
@@ -504,7 +504,7 @@
         "Distribute: $4x-2\\ge 3x+12$.",
         "Subtract $3x$ and add $2$: $x\\ge 14$."
       ],
-      "verify": "x = symbols('x')\nb = solve(Eq((2*x - 1)/3, (x + 4)/2), x)[0]\nresult = '$x\\\\ge ' + str(b) + '$'"
+      "verify": "x = symbols('x')\nb = solve(Eq((2*x - 1)/3, (x + 4)/2), x)[0]\nresult = '$x\\\\ge %s$' % b"
     },
     {
       "id": "T05-M1-22",
@@ -527,7 +527,7 @@
         "Add $6$: $9>\\dfrac{3}{2}x$.",
         "Multiply by $\\dfrac{2}{3}$: $6>x$, that is $x<6$."
       ],
-      "verify": "x = symbols('x')\nb = solve(Eq(-x/2 + 3, x - 6), x)[0]\nresult = (x < b)"
+      "verify": "x = symbols('x')\nb = solve(Eq(-x/2 + 3, x - 6), x)[0]\nresult = '$x<%s$' % b"
     },
     {
       "id": "T05-M2-01",
@@ -549,7 +549,7 @@
         "Divide both sides by $-3$.",
         "Because $-3$ is negative, reverse the symbol: $x\\le -4$."
       ],
-      "verify": "x = symbols('x')\nb = solve(Eq(-3*x, 12), x)[0]\nresult = '$x\\\\le ' + str(b) + '$'"
+      "verify": "x = symbols('x')\nb = solve(Eq(-3*x, 12), x)[0]\nresult = '$x\\\\le %s$' % b"
     },
     {
       "id": "T05-M2-02",
@@ -609,7 +609,7 @@
         "$(0,0)$ gives $0\\le 12$; $(1,1)$ gives $5\\le 12$; $(3,2)$ gives $6+6=12\\le 12$.",
         "$(6,1)$ gives $12+3=15$, and $15\\le 12$ is false."
       ],
-      "verify": "pts = [(0, 0), (1, 1), (3, 2), (6, 1)]\nbad = [p for p in pts if 2*p[0] + 3*p[1] > 12]\nresult = sp.Tuple(*bad[0])"
+      "verify": "pts = [(0, 0), (1, 1), (3, 2), (6, 1)]\nbad = [p for p in pts if 2*p[0] + 3*p[1] > 12]\nresult = '$(%s,%s)$' % (bad[0][0], bad[0][1])"
     },
     {
       "id": "T05-M2-05",
@@ -632,7 +632,7 @@
         "Subtract $3x$: $2x-10<0$, so $2x<10$.",
         "Divide by $2$: $x<5$."
       ],
-      "verify": "x = symbols('x')\nb = solve(Eq(5*(x - 2), 3*x), x)[0]\nresult = (x < b)"
+      "verify": "x = symbols('x')\nb = solve(Eq(5*(x - 2), 3*x), x)[0]\nresult = '$x<%s$' % b"
     },
     {
       "id": "T05-M2-06",
@@ -670,7 +670,7 @@
         "The total must satisfy $152+p\\ge 240$.",
         "Subtract $152$: $p\\ge 88$."
       ],
-      "verify": "p = symbols('p')\nb = solve(Eq(152 + p, 240), p)[0]\nresult = '$p\\\\ge ' + str(b) + '$'"
+      "verify": "p = symbols('p')\nb = solve(Eq(152 + p, 240), p)[0]\nresult = '$p\\\\ge %s$' % b"
     },
     {
       "id": "T05-M2-08",
@@ -755,7 +755,7 @@
         "Add $2$ to both sides: $\\dfrac{3}{4}x\\le 9$.",
         "Multiply both sides by $\\dfrac{4}{3}$: $x\\le 12$."
       ],
-      "verify": "x = symbols('x')\nb = solve(Eq(Rational(3, 4)*x - 2, 7), x)[0]\nresult = '$x\\\\le ' + str(b) + '$'"
+      "verify": "x = symbols('x')\nb = solve(Eq(Rational(3, 4)*x - 2, 7), x)[0]\nresult = '$x\\\\le %s$' % b"
     },
     {
       "id": "T05-M2-12",
@@ -801,7 +801,7 @@
         "Subtract $1$: $-\\dfrac{x}{4}>2$.",
         "Multiply both sides by $-4$ and reverse the symbol: $x<-8$."
       ],
-      "verify": "x = symbols('x')\nb = solve(Eq(-x/4 + 1, 3), x)[0]\nresult = (x < b)"
+      "verify": "x = symbols('x')\nb = solve(Eq(-x/4 + 1, 3), x)[0]\nresult = '$x<%s$' % b"
     },
     {
       "id": "T05-M2-14",
@@ -926,7 +926,7 @@
         "Add $2x$ and $6$ to both sides: $12\\le 6x$.",
         "Divide by $6$: $2\\le x$, that is $x\\ge 2$."
       ],
-      "verify": "x = symbols('x')\nb = solve(Eq(2*(3 - x), 4*x - 6), x)[0]\nresult = '$x\\\\ge ' + str(b) + '$'"
+      "verify": "x = symbols('x')\nb = solve(Eq(2*(3 - x), 4*x - 6), x)[0]\nresult = '$x\\\\ge %s$' % b"
     },
     {
       "id": "T05-M2-20",
@@ -966,7 +966,7 @@
         "$(2,0)$: $3(2)-0=6$, and $6>6$ is false because the symbol is strict.",
         "$(3,-2)$: $9+2=11>6$ is true, and $3+2(-2)=-1\\le 4$ is true."
       ],
-      "verify": "pts = [(0, 2), (2, 0), (3, -2), (4, 1)]\ngood = [p for p in pts if 3*p[0] - p[1] > 6 and p[0] + 2*p[1] <= 4]\nresult = sp.Tuple(*good[0])"
+      "verify": "pts = [(0, 2), (2, 0), (3, -2), (4, 1)]\ngood = [p for p in pts if 3*p[0] - p[1] > 6 and p[0] + 2*p[1] <= 4]\nresult = '$(%s,%s)$' % (good[0][0], good[0][1])"
     },
     {
       "id": "T05-M2-22",
@@ -990,7 +990,7 @@
         "$(0,3)$ fails $x\\ge 1$; $(2,1)$ fails $y\\ge 2$.",
         "$(3,4)$ fails $y\\le -x+6$, since $4\\le 3$ is false."
       ],
-      "verify": "pts = [(2, 3), (0, 3), (2, 1), (3, 4)]\ngood = [p for p in pts if p[1] <= -p[0] + 6 and p[1] >= 2 and p[0] >= 1]\nresult = sp.Tuple(*good[0])"
+      "verify": "pts = [(2, 3), (0, 3), (2, 1), (3, 4)]\ngood = [p for p in pts if p[1] <= -p[0] + 6 and p[1] >= 2 and p[0] >= 1]\nresult = '$(%s,%s)$' % (good[0][0], good[0][1])"
     }
   ]
 }

@@ -72,16 +72,16 @@
       "difficulty": "E",
       "type": "MC",
       "skill": "Vertex form",
-      "stem": "The function $f$ is defined by $f(x)=(x-4)^2+7$. What is the vertex of the graph of $y=f(x)$ in the $xy$-plane?",
-      "choices": ["$(-4,7)$", "$(4,-7)$", "$(4,7)$", "$(7,4)$"],
+      "stem": "The function $f$ is defined by $f(x)=(x-4)^2+7$. The vertex of the graph of $y=f(x)$ in the $xy$-plane is the point $(h,k)$. What is the value of $h$?",
+      "choices": ["$-7$", "$-4$", "$4$", "$7$"],
       "answer": "C",
-      "solution": "Vertex form is $f(x)=a(x-h)^2+k$ with vertex $(h,k)$. The squared part is zero when $x=4$, which is where the parabola turns, and the value there is $7$. The number inside the parentheses is subtracted, so $x-4$ gives $h=+4$, not $-4$.",
+      "solution": "Vertex form is $f(x)=a(x-h)^2+k$, whose vertex is $(h,k)$. The parabola turns where the squared part is zero, at $x=4$, so $h=4$. Because the form subtracts $h$, the number written in the parentheses is already the $x$-coordinate, not its opposite; the constant $7$ is $k$, the other coordinate.",
       "steps": [
         "Compare $f(x)=(x-4)^2+7$ with $f(x)=a(x-h)^2+k$.",
-        "$x-h=x-4$, so $h=4$; the constant added is $k=7$.",
-        "The vertex is $(h,k)=(4,7)$."
+        "$x-h=x-4$, so $h=4$ (and $k=7$).",
+        "The vertex is $(4,7)$, so $h=4$."
       ],
-      "verify": "result = (4, 7)"
+      "verify": "result = 4"
     },
     {
       "id": "T08-M1-02",
@@ -734,7 +734,7 @@
       "type": "MC",
       "skill": "Matching a graph",
       "figure": "\\begin{center}\\begin{tikzpicture}\\begin{axis}[width=6.4cm,height=5.2cm,axis lines=middle,xlabel={$x$},ylabel={$y$},xlabel style={below right},ylabel style={above left},xmin=-7.2,xmax=3.2,ymin=-11,ymax=8,xtick={-6,-4,-2,2},ytick={-9,-6,-3,3,6},tick label style={font=\\tiny},grid=both,grid style={line width=0.1pt,draw=satline},samples=101]\\addplot[thick,satblue,domain=-6.1:2.1]{(x+2)^2-9};\\end{axis}\\end{tikzpicture}\\end{center}",
-      "stem": "The graph of the quadratic function $f$ is shown in the $xy$-plane above. Which equation could define $f$?",
+      "stem": "A quadratic function $f$ has the graph shown in the $xy$-plane above. Which of the following could be an equation of that graph?",
       "choices": [
         "$y=(x+2)^2-9$",
         "$y=(x-2)^2-9$",

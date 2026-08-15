@@ -503,7 +503,7 @@
         "The residuals are $-1$, $2$, $-2$, $2$, $-1$.",
         "Three residuals are negative, so the model overpredicts on $3$ days."
       ],
-      "verify": "a = [12,24,29,42,48]\nb = [13,22,31,40,49]\nresult = len([1 for i in range(5) if a[i] - b[i] < 0])"
+      "verify": "result = len([1 for d in [(12,13),(24,22),(29,31),(42,40),(48,49)] if d[0] - d[1] < 0])"
     },
     {
       "id": "T14-M1-21",
@@ -857,7 +857,7 @@
         "The line is $\\hat{y}=2x+1$, giving predictions $3,5,7,9,11,13,15$.",
         "The points $(1,5)$, $(3,10)$ and $(5,15)$ lie above it, so the count is $3$."
       ],
-      "verify": "pts = [(1,5),(2,4),(3,10),(4,8),(5,15),(6,12),(7,13)]\nresult = len([1 for a, b in pts if b > 2*a + 1])"
+      "verify": "result = len([1 for a, b in [(1,5),(2,4),(3,10),(4,8),(5,15),(6,12),(7,13)] if b > 2*a + 1])"
     },
     {
       "id": "T14-M2-15",

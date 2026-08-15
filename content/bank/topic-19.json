@@ -370,12 +370,12 @@
       "skill": "The Pythagorean theorem",
       "stem": "The legs of a right triangle have lengths $8$ and $15$. What is the perimeter of the triangle?",
       "choices": [
+        "$17$",
         "$23$",
         "$\\sqrt{161}+23$",
-        "$40$",
-        "$120$"
+        "$40$"
       ],
-      "answer": "C",
+      "answer": "D",
       "solution": "Find the missing side first, then add all three. The $8$-$15$-$17$ triple is worth memorising: it turns a two-step problem into a one-step one.",
       "steps": [
         "The hypotenuse is $\\sqrt{8^2+15^2}=\\sqrt{289}=17$.",
@@ -591,11 +591,11 @@
       "stem": "The hypotenuse of a $45^\\circ$-$45^\\circ$-$90^\\circ$ triangle has length $8\\sqrt{2}$. What is the length of each leg?",
       "choices": [
         "$4$",
-        "$8$",
-        "$8\\sqrt{2}$",
-        "$16$"
+        "$\\frac{8\\sqrt{3}}{3}$",
+        "$4\\sqrt{2}$",
+        "$8$"
       ],
-      "answer": "B",
+      "answer": "D",
       "solution": "Going from hypotenuse to leg reverses the ratio, so you divide by $\\sqrt{2}$ instead of multiplying. Because the hypotenuse was already written with a $\\sqrt{2}$, the division is clean.",
       "steps": [
         "The ratio is leg $:$ leg $:$ hypotenuse $=x:x:x\\sqrt{2}$.",
@@ -656,12 +656,12 @@
       "skill": "Special right triangles",
       "stem": "In a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle, the side opposite the $60^\\circ$ angle has length $9\\sqrt{3}$. What is the length of the hypotenuse?",
       "choices": [
+        "$\\frac{9\\sqrt{3}}{2}$",
         "$9$",
         "$9\\sqrt{3}$",
-        "$18$",
-        "$18\\sqrt{3}$"
+        "$18$"
       ],
-      "answer": "C",
+      "answer": "D",
       "solution": "Work back to the short leg first: the long leg is the short leg times $\\sqrt{3}$, so the short leg is $9$. The hypotenuse is then twice the short leg.",
       "steps": [
         "The long leg is $x\\sqrt{3}$, so $x\\sqrt{3}=9\\sqrt{3}$ and $x=9$.",
@@ -764,12 +764,12 @@
       "skill": "Similar right triangles",
       "stem": "Right triangles $ABC$ and $XYZ$ are similar, with right angles at $B$ and $Y$ and with angle $A$ corresponding to angle $X$. If $AB=8$, $BC=6$, and $XY=20$, what is the length of $\\overline{XZ}$?",
       "choices": [
+        "$10$",
         "$15$",
-        "$25$",
-        "$26$",
-        "$30$"
+        "$\\sqrt{436}$",
+        "$25$"
       ],
-      "answer": "B",
+      "answer": "D",
       "solution": "Similar triangles share every angle, so every trigonometric ratio matches; the sides just scale. Find the scale factor from the matched pair $\\overline{AB}$ and $\\overline{XY}$, then scale the hypotenuse.",
       "steps": [
         "$AC=\\sqrt{8^2+6^2}=10$.",
