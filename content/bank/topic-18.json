@@ -78,7 +78,7 @@
       {
         "kind": "worked",
         "title": "Worked example 1 -- an angle chase",
-        "body": "\\textbf{In the figure below, $\\ell \\parallel m$. The angle at $A$ between $\\overline{AB}$ and line $\\ell$ measures $38^{\\circ}$, and $\\angle ACB$ measures $71^{\\circ}$, where $B$ and $C$ lie on $m$. What is the measure of $\\angle BAC$?}\n\n\\textbf{Step 1 -- transfer the angle across the parallel lines.} The $38^{\\circ}$ angle at $A$ and $\\angle ABC$ are alternate interior angles for $\\ell \\parallel m$ with transversal $\\overline{AB}$, so $\\angle ABC = 38^{\\circ}$.\n\n\\textbf{Step 2 -- use the triangle.} In $\\triangle ABC$ the three angles add to $180^{\\circ}$:\n$$\\angle BAC = 180^{\\circ}-38^{\\circ}-71^{\\circ}=71^{\\circ}.$$\n\n\\textbf{Why this is the right path.} The question gives an angle at one line and asks about a triangle sitting on the other; the parallel-line facts are the only bridge between the two. Once the $38^{\\circ}$ has been carried down to $B$, the problem is a one-line angle sum. Note the trap: $180^{\\circ}-71^{\\circ}=109^{\\circ}$ is the supplement of the answer, and it will be one of the choices."
+        "body": "\\textbf{Lines $\\ell$ and $m$ are parallel. Point $A$ lies on $\\ell$, points $B$ and $C$ lie on $m$, the angle at $A$ between $\\overline{AB}$ and line $\\ell$ measures $38^{\\circ}$, and $\\angle ACB$ measures $74^{\\circ}$. What is the measure of $\\angle BAC$?}\n\n\\textbf{Step 1 -- transfer the angle across the parallel lines.} The $38^{\\circ}$ angle at $A$ and $\\angle ABC$ are alternate interior angles for $\\ell \\parallel m$ with transversal $\\overline{AB}$, so $\\angle ABC = 38^{\\circ}$.\n\n\\textbf{Step 2 -- use the triangle.} In $\\triangle ABC$ the three angles add to $180^{\\circ}$:\n$$\\angle BAC = 180^{\\circ}-38^{\\circ}-74^{\\circ}=68^{\\circ}.$$\n\n\\textbf{Why this is the right path.} The question gives an angle at one line and asks about a triangle sitting on the other; the parallel-line facts are the only bridge between the two. Once the $38^{\\circ}$ has been carried down to $B$, the problem is a one-line angle sum. Note the trap: $180^{\\circ}-68^{\\circ}=112^{\\circ}$, the supplement of the answer, is exactly the sort of value the test offers as a choice."
       },
       {
         "kind": "worked",
@@ -248,7 +248,7 @@
       "type": "MC",
       "skill": "Angle relationships and parallel lines",
       "stem": "In the figure, $\\ell \\parallel m$ and the two marked angles are corresponding angles. What is the measure, in degrees, of each marked angle?",
-      "figure": "\\begin{center}\n\\begin{tikzpicture}[line width=0.7pt,scale=0.95]\n\\draw (-2.9,1.5) -- (2.9,1.5) node[right,font=\\small] {$\\ell$};\n\\draw (-2.9,0) -- (2.9,0) node[right,font=\\small] {$m$};\n\\draw (-2.0,-0.71) -- (2.0,2.14) node[above,font=\\small] {$t$};\n\\node[font=\\small] at (2.15,1.88) {$(3x+20)^{\\circ}$};\n\\node[font=\\small] at (0.38,0.30) {$(x+60)^{\\circ}$};\n\\end{tikzpicture}\n\\par\n\\satnote{Figure not drawn to scale.}\n\\end{center}",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[line width=0.7pt,scale=0.95]\n\\draw (-2.9,1.5) -- (2.9,1.5) node[right,font=\\small] {$\\ell$};\n\\draw (-2.9,0) -- (2.9,0) node[right,font=\\small] {$m$};\n\\draw (-2.0,-0.71) -- (2.0,2.14) node[above,font=\\small] {$t$};\n\\node[font=\\small] at (2.35,1.80) {$(3x+20)^{\\circ}$};\n\\node[font=\\small] at (0.38,0.30) {$(x+60)^{\\circ}$};\n\\end{tikzpicture}\n\\par\n\\satnote{Figure not drawn to scale.}\n\\end{center}",
       "choices": [
         "$20$",
         "$25$",
@@ -597,7 +597,7 @@
       "type": "MC",
       "skill": "Angle relationships and parallel lines",
       "stem": "In the figure, line $\\ell$ is parallel to line $m$ and both are crossed by transversal $t$. What is the value of $x$?",
-      "figure": "\\begin{center}\n\\begin{tikzpicture}[line width=0.7pt,scale=0.95]\n\\draw (-2.9,1.5) -- (2.9,1.5) node[right,font=\\small] {$\\ell$};\n\\draw (-2.9,0) -- (2.9,0) node[right,font=\\small] {$m$};\n\\draw (-2.0,-0.71) -- (2.0,2.14) node[above,font=\\small] {$t$};\n\\node[font=\\small] at (2.15,1.88) {$72^{\\circ}$};\n\\node[font=\\small] at (-0.46,-0.36) {$x^{\\circ}$};\n\\end{tikzpicture}\n\\par\n\\satnote{Figure not drawn to scale.}\n\\end{center}",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[line width=0.7pt,scale=0.95]\n\\draw (-2.9,1.5) -- (2.9,1.5) node[right,font=\\small] {$\\ell$};\n\\draw (-2.9,0) -- (2.9,0) node[right,font=\\small] {$m$};\n\\draw (-2.0,-0.71) -- (2.0,2.14) node[above,font=\\small] {$t$};\n\\node[font=\\small] at (2.35,1.80) {$72^{\\circ}$};\n\\node[font=\\small] at (-0.46,-0.36) {$x^{\\circ}$};\n\\end{tikzpicture}\n\\par\n\\satnote{Figure not drawn to scale.}\n\\end{center}",
       "choices": [
         "$18$",
         "$72$",
