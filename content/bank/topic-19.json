@@ -1,0 +1,1042 @@
+{
+  "number": 19,
+  "topic": "Right Triangles and Trigonometry",
+  "domain": "Geometry and Trigonometry",
+  "skills": [
+    "The Pythagorean theorem",
+    "Special right triangles",
+    "Sine, cosine and tangent",
+    "Complementary angle identities"
+  ],
+  "lesson": {
+    "intro": "Every right-triangle question on the Digital SAT comes down to three tools: the Pythagorean theorem, the two special right triangles, and the three trigonometric ratios. The test almost never asks you to evaluate a trigonometric function of a messy angle; instead it hands you a ratio, or a pair of complementary angles, and asks what follows. Learn the triples on sight, keep the ratios straight, and these questions become some of the fastest points on the section.",
+    "blocks": [
+      {
+        "kind": "section",
+        "title": "The Pythagorean theorem",
+        "body": "In a right triangle, the two sides that meet at the right angle are the \\textbf{legs} and the side across from the right angle is the \\textbf{hypotenuse}. The hypotenuse is always the longest side, which gives you a free sanity check on every answer.\n\nIf the legs are $a$ and $b$ and the hypotenuse is $c$, then\n\\[a^2+b^2=c^2.\\]\nUsed forwards, it produces the hypotenuse from two legs. Used backwards, it produces a leg: $a^2=c^2-b^2$. Deciding which side is $c$ before you write anything is the whole game."
+      },
+      {
+        "kind": "formula",
+        "title": "Triples worth knowing on sight",
+        "body": "$3$-$4$-$5$ \\qquad $5$-$12$-$13$ \\qquad $8$-$15$-$17$ \\qquad $7$-$24$-$25$\n\nAny multiple of a triple is also a right triangle: $6$-$8$-$10$, $9$-$12$-$15$, $10$-$24$-$26$, $15$-$36$-$39$. If two sides of a right triangle match a scaled triple, write the third side down without squaring anything."
+      },
+      {
+        "kind": "section",
+        "title": "The two special right triangles",
+        "body": "Two right triangles have side ratios you are expected to know cold, because the test uses them to avoid giving you a calculator-dependent answer.\n\nA $45^\\circ$-$45^\\circ$-$90^\\circ$ triangle is half a square. A $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle is half an equilateral triangle, which is why its short leg is exactly half the hypotenuse."
+      },
+      {
+        "kind": "formula",
+        "title": "Special right triangle ratios",
+        "body": "$45^\\circ$-$45^\\circ$-$90^\\circ$: \\quad $\\text{leg} : \\text{leg} : \\text{hypotenuse} = x : x : x\\sqrt{2}$\n\n$30^\\circ$-$60^\\circ$-$90^\\circ$: \\quad $\\text{short leg} : \\text{long leg} : \\text{hypotenuse} = x : x\\sqrt{3} : 2x$\n\nIn both, the shortest side faces the smallest angle. Going from a short side up to a long one you \\emph{multiply}; going from a long side down to a short one you \\emph{divide}."
+      },
+      {
+        "kind": "concept",
+        "title": "SOHCAHTOA",
+        "body": "For an acute angle $\\theta$ in a right triangle,\n\\[\\sin\\theta=\\frac{\\text{opposite}}{\\text{hypotenuse}},\\qquad\\cos\\theta=\\frac{\\text{adjacent}}{\\text{hypotenuse}},\\qquad\\tan\\theta=\\frac{\\text{opposite}}{\\text{adjacent}}.\\]\n\\textbf{Opposite} and \\textbf{adjacent} are read relative to the angle you named, so the same side is opposite one acute angle and adjacent to the other. The hypotenuse never changes roles.\n\nBecause a single ratio names two sides, one ratio plus the Pythagorean theorem rebuilds the entire triangle. If $\\sin\\theta=\\frac{3}{5}$, set opposite $=3k$ and hypotenuse $=5k$; the third side is $4k$, and every other ratio follows."
+      },
+      {
+        "kind": "concept",
+        "title": "The identity the test loves: $\\sin(x^\\circ)=\\cos\\left((90-x)^\\circ\\right)$",
+        "body": "The two acute angles of a right triangle add to $90^\\circ$. The leg opposite one of them is the leg adjacent to the other, so\n\\[\\sin(x^\\circ)=\\cos\\left((90-x)^\\circ\\right)\\qquad\\text{and}\\qquad\\cos(x^\\circ)=\\sin\\left((90-x)^\\circ\\right).\\]\nTwo consequences drive almost every SAT question on this:\n\\begin{itemize}\\setlength{\\itemsep}{2pt}\n\\item If $\\sin A=\\cos B$ for acute angles, then $A+B=90^\\circ$. A trigonometric equation becomes a \\emph{linear} equation.\n\\item In right triangle $ABC$ with the right angle at $C$, $\\sin A=\\cos B$ and $\\cos A=\\sin B$ always---no angle measure required.\n\\end{itemize}\nTangent behaves differently: complementary angles have \\emph{reciprocal} tangents, $\\tan(x^\\circ)=\\dfrac{1}{\\tan\\left((90-x)^\\circ\\right)}$."
+      },
+      {
+        "kind": "trap",
+        "title": "Four mistakes that cost real points",
+        "body": "\\begin{itemize}\\setlength{\\itemsep}{3pt}\n\\item \\textbf{Using a leg as the hypotenuse.} In a ladder or wire problem the slanted object is always the hypotenuse. Adding $10^2+26^2$ instead of subtracting is the most common error in the topic.\n\\item \\textbf{Swapping opposite and adjacent.} $\\tan A=\\frac{3}{4}$ and $\\tan A=\\frac{4}{3}$ describe different triangles, and both appear among the choices.\n\\item \\textbf{Inverting a ratio.} $\\sin\\theta=\\frac{8}{17}$ means the hypotenuse is on the bottom; $\\frac{17}{8}$ is always a distractor.\n\\item \\textbf{Swapping the special-triangle multipliers.} $\\sqrt{2}$ belongs to $45^\\circ$-$45^\\circ$-$90^\\circ$ and $\\sqrt{3}$ to $30^\\circ$-$60^\\circ$-$90^\\circ$; the hypotenuse of the second is $2x$, not $x\\sqrt{3}$.\n\\end{itemize}"
+      },
+      {
+        "kind": "strategy",
+        "title": "How to attack these fast",
+        "body": "\\begin{enumerate}\\setlength{\\itemsep}{3pt}\n\\item \\textbf{Mark the right angle first,} then label the hypotenuse. Everything else is a leg.\n\\item \\textbf{Check for a triple} before reaching for the calculator. Two sides from a scaled triple give the third for free.\n\\item \\textbf{When only a ratio is given, draw the triangle} with those two sides and find the third. Never look for an angle measure you were not given.\n\\item \\textbf{If a sine equals a cosine, add the angles to $90$.} Do not evaluate anything.\n\\item \\textbf{Figures are not drawn to scale,} so trust the labels, not the picture---but do trust that the longest label belongs to the hypotenuse.\n\\end{enumerate}"
+      },
+      {
+        "kind": "worked",
+        "title": "Worked example 1 --- a ratio, backwards",
+        "body": "\\textit{In right triangle $ABC$, angle $C$ is a right angle, $\\tan A=\\frac{5}{12}$, and $AB=26$. What is the length of $\\overline{BC}$?}\n\n$\\tan A=\\frac{5}{12}$ names the two legs: the leg opposite $A$ is $5k$ and the leg adjacent is $12k$. The Pythagorean theorem gives the hypotenuse $13k$, since $5$-$12$-$13$ is a triple.\n\nWe are told the hypotenuse $AB=26$, so $13k=26$ and $k=2$. The side $\\overline{BC}$ is the leg opposite $A$, so $BC=5k=\\mathbf{10}$.\n\nNotice what we never did: we never found the measure of angle $A$. The ratio alone was enough."
+      },
+      {
+        "kind": "worked",
+        "title": "Worked example 2 --- a special triangle in disguise",
+        "body": "\\textit{A ramp rises from level ground to a platform $7$ feet high, making a $30^\\circ$ angle with the ground. How long is the ramp?}\n\nThe ramp, the ground and the vertical height form a right triangle. The height is opposite the $30^\\circ$ angle, so it is the \\emph{short leg}; the ramp is the hypotenuse.\n\nIn a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle the hypotenuse is twice the short leg, so the ramp is $2\\cdot 7=\\mathbf{14}$ feet.\n\nThe trap answer is $7\\sqrt{3}\\approx 12.1$, which is the horizontal run---the long leg---not the ramp itself. Always ask which side the question named."
+      },
+      {
+        "kind": "worked",
+        "title": "Worked example 3 --- sine equals cosine",
+        "body": "\\textit{In a right triangle, one acute angle measures $(2x+5)^\\circ$ and $\\sin\\left((2x+5)^\\circ\\right)=\\cos\\left((3x)^\\circ\\right)$. What is the value of $x$?}\n\nA sine equals a cosine exactly when the angles are complementary, so\n\\[(2x+5)+3x=90.\\]\nThen $5x+5=90$, so $5x=85$ and $x=\\mathbf{17}$.\n\nCheck: the angles are $39^\\circ$ and $51^\\circ$, which do add to $90^\\circ$. The entire trigonometric dressing collapsed into a two-line linear equation---which is exactly why this item type is worth practising until it is automatic."
+      }
+    ]
+  },
+  "problems": [
+    {
+      "id": "T19-M1-01",
+      "module": 1,
+      "n": 1,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "The Pythagorean theorem",
+      "stem": "In the right triangle shown, the two legs have lengths $6$ and $8$. What is the length of the hypotenuse?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[scale=1,line join=round]\n\\draw[thick,satnavy] (0,0) -- (3.2,0) -- (0,2.2) -- cycle;\n\\draw[satnavy] (0,0) rectangle (0.26,0.26);\n\\node[below] at (1.6,0) {$8$};\n\\node[left] at (0,1.1) {$6$};\n\\node[above right] at (1.6,1.1) {$c$};\n\\end{tikzpicture}\n\\end{center}\n\\satnote{Figure not drawn to scale.}",
+      "choices": [
+        "$\\sqrt{28}$",
+        "$10$",
+        "$14$",
+        "$48$"
+      ],
+      "answer": "B",
+      "solution": "The hypotenuse is the side across from the right angle, so it is the $c$ in $a^2+b^2=c^2$ and the legs are $a$ and $b$. Adding the squares of the legs gives $c^2$, and the last step---the one students skip---is taking the square root.",
+      "steps": [
+        "Write $6^2+8^2=c^2$.",
+        "Then $36+64=100$, so $c^2=100$.",
+        "Take the positive square root: $c=10$."
+      ],
+      "verify": "result = sqrt(6**2 + 8**2)"
+    },
+    {
+      "id": "T19-M1-02",
+      "module": 1,
+      "n": 2,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "The Pythagorean theorem",
+      "stem": "A right triangle has a hypotenuse of length $13$ and one leg of length $5$. What is the length of the other leg?",
+      "choices": [
+        "$8$",
+        "$12$",
+        "$\\sqrt{194}$",
+        "$18$"
+      ],
+      "answer": "B",
+      "solution": "Running the theorem backwards means subtracting, not adding: the square of a leg equals the square of the hypotenuse minus the square of the other leg. The $5$-$12$-$13$ triple appears constantly on the test.",
+      "steps": [
+        "Write $5^2+b^2=13^2$.",
+        "Then $b^2=169-25=144$.",
+        "So $b=12$."
+      ],
+      "verify": "result = sqrt(13**2 - 5**2)"
+    },
+    {
+      "id": "T19-M1-03",
+      "module": 1,
+      "n": 3,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "The Pythagorean theorem",
+      "stem": "The legs of a right triangle have lengths $9$ and $12$. What is the length of the hypotenuse of the triangle?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[scale=1,line join=round]\n\\draw[thick,satnavy] (0,0) -- (3.2,0) -- (0,2.2) -- cycle;\n\\draw[satnavy] (0,0) rectangle (0.26,0.26);\n\\node[below] at (1.6,0) {$12$};\n\\node[left] at (0,1.1) {$9$};\n\\node[above right] at (1.6,1.1) {$x$};\n\\end{tikzpicture}\n\\end{center}\n\\satnote{Figure not drawn to scale.}",
+      "answer": "$15$",
+      "solution": "This is the $3$-$4$-$5$ triple multiplied by $3$. Recognising a scaled triple lets you write the answer down without squaring anything, which is exactly the time saving the test is measuring.",
+      "steps": [
+        "$9=3\\cdot 3$ and $12=3\\cdot 4$, so the triangle is a $3$-$4$-$5$ triangle scaled by $3$.",
+        "The hypotenuse is $3\\cdot 5=15$.",
+        "Check: $81+144=225=15^2$."
+      ],
+      "verify": "result = sqrt(9**2 + 12**2)"
+    },
+    {
+      "id": "T19-M1-04",
+      "module": 1,
+      "n": 4,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Special right triangles",
+      "stem": "In a right triangle, both acute angles measure $45^\\circ$ and each leg has length $7$. What is the length of the hypotenuse?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[scale=1,line join=round]\n\\draw[thick,satnavy] (0,0) -- (2.6,0) -- (0,2.6) -- cycle;\n\\draw[satnavy] (0,0) rectangle (0.26,0.26);\n\\node[below] at (1.3,0) {$7$};\n\\node[left] at (0,1.3) {$7$};\n\\node[above right] at (1.3,1.3) {$?$};\n\\node[anchor=south east,inner sep=1pt] at (2.48,0.06) {\\footnotesize $45^\\circ$};\n\\end{tikzpicture}\n\\end{center}\n\\satnote{Figure not drawn to scale.}",
+      "choices": [
+        "$\\frac{7\\sqrt{2}}{2}$",
+        "$7\\sqrt{2}$",
+        "$7\\sqrt{3}$",
+        "$14$"
+      ],
+      "answer": "B",
+      "solution": "In a $45^\\circ$-$45^\\circ$-$90^\\circ$ triangle the sides are in the ratio $1:1:\\sqrt{2}$, so the hypotenuse is a leg times $\\sqrt{2}$. Multiplying, never dividing, is what takes you from leg to hypotenuse.",
+      "steps": [
+        "The side ratio is $x : x : x\\sqrt{2}$ with $x=7$.",
+        "The hypotenuse is the $x\\sqrt{2}$ side.",
+        "So the hypotenuse is $7\\sqrt{2}$."
+      ],
+      "verify": "v = sqrt(7**2 + 7**2)\nresult = \"$7\\\\sqrt{2}$\" if simplify(v - (7*sqrt(2))) == 0 else \"MISMATCH\""
+    },
+    {
+      "id": "T19-M1-05",
+      "module": 1,
+      "n": 5,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Special right triangles",
+      "stem": "In a right triangle, the hypotenuse has length $10$ and one of the acute angles measures $30^\\circ$. What is the length of the side opposite the $30^\\circ$ angle?",
+      "choices": [
+        "$5$",
+        "$5\\sqrt{2}$",
+        "$5\\sqrt{3}$",
+        "$10\\sqrt{3}$"
+      ],
+      "answer": "A",
+      "solution": "In a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle the sides are in the ratio $1:\\sqrt{3}:2$, in the order short leg, long leg, hypotenuse. The shortest side always sits opposite the smallest angle, so it is half the hypotenuse.",
+      "steps": [
+        "The side ratio is $x : x\\sqrt{3} : 2x$ with $2x=10$.",
+        "So $x=5$.",
+        "The side opposite $30^\\circ$ is the $x$ side, so it is $5$."
+      ],
+      "verify": "result = 10/2"
+    },
+    {
+      "id": "T19-M1-06",
+      "module": 1,
+      "n": 6,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Sine, cosine and tangent",
+      "stem": "In the right triangle shown, angle $A$ is an acute angle. What is the value of $\\sin A$?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[scale=1,line join=round]\n\\draw[thick,satnavy] (0,0) -- (3.2,0) -- (0,2.2) -- cycle;\n\\draw[satnavy] (0,0) rectangle (0.26,0.26);\n\\node[below] at (1.6,0) {$8$};\n\\node[left] at (0,1.1) {$15$};\n\\node[above right] at (1.6,1.1) {$17$};\n\\node[below left] at (0,0) {$C$};\n\\node[below right] at (3.2,0) {$B$};\n\\node[above] at (0,2.2) {$A$};\n\\end{tikzpicture}\n\\end{center}\n\\satnote{Figure not drawn to scale.}",
+      "choices": [
+        "$\\frac{8}{17}$",
+        "$\\frac{8}{15}$",
+        "$\\frac{15}{17}$",
+        "$\\frac{17}{8}$"
+      ],
+      "answer": "A",
+      "solution": "SOH: sine is opposite over hypotenuse. The side opposite angle $A$ is the one that does not touch $A$, which here is the side of length $8$, and the hypotenuse is always the side across from the right angle.",
+      "steps": [
+        "Identify the side opposite $A$: it has length $8$.",
+        "Identify the hypotenuse: it has length $17$.",
+        "$\\sin A=\\dfrac{\\text{opposite}}{\\text{hypotenuse}}=\\dfrac{8}{17}$."
+      ],
+      "verify": "result = Rational(8, 17)"
+    },
+    {
+      "id": "T19-M1-07",
+      "module": 1,
+      "n": 7,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Complementary angle identities",
+      "stem": "If $\\sin(x^\\circ)=\\frac{3}{5}$, what is the value of $\\cos\\left((90-x)^\\circ\\right)$?",
+      "choices": [
+        "$\\frac{3}{5}$",
+        "$\\frac{3}{4}$",
+        "$\\frac{4}{5}$",
+        "$\\frac{5}{3}$"
+      ],
+      "answer": "A",
+      "solution": "The sine of an angle and the cosine of its complement are the same number, because in a right triangle the side opposite one acute angle is the side adjacent to the other. No angle measure is needed---the identity $\\sin(x^\\circ)=\\cos\\left((90-x)^\\circ\\right)$ hands you the answer.",
+      "steps": [
+        "The two angles $x^\\circ$ and $(90-x)^\\circ$ are complementary.",
+        "For complementary angles, sine and cosine swap: $\\cos\\left((90-x)^\\circ\\right)=\\sin(x^\\circ)$.",
+        "So the value is $\\frac{3}{5}$."
+      ],
+      "verify": "result = Rational(3, 5)"
+    },
+    {
+      "id": "T19-M1-08",
+      "module": 1,
+      "n": 8,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "The Pythagorean theorem",
+      "stem": "A $26$-foot ladder leans against a vertical wall, with the base of the ladder $10$ feet from the wall on level ground. How many feet up the wall does the top of the ladder reach?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[scale=1,line join=round]\n\\draw[thick,satnavy] (0,0) -- (1.6,0) -- (0,3.0) -- cycle;\n\\draw[satnavy] (0,0) rectangle (0.26,0.26);\n\\node[below] at (0.8,0) {$10$};\n\\node[left] at (0,1.5) {$h$};\n\\node[above right] at (0.8,1.5) {$26$};\n\\end{tikzpicture}\n\\end{center}\n\\satnote{Figure not drawn to scale.}",
+      "answer": "$24$",
+      "solution": "The ladder is the hypotenuse because it is the slanted side, opposite the right angle formed by the wall and the ground. Putting the ladder in as a leg is the single most common error in this problem type.",
+      "steps": [
+        "The wall and the ground meet at a right angle, so the ladder is the hypotenuse.",
+        "Write $10^2+h^2=26^2$.",
+        "Then $h^2=676-100=576$, so $h=24$."
+      ],
+      "verify": "result = sqrt(26**2 - 10**2)"
+    },
+    {
+      "id": "T19-M1-09",
+      "module": 1,
+      "n": 9,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Sine, cosine and tangent",
+      "stem": "In right triangle $ABC$, angle $C$ is a right angle, $\\tan A=\\frac{3}{4}$, and $AC=20$. What is the length of $\\overline{BC}$?",
+      "choices": [
+        "$12$",
+        "$15$",
+        "$25$",
+        "$\\frac{80}{3}$"
+      ],
+      "answer": "B",
+      "solution": "TOA: tangent is opposite over adjacent, and both of those sides are legs. For angle $A$ the opposite leg is $\\overline{BC}$ and the adjacent leg is $\\overline{AC}$, so the tangent equation links exactly the two lengths in the question.",
+      "steps": [
+        "$\\tan A=\\dfrac{BC}{AC}$.",
+        "Substitute: $\\dfrac{3}{4}=\\dfrac{BC}{20}$.",
+        "So $BC=20\\cdot\\dfrac{3}{4}=15$."
+      ],
+      "verify": "result = 20 * Rational(3, 4)"
+    },
+    {
+      "id": "T19-M1-10",
+      "module": 1,
+      "n": 10,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Special right triangles",
+      "stem": "In a right triangle, one acute angle measures $60^\\circ$ and the side opposite the $30^\\circ$ angle has length $6$. What is the length of the side opposite the $60^\\circ$ angle?",
+      "choices": [
+        "$3\\sqrt{3}$",
+        "$6\\sqrt{2}$",
+        "$6\\sqrt{3}$",
+        "$12$"
+      ],
+      "answer": "C",
+      "solution": "The long leg sits opposite the $60^\\circ$ angle and equals the short leg times $\\sqrt{3}$; the hypotenuse is the short leg times $2$. Mixing those two multipliers is the classic slip here.",
+      "steps": [
+        "The short leg is the side opposite $30^\\circ$, so $x=6$.",
+        "The side opposite $60^\\circ$ is $x\\sqrt{3}$.",
+        "So it has length $6\\sqrt{3}$."
+      ],
+      "verify": "v = 6*sqrt(3)\nresult = \"$6\\\\sqrt{3}$\" if simplify(v - (6*sqrt(3))) == 0 else \"MISMATCH\""
+    },
+    {
+      "id": "T19-M1-11",
+      "module": 1,
+      "n": 11,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Similar right triangles",
+      "stem": "Right triangles $ABC$ and $DEF$ have right angles at $C$ and $F$, and angle $A$ is congruent to angle $D$. If $AC=6$, $BC=8$, and $DF=9$, what is the length of $\\overline{EF}$?",
+      "choices": [
+        "$10$",
+        "$11$",
+        "$12$",
+        "$15$"
+      ],
+      "answer": "C",
+      "solution": "Two right triangles with a pair of congruent acute angles are similar, so corresponding sides are in a constant ratio. Find the scale factor from the pair of sides you know completely, then apply it once.",
+      "steps": [
+        "$\\overline{AC}$ and $\\overline{DF}$ correspond, so the scale factor is $\\dfrac{9}{6}=\\dfrac{3}{2}$.",
+        "$\\overline{BC}$ and $\\overline{EF}$ correspond.",
+        "So $EF=8\\cdot\\dfrac{3}{2}=12$."
+      ],
+      "verify": "result = 8 * Rational(9, 6)"
+    },
+    {
+      "id": "T19-M1-12",
+      "module": 1,
+      "n": 12,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Complementary angle identities",
+      "stem": "In right triangle $PQR$, angle $R$ is a right angle and $\\cos P=\\frac{7}{25}$. What is the value of $\\sin Q$?",
+      "choices": [
+        "$\\frac{7}{25}$",
+        "$\\frac{7}{24}$",
+        "$\\frac{24}{25}$",
+        "$\\frac{25}{7}$"
+      ],
+      "answer": "A",
+      "solution": "Angles $P$ and $Q$ are the two acute angles of a right triangle, so they add to $90^\\circ$. The side adjacent to $P$ is the side opposite $Q$, which makes $\\sin Q$ and $\\cos P$ the same ratio of the same two sides.",
+      "steps": [
+        "$P+Q=90^\\circ$ because angle $R$ takes the other $90^\\circ$.",
+        "For complementary angles $\\sin Q=\\cos P$.",
+        "So $\\sin Q=\\frac{7}{25}$."
+      ],
+      "verify": "result = Rational(7, 25)"
+    },
+    {
+      "id": "T19-M1-13",
+      "module": 1,
+      "n": 13,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Special right triangles",
+      "stem": "A vertical pole stands on level ground. The angle of elevation of the sun is $45^\\circ$, and the pole's shadow is $18$ feet long. What is the height, in feet, of the pole?",
+      "choices": [
+        "$9\\sqrt{2}$",
+        "$9\\sqrt{3}$",
+        "$18$",
+        "$18\\sqrt{2}$"
+      ],
+      "answer": "C",
+      "solution": "The pole, its shadow and the sun's ray form a right triangle whose acute angles are both $45^\\circ$, so it is isosceles: the height equals the shadow length. The $18\\sqrt{2}$ answer is the sun's ray, not the pole.",
+      "steps": [
+        "The pole and the shadow are the two legs of a right triangle.",
+        "The angle of elevation is $45^\\circ$, so the other acute angle is also $45^\\circ$ and the legs are equal.",
+        "The height equals the shadow: $18$ feet."
+      ],
+      "verify": "result = 18"
+    },
+    {
+      "id": "T19-M1-14",
+      "module": 1,
+      "n": 14,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "The Pythagorean theorem",
+      "stem": "The legs of a right triangle have lengths $8$ and $15$. What is the perimeter of the triangle?",
+      "choices": [
+        "$23$",
+        "$\\sqrt{161}+23$",
+        "$40$",
+        "$120$"
+      ],
+      "answer": "C",
+      "solution": "Find the missing side first, then add all three. The $8$-$15$-$17$ triple is worth memorising: it turns a two-step problem into a one-step one.",
+      "steps": [
+        "The hypotenuse is $\\sqrt{8^2+15^2}=\\sqrt{289}=17$.",
+        "Add the three sides: $8+15+17$.",
+        "The perimeter is $40$."
+      ],
+      "verify": "result = 8 + 15 + sqrt(8**2 + 15**2)"
+    },
+    {
+      "id": "T19-M1-15",
+      "module": 1,
+      "n": 15,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Sine, cosine and tangent",
+      "stem": "In right triangle $ABC$, angle $C$ is a right angle and $\\sin A=\\frac{3}{5}$. What is the value of $\\cos A$?",
+      "answer": "$\\frac{4}{5}$",
+      "accepted": [
+        "$0.8$",
+        "$4/5$",
+        ".8"
+      ],
+      "solution": "A ratio alone is enough to rebuild the whole triangle. Read $\\sin A=\\frac{3}{5}$ as opposite $=3$ and hypotenuse $=5$, get the third side from the Pythagorean theorem, then read off the cosine.",
+      "steps": [
+        "$\\sin A=\\frac{3}{5}$ means opposite $=3k$ and hypotenuse $=5k$.",
+        "The adjacent leg is $\\sqrt{(5k)^2-(3k)^2}=4k$.",
+        "$\\cos A=\\dfrac{4k}{5k}=\\dfrac{4}{5}$."
+      ],
+      "verify": "result = sqrt(1 - Rational(3, 5)**2)"
+    },
+    {
+      "id": "T19-M1-16",
+      "module": 1,
+      "n": 16,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Similar right triangles",
+      "stem": "In right triangle $ABC$, angle $B$ is a right angle, $AB=9$, and $BC=12$. Point $D$ lies on $\\overline{AC}$ so that $\\overline{BD}$ is perpendicular to $\\overline{AC}$. What is the length of $\\overline{BD}$?",
+      "choices": [
+        "$\\frac{20}{3}$",
+        "$\\frac{36}{5}$",
+        "$\\frac{15}{2}$",
+        "$\\frac{48}{5}$"
+      ],
+      "answer": "B",
+      "solution": "The area of the triangle can be computed two ways: from the two legs, or from the hypotenuse and the altitude drawn to it. Setting those equal is faster than chasing the similar triangles.",
+      "steps": [
+        "$AC=\\sqrt{9^2+12^2}=15$.",
+        "Area $=\\frac{1}{2}(9)(12)=54$ and also $\\frac{1}{2}(15)(BD)$.",
+        "So $BD=\\dfrac{2\\cdot 54}{15}=\\dfrac{36}{5}$."
+      ],
+      "verify": "result = Rational(9*12, 15)"
+    },
+    {
+      "id": "T19-M1-17",
+      "module": 1,
+      "n": 17,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Complementary angle identities",
+      "stem": "The acute angles of a right triangle measure $a^\\circ$ and $b^\\circ$. If $\\sin(a^\\circ)=\\frac{5}{13}$, what is the value of $\\cos(b^\\circ)\\cdot\\tan(a^\\circ)$?",
+      "choices": [
+        "$\\frac{25}{169}$",
+        "$\\frac{25}{156}$",
+        "$\\frac{60}{169}$",
+        "$\\frac{144}{169}$"
+      ],
+      "answer": "B",
+      "solution": "Two ideas stack here. First $a+b=90$, so $\\cos(b^\\circ)=\\sin(a^\\circ)=\\frac{5}{13}$. Second, a sine of $\\frac{5}{13}$ forces a $5$-$12$-$13$ triangle, so the tangent is $\\frac{5}{12}$.",
+      "steps": [
+        "Since $a+b=90$, $\\cos(b^\\circ)=\\sin(a^\\circ)=\\frac{5}{13}$.",
+        "From $\\sin(a^\\circ)=\\frac{5}{13}$ the legs are $5$ and $12$, so $\\tan(a^\\circ)=\\frac{5}{12}$.",
+        "Multiply: $\\frac{5}{13}\\cdot\\frac{5}{12}=\\frac{25}{156}$."
+      ],
+      "verify": "result = Rational(5, 13) * Rational(5, 12)"
+    },
+    {
+      "id": "T19-M1-18",
+      "module": 1,
+      "n": 18,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Complementary angle identities",
+      "stem": "In a right triangle, one acute angle measures $(3x+10)^\\circ$ and $\\sin\\left((3x+10)^\\circ\\right)=\\cos\\left((x+20)^\\circ\\right)$. What is the value of $x$?",
+      "answer": "$15$",
+      "solution": "When a sine equals a cosine, the two angles are complements. Turning the trigonometric equation into the linear equation $(3x+10)+(x+20)=90$ is the whole problem.",
+      "steps": [
+        "$\\sin\\theta=\\cos\\varphi$ when $\\theta+\\varphi=90$.",
+        "So $(3x+10)+(x+20)=90$, giving $4x+30=90$.",
+        "Then $4x=60$, so $x=15$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve((3*x+10) + (x+20) - 90, x)[0]"
+    },
+    {
+      "id": "T19-M1-19",
+      "module": 1,
+      "n": 19,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Special right triangles",
+      "stem": "An equilateral triangle has side length $12$. What is the length of an altitude of the triangle?",
+      "choices": [
+        "$6$",
+        "$6\\sqrt{2}$",
+        "$6\\sqrt{3}$",
+        "$12\\sqrt{3}$"
+      ],
+      "answer": "C",
+      "solution": "An altitude of an equilateral triangle cuts it into two $30^\\circ$-$60^\\circ$-$90^\\circ$ triangles whose hypotenuse is a full side and whose short leg is half a side. The altitude is the long leg, so it is the short leg times $\\sqrt{3}$.",
+      "steps": [
+        "The altitude splits the base into two segments of length $6$.",
+        "That creates a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle with short leg $6$ and hypotenuse $12$.",
+        "The altitude is the long leg, $6\\sqrt{3}$."
+      ],
+      "verify": "v = sqrt(12**2 - 6**2)\nresult = \"$6\\\\sqrt{3}$\" if simplify(v - (6*sqrt(3))) == 0 else \"MISMATCH\""
+    },
+    {
+      "id": "T19-M1-20",
+      "module": 1,
+      "n": 20,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Sine, cosine and tangent",
+      "stem": "In a right triangle, $\\theta$ is an acute angle and $\\tan\\theta=\\frac{20}{21}$. What is the value of $\\sin\\theta$?",
+      "choices": [
+        "$\\frac{20}{29}$",
+        "$\\frac{21}{29}$",
+        "$\\frac{20}{21}$",
+        "$\\frac{29}{20}$"
+      ],
+      "answer": "A",
+      "solution": "A tangent gives you both legs, so the Pythagorean theorem gives the hypotenuse and every other ratio follows. Here $20$-$21$-$29$ is the triangle; picking $\\frac{21}{29}$ means the opposite and adjacent legs were swapped.",
+      "steps": [
+        "$\\tan\\theta=\\frac{20}{21}$ means opposite $=20$ and adjacent $=21$.",
+        "The hypotenuse is $\\sqrt{20^2+21^2}=\\sqrt{841}=29$.",
+        "$\\sin\\theta=\\dfrac{20}{29}$."
+      ],
+      "verify": "result = 20 / sqrt(20**2 + 21**2)"
+    },
+    {
+      "id": "T19-M1-21",
+      "module": 1,
+      "n": 21,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Sine, cosine and tangent",
+      "stem": "A straight ramp $26$ feet long runs from level ground to a loading dock. The ramp makes an angle $\\theta$ with the ground, where $\\sin\\theta=\\frac{5}{13}$. How many feet above the ground is the top of the ramp?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[scale=1,line join=round]\n\\draw[thick,satnavy] (0,0) -- (3.4,0) -- (0,1.4) -- cycle;\n\\draw[satnavy] (0,0) rectangle (0.26,0.26);\n\\node[left] at (0,0.7) {$h$};\n\\node[above right] at (1.7,0.7) {$26$};\n\\node[anchor=south east,inner sep=1pt] at (3.28,0.06) {\\footnotesize $\\theta$};\n\\end{tikzpicture}\n\\end{center}\n\\satnote{Figure not drawn to scale.}",
+      "answer": "$10$",
+      "solution": "The ramp is the hypotenuse and the height is the side opposite $\\theta$, so sine is exactly the ratio that connects them. Multiplying the hypotenuse by the sine is the one step required.",
+      "steps": [
+        "$\\sin\\theta=\\dfrac{\\text{height}}{\\text{ramp}}$.",
+        "So $\\dfrac{5}{13}=\\dfrac{h}{26}$.",
+        "Then $h=26\\cdot\\dfrac{5}{13}=10$."
+      ],
+      "verify": "result = 26 * Rational(5, 13)"
+    },
+    {
+      "id": "T19-M1-22",
+      "module": 1,
+      "n": 22,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Sine, cosine and tangent",
+      "stem": "In right triangle $ABC$, angle $C$ is a right angle and the length of $\\overline{AB}$ is twice the length of $\\overline{BC}$. What is the value of $\\tan A$?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[scale=1,line join=round]\n\\draw[thick,satnavy] (0,0) -- (3.0,0) -- (0,1.732) -- cycle;\n\\draw[satnavy] (0,0) rectangle (0.26,0.26);\n\\node[above right] at (1.5,0.866) {$2x$};\n\\node[below left] at (0,0) {$C$};\n\\node[below right] at (3.0,0) {$B$};\n\\node[above] at (0,1.732) {$A$};\n\\end{tikzpicture}\n\\end{center}\n\\satnote{Figure not drawn to scale.}",
+      "choices": [
+        "$\\frac{1}{2}$",
+        "$\\sqrt{3}/3$",
+        "$\\sqrt{3}/2$",
+        "$\\sqrt{3}$"
+      ],
+      "answer": "B",
+      "solution": "Set $BC=1$ and $AB=2$; the triangle is forced to be a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle, with $AC=\\sqrt{3}$. Then $\\tan A$ is opposite over adjacent, which is $\\frac{1}{\\sqrt{3}}$, and rationalising gives $\\frac{\\sqrt{3}}{3}$. Choosing $\\sqrt{3}$ means the ratio was inverted.",
+      "steps": [
+        "Let $BC=1$, so $AB=2$ and $AC=\\sqrt{2^2-1^2}=\\sqrt{3}$.",
+        "For angle $A$, the opposite leg is $BC=1$ and the adjacent leg is $AC=\\sqrt{3}$.",
+        "$\\tan A=\\dfrac{1}{\\sqrt{3}}=\\dfrac{\\sqrt{3}}{3}$."
+      ],
+      "verify": "result = 1 / sqrt(3)"
+    },
+    {
+      "id": "T19-M2-01",
+      "module": 2,
+      "n": 23,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "The Pythagorean theorem",
+      "stem": "In the right triangle shown, one leg has length $20$ and the hypotenuse has length $25$. What is the length of the other leg?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[scale=1,line join=round]\n\\draw[thick,satnavy] (0,0) -- (3.2,0) -- (0,2.4) -- cycle;\n\\draw[satnavy] (0,0) rectangle (0.26,0.26);\n\\node[below] at (1.6,0) {$20$};\n\\node[left] at (0,1.2) {$b$};\n\\node[above right] at (1.6,1.2) {$25$};\n\\end{tikzpicture}\n\\end{center}\n\\satnote{Figure not drawn to scale.}",
+      "choices": [
+        "$5$",
+        "$15$",
+        "$\\sqrt{1025}$",
+        "$45$"
+      ],
+      "answer": "B",
+      "solution": "The hypotenuse is the longest side, so it must be the $c$ in $a^2+b^2=c^2$; the missing side is found by subtracting. This is the $3$-$4$-$5$ triple scaled by $5$.",
+      "steps": [
+        "Write $20^2+b^2=25^2$.",
+        "Then $b^2=625-400=225$.",
+        "So $b=15$."
+      ],
+      "verify": "result = sqrt(25**2 - 20**2)"
+    },
+    {
+      "id": "T19-M2-02",
+      "module": 2,
+      "n": 24,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Special right triangles",
+      "stem": "The hypotenuse of a $45^\\circ$-$45^\\circ$-$90^\\circ$ triangle has length $8\\sqrt{2}$. What is the length of each leg?",
+      "choices": [
+        "$4$",
+        "$8$",
+        "$8\\sqrt{2}$",
+        "$16$"
+      ],
+      "answer": "B",
+      "solution": "Going from hypotenuse to leg reverses the ratio, so you divide by $\\sqrt{2}$ instead of multiplying. Because the hypotenuse was already written with a $\\sqrt{2}$, the division is clean.",
+      "steps": [
+        "The ratio is leg $:$ leg $:$ hypotenuse $=x:x:x\\sqrt{2}$.",
+        "So $x\\sqrt{2}=8\\sqrt{2}$.",
+        "Then $x=8$."
+      ],
+      "verify": "result = 8*sqrt(2) / sqrt(2)"
+    },
+    {
+      "id": "T19-M2-03",
+      "module": 2,
+      "n": 25,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Sine, cosine and tangent",
+      "stem": "In right triangle $ABC$, angle $B$ is a right angle, $AB=24$, and $BC=7$. What is the value of $\\tan A$?",
+      "answer": "$\\frac{7}{24}$",
+      "accepted": [
+        "$7/24$"
+      ],
+      "solution": "Tangent uses the two legs only, and in a right triangle at $B$ both $\\overline{AB}$ and $\\overline{BC}$ are legs. The side opposite $A$ is $\\overline{BC}$, so the hypotenuse never enters the calculation.",
+      "steps": [
+        "The leg opposite $A$ is $\\overline{BC}=7$.",
+        "The leg adjacent to $A$ is $\\overline{AB}=24$.",
+        "$\\tan A=\\dfrac{7}{24}$."
+      ],
+      "verify": "result = Rational(7, 24)"
+    },
+    {
+      "id": "T19-M2-04",
+      "module": 2,
+      "n": 26,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Complementary angle identities",
+      "stem": "Angles $A$ and $B$ are the two acute angles of a right triangle. If $\\tan A=\\frac{5}{12}$, what is the value of $\\tan B$?",
+      "choices": [
+        "$\\frac{5}{13}$",
+        "$\\frac{5}{12}$",
+        "$\\frac{13}{12}$",
+        "$\\frac{12}{5}$"
+      ],
+      "answer": "D",
+      "solution": "What is opposite angle $A$ is adjacent to angle $B$ and vice versa, so the tangents of complementary angles are reciprocals. Answering $\\frac{5}{12}$ means the identity was applied as if tangent behaved like sine and cosine.",
+      "steps": [
+        "$\\tan A=\\frac{5}{12}$ means the leg opposite $A$ is $5$ and the leg adjacent is $12$.",
+        "Those roles swap for angle $B$: opposite $12$, adjacent $5$.",
+        "So $\\tan B=\\frac{12}{5}$."
+      ],
+      "verify": "result = 1 / Rational(5, 12)"
+    },
+    {
+      "id": "T19-M2-05",
+      "module": 2,
+      "n": 27,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "Special right triangles",
+      "stem": "In a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle, the side opposite the $60^\\circ$ angle has length $9\\sqrt{3}$. What is the length of the hypotenuse?",
+      "choices": [
+        "$9$",
+        "$9\\sqrt{3}$",
+        "$18$",
+        "$18\\sqrt{3}$"
+      ],
+      "answer": "C",
+      "solution": "Work back to the short leg first: the long leg is the short leg times $\\sqrt{3}$, so the short leg is $9$. The hypotenuse is then twice the short leg.",
+      "steps": [
+        "The long leg is $x\\sqrt{3}$, so $x\\sqrt{3}=9\\sqrt{3}$ and $x=9$.",
+        "The hypotenuse is $2x$.",
+        "So the hypotenuse is $18$."
+      ],
+      "verify": "result = 2 * (9*sqrt(3) / sqrt(3))"
+    },
+    {
+      "id": "T19-M2-06",
+      "module": 2,
+      "n": 28,
+      "difficulty": "E",
+      "type": "MC",
+      "skill": "The Pythagorean theorem",
+      "stem": "A support wire runs from the top of a vertical $24$-foot pole to a point on level ground $7$ feet from the base of the pole. What is the length, in feet, of the wire?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[scale=1,line join=round]\n\\draw[thick,satnavy] (0,0) -- (1.4,0) -- (0,3.0) -- cycle;\n\\draw[satnavy] (0,0) rectangle (0.26,0.26);\n\\node[below] at (0.7,0) {$7$};\n\\node[left] at (0,1.5) {$24$};\n\\node[above right] at (0.7,1.5) {$w$};\n\\end{tikzpicture}\n\\end{center}\n\\satnote{Figure not drawn to scale.}",
+      "choices": [
+        "$17$",
+        "$\\sqrt{527}$",
+        "$25$",
+        "$31$"
+      ],
+      "answer": "C",
+      "solution": "The pole and the ground are perpendicular, so the wire is the hypotenuse---the longest side. Any answer smaller than $24$ can be rejected immediately.",
+      "steps": [
+        "The pole and ground form the legs: $24$ and $7$.",
+        "The wire is the hypotenuse: $w^2=24^2+7^2=576+49=625$.",
+        "So $w=25$."
+      ],
+      "verify": "result = sqrt(24**2 + 7**2)"
+    },
+    {
+      "id": "T19-M2-07",
+      "module": 2,
+      "n": 29,
+      "difficulty": "E",
+      "type": "SPR",
+      "skill": "Complementary angle identities",
+      "stem": "In right triangle $DEF$, angle $F$ is a right angle and $\\sin D=\\frac{8}{17}$. What is the value of $\\cos E$?",
+      "answer": "$\\frac{8}{17}$",
+      "accepted": [
+        "$8/17$"
+      ],
+      "solution": "Angles $D$ and $E$ are complementary, and the leg opposite $D$ is the leg adjacent to $E$. Both ratios are therefore the same leg over the same hypotenuse, so no computation is needed at all.",
+      "steps": [
+        "$D+E=90^\\circ$.",
+        "For complementary angles, $\\cos E=\\sin D$.",
+        "So $\\cos E=\\frac{8}{17}$."
+      ],
+      "verify": "result = Rational(8, 17)"
+    },
+    {
+      "id": "T19-M2-08",
+      "module": 2,
+      "n": 30,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Sine, cosine and tangent",
+      "stem": "In right triangle $ABC$, angle $C$ is a right angle, $BC=9$, and $\\sin A=\\frac{3}{5}$. What is the length of $\\overline{AB}$?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[scale=1,line join=round]\n\\draw[thick,satnavy] (0,0) -- (3.2,0) -- (0,2.2) -- cycle;\n\\draw[satnavy] (0,0) rectangle (0.26,0.26);\n\\node[below] at (1.6,0) {$9$};\n\\node[above right] at (1.6,1.1) {$?$};\n\\node[below left] at (0,0) {$C$};\n\\node[below right] at (3.2,0) {$B$};\n\\node[above] at (0,2.2) {$A$};\n\\end{tikzpicture}\n\\end{center}\n\\satnote{Figure not drawn to scale.}",
+      "choices": [
+        "$\\frac{27}{5}$",
+        "$\\frac{45}{4}$",
+        "$12$",
+        "$15$"
+      ],
+      "answer": "D",
+      "solution": "$\\overline{BC}$ is opposite angle $A$ and $\\overline{AB}$ is the hypotenuse, so those two sides are exactly the ones sine relates. Since the unknown is in the denominator, you divide rather than multiply.",
+      "steps": [
+        "$\\sin A=\\dfrac{BC}{AB}$, so $\\dfrac{3}{5}=\\dfrac{9}{AB}$.",
+        "Cross-multiply: $3\\cdot AB=45$.",
+        "So $AB=15$."
+      ],
+      "verify": "result = 9 / Rational(3, 5)"
+    },
+    {
+      "id": "T19-M2-09",
+      "module": 2,
+      "n": 31,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "Complementary angle identities",
+      "stem": "In a right triangle, one acute angle measures $(4x-6)^\\circ$ and $\\cos\\left((4x-6)^\\circ\\right)=\\sin\\left((x+16)^\\circ\\right)$. What is the value of $x$?",
+      "answer": "$16$",
+      "solution": "A cosine equals a sine exactly when the two angles are complementary, so the trigonometry collapses into one linear equation. The angle expressions themselves never need to be evaluated.",
+      "steps": [
+        "$\\cos\\theta=\\sin\\varphi$ when $\\theta+\\varphi=90$.",
+        "So $(4x-6)+(x+16)=90$, giving $5x+10=90$.",
+        "Then $5x=80$, so $x=16$."
+      ],
+      "verify": "x = symbols('x')\nresult = solve((4*x-6) + (x+16) - 90, x)[0]"
+    },
+    {
+      "id": "T19-M2-10",
+      "module": 2,
+      "n": 32,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Similar right triangles",
+      "stem": "Right triangles $ABC$ and $XYZ$ are similar, with right angles at $B$ and $Y$ and with angle $A$ corresponding to angle $X$. If $AB=8$, $BC=6$, and $XY=20$, what is the length of $\\overline{XZ}$?",
+      "choices": [
+        "$15$",
+        "$25$",
+        "$26$",
+        "$30$"
+      ],
+      "answer": "B",
+      "solution": "Similar triangles share every angle, so every trigonometric ratio matches; the sides just scale. Find the scale factor from the matched pair $\\overline{AB}$ and $\\overline{XY}$, then scale the hypotenuse.",
+      "steps": [
+        "$AC=\\sqrt{8^2+6^2}=10$.",
+        "The scale factor is $\\dfrac{XY}{AB}=\\dfrac{20}{8}=2.5$.",
+        "So $XZ=10\\cdot 2.5=25$."
+      ],
+      "verify": "result = sqrt(8**2 + 6**2) * Rational(20, 8)"
+    },
+    {
+      "id": "T19-M2-11",
+      "module": 2,
+      "n": 33,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Special right triangles",
+      "stem": "A vertical flagpole $40$ feet tall casts a shadow $40\\sqrt{3}$ feet long on level ground. What is the measure, in degrees, of the angle of elevation of the sun?",
+      "choices": [
+        "$30$",
+        "$45$",
+        "$60$",
+        "$75$"
+      ],
+      "answer": "A",
+      "solution": "The tangent of the elevation angle is height over shadow, which here is $\\frac{1}{\\sqrt{3}}$---the tangent of $30^\\circ$. Answering $60$ means the two legs were used in the wrong order.",
+      "steps": [
+        "$\\tan(\\text{elevation})=\\dfrac{40}{40\\sqrt{3}}=\\dfrac{1}{\\sqrt{3}}$.",
+        "The short leg is opposite the smallest angle, and $\\tan 30^\\circ=\\dfrac{1}{\\sqrt{3}}$.",
+        "So the angle of elevation is $30^\\circ$."
+      ],
+      "verify": "t = symbols('t')\nresult = [s for s in solve(tan(t*pi/180) - 1/sqrt(3), t) if 0 < s < 90][0]"
+    },
+    {
+      "id": "T19-M2-12",
+      "module": 2,
+      "n": 34,
+      "difficulty": "M",
+      "type": "SPR",
+      "skill": "The Pythagorean theorem",
+      "stem": "The legs of a right triangle have lengths $10$ and $24$. What is the perimeter of the triangle?",
+      "answer": "$60$",
+      "solution": "This is the $5$-$12$-$13$ triple doubled, so the hypotenuse is $26$ without any squaring. The question then only asks for a sum, but you cannot answer it until the third side exists.",
+      "steps": [
+        "$10=2\\cdot 5$ and $24=2\\cdot 12$, so the hypotenuse is $2\\cdot 13=26$.",
+        "Add the three sides: $10+24+26$.",
+        "The perimeter is $60$."
+      ],
+      "verify": "result = 10 + 24 + sqrt(10**2 + 24**2)"
+    },
+    {
+      "id": "T19-M2-13",
+      "module": 2,
+      "n": 35,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Sine, cosine and tangent",
+      "stem": "In right triangle $ABC$, angle $B$ is a right angle and $\\cos A=\\frac{5}{13}$. What is the value of $\\tan A$?",
+      "choices": [
+        "$\\frac{5}{12}$",
+        "$\\frac{12}{13}$",
+        "$\\frac{12}{5}$",
+        "$\\frac{13}{5}$"
+      ],
+      "answer": "C",
+      "solution": "One ratio determines the triangle: $\\cos A=\\frac{5}{13}$ gives adjacent $5$ and hypotenuse $13$, so the opposite leg is $12$. Tangent is then opposite over adjacent, and putting them the other way round produces $\\frac{5}{12}$.",
+      "steps": [
+        "Adjacent $=5$ and hypotenuse $=13$.",
+        "The opposite leg is $\\sqrt{13^2-5^2}=12$.",
+        "$\\tan A=\\dfrac{12}{5}$."
+      ],
+      "verify": "result = sqrt(13**2 - 5**2) / 5"
+    },
+    {
+      "id": "T19-M2-14",
+      "module": 2,
+      "n": 36,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Special right triangles",
+      "stem": "A square has a diagonal of length $10$. What is the area of the square?",
+      "choices": [
+        "$25$",
+        "$50$",
+        "$50\\sqrt{2}$",
+        "$100$"
+      ],
+      "answer": "B",
+      "solution": "A diagonal cuts the square into two $45^\\circ$-$45^\\circ$-$90^\\circ$ triangles, so the side is $\\frac{10}{\\sqrt{2}}=5\\sqrt{2}$ and the area is the side squared. Squaring the diagonal instead gives $100$.",
+      "steps": [
+        "The diagonal is side $\\times\\sqrt{2}$, so $s\\sqrt{2}=10$ and $s=5\\sqrt{2}$.",
+        "Area $=s^2=(5\\sqrt{2})^2$.",
+        "So the area is $50$."
+      ],
+      "verify": "s = 10/sqrt(2)\nresult = simplify(s**2)"
+    },
+    {
+      "id": "T19-M2-15",
+      "module": 2,
+      "n": 37,
+      "difficulty": "M",
+      "type": "MC",
+      "skill": "Special right triangles",
+      "stem": "In right triangle $ABC$, angle $C$ is a right angle, angle $A$ measures $30^\\circ$, and $AC=12$. What is the length of $\\overline{BC}$?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[scale=1,line join=round]\n\\draw[thick,satnavy] (0,0) -- (1.8,0) -- (0,3.1) -- cycle;\n\\draw[satnavy] (0,0) rectangle (0.26,0.26);\n\\node[left] at (0,1.55) {$12$};\n\\node[below left] at (0,0) {$C$};\n\\node[below right] at (1.8,0) {$B$};\n\\node[above] at (0,3.1) {$A$};\n\\node[anchor=north west,inner sep=1pt] at (0.10,3.04) {\\footnotesize $30^\\circ$};\n\\end{tikzpicture}\n\\end{center}\n\\satnote{Figure not drawn to scale.}",
+      "choices": [
+        "$6$",
+        "$4\\sqrt{3}$",
+        "$6\\sqrt{3}$",
+        "$12\\sqrt{3}$"
+      ],
+      "answer": "B",
+      "solution": "$\\overline{AC}$ is the long leg, because it lies opposite the $60^\\circ$ angle at $B$, and $\\overline{BC}$ is the short leg. So $\\overline{BC}$ is $\\overline{AC}$ divided by $\\sqrt{3}$, not multiplied by it.",
+      "steps": [
+        "Angle $B=60^\\circ$, so $\\overline{AC}$ is the long leg and $\\overline{BC}$ is the short leg.",
+        "Long leg $=$ short leg $\\times\\sqrt{3}$, so $12=BC\\sqrt{3}$.",
+        "$BC=\\dfrac{12}{\\sqrt{3}}=4\\sqrt{3}$."
+      ],
+      "verify": "v = 12/sqrt(3)\nresult = \"$4\\\\sqrt{3}$\" if simplify(v - (4*sqrt(3))) == 0 else \"MISMATCH\""
+    },
+    {
+      "id": "T19-M2-16",
+      "module": 2,
+      "n": 38,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Sine, cosine and tangent",
+      "stem": "In right triangle $ABC$, angle $C$ is a right angle and $\\sin A=\\frac{2}{3}$. What is the value of $\\cos A$?",
+      "choices": [
+        "$\\frac{1}{3}$",
+        "$\\frac{2}{3}$",
+        "$\\frac{\\sqrt{5}}{3}$",
+        "$\\frac{\\sqrt{13}}{3}$"
+      ],
+      "answer": "C",
+      "solution": "The legs of a right triangle need not be integers. With opposite $=2$ and hypotenuse $=3$, the adjacent leg is $\\sqrt{3^2-2^2}=\\sqrt{5}$, so the cosine carries a radical. Subtracting the numerators to get $\\frac{1}{3}$ is the trap.",
+      "steps": [
+        "$\\sin A=\\frac{2}{3}$ gives opposite $=2$, hypotenuse $=3$.",
+        "The adjacent leg is $\\sqrt{9-4}=\\sqrt{5}$.",
+        "$\\cos A=\\dfrac{\\sqrt{5}}{3}$."
+      ],
+      "verify": "v = sqrt(1 - Rational(2,3)**2)\nresult = \"$\\\\frac{\\\\sqrt{5}}{3}$\" if simplify(v - (sqrt(5)/3)) == 0 else \"MISMATCH\""
+    },
+    {
+      "id": "T19-M2-17",
+      "module": 2,
+      "n": 39,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Sine, cosine and tangent",
+      "stem": "In right triangle $ABC$, angle $C$ is a right angle and $\\tan A=\\frac{3}{4}$. The perimeter of triangle $ABC$ is $36$. What is the length of $\\overline{AB}$?",
+      "answer": "$15$",
+      "solution": "The tangent fixes the shape but not the size, so write the sides as $3k$, $4k$ and $5k$ and let the perimeter pin down $k$. $\\overline{AB}$ is the hypotenuse because it is the side opposite the right angle at $C$.",
+      "steps": [
+        "$\\tan A=\\frac{3}{4}$ makes the triangle a $3$-$4$-$5$ triangle: legs $3k$ and $4k$, hypotenuse $5k$.",
+        "The perimeter is $3k+4k+5k=12k=36$, so $k=3$.",
+        "The hypotenuse is $5k=15$."
+      ],
+      "verify": "k = symbols('k')\nresult = 5 * solve(12*k - 36, k)[0]"
+    },
+    {
+      "id": "T19-M2-18",
+      "module": 2,
+      "n": 40,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Complementary angle identities",
+      "stem": "The acute angles of a right triangle measure $a^\\circ$ and $b^\\circ$. If $\\cos(a^\\circ)=\\frac{4}{5}$, what is the value of $\\dfrac{\\sin(b^\\circ)}{\\cos(b^\\circ)}$?",
+      "choices": [
+        "$\\frac{3}{4}$",
+        "$\\frac{4}{5}$",
+        "$\\frac{4}{3}$",
+        "$\\frac{5}{3}$"
+      ],
+      "answer": "C",
+      "solution": "Because $a+b=90$, the identities give $\\sin(b^\\circ)=\\cos(a^\\circ)=\\frac{4}{5}$ and $\\cos(b^\\circ)=\\sin(a^\\circ)=\\frac{3}{5}$. The quotient of sine over cosine is the tangent, so the answer is $\\tan(b^\\circ)=\\frac{4}{3}$; forgetting to swap gives $\\frac{3}{4}$.",
+      "steps": [
+        "$\\sin(b^\\circ)=\\cos(a^\\circ)=\\frac{4}{5}$.",
+        "From the $3$-$4$-$5$ triangle, $\\sin(a^\\circ)=\\frac{3}{5}$, so $\\cos(b^\\circ)=\\frac{3}{5}$.",
+        "The quotient is $\\dfrac{4/5}{3/5}=\\dfrac{4}{3}$."
+      ],
+      "verify": "result = Rational(4, 5) / Rational(3, 5)"
+    },
+    {
+      "id": "T19-M2-19",
+      "module": 2,
+      "n": 41,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Similar right triangles",
+      "stem": "In right triangle $ABC$ the right angle is at $C$. Point $D$ lies on $\\overline{AB}$ so that $\\overline{CD}$ is perpendicular to $\\overline{AB}$. If $AD=4$ and $DB=9$, what is the length of $\\overline{CD}$?",
+      "choices": [
+        "$6$",
+        "$\\frac{13}{2}$",
+        "$\\sqrt{97}$",
+        "$13$"
+      ],
+      "answer": "A",
+      "solution": "The altitude to the hypotenuse creates two triangles similar to the original and to each other, so $\\frac{AD}{CD}=\\frac{CD}{DB}$. That proportion makes $CD$ the geometric mean of the two pieces, not their average---which is why $\\frac{13}{2}$ is offered.",
+      "steps": [
+        "Triangle $ACD$ is similar to triangle $CBD$.",
+        "So $\\dfrac{AD}{CD}=\\dfrac{CD}{DB}$, giving $CD^2=4\\cdot 9=36$.",
+        "So $CD=6$."
+      ],
+      "verify": "result = sqrt(4*9)"
+    },
+    {
+      "id": "T19-M2-20",
+      "module": 2,
+      "n": 42,
+      "difficulty": "H",
+      "type": "SPR",
+      "skill": "Special right triangles",
+      "stem": "In right triangle $ABC$, angle $C$ is a right angle, $AB=20$, and $\\sin B=\\cos B$. What is the area of triangle $ABC$?",
+      "answer": "$100$",
+      "solution": "A sine equal to a cosine at the same angle forces that angle to be $45^\\circ$, since $\\sin B=\\cos(90^\\circ-B)$ means $B=90^\\circ-B$. The triangle is therefore isosceles with legs $\\frac{20}{\\sqrt{2}}=10\\sqrt{2}$.",
+      "steps": [
+        "$\\sin B=\\cos B$ means $B=90^\\circ-B$, so $B=45^\\circ$.",
+        "Each leg is $\\dfrac{20}{\\sqrt{2}}=10\\sqrt{2}$.",
+        "Area $=\\frac{1}{2}(10\\sqrt{2})(10\\sqrt{2})=100$."
+      ],
+      "verify": "leg = 20/sqrt(2)\nresult = simplify(leg*leg/2)"
+    },
+    {
+      "id": "T19-M2-21",
+      "module": 2,
+      "n": 43,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Sine, cosine and tangent",
+      "stem": "A straight ramp $34$ feet long rises from level ground at an angle $\\theta$, where $\\sin\\theta=\\frac{8}{17}$. What is the horizontal distance, in feet, covered by the ramp?",
+      "figure": "\\begin{center}\n\\begin{tikzpicture}[scale=1,line join=round]\n\\draw[thick,satnavy] (0,0) -- (3.6,0) -- (0,1.2) -- cycle;\n\\draw[satnavy] (0,0) rectangle (0.26,0.26);\n\\node[above right] at (1.8,0.6) {$34$};\n\\node[anchor=south east,inner sep=1pt] at (3.48,0.06) {\\footnotesize $\\theta$};\n\\end{tikzpicture}\n\\end{center}\n\\satnote{Figure not drawn to scale.}",
+      "choices": [
+        "$16$",
+        "$18$",
+        "$30$",
+        "$32$"
+      ],
+      "answer": "C",
+      "solution": "Sine gives the rise, but the question asks for the run, so you need cosine. The $8$-$15$-$17$ triple turns $\\sin\\theta=\\frac{8}{17}$ into $\\cos\\theta=\\frac{15}{17}$ instantly; $16$ is the rise, offered for anyone who answers the wrong question.",
+      "steps": [
+        "$\\sin\\theta=\\frac{8}{17}$ gives an $8$-$15$-$17$ triangle, so $\\cos\\theta=\\frac{15}{17}$.",
+        "The horizontal run is $34\\cos\\theta$.",
+        "So the run is $34\\cdot\\dfrac{15}{17}=30$."
+      ],
+      "verify": "result = 34 * sqrt(1 - Rational(8, 17)**2)"
+    },
+    {
+      "id": "T19-M2-22",
+      "module": 2,
+      "n": 44,
+      "difficulty": "H",
+      "type": "MC",
+      "skill": "Complementary angle identities",
+      "stem": "In right triangle $ABC$, angle $C$ is a right angle and the measure of angle $A$ is twice the measure of angle $B$. What is the value of $\\dfrac{AC}{AB}$?",
+      "choices": [
+        "$\\frac{1}{2}$",
+        "$\\frac{\\sqrt{2}}{2}$",
+        "$\\frac{\\sqrt{3}}{2}$",
+        "$\\frac{2\\sqrt{3}}{3}$"
+      ],
+      "answer": "A",
+      "solution": "The acute angles are complementary, so $2B+B=90$ and $B=30^\\circ$. $\\overline{AC}$ is the leg opposite $B$ and $\\overline{AB}$ is the hypotenuse, so the ratio is $\\sin B=\\sin 30^\\circ=\\frac{1}{2}$; reading it as $\\sin A$ instead gives $\\frac{\\sqrt{3}}{2}$.",
+      "steps": [
+        "$A+B=90^\\circ$ and $A=2B$, so $3B=90^\\circ$ and $B=30^\\circ$.",
+        "$\\overline{AC}$ is opposite angle $B$ and $\\overline{AB}$ is the hypotenuse, so $\\dfrac{AC}{AB}=\\sin B$.",
+        "$\\sin 30^\\circ=\\dfrac{1}{2}$."
+      ],
+      "verify": "b = symbols('b')\nB = solve(3*b - 90, b)[0]\nresult = sin(B*pi/180)"
+    }
+  ]
+}
