@@ -1,0 +1,289 @@
+{
+  "topic": 6,
+  "slug": "06-equivalent-expressions",
+  "title": "Equivalent Expressions",
+  "domain": "Advanced Math",
+  "questions": [
+    {
+      "module": 1, "n": 1, "type": "mc", "difficulty": "easy",
+      "answer": "3*x**2+12*x", "answer_kind": "expression",
+      "choices": ["3*x**2+4", "3*x**2+12*x", "3*x**2+4*x", "3*x+12*x"],
+      "choice": "B",
+      "check": {"kind": "equiv", "expr": "3*x*(x+4)", "other": "3*x**2+12*x"}
+    },
+    {
+      "module": 1, "n": 2, "type": "mc", "difficulty": "easy",
+      "answer": "x**2-49", "answer_kind": "expression",
+      "choices": ["x**2-49", "x**2+49", "x**2-14*x-49", "x**2-14*x+49"],
+      "choice": "A",
+      "check": {"kind": "equiv", "expr": "(x+7)*(x-7)", "other": "x**2-49"}
+    },
+    {
+      "module": 1, "n": 3, "type": "fr", "difficulty": "easy",
+      "answer": "8", "answer_kind": "number",
+      "check": {"kind": "solve", "expr": "(x+3)*(x+5) - (x**2 + b*x + 15)", "var": "b"}
+    },
+    {
+      "module": 1, "n": 4, "type": "mc", "difficulty": "easy",
+      "answer": "4*x*(x-5)", "answer_kind": "expression",
+      "choices": ["4*x*(x-20)", "4*x*(x+5)", "2*x*(2*x-20)", "4*x*(x-5)"],
+      "choice": "D",
+      "check": {"kind": "equiv", "expr": "4*x**2-20*x", "other": "4*x*(x-5)"}
+    },
+    {
+      "module": 1, "n": 5, "type": "fr", "difficulty": "easy",
+      "answer": "-4", "answer_kind": "number",
+      "check": {"kind": "solve", "expr": "(x+4)*(x+k) - (x**2-16)", "var": "k"}
+    },
+    {
+      "module": 1, "n": 6, "type": "mc", "difficulty": "easy",
+      "answer": "4*x**2-4*x-4", "answer_kind": "expression",
+      "choices": ["4*x**2-4*x-6", "4*x**2+8*x-4", "3*x**2-4*x-4", "4*x**2-4*x-4"],
+      "choice": "D",
+      "check": {"kind": "equiv", "expr": "(3*x**2+2*x-5)+(x**2-6*x+1)", "other": "4*x**2-4*x-4"}
+    },
+    {
+      "module": 1, "n": 7, "type": "fr", "difficulty": "easy",
+      "answer": "12", "answer_kind": "number",
+      "check": {"kind": "solve", "expr": "(3*x)*(4*x**2) - a*x**3", "var": "a"}
+    },
+    {
+      "module": 1, "n": 8, "type": "mc", "difficulty": "easy",
+      "answer": "(x+4)*(x+5)", "answer_kind": "expression",
+      "choices": ["(x+2)*(x+10)", "(x-4)*(x-5)", "(x+4)*(x+5)", "(x+1)*(x+20)"],
+      "choice": "C",
+      "check": {"kind": "equiv", "expr": "x**2+9*x+20", "other": "(x+4)*(x+5)"}
+    },
+    {
+      "module": 1, "n": 9, "type": "mc", "difficulty": "medium",
+      "answer": "6*x**2-7*x-20", "answer_kind": "expression",
+      "choices": ["6*x**2-7*x-20", "6*x**2+7*x-20", "6*x**2-23*x-20", "6*x**2-7*x+20"],
+      "choice": "A",
+      "check": {"kind": "equiv", "expr": "(2*x-5)*(3*x+4)", "other": "6*x**2-7*x-20"}
+    },
+    {
+      "module": 1, "n": 10, "type": "fr", "difficulty": "medium",
+      "answer": "81", "answer_kind": "number",
+      "check": {"kind": "solve", "expr": "(4*x-9)*(4*x+9) - (16*x**2 - c)", "var": "c"}
+    },
+    {
+      "module": 1, "n": 11, "type": "mc", "difficulty": "medium",
+      "answer": "x-3", "answer_kind": "expression",
+      "choices": ["x+3", "x-3", "x**2-3", "x-9"],
+      "choice": "B",
+      "check": {"kind": "equiv", "expr": "(x**2-9)/(x+3)", "other": "x-3"}
+    },
+    {
+      "module": 1, "n": 12, "type": "fr", "difficulty": "medium",
+      "answer": "4", "answer_kind": "number",
+      "check": {"kind": "solve", "expr": "(x**2+7*x+12)/(x+3) - (x+k)", "var": "k"}
+    },
+    {
+      "module": 1, "n": 13, "type": "mc", "difficulty": "medium",
+      "answer": "20*x", "answer_kind": "expression",
+      "choices": ["50", "20*x", "10*x", "2*x**2+50"],
+      "choice": "B",
+      "check": {"kind": "equiv", "expr": "(x+5)**2-(x-5)**2", "other": "20*x"}
+    },
+    {
+      "module": 1, "n": 14, "type": "mc", "difficulty": "medium",
+      "answer": "(2*x+1)*(x+3)", "answer_kind": "expression",
+      "choices": ["(2*x+1)*(x+3)", "(2*x+3)*(x+1)", "(2*x-1)*(x-3)", "(2*x+7)*(x+3)"],
+      "choice": "A",
+      "check": {"kind": "equiv", "expr": "2*x**2+7*x+3", "other": "(2*x+1)*(x+3)"}
+    },
+    {
+      "module": 1, "n": 15, "type": "fr", "difficulty": "medium",
+      "answer": "-1", "answer_kind": "number",
+      "check": {"kind": "solve", "expr": "(2*x**2+5*x-3)/(x+3) - (2*x+k)", "var": "k"}
+    },
+    {
+      "module": 1, "n": 16, "type": "mc", "difficulty": "medium",
+      "answer": "3*x**2-7*x+9", "answer_kind": "expression",
+      "choices": ["3*x**2-7*x-5", "3*x**2+x-5", "3*x**2-7*x+9", "7*x**2+x+9"],
+      "choice": "C",
+      "check": {"kind": "equiv", "expr": "(5*x**2-3*x+2)-(2*x**2+4*x-7)", "other": "3*x**2-7*x+9"}
+    },
+    {
+      "module": 1, "n": 17, "type": "mc", "difficulty": "medium",
+      "answer": "3/(2*x)", "answer_kind": "expression",
+      "choices": ["1/(3*x)", "2/(3*x)", "3/(2*x**2)", "3/(2*x)"],
+      "choice": "D",
+      "check": {"kind": "equiv", "expr": "1/x + 1/(2*x)", "other": "3/(2*x)"}
+    },
+    {
+      "module": 1, "n": 18, "type": "mc", "difficulty": "hard",
+      "answer": "3*x-1", "answer_kind": "expression",
+      "choices": ["3*x-1", "3*x+1", "3*x-4", "x-1"],
+      "choice": "A",
+      "check": {"kind": "equiv", "expr": "(3*x**2+11*x-4)/(x+4)", "other": "3*x-1"}
+    },
+    {
+      "module": 1, "n": 19, "type": "mc", "difficulty": "hard",
+      "answer": "21", "answer_kind": "number",
+      "choices": ["7", "13", "21", "30"],
+      "choice": "C",
+      "check": {"kind": "system", "exprs": ["a + 3 - 10", "3*a - b"], "vars": ["a", "b"], "want": "b"}
+    },
+    {
+      "module": 1, "n": 20, "type": "mc", "difficulty": "hard",
+      "answer": "4/(x**2-4)", "answer_kind": "expression",
+      "choices": ["2*x/(x**2-4)", "4/(x**2+4)", "-4/(x**2-4)", "4/(x**2-4)"],
+      "choice": "D",
+      "check": {"kind": "equiv", "expr": "1/(x-2) - 1/(x+2)", "other": "4/(x**2-4)"}
+    },
+    {
+      "module": 1, "n": 21, "type": "fr", "difficulty": "hard",
+      "answer": "12", "answer_kind": "number",
+      "check": {"kind": "solve", "expr": "(x+6)**2 - (x**2 + k*x + 36)", "var": "k"}
+    },
+    {
+      "module": 1, "n": 22, "type": "mc", "difficulty": "hard",
+      "answer": "(x-2)/(x+3)", "answer_kind": "expression",
+      "choices": ["(x-2)/(x-3)", "(x+2)/(x+3)", "(x-2)/(x+3)", "(x-3)/(x+3)"],
+      "choice": "C",
+      "check": {"kind": "equiv", "expr": "(x**2-5*x+6)/(x**2-9)", "other": "(x-2)/(x+3)"}
+    },
+
+    {
+      "module": 2, "n": 1, "type": "mc", "difficulty": "medium",
+      "answer": "x**3+2*x**2-3*x+20", "answer_kind": "expression",
+      "choices": ["x**3+2*x**2-3*x+20", "x**3+2*x**2+13*x+20", "x**3-2*x**2+5*x+20", "x**3+6*x**2-3*x+20"],
+      "choice": "A",
+      "check": {"kind": "equiv", "expr": "(x+4)*(x**2-2*x+5)", "other": "x**3+2*x**2-3*x+20"}
+    },
+    {
+      "module": 2, "n": 2, "type": "fr", "difficulty": "medium",
+      "answer": "-12", "answer_kind": "number",
+      "check": {"kind": "solve", "expr": "(2*x-3)**2 - (4*x**2 + b*x + 9)", "var": "b"}
+    },
+    {
+      "module": 2, "n": 3, "type": "mc", "difficulty": "medium",
+      "answer": "3*x*(2*x+3)*(2*x-3)", "answer_kind": "expression",
+      "choices": ["3*x*(2*x-3)**2", "3*x*(2*x+3)*(2*x-3)", "3*x*(4*x**2-9*x)", "9*x*(x**2-3)"],
+      "choice": "B",
+      "check": {"kind": "equiv", "expr": "12*x**3-27*x", "other": "3*x*(2*x+3)*(2*x-3)"}
+    },
+    {
+      "module": 2, "n": 4, "type": "mc", "difficulty": "medium",
+      "answer": "2*x+3", "answer_kind": "expression",
+      "choices": ["2*x+9", "2*x**2+3*x", "6*x**2+3", "2*x+3"],
+      "choice": "D",
+      "check": {"kind": "equiv", "expr": "(6*x**2+9*x)/(3*x)", "other": "2*x+3"}
+    },
+    {
+      "module": 2, "n": 5, "type": "mc", "difficulty": "medium",
+      "answer": "x+5", "answer_kind": "expression",
+      "choices": ["x+1", "x+2", "x+5", "3*x+6"],
+      "choice": "C",
+      "check": {"kind": "equiv", "expr": "(x**2-4)/(x-2) + 3", "other": "x+5"}
+    },
+    {
+      "module": 2, "n": 6, "type": "mc", "difficulty": "medium",
+      "answer": "(x+3)/(x-3)", "answer_kind": "expression",
+      "choices": ["1/(x-3)", "(x+3)/(x-3)", "(x-3)/(x+3)", "-(x+3)/(x-3)"],
+      "choice": "B",
+      "check": {"kind": "equiv", "expr": "(x**2+6*x+9)/(x**2-9)", "other": "(x+3)/(x-3)"}
+    },
+    {
+      "module": 2, "n": 7, "type": "fr", "difficulty": "medium",
+      "answer": "4", "answer_kind": "number",
+      "check": {"kind": "solve", "expr": "(6*x**2-7*x-20)/(2*x-5) - (3*x+k)", "var": "k"}
+    },
+    {
+      "module": 2, "n": 8, "type": "mc", "difficulty": "medium",
+      "answer": "x-1", "answer_kind": "expression",
+      "choices": ["x+1", "x-1", "x**2-1", "(x-1)/x"],
+      "choice": "B",
+      "check": {"kind": "equiv", "expr": "(x/(x+1))*((x**2-1)/x)", "other": "x-1"}
+    },
+    {
+      "module": 2, "n": 9, "type": "mc", "difficulty": "medium",
+      "answer": "-1/(4*x)", "answer_kind": "expression",
+      "choices": ["(4-x)/(4*x)", "1/(4*x)", "-1/(4*x-16)", "-1/(4*x)"],
+      "choice": "D",
+      "check": {"kind": "equiv", "expr": "(1/x - 1/4)/(x-4)", "other": "-1/(4*x)"}
+    },
+    {
+      "module": 2, "n": 10, "type": "fr", "difficulty": "medium",
+      "answer": "6", "answer_kind": "number",
+      "check": {"kind": "solve", "expr": "(x+5)*(x-2) - (x**2-3*x) - (a*x - 10)", "var": "a"}
+    },
+    {
+      "module": 2, "n": 11, "type": "mc", "difficulty": "medium",
+      "answer": "(7*x-13)/(x**2-2*x-3)", "answer_kind": "expression",
+      "choices": ["7/(x**2-2*x-3)", "(7*x+13)/(x**2-2*x-3)", "(7*x-13)/(x**2-2*x-3)", "(7*x-13)/(x**2+2*x-3)"],
+      "choice": "C",
+      "check": {"kind": "equiv", "expr": "2/(x-3) + 5/(x+1)", "other": "(7*x-13)/(x**2-2*x-3)"}
+    },
+    {
+      "module": 2, "n": 12, "type": "mc", "difficulty": "medium",
+      "answer": "(5*x-3)**2", "answer_kind": "expression",
+      "choices": ["(5*x-3)**2", "(5*x+3)**2", "(5*x-9)*(5*x-1)", "(25*x-9)*(x-1)"],
+      "choice": "A",
+      "check": {"kind": "equiv", "expr": "25*x**2-30*x+9", "other": "(5*x-3)**2"}
+    },
+    {
+      "module": 2, "n": 13, "type": "mc", "difficulty": "medium",
+      "answer": "x**3-x**2-7*x+3", "answer_kind": "expression",
+      "choices": ["x**3+5*x**2-7*x+3", "x**3-x**2-7*x-3", "x**3-x**2+5*x+3", "x**3-x**2-7*x+3"],
+      "choice": "D",
+      "check": {"kind": "equiv", "expr": "(x**2+2*x-1)*(x-3)", "other": "x**3-x**2-7*x+3"}
+    },
+    {
+      "module": 2, "n": 14, "type": "mc", "difficulty": "medium",
+      "answer": "(x+3)/(x+5)", "answer_kind": "expression",
+      "choices": ["(x-3)/(x-5)", "(x+3)/(x-5)", "(x-3)/(x+5)", "(x+3)/(x+5)"],
+      "choice": "D",
+      "check": {"kind": "equiv", "expr": "(x**2-2*x-15)/(x**2-25)", "other": "(x+3)/(x+5)"}
+    },
+    {
+      "module": 2, "n": 15, "type": "fr", "difficulty": "medium",
+      "answer": "-6", "answer_kind": "number",
+      "check": {"kind": "solve", "expr": "(x**3+2*x**2-5*x-6)/(x+1) - (x**2+x+c)", "var": "c"}
+    },
+    {
+      "module": 2, "n": 16, "type": "mc", "difficulty": "hard",
+      "answer": "(x**2-4)/(x-3)", "answer_kind": "expression",
+      "choices": ["(x**2-4)/(x-3)", "(x**2-4)/(x+3)", "(x+2)/(x-3)", "(x-2)/(x-3)"],
+      "choice": "A",
+      "check": {"kind": "equiv", "expr": "((x**2+5*x+6)/(x+2))*((x**2-4)/(x**2-9))", "other": "(x**2-4)/(x-3)"}
+    },
+    {
+      "module": 2, "n": 17, "type": "fr", "difficulty": "hard",
+      "answer": "-14", "answer_kind": "number",
+      "check": {"kind": "system", "exprs": ["2*a - 8", "-5*a + 6 - b"], "vars": ["a", "b"], "want": "b"}
+    },
+    {
+      "module": 2, "n": 18, "type": "mc", "difficulty": "hard",
+      "answer": "x*y/(x+y)", "answer_kind": "expression",
+      "choices": ["(x+y)/(x*y)", "x+y", "x*y/(x+y)", "1/(x+y)"],
+      "choice": "C",
+      "check": {"kind": "equiv", "expr": "1/(1/x + 1/y)", "other": "x*y/(x+y)"}
+    },
+    {
+      "module": 2, "n": 19, "type": "fr", "difficulty": "hard",
+      "answer": "2", "answer_kind": "number",
+      "check": {"kind": "solve", "expr": "(3*x-4)*(x+2) - (3*x**2 + k*x - 8)", "var": "k"}
+    },
+    {
+      "module": 2, "n": 20, "type": "mc", "difficulty": "hard",
+      "answer": "x**2+2*x+4", "answer_kind": "expression",
+      "choices": ["x**2-2*x+4", "x**2+2*x+4", "x**2+4", "x**2-4"],
+      "choice": "B",
+      "check": {"kind": "equiv", "expr": "(x**3-8)/(x-2)", "other": "x**2+2*x+4"}
+    },
+    {
+      "module": 2, "n": 21, "type": "fr", "difficulty": "hard",
+      "answer": "4", "answer_kind": "number",
+      "check": {"kind": "solve", "expr": "(4*x**2-9)/(2*x+3) + (4*x**2-9)/(2*x-3) - a*x", "var": "a"}
+    },
+    {
+      "module": 2, "n": 22, "type": "mc", "difficulty": "hard",
+      "answer": "1/(x+1)", "answer_kind": "expression",
+      "choices": ["1/(x-1)", "(2*x-1)/(x**2-1)", "1/(x+1)", "-1/(x+1)"],
+      "choice": "C",
+      "check": {"kind": "equiv", "expr": "2*x/(x**2-1) - 1/(x-1)", "other": "1/(x+1)"}
+    }
+  ]
+}

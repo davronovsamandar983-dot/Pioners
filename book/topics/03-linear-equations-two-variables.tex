@@ -1,0 +1,287 @@
+\settopicname{Linear Equations in Two Variables}
+\chapter{Linear Equations in Two Variables}
+\topicopen{Algebra}{Create, use, and interpret a linear equation in two
+variables: write the line from a graph, from two points, or from a
+description, and read its slope and intercepts back out in context.}
+
+\begin{essentials}
+A line in the $xy$-plane can be written three ways.
+\emph{Slope-intercept:} $y=mx+b$, slope $m$, $y$-intercept $(0,b)$.
+\emph{Point-slope:} $y-y_1=m(x-x_1)$ for the point $(x_1,y_1)$.
+\emph{Standard:} $ax+by=c$, slope $-\dfrac{a}{b}$, $x$-intercept
+$\left(\dfrac{c}{a},0\right)$, $y$-intercept $\left(0,\dfrac{c}{b}\right)$.
+From two points,
+\[ m=\frac{y_2-y_1}{x_2-x_1}\quad(\text{rise over run}), \]
+subtracting in the same order top and bottom. Set $y=0$ for the
+$x$-intercept and $x=0$ for the $y$-intercept. Parallel lines have equal
+slopes; perpendicular lines have slopes $m$ and $-\dfrac{1}{m}$ --- the
+negative reciprocal, not the reciprocal. Two equations graph the same line
+when one is a nonzero multiple of the other. In a context $ax+by=c$, the
+coefficients $a$ and $b$ are costs or rates per unit, $c$ is the fixed
+total, and each intercept is the case in which the other quantity is $0$.
+\end{essentials}
+
+\modulehead{Module 1}{Questions 1--22}
+\begin{multicols*}{2}
+
+\question{The graph of the equation $y=4x-9$ is a line in the $xy$-plane.
+What is the slope of the line?
+\choices{\item $-9$ \item $-4$ \item $4$ \item $9$}}
+
+\qfr{The line with equation $y=-3x+11$ is graphed in the $xy$-plane. What is
+the $y$-coordinate of the $y$-intercept of this line?}
+
+\question{A line in the $xy$-plane passes through the points $(2,3)$ and
+$(6,11)$. What is the slope of the line?
+\choices{\item $-2$ \item $\dfrac{1}{2}$ \item $\dfrac{7}{4}$ \item $2$}}
+
+\question{The graph of $2x+5y=20$ is a line in the $xy$-plane. What is the
+$x$-coordinate of the $x$-intercept of the line?
+\choices{\item $\dfrac{5}{2}$ \item $4$ \item $10$ \item $20$}}
+
+\qfr{A line in the $xy$-plane has slope $3$ and passes through the point
+$(0,-4)$. What is the value of $y$ when $x=6$?}
+
+\question{A line in the $xy$-plane has slope $-2$ and $y$-intercept $(0,7)$.
+Which equation represents this line?
+\choices{\item $y=-2x+7$ \item $y=-2x-7$ \item $y=2x+7$ \item $y=7x-2$}}
+
+\qfr{The equation $4x+y=19$ represents a line in the $xy$-plane. What is the
+value of $y$ when $x=3$?}
+
+\question{What is the slope of the line with equation $3x+6y=18$ in the
+$xy$-plane?
+\choices{\item $-2$ \item $-\dfrac{1}{2}$ \item $\dfrac{1}{2}$ \item $3$}}
+
+\question{A line in the $xy$-plane passes through the point $(4,-1)$ and has
+slope $\dfrac{1}{2}$. Which equation represents the line?
+\choices{\item $y=\dfrac{1}{2}x-1$ \item $y=\dfrac{1}{2}x+1$
+\item $y=\dfrac{1}{2}x-3$ \item $y=2x-9$}}
+
+\qfr{A line in the $xy$-plane passes through the points $(-3,5)$ and
+$(7,k)$, where $k$ is a constant. The slope of the line is $-2$. What is the
+value of $k$?}
+
+\question{Line $\ell$ has equation $y=-\dfrac{3}{4}x+2$. Line $m$ is parallel
+to line $\ell$ and passes through the point $(8,1)$. Which equation
+represents line $m$?
+\choices{\item $y=-\dfrac{3}{4}x-5$ \item $y=-\dfrac{3}{4}x+2$
+\item $y=-\dfrac{3}{4}x+7$ \item $y=\dfrac{4}{3}x-\dfrac{29}{3}$}}
+
+\question{In the $xy$-plane, line $k$ is perpendicular to the line with
+equation $y=\dfrac{2}{5}x-3$. What is the slope of line $k$?
+\choices{\item $-\dfrac{5}{2}$ \item $-\dfrac{2}{5}$ \item $\dfrac{2}{5}$
+\item $\dfrac{5}{2}$}}
+
+\qfr{A tank holds $60$ liters of water. Water drains from the tank at a
+constant rate of $4$ liters per minute, so the volume $V$, in liters, of
+water left in the tank $t$ minutes after draining begins is $V=60-4t$. After
+how many minutes does the tank hold $24$ liters of water?}
+
+\question{The total cost $C$, in dollars, of renting a floor sander for $h$
+hours is given by $C=12h+35$. What is the best interpretation of $12$ in
+this context?
+\choices{\item The one-time fee, in dollars, charged in addition to the
+hourly rate.
+\item The total cost, in dollars, of renting the sander for $35$ hours.
+\item The number of hours the sander is rented.
+\item The increase in the total cost, in dollars, for each additional hour
+of rental.}}
+
+\qfr{A line in the $xy$-plane passes through the points $(-2,7)$ and
+$(4,-5)$. What is the $y$-coordinate of the $y$-intercept of the line?}
+
+\question{A grocery order consists of $x$ pounds of rice and $y$ pounds of
+beans. Rice costs \$2 per pound, beans cost \$3 per pound, and the order
+costs \$36 in total, so $2x+3y=36$. What is the best interpretation of the
+$x$-intercept of the graph of this equation in the $xy$-plane?
+\choices{\item The order contains $12$ pounds of beans and no rice.
+\item The order contains $18$ pounds of rice and no beans.
+\item The order contains $18$ pounds of beans and no rice.
+\item The order costs $18$ dollars in total.}}
+
+\question{The graph of a line in the $xy$-plane is shown.
+\begin{center}
+\begin{tikzpicture}[scale=0.40, line width=0.7pt]
+  \draw[gray!30] (-1,-1) grid (9,5);
+  \draw[->] (-1.2,0) -- (9.4,0) node[below,font=\scriptsize]{$x$};
+  \draw[->] (0,-1.2) -- (0,5.4) node[left,font=\scriptsize]{$y$};
+  \draw[keycolor, line width=1pt] (-0.8,4.4) -- (9.2,-0.6);
+  \fill (0,4) circle (0.13);
+  \node[anchor=west,font=\scriptsize] at (0.35,4.6) {$(0,4)$};
+  \fill (8,0) circle (0.13);
+  \node[anchor=north,font=\scriptsize] at (7.8,-0.35) {$(8,0)$};
+\end{tikzpicture}
+\end{center}
+Which equation represents the line?
+\choices{\item $y=-2x+4$ \item $y=-\dfrac{1}{2}x+8$
+\item $y=\dfrac{1}{2}x+4$ \item $y=-\dfrac{1}{2}x+4$}}
+
+\question{In the $xy$-plane, the graph of $kx+3y=12$ passes through the point
+$(2,-4)$, where $k$ is a constant. What is the value of $k$?
+\choices{\item $-\dfrac{3}{2}$ \item $0$ \item $6$ \item $12$}}
+
+\qfr{Line $m$ is perpendicular to the line with equation
+$y=\dfrac{1}{3}x+5$ and passes through the point $(6,2)$. What is the
+$y$-coordinate of the $y$-intercept of line $m$?}
+
+\question{In the $xy$-plane, line $\ell$ has equation $ax+by=c$, where $a$,
+$b$, and $c$ are positive constants. Which statement must be true?
+\choices{\item The slope of line $\ell$ is negative.
+\item The slope of line $\ell$ is positive.
+\item Line $\ell$ passes through the origin.
+\item The $x$-intercept of line $\ell$ is negative.}}
+
+\question{Which equation correctly expresses $x$ in terms of $y$ for
+\[ 5x-2y=30\,? \]
+\choices{\item $x=\dfrac{2y-30}{5}$ \item $x=\dfrac{2y+30}{5}$
+\item $x=\dfrac{5y+30}{2}$ \item $x=\dfrac{2y}{5}+30$}}
+
+\question{In the $xy$-plane, line $\ell$ has $x$-intercept $(-4,0)$ and
+$y$-intercept $(0,6)$. Line $n$ is perpendicular to line $\ell$ and passes
+through the origin. Which equation represents line $n$?
+\choices{\item $y=-\dfrac{3}{2}x$ \item $y=-\dfrac{2}{3}x$
+\item $y=\dfrac{2}{3}x$ \item $y=\dfrac{3}{2}x$}}
+
+\end{multicols*}
+
+\modulehead{Module 2}{Questions 1--22}
+\begin{multicols*}{2}
+
+\question{A line in the $xy$-plane passes through the points $(-5,8)$ and
+$(3,-4)$. What is the slope of the line?
+\choices{\item $-\dfrac{3}{2}$ \item $-\dfrac{2}{3}$ \item $\dfrac{3}{2}$
+\item $\dfrac{1}{2}$}}
+
+\qfr{The equation $6x-3y=21$ represents a line in the $xy$-plane. What is
+the $y$-coordinate of the $y$-intercept of the line?}
+
+\question{In the $xy$-plane, line $\ell$ has equation $y=\dfrac{5}{2}x-1$ and
+line $m$ has equation $10x-4y=9$. Which statement about these lines is true?
+\choices{\item The lines are parallel and are not the same line.
+\item The lines are perpendicular.
+\item The lines are the same line.
+\item The lines meet at exactly one point and are not perpendicular.}}
+
+\qfr{A repair service charges a fixed fee of \$45 plus \$28 for each hour of
+work, so the total charge $C$, in dollars, for $h$ hours of work is
+$C=28h+45$. If the total charge for one repair was \$213, how many hours of
+work were billed?}
+
+\question{A line in the $xy$-plane passes through the point $(-3,8)$ and has
+slope $-4$. Which equation represents the line?
+\choices{\item $y-8=-4(x+3)$ \item $y+8=-4(x-3)$ \item $y-8=-4(x-3)$
+\item $y+3=-4(x-8)$}}
+
+\question{The graph of line $\ell$ in the $xy$-plane is shown.
+\begin{center}
+\begin{tikzpicture}[scale=0.40, line width=0.7pt]
+  \draw[gray!30] (-7,-1) grid (1,4);
+  \draw[->] (-7.2,0) -- (1.4,0) node[below,font=\scriptsize]{$x$};
+  \draw[->] (0,-1.2) -- (0,4.4) node[right,font=\scriptsize]{$y$};
+  \draw[keycolor, line width=1pt] (-7.2,-0.6) -- (1.2,3.6);
+  \fill (-6,0) circle (0.13);
+  \node[anchor=north,font=\scriptsize] at (-5.6,-0.35) {$(-6,0)$};
+  \fill (0,3) circle (0.13);
+  \node[anchor=west,font=\scriptsize] at (0.3,3.5) {$(0,3)$};
+\end{tikzpicture}
+\end{center}
+What is the slope of line $\ell$?
+\choices{\item $-2$ \item $-\dfrac{1}{2}$ \item $\dfrac{1}{2}$ \item $2$}}
+
+\qfr{In the $xy$-plane, the line with equation $y=\dfrac{1}{4}x+2$ is
+perpendicular to the line with equation $y=cx-7$, where $c$ is a constant.
+What is the value of $c$?}
+
+\question{Which equation has the same graph in the $xy$-plane as
+\[ y=\dfrac{2}{3}x-4\,? \]
+\choices{\item $2x-3y=12$ \item $2x-3y=-12$ \item $2x+3y=12$
+\item $3x-2y=12$}}
+
+\question{In the $xy$-plane, line $\ell$ passes through the points $(0,-6)$
+and $(9,0)$. What is the value of $y$ on line $\ell$ when $x=6$?
+\choices{\item $-10$ \item $-2$ \item $3$ \item $4$}}
+
+\question{A cyclist starts a ride with $750$ milliliters of water in a bottle
+and drinks $25$ milliliters of it for each kilometer ridden. Which equation
+gives the number of milliliters of water $w$ left in the bottle after the
+cyclist has ridden $d$ kilometers?
+\choices{\item $w=750-25d$ \item $w=750+25d$ \item $w=25-750d$
+\item $w=25d-750$}}
+
+\question{A caterer buys $x$ trays of sandwiches at \$25 per tray and $y$
+trays of fruit at \$15 per tray, spending \$300 in total, so $25x+15y=300$.
+What is the best interpretation of the $y$-intercept of the graph of this
+equation in the $xy$-plane?
+\choices{\item The caterer buys $20$ trays of fruit and no trays of
+sandwiches.
+\item The caterer buys $20$ trays of sandwiches and no trays of fruit.
+\item The caterer buys $12$ trays of fruit and no trays of sandwiches.
+\item The caterer spends $20$ dollars on fruit.}}
+
+\qfr{In the $xy$-plane, the graph of $kx+6y=18$ is parallel to the graph of
+$y=-2x+5$, where $k$ is a constant. What is the value of $k$?}
+
+\question{The table gives three points that lie on a line in the $xy$-plane.
+\begin{center}\small
+\begin{tabular}{c|c}
+$x$ & $y$ \\ \hline
+$1$ & $9$ \\
+$4$ & $3$ \\
+$7$ & $-3$ \\
+\end{tabular}
+\end{center}
+Which equation represents the line?
+\choices{\item $y=-2x+11$ \item $y=-2x+9$ \item $y=2x+7$
+\item $y=-\dfrac{1}{2}x+\dfrac{19}{2}$}}
+
+\question{Line $p$ is perpendicular to the line with equation $2x+5y=10$ and
+passes through the point $(4,-3)$. What is the $y$-coordinate of the
+$y$-intercept of line $p$?
+\choices{\item $-13$ \item $-7$ \item $-\dfrac{7}{5}$ \item $7$}}
+
+\qfr{The number of liters of fuel $f$ remaining in a generator after $t$
+hours of operation satisfies $3t+2f=48$. After how many hours of operation
+does the generator have no fuel remaining?}
+
+\question{In the $xy$-plane, the graph of $y=mx+b$ passes through the points
+$(p,q)$ and $(p+3,\,q-9)$, where $m$, $b$, $p$, and $q$ are constants. What
+is the value of $m$?
+\choices{\item $-3$ \item $-\dfrac{1}{3}$ \item $\dfrac{1}{3}$ \item $3$}}
+
+\qfr{In the $xy$-plane, the graph of $7x+ky=42$ has $x$-intercept $(6,0)$ and
+$y$-intercept $(0,-3)$, where $k$ is a constant. What is the value of $k$?}
+
+\question{Line $\ell$ in the $xy$-plane has slope $-\dfrac{1}{2}$ and passes
+through the point $(10,6)$. The point $(a,-4)$ also lies on line $\ell$.
+What is the value of $a$?
+\choices{\item $-10$ \item $15$ \item $20$ \item $30$}}
+
+\question{In the $xy$-plane, line $\ell$ has equation $ax+by=c$ and line $m$
+has equation $bx-ay=c$, where $a$, $b$, and $c$ are nonzero constants. Which
+statement must be true?
+\choices{\item Lines $\ell$ and $m$ are parallel.
+\item Lines $\ell$ and $m$ are perpendicular.
+\item Lines $\ell$ and $m$ are the same line.
+\item Lines $\ell$ and $m$ have the same $y$-intercept.}}
+
+\qfr{Line $\ell$ passes through the points $(0,9)$ and $(6,0)$. Line $m$ is
+parallel to line $\ell$ and passes through the point $(4,7)$. What is the
+$y$-coordinate of the $y$-intercept of line $m$?}
+
+\question{A crew spreads mulch and gravel. The equation $8m+5g=240$ gives the
+total cost, in dollars, of $m$ cubic yards of mulch and $g$ cubic yards of
+gravel. If the crew uses $5$ more cubic yards of mulch and the total cost
+stays the same, how does the amount of gravel change?
+\choices{\item It decreases by $3$ cubic yards.
+\item It decreases by $5$ cubic yards.
+\item It decreases by $8$ cubic yards.
+\item It increases by $8$ cubic yards.}}
+
+\question{In the $xy$-plane, line $\ell$ has equation $4x-3y=24$. Line $m$ is
+perpendicular to line $\ell$ and passes through the point at which line
+$\ell$ crosses the $x$-axis. Which equation represents line $m$?
+\choices{\item $y=-\dfrac{3}{4}x+\dfrac{9}{2}$ \item $y=\dfrac{4}{3}x-8$
+\item $y=-\dfrac{3}{4}x+6$ \item $y=-\dfrac{4}{3}x+8$}}
+
+\end{multicols*}

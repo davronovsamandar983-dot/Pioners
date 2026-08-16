@@ -1,0 +1,307 @@
+{
+  "topic": 2,
+  "slug": "02-linear-functions",
+  "title": "Linear Functions",
+  "domain": "Algebra",
+  "questions": [
+    {
+      "module": 1, "n": 1, "type": "fr", "difficulty": "easy",
+      "answer": "19", "answer_kind": "number",
+      "check": {"kind": "evaluate", "expr": "4*3 + 7"}
+    },
+    {
+      "module": 1, "n": 2, "type": "mc", "difficulty": "easy",
+      "answer": "-8", "answer_kind": "number",
+      "choices": ["-8", "-3", "5", "8"], "choice": "A",
+      "check": {"kind": "evaluate", "expr": "5*0 - 8"}
+    },
+    {
+      "module": 1, "n": 3, "type": "mc", "difficulty": "easy",
+      "answer": "3", "answer_kind": "number",
+      "choices": ["-19", "3", "9", "19"], "choice": "B",
+      "check": {"kind": "evaluate", "expr": "-2*4 + 11"}
+    },
+    {
+      "module": 1, "n": 4, "type": "fr", "difficulty": "easy",
+      "answer": "5", "answer_kind": "number",
+      "check": {"kind": "solve", "expr": "6*a + 5 - 35", "var": "a"}
+    },
+    {
+      "module": 1, "n": 5, "type": "mc", "difficulty": "easy",
+      "answer": "1/2", "answer_kind": "number",
+      "choices": ["-4", "-1/2", "1/2", "2"], "choice": "C",
+      "check": {"kind": "evaluate",
+                "expr": "((Rational(1,2)*2 - 4) - (Rational(1,2)*0 - 4))/(2 - 0)"}
+    },
+    {
+      "module": 1, "n": 6, "type": "mc", "difficulty": "easy",
+      "answer": "(0,12)", "answer_kind": "text",
+      "choices": ["(-7,0)", "(0,-7)", "(0,12)", "(12,0)"], "choice": "C"
+    },
+    {
+      "module": 1, "n": 7, "type": "fr", "difficulty": "easy",
+      "answer": "3", "answer_kind": "number",
+      "check": {"kind": "evaluate", "expr": "8 - (13 - 8)/(2 - 1)"}
+    },
+    {
+      "module": 1, "n": 8, "type": "mc", "difficulty": "easy",
+      "answer": "27", "answer_kind": "number",
+      "choices": ["15", "17", "27", "42"], "choice": "C",
+      "check": {"kind": "evaluate", "expr": "2*6 + 15"}
+    },
+    {
+      "module": 1, "n": 9, "type": "mc", "difficulty": "medium",
+      "answer": "The plant was 15 centimeters tall when it was planted.",
+      "answer_kind": "text",
+      "choices": [
+        "The plant grows 15 centimeters each week.",
+        "The plant was 15 centimeters tall when it was planted.",
+        "The plant was 15 centimeters tall after 2 weeks.",
+        "The plant stops growing after 15 weeks."
+      ],
+      "choice": "B"
+    },
+    {
+      "module": 1, "n": 10, "type": "fr", "difficulty": "medium",
+      "answer": "5", "answer_kind": "number",
+      "check": {"kind": "evaluate", "expr": "(22 - 7)/(5 - 2)"}
+    },
+    {
+      "module": 1, "n": 11, "type": "mc", "difficulty": "medium",
+      "answer": "5", "answer_kind": "number",
+      "choices": ["4", "5", "13", "17"], "choice": "B",
+      "check": {"kind": "evaluate", "expr": "9 - ((21 - 9)/(4 - 1))*(1 - 0)"}
+    },
+    {
+      "module": 1, "n": 12, "type": "mc", "difficulty": "medium",
+      "answer": "f(x) = 3x - 4", "answer_kind": "text",
+      "choices": ["f(x) = 3x - 4", "f(x) = 3x + 4", "f(x) = -4x + 3",
+                  "f(x) = x - 3"],
+      "choice": "A"
+    },
+    {
+      "module": 1, "n": 13, "type": "mc", "difficulty": "medium",
+      "answer": "15", "answer_kind": "number",
+      "choices": ["15", "19", "23", "225"], "choice": "A",
+      "check": {"kind": "solve", "expr": "15*h + 60 - 285", "var": "h"}
+    },
+    {
+      "module": 1, "n": 14, "type": "mc", "difficulty": "medium",
+      "answer": "The bicycle rents for $6 per hour.", "answer_kind": "text",
+      "choices": [
+        "The bicycle rents for $6 per hour.",
+        "The total cost of the rental is $6.",
+        "There is a fixed charge of $6 for the rental.",
+        "The bicycle may be rented for at most 6 hours."
+      ],
+      "choice": "A"
+    },
+    {
+      "module": 1, "n": 15, "type": "mc", "difficulty": "medium",
+      "answer": "4", "answer_kind": "number",
+      "choices": ["1/4", "3", "4", "12"], "choice": "C",
+      "check": {"kind": "evaluate", "expr": "(25 - 13)/(5 - 2)"}
+    },
+    {
+      "module": 1, "n": 16, "type": "fr", "difficulty": "medium",
+      "answer": "4", "answer_kind": "number",
+      "check": {"kind": "evaluate", "expr": "(10 - (-6))/(4 - 0)"}
+    },
+    {
+      "module": 1, "n": 17, "type": "mc", "difficulty": "medium",
+      "answer": "7", "answer_kind": "number",
+      "choices": ["-7", "7", "17", "28"], "choice": "B",
+      "check": {"kind": "solve", "expr": "68 - 4*h - 40", "var": "h"}
+    },
+    {
+      "module": 1, "n": 18, "type": "fr", "difficulty": "hard",
+      "answer": "48", "answer_kind": "number",
+      "check": {"kind": "evaluate", "expr": "((32 - 8)/6)*10 + 8"}
+    },
+    {
+      "module": 1, "n": 19, "type": "mc", "difficulty": "hard",
+      "answer": "23", "answer_kind": "number",
+      "choices": ["14", "17", "23", "33"], "choice": "C",
+      "check": {"kind": "evaluate", "expr": "5 + ((11 - 5)/(3 - 1))*(7 - 1)"}
+    },
+    {
+      "module": 1, "n": 20, "type": "mc", "difficulty": "hard",
+      "answer": "In the year 2012, the population was 6360.",
+      "answer_kind": "text",
+      "choices": [
+        "The population increased by 6360 people over 12 years.",
+        "The population reached 6360 people 12 months after 2000.",
+        "In the year 2012, the population was 6360.",
+        "The population increases by 6360 people every 12 years."
+      ],
+      "choice": "C"
+    },
+    {
+      "module": 1, "n": 21, "type": "fr", "difficulty": "hard",
+      "answer": "11", "answer_kind": "number",
+      "check": {"kind": "solve",
+                "expr": "((15 - 3)/(6 - 2))*(x - 2) + 3 - 30", "var": "x"}
+    },
+    {
+      "module": 1, "n": 22, "type": "mc", "difficulty": "hard",
+      "answer": "f(x) = -(1/2)x + 8", "answer_kind": "text",
+      "choices": ["f(x) = -(1/2)x + 8", "f(x) = -(1/2)x + 9",
+                  "f(x) = (1/2)x + 8", "f(x) = -2x + 5"],
+      "choice": "A"
+    },
+
+    {
+      "module": 2, "n": 1, "type": "mc", "difficulty": "medium",
+      "answer": "10", "answer_kind": "number",
+      "choices": ["10", "12", "14", "50"], "choice": "A",
+      "check": {"kind": "solve", "expr": "5*c + 10 - 60", "var": "c"}
+    },
+    {
+      "module": 2, "n": 2, "type": "fr", "difficulty": "medium",
+      "answer": "1", "answer_kind": "number",
+      "check": {"kind": "evaluate", "expr": "7 + ((7 - 19)/(4 - 0))*(6 - 4)"}
+    },
+    {
+      "module": 2, "n": 3, "type": "mc", "difficulty": "medium",
+      "answer": "After 3 hours of driving, 60 miles remain to be driven.",
+      "answer_kind": "text",
+      "choices": [
+        "The whole trip is 60 miles long.",
+        "After 3 hours of driving, 60 miles remain to be driven.",
+        "After 60 hours of driving, 3 miles remain to be driven.",
+        "The car covers 3 miles every 60 minutes."
+      ],
+      "choice": "B"
+    },
+    {
+      "module": 2, "n": 4, "type": "mc", "difficulty": "medium",
+      "answer": "-2", "answer_kind": "number",
+      "choices": ["-12", "-2", "2", "6"], "choice": "B",
+      "check": {"kind": "evaluate", "expr": "10 - ((26 - 10)/(7 - 3))*3"}
+    },
+    {
+      "module": 2, "n": 5, "type": "fr", "difficulty": "medium",
+      "answer": "18", "answer_kind": "number",
+      "check": {"kind": "evaluate", "expr": "(320 - 194)/(12 - 5)"}
+    },
+    {
+      "module": 2, "n": 6, "type": "mc", "difficulty": "medium",
+      "answer": "C(n) = 18n + 75", "answer_kind": "text",
+      "choices": ["C(n) = 18n + 75", "C(n) = 75n + 18", "C(n) = 18n - 75",
+                  "C(n) = 93n"],
+      "choice": "A"
+    },
+    {
+      "module": 2, "n": 7, "type": "fr", "difficulty": "medium",
+      "answer": "2", "answer_kind": "number",
+      "check": {"kind": "evaluate",
+                "expr": "((17 - 5)/(6 - 2)) + (5 - ((17 - 5)/(6 - 2))*2)"}
+    },
+    {
+      "module": 2, "n": 8, "type": "mc", "difficulty": "medium",
+      "answer": "7", "answer_kind": "number",
+      "choices": ["7", "9", "11", "21"], "choice": "A",
+      "check": {"kind": "solve", "expr": "k*3 + 6 - 27", "var": "k"}
+    },
+    {
+      "module": 2, "n": 9, "type": "mc", "difficulty": "medium",
+      "answer": "The number of unread messages decreases by 35 each day.",
+      "answer_kind": "text",
+      "choices": [
+        "There were 35 unread messages at the time of the cleanup.",
+        "The number of unread messages decreases by 35 each day.",
+        "The number of unread messages increases by 35 each day.",
+        "The inbox is empty 35 days after the cleanup."
+      ],
+      "choice": "B"
+    },
+    {
+      "module": 2, "n": 10, "type": "fr", "difficulty": "medium",
+      "answer": "2", "answer_kind": "number",
+      "check": {"kind": "evaluate",
+                "expr": "11 + ((-7 - 11)/(4 - (-2)))*(1 - (-2))"}
+    },
+    {
+      "module": 2, "n": 11, "type": "mc", "difficulty": "medium",
+      "answer": "x = (y + 9)/4", "answer_kind": "text",
+      "choices": ["x = (y + 9)/4", "x = (y - 9)/4", "x = (y + 4)/9",
+                  "x = 4y + 9"],
+      "choice": "A"
+    },
+    {
+      "module": 2, "n": 12, "type": "mc", "difficulty": "medium",
+      "answer": "8", "answer_kind": "number",
+      "choices": ["-8", "3", "6", "8"], "choice": "D",
+      "check": {"kind": "solve", "expr": "24 + ((15 - 24)/(3 - 0))*x",
+                "var": "x"}
+    },
+    {
+      "module": 2, "n": 13, "type": "mc", "difficulty": "medium",
+      "answer": "(3,7)", "answer_kind": "text",
+      "choices": ["(-3,7)", "(0,2)", "(3,7)", "(6,4)"], "choice": "C"
+    },
+    {
+      "module": 2, "n": 14, "type": "fr", "difficulty": "medium",
+      "answer": "9", "answer_kind": "number",
+      "check": {"kind": "solve", "expr": "(3*5 + b) - 2*(3*1 + b)", "var": "b"}
+    },
+    {
+      "module": 2, "n": 15, "type": "mc", "difficulty": "medium",
+      "answer": "The value of g(x) decreases as x increases.",
+      "answer_kind": "text",
+      "choices": [
+        "The value of g(x) decreases as x increases.",
+        "The value of g(0) is negative.",
+        "The value of g(x) is positive for every value of x.",
+        "The graph of y = g(x) passes through the origin."
+      ],
+      "choice": "A"
+    },
+    {
+      "module": 2, "n": 16, "type": "mc", "difficulty": "hard",
+      "answer": "7", "answer_kind": "number",
+      "choices": ["3", "7", "21", "k+7"], "choice": "B",
+      "check": {"kind": "evaluate", "expr": "((k + 21) - k)/(4 - 1)"}
+    },
+    {
+      "module": 2, "n": 17, "type": "fr", "difficulty": "hard",
+      "answer": "53", "answer_kind": "number",
+      "check": {"kind": "evaluate", "expr": "5 + 6*(10 - 2)"}
+    },
+    {
+      "module": 2, "n": 18, "type": "mc", "difficulty": "hard",
+      "answer": "5", "answer_kind": "number",
+      "choices": ["1/5", "3", "5", "15"], "choice": "C",
+      "check": {"kind": "evaluate", "expr": "(19 - 4)/((t + 3) - t)"}
+    },
+    {
+      "module": 2, "n": 19, "type": "mc", "difficulty": "hard",
+      "answer": "Using 50 gigabytes in a month costs a total of $36.",
+      "answer_kind": "text",
+      "choices": [
+        "Using 50 gigabytes in a month costs a total of $36.",
+        "The plan costs $36 for each of the 50 gigabytes used.",
+        "A monthly cost of $50 buys 36 gigabytes.",
+        "The monthly cost rises by $36 for each additional 50 gigabytes."
+      ],
+      "choice": "A"
+    },
+    {
+      "module": 2, "n": 20, "type": "fr", "difficulty": "hard",
+      "answer": "7", "answer_kind": "number",
+      "check": {"kind": "solve", "expr": "8 - 2*(x - 3)", "var": "x"}
+    },
+    {
+      "module": 2, "n": 21, "type": "mc", "difficulty": "hard",
+      "answer": "5", "answer_kind": "number",
+      "choices": ["3", "5", "14", "48"], "choice": "B",
+      "check": {"kind": "solve", "expr": "4*(c - 2) + 9 - 21", "var": "c"}
+    },
+    {
+      "module": 2, "n": 22, "type": "mc", "difficulty": "hard",
+      "answer": "1/2", "answer_kind": "number",
+      "choices": ["-1/2", "1/2", "2", "6"], "choice": "B",
+      "check": {"kind": "solve", "expr": "(2*4 + 5) - (k*4 + 11)", "var": "k"}
+    }
+  ]
+}

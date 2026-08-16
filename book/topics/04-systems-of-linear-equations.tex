@@ -1,0 +1,239 @@
+\settopicname{Systems of Two Linear Equations in Two Variables}
+\chapter{Systems of Two Linear Equations in Two Variables}
+\topicopen{Algebra}{Solve a system of two linear equations in two variables,
+and determine the conditions under which such a system has one solution, no
+solution, or infinitely many solutions.}
+
+\begin{essentials}
+A solution of a system is an ordered pair $(x,y)$ that satisfies
+\emph{both} equations. Two methods produce it.
+\textbf{Substitution:} solve one equation for one variable, then put that
+expression into the other equation.
+\textbf{Elimination:} scale one or both equations so that adding or
+subtracting them removes a variable.
+Adding or subtracting the equations exactly as they stand often gives the
+value of an expression such as $x+y$ or $y-x$ without ever finding $x$ and
+$y$ separately.
+Write both equations as $ax+by=c$ and compare
+\[ \begin{cases} a_1x + b_1y = c_1 \\ a_2x + b_2y = c_2 \end{cases} \]
+There is exactly \textbf{one solution} when $a_1b_2 \ne a_2b_1$;
+\textbf{no solution} when
+$\dfrac{a_1}{a_2} = \dfrac{b_1}{b_2} \ne \dfrac{c_1}{c_2}$ (parallel lines);
+\textbf{infinitely many solutions} when
+$\dfrac{a_1}{a_2} = \dfrac{b_1}{b_2} = \dfrac{c_1}{c_2}$ (one line written
+twice). For a context, name the two unknowns, then write one equation for
+the counts and one for the total value.
+\end{essentials}
+
+\modulehead{Module 1}{Questions 1--22}
+\begin{multicols*}{2}
+
+\qfr{\[ \begin{cases} x + y = 10 \\ x - y = 4 \end{cases} \]
+The solution to the given system of equations is $(x,y)$. What is the value
+of $x$?}
+
+\question{\[ \begin{cases} y = 3x \\ x + y = 16 \end{cases} \]
+What is the value of $y$?
+\choices{\item $4$ \item $8$ \item $12$ \item $16$}}
+
+\question{\[ \begin{cases} x + y = 9 \\ 2x + y = 14 \end{cases} \]
+What is the value of $y$?
+\choices{\item $-4$ \item $4$ \item $5$ \item $13$}}
+
+\qfr{\[ \begin{cases} y = x + 1 \\ 2x + 3y = 23 \end{cases} \]
+The solution to the given system is $(x,y)$. What is the value of $y$?}
+
+\question{\[ \begin{cases} 2x + 3y = 12 \\ 2x - 3y = 0 \end{cases} \]
+What is the value of $x$?
+\choices{\item $2$ \item $3$ \item $4$ \item $6$}}
+
+\question{A vendor sells small boxes for \$2 each and large boxes for \$5
+each. On one day the vendor sold a total of $9$ boxes for a total of \$33.
+How many large boxes were sold?
+\choices{\item $4$ \item $5$ \item $6$ \item $9$}}
+
+\question{\[ \begin{cases} 5x - y = 22 \\ y = x + 2 \end{cases} \]
+What is the value of $x$?
+\choices{\item $5$ \item $6$ \item $8$ \item $24$}}
+
+\question{Which ordered pair $(x,y)$ is the solution to the given system?
+\[ \begin{cases} 2x + y = 8 \\ x - y = 1 \end{cases} \]
+\choices{\item $(1,6)$ \item $(2,3)$ \item $(3,2)$ \item $(4,3)$}}
+
+\qfr{\[ \begin{cases} 3x + 2y = 19 \\ 5x - 2y = 21 \end{cases} \]
+The solution to the given system is $(x,y)$. What is the value of $y$?}
+
+\question{\[ \begin{cases} 4x + 3y = 25 \\ 2x - y = 5 \end{cases} \]
+What is the value of $x$?
+\choices{\item $3$ \item $4$ \item $5$ \item $7$}}
+
+\question{\[ \begin{cases} 4x + 3y = 27 \\ 3x + 4y = 22 \end{cases} \]
+What is the value of $x + y$?
+\choices{\item $5$ \item $6$ \item $7$ \item $49$}}
+
+\qfr{The total cost of $3$ chairs and $2$ tables is \$430. The total cost of
+$1$ chair and $1$ table is \$165. Every chair costs the same amount, and
+every table costs the same amount. What is the cost, in dollars, of one
+table?}
+
+\question{A total of $240$ tickets were sold for an event. Adult tickets
+cost \$12 each and student tickets cost \$7 each, and the total collected
+was \$2{,}180. How many student tickets were sold?
+\choices{\item $100$ \item $120$ \item $140$ \item $240$}}
+
+\question{A worker spent $x$ hours on task A, paid at \$8 per hour, and $y$
+hours on task B, paid at \$12 per hour. The situation is modeled by
+\[ \begin{cases} x + y = 45 \\ 8x + 12y = 440 \end{cases} \]
+What is the best interpretation of $45$ in this context?
+\choices{\item The total number of hours the worker spent on the two tasks.
+\item The total amount, in dollars, the worker was paid.
+\item The number of hours the worker spent on task B.
+\item The amount, in dollars, paid per hour for task A.}}
+
+\question{\[ \begin{cases} \dfrac{x}{2} + y = 7 \\[2pt] x - y = 2 \end{cases} \]
+What is the value of $x$?
+\choices{\item $4$ \item $6$ \item $8$ \item $14$}}
+
+\question{\[ \begin{cases} 3x + 4y = -2 \\ 5x - 2y = 14 \end{cases} \]
+What is the value of $y$?
+\choices{\item $-4$ \item $-2$ \item $2$ \item $4$}}
+
+\qfr{Plan A charges a one-time fee of \$30 plus \$4 per hour. Plan B charges
+a one-time fee of \$10 plus \$8 per hour. For how many hours of use is the
+total cost of the two plans the same?}
+
+\qfr{In the given system, $k$ is a constant.
+\[ \begin{cases} 2x + 3y = 12 \\ 4x + ky = 20 \end{cases} \]
+The solution to the system is $(3,2)$. What is the value of $k$?}
+
+\question{In the given system, $k$ is a constant.
+\[ \begin{cases} 3x + 6y = 15 \\ x + ky = 9 \end{cases} \]
+For what value of $k$ does the system have no solution?
+\choices{\item $\dfrac{1}{2}$ \item $2$ \item $3$ \item $6$}}
+
+\question{In the given system, $a$ is a constant.
+\[ \begin{cases} 4x - 2y = 10 \\ -6x + ay = -15 \end{cases} \]
+The system has infinitely many solutions. What is the value of $a$?
+\choices{\item $-3$ \item $2$ \item $3$ \item $6$}}
+
+\qfr{\[ \begin{cases} 5x + 3y = 17 \\ 3x + 5y = 23 \end{cases} \]
+The solution to the given system is $(x,y)$. What is the value of $y - x$?}
+
+\question{In the given system, $c$ is a constant.
+\[ \begin{cases} y = 4x + 7 \\ y = cx - 3 \end{cases} \]
+For what value of $c$ does the system have no solution?
+\choices{\item $-7$ \item $-4$ \item $4$ \item $7$}}
+
+\end{multicols*}
+
+\modulehead{Module 2}{Questions 1--22}
+\begin{multicols*}{2}
+
+\qfr{\[ \begin{cases} 3x + y = 13 \\ 2x - 3y = 5 \end{cases} \]
+The solution to the given system is $(x,y)$. What is the value of $x$?}
+
+\question{\[ \begin{cases} 6x + 5y = 28 \\ 4x - 5y = 2 \end{cases} \]
+What is the value of $y$?
+\choices{\item $-2$ \item $2$ \item $3$ \item $5$}}
+
+\question{The perimeter of a rectangle is $46$ centimeters, and its length
+is $5$ centimeters greater than its width. What is the length, in
+centimeters, of the rectangle?
+\choices{\item $9$ \item $11.5$ \item $14$ \item $23$}}
+
+\qfr{\[ \begin{cases} 7x + 2y = 24 \\ 3x - 2y = 16 \end{cases} \]
+The solution to the given system is $(x,y)$. What is the value of $x + y$?}
+
+\question{\[ \begin{cases} 8x + 5y = 43 \\ 5x + 8y = 22 \end{cases} \]
+What is the value of $x + y$?
+\choices{\item $5$ \item $7$ \item $13$ \item $65$}}
+
+\question{A box holds $30$ coins, each of which is either a nickel worth
+$5$ cents or a dime worth $10$ cents. The coins are worth $220$ cents in
+total. How many dimes are in the box?
+\choices{\item $11$ \item $14$ \item $16$ \item $22$}}
+
+\question{In the given system, $a$ is a constant.
+\[ \begin{cases} ax + 3y = 18 \\ 2x - y = 4 \end{cases} \]
+The solution to the system is $(3,2)$. What is the value of $a$?
+\choices{\item $2$ \item $4$ \item $6$ \item $12$}}
+
+\qfr{\[ \begin{cases} 4x + 9y = 38 \\ 4x - 3y = 14 \end{cases} \]
+The solution to the given system is $(x,y)$. What is the value of
+$2x + 3y$?}
+
+\question{A student plans to solve the given system by substitution.
+\[ \begin{cases} 3x + 5y = 12 \\ x - 2y = 7 \end{cases} \]
+Which equation correctly expresses $x$ in terms of $y$?
+\choices{\item $x = 2y - 7$ \item $x = 2y + 7$ \item $x = 7 - 2y$
+\item $x = \dfrac{y}{2} + 7$}}
+
+\question{A store sells notebooks for \$3 each and folders for \$2 each. A
+purchase of $n$ notebooks and $f$ folders is modeled by
+\[ \begin{cases} n + f = 40 \\ 3n + 2f = 96 \end{cases} \]
+What is the best interpretation of $96$ in this context?
+\choices{\item The total number of items purchased.
+\item The total cost, in dollars, of the items purchased.
+\item The price, in dollars, of one notebook.
+\item The number of notebooks purchased.}}
+
+\qfr{Printer A prints $12$ pages per minute and printer B prints $18$ pages
+per minute. The two printers ran for a combined total of $60$ minutes and
+together printed $870$ pages. For how many minutes did printer A run?}
+
+\question{\[ \begin{cases} 0.5x + y = 9 \\ x - 0.5y = 8 \end{cases} \]
+What is the value of $y$?
+\choices{\item $2$ \item $4$ \item $5$ \item $10$}}
+
+\question{\[ \begin{cases} 4x - 6y = 10 \\ -2x + 3y = -5 \end{cases} \]
+Which statement about the given system is true?
+\choices{\item The system has no solution.
+\item The system has exactly one solution.
+\item The system has exactly two solutions.
+\item The system has infinitely many solutions.}}
+
+\qfr{\[ \begin{cases} 5x + 2y = 4 \\ 3x - 4y = 18 \end{cases} \]
+The solution to the given system is $(x,y)$. What is the value of $x - y$?}
+
+\question{In the given system, $k$ is a constant.
+\[ \begin{cases} kx + 4y = 20 \\ x - 3y = -4 \end{cases} \]
+The solution to the system is $(x,y)$, where $y = 2$. What is the value of
+$k$?
+\choices{\item $2$ \item $4$ \item $6$ \item $10$}}
+
+\qfr{\[ \begin{cases} 6x + 9y = 33 \\ 4x + 6y = 22 \end{cases} \]
+The given system has infinitely many solutions. For every solution $(x,y)$
+of the system, what is the value of $2x + 3y$?}
+
+\question{In the given system, $k$ is a constant.
+\[ \begin{cases} kx - 6y = 18 \\ 2x + 3y = 7 \end{cases} \]
+For what value of $k$ does the system have no solution?
+\choices{\item $-4$ \item $-2$ \item $2$ \item $4$}}
+
+\question{In the given system, $a$ and $b$ are constants.
+\[ \begin{cases} 3x - 5y = 8 \\ ax - 15y = b \end{cases} \]
+The system has infinitely many solutions. What is the value of $a + b$?
+\choices{\item $17$ \item $27$ \item $33$ \item $49$}}
+
+\qfr{In the given system, $c$ is a constant.
+\[ \begin{cases} 4x + cy = 9 \\ 12x + 21y = 5 \end{cases} \]
+The system has no solution. What is the value of $c$?}
+
+\question{\[ \begin{cases} 3x + 2y = 7 \\ 9x + 6y = 21 \end{cases} \]
+Which statement must be true?
+\choices{\item The system has no solution.
+\item The pair $(1,2)$ is the only solution of the system.
+\item Every $(x,y)$ satisfying $3x + 2y = 7$ satisfies both equations.
+\item The graphs of the two equations meet at exactly one point.}}
+
+\question{A total of $300$ tickets were sold for a concert. Balcony tickets
+cost \$15 each and floor tickets cost \$25 each, and the total collected was
+\$6{,}100. How many more floor tickets than balcony tickets were sold?
+\choices{\item $20$ \item $140$ \item $160$ \item $300$}}
+
+\question{In the given system, $k$ is a constant.
+\[ \begin{cases} kx + (k+1)y = 12 \\ 4x + 6y = 9 \end{cases} \]
+For what value of $k$ does the system have no solution?
+\choices{\item $-2$ \item $1$ \item $2$ \item $3$}}
+
+\end{multicols*}

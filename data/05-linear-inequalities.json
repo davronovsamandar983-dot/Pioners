@@ -1,0 +1,281 @@
+{
+  "topic": 5,
+  "slug": "05-linear-inequalities",
+  "title": "Linear Inequalities in One or Two Variables",
+  "domain": "Algebra",
+  "questions": [
+    {
+      "module": 1, "n": 1, "type": "mc", "difficulty": "easy",
+      "answer": "$x \\le 6$", "answer_kind": "text",
+      "choices": ["$x \\le 6$", "$x \\ge 6$", "$x \\le 24$", "$x \\ge 24$"],
+      "choice": "A"
+    },
+    {
+      "module": 1, "n": 2, "type": "fr", "difficulty": "easy",
+      "answer": "8", "answer_kind": "number",
+      "check": {"kind": "evaluate", "expr": "40/5"}
+    },
+    {
+      "module": 1, "n": 3, "type": "mc", "difficulty": "easy",
+      "answer": "$x < -4$", "answer_kind": "text",
+      "choices": ["$x < -4$", "$x > -4$", "$x < 4$", "$x > 4$"],
+      "choice": "A"
+    },
+    {
+      "module": 1, "n": 4, "type": "mc", "difficulty": "easy",
+      "answer": "6", "answer_kind": "number",
+      "choices": ["4", "5", "6", "7"], "choice": "C",
+      "check": {"kind": "evaluate", "expr": "floor((7+3)/2)+1"}
+    },
+    {
+      "module": 1, "n": 5, "type": "mc", "difficulty": "easy",
+      "answer": "6", "answer_kind": "number",
+      "choices": ["5", "6", "7", "8"], "choice": "B",
+      "check": {"kind": "evaluate", "expr": "floor(40/6)"}
+    },
+    {
+      "module": 1, "n": 6, "type": "fr", "difficulty": "easy",
+      "answer": "16", "answer_kind": "number",
+      "check": {"kind": "solve", "expr": "x/4 + 3 - 7", "var": "x"}
+    },
+    {
+      "module": 1, "n": 7, "type": "mc", "difficulty": "easy",
+      "answer": "4", "answer_kind": "number",
+      "choices": ["-4", "-3", "4", "5"], "choice": "C",
+      "check": {"kind": "evaluate", "expr": "5-1"}
+    },
+    {
+      "module": 1, "n": 8, "type": "mc", "difficulty": "easy",
+      "answer": "5", "answer_kind": "number",
+      "choices": ["3", "4", "5", "6"], "choice": "C",
+      "check": {"kind": "solve", "expr": "3*x + 2 - (5*x - 8)", "var": "x"}
+    },
+    {
+      "module": 1, "n": 9, "type": "mc", "difficulty": "medium",
+      "answer": "8", "answer_kind": "number",
+      "choices": ["7", "8", "9", "10"], "choice": "B",
+      "check": {"kind": "evaluate", "expr": "(6+12)/2 - 1"}
+    },
+    {
+      "module": 1, "n": 10, "type": "fr", "difficulty": "medium",
+      "answer": "25", "answer_kind": "number",
+      "check": {"kind": "evaluate", "expr": "(2325-1200)/45"}
+    },
+    {
+      "module": 1, "n": 11, "type": "mc", "difficulty": "medium",
+      "answer": "8", "answer_kind": "number",
+      "choices": ["7", "8", "9", "10"], "choice": "B",
+      "check": {"kind": "evaluate", "expr": "4 - (-3) + 1"}
+    },
+    {
+      "module": 1, "n": 12, "type": "mc", "difficulty": "medium",
+      "answer": "$x \\le -9$", "answer_kind": "text",
+      "choices": ["$x \\le -9$", "$x \\ge -9$", "$x \\le 9$", "$x \\ge 9$"],
+      "choice": "A"
+    },
+    {
+      "module": 1, "n": 13, "type": "fr", "difficulty": "medium",
+      "answer": "60", "answer_kind": "number",
+      "check": {"kind": "solve", "expr": "x/4 + 12 - (x/2 - 3)", "var": "x"}
+    },
+    {
+      "module": 1, "n": 14, "type": "mc", "difficulty": "medium",
+      "answer": "350", "answer_kind": "number",
+      "choices": ["300", "350", "400", "600"], "choice": "B",
+      "check": {"kind": "evaluate", "expr": "(60-25)/(1/10)"}
+    },
+    {
+      "module": 1, "n": 15, "type": "mc", "difficulty": "medium",
+      "answer": "$(0,0)$", "answer_kind": "text",
+      "choices": ["$(3,2)$", "$(0,0)$", "$(1,5)$", "$(4,1)$"],
+      "choice": "B"
+    },
+    {
+      "module": 1, "n": 16, "type": "mc", "difficulty": "medium",
+      "answer": "The technician charges \\$15 for each hour of work.",
+      "answer_kind": "text",
+      "choices": [
+        "The technician charges \\$15 for each hour of work.",
+        "The technician charges a one-time fee of \\$15.",
+        "The technician works at most 15 hours.",
+        "The customer will spend at most \\$15."
+      ],
+      "choice": "A"
+    },
+    {
+      "module": 1, "n": 17, "type": "fr", "difficulty": "medium",
+      "answer": "4", "answer_kind": "number",
+      "check": {"kind": "solve", "expr": "5 - 2*x - (x - 7)", "var": "x"}
+    },
+    {
+      "module": 1, "n": 18, "type": "mc", "difficulty": "hard",
+      "answer": "-3", "answer_kind": "number",
+      "choices": ["-27", "-3", "3", "27"], "choice": "B",
+      "check": {"kind": "solve", "expr": "(12 - k)/3 - 5", "var": "k"}
+    },
+    {
+      "module": 1, "n": 19, "type": "mc", "difficulty": "hard",
+      "answer": "6", "answer_kind": "number",
+      "choices": ["5", "6", "7", "8"], "choice": "B",
+      "check": {"kind": "evaluate", "expr": "7 - 1"}
+    },
+    {
+      "module": 1, "n": 20, "type": "fr", "difficulty": "hard",
+      "answer": "6", "answer_kind": "number",
+      "check": {"kind": "evaluate", "expr": "3 - (-2) + 1"}
+    },
+    {
+      "module": 1, "n": 21, "type": "mc", "difficulty": "hard",
+      "answer": "9", "answer_kind": "number",
+      "choices": ["8", "9", "10", "12"], "choice": "B",
+      "check": {"kind": "evaluate", "expr": "(30 - 3*4)/2"}
+    },
+    {
+      "module": 1, "n": 22, "type": "fr", "difficulty": "hard",
+      "answer": "5", "answer_kind": "number",
+      "check": {"kind": "solve", "expr": "12/(a - 3) - 6", "var": "a"}
+    },
+
+    {
+      "module": 2, "n": 1, "type": "mc", "difficulty": "medium",
+      "answer": "1", "answer_kind": "number",
+      "choices": ["1", "2", "3", "4"], "choice": "A",
+      "check": {"kind": "evaluate", "expr": "12/6 - 1"}
+    },
+    {
+      "module": 2, "n": 2, "type": "mc", "difficulty": "medium",
+      "answer": "$x \\ge -9$", "answer_kind": "text",
+      "choices": ["$x \\ge -9$", "$x \\le -9$", "$x \\ge 9$", "$x \\le 9$"],
+      "choice": "A"
+    },
+    {
+      "module": 2, "n": 3, "type": "fr", "difficulty": "medium",
+      "answer": "50", "answer_kind": "number",
+      "check": {"kind": "solve", "expr": "9*t/5 + 32 - 122", "var": "t"}
+    },
+    {
+      "module": 2, "n": 4, "type": "mc", "difficulty": "medium",
+      "answer": "$(1,2)$", "answer_kind": "text",
+      "choices": ["$(5,1)$", "$(1,2)$", "$(0,-4)$", "$(4,1)$"],
+      "choice": "B"
+    },
+    {
+      "module": 2, "n": 5, "type": "mc", "difficulty": "medium",
+      "answer": "15", "answer_kind": "number",
+      "choices": ["14", "15", "16", "17"], "choice": "B",
+      "check": {"kind": "evaluate", "expr": "floor((30 - 5/2)/(7/4))"}
+    },
+    {
+      "module": 2, "n": 6, "type": "fr", "difficulty": "medium",
+      "answer": "5", "answer_kind": "number",
+      "check": {"kind": "evaluate", "expr": "(14 + 4)/3 - 1"}
+    },
+    {
+      "module": 2, "n": 7, "type": "mc", "difficulty": "medium",
+      "answer": "3", "answer_kind": "number",
+      "choices": ["-3", "1/3", "3", "5"], "choice": "C",
+      "check": {"kind": "solve", "expr": "15/k - 5", "var": "k"}
+    },
+    {
+      "module": 2, "n": 8, "type": "mc", "difficulty": "medium",
+      "answer": "$s + \\ell \\le 15$ and $8s + 20\\ell \\ge 200$",
+      "answer_kind": "text",
+      "choices": [
+        "$s + \\ell \\le 15$ and $8s + 20\\ell \\ge 200$",
+        "$s + \\ell \\ge 15$ and $8s + 20\\ell \\le 200$",
+        "$s + \\ell \\le 15$ and $8s + 20\\ell \\le 200$",
+        "$8s + 20\\ell \\le 15$ and $s + \\ell \\ge 200$"
+      ],
+      "choice": "A"
+    },
+    {
+      "module": 2, "n": 9, "type": "fr", "difficulty": "medium",
+      "answer": "6", "answer_kind": "number",
+      "check": {"kind": "evaluate", "expr": "floor((84 - 12*3)/7)"}
+    },
+    {
+      "module": 2, "n": 10, "type": "mc", "difficulty": "medium",
+      "answer": "The generator uses 18 liters of fuel each day.",
+      "answer_kind": "text",
+      "choices": [
+        "The generator uses 18 liters of fuel each day.",
+        "The generator holds 18 liters of fuel when it is full.",
+        "The generator can be used for at most 18 days.",
+        "At least 18 liters of fuel must remain at all times."
+      ],
+      "choice": "A"
+    },
+    {
+      "module": 2, "n": 11, "type": "mc", "difficulty": "medium",
+      "answer": "10", "answer_kind": "number",
+      "choices": ["6", "8", "10", "16"], "choice": "C",
+      "check": {"kind": "solve", "expr": "(x + 2)/3 - (x - 4)/2 - 1", "var": "x"}
+    },
+    {
+      "module": 2, "n": 12, "type": "fr", "difficulty": "medium",
+      "answer": "10", "answer_kind": "number",
+      "check": {"kind": "solve", "expr": "4*w + 6 - 46", "var": "w"}
+    },
+    {
+      "module": 2, "n": 13, "type": "mc", "difficulty": "medium",
+      "answer": "1", "answer_kind": "number",
+      "choices": ["-5", "-1", "1", "5"], "choice": "C",
+      "check": {"kind": "solve", "expr": "-3*(x - 4) - (2*x + 7)", "var": "x"}
+    },
+    {
+      "module": 2, "n": 14, "type": "mc", "difficulty": "medium",
+      "answer": "3", "answer_kind": "number",
+      "choices": ["3", "4", "6", "9"], "choice": "A",
+      "check": {"kind": "system", "exprs": ["3*x + y - 21", "y - (x - 3)"],
+                "vars": ["x", "y"], "want": "y"}
+    },
+    {
+      "module": 2, "n": 15, "type": "mc", "difficulty": "medium",
+      "answer": "12", "answer_kind": "number",
+      "choices": ["11", "12", "13", "14"], "choice": "B",
+      "check": {"kind": "evaluate", "expr": "1 + 4*(5 - 2) - 1"}
+    },
+    {
+      "module": 2, "n": 16, "type": "fr", "difficulty": "hard",
+      "answer": "5", "answer_kind": "number",
+      "check": {"kind": "solve", "expr": "(c + 4)/3 - 3", "var": "c"}
+    },
+    {
+      "module": 2, "n": 17, "type": "mc", "difficulty": "hard",
+      "answer": "5", "answer_kind": "number",
+      "choices": ["4", "5", "6", "7"], "choice": "B",
+      "check": {"kind": "evaluate", "expr": "1 - (-3) + 1"}
+    },
+    {
+      "module": 2, "n": 18, "type": "mc", "difficulty": "hard",
+      "answer": "0", "answer_kind": "number",
+      "choices": ["-7", "-1", "0", "1"], "choice": "C",
+      "check": {"kind": "evaluate", "expr": "5 - 2*2 - 1"}
+    },
+    {
+      "module": 2, "n": 19, "type": "fr", "difficulty": "hard",
+      "answer": "12", "answer_kind": "number",
+      "check": {"kind": "evaluate", "expr": "(80 - 2*10)/5"}
+    },
+    {
+      "module": 2, "n": 20, "type": "mc", "difficulty": "hard",
+      "answer": "$ac > bc$", "answer_kind": "text",
+      "choices": ["$ac > bc$", "$ac < bc$", "$a + c > b + c$",
+                  "$\\dfrac{a}{c} < \\dfrac{b}{c}$"],
+      "choice": "A"
+    },
+    {
+      "module": 2, "n": 21, "type": "mc", "difficulty": "hard",
+      "answer": "$x < \\dfrac{12}{m}$", "answer_kind": "text",
+      "choices": ["$x < \\dfrac{12}{m}$", "$x > \\dfrac{12}{m}$",
+                  "$x < \\dfrac{24}{m}$", "$x > \\dfrac{24}{m}$"],
+      "choice": "A"
+    },
+    {
+      "module": 2, "n": 22, "type": "fr", "difficulty": "hard",
+      "answer": "8", "answer_kind": "number",
+      "check": {"kind": "system", "exprs": ["y - (-2*x + 14)", "y - (3*x - 1)"],
+                "vars": ["x", "y"], "want": "y"}
+    }
+  ]
+}
