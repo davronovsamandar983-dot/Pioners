@@ -4,7 +4,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 
 echo "== assets"
-python3 tools/make_assets.py DAVLAT
+python3 tools/make_assets.py "DAVLAT KAMOLIDDINOV"
 
 echo "== dedupe"
 python3 tools/dedupe.py
