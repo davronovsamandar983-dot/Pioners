@@ -76,9 +76,9 @@ def emit_problems(problems, path):
 def emit_key(problems, path):
     """Eight number/answer pairs a row, left aligned."""
     lines = [r"\clearpage", r"\satlesson{Answer Key}",
-             r"\noindent{\footnotesize The 70-question source ships with a key; "
-             r"the 150-question source does not. Items without a published "
-             r"answer are marked \textemdash.}\par\medskip"]
+             r"\noindent{\footnotesize Answers marked \textemdash\ are the "
+             r"handful that could not be pinned down from the source page, "
+             r"and are left open rather than guessed.}\par\medskip"]
     for domain, title in DOMAINS:
         group = [p for p in problems if p["domain"] == domain]
         if not group:
