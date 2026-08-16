@@ -24,7 +24,6 @@ The 150-question source publishes no answers of its own; they are solved
 in `tools/answers_b.py` and machine-checked by `tools/verify_b.py`
 (72 of them reduce to an equation sympy can confirm). Four could not be
 pinned down from the source page and print as `—` rather than a guess.
-`—`. Everything else is transcribed from the sources as printed.
 
 Both PDFs had to be transcribed by reading the rendered pages: A is a
 scan with no text layer at all, and B's text layer has a broken font
