@@ -1,0 +1,96 @@
+% =====================================================================
+%  SAT MATH MASTERY — 20 topics x 44 questions = 880
+%  Build with:  bash tools/build.sh
+%  (the build script regenerates build/_topics.tex and build/_answers.tex
+%   from whatever topic files currently exist, so partial builds work)
+% =====================================================================
+\documentclass[11pt,a4paper,oneside]{book}
+\input{preamble.tex}
+
+\begin{document}
+
+% ---------------------------------------------------------------- cover
+\thispagestyle{plain}
+\settopicname{}
+\vspace*{1.2cm}
+\begin{center}
+  {\Huge\bfseries\color{keycolor} SAT MATH MASTERY}\\[10pt]
+  {\color{keycolor}\rule{9cm}{2pt}}\\[14pt]
+  {\Large\color{inkgray} 20 Topics \quad\textbullet\quad 880 Practice Questions}\\[6pt]
+  {\large\color{inkgray} Module 1 + Module 2, every topic}\\[26pt]
+  {\large\bfseries\color{keycolor} MATH INSTRUCTOR: DAVLAT KAMOLIDDINOV}
+\end{center}
+
+\vfill
+\begin{center}
+\begin{minipage}{0.86\textwidth}
+\small\color{inkgray}
+Every topic in this book is one of the official skill and knowledge testing
+points published by College Board for the Digital SAT Suite Math section.
+Each topic contains \textbf{44 questions} arranged exactly as they appear on
+test day: \textbf{Module 1} (questions 1--22) builds from routine to
+moderate, and \textbf{Module 2} (questions 1--22, numbering restarts) picks
+up where Module 1 leaves off and climbs to the hardest material the section
+asks for. Question formats follow the two the test uses --- four-option
+multiple choice and student-produced response. Worked answer keys for every
+topic begin on the answer-key pages at the back.
+\end{minipage}
+\end{center}
+\vspace{1.4cm}
+\clearpage
+
+% ------------------------------------------------------------ contents
+\settopicname{Contents}
+\renewcommand{\contentsname}{\color{keycolor}Contents}
+\tableofcontents
+\clearpage
+
+% -------------------------------------------------------- how to use it
+\settopicname{How to use this book}
+\chapter*{How to Use This Book}
+\addcontentsline{toc}{chapter}{How to Use This Book}
+\topicopen{Before you start}{A short plan for working through the 880
+questions without wasting a single one.}
+
+\begin{essentials}[The routine]
+\begin{enumerate}[leftmargin=1.4em]
+  \item Read the \textbf{Essentials} box at the top of the topic first. It is
+        the whole toolkit that topic's 44 questions draw on --- nothing in the
+        topic needs anything beyond it.
+  \item Work \textbf{Module 1} straight through, in order. The order is the
+        lesson: each question assumes the ones before it.
+  \item Check Module 1 against the answer key before starting Module 2. Fix
+        what you got wrong \emph{first} --- Module 2 is built on top of it.
+  \item Work \textbf{Module 2}. It restarts at question 1 and runs harder,
+        the same way the real adaptive second module does.
+  \item Use the \textbf{Work Space} box. Student-produced response questions
+        are lost far more often to arithmetic than to method.
+\end{enumerate}
+\end{essentials}
+
+\vspace{4pt}
+{\small\color{inkgray}
+\textbf{Timing.} On test day each module gives you 35 minutes for 22
+questions --- about 95 seconds per question. Once a topic feels solid, redo
+its Module 2 under that clock.\par\vspace{4pt}
+\textbf{Answer formats.} Multiple-choice questions have exactly one correct
+option out of four. Student-produced response questions accept a number:
+enter fractions as fractions or as decimals, and never round an exact answer
+you can write exactly.}
+
+\clearpage
+
+% ------------------------------------------------------------- topics
+\input{../build/_topics.tex}
+
+% --------------------------------------------------------- answer keys
+\clearpage
+\settopicname{Answer Keys}
+\chapter*{Answer Keys}
+\addcontentsline{toc}{chapter}{Answer Keys}
+\topicopen{Worked solutions}{Every one of the 880 questions, with the
+reasoning that produces the answer --- not just the letter.}
+
+\input{../build/_answers.tex}
+
+\end{document}

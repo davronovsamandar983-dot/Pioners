@@ -1,0 +1,193 @@
+% =====================================================================
+%  SAT MATH MASTERY — shared preamble
+%  Design source: "sat_math_mastery" worksheet identity
+%  (blue keycolor bar, SAT roundel, DAVLAT serif wordmark, acorn block)
+%  Brand blue: RGB(31,78,140)
+% =====================================================================
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{needspace}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usetikzlibrary{calc}
+
+% Tall repeating banner => headheight/headsep MUST live inside \geometry,
+% otherwise the whole text block is pushed down and runs off the page.
+\geometry{top=3.6cm, bottom=2.2cm, left=1.9cm, right=1.9cm,
+          headheight=62pt, headsep=14pt, footskip=1.1cm}
+
+\definecolor{keycolor}{RGB}{31,78,140}
+\definecolor{keylight}{RGB}{232,239,248}
+\definecolor{keymid}{RGB}{140,170,205}
+\definecolor{inkgray}{RGB}{90,90,90}
+
+\setlist[enumerate]{topsep=4pt, itemsep=2pt, parsep=0pt, leftmargin=1.35em}
+\setlist[itemize]{topsep=4pt, itemsep=2pt, parsep=0pt, leftmargin=1.2em}
+\raggedcolumns
+\setlength{\columnsep}{18pt}
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+
+% ---------------------------------------------------------------------
+%  White line-art acorn (TikZ) used inside the banner's blue end block
+% ---------------------------------------------------------------------
+\newcommand{\acornmark}{%
+\begin{tikzpicture}[white, line width=1.1pt, line cap=round]
+  \draw (-0.26,0.02) .. controls (-0.28,-0.26) and (-0.10,-0.44) .. (0,-0.46)
+        .. controls (0.10,-0.44) and (0.28,-0.26) .. (0.26,0.02);
+  \draw (-0.34,0.02)
+        .. controls (-0.36,0.26) and (0.36,0.26) .. (0.34,0.02)
+        .. controls (0.22,0.09) and (0.10,0.04) .. (0,0.07)
+        .. controls (-0.10,0.04) and (-0.22,0.09) .. (-0.34,0.02) -- cycle;
+  \draw (0.03,0.22) .. controls (0.06,0.36) and (0.16,0.42) .. (0.24,0.40)
+        .. controls (0.18,0.34) and (0.14,0.28) .. (0.14,0.24);
+\end{tikzpicture}}
+
+% ---------------------------------------------------------------------
+%  Repeating landing banner — drawn on the TOP of EVERY page
+% ---------------------------------------------------------------------
+\newlength{\bannerH}
+\setlength{\bannerH}{1.15cm}
+\newcommand{\satbanner}{%
+  {\footnotesize\bfseries\color{keycolor}%
+    MATH INSTRUCTOR: DAVLAT KAMOLIDDINOV}\par
+  \vspace{3pt}%
+  \noindent\begin{tikzpicture}
+    \draw[keycolor, line width=1pt] (0,0) rectangle (\textwidth,\bannerH);
+    \fill[keycolor] (0.95cm,0.575cm) circle (0.42cm);
+    \node[white, font=\bfseries\small] at (0.95cm,0.575cm) {SAT};
+    \node[keycolor, anchor=west, font=\LARGE\bfseries] at (1.55cm,0.555cm) {DAVLAT};
+    \fill[keycolor] (\textwidth-1.35cm,0) rectangle (\textwidth,\bannerH);
+    \begin{scope}[shift={(\textwidth-0.675cm,0.55cm)}]
+      \node at (0,0) {\acornmark};
+    \end{scope}
+  \end{tikzpicture}%
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{\satbanner}
+\fancyfoot[L]{\footnotesize\color{inkgray}\currenttopicname}
+\fancyfoot[R]{\footnotesize\bfseries\color{keycolor}\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+% plain style (chapter-opening pages) keeps the banner too
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyhead[C]{\satbanner}%
+  \fancyfoot[L]{\footnotesize\color{inkgray}\currenttopicname}%
+  \fancyfoot[R]{\footnotesize\bfseries\color{keycolor}\thepage}%
+  \renewcommand{\headrulewidth}{0pt}%
+}
+
+\newcommand{\currenttopicname}{}
+\newcommand{\settopicname}[1]{\renewcommand{\currenttopicname}{#1}}
+
+% ---------------------------------------------------------------------
+%  Question macro — blue badge number, resets per module
+% ---------------------------------------------------------------------
+\newcounter{qnum}
+\newcommand{\qbadge}[1]{%
+  \colorbox{keycolor}{\textcolor{white}{\bfseries\strut\,#1\,}}}
+% A question is an ATOMIC block: the badge, the stem, the choices and the
+% work space must never be split across two columns or two pages. Wrapping
+% the whole thing in a \linewidth minipage guarantees that inside multicols.
+\newcommand{\question}[1]{%
+  \par\vspace{9pt}%
+  \stepcounter{qnum}%
+  \noindent\begin{minipage}{\linewidth}%
+    \qbadge{\theqnum}\par\vspace{6pt}%
+    #1\par
+  \end{minipage}\par
+}
+
+% Free-response question: same, with the Work Space box welded on.
+\newcommand{\qfr}[1]{\question{#1\workspace}}
+
+% Multiple-choice shorthand: \choices{\item A \item B \item C \item D}
+\newcommand{\choices}[1]{%
+  \begin{enumerate}[label=\Alph*), leftmargin=1.6em, topsep=5pt]#1\end{enumerate}}
+
+% ---------------------------------------------------------------------
+%  Response areas
+% ---------------------------------------------------------------------
+\newcommand{\workspace}{%
+  \par\vspace{6pt}\noindent
+  \fcolorbox{gray!60}{white}{\parbox[c][2.3cm][t]{%
+    \dimexpr\columnwidth-2\fboxsep-2\fboxrule}{%
+    \hfill{\scriptsize\color{gray}Work Space}}}\par\vspace{6pt}%
+}
+\newcommand{\enterresponse}{\vspace{45pt}}
+
+% ---------------------------------------------------------------------
+%  Chapter opener for a topic
+% ---------------------------------------------------------------------
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\color{keycolor}}
+  {\Large TOPIC \thechapter}
+  {6pt}
+  {\huge}
+\titlespacing*{\chapter}{0pt}{0pt}{18pt}
+
+% \topicopen{Domain label}{Skill / knowledge testing point blurb}
+\newcommand{\topicopen}[2]{%
+  \par\vspace{2pt}%
+  {\color{keycolor}\rule{\textwidth}{1.5pt}}\par\vspace{6pt}%
+  {\footnotesize\bfseries\color{keycolor}\MakeUppercase{#1}}\par\vspace{4pt}%
+  {\small\color{inkgray}#2}\par\vspace{10pt}%
+}
+
+% Blue-tinted "what you must know" recap block used once per topic
+\newenvironment{essentials}[1][Essentials]{%
+  \par\vspace{4pt}\noindent
+  \begin{tikzpicture}
+    \node[fill=keylight, draw=keymid, line width=0.6pt, rounded corners=2pt,
+          inner sep=9pt, text width=\dimexpr\textwidth-20pt\relax,
+          align=left] (B) \bgroup\begin{minipage}{\dimexpr\textwidth-20pt\relax}
+    {\bfseries\color{keycolor}#1}\par\vspace{4pt}\small
+}{%
+    \end{minipage}\egroup;
+  \end{tikzpicture}\par\vspace{8pt}
+}
+
+% ---------------------------------------------------------------------
+%  Module divider — restarts the question counter at 1
+% ---------------------------------------------------------------------
+\newcommand{\modulehead}[2]{%
+  \par\setcounter{qnum}{0}%
+  \vspace{4pt}\noindent
+  \begin{tikzpicture}
+    \fill[keycolor] (0,0) rectangle (\textwidth,0.82cm);
+    \node[white, anchor=west, font=\large\bfseries] at (0.32cm,0.41cm) {#1};
+    \node[white, anchor=east, font=\small\itshape] at (\textwidth-0.32cm,0.41cm) {#2};
+  \end{tikzpicture}\par\vspace{10pt}%
+}
+
+% ---------------------------------------------------------------------
+%  Answer-key helpers
+% ---------------------------------------------------------------------
+\newcommand{\akhead}[1]{%
+  \par\needspace{3\baselineskip}\vspace{8pt}%
+  {\bfseries\color{keycolor}#1}\par\vspace{2pt}%
+  {\color{keymid}\rule{\linewidth}{0.6pt}}\par\vspace{4pt}%
+}
+% \ans{module}{number}{answer}{worked reasoning}
+\newcommand{\ans}[4]{%
+  \par\needspace{2\baselineskip}\vspace{4pt}%
+  \noindent{\bfseries\color{keycolor}M#1\,Q#2.}\;
+  \textbf{#3}\; {\small\color{inkgray}#4}\par
+}
+
+% ---------------------------------------------------------------------
+%  Small helpers agents may use
+% ---------------------------------------------------------------------
+\newcommand{\dg}{^\circ}
+\newcommand{\ol}[1]{\overline{#1}}

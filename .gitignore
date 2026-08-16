@@ -1,0 +1,9 @@
+build/*.aux
+build/*.log
+build/*.out
+build/*.toc
+build/*.png
+build/_topics.tex
+build/_answers.tex
+build/preview-*
+__pycache__/
