@@ -1,0 +1,43 @@
+% The shared cover. Only the subtitle and the statistics block are
+% parameterised, so both editions build from this one source.
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay]
+  % navy field, closed by the gold band
+  \fill[satnavy] (current page.north west) rectangle
+    ([yshift=429pt]current page.south east);
+  \node at ([yshift=354pt]current page.south) {%
+    \includegraphics[width=333pt]{assets/logo-watermark.png}};
+  \fill[satgold] ([yshift=417pt]current page.south west) rectangle
+    ([yshift=429pt]current page.south east);
+
+  \node[anchor=north west,text=satgold,font=\bfseries\large]
+    at ([xshift=78pt,yshift=-155pt]current page.north west)
+    {MATH EXCELLENCE SERIES};
+  % anchored on its baseline, not its top: a north-west anchor drops the
+  % 38pt box straight through the gold rule below it.
+  \node[anchor=base west,text=white,font=\fontsize{38}{42}\selectfont]
+    at ([xshift=75pt,yshift=-208pt]current page.north west) {SAT MATH};
+  \draw[satgold,line width=1.6pt]
+    ([xshift=78pt,yshift=-216pt]current page.north west) --
+    ([xshift=208pt,yshift=-216pt]current page.north west);
+  \node[anchor=north west,text=white,font=\fontsize{18}{21}\selectfont\bfseries\itshape]
+    at ([xshift=78pt,yshift=-243pt]current page.north west) {\satsubtitle};
+  \node[anchor=north west,text=white,font=\normalsize]
+    at ([xshift=78pt,yshift=-289pt]current page.north west) {\satdomainline};
+  \node[anchor=north west,text=white,font=\small]
+    at ([xshift=78pt,yshift=-314pt]current page.north west)
+    {\begin{minipage}{380pt}\satstats\end{minipage}};
+
+  % author panel, sitting directly on the foot strip
+  \fill[satpale] ([xshift=60pt,yshift=17pt]current page.south west) rectangle
+    ([xshift=536pt,yshift=88pt]current page.south west);
+  \node[anchor=west,text=satnavy,font=\Large\bfseries]
+    at ([xshift=78pt,yshift=60pt]current page.south west) {\satauthorname};
+  \node[anchor=west,text=satgrey,font=\small]
+    at ([xshift=78pt,yshift=38pt]current page.south west) {Math Instructor};
+  \node[anchor=east] at ([xshift=518pt,yshift=52pt]current page.south west)
+    {\includegraphics[height=44pt]{assets/logo.png}};
+
+  \fill[satnavy] (current page.south west) rectangle
+    ([yshift=16pt]current page.south east);
+\end{tikzpicture}

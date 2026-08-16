@@ -1,0 +1,52 @@
+\documentclass[11pt,openany]{book}
+\usepackage{satmath}
+\input{figures}
+
+\newcommand{\satsubtitle}{\& Hard Question Mastery}
+\newcommand{\satdomainline}{Algebra \textbullet\ Advanced Math \textbullet\ Data Analysis \textbullet\ Geometry \& Trigonometry}
+\newcommand{\satstats}{\input{generated/stats}}
+
+\begin{document}
+\input{frontmatter/cover}
+
+\satwatermark
+\pagestyle{satbody}
+\frontmatter
+
+\noindent
+\begin{tikzpicture}
+  \node[fill=satnavy,inner xsep=14pt,inner ysep=10pt,
+        text width=\dimexpr\textwidth-28pt\relax,align=left] {%
+    {\color{satgold}\bfseries\footnotesize MUNDARIJA}\\[2pt]
+    {\color{white}\fontsize{20}{23}\selectfont Contents}};
+\end{tikzpicture}
+\par\medskip
+
+\begin{multicols}{2}
+\setlength{\columnsep}{22pt}
+\raggedcolumns
+\makeatletter
+\@starttoc{toc}
+\makeatother
+\end{multicols}
+
+\clearpage
+\section*{How to use this book}
+\addcontentsline{toc}{section}{How to use this book}
+This book merges two collections of hard Digital SAT mathematics
+questions into one sequence, with duplicates removed and the problems
+regrouped by the four tested domains.
+
+Every page carries at most \textbf{three} problems. The space left under
+each one is deliberate: these questions are not meant to be read, they
+are meant to be worked, and the room to work is part of the page.
+
+The answer key at the back lists every published answer. Where a source
+did not publish one, the entry is marked \textemdash; solve those and
+fill them in yourself.
+
+\mainmatter
+\pagenumbering{arabic}
+\input{generated/problems}
+\input{generated/answerkey}
+\end{document}

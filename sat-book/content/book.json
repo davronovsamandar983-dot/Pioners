@@ -1,0 +1,2603 @@
+{
+ "problems": [
+  {
+   "n": 1,
+   "domain": "AM",
+   "stem": "The function $p$ is defined by $p(x)=a\\bigl((x+5)^2-b\\bigr)\\bigl((x+5)^2-c\\bigr)$, where $a$, $b$, and $c$ are constants. In the $xy$-plane, the graph of $y=p(x)$ passes through the points $(-4,34)$ and $(0,150)$. What is the value of $p(-10)+p(-4)$?",
+   "choices": [],
+   "answer": "184",
+   "src": "A",
+   "src_n": 1,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 2,
+   "domain": "PSDA",
+   "stem": "The median and the mean of the five integers $\\{20,\\,11,\\,23,\\,x,\\,x\\}$ are equal.\\par\\smallskip What is the sum of all possible values of $x$?",
+   "choices": [],
+   "answer": "49",
+   "src": "A",
+   "src_n": 2,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 3,
+   "domain": "AM",
+   "stem": "In the $xy$-plane, the graph of function $f$, where $y=f(x)$, has exactly 8 $x$-intercepts. One of these $x$-intercepts is $(17,0)$. The rational function $g$ is defined by $g(x)=\\dfrac{f(x)}{x-17}$. In the $xy$-plane, how many $x$-intercepts does the graph of $y=g(x)$ have?",
+   "choices": [],
+   "answer": "7",
+   "src": "A",
+   "src_n": 3,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 4,
+   "domain": "ALG",
+   "stem": "In the formula $P=\\dfrac{5}{12}K+30$, if $P$ is increased by 30, what is the increase in $K$?",
+   "choices": [
+    "$72$",
+    "$90$",
+    "$36$",
+    "$65$"
+   ],
+   "answer": "A",
+   "src": "A",
+   "src_n": 4,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 5,
+   "domain": "GT",
+   "stem": "$$8x^2+64px+8y^2-64py=-224p^2$$ In the $xy$-plane, the graph of the given equation is a circle. The length of the radius of the circle is $np$, where $n$ and $p$ are positive constants. What is the value of $n$?",
+   "choices": [],
+   "answer": "2",
+   "src": "A",
+   "src_n": 5,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 6,
+   "domain": "AM",
+   "stem": "The function $f$ is defined by $f(x)=(x-7)(x-4)(x+k)$, where $k$ is a constant. In the $xy$-plane, the graph of $y=f(x)$ passes through the point $(-2,0)$. What is the value of $f(0)$?",
+   "choices": [
+    "$-2$",
+    "$56$",
+    "$7$",
+    "$-17$"
+   ],
+   "answer": "B",
+   "src": "A",
+   "src_n": 6,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 7,
+   "domain": "ALG",
+   "stem": "$$10x+7y=27$$ $$5x+14y=45$$ The solution to the given system of equations is $(x,y)=\\left(\\dfrac{p}{60},\\dfrac{z}{124}\\right)$, where $p$ and $z$ are integers. What is the value of $z-p$?",
+   "choices": [],
+   "answer": "336",
+   "src": "A",
+   "src_n": 7,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 8,
+   "domain": "AM",
+   "stem": "$x^2+7x+6$ has two solutions $r$ and $s$, $r<s$, and $x^2+6x-7$ has two solutions $t$ and $u$, $t<u$. If $x^2+cx+d$ has two solutions $t+r$ and $u+s$, what is the value of $c$?",
+   "choices": [],
+   "answer": "13",
+   "src": "A",
+   "src_n": 8,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 9,
+   "domain": "AM",
+   "stem": "$$x(kx-20)=-1$$ In the given equation, $k$ is an integer constant. If the equation has two distinct real solutions, what is the greatest possible value of $k$?",
+   "choices": [],
+   "answer": "99",
+   "src": "A",
+   "src_n": 9,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 10,
+   "domain": "AM",
+   "stem": "$$f(x)=9^x+4$$ $$g(x)=7x+b$$ The given system of equations intersects at points $(e,f)$ and $(g,h)$, where $h<f$. What is the least possible value of $b$?",
+   "choices": [
+    "$5$",
+    "$3$",
+    "$9$",
+    "$4$"
+   ],
+   "answer": "D",
+   "src": "A",
+   "src_n": 10,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 11,
+   "domain": "GT",
+   "stem": "Circle $A$: $x^2+(y-1)^2=25$\\par Circle $B$: $x^2+(y-1)^2=81$\\par\\smallskip Determine the difference in area between the two circles in units of $\\pi$.",
+   "choices": [],
+   "answer": "56",
+   "src": "A",
+   "src_n": 11,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 12,
+   "domain": "GT",
+   "stem": "The surface area of rectangular prism $A$ is $126$ m$^2$. The surface area of rectangular prism $B$ is $4536$ m$^2$. Rectangular prism $A$ has a volume of $85$ m$^3$. If both rectangular prisms are similar, what is the volume of rectangular prism $B$?",
+   "choices": [],
+   "answer": "18{,}360",
+   "src": "A",
+   "src_n": 12,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 13,
+   "domain": "AM",
+   "stem": "In the $xy$-plane, a parabola has vertex $(-2,-1)$ and intersects the $x$-axis at two points. If the equation of the parabola is written in the form $y=ax^2+bx+c$, where $a$, $b$, and $c$ are constants, which of the following could be the value of $2a+b+3c$?",
+   "choices": [
+    "$-2$",
+    "$-18$",
+    "$-3$",
+    "$-7$"
+   ],
+   "answer": "A",
+   "src": "A",
+   "src_n": 13,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 14,
+   "domain": "AM",
+   "stem": "The function $f$ is defined by $f(x)=a^x+b$, where $a$ and $b$ are constants. In the $xy$-plane, the graph of $y=f(x)$ has an $x$-intercept at $(2,0)$ and a $y$-intercept at $(0,-195)$. What is the value of $a+b$?",
+   "choices": [],
+   "answer": "-182",
+   "src": "A",
+   "src_n": 14,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 15,
+   "domain": "AM",
+   "stem": "The function $f$ is defined by $f(x)=ax^2+bx+c$, where $a$, $b$, and $c$ are constants and $1<a<4$. The graph of $y=f(x)$ in the $xy$-plane passes through the points $(-10,0)$ and $(-5,0)$. If $a$ is an integer, what could be the value of $a+b$?",
+   "choices": [],
+   "answer": "32 or 48",
+   "src": "A",
+   "src_n": 15,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 16,
+   "domain": "ALG",
+   "stem": "In a set of four consecutive odd integers, where the integers are ordered from least to greatest, the first integer is represented by $x$. The product of 12 and the second odd integer in the set is at most the value of 30 more than the sum of the third and fourth odd integers in the set. What is the greatest possible value of $x$?",
+   "choices": [],
+   "answer": "1",
+   "src": "A",
+   "src_n": 16,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 17,
+   "domain": "AM",
+   "stem": "$$f(x)=5x^2+20x+148$$ The function $g$ is defined by $g(x)=f(x+4)$. What is the minimum value of $g(x)$?",
+   "choices": [],
+   "answer": "128",
+   "src": "A",
+   "src_n": 17,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 18,
+   "domain": "GT",
+   "stem": "A line intersects two parallel lines, forming four acute angles and four obtuse angles. The measure of one of the acute angles is $(4x-410)^\\circ$. The sum of the measures of one of the acute angles and three of the obtuse angles is $(-8x+w)^\\circ$. What is the value of $w$?",
+   "choices": [],
+   "answer": "1360",
+   "src": "A",
+   "src_n": 18,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 19,
+   "domain": "GT",
+   "stem": "In the figure shown, if the radius of circle $O$ is 12, what is the length of diagonal $AC$ of rectangle $OABC$?",
+   "figure": "circle-oabc",
+   "choices": [],
+   "answer": "12",
+   "src": "A",
+   "src_n": 19,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 20,
+   "domain": "AM",
+   "stem": "$(x+4)$ is a factor of the quadratic function $y=f(x)$, and $x=c$ is a positive zero of the function. If the minimum of the function is $\\left(\\dfrac{3}{4},k\\right)$, what is the value of $c$?",
+   "choices": [],
+   "answer": "5.5",
+   "src": "A",
+   "src_n": 20,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 21,
+   "domain": "AM",
+   "stem": "$$f(x)=-(x-a)(x-b)$$ The function $f$ is defined by the given equation, where $a$ and $b$ are integer constants. If $f(-30)<0$, $f(-10)>0$ and $f(20)<0$ and $a<b$, what is the minimum possible value of $a-b$?",
+   "choices": [],
+   "answer": "-48",
+   "src": "A",
+   "src_n": 21,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 22,
+   "domain": "GT",
+   "stem": "The table shows the volume of two similar solids, right circular cylinder $A$ and right circular cylinder $B$. The radius of right circular cylinder $A$ is 8 units. The surface area of right circular cylinder $A$ is $k\\pi$ square units, and the surface area of right circular cylinder $B$ is $n\\pi$ square units, where $k$ and $n$ are constants. What is the value of $\\dfrac{n}{k}$? (The surface area of a right circular cylinder with radius $r$ and height $h$ is $2\\pi r^2+2\\pi rh$.)",
+   "figure": "tbl-cyl-ab",
+   "choices": [],
+   "answer": "4",
+   "src": "A",
+   "src_n": 22,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 23,
+   "domain": "AM",
+   "stem": "The function $k$ is defined by $k(s)=\\sqrt{s+84}$. If $k(5p)=p$, where $p$ is a constant, what is the value of $p$?",
+   "choices": [],
+   "answer": "12",
+   "src": "A",
+   "src_n": 23,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 24,
+   "domain": "PSDA",
+   "stem": "55 gallons of a $p\\%$ chlorine solution are added to 12 gallons of a $15\\%$ chlorine solution to make a $70\\%$ chlorine solution. What is the value of $p$?",
+   "choices": [
+    "$53$",
+    "$24$",
+    "$47$",
+    "$82$"
+   ],
+   "answer": "D",
+   "src": "A",
+   "src_n": 24,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 25,
+   "domain": "AM",
+   "stem": "The expression $6x^2+bx-35$, where $b$ is a constant, can be rewritten as $(hx+k)(x+j)$, where $h$, $k$, and $j$ are integer constants. Which of the following must be an integer?",
+   "choices": [
+    "$\\dfrac{b}{h}$",
+    "$\\dfrac{b}{j}$",
+    "$\\dfrac{35}{h}$",
+    "$\\dfrac{35}{j}$"
+   ],
+   "answer": "D",
+   "src": "A",
+   "src_n": 25,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 26,
+   "domain": "PSDA",
+   "stem": "A farmer has a square field that measures 50 meters on each side. If one sack of seed covers 250 square meters, how many sacks of seed does the farmer need to plant the entire field?",
+   "choices": [],
+   "answer": "10",
+   "src": "A",
+   "src_n": 26,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 27,
+   "domain": "GT",
+   "stem": "The radius of circle $Y$ is 9 times longer than the radius of circle $X$. If circle $X$ has an area with length $y$, what is the length of circle $Y$'s area?",
+   "choices": [
+    "$9y^2$",
+    "$9y$",
+    "$81y^2$",
+    "$81y$"
+   ],
+   "answer": "D",
+   "src": "A",
+   "src_n": 27,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 28,
+   "domain": "GT",
+   "stem": "Cylinder $A$ has a volume of $V$. Cylinder $B$ has a radius that is equal to cylinder $A$'s diameter as well as a height that is three times shorter than the height of cylinder $A$. Which of the following expressions correctly represent the volume of cylinder $B$?",
+   "choices": [
+    "$\\dfrac{2}{9}V$",
+    "$\\dfrac{9}{2}V$",
+    "$\\dfrac{4}{3}V$",
+    "$\\dfrac{3}{4}V$"
+   ],
+   "answer": "C",
+   "src": "A",
+   "src_n": 28,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 29,
+   "domain": "ALG",
+   "stem": "The graph of the equation $3x-2y=6$ is translated 4 units down and 2 units to the left.\\par\\smallskip What is the $y$-coordinate of the $y$-intercept of the resulting graph?",
+   "choices": [],
+   "answer": "-4",
+   "src": "A",
+   "src_n": 29,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 30,
+   "domain": "AM",
+   "stem": "In the $xy$-plane, a line with the equation $y=mx-30$ does not intersect with a parabola with the equation $y=2x^2-3x-m$, where $m$ is a constant. Which of the following is a possible value for $m$?",
+   "choices": [
+    "only $-7$",
+    "$-7$ and $7$",
+    "$-27$",
+    "$25$"
+   ],
+   "answer": "B",
+   "src": "A",
+   "src_n": 30,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 31,
+   "domain": "PSDA",
+   "stem": "A bakery sold cookies in the ratio of chocolate chip to oatmeal as $4:3$. If the bakery sold 280 chocolate chip cookies, how many oatmeal cookies were sold?",
+   "choices": [],
+   "answer": "210",
+   "src": "A",
+   "src_n": 31,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 32,
+   "domain": "PSDA",
+   "stem": "The table shows the exponential relationship between the time, in months, since a new colony of bacteria was introduced to a petri dish and the total number of bacteria. If the number of bacteria increases by a fixed percentage each month, what is the value of $b$?",
+   "figure": "tbl-bacteria",
+   "choices": [],
+   "answer": "300",
+   "src": "A",
+   "src_n": 32,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 33,
+   "domain": "PSDA",
+   "stem": "A music school offers a series of three workshops. 800 people signed up for the first workshop. $45\\%$ of the people who signed up for the first workshop also signed up for the second workshop, and $20\\%$ of the people who signed up for both the first and second workshops also signed up for the third workshop. How many people signed up for all three workshops?",
+   "choices": [],
+   "answer": "72",
+   "src": "A",
+   "src_n": 33,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 34,
+   "domain": "PSDA",
+   "stem": "Data set $A$ contains 8 values, and data set $B$ contains 24 values. The table shows the frequencies of the values for each data set. Which of the following statements best compares the means of the two data sets?",
+   "figure": "tbl-freq-ab",
+   "wide": true,
+   "choices": [
+    "The mean of data set A is greater than the mean of data set B.",
+    "The mean of data set A is less than the mean of data set B.",
+    "The mean of data set A is equal to the mean of data set B.",
+    "There is not enough information to compare the means of the data sets."
+   ],
+   "answer": "A",
+   "src": "A",
+   "src_n": 34,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 35,
+   "domain": "AM",
+   "stem": "$$(x+4)^2+(x^2+4x)=(x+4)(x-8)$$ In the given equation, $x\\neq-4$. What is the solution to the given equation?",
+   "choices": [],
+   "answer": "-12",
+   "src": "A",
+   "src_n": 35,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 36,
+   "domain": "GT",
+   "stem": "In triangles $XYZ$ and $PQR$, it is known that $2XY=PQ$. If the triangles are similar, which of the following must be true?",
+   "choices": [
+    "$2YZ=QR$",
+    "$2PR=XZ$",
+    "$XY=PQ$",
+    "$2XY=PR$"
+   ],
+   "answer": "A",
+   "src": "A",
+   "src_n": 36,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 37,
+   "domain": "AM",
+   "stem": "In the given equation, $m$ is a positive constant. The product of the solutions to the equation is 28. What is the value of $m$? $$\\tfrac{2}{3}(3x+7)\\bigl(x+\\sqrt{2m+6}\\bigr)\\bigl(x-\\sqrt{2m+6}\\bigr)=0$$",
+   "choices": [],
+   "answer": "3",
+   "src": "A",
+   "src_n": 37,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 38,
+   "domain": "PSDA",
+   "stem": "An orchard has 5 rows of apple trees, 6 rows of pear trees, and 2 rows of cherry trees. Each row of apple trees has 7 trees 25 feet or taller and 4 trees shorter than 25 feet. Each row of pear trees has 9 trees 25 feet or taller and 6 trees shorter than 25 feet. Each row of cherry trees has 12 trees 25 feet or taller and 3 trees shorter than 25 feet. A tree from one of these rows will be selected at random. What is the probability of selecting a pear tree, given that the tree is 25 feet or taller?",
+   "choices": [
+    "$\\dfrac{35}{113}$",
+    "$\\dfrac{6}{13}$",
+    "$\\dfrac{54}{113}$",
+    "$\\dfrac{12}{25}$"
+   ],
+   "answer": "C",
+   "src": "A",
+   "src_n": 38,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 39,
+   "domain": "GT",
+   "stem": "In the $xy$-plane, a circle has center $C$ with coordinates $(p,8)$, where $p$ is a constant. Points $G$ and $H$ lie on the circle. Point $G$ has coordinates $(p+3\\sqrt{5},14)$, and point $H$ has coordinates $(q,8)$, where $q$ is a constant greater than $p$. What is the area, in square units, of triangle $CGH$?",
+   "choices": [
+    "$27\\sqrt{5}$",
+    "$27$",
+    "$5\\sqrt{27}$",
+    "$27\\sqrt{6}$"
+   ],
+   "answer": "B",
+   "src": "A",
+   "src_n": 39,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 40,
+   "domain": "GT",
+   "stem": "A square has an area of $x+15$ square units and a perimeter of $2x$ units. What is the value of $x$?",
+   "choices": [],
+   "answer": "10",
+   "src": "A",
+   "src_n": 40,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 41,
+   "domain": "GT",
+   "stem": "In the figure, line $p$ is parallel to line $q$, and line $r$ intersects both lines. What is the value of $y$?",
+   "figure": "fig-parallel-pqr",
+   "choices": [],
+   "answer": "54",
+   "src": "A",
+   "src_n": 41,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 42,
+   "domain": "AM",
+   "stem": "Function $f$ is defined by $f(x)=4x^2-12x+5$ on the $xy$-plane, where $f(x)=y$. Function $g$ intersects the $x$-axis twice when graphed on the $xy$-plane. Which of the following equations could define $g(x)$, if $k$ represents a positive constant?",
+   "choices": [
+    "$g(x)=f(x-k)$",
+    "$g(x)=f(x+k)$",
+    "$g(x)=f(x)+k$",
+    "$g(x)=f(x)-k$"
+   ],
+   "answer": "D",
+   "src": "A",
+   "src_n": 42,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 43,
+   "domain": "GT",
+   "stem": "Circle $A$ is defined by the equation $(x-3)^2+(y+2)^2=16$. Circle $B$ (not shown) is the result of shifting circle $A$ up 5 units and decreasing the radius so that the radius of circle $B$ is half the radius of circle $A$. Which equation defines circle $B$?",
+   "choices": [
+    "$(x-3)^2+(y-3)^2=4^2$",
+    "$(x-3)^2+(y-3)^2=2^2$",
+    "$(x-3)^2+(y+7)^2=2^2$",
+    "$(x-3)^2+(y-7)^2=16^2$"
+   ],
+   "answer": "B",
+   "src": "A",
+   "src_n": 43,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 44,
+   "domain": "GT",
+   "stem": "In convex pentagon $ABCDE$, segment $AB$ is parallel to segment $DE$. The measure of angle $B$ is 125 degrees, and the measure of angle $D$ is 160 degrees. What is the measure, in degrees, of angle $C$?",
+   "choices": [],
+   "answer": "75",
+   "src": "A",
+   "src_n": 44,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 45,
+   "domain": "GT",
+   "stem": "In the figure, $\\overline{AE}$ intersects $\\overline{BD}$ at point $C$, and $\\overline{AB}$ is parallel to $\\overline{DE}$. The lengths of $\\overline{BC}$, $\\overline{AC}$, and $\\overline{CD}$ are $\\dfrac{21}{4}$, $7$, and $6$, respectively. What is the length of $\\overline{AE}$?",
+   "figure": "fig-bowtie",
+   "choices": [
+    "$27$",
+    "$15$",
+    "$9$",
+    "$21$"
+   ],
+   "answer": "B",
+   "src": "A",
+   "src_n": 45,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 46,
+   "domain": "GT",
+   "stem": "In the $xy$-plane, a circle has center $C$ with coordinates $(h,k)$. Points $A$ and $B$ lie on the circle. Point $A$ has coordinates $(h+3,k+4)$, and $\\angle ACB$ is a right angle. What is the length of $\\overline{AB}$?",
+   "choices": [
+    "$5$",
+    "$5\\sqrt{2}$",
+    "$10$",
+    "$10\\sqrt{2}$"
+   ],
+   "answer": "B",
+   "src": "A",
+   "src_n": 46,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 47,
+   "domain": "GT",
+   "stem": "A rectangle is inscribed in a circle such that each vertex of the rectangle lies on the circumference of the circle. The diagonal of the rectangle is twice the length of the shortest side of the rectangle. The area of the rectangle is $784\\sqrt{3}$ square units. What is the length, in units, of the diameter of the circle?",
+   "choices": [],
+   "answer": "56",
+   "src": "A",
+   "src_n": 47,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 48,
+   "domain": "GT",
+   "stem": "$$(x+5)^2+(y-3)^2=100$$ The graph of the given equation represents a circle in the $xy$-plane. The point $(a,a-2)$ lies on the circle. Which of the following is a possible value for $a$?",
+   "choices": [
+    "$-5$",
+    "$-10$",
+    "$0$",
+    "$10$"
+   ],
+   "answer": "A",
+   "src": "A",
+   "src_n": 48,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 49,
+   "domain": "GT",
+   "stem": "A right square prism has a height of 18 units. The volume of the prism is 2,592 cubic units. What is the length, in units, of an edge of the base?",
+   "choices": [],
+   "answer": "12",
+   "src": "A",
+   "src_n": 49,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 50,
+   "domain": "PSDA",
+   "stem": "For a magnetic field passing through a flat surface perpendicular to it, the magnetic flux through the surface is the product of the magnetic field's strength and the area of the surface. A certain flat surface consists of two adjacent squares. The side length of the larger square is twice the side length of the smaller square. A magnetic field with strength 20.00 teslas passes uniformly through this surface, perpendicular to the magnetic field. If the total magnetic flux through this surface is 2,000 teslas $\\cdot$ meters$^2$, what is the magnetic flux, in teslas $\\cdot$ meters$^2$, through the larger square?",
+   "choices": [],
+   "answer": "1{,}600",
+   "src": "A",
+   "src_n": 50,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 51,
+   "domain": "AM",
+   "stem": "The function $f$ is defined by $f(x)=x^2+bx+c$, where $b$ and $c$ are constants. If the $x$-intercepts of the graph of $f$ in the $xy$-plane are $-2$ and $5$, what is the value of $b$?",
+   "choices": [
+    "$-3$",
+    "$-2$",
+    "$-5$",
+    "$2$"
+   ],
+   "answer": "A",
+   "src": "A",
+   "src_n": 51,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 52,
+   "domain": "AM",
+   "stem": "The equation $x^2+mx+5=0$, where $m$ is a positive integer, has no real solutions. What is the greatest possible value of $m$?",
+   "choices": [],
+   "answer": "4",
+   "src": "A",
+   "src_n": 52,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 53,
+   "domain": "AM",
+   "stem": "Given the function $g(x)=33(k)^x$, where $k$ is a positive constant. For each increase of 1 in the value of $x$, the value of $g(x)$ increases by $p\\%$, where $0<p<200$. Which expression represents $p$ in terms of $k$?",
+   "choices": [
+    "$100k$",
+    "$100(k-1)$",
+    "$k+100$",
+    "$100(k+1)$"
+   ],
+   "answer": "B",
+   "src": "A",
+   "src_n": 53,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 54,
+   "domain": "GT",
+   "stem": "A right circular cone has a radius of $a$ and a height of $b$. A larger cone has a volume that is 243 times the volume of the smaller cone. Which of the following could represent the radius $A$, in terms of $a$, and the height $B$, in terms of $b$, of the larger cone?",
+   "choices": [
+    "$A=3a$, $B=81b$",
+    "$A=9a$, $B=3b$",
+    "$A=27a$, $B=b$",
+    "$A=3a$, $B=9b$"
+   ],
+   "answer": "B",
+   "src": "A",
+   "src_n": 54,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 55,
+   "domain": "AM",
+   "stem": "For a quadratic function $f(x)=x^2+bx+c$, the value $f(2)=-1$ is the vertex of the function. What is the value of $c$?",
+   "choices": [],
+   "answer": "3",
+   "src": "A",
+   "src_n": 55,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 56,
+   "domain": "GT",
+   "stem": "In the figure above, the ratio of the lengths $AQ:QR:RC=1:3:2$. If the area of quadrilateral $PQRS$ is 60, what is the area of $\\triangle ABC$?",
+   "figure": "fig-triangle-pqrs",
+   "choices": [
+    "$92$",
+    "$118$",
+    "$144$",
+    "$120$"
+   ],
+   "answer": "C",
+   "src": "A",
+   "src_n": 56,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 57,
+   "domain": "AM",
+   "stem": "The function $p$ is defined by $p(x)=c\\left(2.5^x+2.5^d\\right)$, where $c$ and $d$ are positive integer constants and $c<d$. The functions $q$ and $r$ are equivalent to function $p$, where $s$ and $t$ are constants. Which of the following equations displays the $y$-coordinate of the $y$-intercept of the graph of $y=p(x)$ in the $xy$-plane as a constant or coefficient?\\par\\smallskip I. $q(x)=c\\left(2.5^x+s\\right)$\\par II. $r(x)=c\\left(2.5\\right)^x+t$",
+   "choices": [
+    "I only",
+    "II only",
+    "I and II",
+    "Neither I nor II"
+   ],
+   "answer": "C",
+   "src": "A",
+   "src_n": 57,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 58,
+   "domain": "PSDA",
+   "stem": "A certain bamboo plant grows 35 centimeters every $p$ months. At this rate, which expression represents the number of centimeters, on average, the bamboo plant grows every $k$ years?",
+   "choices": [
+    "$\\dfrac{420k}{p}$",
+    "$\\dfrac{35k}{12p}$",
+    "$\\dfrac{420p}{k}$",
+    "$\\dfrac{35p}{12k}$"
+   ],
+   "answer": "A",
+   "src": "A",
+   "src_n": 58,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 59,
+   "domain": "PSDA",
+   "stem": "Data set $A$ consists of $n$ consecutive integers, where $n$ is an odd integer greater than 3. The smallest integer in set $A$ is $m$. Data set $B$ is created by adding the integer $(m-5)$ to set $A$. Which of the following statements must be true?\\par\\smallskip I. The range of set $B$ is greater than the range of set $A$.\\par II. The median of set $B$ is less than the median of set $A$.\\par III. The mean of set $B$ is less than the mean of set $A$.",
+   "choices": [
+    "I and III only",
+    "I and II only",
+    "II and III only",
+    "I, II, and III"
+   ],
+   "answer": "D",
+   "src": "A",
+   "src_n": 59,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 60,
+   "domain": "AM",
+   "stem": "The function $V$ models the value, in dollars, of a rare coin $t$ years after 1990: $$V(t)=500(1.06)^{\\frac{t}{3}}$$ According to the model, the value of the coin is predicted to increase by $6\\%$ every $n$ years. What is the value of $n$?",
+   "choices": [
+    "$1$",
+    "$3$",
+    "$6$",
+    "$18$"
+   ],
+   "answer": "B",
+   "src": "A",
+   "src_n": 60,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 61,
+   "domain": "ALG",
+   "stem": "The graph of line $g$ is shown in the $xy$-plane. Line $s$ is defined by $150x+ny=-m$, where $n$ and $m$ are constants. If line $s$ is graphed in this $xy$-plane, resulting in the graph of a system of two linear equations, the system of two linear equations will have infinitely many solutions. What is the value of $n+m$?",
+   "figure": "fig-line-g",
+   "choices": [],
+   "answer": "300",
+   "src": "A",
+   "src_n": 61,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 62,
+   "domain": "AM",
+   "stem": "The function $h$ is defined by $h(x)=(x+1)(x-4)(x-7)^2$. The value of $h(5+m)$ is 0, where $m$ is a constant. What is the sum of all possible values of $m$?",
+   "choices": [],
+   "answer": "-5",
+   "src": "A",
+   "src_n": 62,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 63,
+   "domain": "GT",
+   "stem": "A right rectangular prism has a height of 5 meters. The length of the prism's base is $w$ meters, which is 4 meters more than the width of the prism's base. Which function $V$ gives the volume of the prism, in cubic meters, in terms of the length of the prism's base?",
+   "choices": [
+    "$V(w)=5w^2(w+4)$",
+    "$V(w)=4(5)w^2$",
+    "$V(w)=5w(w-4)$",
+    "$V(w)=w^2(w+4)$"
+   ],
+   "answer": "C",
+   "src": "A",
+   "src_n": 63,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 64,
+   "domain": "GT",
+   "stem": "The surface area of a cube is $6(3c)^2$, where $c$ is a positive constant. Which of the following gives the perimeter of one face of the cube?",
+   "choices": [
+    "$3c$",
+    "$6c$",
+    "$12c$",
+    "$18c$"
+   ],
+   "answer": "C",
+   "src": "A",
+   "src_n": 64,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 65,
+   "domain": "AM",
+   "stem": "$$3x^2+6ax+12=0$$ The equation has no real solutions if $a^2<j$. What is the greatest possible integer value of $j$?",
+   "choices": [],
+   "answer": "4",
+   "src": "A",
+   "src_n": 65,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 66,
+   "domain": "AM",
+   "stem": "$$14x^2+(14m+3n)x+3mn=0$$ In the function, $m$ and $n$ are positive constants. The product of the solutions to the given equation is $pmn$, where $p$ is a constant. What is the value of $p$?",
+   "choices": [],
+   "answer": "3/14",
+   "src": "A",
+   "src_n": 66,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 67,
+   "domain": "ALG",
+   "stem": "A bakery makes loaves of bread in three sizes: small, medium, and large. On a particular morning, the bakery makes twice as many small loaves as medium loaves, represented by $m$. They also bake 20 large loaves. If the bakery makes a total of 80 loaves that morning, which equation represents this situation?",
+   "choices": [
+    "$2m+m+20=80$",
+    "$2(2m)+m+20=80$",
+    "$2m+20=80$",
+    "$3m+20=80$"
+   ],
+   "answer": "D",
+   "src": "A",
+   "src_n": 67,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 68,
+   "domain": "AM",
+   "stem": "The function $f(x)$ is defined by $f(x)=m\\bigl((x-3)^2-n\\bigr)\\bigl((x-3)^2-p\\bigr)$, where $m$, $n$, and $p$ are constants. In the $xy$-plane, the graph of $y=f(x)$ passes through the points $(2,12)$ and $(6,108)$. What is the value of $f(1)+f(5)$?",
+   "choices": [],
+   "answer": "96",
+   "src": "A",
+   "src_n": 68,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 69,
+   "domain": "PSDA",
+   "stem": "Data set $X$ consists of the weights of 60 animals and has a mean of 30 kg. Data set $Y$ consists of the weights of 40 animals and has a mean of 50 kg. Data set $Z$ consists of the weights of the 100 animals from data sets $X$ and $Y$.\\par\\smallskip What is the mean, in kilograms, of data set $Z$?",
+   "choices": [],
+   "answer": "38",
+   "src": "A",
+   "src_n": 69,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 70,
+   "domain": "GT",
+   "stem": "Points $P\\left(\\dfrac{\\sqrt{2}}{2},\\dfrac{\\sqrt{2}}{2}\\right)$ and $Q(0,1)$ are located on the unit circle with center $O(0,0)$. Which of the following could be the measure of angle $\\angle POQ$?",
+   "choices": [
+    "$45^\\circ$",
+    "$90^\\circ$",
+    "$135^\\circ$",
+    "$225^\\circ$"
+   ],
+   "answer": "A",
+   "src": "A",
+   "src_n": 70,
+   "src_name": "Collection of 70 HARD SAT Math questions (Merey Altaiuly)"
+  },
+  {
+   "n": 71,
+   "domain": "AM",
+   "stem": "$(x+7)$ is a factor of the quadratic function $y=f(x)$, and $x=c$ is a positive zero of the function. If the minimum of the function is $\\left(\\dfrac{63}{8},k\\right)$, what is the value of $c$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 1,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 72,
+   "domain": "GT",
+   "stem": "For two acute angles, $\\angle A$ and $\\angle B$, $\\cos A=\\sin B$. The measures, in degrees, of $\\angle A$ and $\\angle B$ are $13x+10$ and $48+3x$, respectively. What is the value of $x$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 2,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 73,
+   "domain": "ALG",
+   "stem": "A baseball coach charges each athlete \\$150 for the first month and \\$95 for each additional month. Which of the following functions correctly represents the total revenue $R(m)$, in dollars, for $m$ months and $n$ athletes, where $m$ and $n$ are positive integers?",
+   "choices": [
+    "$R(m)=95mn+55$",
+    "$R(m)=95mn+150$",
+    "$R(m)=95mn+55n$",
+    "$R(m)=95mn+150n$"
+   ],
+   "src": "B",
+   "src_n": 3,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 74,
+   "domain": "AM",
+   "stem": "$$y=-3x^2-58$$ $$y=px-46$$ In the given system of equations, $p$ is a constant. The graphs of the equations in the given system intersect at exactly one point, $(x,y)$ in the $xy$-plane. Which of the following could be the value of $x$?",
+   "choices": [
+    "$-2$",
+    "$-4$",
+    "$12$",
+    "$16$"
+   ],
+   "src": "B",
+   "src_n": 4,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 75,
+   "domain": "ALG",
+   "stem": "$$f(x)=-7x+b$$ For the given function $f(x)$, which of the following gives the equation for the function $f(x)+20$, given that the point $(-4,0)$ lies on the graph of $f(x)-20$?",
+   "choices": [
+    "$f(x)=-7x-28$",
+    "$f(x)=-7x-8$",
+    "$f(x)=-7x+8$",
+    "$f(x)=-7x+12$"
+   ],
+   "src": "B",
+   "src_n": 5,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 76,
+   "domain": "PSDA",
+   "stem": "The positive number $a$ is $480\\%$ of the number $b$, and $a$ is $70\\%$ of the number $c$. If $c$ is $p\\%$ of $b$, which of the following is closest to the value of $p$?",
+   "choices": [
+    "$267$",
+    "$336$",
+    "$550$",
+    "$685$"
+   ],
+   "src": "B",
+   "src_n": 6,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 77,
+   "domain": "AM",
+   "stem": "$$f(x)=a^x-b$$ The exponential function given above passes through points $(c,8)$ and $(2c,350)$. What is a possible value of $b$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 7,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 78,
+   "domain": "GT",
+   "stem": "The table gives the volume of two similar cylinders. If the radius of cylinder $A$ is 9 cm. What is the value of $j-k$?\\par\\smallskip Volume $=\\pi r^2h$\\par Surface area $=2\\pi r^2+2\\pi rh$",
+   "figure": "tbl-cyl-jk",
+   "choices": [],
+   "src": "B",
+   "src_n": 8,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 79,
+   "domain": "AM",
+   "stem": "For the function $f$, for every increase of $\\dfrac{1}{2}$ in the value of $x$, the value of $f(x)$ increases by a factor of $c$, where $c$ is a constant. Which of the following forms of function $f$ displays the value of $c$ as the base or coefficient?",
+   "choices": [
+    "$f(x)=56(2)^{6x}$",
+    "$f(x)=56(8)^{2x}$",
+    "$f(x)=56(64)^x$",
+    "$f(x)=56(4{,}096)^{\\frac{x}{2}}$"
+   ],
+   "src": "B",
+   "src_n": 9,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 80,
+   "domain": "AM",
+   "stem": "The quadratic function $ax^2+200x+c$ has at least one real solution. What is the greatest possible value of $ac$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 10,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 81,
+   "domain": "GT",
+   "stem": "A polygon has exactly 97 sides. If the measure of each of the 97 interior angles of this polygon is $(180p)^\\circ$, what is the value of $p$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 11,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 82,
+   "domain": "PSDA",
+   "stem": "A certain town has an area of 5.48 square miles. Which of the following is closest to the area, in square yards, of this town? (1 mile $=$ 1,760 yards)",
+   "choices": [
+    "$552$",
+    "$964$",
+    "$9{,}645$",
+    "$16{,}974{,}848$"
+   ],
+   "src": "B",
+   "src_n": 12,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 83,
+   "domain": "ALG",
+   "stem": "One of the two equations in a system of linear equations is given. The system has no solution. Which equation could be the second equation in this system? $$7x=105y-133$$",
+   "choices": [
+    "$x=15y$",
+    "$\\dfrac{1}{7}x=15y$",
+    "$x=15y-19$",
+    "$\\dfrac{1}{7}x=15y-19$"
+   ],
+   "src": "B",
+   "src_n": 13,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 84,
+   "domain": "GT",
+   "stem": "In triangle $ABC$, the sum of the measures of angle $A$ and angle $B$ is 90 degrees. The value of $\\sin(A)$ is $\\dfrac{2\\sqrt{7}}{8}$. What is the value of $\\cos(B)$?",
+   "choices": [
+    "$\\dfrac{2\\sqrt{7}}{8}$",
+    "$\\dfrac{2\\sqrt{7}}{6}$",
+    "$\\dfrac{6\\sqrt{2}}{14}$",
+    "$\\dfrac{8}{23\\sqrt{2}}$"
+   ],
+   "src": "B",
+   "src_n": 14,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 85,
+   "domain": "ALG",
+   "stem": "What is the value of $\\dfrac{k}{25}$ if the given equation only has one solution? $$25|x-4|=k$$",
+   "choices": [
+    "$-5$ only",
+    "$5$ only",
+    "$5$ or $-5$",
+    "$0$"
+   ],
+   "src": "B",
+   "src_n": 15,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 86,
+   "domain": "ALG",
+   "stem": "In the given system of equations, $k$ is a constant. If the system has no solution, what is the value of $k$? $$\\frac{3}{8}x+\\frac{7}{5}y=\\frac{9}{7}-\\frac{7}{5}y$$ $$\\frac{5}{4}x+\\frac{9}{4}=ky+\\frac{4}{3}$$",
+   "choices": [],
+   "src": "B",
+   "src_n": 16,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 87,
+   "domain": "GT",
+   "stem": "In the $xy$-plane, the graph of the given equation is a circle. Which point lies on this circle? $$(x+7)^2+(y-11)^2=25$$",
+   "choices": [
+    "$(-7,11)$",
+    "$(11,-7)$",
+    "$\\left(\\sqrt{11}+7,\\ \\sqrt{14}-11\\right)$",
+    "$\\left(\\sqrt{11}-7,\\ \\sqrt{14}+11\\right)$"
+   ],
+   "src": "B",
+   "src_n": 17,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 88,
+   "domain": "AM",
+   "stem": "The area of a triangle is equal to $x^2$ square inches. The base of the triangle is $5+2x$ inches, and the height of the triangle is $x-2$ inches. What is the value of $x$?",
+   "choices": [
+    "$2.5$",
+    "$2.7$",
+    "$5$",
+    "$10$"
+   ],
+   "src": "B",
+   "src_n": 18,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 89,
+   "domain": "GT",
+   "stem": "A circle in the $xy$-plane has its center at $(3,-7)$ and has a radius of 12. An equation of this circle is $x^2+y^2+ax+by+c=0$, where $a$, $b$, and $c$ are constants. What is the value of $c$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 19,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 90,
+   "domain": "GT",
+   "stem": "Sphere $A$ has a radius of $7x$ and sphere $B$ has a radius of $91x$. The volume of sphere $B$ is how many times the volume of sphere $A$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 20,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 91,
+   "domain": "ALG",
+   "stem": "One gallon of resin costs \\$79 and will cover 48 square feet of a countertop. The countertops in a given room have a total surface area of $k$ square feet. Which equation represents the cost $c$, in dollars, of resin needed to cover the countertops twice?",
+   "choices": [
+    "$c=\\dfrac{48k}{79}$",
+    "$c=\\dfrac{96k}{79}$",
+    "$c=79\\left(\\dfrac{k}{24}\\right)$",
+    "$c=79\\left(\\dfrac{k}{96}\\right)$"
+   ],
+   "src": "B",
+   "src_n": 21,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 92,
+   "domain": "ALG",
+   "stem": "For each real number $r$, which of the following points lies on the graph of each equation in the $xy$-plane for the given system? $$10x+8y=15$$ $$25x+20y=37.5$$",
+   "choices": [
+    "$\\left(r,\\ -\\dfrac{4r}{5}+\\dfrac{15}{8}\\right)$",
+    "$\\left(r,\\ \\dfrac{5r}{4}+\\dfrac{4}{5}\\right)$",
+    "$\\left(-\\dfrac{4r}{5}+\\dfrac{3}{2},\\ r\\right)$",
+    "$\\left(\\dfrac{2r}{5}+10,\\ -\\dfrac{2r}{5}+25\\right)$"
+   ],
+   "src": "B",
+   "src_n": 22,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 93,
+   "domain": "PSDA",
+   "wide": true,
+   "stem": "A researcher selected 2 random samples of employees in a large company to estimate the percentage of employees that planned to vote in favor of a new division. Based on the first sample, the researcher estimated that $68\\%$ of the employees would vote in favor, with an associated margin of error of $9.7\\%$. Based on the second sample, the researcher estimated that $84\\%$ of the employees would vote in favor, with an associated margin of error of $6.7\\%$. Assuming the margins of error were calculated in the same way, which of the following best explains why the second sample obtained a smaller margin of error than the first sample?",
+   "choices": [
+    "The first sample contained fewer employees than the second sample.",
+    "The first sample contained more employees than the second sample.",
+    "The first sample contained a lower percentage of residents that planned to vote in favor of a new division.",
+    "The first sample contained a higher percentage of residents that planned to vote in favor of a new division."
+   ],
+   "src": "B",
+   "src_n": 23,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 94,
+   "domain": "AM",
+   "stem": "The function $f$ is defined by $f(x)=a^x+b$, where $a$ and $b$ are constants. In the $xy$-plane, the graph of $y=f(x)$ has an $x$-intercept at $(3,0)$ and a $y$-intercept at $(0,-342)$. What is the value of $a+b$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 24,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 95,
+   "domain": "PSDA",
+   "stem": "684 is $p\\%$ greater than 9. What is the value of $p$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 25,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 96,
+   "domain": "AM",
+   "stem": "Two numbers $a$ and $b$, are each greater than zero, and the fifth root of $a$ is equal to the cube root of $b$. For what value of $x$ is $a^{8x-4}$ equal to $b$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 26,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 97,
+   "domain": "ALG",
+   "stem": "For the given system of equations, what is the value of $7(j-k)$? $$(j-k)-16(m+l)=689$$ $$(j-k)+12(m+l)=1235$$",
+   "choices": [],
+   "src": "B",
+   "src_n": 27,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 98,
+   "domain": "AM",
+   "stem": "A model initially estimates that there are 24,000 bacteria on a petri dish. 14 days later, the model estimates that there are 96,000 bacteria on the petri dish. Assuming exponential growth, the formula $B=a(2)^{xd}$ gives the estimated number of bacteria on a petri dish, where $a$ and $x$ are constants and $B$ is the number of bacteria on the petri dish $d$ days after the initial measurement. What is the value of $x$?",
+   "choices": [
+    "$\\dfrac{1}{14}$",
+    "$\\dfrac{1}{7}$",
+    "$7$",
+    "$14$"
+   ],
+   "src": "B",
+   "src_n": 28,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 99,
+   "domain": "PSDA",
+   "stem": "How many liters of a $30\\%$ chlorine solution must be added to 12 liters of a $10\\%$ chlorine solution to obtain a $15\\%$ chlorine solution?",
+   "choices": [],
+   "src": "B",
+   "src_n": 29,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 100,
+   "domain": "GT",
+   "stem": "In the $xy$-plane, there are 3 points $a$, $b$, and $c$. Point $a$ has coordinates of $(1,0)$, point $b$ has coordinates of $(0,0)$ and point $c$ has coordinates of $(-1,0)$. Which of the following gives a possible angle measure, in radians, of $\\angle abc$?",
+   "choices": [
+    "$\\dfrac{456\\pi}{6}$",
+    "$\\dfrac{459\\pi}{6}$",
+    "$\\dfrac{462\\pi}{6}$",
+    "$\\dfrac{468\\pi}{6}$"
+   ],
+   "src": "B",
+   "src_n": 30,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 101,
+   "domain": "PSDA",
+   "stem": "Two data sets $A$ and $B$ have 56 values in total. The average of the two data sets is 193. Data set $A$ contains 32 values with an average of 208. What is the average of data set $B$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 31,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 102,
+   "domain": "GT",
+   "stem": "Lines $k$ and $l$ are perpendicular. If the point $(4,m)$ and $(9,m+3)$ lies on line $k$ and lines $k$ and $l$ intersect at $(9,m+3)$, which of the following can lie on line $l$?",
+   "choices": [
+    "$(m-6,-4)$",
+    "$(m+9,24)$",
+    "$(21,\\ m-17)$",
+    "$(24,\\ m+12)$"
+   ],
+   "src": "B",
+   "src_n": 32,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 103,
+   "domain": "PSDA",
+   "wide": true,
+   "stem": "Data set $A$ consists of 37 different values that have a minimum of 230, a maximum of 278, a mean of 244, and a standard deviation of 9. The values 230 and 278 are removed from the data set to create data set $B$. Which of the following statements is true?",
+   "choices": [
+    "Both the mean and standard deviation of data set $B$ are less than those in data set $A$.",
+    "Both the mean and standard deviation of data set $B$ are greater than those in data set $A$.",
+    "The standard deviation of data set $B$ is less than the standard deviation in data set $A$ but the mean of both data sets is the same.",
+    "The standard deviation of data set $B$ is greater than the standard deviation in data set $A$ but the mean of both data sets is the same."
+   ],
+   "src": "B",
+   "src_n": 33,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 104,
+   "domain": "AM",
+   "stem": "If $a>0$, $x^2+y^2=a$ and $xy=a-10$, what is $(x+y)^2$ in terms of $a$?",
+   "choices": [
+    "$a-20$",
+    "$2a-10$",
+    "$2a-20$",
+    "$3a-20$"
+   ],
+   "src": "B",
+   "src_n": 34,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 105,
+   "domain": "GT",
+   "stem": "Rectangle $A$ has a width of 50 feet and a length of 45 feet and is located inside rectangle $B$. A uniform distance $x$, in feet, separates the sides of rectangle $A$ from rectangle $B$. The area of rectangle $B$ is 2646 square feet, what is the value of $x$?",
+   "figure": "fig-nested-rect",
+   "choices": [],
+   "src": "B",
+   "src_n": 35,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 106,
+   "domain": "AM",
+   "stem": "$f(x)=200(b)^x$. When $x$ increases by 1, $f(x)$ increases by $c\\%$. Which of the following expresses $c$ in terms of $b$?",
+   "choices": [
+    "$c=\\dfrac{200b}{100}$",
+    "$c=\\dfrac{2b}{100}$",
+    "$c=(b+1)100$",
+    "$c=(b-1)100$"
+   ],
+   "src": "B",
+   "src_n": 36,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 107,
+   "domain": "ALG",
+   "wide": true,
+   "stem": "A 34 pound dog eats two types of canned food: chicken and beef. The recommended amount of the chicken food is 1.25 cans per 16 pounds a dog weighs per day. The recommended amount of canned beef food is 0.85 cans per 23 pounds a dog weighs per day. If $c$ is the number of cans of chicken food and $b$ is the number of cans of beef food a 34 pound dog eats in a given day. Which equation describes all possible values of $c$ and $b$?",
+   "choices": [
+    "$\\dfrac{1.25}{16}c+\\dfrac{0.85}{23}b=34$",
+    "$\\dfrac{16}{1.25}c+\\dfrac{23}{0.85}b=34$",
+    "$\\dfrac{1.25}{16}b+\\dfrac{0.85}{23}c=34$",
+    "$\\dfrac{16}{1.25}b+\\dfrac{23}{0.85}c=34$"
+   ],
+   "src": "B",
+   "src_n": 37,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 108,
+   "domain": "AM",
+   "stem": "A quadratic function models the height, in feet, of an object above the ground in terms of time, in seconds, after the object is launched. The model indicates the object launched from the ground (0 feet) and reaches its maximum height of 576 feet above the ground 12 seconds after being launched. Based on the model, what is the height, in feet, of the object above the ground 16 seconds after being launched?",
+   "choices": [
+    "$384$",
+    "$432$",
+    "$480$",
+    "$512$"
+   ],
+   "src": "B",
+   "src_n": 38,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 109,
+   "domain": "ALG",
+   "stem": "A small business owner budgets \\$3,600 to purchase timber each year. The owner must purchase a minimum of 345 slats of timber each year to maintain the discounted pricing. If the owner pays \\$7.25 to purchase each slat of pine pulpwood and \\$24.75 to purchase each slat of pine sawtimber, what is the maximum number of slats of pine sawtimber the owner can purchase to stay within the budget and maintain the discounted pricing?",
+   "choices": [],
+   "src": "B",
+   "src_n": 39,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 110,
+   "domain": "PSDA",
+   "stem": "A 180 gram metal alloy is $50\\%$ aluminum. It contains a metal alloy that is $30\\%$ aluminum and a second metal alloy made up of $60\\%$ aluminum. What is the mass of the second metal alloy?",
+   "choices": [],
+   "src": "B",
+   "src_n": 40,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 111,
+   "domain": "GT",
+   "stem": "In the given figure, the hypotenuse is 64 what is the $\\cos x$?",
+   "figure": "fig-right-tri-60",
+   "choices": [
+    "$\\dfrac{\\sqrt{3}}{2}$",
+    "$\\dfrac{1}{2}$",
+    "$\\dfrac{2\\sqrt{3}}{3}$",
+    "$2$"
+   ],
+   "src": "B",
+   "src_n": 41,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 112,
+   "domain": "PSDA",
+   "stem": "The table shows the distribution of 88 basketball players and their positions on a basketball club. Each player is categorized in one position. If one of the 88 players is selected at random, the probability of selecting a player who is categorized as a power forward, given the player is \\underline{not} categorized as a shooting guard, is $\\dfrac{3}{12}$. How many of these players are categorized as a center?",
+   "figure": "tbl-basketball",
+   "choices": [],
+   "src": "B",
+   "src_n": 42,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 113,
+   "domain": "AM",
+   "stem": "A quadratic function models the height, in feet, of an object above the ground in terms of time, in seconds, after the object is launched off an elevated surface. The model indicates that at a time of 9 seconds, the object is 294 feet above the ground. At a time of 13 seconds, the object is 310 feet above the ground. If the object was at a height of 24 feet when it was launched, what is the height, in feet, of the object above ground 18 seconds after being launched?",
+   "choices": [
+    "$96$",
+    "$192$",
+    "$222$",
+    "$240$"
+   ],
+   "src": "B",
+   "src_n": 43,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 114,
+   "domain": "GT",
+   "stem": "A rectangular pyramid has a square base with an area of 324 square meters. What is the surface area, in square meters, of one of the triangular faces if the rectangular pyramid has a volume of 4,320 cubic meters?",
+   "choices": [],
+   "src": "B",
+   "src_n": 44,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 115,
+   "domain": "AM",
+   "stem": "$n^{\\frac{5}{3}}=k^{\\frac{2}{5}}$ and $n^{4a+1}=k$, what is the value of $a$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 45,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 116,
+   "domain": "AM",
+   "stem": "$3x^2+bx-112=(ax+m)(x-l)$. Given that $a$, $m$, and $l$ are integers, which of the following must be true?",
+   "choices": [
+    "$m$ is a factor of $b$",
+    "$a$ is a factor or 112",
+    "$a$ if a factor of $b$",
+    "$l$ is a factor of 112"
+   ],
+   "src": "B",
+   "src_n": 46,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 117,
+   "domain": "GT",
+   "stem": "The perimeter of a right isosceles triangle is $76+76\\sqrt{2}$. What is the length of the hypotenuse?",
+   "choices": [],
+   "src": "B",
+   "src_n": 47,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 118,
+   "domain": "PSDA",
+   "stem": "The results of two random samples of votes for a proposition are given in the table. The samples were selected from the same population, and the margins of error were calculated using the same method. Which of the following is the most appropriate reason that the margin of error for sample $A$ is greater than the margin of error for sample $B$?",
+   "figure": "tbl-samples",
+   "choices": [
+    "Sample $A$ had a larger sample size.",
+    "Sample $A$ had a smaller sample size.",
+    "Sample $A$ had a smaller number of votes that could not be recorded.",
+    "Sample $A$ had a lower percent of favorable responses."
+   ],
+   "src": "B",
+   "src_n": 48,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 119,
+   "domain": "PSDA",
+   "stem": "360 is $p\\%$ of 10. What is the value of $p$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 49,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 120,
+   "domain": "AM",
+   "stem": "The vertex of the function $f(x)$ is given as $(9,-13)$, and the point $(3,-4)$ lies on the parabola. If $g(x)=4f(x-2)$, what is the value of $g(0)-f(0)$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 50,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 121,
+   "domain": "ALG",
+   "stem": "$$-377x+k=377x+k$$ If $k$ is a constant, how many solutions does the given equation have?",
+   "choices": [
+    "No solutions",
+    "One solution",
+    "Two solutions",
+    "Infinite solutions"
+   ],
+   "src": "B",
+   "src_n": 51,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 122,
+   "domain": "PSDA",
+   "stem": "The density of a certain type of wood is 770 kilograms per cubic meter. A sample of this type of wood is in the shape of a cube, where each edge has a length of 0.7 meters. To the nearest whole number, what is the mass, in kilograms, of this sample?",
+   "choices": [
+    "$264$",
+    "$377$",
+    "$1{,}571$",
+    "$2{,}245$"
+   ],
+   "src": "B",
+   "src_n": 52,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 123,
+   "domain": "ALG",
+   "stem": "The graph of the linear equation passes through the points $\\left(-21,-\\dfrac{89}{2}\\right)$ and $\\left(12,\\dfrac{65}{2}\\right)$. The graph also passes through the point $\\left(\\dfrac{27}{4},a\\right)$. What is the value of $a$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 53,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 124,
+   "domain": "GT",
+   "stem": "In $\\triangle ABC$, $\\angle B$ is a right angle and the length of $\\overline{AB}$ is 456 millimeters. If the $\\cos C=\\dfrac{7}{25}$, what is the length, in millimeters, of $\\overline{BC}$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 54,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 125,
+   "domain": "GT",
+   "wide": true,
+   "stem": "In triangle $ABC$ and triangle $DEF$, sides $BC$ and $EF$ each have a side length of 37 inches, and angles $B$ and $E$ each have an angle measure of $63^\\circ$. Which of the following additional pieces of information is(are) sufficient to prove whether triangle $ABC$ is congruent to triangle $DEF$?\\par\\smallskip I. The measure of angles $A$ and $C$ are equal.\\par II. The length of sides $AC$ and $DF$ are equal.\\par III. The measures of angles $A$ and $D$ are equal.",
+   "choices": [
+    "I is sufficient, but II and III are not.",
+    "II is sufficient, but I and III are not.",
+    "III is sufficient, but I and II are not.",
+    "II and III are sufficient, but I is not."
+   ],
+   "src": "B",
+   "src_n": 55,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 126,
+   "domain": "AM",
+   "stem": "$$77x^2+(7j+11k)x+jk=0$$ In the given equation, $j$ and $k$ are positive constants. The product of the solutions to the given equation is $ajk$, where $a$ is a constant. What is the value of $a$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 56,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 127,
+   "domain": "PSDA",
+   "stem": "The number $j$ is $2{,}400\\%$ greater than the number $k$. The number $k$ is $350\\%$ greater than 8. What is the value of $j$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 57,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 128,
+   "domain": "GT",
+   "stem": "A square is inscribed in a circle with the equation $x^2+y^2-8x+10y=27$. What is the area of the square?",
+   "choices": [],
+   "src": "B",
+   "src_n": 58,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 129,
+   "domain": "AM",
+   "stem": "The equation below relates distinct positive real numbers $a$, $b$ and $c$. Which equation correctly expresses $c$ in terms of $a$ and $b$? $$a=19b\\cdot\\sqrt[5]{\\left(\\frac{c}{20}\\right)^4}$$",
+   "choices": [
+    "$\\dfrac{20}{19b}(a)^{\\frac{5}{4}}$",
+    "$\\dfrac{20}{19b}(a)^{\\frac{4}{5}}$",
+    "$20\\left(\\dfrac{a}{19b}\\right)^{\\frac{5}{4}}$",
+    "$20\\left(\\dfrac{a}{19b}\\right)^{\\frac{4}{5}}$"
+   ],
+   "src": "B",
+   "src_n": 59,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 130,
+   "domain": "GT",
+   "stem": "Triangle $ABC$ is inscribed in a circle with a radius of 85. The length of $AC$ is 170 and the length of $BC$ is 168. What is the value of $\\dfrac{AB}{BC}$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 60,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 131,
+   "domain": "AM",
+   "stem": "For the exponential function $f$, the value of $f(2)$ is $k$, where $k$ is a constant. Which of the following equivalent forms of the function $f$ shows the value of $k$ as the coefficient or the base?",
+   "choices": [
+    "$f(x)=729(3)^{x+2}$",
+    "$f(x)=6{,}561(3)^x$",
+    "$f(x)=177{,}147(3)^{x-3}$",
+    "$f(x)=59{,}049(3)^{x-2}$"
+   ],
+   "src": "B",
+   "src_n": 61,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 132,
+   "domain": "AM",
+   "stem": "Two numbers $r$ and $s$ are each greater than zero, and the fourth root of $r$ is equal to the seventh root of $s$. For what value of $x$ is $r^{4x-5}$ equal to $s$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 62,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 133,
+   "domain": "AM",
+   "stem": "The given equation $ax^2+98x+c$ has at least 1 real root and a factor of $kx+j$. What is the greatest possible value of $ac$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 63,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 134,
+   "domain": "ALG",
+   "stem": "$$7kx+13my=20.5$$ $$6kx+5my=-48$$ In the given system of equations, $k$ and $m$ are constants. The system has a solution of $(2,y)$. What is the value of $k$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 64,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 135,
+   "domain": "AM",
+   "stem": "The table gives two values of $x$ and their corresponding values of $g(x)$, where $g(x)=\\dfrac{f(x)+5}{x+8}$ and $f$ is a linear function. What is the $y$-coordinate of the $y$-intercept of the graph $y=f(x)$ in the $xy$-plane?",
+   "figure": "tbl-gx",
+   "choices": [],
+   "src": "B",
+   "src_n": 65,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 136,
+   "domain": "GT",
+   "stem": "What is the value of $\\sin(x^\\circ)(\\cos 90-x^\\circ)+\\sin(90-x^\\circ)(\\cos x^\\circ)$?",
+   "choices": [
+    "$0.5$",
+    "$1$",
+    "$2$",
+    "$90$"
+   ],
+   "src": "B",
+   "src_n": 66,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 137,
+   "domain": "PSDA",
+   "stem": "There are red, blue, green, and black marbles in a bag. There are 26 black marbles, 8 green marbles, and 26 blue and red marbles. Given that a randomly selected marble is not black, the probability of selecting a red marble is $\\dfrac{5}{17}$. What is the number of blue marbles in the bag?",
+   "choices": [],
+   "src": "B",
+   "src_n": 67,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 138,
+   "domain": "GT",
+   "stem": "A gardener is purchasing topsoil for a new garden. The garden is in the shape of a rectangular prism. The dimensions of the garden are 54 feet by 192 feet by 2 feet. If it costs \\$96 per cubic yard of topsoil, how much does the gardener need to spend in dollars? (1 yard $=$ 3 feet)",
+   "choices": [],
+   "src": "B",
+   "src_n": 68,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 139,
+   "domain": "GT",
+   "stem": "In the $xy$-plane, which of the following points lies on a circle with the equation $(x+k)^2+(y-j)^2=841$?",
+   "choices": [
+    "$(k+20,\\ j+21)$",
+    "$(k-20,\\ j-21)$",
+    "$(-k+21,\\ j+20)$",
+    "$(-k-21,\\ -j-20)$"
+   ],
+   "src": "B",
+   "src_n": 69,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 140,
+   "domain": "ALG",
+   "stem": "Which of the following inequalities gives all possible values of $k$ where the equation below has no solution? $$4-4\\left|\\frac{7}{8}+\\frac{4}{5}x\\right|=\\frac{57}{12}+k$$",
+   "choices": [
+    "$k<-\\dfrac{3}{4}$",
+    "$k>-\\dfrac{3}{4}$",
+    "$k\\le\\dfrac{3}{4}$",
+    "$k\\ge\\dfrac{3}{4}$"
+   ],
+   "src": "B",
+   "src_n": 70,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 141,
+   "domain": "PSDA",
+   "stem": "A table that weighs 348 pounds puts equal amounts of pressure on each of its 4 identical legs. If the pressure that each leg exerts on the floor is 12 pounds per square inch, what is the area, in square inches, of the bottom of each leg that is touching the floor?",
+   "choices": [],
+   "src": "B",
+   "src_n": 71,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 142,
+   "domain": "GT",
+   "stem": "In the figure below, lines $a$ and $b$ are parallel. What is the value of $x+y$?",
+   "figure": "fig-parallel-ab",
+   "choices": [],
+   "src": "B",
+   "src_n": 72,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 143,
+   "domain": "AM",
+   "stem": "The functions $f$ and $g$ are defined by the given equations, where $x\\ge0$. Which of the following equations displays, as a constant or coefficient, the maximum value of the function it defines, where $x\\ge0$?\\par\\smallskip I. $f(x)=232(0.4)^{x+2}$\\par II. $g(x)=232(0.4)(0.4)(0.4)^{x-2}$",
+   "choices": [
+    "I only",
+    "II only",
+    "I and II",
+    "Neither I nor II"
+   ],
+   "src": "B",
+   "src_n": 73,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 144,
+   "domain": "GT",
+   "stem": "An equilateral triangle with side lengths of $k$ is inscribed in a circle. Which of the following defines the radius, $r$, in terms of $k$?",
+   "choices": [
+    "$\\dfrac{k}{2}$",
+    "$\\dfrac{k\\sqrt{3}}{6}$",
+    "$\\dfrac{k\\sqrt{3}}{3}$",
+    "$\\dfrac{k\\sqrt{3}}{2}$"
+   ],
+   "src": "B",
+   "src_n": 74,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 145,
+   "domain": "AM",
+   "stem": "The function $f$ is defined by $f(x)=3^x$. The function $g$ is a increasing linear function. In the $xy$-plane, the graphs of $y=f(x)$ and $y=g(x)$ intersect at two points $(a,j)$ and $(b,k)$, where $j<k$. When $g(x)>f(x)$, which of the following must be true?",
+   "choices": [
+    "$x>k$",
+    "$x<j$",
+    "$x<j$ or $x>b$",
+    "$a<x<b$"
+   ],
+   "src": "B",
+   "src_n": 75,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 146,
+   "domain": "ALG",
+   "stem": "If $\\dfrac{2a}{b}=4.25$ and $\\dfrac{a}{bn}=8.5$, what is the value of $n$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 76,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 147,
+   "domain": "PSDA",
+   "stem": "An object's speed is increasing at a rate of 4.80 meters per second squared. What is the rate in miles per minute squared, rounded to the nearest tenth? (Use 1 mile $=$ 1609 meters.)",
+   "choices": [],
+   "src": "B",
+   "src_n": 77,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 148,
+   "domain": "AM",
+   "wide": true,
+   "stem": "An acceptable noise criterion rating for the background noise in a school classroom is 30. For a noise criterion rating of 30, the equation $y=19(0.978)^{x-50}+37$ gives the estimated sound pressure level, $y$ in decibels, as a function of the octave band center frequency, $x$, in hertz, where $x\\ge50$. Which of the following is the best interpretation of 37 in this context?",
+   "choices": [
+    "37 is 19 less than the estimated sound pressure level, in decibels, at an octave band frequency of 50.",
+    "37 is 19 less than the estimated sound pressure level, in decibels, at an octave band frequency of 0.",
+    "37 is the estimated sound pressure level, in decibels, at an octave band frequency of 50.",
+    "37 is the estimated sound pressure level, in decibels, at an octave band frequency of 0."
+   ],
+   "src": "B",
+   "src_n": 78,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 149,
+   "domain": "AM",
+   "stem": "The graph of the quadratic function $y=f(x)$ in the $xy$-plane intersects the $x$-axis when $x=74$ and $x=k$, where $k$ is a constant. The maximum value of $y=f(x)$ occurs at the point $(17,m)$, where $m$ is a constant. What is the value of $k$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 79,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 150,
+   "domain": "AM",
+   "stem": "Three points on the quadratic function $f(x)$ are given in the table. If $g(x)=f(x+4)$, what is the $y$-intercept of the function $g(x)$?",
+   "figure": "tbl-fx-quad",
+   "choices": [],
+   "src": "B",
+   "src_n": 80,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 151,
+   "domain": "GT",
+   "stem": "Triangle $ABC$ is an equilateral triangle with a height of 30 meters. What is the perimeter of triangle $ABC$ in meters?",
+   "choices": [
+    "$60\\sqrt{3}$",
+    "$90$",
+    "$90\\sqrt{3}$",
+    "$120\\sqrt{3}$"
+   ],
+   "src": "B",
+   "src_n": 81,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 152,
+   "domain": "AM",
+   "stem": "$$-19(6x-4)^2+6(6x-3)^2$$ The given expression can be rewritten as $\\dfrac{a}{9}x^2+\\dfrac{b}{9}x+\\dfrac{c}{9}$, where $a$, $b$, and $c$ are constants. What is the value of $a+b+c$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 82,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 153,
+   "domain": "GT",
+   "stem": "A rectangular area consists of 3,179 equal squares where each square has an area of $k$. If the length of the rectangular area is 2.75 times the width and the width is equal to $x\\sqrt{k}$, what is the value of $x$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 83,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 154,
+   "domain": "ALG",
+   "stem": "$$7x-9y=39$$ $$35x-45y=195$$ For any real number $r$, which of the following points lies on the graph of both equations?",
+   "choices": [
+    "$\\left(3r,\\dfrac{7r-13}{3}\\right)$",
+    "$\\left(\\dfrac{7r+13}{3},3r\\right)$",
+    "$\\left(-\\dfrac{7r}{-9}+39,\\dfrac{7r}{9}+195\\right)$",
+    "$\\left(\\dfrac{r}{5}+39,-\\dfrac{r}{5}+195\\right)$"
+   ],
+   "src": "B",
+   "src_n": 84,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 155,
+   "domain": "AM",
+   "wide": true,
+   "stem": "$$f(x)=x^2+5x-6$$ $$g(x)=x^2+2x-35$$ The quadratic function $f(x)$ has 2 solutions $j$ and $k$, where $j<k$. The quadratic function $g(x)$ has 2 solutions $l$ and $m$, where $l<m$. The quadratic function $h(x)=x^2+7x+c$ has solutions of $k+l$ and $m+j$, and can be rewritten as $(x+a)(x+b)$, what is the value of $c$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 85,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 156,
+   "domain": "AM",
+   "stem": "For the exponential function $f(x)=16^{x+4}$, which of the following answer choices expresses the minimum value as either a constant or a coefficient when $x\\ge0$?",
+   "choices": [
+    "$f(x)=64(16)^x$",
+    "$f(x)=65{,}536(16)^x$",
+    "$f(x)=1{,}048{,}576(16)^x$",
+    "$f(x)=\\dfrac{1}{65{,}356}(16)^x$"
+   ],
+   "src": "B",
+   "src_n": 86,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 157,
+   "domain": "AM",
+   "stem": "For the given parabola $ax^2+bx+c$, $a$, $b$, and $c$ are constants. The $x$-intercepts of the parabola are at $(14,0)$ and $(k,0)$. If $f(27)=f(11)$, what is the value of $k$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 87,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 158,
+   "domain": "AM",
+   "stem": "A quadratic function models a projectile's height, in meters, above the ground in terms of in terms of time, in seconds, after it was launched. The model estimates that the projectile was launched from an initial height of $a$ meters and reached a maximum height of 134 meters 6 seconds after it was launched. How many seconds after launch does the model estimate it will return to a height of $a$ meters?",
+   "choices": [
+    "$6$",
+    "$8$",
+    "$9$",
+    "$12$"
+   ],
+   "src": "B",
+   "src_n": 88,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 159,
+   "domain": "PSDA",
+   "stem": "A 100 gram metal alloy is $40\\%$ silver. It contains a metal alloy that is $65\\%$ silver and a second metal alloy made up of $25\\%$ silver. What is the mass of the first metal alloy?",
+   "choices": [],
+   "src": "B",
+   "src_n": 89,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 160,
+   "domain": "PSDA",
+   "stem": "Joshua Tree National Park has an area of 1,242 square miles. What is the area, in square yards, of Joshua Tree National Park? (1 mile $=$ 1,760 yards).",
+   "choices": [
+    "$\\dfrac{1{,}242}{1{,}760}$",
+    "$\\dfrac{1{,}242}{(1{,}760)^2}$",
+    "$1{,}242(1{,}760)$",
+    "$1{,}242(1{,}760)^2$"
+   ],
+   "src": "B",
+   "src_n": 90,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 161,
+   "domain": "PSDA",
+   "stem": "There are two ranches. Ranch $A$ and ranch $B$. The ratio of male horses to female horses is $1:15$ for the total number of horses on ranch $A$ and $B$. The ratio of female horses on ranch $A$ to ranch $B$ is $7:17$. There are 168 horses on ranch $A$ and 344 horses on Ranch $B$. How many more male horses are there on ranch $A$ than on ranch $B$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 91,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 162,
+   "domain": "GT",
+   "stem": "In the given figure, $BC$ is the diameter of the circle. If the length of $BC$ is equal to 132 and the length of $AB$ is equal to $\\sqrt{363}$, what is the value of $\\dfrac{BC}{BD}$?",
+   "figure": "fig-circle-abcd",
+   "choices": [],
+   "src": "B",
+   "src_n": 92,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 163,
+   "domain": "AM",
+   "stem": "A certain bacterial colony currently has 5,000 spores. If the number of spores in this colony quadruples every 33 hours, which of the following functions $N$ gives the number of spores in the colony \\underline{$d$ days} from now?",
+   "choices": [
+    "$N(d)=5{,}000(4)^{\\frac{11}{8}d}$",
+    "$N(d)=5{,}000(4)^{\\frac{8}{11}d}$",
+    "$N(d)=5{,}000(4)^{\\frac{5}{4}d}$",
+    "$N(d)=5{,}000(4)^{\\frac{4}{5}d}$"
+   ],
+   "src": "B",
+   "src_n": 93,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 164,
+   "domain": "AM",
+   "stem": "In the given equations, $a$ and $b$ are constants, $a>1$ and $b>1$. What is the value of $x$? $$\\sqrt[7]{a^5}=\\sqrt{b^5}$$ $$a^{3x-3}=b^3$$",
+   "choices": [],
+   "src": "B",
+   "src_n": 94,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 165,
+   "domain": "PSDA",
+   "stem": "$a$ is $3700\\%$ greater than $b$. $a$ is also $5\\%$ less than $c$. What percent greater than $c$ is $b$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 95,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 166,
+   "domain": "ALG",
+   "stem": "The proposal for a development project was included on a city's election ballots. A local tv station reported that 6 times as many people voted in favor of the proposal as people who voted against it. If 1,770 more people voted in favor of the proposal than those who voted against the proposal. How many people voted against the proposal?",
+   "choices": [],
+   "src": "B",
+   "src_n": 96,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 167,
+   "domain": "GT",
+   "stem": "The table gives the volume and surface areas of two similar rectangles, where $k$ is a constant.\\par\\smallskip What is the value of $k$?",
+   "figure": "tbl-rect-sim",
+   "choices": [
+    "$5{,}346$",
+    "$12{,}474$",
+    "$87{,}318$",
+    "$611{,}226$"
+   ],
+   "src": "B",
+   "src_n": 97,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 168,
+   "domain": "AM",
+   "stem": "In the given system of equations, $c$ is a constant. The system has two distinct real solutions. Which of the following could be the value of $c$? $$y=x-c$$ $$y=-6(x-5)^2$$",
+   "choices": [
+    "$2$",
+    "$4$",
+    "$\\dfrac{119}{24}$",
+    "$7$"
+   ],
+   "src": "B",
+   "src_n": 98,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 169,
+   "domain": "GT",
+   "wide": true,
+   "stem": "In the figure, parallel lines $a$ and $b$ are intersected by lines $c$, $d$, and $e$. If $x=54$, $v=127$, and $w>x$, which statement about $y$ and $z$ must be true?",
+   "figure": "fig-parallel-abcde",
+   "choices": [
+    "$z>y$",
+    "$z<y$",
+    "$z=y$",
+    "$z+y=90$"
+   ],
+   "src": "B",
+   "src_n": 99,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 170,
+   "domain": "GT",
+   "stem": "An equilateral triangle has a perimeter of 1200 meters. If the height of the triangle is equal to $x\\sqrt{3}$, what is the value of $x$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 100,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 171,
+   "domain": "AM",
+   "stem": "$$f(x)=(x+a)(x+b)$$ For the given function $f(x)$, where $a$ and $b$ are integer constants, $f(-21)>0$, $f(-15)>0$, and $f(-18)<0$, what is one possible value of $a+b$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 101,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 172,
+   "domain": "ALG",
+   "stem": "Which system of linear equations has no solution?",
+   "choices": [
+    "$-3x+7y=-9$ \\quad and \\quad $3x-7y=9$",
+    "$3x-7y=5$ \\quad and \\quad $2x+8y=6$",
+    "$4x-9y=7$ \\quad and \\quad $-12x+27y=-21$",
+    "$-3x+8y=20$ \\quad and \\quad $6x-16y=40$"
+   ],
+   "src": "B",
+   "src_n": 102,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 173,
+   "domain": "AM",
+   "stem": "Function $f$ is a quadratic function. The graph of $y=f(x)$ in the $xy$-plane has a vertex at $(-7,14)$ and passes through the point $(-4,-31)$ and has a $y$-intercept at $(0,a)$. The graph of $3f(x)$ has a $y$-intercept at $(0,b)$. What is the positive difference between $a$ and $b$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 103,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 174,
+   "domain": "PSDA",
+   "stem": "Each of the following frequency tables represents a data set. Which of these frequency tables represent the data set with the smallest standard deviation?",
+   "figure": "tbl-freq-choice",
+   "choices": [],
+   "src": "B",
+   "src_n": 104,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 175,
+   "domain": "AM",
+   "stem": "In the given equation, $k$ is a positive constant. The product of the solutions to the equation is 154. What is the value of $k$? $$\\tfrac{3}{5}(5x+11)\\bigl(x+\\sqrt{5k+10}\\bigr)\\bigl(x-\\sqrt{5k+10}\\bigr)=0$$",
+   "choices": [],
+   "src": "B",
+   "src_n": 105,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 176,
+   "domain": "GT",
+   "stem": "Two lines intersect at exactly one point, forming two acute angles and two obtuse angles. The measure of one of these angles is $(7x-210)^\\circ$. Which of the following could NOT be the sum of the measures of any two of these angles?",
+   "choices": [
+    "$(-14x+780)^\\circ$",
+    "$(-14x+420)$",
+    "$180^\\circ$",
+    "$(14x-420)^\\circ$"
+   ],
+   "src": "B",
+   "src_n": 106,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 177,
+   "domain": "AM",
+   "stem": "$$\\sqrt{a-x}=46-x$$ In the given equation, $a$ is a constant. The equation has exactly one real solution. What is the minimum possible value of $4a$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 107,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 178,
+   "domain": "PSDA",
+   "stem": "The mass of particles $A$, $B$, and $C$ are $a$ atomic mass units, $b$ atomic mass units, and $c$ atomic mass units, respectively. If the mass of particle $A$ is $4{,}600\\%$ of the mass of particle $C$, and the mass of particle $C$ is $0.004\\%$ of the mass of particle $B$, which expression represents the value of $a+b$ in terms of $c$?",
+   "choices": [
+    "$2{,}960c$",
+    "$4{,}604c$",
+    "$4{,}850c$",
+    "$25{,}046c$"
+   ],
+   "src": "B",
+   "src_n": 108,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 179,
+   "domain": "ALG",
+   "stem": "If $\\dfrac{x-7}{5}=\\dfrac{x-4}{3}$, the value $x-4$ is between which of the following pairs of values?",
+   "choices": [
+    "$-9$ and $-4$",
+    "$-1$ and $1$",
+    "$2$ and $5$",
+    "$7$ and $11$"
+   ],
+   "src": "B",
+   "src_n": 109,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 180,
+   "domain": "GT",
+   "stem": "A circle with a center $B(0,0)$ is a unit circle on the $xy$-plane. Point $A(1,0)$ and $C$ lie on the circle. If the measurement of angle $ABC$ is $\\dfrac{975\\pi}{60}$ in radians, what is the $x$-coordinate of point $C$?",
+   "choices": [
+    "$\\dfrac{\\sqrt{2}}{2}$",
+    "$-\\dfrac{\\sqrt{2}}{2}$",
+    "$0$",
+    "$\\dfrac{\\sqrt{2}}{3}$"
+   ],
+   "src": "B",
+   "src_n": 110,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 181,
+   "domain": "ALG",
+   "stem": "A handyman charges a flat rate of \\$218 for the first 3 hours of work and \\$68 for each additional hour of work. Which equation gives the total amount $y$, in dollars, that the handyman charges for $x$ hours of work, where $x>3$?",
+   "choices": [
+    "$y=68x+218$",
+    "$y=218x+68$",
+    "$y=68x+14$",
+    "$y=68x+422$"
+   ],
+   "src": "B",
+   "src_n": 111,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 182,
+   "domain": "AM",
+   "stem": "For a certain circuit, its power $P$, in watts; current $C$, in amperes; voltage $V$, in volts; and resistance $R$, in ohms, are related as $\\dfrac{CV^3}{P}=\\sqrt{PR}$, where $P$, $C$, $V$, and $R$ are positive. When $R=34$, which equation correctly expresses $P$ in terms of $C$ and $V$?",
+   "choices": [
+    "$P=\\dfrac{CV^3}{\\sqrt{34}}$",
+    "$P=\\dfrac{CV^3}{\\sqrt{34P}}$",
+    "$P=\\sqrt[3]{\\dfrac{34}{C^2V^4}}$",
+    "$P=\\sqrt[3]{\\dfrac{C^2V^6}{34}}$"
+   ],
+   "src": "B",
+   "src_n": 112,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 183,
+   "domain": "AM",
+   "stem": "$$f(x)=x+7$$ $$g(x)=5x^2-kx+245$$ The functions $f$ and $g$ are given. In function $g$, $k$ is a constant. If $f(x)\\cdot g(x)=5x^3+1{,}715$, what is the value of $k$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 113,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 184,
+   "domain": "GT",
+   "stem": "A circle is inscribed inside of square $ABCD$. Segment $AC$ is the diagonal of the square, and its length is 30cm. What is the radius of the circle in cm?",
+   "choices": [
+    "$\\dfrac{15\\sqrt{2}}{2}$",
+    "$15$",
+    "$15\\sqrt{2}$",
+    "$30$"
+   ],
+   "src": "B",
+   "src_n": 114,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 185,
+   "domain": "AM",
+   "stem": "Which of the following has $x+2a$ as a factor where $a$ is a positive integer?",
+   "choices": [
+    "$3x^2+7x+14a=0$",
+    "$3x^2+28x+14a=0$",
+    "$3x^2+42x+14a=0$",
+    "$3x^2+49x+14a=0$"
+   ],
+   "src": "B",
+   "src_n": 115,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 186,
+   "domain": "GT",
+   "stem": "A metal mold in the shape of a rectangular prism has a length of 27 inches, a width of 48 inches, and a height of 180 inches. The equation $c=v(d)$ calculates the cost of filling the metal mold, where $c$ is the total cost in dollars, $v$ is the volume in cubic yards, and $d$ is the cost per cubic yard. If $c$ is equal to \\$970, what is the value of $d$ in dollars? (Note 1 yard $=$ 36 inches)",
+   "choices": [],
+   "src": "B",
+   "src_n": 116,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 187,
+   "domain": "AM",
+   "stem": "The expression $\\dfrac{x^{27}(x-7)}{3x^3}+\\dfrac{7x^{27}}{3x^3}$ is equivalent to $\\dfrac{1}{3}x^k$, where $k$ is a constant and $x>0$. What is the value of $k$?",
+   "choices": [
+    "$3$",
+    "$\\dfrac{27}{3}$",
+    "$25$",
+    "$28$"
+   ],
+   "src": "B",
+   "src_n": 117,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 188,
+   "domain": "ALG",
+   "wide": true,
+   "stem": "Megan engages in up to 3 types of exercise each week for a total of 14 hours while training for an ironman competition. Megan runs the same number of \\underline{minutes} each week. The equation $y=780-x-200$ represents the situation where Megan swims for $x$ minutes during a week and bikes for any remaining training time $y$, in minutes. If this equation is graphed in the $xy$-plane, which of the following statements is true?",
+   "choices": [
+    "During a week when Megan runs for 780 minutes, she bikes for 200 minutes.",
+    "Each week, Megan swims and bikes for a total of 780 minutes.",
+    "During a week when Megan doesn't swim, she runs for 260 minutes.",
+    "During a week when Megan doesn't bike, she swims for 390 minutes."
+   ],
+   "src": "B",
+   "src_n": 118,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 189,
+   "domain": "AM",
+   "stem": "The functions $f$ and $g$ are defined by the equations shown, where $a$ and $b$ are integer constants, $a>b$ and $b>0$. If $y=f(x)$ and $y=g(x)$ are graphed in the $xy$-plane, which of the following equations displays, as a constant or a coefficient, the maximum of the graph of the corresponding function when $x\\ge0$.\\par\\smallskip I. $f(x)=b(0.97)^{x+a}$\\par II. $g(x)=b(0.97)^x+a$",
+   "choices": [
+    "I only",
+    "II only",
+    "I and II",
+    "Neither I nor II"
+   ],
+   "src": "B",
+   "src_n": 119,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 190,
+   "domain": "GT",
+   "stem": "An equilateral triangle is inscribed in a circle with a diameter of 16. Which of the following gives the area of the equilateral triangle?",
+   "choices": [
+    "$6\\sqrt{3}$",
+    "$24\\sqrt{3}$",
+    "$32\\sqrt{3}$",
+    "$48\\sqrt{3}$"
+   ],
+   "src": "B",
+   "src_n": 120,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 191,
+   "domain": "AM",
+   "stem": "The given equation $ax^2+88x+c=0$, where $a$ and $c$ are constants has no real solutions and a factor of $kx+j$. What is the least possible integer value of $ac$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 121,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 192,
+   "domain": "AM",
+   "wide": true,
+   "stem": "$$f(t)=34{,}000(1.07)^{6t}$$ The given function $f$ models the balance of an investment account, in dollars, $t$ years after it is opened. Which statement is the best interpretation of $(1.07)^{6t}$?",
+   "choices": [
+    "Every 6 years, the balance increases by 2,380 dollars.",
+    "Every 6 years, the balance increases by $7\\%$ of the previous 6 years balance.",
+    "Every 2 months, the balance increases by 2,380 dollars.",
+    "Every 2 months, the balance increases by $7\\%$ of the previous 2 months balance."
+   ],
+   "src": "B",
+   "src_n": 122,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 193,
+   "domain": "AM",
+   "stem": "The quadratic function $a(x+4.5)^2-d$ can be rewritten as $(x-9.5)(x+c)$. If $a$ is equal to 1, what is the value of $d$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 123,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 194,
+   "domain": "AM",
+   "stem": "$g(x)$ is a quadratic function. In the $xy$-plane, the graph of $y=g(x)$ passes through the points $(12,540)$ and $(16,908)$. If $g(0)=12$, what is the value of $g(24)$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 124,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 195,
+   "domain": "GT",
+   "stem": "The surface area of rectangle prism $A$ is $312$ m$^2$. The surface area of area of rectangle prism $B$ is $11{,}232$ m$^2$. Rectangular prism $A$ has a volume of $224$ m$^3$. If both rectangular prisms are similar, what is the volume of rectangular prism $B$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 125,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 196,
+   "domain": "GT",
+   "stem": "The given figure shows lines $a$ and $b$ intersected by line $k$. Which of the following is sufficient to prove that $a$ and $b$ are parallel?",
+   "figure": "fig-lines-abk",
+   "choices": [
+    "$180-y=x$",
+    "$x=180-z$",
+    "$y+z=180-x$",
+    "$180-z=y$"
+   ],
+   "src": "B",
+   "src_n": 126,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 197,
+   "domain": "AM",
+   "stem": "The function $f$ is defined by $f(x)=ax^2+bx+c$, where $a$, $b$ and $c$ are constants. The graph of $y=f(x)$ in the $xy$-plane passes through the points $(13,0)$ and $(-6,0)$. Which of the following is the value of $a+b$ in terms of $a$?",
+   "choices": [
+    "$7a$",
+    "$6a$",
+    "$-6a$",
+    "$-7a$"
+   ],
+   "src": "B",
+   "src_n": 127,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 198,
+   "domain": "AM",
+   "stem": "$$f(x)=1.6^x+6$$ $$g(x)=1.8x+b$$ The given system of equations intersects at points $(j,k)$ and $(h,r)$, where $r<k$. What is the least possible value of $b$?",
+   "choices": [
+    "$7$",
+    "$6$",
+    "$5$",
+    "$4$"
+   ],
+   "src": "B",
+   "src_n": 128,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 199,
+   "domain": "GT",
+   "stem": "For the given circle, the measure of arc $abc=130+7x$ degrees and the measure of arc $acb=90-3x$ degrees. What is the value of $x$?",
+   "figure": "fig-circle-arc",
+   "choices": [],
+   "src": "B",
+   "src_n": 129,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 200,
+   "domain": "AM",
+   "stem": "The function $f$ is defined by $f(x)=78(0.39)^x$. For any positive integer $n$, the value of $f(n)$ is $p\\%$ less than the value of $f(n-1)$. What is the value of $p$?",
+   "choices": [
+    "$78$",
+    "$61$",
+    "$39$",
+    "$22$"
+   ],
+   "src": "B",
+   "src_n": 130,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 201,
+   "domain": "AM",
+   "stem": "For which value of $a$ does the quadratic $(7x-8)^2+9=a$ only have one solution?",
+   "choices": [],
+   "src": "B",
+   "src_n": 131,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 202,
+   "domain": "AM",
+   "stem": "$$f(x)=a^x-b$$ The exponential function given above passes through points $(c,12)$ and $(2c,768)$. What is a possible value of $b$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 132,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 203,
+   "domain": "AM",
+   "stem": "If $r=\\sqrt[3]{k}$, for the equation $r^{12a-9}=k$, what is the value of $a$ for which $r$ and $k$ are equal?",
+   "choices": [],
+   "src": "B",
+   "src_n": 133,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 204,
+   "domain": "GT",
+   "stem": "What is the perimeter of an equilateral triangle with an area of $289\\sqrt{3}$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 134,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 205,
+   "domain": "ALG",
+   "stem": "$$92x-1{,}789=kx-1{,}790$$ In the given equation, $k$ is a positive integer constant greater than 91. The equation has exactly one solution. What is the least possible value of $k$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 135,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 206,
+   "domain": "AM",
+   "stem": "$$4x^3+bx^2-528x=0$$ In the given equation, $b$ is a positive integer constant. Which value could be a solution to the equation?",
+   "choices": [
+    "$-13$",
+    "$-12$",
+    "$-6$",
+    "$12$"
+   ],
+   "src": "B",
+   "src_n": 136,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 207,
+   "domain": "GT",
+   "stem": "Circle A has the equation $(x-18)^2+y^2=27$. Circle B has the equation $(x-18)^2+(y-m)^2=50$. If Circle B passes through the center of circle A, what is a possible value of $m$?",
+   "choices": [
+    "$3\\sqrt{3}$",
+    "$5\\sqrt{2}$",
+    "$5\\sqrt{2}-3\\sqrt{3}$",
+    "$5\\sqrt{2}+3\\sqrt{3}$"
+   ],
+   "src": "B",
+   "src_n": 137,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 208,
+   "domain": "AM",
+   "stem": "If $x^2=j+k$ and $y^2=j+m$, which of the following is equal to $(x^2-y^2)^2$?",
+   "choices": [
+    "$k^2-2jm+m^2$",
+    "$k^2-2km+m^2$",
+    "$4j^2-4jkm+m^2$",
+    "$4j^2-2jkm+k^2m^2$"
+   ],
+   "src": "B",
+   "src_n": 138,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 209,
+   "domain": "AM",
+   "stem": "$$-x^2+kx-3{,}786$$ In the given equation, $k$ is a positive integer. If the equation has no real solution, what is the greatest possible value of $k$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 139,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 210,
+   "domain": "GT",
+   "stem": "A circle with center $(-7,-4)$ has a radius equal to 14. The equation $x^2+y^2+ax+by+c=0$ represents the circle. What is the value of $c$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 140,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 211,
+   "domain": "GT",
+   "wide": true,
+   "stem": "In triangle $ABC$, angle $C$ is a right angle, point $D$ lies on $\\overline{AB}$, point $E$ lies on $\\overline{BC}$, and $\\overline{DE}$ is parallel to $\\overline{AC}$. If the length of $\\overline{AB}$ is 39 units, $\\overline{DE}$ is 8 units, the length of $\\overline{AC}$ is greater than the length of $\\overline{BC}$, and the area of triangle $ABC$ is 270 units, what is the length of $\\overline{BE}$, in units?",
+   "choices": [],
+   "src": "B",
+   "src_n": 141,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 212,
+   "domain": "AM",
+   "stem": "If $k=l+m$, which of the following is equivalent to the expression $x^2-l^2-2lm-m^2$?",
+   "choices": [
+    "$(x+k)^2$",
+    "$(x-k)^2$",
+    "$(x-k)(x+k)$",
+    "$x^2-kx-k^2$"
+   ],
+   "src": "B",
+   "src_n": 142,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 213,
+   "domain": "AM",
+   "stem": "$$ax^2+148x+c$$ In the given expression, $a$ and $c$ are positive constants. If $jx+k$ is a factor of the expression, where $j$ and $k$ are positive constants, what is the greatest possible value of $ac$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 143,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 214,
+   "domain": "ALG",
+   "stem": "Lines $c$ and $d$ are perpendicular. If the equation of line $c$ is $y=mx+b$ and the lines intersect at point $(7,6)$. Which point lies on line $b$?",
+   "choices": [
+    "$(7+m,\\ 7)$",
+    "$(2m,\\ 8)$",
+    "$(7+2m,\\ 4)$",
+    "$(7-3m,3)$"
+   ],
+   "src": "B",
+   "src_n": 144,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 215,
+   "domain": "AM",
+   "stem": "The given quadratic function $54x^4+219x^2+105$ has factors in the form $(k)(ax^2+b)(cx^2+d)$. If $a$, $b$, $c$, $d$, and $k$ are integers, what is the smallest possible value of $ab$?",
+   "choices": [],
+   "src": "B",
+   "src_n": 145,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 216,
+   "domain": "ALG",
+   "stem": "What is the value of $k$ if the given equation only has one solution? $$\\frac{1}{4}|x-4|-30=2k$$",
+   "choices": [],
+   "src": "B",
+   "src_n": 146,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 217,
+   "domain": "ALG",
+   "wide": true,
+   "stem": "In the given pair of equations $a$ and $b$ are constants. The graph of this pair of equations in the $xy$-plane is a pair of perpendicular lines. Which of the following pairs of equations also represents a pair of perpendicular lines? $$13x+17y=10$$ $$ax+by=10$$",
+   "choices": [
+    "$39x+17y=10$ \\quad and \\quad $ax-3by=10$",
+    "$52x+34y=10$ \\quad and \\quad $2ax+4by=10$",
+    "$65x+17y=10$ \\quad and \\quad $5ax+by=10$",
+    "$13x-17y=10$ \\quad and \\quad $ax+by=10$"
+   ],
+   "src": "B",
+   "src_n": 147,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 218,
+   "domain": "AM",
+   "stem": "Which equation correctly gives $c$ in terms of $d$, $e$, and $f$? $$\\frac{73}{c}=\\frac{73}{d}+\\frac{73}{e}+\\frac{73}{f}$$",
+   "choices": [
+    "$c=d+e+f$",
+    "$c=\\dfrac{def}{d+e+f}$",
+    "$c=\\dfrac{d+e+f}{def}$",
+    "$c=\\dfrac{def}{de+df+ef}$"
+   ],
+   "src": "B",
+   "src_n": 148,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 219,
+   "domain": "AM",
+   "stem": "For the exponential function $f$, the value of $f(3)$ is $k$, where $k$ is a constant. Which of the following equivalent forms of the function $f$ shows the value of $k$ as the coefficient or the base?",
+   "choices": [
+    "$f(x)=3(4)(4)^{x+1}$",
+    "$f(x)=3{,}072(4)(4)^{x-4}$",
+    "$f(x)=12(4)(4)^x$",
+    "$f(x)=768(4)(4)^{x-3}$"
+   ],
+   "src": "B",
+   "src_n": 149,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  },
+  {
+   "n": 220,
+   "domain": "PSDA",
+   "stem": "A rocket's speed is increasing at a rate of 14.6 meters per second squared. What is the rate in miles per minute squared? (1 mile $=$ 1,609 meters)",
+   "choices": [],
+   "src": "B",
+   "src_n": 150,
+   "src_name": "Advanced Digital SAT Math - 150 Hard Questions (Matthew Stroup & Michael Stroup)"
+  }
+ ]
+}

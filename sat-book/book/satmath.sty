@@ -1,0 +1,132 @@
+\ProvidesPackage{satmath}[2026/08/16 SAT DAVLAT design system]
+
+\RequirePackage[a4paper,top=100pt,bottom=54pt,left=34pt,right=34pt,
+                headheight=46pt,headsep=14pt,footskip=26pt]{geometry}
+\RequirePackage{lmodern}
+\RequirePackage{amsmath,amssymb}
+\RequirePackage{xcolor}
+\RequirePackage{graphicx}
+\RequirePackage{adjustbox}
+\RequirePackage{varwidth}
+\RequirePackage{tikz}
+\RequirePackage{enumitem}
+\RequirePackage{fancyhdr}
+\RequirePackage{array,booktabs,longtable}
+\RequirePackage{multicol}
+\RequirePackage{needspace}
+\RequirePackage{etoolbox}
+\RequirePackage{eso-pic}
+\RequirePackage[hidelinks]{hyperref}
+
+% ------------------------------------------------------------- palette
+\definecolor{satnavy}{HTML}{0A2463}
+\definecolor{satnavyd}{HTML}{082260}
+\definecolor{satblue}{HTML}{1A4E9D}
+\definecolor{satgold}{HTML}{C8A434}
+\definecolor{satpale}{HTML}{D6E4FA}
+\definecolor{satmist}{HTML}{CDD3DE}
+\definecolor{satgrey}{HTML}{5A6672}
+\definecolor{satline}{HTML}{B9C4D6}
+
+% openany governs \chapter only; \frontmatter and \mainmatter hardcode
+% \cleardoublepage, which ships a blank verso before the contents and
+% again before the first part. Never emit one.
+\let\cleardoublepage\clearpage
+
+\newcommand{\satauthorname}{DAVLAT KAMOLIDDINOV}
+\newcommand{\satbrandword}{DAVLAT}
+
+% ------------------------------------------------------- the brand bar
+\newcommand{\satbrandbar}{%
+  \begin{tikzpicture}
+    \node[draw=satnavy,line width=0.8pt,minimum width=\dimexpr\textwidth-0.8pt\relax,
+          minimum height=24pt,inner sep=0pt,anchor=south west] (bar) at (0,0) {};
+    \fill[satnavy] ([xshift=7pt+7.5pt]bar.west) circle (7.5pt);
+    \node[white,font=\bfseries\fontsize{6.6}{8}\selectfont]
+      at ([xshift=7pt+7.5pt]bar.west) {SAT};
+    \node[satblue,font=\bfseries\fontsize{15}{17}\selectfont,anchor=west]
+      at ([xshift=7pt+15pt+6pt]bar.west) {\satbrandword};
+    \draw[satnavy,line width=0.8pt]
+      ([xshift=-26pt]bar.north east) -- ([xshift=-26pt]bar.south east);
+    \node[anchor=east] at ([xshift=-6pt]bar.east)
+      {\includegraphics[height=15pt]{assets/logo.png}};
+  \end{tikzpicture}}
+
+\fancypagestyle{satbody}{%
+  \fancyhf{}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \fancyhead[C]{%
+    \hbox to \textwidth{\hfil
+      \fontsize{7.6}{9}\selectfont\bfseries\color{satnavy}%
+      MATH INSTRUCTOR: \satauthorname}%
+    \vspace{2pt}\par
+    \satbrandbar}%
+  \fancyfoot[C]{\small\thepage}}
+
+% ----------------------------------------------------------- watermark
+% A tikz overlay anchored to current page.center; eso-pic's \AtPageCenter
+% with \raisebox does not reliably centre the box vertically.
+\newcommand{\satwatermark}{%
+  \AddToShipoutPictureBG{%
+    \begin{tikzpicture}[remember picture,overlay]
+      \node at (current page.center)
+        {\includegraphics[width=0.56\paperwidth]{assets/logo-watermark.png}};
+    \end{tikzpicture}}}
+
+% ------------------------------------------------- question components
+\newcounter{satq}
+
+% The marker sits on its own line above the question text, never inline.
+\newcommand{\satmarker}[1]{%
+  \begin{tikzpicture}[baseline=0pt]
+    \node[fill=satblue,text=white,font=\bfseries\fontsize{8}{10}\selectfont,
+          minimum width=11pt,inner xsep=3pt,inner ysep=2pt] {#1};
+  \end{tikzpicture}}
+
+% One choice per line -- never a 2x2 grid.
+\newenvironment{satchoices}{%
+  \begin{list}{}{%
+    \setlength{\leftmargin}{22pt}\setlength{\labelwidth}{16pt}%
+    \setlength{\labelsep}{5pt}\setlength{\itemsep}{4pt}%
+    \setlength{\parsep}{0pt}\setlength{\topsep}{4pt}}}
+  {\end{list}}
+
+% Figures are authored full width but must fit the column they land in.
+% varwidth is required: figure bodies contain center/tabular, and
+% adjustbox alone cannot box a list environment.
+\newcommand{\satfig}[1]{%
+  \par\smallskip
+  \begin{adjustbox}{max width=\linewidth,center}
+  \begin{varwidth}{\textwidth}#1\end{varwidth}
+  \end{adjustbox}
+  \par\smallskip}
+
+\newcommand{\satnotetoscale}{\par\smallskip
+  {\footnotesize\itshape Figure not drawn to scale.}\par}
+
+% Working space. These are hard questions: the room to work is part of
+% the page, which is why only three problems are set on each.
+\newcommand{\satwork}[1]{\vspace{#1}}
+
+\newcommand{\satlesson}[1]{%
+  \begin{center}
+    {\fontsize{16}{19}\selectfont\bfseries #1}\\[3pt]
+    \textcolor{satnavy}{\rule{0.30\textwidth}{0.7pt}}
+  \end{center}\par\medskip}
+
+\newcommand{\satpart}[2]{%
+  \clearpage\thispagestyle{empty}%
+  \begin{tikzpicture}[remember picture,overlay]
+    \node at (current page.center)
+      {\includegraphics[width=0.56\paperwidth]{assets/logo-watermark.png}};
+    \node at ([yshift=99pt]current page.center)
+      {\fontsize{10}{12}\selectfont PART #1};
+    \node at ([yshift=61pt]current page.center)
+      {\fontsize{19}{22}\selectfont\bfseries #2};
+    \draw[satblue,line width=1pt]
+      ([xshift=-82pt,yshift=36pt]current page.center) --
+      ([xshift=82pt,yshift=36pt]current page.center);
+  \end{tikzpicture}%
+  \null\clearpage}
+
+\endinput
