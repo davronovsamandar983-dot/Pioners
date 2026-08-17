@@ -8,7 +8,9 @@ distinct problems a student must actually solve.
 import json, re, sys, itertools, difflib, pathlib
 
 HERE = pathlib.Path(__file__).resolve().parent.parent
-BANKS = [("A", HERE / "content/bank_a.json"), ("B", HERE / "content/bank_b.json")]
+BANKS = [("A", HERE / "content/bank_a.json"),
+         ("B", HERE / "content/bank_b.json"),
+         ("C", HERE / "content/bank_c.json")]
 
 
 def normalise(stem: str) -> str:

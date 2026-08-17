@@ -1,0 +1,694 @@
+{
+ "source": "PrepPros Advanced Digital SAT Math Course #2 - 150 Hard Questions",
+ "has_answer_key": true,
+ "note": "Only the questions this deck does not share with bank_b. Answers are the deck's own published key (pages 151-157).",
+ "problems": [
+  {
+   "n": 2,
+   "domain": "AM",
+   "stem": "The function $g$ is defined by $g(x)=ab^{\\frac{x}{n}}$, where $a$, $b$, and $n$ are constants. If $g(6)=11$ and $g(9)=704$, what is the value of $g(11)$?",
+   "choices": [],
+   "answer": "11,264"
+  },
+  {
+   "n": 4,
+   "domain": "GT",
+   "stem": "A rectangle is inscribed in a circle such that each vertex of the rectangle lies on the circle. The diagonal of the rectangle is twice the length of the shortest side of the rectangle. If the area of the circle is $5{,}929\\pi$ square units, what is the area, in square units, of the rectangle?",
+   "choices": [
+    "$77\\sqrt{2}$",
+    "$77\\sqrt{3}$",
+    "$5{,}929\\sqrt{2}$",
+    "$5{,}929\\sqrt{3}$"
+   ],
+   "answer": "D"
+  },
+  {
+   "n": 6,
+   "domain": "GT",
+   "wide": true,
+   "stem": "In triangle $ABC$ and triangle $DEF$, sides $BC$ and $EF$ each have a length of 23 inches, and angles $C$ and $F$ each measure $43^\\circ$. Which of the following additional pieces of information is(are) sufficient to prove that triangle $ABC$ is congruent to triangle $DEF$?\\par\\smallskip I. The measures of angles $D$ and $E$ are equal.\\par II. The lengths of $\\overline{AB}$ and $\\overline{DE}$ are equal.\\par III. The measures of angles $A$ and $D$ are equal.",
+   "choices": [
+    "I only",
+    "II only",
+    "II and III",
+    "III only"
+   ],
+   "answer": "D"
+  },
+  {
+   "n": 8,
+   "domain": "PSDA",
+   "stem": "The speed of object $K$ is $9{,}525\\%$ of the speed of object $J$, and the speed of object $K$ is $0.025\\%$ of the speed of object $L$. If the speed of object $L$ is $x\\%$ of the speed of object $J$, what is the value of $\\dfrac{x}{1{,}000}$?",
+   "choices": [],
+   "answer": "38,100"
+  },
+  {
+   "n": 10,
+   "domain": "GT",
+   "stem": "Circle $A$ is defined by the equation $(x+14k)^2+(y+27k)^2=81k^2$, where $k$ is a positive constant. Circle $B$ is the result of shifting circle $A$ up $13k$ units. Which equation defines circle $B$?",
+   "choices": [
+    "$(x+14k)^2+(y+40k)^2=81k^2$",
+    "$(x+14k)^2+(y+14k)^2=81k^2$",
+    "$(x+27k)^2+(y+14k)^2=81k^2$",
+    "$(x+14k)^2+(y+14k)^2=94k^2$"
+   ],
+   "answer": "B"
+  },
+  {
+   "n": 12,
+   "domain": "AM",
+   "stem": "The function $f$ is defined by $f(x)=ax^2+bx+c$, where $a$, $b$, and $c$ are constants. The graph of $y=f(x)$ in the $xy$-plane passes through the points $(18,0)$ and $(-11,0)$. If $a$ is an integer greater than 1, which of the following could be the value of $a+b$?",
+   "choices": [
+    "$-12$",
+    "$-6$",
+    "$7$",
+    "$14$"
+   ],
+   "answer": "A"
+  },
+  {
+   "n": 14,
+   "domain": "AM",
+   "stem": "The function $g$ is defined by $g(x)=a(1.36)^x$, where $a$ is a positive constant. For each increase of 1 in the value of $x$, the value of $g(x)$ increases by $p\\%$. Which of the following functions increases by $p\\%$ for each increase of 5 in the value of $x$?",
+   "choices": [
+    "$h(x)=a(1.36)^{5x}$",
+    "$h(x)=a(1.36)^{\\frac{x}{5}}$",
+    "$h(x)=a(1.36^5)^{5x}$",
+    "$h(x)=a\\left(1.36^{\\frac{1}{5}}\\right)^{\\frac{x}{5}}$"
+   ],
+   "answer": "D"
+  },
+  {
+   "n": 16,
+   "domain": "PSDA",
+   "wide": true,
+   "stem": "A company conducted a study on the time spent studying per night by students in grades 9, 10, and 11 and their average grade point average. A total of 5,600 students were selected at random from all students in grades 9, 10, and 11 in a large school district in the US. The selected students were asked to report their number of hours studied as less than 1, from 1--3 hours, or more than 3 hours per night. If the results of the study suggest a relationship between the self-reported number of hours studied and students average grade point average, which of the following aspects of the study will prevent these results from being generalized to all students in grades 9, 10, and 11 in the US?",
+   "choices": [
+    "The selected students are not all from the same school in the district.",
+    "The number of selected students is too small.",
+    "The number of selected students from grades 10 and 11 is greater than grade 9.",
+    "The students were not selected at random from all students in grades 9, 10, and 11 in the US."
+   ],
+   "answer": "D"
+  },
+  {
+   "n": 18,
+   "domain": "AM",
+   "stem": "When the price of a particular product is \\$120, no products are sold. As the number of products sold increases by 1, the price decreases by \\$2.50. If the total revenue for all products sold was \\$1,440, what was the total number of products sold? (revenue $=$ price $\\times$ number of products sold)",
+   "choices": [],
+   "answer": "24"
+  },
+  {
+   "n": 20,
+   "domain": "AM",
+   "stem": "$$7x(x-7)=63$$ One solution to the given equation can be written as $x=\\dfrac{a+\\sqrt{b}}{2}$, where $a$ and $b$ are positive integers. What is the value of $ab$?",
+   "choices": [],
+   "answer": "595"
+  },
+  {
+   "n": 22,
+   "domain": "ALG",
+   "stem": "$$77(x-k)=77y+77k$$ One of the equations in a system of two linear equations is given, where $k$ is a positive constant. The system has no solution. Which equation could be the second equation in this system?",
+   "choices": [
+    "$11x+11y=11k$",
+    "$11x+11y=22k$",
+    "$11x-11y=11k$",
+    "$11x-11y=22k$"
+   ],
+   "answer": "C"
+  },
+  {
+   "n": 24,
+   "domain": "PSDA",
+   "stem": "Substance $D$ is made up of substances $A$, $B$, and $C$. The total mass of substance $B$ is 621.6 grams, which makes up $42\\%$ of substance $D$. Of the remaining mass of substance $D$, $60\\%$ was substance $A$, and the remainder was substance $C$. Based on this information, how many grams of substance $D$ is substance $C$?",
+   "choices": [],
+   "answer": "343.36"
+  },
+  {
+   "n": 26,
+   "domain": "AM",
+   "stem": "The function $g$ is defined by $g(x)=a\\sqrt{b-x}$, where $a$ and $b$ are constants. In the $xy$-plane, the graph of $y=g(x)$ passes through the point $(36,0)$ and $f(16)<0$. Which of the following must be true?",
+   "choices": [
+    "$a>0$",
+    "$b<0$",
+    "$a<b$",
+    "$f(0)=36$"
+   ],
+   "answer": "C"
+  },
+  {
+   "n": 28,
+   "domain": "PSDA",
+   "stem": "The positive number $k$ is $3{,}700\\%$ of the number $j$, and $j$ is $12.5\\%$ of the number $m$. If $k-m=aj$, what is the value of $a$?",
+   "choices": [],
+   "answer": "29"
+  },
+  {
+   "n": 30,
+   "domain": "GT",
+   "stem": "A circle in the $xy$-plane has its center at $(-5,-7)$. Line $a$ is tangent to this circle at $(-13,-4)$. What is the slope of line $a$?",
+   "choices": [],
+   "answer": "8/3"
+  },
+  {
+   "n": 32,
+   "domain": "AM",
+   "stem": "$$x(kx-72)=-8$$ In the given equation, $k$ is an integer constant. If the equation has no real solution, what is the least possible value of $k$?",
+   "choices": [],
+   "answer": "163"
+  },
+  {
+   "n": 34,
+   "domain": "AM",
+   "stem": "A business analyst is developing a model to set the selling price of a product. The analyst determined that for a selling price of \\$260, zero products would be sold. For each \\$4 decrease in the selling price, the number of products sold would increase by one. For a revenue of \\$3,600, what is a possible number of products that could be sold? (revenue $=$ price $\\times$ number of products sold)",
+   "choices": [],
+   "answer": "20 or 45"
+  },
+  {
+   "n": 36,
+   "domain": "GT",
+   "stem": "Point $K$ lies on a unit circle in the $xy$-plane and has coordinates $(1,0)$. Point $O$ is the center of the circle and has coordinates $(0,0)$. Point $J$ also lies on the unit circle and the measure of angle $KOJ$ is $\\dfrac{478\\pi}{3}$ radians. If the coordinates of point $J$ are $(a,b)$, where $a$ and $b$ are constants, what is the value of $b$?",
+   "choices": [
+    "$-\\dfrac{1}{2}$",
+    "$-\\dfrac{\\sqrt{3}}{2}$",
+    "$\\dfrac{1}{2}$",
+    "$\\dfrac{\\sqrt{3}}{2}$"
+   ],
+   "answer": "B"
+  },
+  {
+   "n": 38,
+   "domain": "ALG",
+   "stem": "Line $a$ is defined by $7x+8y=96$. Line $a$ is parallel to line $b$. An equation of line $b$ is $42x=ky-96$, where $k$ is a constant. What is the $y$-intercept of line $b$?",
+   "choices": [],
+   "answer": "-2"
+  },
+  {
+   "n": 40,
+   "domain": "AM",
+   "stem": "The exponential function $g$ is defined by $g(x)=ab^x$, where $a$ and $b$ are positive constants. If $g(k-1)=g(k)+\\dfrac{18}{100}g(k-1)$, where $k$ is a constant, what is the value of $b$?",
+   "choices": [],
+   "answer": "0.82"
+  },
+  {
+   "n": 42,
+   "domain": "AM",
+   "stem": "Which of the following expressions has a factor of $x+3k$, where $k$ is a positive integer constant?",
+   "choices": [
+    "$4x^2+9x+27k$",
+    "$4x^2+15x+27k$",
+    "$4x^2+27x+27k$",
+    "$4x^2+45x+27k$"
+   ],
+   "answer": "D"
+  },
+  {
+   "n": 44,
+   "domain": "AM",
+   "wide": true,
+   "stem": "At a depth of $x$ meters below the surface, the estimated total pressure $P_1$, in millibars, a submarine experiences is given by $P_1=1{,}013x+12{,}000$. After the submarine descends a certain depth, $k$, it descends $h$ additional meters. The estimated total pressure $P_2$, in millibars, the submarine experiences after descending $k$ additional meters is given by $P_2=1{,}013h+721{,}100$. Which of the following is the best interpretation of 721,100 in this context?",
+   "choices": [
+    "The estimated total pressure in millibars the submarine experienced after the submarine began to descend $k$ additional meters.",
+    "The estimated increase in millibars the submarine experienced at a depth of $h$ meters.",
+    "The estimated total pressure in millibars the submarine experienced when the submarine began to descend $h$ additional meters.",
+    "The estimated increase in millibars the submarine experienced for each increase in depth by $h$ meters."
+   ],
+   "answer": "C"
+  },
+  {
+   "n": 46,
+   "domain": "AM",
+   "stem": "The function $f$ is defined by $f(x)=a(2.5)^x$. For any positive integer $n$, the value of $f(n-1)$ is $p\\%$ of the value of $f(n)$. What is the value of $p$?",
+   "choices": [],
+   "answer": "40"
+  },
+  {
+   "n": 48,
+   "domain": "ALG",
+   "stem": "A bakery makes 9-inch, 12-inch, and 14-inch pies. During a certain day, the number of 14-inch pies the bakery makes is 4 times the number $n$ of 12-inch pies, and the number of 9-inch pies is 48. During this day, the bakery makes 190 pies in total. Which equation represents this situation?",
+   "choices": [
+    "$9(48)+12n+14(4n)=190$",
+    "$9n+12n+14n=190$",
+    "$4n+48=190$",
+    "$5n+48=190$"
+   ],
+   "answer": "D"
+  },
+  {
+   "n": 50,
+   "domain": "PSDA",
+   "stem": "The speed of object $A$ is $764\\%$ greater than the speed of object $B$, and the speed of object $A$ is $0.96\\%$ of the speed of object $C$. If the speed of object $C$ is $p\\%$ of the speed of object $B$, what is the value of $p$?",
+   "choices": [],
+   "answer": "90,000"
+  },
+  {
+   "n": 52,
+   "domain": "GT",
+   "stem": "A right square pyramid has a surface area of 51,984 square centimeters, which includes a base area of 23,104 square centimeters. What is the slant height, in centimeters, of this pyramid?",
+   "choices": [],
+   "answer": "95"
+  },
+  {
+   "n": 54,
+   "domain": "PSDA",
+   "stem": "For the positive quantities $a$, $b$, and $c$, $78\\%$ of $c$ is equivalent to $0.096\\%$ of $b$, and $b$ is equivalent to $250\\%$ of $a$. What percentage of $c$ is $a$?",
+   "choices": [],
+   "answer": "3,250"
+  },
+  {
+   "n": 56,
+   "domain": "GT",
+   "wide": true,
+   "stem": "For triangle $ABC$ and triangle $DEF$, angle $A$ and $D$ each measure $45^\\circ$, $BC=36$ and $EF=54$. Which additional piece(s) of information is(are) sufficient to prove that triangle $ABC$ is similar to triangle $DEF$?\\par\\smallskip I. The length of $\\overline{AB}$ is $\\frac{2}{3}$ the length of $\\overline{DE}$.\\par II. The length of $\\overline{AC}$ is $\\frac{2}{3}$ the length of $\\overline{DF}$.",
+   "choices": [
+    "I is sufficient, but II is not.",
+    "II is sufficient, but I is not.",
+    "I is sufficient, and II is sufficient.",
+    "Neither I nor II is sufficient."
+   ],
+   "answer": "D"
+  },
+  {
+   "n": 58,
+   "domain": "AM",
+   "wide": true,
+   "stem": "$$f(x)=14{,}000(1.007)^{4x}$$ The given function $f$ models the balance of a bank account, in dollars, $x$ years after it is opened. Which statement is the best interpretation of $(1.007)^{4x}$?",
+   "choices": [
+    "Every 3 months, the balance increases by about $7\\%$ of the balance at the beginning of the 3-month interval.",
+    "Every 3 years, the balance increases by about $7\\%$ of the balance at the beginning of the 3-year interval.",
+    "Every 3 months, the balance increases by about $0.7\\%$ of the balance at the beginning of the 3-month interval.",
+    "Every 3 years, the balance increases by about $0.7\\%$ of the balance at the beginning of the 3-year interval."
+   ],
+   "answer": "C"
+  },
+  {
+   "n": 60,
+   "domain": "ALG",
+   "stem": "If $x\\ge-13$ represents all solutions to the inequality $ax-75\\le42$, where $a$ is a constant, what is the greatest possible value of $a$?",
+   "choices": [],
+   "answer": "-9"
+  },
+  {
+   "n": 62,
+   "domain": "PSDA",
+   "stem": "The expression $0.0004x$ represents the result of decreasing a positive quantity $x$ by $p\\%$. What is the value of $p$?",
+   "choices": [],
+   "answer": "99.96"
+  },
+  {
+   "n": 64,
+   "domain": "AM",
+   "stem": "$$\\frac{1}{k}+\\frac{x}{118}=\\frac{1}{kx}$$ In the given equation, $k$ is an integer constant. If the equation has no solutions, what is the greatest possible value of $k$?",
+   "choices": [],
+   "answer": "-30"
+  },
+  {
+   "n": 66,
+   "domain": "AM",
+   "stem": "$$-4x^2+bx-34=x^2$$ In the given equation, $b$ is a positive integer. The equation has no real solution. What is the largest possible value of $b$?",
+   "choices": [],
+   "answer": "26"
+  },
+  {
+   "n": 68,
+   "domain": "PSDA",
+   "wide": true,
+   "stem": "An architectural model of a square campus has a side length of 405 inches, and 1 inch on the model is equal to an actual distance of 270 feet. A smaller version of the same campus is constructed with the side length of the square $65\\%$ shorter than the side length of the previous model. On the smaller model, which of the following is closest to the actual distance, in feet, represented by 1 inch?",
+   "choices": [
+    "$94.5$",
+    "$175.5$",
+    "$415.38$",
+    "$771.43$"
+   ],
+   "answer": "D"
+  },
+  {
+   "n": 70,
+   "domain": "AM",
+   "stem": "The expression $6x^4+35x^2+11$ can be rewritten as $(3x^2+j)(2x^2+k)$, where $j$ and $k$ are positive integers, or as $(3x^2+l)(2x^2+m)$, where $l$ and $m$ are positive nonintegers, what is the value of $k+l$?",
+   "choices": [],
+   "answer": "27.5"
+  },
+  {
+   "n": 72,
+   "domain": "GT",
+   "stem": "The perimeter of an equilateral triangle is 954 inches. The three vertices of the triangle lie on a circle. The radius of the circle is $k\\sqrt{3}$ inches. What is the value of $k$?",
+   "choices": [],
+   "answer": "106"
+  },
+  {
+   "n": 74,
+   "domain": "ALG",
+   "stem": "$$\\frac{14x+35}{4}-\\frac{b}{12}=a(x-7)$$ In the given equation, $a$ and $b$ are constants. If the equation has infinitely many solutions, what is the value of $b$?",
+   "choices": [],
+   "answer": "399"
+  },
+  {
+   "n": 76,
+   "domain": "ALG",
+   "stem": "$$9x+5y=7$$ $$45x+25y=35$$ For each real number $r$, which of the following points lies on the graph of each equation in the $xy$-plane for the given system?",
+   "choices": [
+    "$\\left(\\dfrac{r}{5}+7,\\ -\\dfrac{r}{5}+35\\right)$",
+    "$\\left(-\\dfrac{5r}{9}+\\dfrac{7}{9},\\ r\\right)$",
+    "$\\left(r,\\ \\dfrac{9r}{5}+\\dfrac{7}{5}\\right)$",
+    "$\\left(r,\\ -\\dfrac{5r}{9}+\\dfrac{7}{9}\\right)$"
+   ],
+   "answer": "B"
+  },
+  {
+   "n": 78,
+   "domain": "GT",
+   "wide": true,
+   "stem": "A right square pyramid has a height of 13 inches. A second right square pyramid has a height 39 inches. The area of the bases of the two pyramids is 400 square inches. Which of the following is closest to the difference in surface area of the second pyramid and the surface area of the first pyramid, in square inches, rounded to the nearest integer?",
+   "choices": [],
+   "answer": "954"
+  },
+  {
+   "n": 80,
+   "domain": "AM",
+   "stem": "The function $f$ is defined by $f(x)=(x+19)(k-x)(x+8)$, where $k$ is a constant. In the $xy$-plane, the graph of $y=f(x)$ passes through the point $(32,0)$. What is the value of $f(0)$?",
+   "choices": [],
+   "answer": "4,864"
+  },
+  {
+   "n": 82,
+   "domain": "AM",
+   "stem": "$$2x^2-16x-19=0$$ One solution to the given equation can be written as $x=a-\\dfrac{1}{2}\\sqrt{b}$, where $a$ and $b$ are integer constants. What is the value of $a+b$?",
+   "choices": [],
+   "answer": "106"
+  },
+  {
+   "n": 84,
+   "domain": "PSDA",
+   "stem": "A petri dish had $x$ number of bacteria. A month later the number of bacteria increased by $17{,}456\\%$. What is the resulting number of bacteria on the petri dish in terms of $x$?",
+   "choices": [
+    "$17.456x$",
+    "$174.56x$",
+    "$175.56x$",
+    "$17{,}456x$"
+   ],
+   "answer": "C"
+  },
+  {
+   "n": 86,
+   "domain": "PSDA",
+   "stem": "On average, a certain weed grows 63 centimeters every $m$ months. At this rate, which expression represents the number of centimeters, on average, the weed grows every $t$ years?",
+   "choices": [
+    "$\\dfrac{21m}{4t}$",
+    "$\\dfrac{21t}{4m}$",
+    "$\\dfrac{756m}{t}$",
+    "$\\dfrac{756t}{m}$"
+   ],
+   "answer": "D"
+  },
+  {
+   "n": 88,
+   "domain": "GT",
+   "stem": "A line intersects two parallel lines, forming four obtuse and four acute angles. The measure of one of the obtuse angles is $(-6x+380)^\\circ$. The sum of the measures of two of the acute angles and one of the obtuse angles is $(ax-k)^\\circ$, where $a$ and $k$ are both positive constants. What is the value of $a+k$?",
+   "choices": [],
+   "answer": "26"
+  },
+  {
+   "n": 90,
+   "domain": "AM",
+   "stem": "The function $f$ is defined by $f(x)=\\dfrac{2x-8}{(x+7)(x-3)}$. If $f(k+6)=0$, where $k$ is a constant, what is the value of $k$?",
+   "choices": [],
+   "answer": "-2"
+  },
+  {
+   "n": 92,
+   "domain": "AM",
+   "stem": "Which equation correctly gives $c$ in terms of $d$, $e$, and $f$? $$\\frac{1}{c}=\\frac{1}{d}+\\frac{1}{e}+\\frac{1}{f}+\\frac{1}{17}$$",
+   "choices": [
+    "$c=\\dfrac{17def}{d+e+f+17}$",
+    "$c=\\dfrac{17def}{17ef+17df+17de+def}$",
+    "$c=\\dfrac{17ef+17df+17de+def}{17def}$",
+    "$c=d+e+f+17$"
+   ],
+   "answer": "B"
+  },
+  {
+   "n": 94,
+   "domain": "ALG",
+   "stem": "$$\\frac{1}{7}x+\\frac{3k}{13}y=\\frac{9}{14}$$ One of the equations in a system of two linear equations is given, where $k$ is a nonzero constant. The system has no solution. If the other equation in the system is graphed in the $xy$-plane, what is the slope of the graph?",
+   "choices": [
+    "$\\dfrac{13k}{21}$",
+    "$-\\dfrac{13}{21k}$",
+    "$\\dfrac{21k}{13}$",
+    "$-\\dfrac{21}{13k}$"
+   ],
+   "answer": "B"
+  },
+  {
+   "n": 96,
+   "domain": "AM",
+   "wide": true,
+   "stem": "$$g(x)=8(x-d)(x-e)(x-f)$$ The function $g$ is defined by the given equation, where $d$, $e$, and $f$ are distinct constants. When $d<x<f$, the value of $g(x)$ is positive. The graph of $y=g(x)$ in the $xy$-plane contains the point $(p,q)$ where $p$ and $q$ are constants. If $q=7$, which of the following could be true?\\par\\smallskip I. $e<p$\\par II. $p<d$\\par III. $f<p<e$",
+   "choices": [
+    "I only",
+    "II only",
+    "I and II",
+    "I and III only"
+   ],
+   "answer": "A"
+  },
+  {
+   "n": 98,
+   "domain": "AM",
+   "stem": "The graph of $y=f(x)+6$ is shown. Which equation defines $f$?",
+   "figure": "fig-expdecay",
+   "choices": [
+    "$f(x)=-2^x+1$",
+    "$f(x)=-2^x-2$",
+    "$f(x)=-2^x-4$",
+    "$f(x)=-2^x-5$"
+   ],
+   "answer": "D"
+  },
+  {
+   "n": 100,
+   "domain": "ALG",
+   "stem": "In a set of three consecutive odd integers, where the integers are ordered from least to greatest, the first integer is represented by $k$. The product of 17 and the second odd integer in the set is at most the value of 40 less than the sum of the first and third odd integers in the set. What is the greatest possible value of $k$?",
+   "choices": [],
+   "answer": "-5"
+  },
+  {
+   "n": 102,
+   "domain": "AM",
+   "stem": "The functions $f$ and $g$ are defined by the given equations, where $x\\ge0$. Which of the following equations displays, as a constant or coefficient, the maximum value of the function it defines, where $x\\ge0$?\\par\\smallskip I. $f(x)=19(0.74)^x+43$\\par II. $g(x)=7(0.98)^x$",
+   "choices": [
+    "I only",
+    "II only",
+    "I and II",
+    "Neither I nor II"
+   ],
+   "answer": "B"
+  },
+  {
+   "n": 104,
+   "domain": "AM",
+   "stem": "$$g(a)=77a-4a^2$$ The function $g$ is defined by the given equation. The function $h$ is defined by $h(a)=g(a)+5$. Which expression represents the maximum value of $h(a)$?",
+   "choices": [
+    "$5+\\left(\\dfrac{77}{4}\\right)^2$",
+    "$5+\\left(\\dfrac{77}{8}\\right)^2$",
+    "$5-\\left(\\dfrac{77}{4}\\right)^2$",
+    "$5-\\left(\\dfrac{77}{8}\\right)^2$"
+   ],
+   "answer": "A"
+  },
+  {
+   "n": 106,
+   "domain": "PSDA",
+   "stem": "The positive number $a$ is $7{,}848\\%$ of the sum of positive numbers $b$ and $c$, and $c$ is $32\\%$ of $b$. What percent of $c$ is $a$?",
+   "choices": [],
+   "answer": "32,373"
+  },
+  {
+   "n": 108,
+   "domain": "ALG",
+   "stem": "For the linear function $k$, $k(a)=-24$, where $a$ is a constant, $k(4)=30$, and the slope of the graph $y=k(x)$ in the $xy$-plane is 7. For the linear function $p$, $p(a)=26$ and $p(6)=38$. What is the slope of the graph of $y=p(x)$ in the $xy$-plane?",
+   "choices": [],
+   "answer": "21/17"
+  },
+  {
+   "n": 110,
+   "domain": "GT",
+   "stem": "In the figure shown, points $A$, $B$, and $C$ lie on the circle and $AC>AB$ and $AD=\\sqrt{592}$. The diameter of the circle is 82. If $\\dfrac{CD}{BD}=k$, what is the value of $k$?",
+   "figure": "fig-circle-abcd2",
+   "choices": [],
+   "answer": "37/4"
+  },
+  {
+   "n": 112,
+   "domain": "GT",
+   "wide": true,
+   "stem": "In the figure, parallel lines $a$ and $b$ are intersected by lines $c$, $d$, and $e$. If $v=37$ and $z=144$, $y$ and $x$ are integers, and $y<v$, which statement about $x$ must be true?",
+   "figure": "fig-parallel-abcde2",
+   "choices": [
+    "$x<y$",
+    "$x>y$",
+    "$x=w$",
+    "$w<x$"
+   ],
+   "answer": "B"
+  },
+  {
+   "n": 114,
+   "domain": "AM",
+   "stem": "$$x(7x-4k)+j(7x-4k)-(x+j)=0$$ In the given equation, $j$ and $k$ are positive constants. A solution to the equation is $x=81$. What is the value of $k$?",
+   "choices": [],
+   "answer": "141.5"
+  },
+  {
+   "n": 116,
+   "domain": "GT",
+   "stem": "The perimeter of an equilateral triangle with a height of 58 units is $k\\sqrt{3}$ units, what is the value of $k$?",
+   "choices": [
+    "$\\dfrac{58}{3}$",
+    "$\\dfrac{116}{3}$",
+    "$\\dfrac{174}{3}$",
+    "$116$"
+   ],
+   "answer": "D"
+  },
+  {
+   "n": 118,
+   "domain": "GT",
+   "stem": "In the figure shown, $\\overline{AC}$ and $\\overline{BD}$ intersect at point $E$, $AC=1{,}080$ and $\\overline{ED}=\\frac{4}{5}\\overline{EC}$. What is the length of $\\overline{ED}$?",
+   "figure": "fig-bowtie2",
+   "choices": [],
+   "answer": "259.2"
+  },
+  {
+   "n": 120,
+   "domain": "GT",
+   "stem": "$$4x^2+4y^2+bx+by=32$$ The given equation, where $b$ is a positive constant, defines a circle in the $xy$-plane. The radius of the circle is $\\sqrt{106}$. What is the value of $b$?",
+   "choices": [],
+   "answer": "56"
+  },
+  {
+   "n": 122,
+   "domain": "GT",
+   "stem": "The edge length of the square base and the height of a right square pyramid are integers, and the pyramid has a volume of 16,464 cubic inches. If the slant height is 35 inches, what is the height, in inches, of this pyramid?",
+   "choices": [],
+   "answer": "28"
+  },
+  {
+   "n": 126,
+   "domain": "AM",
+   "wide": true,
+   "stem": "The function $g$ is defined by $g(x)=k|x-13|^2-47|x-13|+m$, where $k$ and $m$ are constants and $k>m>47$. If $g(397)=a$ and $g(-371)=b$, where $a$ and $b$ are constants, what is the value of $43(-397)^{a-b}+371(43)^{b-a}$?",
+   "choices": [],
+   "answer": "414"
+  },
+  {
+   "n": 128,
+   "domain": "ALG",
+   "stem": "Line $a$ in the $xy$-plane passes through the points $\\left(\\dfrac{7}{k},-\\dfrac{3}{k}+\\dfrac{9}{15}\\right)$ and $\\left(\\dfrac{5}{k},-\\dfrac{7}{k}+\\dfrac{9}{15}\\right)$, where $k$ is a constant. Which of the following defines the $y$ value of the $y$-intercept of line $a$?",
+   "choices": [
+    "$-\\dfrac{38}{k}+\\dfrac{3}{5}$",
+    "$-\\dfrac{32}{k}+\\dfrac{3}{5}$",
+    "$-\\dfrac{17}{k}+\\dfrac{3}{5}$",
+    "$-\\dfrac{70}{k}+\\dfrac{3}{5}$"
+   ],
+   "answer": "C"
+  },
+  {
+   "n": 130,
+   "domain": "GT",
+   "stem": "A rectangular gameboard is divided into 480 square regions of equal area $k$, in square units. The length of the gameboard is 7.5 times the width of the gameboard. If the width of the gameboard is $x\\sqrt{k}$ units, what is the value of $x$?",
+   "choices": [],
+   "answer": "8"
+  },
+  {
+   "n": 132,
+   "domain": "GT",
+   "stem": "The area of a triangle is 340 square inches. The length of the base of the triangle is 6 greater than 2 times the height of the triangle. What is the height, in inches, of the triangle?",
+   "choices": [],
+   "answer": "17"
+  },
+  {
+   "n": 134,
+   "domain": "ALG",
+   "stem": "The graph of the line $a$ is shown in the $xy$-plane. Line $b$ is defined by $178x+ky=j$, where $k$ and $j$ are constants. If line $b$ is graphed in this $xy$-plane, resulting in a graph of a system of two linear equations, the system of two linear equations will have infinitely many solutions. What is the value of $k+j$?",
+   "figure": "fig-line-a2",
+   "choices": [],
+   "answer": "2,670"
+  },
+  {
+   "n": 136,
+   "domain": "PSDA",
+   "wide": true,
+   "stem": "For a study, a group of beavers will be selected from a population of 370 beavers, and a group of otters will be selected from a population of 420 otters. Some of the beavers and otters will be in a treatment group, and some of the beavers and otters will be in a control group. Which of the following is necessary for this study to attempt to establish a cause-and-effect relationship between two variables?",
+   "choices": [
+    "The total number of beavers in the study is equal to the total number of otters in the study.",
+    "The beavers and otters are randomly selected from their habitats.",
+    "The proportion of female to male otters in the treatment group is equal to the proportion of female to male beavers in the treatment group.",
+    "The beavers and otters are randomly assigned to the treatment and control groups."
+   ],
+   "answer": "D"
+  },
+  {
+   "n": 138,
+   "domain": "GT",
+   "stem": "In the figure, $\\overline{AC}$ intersects $\\overline{BD}$ at point $E$, and $\\overline{AB}$ is parallel to $\\overline{DC}$. The lengths of $\\overline{AC}$, $\\overline{BE}$, and $\\overline{EC}$ are 23, 17, and 7, respectively. What is the length of $\\overline{ED}$?",
+   "figure": "fig-bowtie3",
+   "choices": [
+    "$\\dfrac{16}{119}$",
+    "$\\dfrac{23}{119}$",
+    "$\\dfrac{119}{23}$",
+    "$\\dfrac{119}{16}$"
+   ],
+   "answer": "B"
+  },
+  {
+   "n": 140,
+   "domain": "GT",
+   "stem": "Point $A$ lies on a unit circle in the $xy$-plane and has coordinates $(1,0)$. Point $B$ is the center of the circle and has coordinates $(0,0)$. Point $C$ also lies on the unit circle and has coordinate $\\left(-\\dfrac{1}{2},\\dfrac{\\sqrt{3}}{2}\\right)$. Which of the following could be the positive measure of angle $ABC$, in radians?",
+   "choices": [
+    "$\\dfrac{454\\pi}{6}$",
+    "$\\dfrac{458\\pi}{3}$",
+    "$\\dfrac{460\\pi}{3}$",
+    "$\\dfrac{462\\pi}{3}$"
+   ],
+   "answer": "B"
+  },
+  {
+   "n": 142,
+   "domain": "GT",
+   "stem": "$$x^2-9x+y^2+27y+\\frac{67}{2}=0$$ In the $xy$-plane, the graph of the given equation is a circle. If this circle is inscribed in a square, what is the perimeter of the square?",
+   "choices": [],
+   "answer": "104"
+  },
+  {
+   "n": 144,
+   "domain": "AM",
+   "stem": "The exponential function $h$ is defined by $h(x)=ab^x$, where $a$ and $b$ are positive constants. If $h(k)=p$ and $h(k+1)=0.45p$, where $k$ and $p$ are constants, what is the value of $b$?",
+   "choices": [],
+   "answer": "0.45"
+  },
+  {
+   "n": 146,
+   "domain": "GT",
+   "stem": "For triangle $XYZ$, the length of $\\overline{XZ}$ is 37 and the length of $\\overline{XY}$ is 27. Point $K$ (not shown) lies on $\\overline{XY}$ such that $\\overline{YK}$ is perpendicular to $\\overline{XZ}$. What is the value of $\\dfrac{YK}{YZ}$?",
+   "figure": "fig-righttri-xyz",
+   "choices": [],
+   "answer": "27/37"
+  },
+  {
+   "n": 148,
+   "domain": "ALG",
+   "stem": "$$\\frac{3}{5}x+\\frac{7}{4}y=a$$ $$\\frac{7}{11}x+by=c$$ In the given system of equations, $a$, $b$, and $c$ are constants. The system has infinitely many solutions. What is the value of $\\dfrac{a}{c}$?",
+   "choices": [],
+   "answer": "33/37"
+  },
+  {
+   "n": 150,
+   "domain": "PSDA",
+   "wide": true,
+   "stem": "At the start of a stock trading competition, John's and Julia's stock portfolios were of equal value. At the end of the stock trading competition, John's portfolio had increased by $330\\%$. Julia's portfolio has increased by $2{,}480\\%$. At the end of the competition Julia's portfolio is worth $p\\%$ more than John's portfolio, what is the value of $p$?",
+   "choices": [],
+   "answer": "500"
+  }
+ ]
+}

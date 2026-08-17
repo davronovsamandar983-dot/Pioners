@@ -32,9 +32,14 @@ FIGMACRO = {
     "fig-circle-abcd": r"\figcircleabcd", "tbl-rect-sim": r"\figtblrectsim",
     "fig-parallel-abcde": r"\figparallelabcde", "tbl-freq-choice": r"\figtblfreqchoice",
     "fig-lines-abk": r"\figlinesabk", "fig-circle-arc": r"\figcirclearc",
+    "fig-expdecay": r"\figexpdecay", "fig-circle-abcd2": r"\figcircleabcdii",
+    "fig-parallel-abcde2": r"\figparallelabcdeii", "fig-bowtie2": r"\figbowtieii",
+    "fig-bowtie3": r"\figbowtieiii", "fig-line-a2": r"\figlineaii",
+    "fig-righttri-xyz": r"\figrighttrixyz",
 }
 
-NOT_TO_SCALE = {"fig-right-tri-60", "fig-parallel-ab", "fig-circle-abcd",
+NOT_TO_SCALE = {"fig-circle-abcd2", "fig-parallel-abcde2", "fig-bowtie2",
+                "fig-bowtie3", "fig-righttri-xyz", "fig-right-tri-60", "fig-parallel-ab", "fig-circle-abcd",
                 "fig-parallel-abcde", "fig-lines-abk", "fig-nested-rect"}
 
 
@@ -74,7 +79,8 @@ def emit_problems(problems, path):
 
 
 def emit_key(problems, path):
-    """Eight number/answer pairs a row, left aligned."""
+    """Six number/answer pairs a row, left aligned. Eight overflows the
+    measure once an answer is a phrase like "20 or 45"."""
     lines = [r"\clearpage", r"\satlesson{Answer Key}",
              r"\noindent{\footnotesize Answers marked \textemdash\ are the "
              r"handful that could not be pinned down from the source page, "
@@ -85,11 +91,11 @@ def emit_key(problems, path):
             continue
         lines.append(r"{\color{satblue}\footnotesize\bfseries %s}\par\smallskip" % title)
         lines.append(r"\setlength{\LTleft}{0pt}\setlength{\LTright}{\fill}")
-        lines.append(r"\begin{longtable}{" + "l@{\\hspace{4pt}}l@{\\hspace{16pt}}" * 8 + "}")
+        lines.append(r"\begin{longtable}{" + "l@{\\hspace{4pt}}l@{\\hspace{16pt}}" * 6 + "}")
         row = []
         for p in group:
             row.append(r"%d.&%s" % (p["book_n"], p.get("answer") or r"\textemdash"))
-            if len(row) == 8:
+            if len(row) == 6:
                 lines.append(" & ".join(row) + r" \\")
                 row = []
         if row:
@@ -114,7 +120,7 @@ def main():
 
     counts = {d: sum(1 for p in ordered if p["domain"] == d) for d, _ in DOMAINS}
     with_key = sum(1 for p in ordered if p.get("answer"))
-    stats = (r"\textbf{%d} hard problems, deduplicated from two sources\\[2pt]"
+    stats = (r"\textbf{%d} hard problems, deduplicated from three sources\\[2pt]"
              r"Algebra %d \quad Advanced Math %d \quad "
              r"Data Analysis %d \quad Geometry \& Trigonometry %d\\[2pt]"
              r"Three problems per page, with working space") % (

@@ -896,8 +896,9 @@
   {
    "n": 95,
    "domain": "PSDA",
-   "stem": "$a$ is $3700\\%$ greater than $b$. $a$ is also $5\\%$ less than $c$. What percent greater than $c$ is $b$?",
-   "choices": []
+   "stem": "$a$ is $3700\\%$ greater than $b$. $a$ is also $5\\%$ less than $c$. What percent greater than $b$ is $c$?",
+   "choices": [],
+   "answer": "3,900"
   },
   {
    "n": 96,
@@ -942,7 +943,8 @@
     "$z<y$",
     "$z=y$",
     "$z+y=90$"
-   ]
+   ],
+   "answer": "B"
   },
   {
    "n": 100,

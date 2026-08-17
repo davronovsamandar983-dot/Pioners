@@ -222,3 +222,84 @@
     \node[above] at (a) {$a$}; \node[right] at (c) {$c$}; \node[right] at (b) {$b$};
     \node[above right] at (-1.55,-1.1) {\small $35^\circ$};
   \end{tikzpicture}}
+
+% ------------------------------------- PrepPros Course #2 additions
+\newcommand{\figexpdecay}{%
+  \begin{tikzpicture}[scale=0.5]
+    \draw[gray!35,step=1] (-4,-5) grid (6,5);
+    \draw[->] (-4,0)--(6,0); \draw[->] (0,-5)--(0,5);
+    \foreach \x in {-3,-2,-1,1,2,3,4,5} \node[below,font=\tiny] at (\x,0) {$\x$};
+    \foreach \y in {-4,-2,2,4} \node[left,font=\tiny] at (0,\y) {$\y$};
+    \draw[very thick,domain=-4:2.32,samples=80] plot (\x,{1-2^(\x)});
+  \end{tikzpicture}}
+
+\newcommand{\figcircleabcdii}{%
+  \begin{tikzpicture}[scale=0.8]
+    \draw[thick] (0,0) circle (2.7);
+    \coordinate (A) at (-1.55,2.21); \coordinate (C) at (2.55,0.9);
+    \coordinate (B) at (-2.55,-0.9); \coordinate (D) at (-0.55,0.62);
+    \draw[thick] (A)--(C); \draw[thick] (A)--(B); \draw[thick] (B)--(C);
+    \draw[thick] (A)--(D);
+    \draw (D)++(-0.2,-0.2) rectangle ++(0.22,0.22);
+    \node[above left] at (A) {$A$}; \node[right] at (C) {$C$};
+    \node[left] at (B) {$B$}; \node[below right] at (D) {$D$};
+  \end{tikzpicture}}
+
+\newcommand{\figparallelabcdeii}{%
+  \begin{tikzpicture}[scale=0.8]
+    \draw[thick] (1.5,-2.3)--(1.5,2.5); \node[below] at (1.5,-2.3) {$a$};
+    \draw[thick] (3.4,-2.3)--(3.4,2.5); \node[below] at (3.4,-2.3) {$b$};
+    \draw[thick] (-0.7,1.55) node[left] {$d$} --(5.4,1.05);
+    \draw[thick] (-0.2,2.4) node[above] {$e$} --(4.8,-1.7);
+    \draw[thick] (-1.0,-0.2) node[left] {$c$} --(5.2,-1.4);
+    \node[above right] at (0.0,1.6) {\small $z^\circ$};
+    \node[below right] at (1.55,1.1) {\small $v^\circ$};
+    \node[above right] at (3.0,1.35) {\small $w^\circ$};
+    \node[above right] at (1.55,-0.55) {\small $x^\circ$};
+    \node[above right] at (4.3,-1.45) {\small $y^\circ$};
+  \end{tikzpicture}}
+
+\newcommand{\figbowtieii}{%
+  \begin{tikzpicture}[scale=0.85]
+    \coordinate (A) at (0,0); \coordinate (B) at (0.35,1.5);
+    \coordinate (E) at (2.9,0.1); \coordinate (C) at (4.6,0.55);
+    \coordinate (D) at (4.35,-0.55);
+    \draw[thick] (A)--(B); \draw[thick] (B)--(D); \draw[thick] (A)--(C);
+    \draw[thick] (C)--(D);
+    \node[below] at (A) {$A$}; \node[above] at (B) {$B$};
+    \node[above] at (E) {$E$}; \node[above right] at (C) {$C$};
+    \node[below right] at (D) {$D$};
+    \node[left] at (0.2,0.8) {$301$}; \node[right] at (4.6,0.0) {$129$};
+    \node[above right] at (0.05,0.05) {\small $x^\circ$};
+    \node[above left] at (4.3,-0.5) {\small $x^\circ$};
+  \end{tikzpicture}}
+
+\newcommand{\figbowtieiii}{%
+  \begin{tikzpicture}[scale=0.85]
+    \coordinate (A) at (0,0); \coordinate (B) at (0.35,1.5);
+    \coordinate (E) at (2.9,0.1); \coordinate (C) at (4.6,0.55);
+    \coordinate (D) at (4.35,-0.55);
+    \draw[thick] (A)--(B); \draw[thick] (B)--(D); \draw[thick] (A)--(C);
+    \draw[thick] (C)--(D);
+    \node[below] at (A) {$A$}; \node[above] at (B) {$B$};
+    \node[above] at (E) {$E$}; \node[above right] at (C) {$C$};
+    \node[below right] at (D) {$D$};
+  \end{tikzpicture}}
+
+\newcommand{\figlineaii}{%
+  \begin{tikzpicture}[scale=0.5]
+    \draw[gray!35,step=1] (-1,-1) grid (10,10);
+    \draw[->] (-1,0)--(10,0); \draw[->] (0,-1)--(0,10);
+    \foreach \x in {2,4,6,8,10} \node[below,font=\tiny] at (\x,0) {$\x$};
+    \foreach \y in {2,4,6,8,10} \node[left,font=\tiny] at (0,\y) {$\y$};
+    \draw[very thick] (0,10)--(10,2.3);
+    \fill (3,7.7) circle (2.6pt);
+  \end{tikzpicture}}
+
+\newcommand{\figrighttrixyz}{%
+  \begin{tikzpicture}[scale=0.85]
+    \draw[thick] (0,3.1)--(0,0)--(4.2,0)--cycle;
+    \draw (0,0) rectangle (0.3,0.3);
+    \node[above] at (0,3.1) {$X$}; \node[below left] at (0,0) {$Y$};
+    \node[below right] at (4.2,0) {$Z$};
+  \end{tikzpicture}}

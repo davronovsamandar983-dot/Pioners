@@ -28,11 +28,11 @@ fi
 over=$(grep -c 'Overfull' .build/main.log || true)
 echo "overfull boxes: $over"
 
-cp .build/main.pdf ../dist/SAT-Math-220-Hard-Questions.pdf
+cp .build/main.pdf ../dist/SAT-Math-294-Hard-Questions.pdf
 cd ..
-echo "== done -> dist/SAT-Math-220-Hard-Questions.pdf"
+echo "== done -> dist/SAT-Math-294-Hard-Questions.pdf"
 python3 - <<'EOF'
 import pymupdf
-d = pymupdf.open("dist/SAT-Math-220-Hard-Questions.pdf")
+d = pymupdf.open("dist/SAT-Math-294-Hard-Questions.pdf")
 print(f"   {d.page_count} pages")
 EOF
