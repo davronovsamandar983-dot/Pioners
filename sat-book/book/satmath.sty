@@ -4,7 +4,7 @@
                 headheight=46pt,headsep=14pt,footskip=26pt]{geometry}
 \RequirePackage{lmodern}
 \RequirePackage{amsmath,amssymb}
-\RequirePackage{xcolor}
+\RequirePackage[table]{xcolor}
 \RequirePackage{graphicx}
 \RequirePackage{adjustbox}
 \RequirePackage{varwidth}
@@ -66,12 +66,24 @@
 % ----------------------------------------------------------- watermark
 % A tikz overlay anchored to current page.center; eso-pic's \AtPageCenter
 % with \raisebox does not reliably centre the box vertically.
+\newtoggle{satquiet}
+\togglefalse{satquiet}
+
+% The emblem sits behind the text at 20%. That reads well under a sparse
+% problem page and badly under a packed answer-key table, so dense pages
+% switch to a smaller, fainter mark instead of the full-width one.
 \newcommand{\satwatermark}{%
   \AddToShipoutPictureBG{%
     \begin{tikzpicture}[remember picture,overlay]
-      \node at (current page.center)
-        {\includegraphics[width=0.56\paperwidth]{assets/logo-watermark.png}};
+      \iftoggle{satquiet}
+        {\node[opacity=0.45] at (current page.center)
+           {\includegraphics[width=0.34\paperwidth]{assets/logo-watermark.png}};}
+        {\node at (current page.center)
+           {\includegraphics[width=0.56\paperwidth]{assets/logo-watermark.png}};}
     \end{tikzpicture}}}
+
+% Dense pages call this; it lasts to the end of the enclosing group.
+\newcommand{\satquietpages}{\toggletrue{satquiet}}
 
 % ------------------------------------------------- question components
 \newcounter{satq}
@@ -128,5 +140,34 @@
       ([xshift=82pt,yshift=36pt]current page.center);
   \end{tikzpicture}%
   \null\clearpage}
+
+% ------------------------------------------------- answer key styling
+% A packed key needs the eye to find a row again after crossing the
+% page. Alternate rows carry a hairline tint, and each number sits in a
+% fixed-width box so the columns line up whatever the answer's length.
+\definecolor{satband}{HTML}{EEF3FB}
+
+% One cell is exactly a sixth of the measure, so the six columns tile
+% the text block edge to edge and the tint reads as one continuous band
+% rather than six separate chips.
+\newlength{\satkeycellw}
+\setlength{\satkeycellw}{\dimexpr(\textwidth-1pt)/6\relax}
+
+\newcommand{\satkeycell}[2]{%
+  \makebox[\satkeycellw][l]{%
+    \makebox[22pt][r]{\footnotesize\color{satgrey}#1.}\hspace{5pt}%
+    {\footnotesize\bfseries\color{satnavy}#2}}}
+
+% Pads a short final row so the band still runs the full measure.
+\newcommand{\satkeyblank}{\makebox[\satkeycellw][l]{\strut}}
+
+\newcommand{\satkeyhead}[1]{%
+  \par\medskip\noindent
+  \begin{tikzpicture}
+    \node[fill=satnavy,text=white,font=\bfseries\footnotesize,
+          inner xsep=8pt,inner ysep=3.5pt,anchor=west] at (0,0) {#1};
+    \draw[satline,line width=0.6pt]
+      (0,-0.42) -- (\dimexpr\textwidth-0.6pt\relax,-0.42);
+  \end{tikzpicture}\par\smallskip}
 
 \endinput

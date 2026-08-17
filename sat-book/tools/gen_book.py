@@ -12,6 +12,7 @@ BOOK = HERE / "content/book.json"
 OUT = HERE / "book/generated"
 
 PER_PAGE = 3
+PER_ROW = 6      # answer-key pairs per row
 
 DOMAINS = [
     ("ALG", "Algebra"),
@@ -79,28 +80,32 @@ def emit_problems(problems, path):
 
 
 def emit_key(problems, path):
-    """Six number/answer pairs a row, left aligned. Eight overflows the
-    measure once an answer is a phrase like "20 or 45"."""
-    lines = [r"\clearpage", r"\satlesson{Answer Key}",
+    """Six number/answer pairs a row, banded so the eye can find a row
+    again after crossing the page. The watermark goes quiet here: a
+    20% emblem under a packed table is noise, not identity."""
+    lines = [r"\clearpage", r"\satquietpages", r"\satlesson{Answer Key}",
              r"\noindent{\footnotesize Answers marked \textemdash\ are the "
              r"handful that could not be pinned down from the source page, "
-             r"and are left open rather than guessed.}\par\medskip"]
+             r"and are left open rather than guessed.}\par"]
     for domain, title in DOMAINS:
         group = [p for p in problems if p["domain"] == domain]
         if not group:
             continue
-        lines.append(r"{\color{satblue}\footnotesize\bfseries %s}\par\smallskip" % title)
-        lines.append(r"\setlength{\LTleft}{0pt}\setlength{\LTright}{\fill}")
-        lines.append(r"\begin{longtable}{" + "l@{\\hspace{4pt}}l@{\\hspace{16pt}}" * 6 + "}")
+        lines.append(r"\satkeyhead{%s}" % title)
+        lines.append(r"\begingroup\setlength{\tabcolsep}{0pt}"
+                     r"\renewcommand{\arraystretch}{1.45}")
+        lines.append(r"\rowcolors{1}{}{satband}")
+        lines.append(r"\noindent\begin{tabular}{@{}" + "l" * PER_ROW + r"@{}}")
         row = []
         for p in group:
-            row.append(r"%d.&%s" % (p["book_n"], p.get("answer") or r"\textemdash"))
-            if len(row) == 6:
+            row.append(r"\satkeycell{%d}{%s}"
+                       % (p["book_n"], p.get("answer") or r"\textemdash"))
+            if len(row) == PER_ROW:
                 lines.append(" & ".join(row) + r" \\")
                 row = []
         if row:
-            lines.append(" & ".join(row) + r" \\")
-        lines.append(r"\end{longtable}\par\medskip")
+            lines.append(" & ".join(row + [r"\satkeyblank"] * (PER_ROW - len(row))) + r" \\")
+        lines.append(r"\end{tabular}\endgroup\par")
     path.write_text("\n".join(lines) + "\n")
 
 
