@@ -7,6 +7,7 @@ page** so there is room to work.
 | | |
 | --- | --- |
 | Output | `dist/SAT-Math-294-Hard-Questions.pdf` — 108 pages |
+| Plain text | `dist/SAT-Math-294-Hard-Questions.txt` — 79 KB |
 | Problems | 294 |
 | Algebra | 43 |
 | Advanced Math | 117 |
@@ -71,6 +72,14 @@ the student. Each problem is wrapped in a `minipage` so a stem is never
 stranded from its answer choices across a page break, and every figure
 is wrapped in `adjustbox`+`varwidth` so it scales into the measure.
 
+## Plain-text edition
+
+`tools/gen_txt.py` flattens the LaTeX in the bank into readable ASCII —
+fractions become `a/b`, radicals `sqrt(...)`, display maths gets its own
+indented line — and writes the same 294 problems and the full key as a
+78-column text file. Figures are the one thing it cannot carry; those
+items are marked and refer back to the PDF.
+
 ## Build
 
 ```bash
@@ -94,6 +103,7 @@ book/figures.tex       29 TikZ figures and tables
 book/main.tex          the edition
 book/frontmatter/      the cover
 book/assets/           the emblem, solid and at 20% alpha
+tools/gen_txt.py       the plain-text edition
 tools/                 assets, answers, verify, dedupe, generator, build
 ```
 

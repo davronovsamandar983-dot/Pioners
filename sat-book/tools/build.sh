@@ -30,7 +30,10 @@ echo "overfull boxes: $over"
 
 cp .build/main.pdf ../dist/SAT-Math-294-Hard-Questions.pdf
 cd ..
-echo "== done -> dist/SAT-Math-294-Hard-Questions.pdf"
+echo "== plain text"
+python3 tools/gen_txt.py
+
+echo "== done -> dist/"
 python3 - <<'EOF'
 import pymupdf
 d = pymupdf.open("dist/SAT-Math-294-Hard-Questions.pdf")
